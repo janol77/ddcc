@@ -3,7 +3,7 @@
 
 err = 300, warn = 84, info = 29
 IG Publisher Version: 1.1.90
-Generated Fri Dec 10 20:14:41 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.3.1 (canonical = http://worldhealthorganization.github.io/ddcc)
+Generated Fri Dec 10 22:44:40 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.3.1 (canonical = http://worldhealthorganization.github.io/ddcc)
  Build Errors : 689 / 57 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 2 / 0 / 10
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Arabic : 2 / 0 / 10
@@ -107,12 +107,12 @@ Generated Fri Dec 10 20:14:41 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#
  /github/workspace/input/resources/CapabilityStatement-WHO.DDCC.RegistryService : 0 / 0 / 1
  /github/workspace/input/resources/Immunization-pre-uv-ips.StructureDefinition : 0 / 1 / 1
  /github/workspace/input/resources/Patient-pre-uv-ips.StructureDefinition : 0 / 1 / 1
- /github/workspace/input/resources/QRespToCoreDataSet : 54 / 0 / 1
  /github/workspace/input/resources/StructureMap-CoreDataSetLibrary : 27 / 0 / 1
  /github/workspace/input/resources/StructureMap-CoreDataSetVSLibrary : 92 / 0 / 1
  /github/workspace/input/resources/StructureMap-CoreDataSetVSToAddBundle : 1 / 0 / 1
  /github/workspace/input/resources/StructureMap-DDCCtoCoredataset : 1 / 0 / 1
  /github/workspace/input/resources/StructureMap-DDCCtoEUdcc : 1 / 0 / 1
+ /github/workspace/input/resources/StructureMap-QRespToCoreDataSet : 54 / 0 / 1
  /github/workspace/input/resources/StructureMap-ResourcesToCoreDataSet : 60 / 0 / 1
  /github/workspace/input/resources/svc-map-qr-uvci-bundle : 31 / 1 / 1
 </table>
@@ -166,12 +166,12 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/Example-Russian.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/Example-Spanish.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/IPS-Immunization-Example-Bundle-01.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/QRespToCoreDataSet.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/CoreDataSetLibrary.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/CoreDataSetVSLibrary.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/CoreDataSetVSToAddBundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/DDCCtoCoredataset.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/DDCCtoEUdcc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/QRespToCoreDataSet.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/ResourcesToCoreDataSet.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/svc-map-qr-uvci-bundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/Bundle-DDCC-TX-SHE-bundle-example-1.change.history.html#/html/body/div/div/div/p/a at Line 266, column 19: The link 'license.html' for "" cannot be resolved
@@ -770,10 +770,10 @@ ERROR: /github/workspace/output/StructureMap-DDCCtoEUdcc.json.html#/html/body/di
 ERROR: /github/workspace/output/StructureMap-DDCCtoEUdcc.ttl.html#/html/body/div/div/div/p/a at Line 795, column 19: The link 'license.html' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-DDCCtoEUdcc.xml.html#/html/body/div/div/div/p/a at Line 855, column 19: The link 'license.html' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-QRespToCoreDataSet.change.history.html#/html/body/div/div/div/p/a at Line 266, column 19: The link 'license.html' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureMap-QRespToCoreDataSet.html#/html/body/div/div/div/p/a at Line 359, column 19: The link 'license.html' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureMap-QRespToCoreDataSet.json.html#/html/body/div/div/div/p/a at Line 1417, column 19: The link 'license.html' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureMap-QRespToCoreDataSet.ttl.html#/html/body/div/div/div/p/a at Line 1106, column 19: The link 'license.html' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureMap-QRespToCoreDataSet.xml.html#/html/body/div/div/div/p/a at Line 1211, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-QRespToCoreDataSet.html#/html/body/div/div/div/p/a at Line 360, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-QRespToCoreDataSet.json.html#/html/body/div/div/div/p/a at Line 1421, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-QRespToCoreDataSet.ttl.html#/html/body/div/div/div/p/a at Line 1110, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-QRespToCoreDataSet.xml.html#/html/body/div/div/div/p/a at Line 1216, column 19: The link 'license.html' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-ResourcesToCoreDataSet.change.history.html#/html/body/div/div/div/p/a at Line 266, column 19: The link 'license.html' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-ResourcesToCoreDataSet.html#/html/body/div/div/div/p/a at Line 367, column 19: The link 'license.html' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-ResourcesToCoreDataSet.json.html#/html/body/div/div/div/p/a at Line 1635, column 19: The link 'license.html' for "" cannot be resolved
@@ -1053,61 +1053,6 @@ WARNING: ValueSet/who-ddcc-vaccines-covid-19: ValueSet.compose[0].include[0]: Un
 == input/resources/CapabilityStatement-WHO.DDCC.RegistryService.xml ==
 == input/resources/Immunization-pre-uv-ips.StructureDefinition.xml ==
 == input/resources/Patient-pre-uv-ips.StructureDefinition.xml ==
-== input/resources/QRespToCoreDataSet.json ==
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[0].rule[0].name: id value 'set header content' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[0].rule[1].name: id value 'set vaccination content' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[0].rule[2].name: id value 'set certificate content' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[1].rule[0].name: id value 'header items' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[1].rule[0].rule[0].name: id value 'first answser for name' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[1].rule[0].rule[0].rule[0].name: id value 'set name' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[1].rule[0].rule[1].name: id value 'first answer for birthDate' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[1].rule[0].rule[1].rule[0].name: id value 'set birthDate' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[1].rule[0].rule[2].name: id value 'first answer for identifier' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[1].rule[0].rule[2].rule[0].name: id value 'set identifier' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[1].rule[0].rule[3].name: id value 'first answer for sex' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[1].rule[0].rule[3].rule[0].name: id value 'process coding' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[1].rule[0].rule[3].rule[0].rule[0].name: id value 'set sex' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].name: id value 'vaccination items' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[0].name: id value 'first answer for vaccine' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[0].rule[0].name: id value 'set vaccine' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[1].name: id value 'first answer for brand' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[1].rule[0].name: id value 'set brand' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[2].name: id value 'first answer for manufacturer' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[2].rule[0].name: id value 'set manufacturer' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[3].name: id value 'first answer for maholder' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[3].rule[0].name: id value 'set maholder' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[4].name: id value 'first answser for lot' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[4].rule[0].name: id value 'set lot' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[5].name: id value 'first answer for date' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[5].rule[0].name: id value 'set date' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[6].name: id value 'first answer for validFrom' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[6].rule[0].name: id value 'set validFrom' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[7].name: id value 'first answer for dose' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[7].rule[0].name: id value 'set dose' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[8].name: id value 'first answer for totalDoses' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[8].rule[0].name: id value 'set totalDoses' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[9].name: id value 'first answer for country' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[9].rule[0].name: id value 'set country' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[10].name: id value 'first answser for centre' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[10].rule[0].name: id value 'set centre' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[11].name: id value 'first answser for practitioner' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[11].rule[0].name: id value 'set practitioner' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[12].name: id value 'first answer for disease' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[12].rule[0].name: id value 'set disease' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[13].name: id value 'first answer for nextDose' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[13].rule[0].name: id value 'set nextDose' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[1].name: id value 'set vaccination period' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[3].rule[0].name: id value 'vaccination validity items' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[3].rule[0].rule[0].name: id value 'first answer for valid_from' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[3].rule[0].rule[0].rule[0].name: id value 'set valid_from' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[3].rule[0].rule[1].name: id value 'first answer for valid_until' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[3].rule[0].rule[1].rule[0].name: id value 'set valid_until' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[4].rule[0].name: id value 'certificate items' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[4].rule[0].rule[0].name: id value 'first answser for hcid' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[4].rule[0].rule[0].rule[0].name: id value 'set issuer' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[4].rule[0].rule[0].rule[0].rule[0].name: id value 'set issuer identifier' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[4].rule[0].rule[1].name: id value 'first answser for hcid' is not valid
-ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[4].rule[0].rule[1].rule[0].name: id value 'set hcid and version' is not valid
 == input/resources/StructureMap-CoreDataSetLibrary.json ==
 ERROR: StructureMap/CoreDataSetLibrary: StructureMap.group[0].rule[0].name: id value 'set id' is not valid
 ERROR: StructureMap/CoreDataSetLibrary: StructureMap.group[0].rule[1].name: id value 'set full name' is not valid
@@ -1235,6 +1180,61 @@ ERROR: StructureMap/CoreDataSetVSToAddBundle: StructureMap.group[0].rule[0].name
 ERROR: StructureMap.url: Resource id/url mismatch: DDCCtoCoredataset/http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-coredataset
 == input/resources/StructureMap-DDCCtoEUdcc.json ==
 ERROR: StructureMap.url: Resource id/url mismatch: DDCCtoEUdcc/http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-eu-dcc
+== input/resources/StructureMap-QRespToCoreDataSet.json ==
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[0].rule[0].name: id value 'set header content' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[0].rule[1].name: id value 'set vaccination content' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[0].rule[2].name: id value 'set certificate content' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[1].rule[0].name: id value 'header items' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[1].rule[0].rule[0].name: id value 'first answser for name' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[1].rule[0].rule[0].rule[0].name: id value 'set name' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[1].rule[0].rule[1].name: id value 'first answer for birthDate' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[1].rule[0].rule[1].rule[0].name: id value 'set birthDate' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[1].rule[0].rule[2].name: id value 'first answer for identifier' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[1].rule[0].rule[2].rule[0].name: id value 'set identifier' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[1].rule[0].rule[3].name: id value 'first answer for sex' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[1].rule[0].rule[3].rule[0].name: id value 'process coding' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[1].rule[0].rule[3].rule[0].rule[0].name: id value 'set sex' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].name: id value 'vaccination items' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[0].name: id value 'first answer for vaccine' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[0].rule[0].name: id value 'set vaccine' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[1].name: id value 'first answer for brand' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[1].rule[0].name: id value 'set brand' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[2].name: id value 'first answer for manufacturer' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[2].rule[0].name: id value 'set manufacturer' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[3].name: id value 'first answer for maholder' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[3].rule[0].name: id value 'set maholder' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[4].name: id value 'first answser for lot' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[4].rule[0].name: id value 'set lot' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[5].name: id value 'first answer for date' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[5].rule[0].name: id value 'set date' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[6].name: id value 'first answer for validFrom' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[6].rule[0].name: id value 'set validFrom' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[7].name: id value 'first answer for dose' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[7].rule[0].name: id value 'set dose' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[8].name: id value 'first answer for totalDoses' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[8].rule[0].name: id value 'set totalDoses' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[9].name: id value 'first answer for country' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[9].rule[0].name: id value 'set country' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[10].name: id value 'first answser for centre' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[10].rule[0].name: id value 'set centre' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[11].name: id value 'first answser for practitioner' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[11].rule[0].name: id value 'set practitioner' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[12].name: id value 'first answer for disease' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[12].rule[0].name: id value 'set disease' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[13].name: id value 'first answer for nextDose' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[2].rule[0].rule[13].rule[0].name: id value 'set nextDose' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[3].rule[0].name: id value 'vaccination validity items' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[3].rule[0].rule[0].name: id value 'first answer for valid_from' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[3].rule[0].rule[0].rule[0].name: id value 'set valid_from' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[3].rule[0].rule[1].name: id value 'first answer for valid_until' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[3].rule[0].rule[1].rule[0].name: id value 'set valid_until' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[4].rule[0].name: id value 'certificate items' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[4].rule[0].rule[0].name: id value 'first answser for hcid' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[4].rule[0].rule[0].rule[0].name: id value 'set issuer' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[4].rule[0].rule[0].rule[0].rule[0].name: id value 'set issuer identifier' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[4].rule[0].rule[1].name: id value 'first answser for hcid' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[4].rule[0].rule[1].rule[0].name: id value 'set hcid and version' is not valid
+ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[4].rule[1].name: id value 'set vaccination period' is not valid
 == input/resources/StructureMap-ResourcesToCoreDataSet.json ==
 ERROR: StructureMap/ResourcesToCoreDataSet: StructureMap.group[0].rule[0].name: id value 'setup ddcc' is not valid
 ERROR: StructureMap/ResourcesToCoreDataSet: StructureMap.group[0].rule[0].rule[0].name: id value 'set hcid' is not valid

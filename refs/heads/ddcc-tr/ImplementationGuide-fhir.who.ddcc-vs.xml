@@ -1265,16 +1265,6 @@
         <valueString value="StructureMap"/>
       </extension>
       <reference>
-        <reference value="StructureMap/QRespToCoreDataSet"/>
-      </reference>
-      <name value="QRespToCoreDataSet"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureMap"/>
-      </extension>
-      <reference>
         <reference value="StructureMap/CoreDataSetLibrary"/>
       </reference>
       <name value="CoreDataSetLibrary"/>
@@ -1318,6 +1308,16 @@
         <reference value="StructureMap/DDCCtoEUdcc"/>
       </reference>
       <name value="DDCCtoEUdcc"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureMap"/>
+      </extension>
+      <reference>
+        <reference value="StructureMap/QRespToCoreDataSet"/>
+      </reference>
+      <name value="QRespToCoreDataSet"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

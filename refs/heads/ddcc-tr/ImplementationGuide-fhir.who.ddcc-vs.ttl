@@ -1818,26 +1818,13 @@
          fhir:Extension.valueString [ fhir:value "StructureMap" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureMap/QRespToCoreDataSet>;
-         fhir:Reference.reference [ fhir:value "StructureMap/QRespToCoreDataSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "QRespToCoreDataSet" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 102;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureMap" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetLibrary>;
          fhir:Reference.reference [ fhir:value "StructureMap/CoreDataSetLibrary" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CoreDataSetLibrary" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 103;
+       fhir:index 102;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1850,7 +1837,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CoreDataSetVSLibrary" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 104;
+       fhir:index 103;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1863,7 +1850,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CoreDataSetVSToAddBundle" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 105;
+       fhir:index 104;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1876,7 +1863,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCCtoCoredataset" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 106;
+       fhir:index 105;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1887,6 +1874,19 @@
          fhir:Reference.reference [ fhir:value "StructureMap/DDCCtoEUdcc" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCCtoEUdcc" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 106;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureMap" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureMap/QRespToCoreDataSet>;
+         fhir:Reference.reference [ fhir:value "StructureMap/QRespToCoreDataSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "QRespToCoreDataSet" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 107;

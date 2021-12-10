@@ -1683,19 +1683,6 @@
           }
         ],
         "reference": {
-          "reference": "StructureMap/QRespToCoreDataSet"
-        },
-        "name": "QRespToCoreDataSet",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureMap"
-          }
-        ],
-        "reference": {
           "reference": "StructureMap/CoreDataSetLibrary"
         },
         "name": "CoreDataSetLibrary",
@@ -1751,6 +1738,19 @@
           "reference": "StructureMap/DDCCtoEUdcc"
         },
         "name": "DDCCtoEUdcc",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureMap"
+          }
+        ],
+        "reference": {
+          "reference": "StructureMap/QRespToCoreDataSet"
+        },
+        "name": "QRespToCoreDataSet",
         "exampleBoolean": false
       },
       {

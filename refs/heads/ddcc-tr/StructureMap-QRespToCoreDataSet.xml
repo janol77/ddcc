@@ -2,11 +2,16 @@
 
 <StructureMap xmlns="http://hl7.org/fhir">
   <id value="QRespToCoreDataSet"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2021-12-09T20:50:38.428+00:00"/>
+  </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><pre>map &quot;http://worldhealthorganization.github.io/ddcc/StructureMap/QRespToCoreDataSet&quot; = &quot;QRespToCoreDataSet&quot;
 
+
 uses &quot;http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse&quot; alias QResp as source
-uses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSetPoV&quot; alias DDCCPoV as target
+uses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSet.VS.PoV&quot; alias DDCCPoV as target
 
 group QRespToCoreDataSet(source qr : QResp, target ddcc : DDCCPoV) {
   // qr.item as item where item.linkId = 'name' -&gt; ddcc.name as name then {
@@ -82,10 +87,9 @@ group QRespToVaccination(source qr, target vaccination) {
       answer.valueDate as content -&gt; vaccination.nextDose = content &quot;set nextDose&quot;;
     } &quot;first answer for nextDose&quot;;
   } &quot;vaccination items&quot;;
-  qr as src -&gt; vaccination.period as period then QRespToVaccinePeriod(src, period) &quot;set vaccination period&quot;;
 }
 
-group QRespToVaccinePeriod(source qr, target period) {
+group QRespToPeriod(source qr, target period) {
   qr.item as item then {
     item.answer first as answer where item.linkId = 'valid_from' then {
       answer.valueDate as content -&gt; period.start = content &quot;set valid_from&quot;;
@@ -107,6 +111,7 @@ group QRespToCertificate(source qr, target certificate) {
       answer.valueString as content -&gt;  hcid.value = content,  certificate.version = 'RC2' &quot;set hcid and version&quot;;
     } &quot;first answser for hcid&quot;;
   } &quot;certificate items&quot;;
+  qr as src -&gt; certificate.period as period then QRespToPeriod(src, period) &quot;set vaccination period&quot;;
 }
 
 </pre></div>
@@ -115,7 +120,7 @@ group QRespToCertificate(source qr, target certificate) {
   <version value="0.3.1"/>
   <name value="QRespToCoreDataSet"/>
   <status value="draft"/>
-  <date value="2021-12-10T20:11:58+00:00"/>
+  <date value="2021-12-10T22:42:34+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -136,7 +141,7 @@ group QRespToCertificate(source qr, target certificate) {
     <alias value="QResp"/>
   </structure>
   <structure>
-    <url value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSetPoV"/>
+    <url value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSet.VS.PoV"/>
     <mode value="target"/>
     <alias value="DDCCPoV"/>
   </structure>
@@ -748,27 +753,9 @@ group QRespToCertificate(source qr, target certificate) {
         </rule>
       </rule>
     </rule>
-    <rule>
-      <name value="set vaccination period"/>
-      <source>
-        <context value="qr"/>
-        <variable value="src"/>
-      </source>
-      <target>
-        <context value="vaccination"/>
-        <contextType value="variable"/>
-        <element value="period"/>
-        <variable value="period"/>
-      </target>
-      <dependent>
-        <name value="QRespToVaccinePeriod"/>
-        <variable value="src"/>
-        <variable value="period"/>
-      </dependent>
-    </rule>
   </group>
   <group>
-    <name value="QRespToVaccinePeriod"/>
+    <name value="QRespToPeriod"/>
     <typeMode value="none"/>
     <input>
       <name value="qr"/>
@@ -947,6 +934,24 @@ group QRespToCertificate(source qr, target certificate) {
           </target>
         </rule>
       </rule>
+    </rule>
+    <rule>
+      <name value="set vaccination period"/>
+      <source>
+        <context value="qr"/>
+        <variable value="src"/>
+      </source>
+      <target>
+        <context value="certificate"/>
+        <contextType value="variable"/>
+        <element value="period"/>
+        <variable value="period"/>
+      </target>
+      <dependent>
+        <name value="QRespToPeriod"/>
+        <variable value="src"/>
+        <variable value="period"/>
+      </dependent>
     </rule>
   </group>
 </StructureMap>
