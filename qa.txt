@@ -3,7 +3,7 @@
 
 err = 9, warn = 71, info = 28
 IG Publisher Version: 1.1.90
-Generated Fri Dec 10 17:06:38 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = http://worldhealthorganization.github.io/ddcc)
+Generated Fri Dec 10 20:08:33 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = http://worldhealthorganization.github.io/ddcc)
  Build Errors : 600 / 48 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 0 / 0 / 10
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Arabic : 0 / 0 / 10
