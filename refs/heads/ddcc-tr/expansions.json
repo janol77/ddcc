@@ -1,0 +1,248 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "dc5cd2e5-e002-4d57-a0b3-a4d37e0378af",
+  "meta" : {
+    "lastUpdated" : "2021-12-10T20:02:07.429+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-Composition-Category-ValueSet",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "DDCC-Composition-Category-ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-DDCC-Composition-Category-CodeSystem.html\">DDCC Composition Category Codes v0.3.1 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-DDCC-Composition-Category-CodeSystem.html\"><code>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Composition-Category-CodeSystem-ddcc-vs\"> </a><a href=\"CodeSystem-DDCC-Composition-Category-CodeSystem.html#DDCC-Composition-Category-CodeSystem-ddcc-vs\">ddcc-vs</a></td><td>DDCC:VS</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Composition-Category-CodeSystem-ddcc-tr\"> </a><a href=\"CodeSystem-DDCC-Composition-Category-CodeSystem.html#DDCC-Composition-Category-CodeSystem-ddcc-tr\">ddcc-tr</a></td><td>DDCC:TR</td><td/></tr></table></div>"
+      },
+      "url" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-Composition-Category-ValueSet",
+      "version" : "0.3.1",
+      "name" : "DDCC_Composition_Category_ValueSet",
+      "title" : "DDCC Composition Category Codes",
+      "status" : "active",
+      "date" : "2021-12-10T20:02:07+00:00",
+      "publisher" : "WHO",
+      "contact" : [{
+        "name" : "WHO",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://who.int"
+        }]
+      }],
+      "description" : "Categorization of DDCC Composition",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:e0c77ac2-15f5-4f37-9d16-bcef835598db",
+        "timestamp" : "2021-12-10T20:03:35+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem|0.3.1"
+        }],
+        "contains" : [{
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem",
+          "code" : "ddcc-vs",
+          "display" : "DDCC:VS"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem",
+          "code" : "ddcc-tr",
+          "display" : "DDCC:TR"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-Folder-DesignationType",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "DDCC-Folder-DesignationType",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-DDCC-Folder-DesignationType.html\">DDCC Designation Types for Folder v0.3.1 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-DDCC-Folder-DesignationType.html\"><code>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Folder-DesignationType</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Folder-DesignationType-ddcc\"> </a><a href=\"CodeSystem-DDCC-Folder-DesignationType.html#DDCC-Folder-DesignationType-ddcc\">ddcc</a></td><td>DDCC</td><td/></tr></table></div>"
+      },
+      "url" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-Folder-DesignationType",
+      "version" : "0.3.1",
+      "name" : "DDCC_Folder_DesignationType_ValueSet",
+      "title" : "DDCC DesignationTypes for Folder",
+      "status" : "active",
+      "date" : "2021-12-10T20:02:07+00:00",
+      "publisher" : "WHO",
+      "contact" : [{
+        "name" : "WHO",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://who.int"
+        }]
+      }],
+      "description" : "DDCC Designation Types ValueSet for DDCC Folders.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:48ba9e60-023c-4307-a1e6-f74a1199c210",
+        "timestamp" : "2021-12-10T20:03:35+00:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Folder-DesignationType|0.3.1"
+        }],
+        "contains" : [{
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Folder-DesignationType",
+          "code" : "ddcc",
+          "display" : "DDCC"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Category-Usage-ValueSet",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "DDCC-QR-Category-Usage-ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-DDCC-QR-Category-Usage-CodeSystem.html\">DDCC QR Category Usage Codes v0.3.1 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-DDCC-QR-Category-Usage-CodeSystem.html\"><code>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Category-Usage-CodeSystem-who\"> </a><a href=\"CodeSystem-DDCC-QR-Category-Usage-CodeSystem.html#DDCC-QR-Category-Usage-CodeSystem-who\">who</a></td><td>WHO SVC</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Category-Usage-CodeSystem-dcc\"> </a><a href=\"CodeSystem-DDCC-QR-Category-Usage-CodeSystem.html#DDCC-QR-Category-Usage-CodeSystem-dcc\">dcc</a></td><td>EU DCC</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Category-Usage-CodeSystem-icao\"> </a><a href=\"CodeSystem-DDCC-QR-Category-Usage-CodeSystem.html#DDCC-QR-Category-Usage-CodeSystem-icao\">icao</a></td><td>ICAO</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Category-Usage-CodeSystem-au\"> </a><a href=\"CodeSystem-DDCC-QR-Category-Usage-CodeSystem.html#DDCC-QR-Category-Usage-CodeSystem-au\">au</a></td><td>AU</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Category-Usage-CodeSystem-shc\"> </a><a href=\"CodeSystem-DDCC-QR-Category-Usage-CodeSystem.html#DDCC-QR-Category-Usage-CodeSystem-shc\">shc</a></td><td>SMART Health Card</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Category-Usage-CodeSystem-divoc\"> </a><a href=\"CodeSystem-DDCC-QR-Category-Usage-CodeSystem.html#DDCC-QR-Category-Usage-CodeSystem-divoc\">divoc</a></td><td>DIVOC</td><td/></tr></table></div>"
+      },
+      "url" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Category-Usage-ValueSet",
+      "version" : "0.3.1",
+      "name" : "DDCC_QR_Category_Usage_ValueSet",
+      "title" : "DDCC QR Category Usage Codes",
+      "status" : "active",
+      "date" : "2021-12-10T20:02:07+00:00",
+      "publisher" : "WHO",
+      "contact" : [{
+        "name" : "WHO",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://who.int"
+        }]
+      }],
+      "description" : "Categorization of QR codes by their business usage",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:37dd90f9-bff6-40c8-804b-bfe5992fef34",
+        "timestamp" : "2021-12-10T20:03:35+00:00",
+        "total" : 6,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem|0.3.1"
+        }],
+        "contains" : [{
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem",
+          "code" : "who",
+          "display" : "WHO SVC"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem",
+          "code" : "dcc",
+          "display" : "EU DCC"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem",
+          "code" : "icao",
+          "display" : "ICAO"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem",
+          "code" : "au",
+          "display" : "AU"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem",
+          "code" : "shc",
+          "display" : "SMART Health Card"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem",
+          "code" : "divoc",
+          "display" : "DIVOC"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Format-ValueSet",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "DDCC-QR-Format-ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-DDCC-QR-Format-CodeSystem.html\">DDCC QR Format Codes v0.3.1 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-DDCC-QR-Format-CodeSystem.html\"><code>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Format-CodeSystem-image\"> </a><a href=\"CodeSystem-DDCC-QR-Format-CodeSystem.html#DDCC-QR-Format-CodeSystem-image\">image</a></td><td>Image</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Format-CodeSystem-serialized\"> </a><a href=\"CodeSystem-DDCC-QR-Format-CodeSystem.html#DDCC-QR-Format-CodeSystem-serialized\">serialized</a></td><td>Serialized QR Content</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Format-CodeSystem-pdf\"> </a><a href=\"CodeSystem-DDCC-QR-Format-CodeSystem.html#DDCC-QR-Format-CodeSystem-pdf\">pdf</a></td><td>PDF version of the QR image</td><td/></tr></table></div>"
+      },
+      "url" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Format-ValueSet",
+      "version" : "0.3.1",
+      "name" : "DDCC_QR_Format_ValueSet",
+      "title" : "DDCC QR Format Codes",
+      "status" : "active",
+      "date" : "2021-12-10T20:02:07+00:00",
+      "publisher" : "WHO",
+      "contact" : [{
+        "name" : "WHO",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://who.int"
+        }]
+      }],
+      "description" : "Format of the representation of QR code",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:ac40c9da-be76-4493-8bf9-d1d361a3a0ba",
+        "timestamp" : "2021-12-10T20:03:35+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem|0.3.1"
+        }],
+        "contains" : [{
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem",
+          "code" : "image",
+          "display" : "Image"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem",
+          "code" : "serialized",
+          "display" : "Serialized QR Content"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem",
+          "code" : "pdf",
+          "display" : "PDF version of the QR image"
+        }]
+      }
+    }
+  }]
+}
