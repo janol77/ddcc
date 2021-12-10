@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>FHIR.WHO.DDCC-VS\Usecases - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+    <link rel="stylesheet" href="assets/css/cqf.css"/>
+
+    <link rel="stylesheet" href="assets/css/who.css"/>
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"22"}
+    h3,h4,h5,h6{--heading-prefix:"22"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+<div id="family-nav">
+  <a no-external="true" id="family-logo" href="https://github.com/cqframework"><img src="assets/images/cqf.png" alt="Visit the CQF github organization website" height="50"/> </a>
+</div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">WHO Digital Documentation of COVID-19 Certificates: Vaccination Status (DDCC:VS)</span><br/>0.2.1 - CI Build</p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul class="nav navbar-nav">
+	<li>
+	  <a href="index.html">Narrative</a>
+	  <ul class="dropdown-menu">
+	    <li><a href="references.html">References</a></li>
+	  </ul>
+	</li>
+  <!-- <li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
+		</a>
+
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
+		</a>
+
+	</li> -->
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="requirements.html" class="dropdown-toggle">Business Requirements<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+		  <li><a href="concepts.html">Key Concepts</a></li>
+		  <li><a href="functional.html">Functional Requirements</a></li>    
+		  <li><a href="usecases.html">Use Cases</a></li>
+		  <li><a href="dictionary.html">Data Dictionary</a></li>
+
+		</ul>
+	</li>
+
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="data_exchange.html" class="dropdown-toggle">Data Models and Exchange<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+		  <li><a href="dependencies.html">Dependencies</a></li>
+		  <li><a href="actors.html">Actors</a></li>
+		  <li><a href="transactions.html">Transactions</a></li>
+		  <li><a href="workflows.html">Workflows</a></li>
+		  <li><a href="content_profiles.html">Content Profiles</a></li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="deployment.html" class="dropdown-toggle"> Deployment<b class="caret"></b></a>
+		<ul class="dropdown-menu">
+		  <li><a href="security_privacy.html">Security and Privacy Considerations</a></li>
+		  <li><a href="testing.html">Testing</a></li>
+		  <li><a href="downloads.html">Downloads</a></li>
+		</ul>
+	</li>
+
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="deployment.html" class="dropdown-toggle"> Indices<b class="caret"></b></a>
+		<ul class="dropdown-menu">
+		  <li><a href="artifacts.html">Artifact Index</a></li>
+		</ul>
+	</li>
+</ul>      
+
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Usecases</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">WHO Digital Documentation of COVID-19 Certificates: Vaccination Status (DDCC:VS) - Local Development build (v0.2.1). See the <a href="http://worldhealthorganization.github.io/ddcc/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Usecases</h2>
+  
+  <div><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Continuity of Care</a></li><li><a href="#2">Proof of Vaccination</a></li><li><a href="#3">Workflows and Transactions </a></li></ul></div>
+
+  <p style="background-color: #ffefef; border:1px solid maroon; padding: 5px;max-width: 790px;">
+    For the latest published definitions, refer to the Digital Documentation of COVID-19 Certificates guidance.
+  </p>
+  
+  <p>The scope of this implementation guide covers two scenarios of use for the DDCC:VS:&gt;</p>
+
+  <ol>
+    <li><b>CONTINUITY OF CARE:</b> Vaccination records are an important part of an individual’s medical records, starting at birth. The Continuity of Care scenario describes the primary purpose of a vaccination certificate. The vaccination record shows individuals and caregivers which vaccinations an individual has received, as part of that individual’s medical history; it therefore supports informed decision-making on any future health service provision.</li>
+    <li><b>PROOF OF VACCINATION:</b> Vaccination records can also provide proof of vaccination status for purposes not related to health care.</li>
+  </ol>
+
+  <a name="1"></a><h3 id="use-case-care">Continuity of Care</h3> <a name="use-case-care">  </a>
+  <p>In the context of COVID-19, the use of a vaccination record for Continuity of Care is primarily to: ensure that individuals know if, and when, they will need a subsequent dose; for health workers to use the proof of COVID-19 vaccination to decide on provision of health services based on medical history; and for ensuring health workers have access to accurate vaccination history when an adverse event follows immunization. It will be up to Member States to define how this scenario is applied and adapted to their own context and level of digital maturity, in compliance with their legal and policy frameworks.</p> 
+  
+    <table class="list">
+      <tr><th width="100">Use case ID</th><th width="120">Use case name</th><th>Use case description</th></tr>
+      <tr><td>UC001</td><td>Paper first</td><td>A guideline-based vaccine administration is recorded on paper. After the vaccination event, data about it can be entered into a Digital Health Solution.</td></tr>
+      <tr><td>UC002</td><td>Offline digital</td><td>A guideline-based vaccine administration is recorded using an offline secure Digital Health Solution, with the content uploaded, subsequently, to an online Digital Health Solution.</td></tr>
+      <tr><td>UC003</td><td>Online digital</td><td>A guideline-based vaccine administration is recorded using an online secure Digital Health Solution which updates the content in real time.</td></tr>
+    </table>
+
+  <a name="2"></a><h3 id="use-case-proof">Proof of Vaccination</h3> <a name="use-case-proof">  </a>  
+  <p>The Proof of Vaccination scenario relies on the Public Health Authority (PHA) having access to a trusted means of digitally signing an HL7 FHIR document, which represents the core data set for the DDCC:VS. It will be up to Member States to define the purposes for which this scenario is applied and adapted to their own contexts and levels of digital maturity, in compliance with their legal and policy frameworks.</p>
+
+    <table class="list">
+      <tr><th width="100">Use case ID</th><th width="120">Use case name</th><th>Use case description</th></tr>
+      <tr><td>UC006</td><td>Manual verification</td><td>A Verifier verifies a DDCC:VS using purely visual means, based on his or her subjective judgement, as is currently done with International Certificate of Vaccination or Prophylaxis. This type of check is currently well accepted, is quick and easy to do, and requires no digital technology.</td></tr>
+      <tr><td>UC007</td><td>Offline cryptographic verification</td><td>A Verifier verifies a DDCC:VS using digital cryptographic processes in an offline mode.</td></tr>
+      <tr><td>UC008</td><td>Online status check (national DDCC:VS)</td><td>This pathway is used when the DDCC:VS is being verified in the same jurisdiction as it was issued. A Verifier verifies a DDCC:VS using digital cryptographic processes in an online mode that includes a status check against the PHA’s DDCC:VS Registry Service and optionally the DDCC:VS Repository.</td></tr>
+      <tr><td>UC009</td><td>Online status check (international DDCC:VS)</td><td>This pathway is used when the DDCC:VS is being verified in a foreign jurisdiction to where it was issued. A Verifier verifies an internationally issued DDCC:VS using digital cryptographic processes in an online mode that includes a status check against the National PHA’s DDCC:VS Registry Service, which in turn accesses an International PHA’s DDCC:VS Registry and DDCC:VS Repository, if such services exist and such access is authorized by the issuing PHA. It is assumed in this workflow that a Verifier does not directly access an International PHA’s DDCC:VS Registry or Repository Service.</td></tr>
+    </table>
+
+   <a name="3"></a><h3 id="workflows_and_transactions">Workflows and Transactions </h3>
+ 
+ The following diagram illustrates the business requirement workflows as realized through the system level <a href="transactions.html">transactions</a>. 
+  
+   <!-- ?xml version="1.0" encoding="UTF-8" standalone="no"? --><svg contentStyleType="text/css" viewBox="0 0 2232 1989" zoomAndPan="magnify" preserveAspectRatio="none" width="2232px" style="width:2232px;height:1989px;" contentScriptType="application/ecmascript" version="1.1" height="1989px"><defs><filter width="300%" x="-1" y="-1" id="fmq8nf7g1tg85" height="300%"><feGaussianBlur result="blurOut" stdDeviation="2.0"></feGaussianBlur><feColorMatrix result="blurOut2" in="blurOut" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" type="matrix"></feColorMatrix><feOffset result="blurOut3" dx="4.0" dy="4.0" in="blurOut2"></feOffset><feBlend mode="normal" in="SourceGraphic" in2="blurOut3"></feBlend></filter></defs><g><text lengthAdjust="spacing" x="1037.25" font-size="18" textLength="154" y="28.708" font-family="sans-serif" fill="#000000">DDCC Workflows</text><rect width="488" x="1694.5" y="40.9531" style="stroke:#A80036;stroke-width:1.0;" fill="#DDDDDD" height="1943.0078"></rect><text font-weight="bold" lengthAdjust="spacing" x="1850.5" font-size="13" textLength="176" y="53.02" font-family="sans-serif" fill="#000000">Public Health Authortity</text><rect filter="url(#fmq8nf7g1tg85)" width="2188.5" x="10" y="189.1406" style="stroke:#000000;stroke-width:2.0;" fill="#FFFFFF" height="515.7891"></rect><rect filter="url(#fmq8nf7g1tg85)" width="948" x="1240.5" y="563.1328" style="stroke:#000000;stroke-width:2.0;" fill="#FFFFFF" height="61.3984"></rect><rect filter="url(#fmq8nf7g1tg85)" width="2208.5" x="10" y="718.9297" style="stroke:#000000;stroke-width:2.0;" fill="#FFFFFF" height="551.0547"></rect><rect filter="url(#fmq8nf7g1tg85)" width="1778" x="430.5" y="902.8594" style="stroke:#000000;stroke-width:2.0;" fill="#FFFFFF" height="301.8594"></rect><rect filter="url(#fmq8nf7g1tg85)" width="1478.5" x="720" y="1015.5234" style="stroke:#000000;stroke-width:2.0;" fill="#FFFFFF" height="182.1953"></rect><rect filter="url(#fmq8nf7g1tg85)" width="1458.5" x="730" y="1099.0547" style="stroke:#000000;stroke-width:2.0;" fill="#FFFFFF" height="91.6641"></rect><rect filter="url(#fmq8nf7g1tg85)" width="2198.5" x="10" y="1283.9844" style="stroke:#000000;stroke-width:2.0;" fill="#FFFFFF" height="547.7891"></rect><rect filter="url(#fmq8nf7g1tg85)" width="1235.5" x="730" y="1308.1172" style="stroke:#000000;stroke-width:2.0;" fill="#FFFFFF" height="75.3984"></rect><rect filter="url(#fmq8nf7g1tg85)" width="1645" x="553.5" y="1528.1797" style="stroke:#000000;stroke-width:2.0;" fill="#FFFFFF" height="196.1953"></rect><rect filter="url(#fmq8nf7g1tg85)" width="1458.5" x="730" y="1640.8438" style="stroke:#000000;stroke-width:2.0;" fill="#FFFFFF" height="76.5313"></rect><line y1="172.1406" x1="82" y2="1848.7734" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x2="82"></line><line y1="172.1406" x1="496.5" y2="1848.7734" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x2="496.5"></line><line y1="172.1406" x1="595.5" y2="1848.7734" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x2="595.5"></line><line y1="172.1406" x1="799" y2="1848.7734" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x2="799"></line><line y1="172.1406" x1="1330.5" y2="1848.7734" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x2="1330.5"></line><line y1="172.1406" x1="1753.5" y2="1848.7734" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x2="1753.5"></line><line y1="172.1406" x1="1887.5" y2="1848.7734" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x2="1887.5"></line><line y1="172.1406" x1="2071.5" y2="1848.7734" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x2="2071.5"></line><text lengthAdjust="spacing" x="20" font-size="14" textLength="118" y="168.8389" font-family="sans-serif" fill="#000000">Certificate Holder</text><ellipse filter="url(#fmq8nf7g1tg85)" cx="82" cy="98.8438" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;" fill="#FEFECE"></ellipse><path filter="url(#fmq8nf7g1tg85)" d="M82,106.8438 L82,133.8438 M69,114.8438 L95,114.8438 M82,133.8438 L69,148.8438 M82,133.8438 L95,148.8438 " style="stroke:#A80036;stroke-width:2.0;" fill="none"></path><text lengthAdjust="spacing" x="20" font-size="14" textLength="118" y="1860.7686" font-family="sans-serif" fill="#000000">Certificate Holder</text><ellipse filter="url(#fmq8nf7g1tg85)" cx="82" cy="1874.0703" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;" fill="#FEFECE"></ellipse><path filter="url(#fmq8nf7g1tg85)" d="M82,1882.0703 L82,1909.0703 M69,1890.0703 L95,1890.0703 M82,1909.0703 L69,1924.0703 M82,1909.0703 L95,1924.0703 " style="stroke:#A80036;stroke-width:2.0;" fill="none"></path><text lengthAdjust="spacing" x="454" font-size="14" textLength="80" y="119.9482" font-family="sans-serif" fill="#000000">Health Care</text><text lengthAdjust="spacing" x="469.5" font-size="14" textLength="49" y="136.2451" font-family="sans-serif" fill="#000000">Worker</text><text lengthAdjust="spacing" x="440.5" font-size="14" textLength="107" y="152.542" font-family="sans-serif" fill="#000000">(e.g. Vaccinator</text><text lengthAdjust="spacing" x="471" font-size="14" textLength="46" y="168.8389" font-family="sans-serif" fill="#000000">Nurse)</text><ellipse filter="url(#fmq8nf7g1tg85)" cx="497" cy="49.9531" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;" fill="#FEFECE"></ellipse><path filter="url(#fmq8nf7g1tg85)" d="M497,57.9531 L497,84.9531 M484,65.9531 L510,65.9531 M497,84.9531 L484,99.9531 M497,84.9531 L510,99.9531 " style="stroke:#A80036;stroke-width:2.0;" fill="none"></path><text lengthAdjust="spacing" x="454" font-size="14" textLength="80" y="1860.7686" font-family="sans-serif" fill="#000000">Health Care</text><text lengthAdjust="spacing" x="469.5" font-size="14" textLength="49" y="1877.0654" font-family="sans-serif" fill="#000000">Worker</text><text lengthAdjust="spacing" x="440.5" font-size="14" textLength="107" y="1893.3623" font-family="sans-serif" fill="#000000">(e.g. Vaccinator</text><text lengthAdjust="spacing" x="471" font-size="14" textLength="46" y="1909.6592" font-family="sans-serif" fill="#000000">Nurse)</text><ellipse filter="url(#fmq8nf7g1tg85)" cx="497" cy="1922.9609" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;" fill="#FEFECE"></ellipse><path filter="url(#fmq8nf7g1tg85)" d="M497,1930.9609 L497,1957.9609 M484,1938.9609 L510,1938.9609 M497,1957.9609 L484,1972.9609 M497,1957.9609 L510,1972.9609 " style="stroke:#A80036;stroke-width:2.0;" fill="none"></path><text lengthAdjust="spacing" x="563.5" font-size="14" textLength="59" y="168.8389" font-family="sans-serif" fill="#000000">Validator</text><ellipse filter="url(#fmq8nf7g1tg85)" cx="596" cy="98.8438" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;" fill="#FEFECE"></ellipse><path filter="url(#fmq8nf7g1tg85)" d="M596,106.8438 L596,133.8438 M583,114.8438 L609,114.8438 M596,133.8438 L583,148.8438 M596,133.8438 L609,148.8438 " style="stroke:#A80036;stroke-width:2.0;" fill="none"></path><text lengthAdjust="spacing" x="563.5" font-size="14" textLength="59" y="1860.7686" font-family="sans-serif" fill="#000000">Validator</text><ellipse filter="url(#fmq8nf7g1tg85)" cx="596" cy="1874.0703" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;" fill="#FEFECE"></ellipse><path filter="url(#fmq8nf7g1tg85)" d="M596,1882.0703 L596,1909.0703 M583,1890.0703 L609,1890.0703 M596,1909.0703 L583,1924.0703 M596,1909.0703 L609,1924.0703 " style="stroke:#A80036;stroke-width:2.0;" fill="none"></path><rect filter="url(#fmq8nf7g1tg85)" width="114" x="740" y="104.25" style="stroke:#A80036;stroke-width:1.5;" fill="#FEFECE" height="62.8906"></rect><text lengthAdjust="spacing" x="752" font-size="14" textLength="90" y="124.2451" font-family="sans-serif" fill="#000000">Digital Health</text><text lengthAdjust="spacing" x="769" font-size="14" textLength="56" y="140.542" font-family="sans-serif" fill="#000000">Solution</text><text lengthAdjust="spacing" x="747" font-size="14" textLength="100" y="156.8389" font-family="sans-serif" fill="#000000">(e.g openSRP)</text><rect filter="url(#fmq8nf7g1tg85)" width="114" x="740" y="1847.7734" style="stroke:#A80036;stroke-width:1.5;" fill="#FEFECE" height="62.8906"></rect><text lengthAdjust="spacing" x="752" font-size="14" textLength="90" y="1867.7686" font-family="sans-serif" fill="#000000">Digital Health</text><text lengthAdjust="spacing" x="769" font-size="14" textLength="56" y="1884.0654" font-family="sans-serif" fill="#000000">Solution</text><text lengthAdjust="spacing" x="747" font-size="14" textLength="100" y="1900.3623" font-family="sans-serif" fill="#000000">(e.g openSRP)</text><rect filter="url(#fmq8nf7g1tg85)" width="157" x="1250.5" y="104.25" style="stroke:#A80036;stroke-width:1.5;" fill="#FEFECE" height="62.8906"></rect><text lengthAdjust="spacing" x="1269" font-size="14" textLength="120" y="124.2451" font-family="sans-serif" fill="#000000">DDCC: Certificate</text><text lengthAdjust="spacing" x="1263.5" font-size="14" textLength="131" y="140.542" font-family="sans-serif" fill="#000000">Generation Service</text><text lengthAdjust="spacing" x="1257.5" font-size="14" textLength="143" y="156.8389" font-family="sans-serif" fill="#000000">(e.g. Reference App)</text><rect filter="url(#fmq8nf7g1tg85)" width="157" x="1250.5" y="1847.7734" style="stroke:#A80036;stroke-width:1.5;" fill="#FEFECE" height="62.8906"></rect><text lengthAdjust="spacing" x="1269" font-size="14" textLength="120" y="1867.7686" font-family="sans-serif" fill="#000000">DDCC: Certificate</text><text lengthAdjust="spacing" x="1263.5" font-size="14" textLength="131" y="1884.0654" font-family="sans-serif" fill="#000000">Generation Service</text><text lengthAdjust="spacing" x="1257.5" font-size="14" textLength="143" y="1900.3623" font-family="sans-serif" fill="#000000">(e.g. Reference App)</text><rect filter="url(#fmq8nf7g1tg85)" width="107" x="1698.5" y="120.5469" style="stroke:#A80036;stroke-width:1.5;" fill="#FEFECE" height="46.5938"></rect><text lengthAdjust="spacing" x="1710" font-size="14" textLength="84" y="140.542" font-family="sans-serif" fill="#000000">PKI Gateway</text><text lengthAdjust="spacing" x="1705.5" font-size="14" textLength="93" y="156.8389" font-family="sans-serif" fill="#000000">(e.g. DDCCG)</text><rect filter="url(#fmq8nf7g1tg85)" width="107" x="1698.5" y="1847.7734" style="stroke:#A80036;stroke-width:1.5;" fill="#FEFECE" height="46.5938"></rect><text lengthAdjust="spacing" x="1710" font-size="14" textLength="84" y="1867.7686" font-family="sans-serif" fill="#000000">PKI Gateway</text><text lengthAdjust="spacing" x="1705.5" font-size="14" textLength="93" y="1884.0654" font-family="sans-serif" fill="#000000">(e.g. DDCCG)</text><rect filter="url(#fmq8nf7g1tg85)" width="132" x="1819.5" y="120.5469" style="stroke:#A80036;stroke-width:1.5;" fill="#FEFECE" height="46.5938"></rect><text lengthAdjust="spacing" x="1826.5" font-size="14" textLength="118" y="140.542" font-family="sans-serif" fill="#000000">Knowledge Repo</text><text lengthAdjust="spacing" x="1846" font-size="14" textLength="79" y="156.8389" font-family="sans-serif" fill="#000000">FHIR Server</text><rect filter="url(#fmq8nf7g1tg85)" width="132" x="1819.5" y="1847.7734" style="stroke:#A80036;stroke-width:1.5;" fill="#FEFECE" height="46.5938"></rect><text lengthAdjust="spacing" x="1826.5" font-size="14" textLength="118" y="1867.7686" font-family="sans-serif" fill="#000000">Knowledge Repo</text><text lengthAdjust="spacing" x="1846" font-size="14" textLength="79" y="1884.0654" font-family="sans-serif" fill="#000000">FHIR Server</text><rect filter="url(#fmq8nf7g1tg85)" width="209" x="1965.5" y="87.9531" style="stroke:#A80036;stroke-width:1.5;" fill="#FEFECE" height="79.1875"></rect><text lengthAdjust="spacing" x="2033.5" font-size="14" textLength="73" y="107.9482" font-family="sans-serif" fill="#000000">Data Store</text><text lengthAdjust="spacing" x="2001.5" font-size="14" textLength="137" y="124.2451" font-family="sans-serif" fill="#000000">Trusted FHIR Server</text><text lengthAdjust="spacing" x="1985.5" font-size="14" textLength="169" y="140.542" font-family="sans-serif" fill="#000000">(DDCC Regsistry Service</text><text lengthAdjust="spacing" x="1972.5" font-size="14" textLength="195" y="156.8389" font-family="sans-serif" fill="#000000">&amp; DDCC Repository Service)</text><rect filter="url(#fmq8nf7g1tg85)" width="209" x="1965.5" y="1847.7734" style="stroke:#A80036;stroke-width:1.5;" fill="#FEFECE" height="79.1875"></rect><text lengthAdjust="spacing" x="2033.5" font-size="14" textLength="73" y="1867.7686" font-family="sans-serif" fill="#000000">Data Store</text><text lengthAdjust="spacing" x="2001.5" font-size="14" textLength="137" y="1884.0654" font-family="sans-serif" fill="#000000">Trusted FHIR Server</text><text lengthAdjust="spacing" x="1985.5" font-size="14" textLength="169" y="1900.3623" font-family="sans-serif" fill="#000000">(DDCC Regsistry Service</text><text lengthAdjust="spacing" x="1972.5" font-size="14" textLength="195" y="1916.6592" font-family="sans-serif" fill="#000000">&amp; DDCC Repository Service)</text><path d="M10,189.1406 L324,189.1406 L324,196.1406 L314,206.1406 L10,206.1406 L10,189.1406 " style="stroke:#000000;stroke-width:1.0;" fill="#EEEEEE"></path><rect width="2188.5" x="10" y="189.1406" style="stroke:#000000;stroke-width:2.0;" fill="none" height="515.7891"></rect><text font-weight="bold" lengthAdjust="spacing" x="25" font-size="13" textLength="269" y="202.2075" font-family="sans-serif" fill="#000000">Vaccination &amp; Certificate Generation</text><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="1342,253.6719,1332,257.6719,1342,261.6719,1338,257.6719"></polygon><line y1="257.6719" x1="1336" y2="257.6719" style="stroke:#A80036;stroke-width:1.0;" x2="1753"></line><text font-weight="bold" lengthAdjust="spacing" x="1348" font-size="13" textLength="23" y="237.4731" font-family="sans-serif" fill="#000000">01:</text><text lengthAdjust="spacing" x="1375" font-size="13" textLength="80" y="222.3403" font-family="sans-serif" fill="#000000">Establish PKI</text><text lengthAdjust="spacing" x="1375" font-size="13" textLength="84" y="237.4731" font-family="sans-serif" fill="#000000">trust network</text><text lengthAdjust="spacing" x="1375" font-size="13" textLength="371" y="252.606" font-family="sans-serif" fill="#000000">(unspecified, reference implementation is DDCC Gateway)</text><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="93,282.8047,83,286.8047,93,290.8047,89,286.8047"></polygon><line y1="286.8047" x1="87" y2="286.8047" style="stroke:#A80036;stroke-width:1.0;" x2="496"></line><text font-weight="bold" lengthAdjust="spacing" x="99" font-size="13" textLength="23" y="281.7388" font-family="sans-serif" fill="#000000">02:</text><text lengthAdjust="spacing" x="126" font-size="13" textLength="122" y="281.7388" font-family="sans-serif" fill="#000000">Patient registration</text><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="93,311.9375,83,315.9375,93,319.9375,89,315.9375"></polygon><line y1="315.9375" x1="87" y2="315.9375" style="stroke:#A80036;stroke-width:1.0;" x2="496"></line><text font-weight="bold" lengthAdjust="spacing" x="99" font-size="13" textLength="23" y="310.8716" font-family="sans-serif" fill="#000000">03:</text><text lengthAdjust="spacing" x="126" font-size="13" textLength="240" y="310.8716" font-family="sans-serif" fill="#000000">Vaccinate subject of certificate holder</text><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="787,341.0703,797,345.0703,787,349.0703,791,345.0703"></polygon><line y1="345.0703" x1="497" y2="345.0703" style="stroke:#A80036;stroke-width:1.0;" x2="793"></line><text font-weight="bold" lengthAdjust="spacing" x="504" font-size="13" textLength="23" y="340.0044" font-family="sans-serif" fill="#000000">04:</text><text lengthAdjust="spacing" x="531" font-size="13" textLength="160" y="340.0044" font-family="sans-serif" fill="#000000">Record vaccination event</text><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="1319,370.2031,1329,374.2031,1319,378.2031,1323,374.2031"></polygon><line y1="374.2031" x1="799" y2="374.2031" style="stroke:#A80036;stroke-width:1.0;" x2="1325"></line><text font-weight="bold" lengthAdjust="spacing" x="806" font-size="13" textLength="23" y="369.1372" font-family="sans-serif" fill="#000000">05:</text><text lengthAdjust="spacing" x="833" font-size="13" textLength="365" y="369.1372" font-family="sans-serif" fill="#000000">DDCC: Submit Health Event / Generate Health Certificate</text><line y1="418.4688" x1="1331" y2="418.4688" style="stroke:#A80036;stroke-width:1.0;" x2="1373"></line><line y1="418.4688" x1="1373" y2="431.4688" style="stroke:#A80036;stroke-width:1.0;" x2="1373"></line><line y1="431.4688" x1="1332" y2="431.4688" style="stroke:#A80036;stroke-width:1.0;" x2="1373"></line><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="1342,427.4688,1332,431.4688,1342,435.4688,1338,431.4688"></polygon><text font-weight="bold" lengthAdjust="spacing" x="1338" font-size="13" textLength="23" y="405.8364" font-family="sans-serif" fill="#000000">06:</text><text lengthAdjust="spacing" x="1365" font-size="13" textLength="382" y="398.27" font-family="sans-serif" fill="#000000">Ensure Digital Health Solution has node level authentication</text><text lengthAdjust="spacing" x="1365" font-size="13" textLength="64" y="413.4028" font-family="sans-serif" fill="#000000">IHE: ATNA</text><line y1="475.7344" x1="1331" y2="475.7344" style="stroke:#A80036;stroke-width:1.0;" x2="1373"></line><line y1="475.7344" x1="1373" y2="488.7344" style="stroke:#A80036;stroke-width:1.0;" x2="1373"></line><line y1="488.7344" x1="1332" y2="488.7344" style="stroke:#A80036;stroke-width:1.0;" x2="1373"></line><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="1342,484.7344,1332,488.7344,1342,492.7344,1338,488.7344"></polygon><text font-weight="bold" lengthAdjust="spacing" x="1338" font-size="13" textLength="23" y="463.1021" font-family="sans-serif" fill="#000000">07:</text><text lengthAdjust="spacing" x="1365" font-size="13" textLength="171" y="455.5356" font-family="sans-serif" fill="#000000">Log transaction / audit trail</text><text lengthAdjust="spacing" x="1365" font-size="13" textLength="132" y="470.6685" font-family="sans-serif" fill="#000000">IHE: ATNA (RESTful?)</text><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="2060,544.1328,2070,548.1328,2060,552.1328,2064,548.1328"></polygon><line y1="548.1328" x1="1331" y2="548.1328" style="stroke:#A80036;stroke-width:1.0;" x2="2066"></line><text font-weight="bold" lengthAdjust="spacing" x="1338" font-size="13" textLength="23" y="527.9341" font-family="sans-serif" fill="#000000">08:</text><text lengthAdjust="spacing" x="1365" font-size="13" textLength="213" y="512.8013" font-family="sans-serif" fill="#000000">DDCC: Register Health Certificate</text><text lengthAdjust="spacing" x="1365" font-size="13" textLength="82" y="527.9341" font-family="sans-serif" fill="#000000">MHDS: ITI-65</text><text lengthAdjust="spacing" x="1365" font-size="13" textLength="379" y="543.0669" font-family="sans-serif" fill="#000000">FHIR: create Bundle: SubmissionSet &amp; DocumentReference</text><path d="M1240.5,563.1328 L1310.5,563.1328 L1310.5,570.1328 L1300.5,580.1328 L1240.5,580.1328 L1240.5,563.1328 " style="stroke:#000000;stroke-width:1.0;" fill="#EEEEEE"></path><rect width="948" x="1240.5" y="563.1328" style="stroke:#000000;stroke-width:2.0;" fill="none" height="61.3984"></rect><text font-weight="bold" lengthAdjust="spacing" x="1255.5" font-size="13" textLength="25" y="576.1997" font-family="sans-serif" fill="#000000">opt</text><text font-weight="bold" lengthAdjust="spacing" x="1325.5" font-size="11" textLength="140" y="575.3433" font-family="sans-serif" fill="#000000">[store online content]</text><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="2060,612.5313,2070,616.5313,2060,620.5313,2064,616.5313"></polygon><line y1="616.5313" x1="1331" y2="616.5313" style="stroke:#A80036;stroke-width:1.0;" x2="2066"></line><text font-weight="bold" lengthAdjust="spacing" x="1338" font-size="13" textLength="23" y="603.8989" font-family="sans-serif" fill="#000000">09:</text><text lengthAdjust="spacing" x="1365" font-size="13" textLength="196" y="596.3325" font-family="sans-serif" fill="#000000">DDCC: Store Health Certificate</text><text lengthAdjust="spacing" x="1365" font-size="13" textLength="244" y="611.4653" font-family="sans-serif" fill="#000000">FHIR: Create Bundle: DDCC Document</text><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="810,663.7969,800,667.7969,810,671.7969,806,667.7969"></polygon><line y1="667.7969" x1="804" y2="667.7969" style="stroke:#A80036;stroke-width:1.0;" x2="1330"></line><text font-weight="bold" lengthAdjust="spacing" x="816" font-size="13" textLength="23" y="655.1646" font-family="sans-serif" fill="#000000">10:</text><text lengthAdjust="spacing" x="843" font-size="13" textLength="284" y="647.5981" font-family="sans-serif" fill="#000000">DDCC: Generate Health Certificate response</text><text lengthAdjust="spacing" x="843" font-size="13" textLength="193" y="662.731" font-family="sans-serif" fill="#000000">FHIR Bundle: DDCC Document</text><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="93,692.9297,83,696.9297,93,700.9297,89,696.9297"></polygon><line y1="696.9297" x1="87" y2="696.9297" style="stroke:#A80036;stroke-width:1.0;" x2="798"></line><text font-weight="bold" lengthAdjust="spacing" x="99" font-size="13" textLength="23" y="691.8638" font-family="sans-serif" fill="#000000">11:</text><text lengthAdjust="spacing" x="126" font-size="13" textLength="371" y="691.8638" font-family="sans-serif" fill="#000000">Share HCID and/or QR codes (paper or wallet, unspecified)</text><path d="M10,718.9297 L193,718.9297 L193,725.9297 L183,735.9297 L10,735.9297 L10,718.9297 " style="stroke:#000000;stroke-width:1.0;" fill="#EEEEEE"></path><rect width="2208.5" x="10" y="718.9297" style="stroke:#000000;stroke-width:2.0;" fill="none" height="551.0547"></rect><text font-weight="bold" lengthAdjust="spacing" x="25" font-size="13" textLength="138" y="731.9966" font-family="sans-serif" fill="#000000">Contuinuty of Care</text><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="93,753.1953,83,757.1953,93,761.1953,89,757.1953"></polygon><line y1="757.1953" x1="87" y2="757.1953" style="stroke:#A80036;stroke-width:1.0;" x2="496"></line><text font-weight="bold" lengthAdjust="spacing" x="99" font-size="13" textLength="23" y="752.1294" font-family="sans-serif" fill="#000000">12:</text><text lengthAdjust="spacing" x="126" font-size="13" textLength="122" y="752.1294" font-family="sans-serif" fill="#000000">Patient registration</text><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="485,782.3281,495,786.3281,485,790.3281,489,786.3281"></polygon><line y1="786.3281" x1="82" y2="786.3281" style="stroke:#A80036;stroke-width:1.0;" x2="491"></line><text font-weight="bold" lengthAdjust="spacing" x="89" font-size="13" textLength="23" y="781.2622" font-family="sans-serif" fill="#000000">13:</text><text lengthAdjust="spacing" x="116" font-size="13" textLength="95" y="781.2622" font-family="sans-serif" fill="#000000">Share QR code</text><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="787,811.4609,797,815.4609,787,819.4609,791,815.4609"></polygon><line y1="815.4609" x1="497" y2="815.4609" style="stroke:#A80036;stroke-width:1.0;" x2="793"></line><text font-weight="bold" lengthAdjust="spacing" x="504" font-size="13" textLength="23" y="810.395" font-family="sans-serif" fill="#000000">14:</text><text lengthAdjust="spacing" x="531" font-size="13" textLength="89" y="810.395" font-family="sans-serif" fill="#000000">Scan QR code</text><line y1="874.8594" x1="799" y2="874.8594" style="stroke:#A80036;stroke-width:1.0;" x2="841"></line><line y1="874.8594" x1="841" y2="887.8594" style="stroke:#A80036;stroke-width:1.0;" x2="841"></line><line y1="887.8594" x1="800" y2="887.8594" style="stroke:#A80036;stroke-width:1.0;" x2="841"></line><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="810,883.8594,800,887.8594,810,891.8594,806,887.8594"></polygon><text font-weight="bold" lengthAdjust="spacing" x="806" font-size="13" textLength="23" y="854.6606" font-family="sans-serif" fill="#000000">15:</text><text lengthAdjust="spacing" x="833" font-size="13" textLength="135" y="839.5278" font-family="sans-serif" fill="#000000">Identify QR code type</text><text lengthAdjust="spacing" x="833" font-size="13" textLength="70" y="854.6606" font-family="sans-serif" fill="#000000">Deserialize</text><text lengthAdjust="spacing" x="833" font-size="13" textLength="157" y="869.7935" font-family="sans-serif" fill="#000000">Map to DDCC Document</text><path d="M430.5,902.8594 L500.5,902.8594 L500.5,909.8594 L490.5,919.8594 L430.5,919.8594 L430.5,902.8594 " style="stroke:#000000;stroke-width:1.0;" fill="#EEEEEE"></path><rect width="1778" x="430.5" y="902.8594" style="stroke:#000000;stroke-width:2.0;" fill="none" height="301.8594"></rect><text font-weight="bold" lengthAdjust="spacing" x="445.5" font-size="13" textLength="25" y="915.9263" font-family="sans-serif" fill="#000000">opt</text><text font-weight="bold" lengthAdjust="spacing" x="515.5" font-size="11" textLength="157" y="915.0698" font-family="sans-serif" fill="#000000">[retrieve online content]</text><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="508,937.125,498,941.125,508,945.125,504,941.125"></polygon><line y1="941.125" x1="502" y2="941.125" style="stroke:#A80036;stroke-width:1.0;" x2="1753"></line><text font-weight="bold" lengthAdjust="spacing" x="514" font-size="13" textLength="23" y="936.0591" font-family="sans-serif" fill="#000000">16:</text><text lengthAdjust="spacing" x="541" font-size="13" textLength="553" y="936.0591" font-family="sans-serif" fill="#000000">Authenticate and authorize usage (unspecified, reference implementation is KeyCloak)</text><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="2060,996.5234,2070,1000.5234,2060,1004.5234,2064,1000.5234"></polygon><line y1="1000.5234" x1="799" y2="1000.5234" style="stroke:#A80036;stroke-width:1.0;" x2="2066"></line><text font-weight="bold" lengthAdjust="spacing" x="806" font-size="13" textLength="23" y="980.3247" font-family="sans-serif" fill="#000000">17:</text><text lengthAdjust="spacing" x="833" font-size="13" textLength="187" y="965.1919" font-family="sans-serif" fill="#000000">DDCC: Retrieve Health Folder</text><text lengthAdjust="spacing" x="833" font-size="13" textLength="73" y="980.3247" font-family="sans-serif" fill="#000000">MHD: ITI-66</text><text lengthAdjust="spacing" x="833" font-size="13" textLength="98" y="995.4575" font-family="sans-serif" fill="#000000">FHIR: query List</text><path d="M720,1015.5234 L797,1015.5234 L797,1022.5234 L787,1032.5234 L720,1032.5234 L720,1015.5234 " style="stroke:#000000;stroke-width:1.0;" fill="#EEEEEE"></path><rect width="1478.5" x="720" y="1015.5234" style="stroke:#000000;stroke-width:2.0;" fill="none" height="182.1953"></rect><text font-weight="bold" lengthAdjust="spacing" x="735" font-size="13" textLength="32" y="1028.5903" font-family="sans-serif" fill="#000000">loop</text><text font-weight="bold" lengthAdjust="spacing" x="812" font-size="11" textLength="139" y="1027.7339" font-family="sans-serif" fill="#000000">[DocumentReference]</text><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="2060,1080.0547,2070,1084.0547,2060,1088.0547,2064,1084.0547"></polygon><line y1="1084.0547" x1="799" y2="1084.0547" style="stroke:#A80036;stroke-width:1.0;" x2="2066"></line><text font-weight="bold" lengthAdjust="spacing" x="806" font-size="13" textLength="23" y="1063.856" font-family="sans-serif" fill="#000000">18:</text><text lengthAdjust="spacing" x="833" font-size="13" textLength="213" y="1048.7231" font-family="sans-serif" fill="#000000">DDCC: Retrieve Health Certificate</text><text lengthAdjust="spacing" x="833" font-size="13" textLength="73" y="1063.856" font-family="sans-serif" fill="#000000">MHD: ITI-68</text><text lengthAdjust="spacing" x="833" font-size="13" textLength="250" y="1078.9888" font-family="sans-serif" fill="#000000">FHIR: retrieve Bundle: DDCC Document</text><path d="M730,1099.0547 L807,1099.0547 L807,1106.0547 L797,1116.0547 L730,1116.0547 L730,1099.0547 " style="stroke:#000000;stroke-width:1.0;" fill="#EEEEEE"></path><rect width="1458.5" x="730" y="1099.0547" style="stroke:#000000;stroke-width:2.0;" fill="none" height="91.6641"></rect><text font-weight="bold" lengthAdjust="spacing" x="745" font-size="13" textLength="32" y="1112.1216" font-family="sans-serif" fill="#000000">loop</text><text font-weight="bold" lengthAdjust="spacing" x="822" font-size="11" textLength="315" y="1111.2651" font-family="sans-serif" fill="#000000">[DocumentReference: retrieve QR-codes or PDFs]</text><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="2060,1178.7188,2070,1182.7188,2060,1186.7188,2064,1182.7188"></polygon><line y1="1182.7188" x1="799" y2="1182.7188" style="stroke:#A80036;stroke-width:1.0;" x2="2066"></line><text font-weight="bold" lengthAdjust="spacing" x="806" font-size="13" textLength="23" y="1154.9536" font-family="sans-serif" fill="#000000">19:</text><text lengthAdjust="spacing" x="833" font-size="13" textLength="281" y="1132.2544" font-family="sans-serif" fill="#000000">DDCC: Retrieve Health Certificate Reference</text><text lengthAdjust="spacing" x="833" font-size="13" textLength="73" y="1147.3872" font-family="sans-serif" fill="#000000">MHD: ITI-67</text><text lengthAdjust="spacing" x="833" font-size="13" textLength="224" y="1162.52" font-family="sans-serif" fill="#000000">FHIR: retrieve DocumentReference:</text><text lengthAdjust="spacing" x="837" font-size="13" textLength="249" y="1177.6528" font-family="sans-serif" fill="#000000">attachments of pdf or image (e.g. png)</text><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="787,1228.8516,797,1232.8516,787,1236.8516,791,1232.8516"></polygon><line y1="1232.8516" x1="497" y2="1232.8516" style="stroke:#A80036;stroke-width:1.0;" x2="793"></line><text font-weight="bold" lengthAdjust="spacing" x="504" font-size="13" textLength="23" y="1227.7856" font-family="sans-serif" fill="#000000">20:</text><text lengthAdjust="spacing" x="531" font-size="13" textLength="181" y="1227.7856" font-family="sans-serif" fill="#000000">Review immunization history</text><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="93,1257.9844,83,1261.9844,93,1265.9844,89,1261.9844"></polygon><line y1="1261.9844" x1="87" y2="1261.9844" style="stroke:#A80036;stroke-width:1.0;" x2="496"></line><text font-weight="bold" lengthAdjust="spacing" x="99" font-size="13" textLength="23" y="1256.9185" font-family="sans-serif" fill="#000000">21:</text><text lengthAdjust="spacing" x="126" font-size="13" textLength="364" y="1256.9185" font-family="sans-serif" fill="#000000">Take any needed clinical action on subject of Card Holder</text><path d="M10,1283.9844 L167,1283.9844 L167,1290.9844 L157,1300.9844 L10,1300.9844 L10,1283.9844 " style="stroke:#000000;stroke-width:1.0;" fill="#EEEEEE"></path><rect width="2198.5" x="10" y="1283.9844" style="stroke:#000000;stroke-width:2.0;" fill="none" height="547.7891"></rect><text font-weight="bold" lengthAdjust="spacing" x="25" font-size="13" textLength="112" y="1297.0513" font-family="sans-serif" fill="#000000">Validate status</text><path d="M730,1308.1172 L800,1308.1172 L800,1315.1172 L790,1325.1172 L730,1325.1172 L730,1308.1172 " style="stroke:#000000;stroke-width:1.0;" fill="#EEEEEE"></path><rect width="1235.5" x="730" y="1308.1172" style="stroke:#000000;stroke-width:2.0;" fill="none" height="75.3984"></rect><text font-weight="bold" lengthAdjust="spacing" x="745" font-size="13" textLength="25" y="1321.1841" font-family="sans-serif" fill="#000000">opt</text><text font-weight="bold" lengthAdjust="spacing" x="815" font-size="11" textLength="98" y="1320.3276" font-family="sans-serif" fill="#000000">[refresh cache]</text><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="1875.5,1342.3828,1885.5,1346.3828,1875.5,1350.3828,1879.5,1346.3828"></polygon><line y1="1346.3828" x1="799" y2="1346.3828" style="stroke:#A80036;stroke-width:1.0;" x2="1881.5"></line><text font-weight="bold" lengthAdjust="spacing" x="806" font-size="13" textLength="23" y="1341.3169" font-family="sans-serif" fill="#000000">22:</text><text lengthAdjust="spacing" x="833" font-size="13" textLength="522" y="1341.3169" font-family="sans-serif" fill="#000000">Refresh FHIR ValueSet &amp; Library resources (CQL/ELM) for validation business rules</text><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="1742,1371.5156,1752,1375.5156,1742,1379.5156,1746,1375.5156"></polygon><line y1="1375.5156" x1="799" y2="1375.5156" style="stroke:#A80036;stroke-width:1.0;" x2="1748"></line><text font-weight="bold" lengthAdjust="spacing" x="806" font-size="13" textLength="23" y="1370.4497" font-family="sans-serif" fill="#000000">23:</text><text lengthAdjust="spacing" x="833" font-size="13" textLength="328" y="1370.4497" font-family="sans-serif" fill="#000000">Refresh trust network public keys &amp; revoked key list</text><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="584,1407.6484,594,1411.6484,584,1415.6484,588,1411.6484"></polygon><line y1="1411.6484" x1="82" y2="1411.6484" style="stroke:#A80036;stroke-width:1.0;" x2="590"></line><text font-weight="bold" lengthAdjust="spacing" x="89" font-size="13" textLength="23" y="1406.5825" font-family="sans-serif" fill="#000000">24:</text><text lengthAdjust="spacing" x="116" font-size="13" textLength="95" y="1406.5825" font-family="sans-serif" fill="#000000">Share QR code</text><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="787,1436.7813,797,1440.7813,787,1444.7813,791,1440.7813"></polygon><line y1="1440.7813" x1="596" y2="1440.7813" style="stroke:#A80036;stroke-width:1.0;" x2="793"></line><text font-weight="bold" lengthAdjust="spacing" x="603" font-size="13" textLength="23" y="1435.7153" font-family="sans-serif" fill="#000000">25:</text><text lengthAdjust="spacing" x="630" font-size="13" textLength="89" y="1435.7153" font-family="sans-serif" fill="#000000">Scan QR code</text><line y1="1500.1797" x1="799" y2="1500.1797" style="stroke:#A80036;stroke-width:1.0;" x2="841"></line><line y1="1500.1797" x1="841" y2="1513.1797" style="stroke:#A80036;stroke-width:1.0;" x2="841"></line><line y1="1513.1797" x1="800" y2="1513.1797" style="stroke:#A80036;stroke-width:1.0;" x2="841"></line><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="810,1509.1797,800,1513.1797,810,1517.1797,806,1513.1797"></polygon><text font-weight="bold" lengthAdjust="spacing" x="806" font-size="13" textLength="23" y="1479.981" font-family="sans-serif" fill="#000000">26:</text><text lengthAdjust="spacing" x="833" font-size="13" textLength="135" y="1464.8481" font-family="sans-serif" fill="#000000">Identify QR code type</text><text lengthAdjust="spacing" x="833" font-size="13" textLength="70" y="1479.981" font-family="sans-serif" fill="#000000">Deserialize</text><text lengthAdjust="spacing" x="833" font-size="13" textLength="157" y="1495.1138" font-family="sans-serif" fill="#000000">Map to DDCC Document</text><path d="M553.5,1528.1797 L623.5,1528.1797 L623.5,1535.1797 L613.5,1545.1797 L553.5,1545.1797 L553.5,1528.1797 " style="stroke:#000000;stroke-width:1.0;" fill="#EEEEEE"></path><rect width="1645" x="553.5" y="1528.1797" style="stroke:#000000;stroke-width:2.0;" fill="none" height="196.1953"></rect><text font-weight="bold" lengthAdjust="spacing" x="568.5" font-size="13" textLength="25" y="1541.2466" font-family="sans-serif" fill="#000000">opt</text><text font-weight="bold" lengthAdjust="spacing" x="638.5" font-size="11" textLength="157" y="1540.3901" font-family="sans-serif" fill="#000000">[retrieve online content]</text><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="607,1562.4453,597,1566.4453,607,1570.4453,603,1566.4453"></polygon><line y1="1566.4453" x1="601" y2="1566.4453" style="stroke:#A80036;stroke-width:1.0;" x2="1753"></line><text font-weight="bold" lengthAdjust="spacing" x="613" font-size="13" textLength="23" y="1561.3794" font-family="sans-serif" fill="#000000">27:</text><text lengthAdjust="spacing" x="640" font-size="13" textLength="553" y="1561.3794" font-family="sans-serif" fill="#000000">Authenticate and authorize usage (unspecified, reference implementation is KeyCloak)</text><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="2060,1621.8438,2070,1625.8438,2060,1629.8438,2064,1625.8438"></polygon><line y1="1625.8438" x1="799" y2="1625.8438" style="stroke:#A80036;stroke-width:1.0;" x2="2066"></line><text font-weight="bold" lengthAdjust="spacing" x="806" font-size="13" textLength="23" y="1605.645" font-family="sans-serif" fill="#000000">28:</text><text lengthAdjust="spacing" x="833" font-size="13" textLength="187" y="1590.5122" font-family="sans-serif" fill="#000000">DDCC: Retrieve Health Folder</text><text lengthAdjust="spacing" x="833" font-size="13" textLength="73" y="1605.645" font-family="sans-serif" fill="#000000">MHD: ITI-66</text><text lengthAdjust="spacing" x="833" font-size="13" textLength="98" y="1620.7778" font-family="sans-serif" fill="#000000">FHIR: query List</text><path d="M730,1640.8438 L807,1640.8438 L807,1647.8438 L797,1657.8438 L730,1657.8438 L730,1640.8438 " style="stroke:#000000;stroke-width:1.0;" fill="#EEEEEE"></path><rect width="1458.5" x="730" y="1640.8438" style="stroke:#000000;stroke-width:2.0;" fill="none" height="76.5313"></rect><text font-weight="bold" lengthAdjust="spacing" x="745" font-size="13" textLength="32" y="1653.9106" font-family="sans-serif" fill="#000000">loop</text><text font-weight="bold" lengthAdjust="spacing" x="822" font-size="11" textLength="139" y="1653.0542" font-family="sans-serif" fill="#000000">[DocumentReference]</text><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="2060,1705.375,2070,1709.375,2060,1713.375,2064,1709.375"></polygon><line y1="1709.375" x1="799" y2="1709.375" style="stroke:#A80036;stroke-width:1.0;" x2="2066"></line><text font-weight="bold" lengthAdjust="spacing" x="806" font-size="13" textLength="23" y="1689.1763" font-family="sans-serif" fill="#000000">29:</text><text lengthAdjust="spacing" x="833" font-size="13" textLength="213" y="1674.0435" font-family="sans-serif" fill="#000000">DDCC: Retrieve Health Certificate</text><text lengthAdjust="spacing" x="833" font-size="13" textLength="73" y="1689.1763" font-family="sans-serif" fill="#000000">MHD: ITI-68</text><text lengthAdjust="spacing" x="833" font-size="13" textLength="250" y="1704.3091" font-family="sans-serif" fill="#000000">FHIR: retrieve Bundle: DDCC Document</text><line y1="1752.5078" x1="799" y2="1752.5078" style="stroke:#A80036;stroke-width:1.0;" x2="841"></line><line y1="1752.5078" x1="841" y2="1765.5078" style="stroke:#A80036;stroke-width:1.0;" x2="841"></line><line y1="1765.5078" x1="800" y2="1765.5078" style="stroke:#A80036;stroke-width:1.0;" x2="841"></line><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="810,1761.5078,800,1765.5078,810,1769.5078,806,1765.5078"></polygon><text font-weight="bold" lengthAdjust="spacing" x="806" font-size="13" textLength="23" y="1747.4419" font-family="sans-serif" fill="#000000">30:</text><text lengthAdjust="spacing" x="833" font-size="13" textLength="491" y="1747.4419" font-family="sans-serif" fill="#000000">Exectute CQL/ELM validation status business rules against DDCC Documents</text><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="787,1790.6406,797,1794.6406,787,1798.6406,791,1794.6406"></polygon><line y1="1794.6406" x1="596" y2="1794.6406" style="stroke:#A80036;stroke-width:1.0;" x2="793"></line><text font-weight="bold" lengthAdjust="spacing" x="603" font-size="13" textLength="23" y="1789.5747" font-family="sans-serif" fill="#000000">31:</text><text lengthAdjust="spacing" x="630" font-size="13" textLength="152" y="1789.5747" font-family="sans-serif" fill="#000000">Review validation status</text><polygon style="stroke:#A80036;stroke-width:1.0;" fill="#A80036" points="93,1819.7734,83,1823.7734,93,1827.7734,89,1823.7734"></polygon><line y1="1823.7734" x1="87" y2="1823.7734" style="stroke:#A80036;stroke-width:1.0;" x2="595"></line><text font-weight="bold" lengthAdjust="spacing" x="99" font-size="13" textLength="23" y="1818.7075" font-family="sans-serif" fill="#000000">32:</text><text lengthAdjust="spacing" x="126" font-size="13" textLength="212" y="1818.7075" font-family="sans-serif" fill="#000000">Indicate result of validation check</text></g></svg>
+  
+
+  
+</div>
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p><a name="l934">​</a>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc-vs#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 10, 2021 17:03+0000">2021-12-10</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/WorldHealthOrganization/ddcc/projects/1" target="_blank">Issues</a>
+                
+                 | <a style="color: #81BEF7" href="http://worldhealthorganization.github.io/ddcc/history.html" target="_blank">Version History <img src="external.png" alt="external" style="vertical-align: baseline"/></a> |
+                 <a rel="license" style="color: #81BEF7" href="license.html"></a> |
+                   <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | -->
+
+          
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+  
+    
+    <script type="text/javascript">
+     /*   <!-- [CDATA[ */
+        $(':header[id]').each(function() { // apply this to each heading
+          var id = $(this).attr('id');
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Feedback';  // The feedback label is a string
+            
+
+            
+              var parameterFieldId = '';
+              var parameterVariableName = '';
+              var parameterValue = '';
+              parameterFieldId = 'entry.'+parseInt(1353807103).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
+              parameterVariableName = 'pageTitle';
+
+              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+                default:
+                    console.log("Parameter value not supported");
+                    break;
+                  case "pageTitle":
+                    parameterValue = encodeURIComponent($(document).attr('title'));
+                    break;
+                  case "sectionId":
+                    parameterValue = id;
+                    break;
+                  case "sectionName":
+                    parameterValue = document.getElementById(id).textContent;
+                    break;
+              }
+/* <![CDATA[ */
+              feedbackurl = feedbackurl + '&';
+              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
+/* ]] --> */
+            
+              var parameterFieldId = '';
+              var parameterVariableName = '';
+              var parameterValue = '';
+              parameterFieldId = 'entry.'+parseInt(247644557).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
+              parameterVariableName = 'sectionName';
+
+              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+                default:
+                    console.log("Parameter value not supported");
+                    break;
+                  case "pageTitle":
+                    parameterValue = encodeURIComponent($(document).attr('title'));
+                    break;
+                  case "sectionId":
+                    parameterValue = id;
+                    break;
+                  case "sectionName":
+                    parameterValue = document.getElementById(id).textContent;
+                    break;
+              }
+/*   <!-- [CDATA[ */
+              feedbackurl = feedbackurl + '&';
+              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
+/* ]] --> */
+            
+            
+          if (id) { //To make sure the element has an id
+            $(this).append(function () {
+              return $('<a></a>', {
+                id,
+                href: feedbackurl,
+                text: feedbacklabel+' ' ,
+                class: 'feedback',
+                target: '_blank',
+                onclick: 'window.open('+feedbackurl+',\'newwindow\',\'width=300,height=250\');return false;'
+        
+              });
+            });
+          }
+        }) 
+/* ]]&gt; */
+      </script>  
+    
+  
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

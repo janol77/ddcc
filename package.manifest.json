@@ -1,0 +1,6 @@
+{
+  "version": "0.2.1",
+  "fhirVersion": "[4.0.1]",
+  "date": "20211210170304",
+  "name": "fhir.who.ddcc-vs"
+}

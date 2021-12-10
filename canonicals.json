@@ -1,0 +1,331 @@
+[
+  {
+    "id": "Immunization-pre-uv-ips",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-pre-uv-ips",
+    "version": "0.2.1",
+    "name": "ImmunizationUvIps"
+  },
+  {
+    "id": "Patient-pre-uv-ips",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-pre-uv-ips",
+    "version": "0.2.1",
+    "name": "PatientUvIps"
+  },
+  {
+    "id": "WHO.DDCC.Generator",
+    "type": "CapabilityStatement",
+    "url": "http://worldhealthorganization.github.io/ddcc/CapabilityStatement/WHO.DDCC.Generator",
+    "version": "0.2.1",
+    "name": "WHO_DDCC_Generator"
+  },
+  {
+    "id": "WHO.DDCC.RegistryService",
+    "type": "CapabilityStatement",
+    "url": "http://worldhealthorganization.github.io/ddcc/CapabilityStatement/WHO.DDCC.RegistryService",
+    "version": "0.2.1",
+    "name": "WHO_DDCC_RegistryService"
+  },
+  {
+    "id": "DDCC-Example-Test-CodeSystem",
+    "type": "CodeSystem",
+    "url": "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Example-Test-CodeSystem",
+    "version": "0.2.1",
+    "name": "DDCC_Example_Test_CodeSystem"
+  },
+  {
+    "id": "DDCC-Folder-DesignationType",
+    "type": "CodeSystem",
+    "url": "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Folder-DesignationType",
+    "version": "0.2.1",
+    "name": "DDCC_Folder_DesignationType_Codesystem"
+  },
+  {
+    "id": "DDCC-QR-Category-Usage-CodeSystem",
+    "type": "CodeSystem",
+    "url": "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem",
+    "version": "0.2.1",
+    "name": "DDCC_QR_Category_Usage_CodeSystem"
+  },
+  {
+    "id": "DDCC-QR-Format-CodeSystem",
+    "type": "CodeSystem",
+    "url": "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem",
+    "version": "0.2.1",
+    "name": "DDCC_QR_Format_CodeSystem"
+  },
+  {
+    "id": "who-ddcc-map-icd11-icd10-disease-targeted",
+    "type": "ConceptMap",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_ICD10_Disease_Targeted",
+    "version": "0.2.1",
+    "name": "ICD_11_ICD_10_COVID19_Disease"
+  },
+  {
+    "id": "who-ddcc-map-icd11-sct-disease-targeted",
+    "type": "ConceptMap",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_SCT_Disease_Targeted",
+    "version": "0.2.1",
+    "name": "ICD_11_SNOMED_CT_COVID19_Disease"
+  },
+  {
+    "id": "who-ddcc-map-icd11-sct-vaccines",
+    "type": "ConceptMap",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_SCT_Vaccines",
+    "version": "0.2.1",
+    "name": "ICD11_SNOMED_CT_COVID19_vaccines"
+  },
+  {
+    "id": "DDCCVSCoreDataSetQuestionnaire",
+    "type": "Questionnaire",
+    "url": "http://worldhealthorganization.github.io/ddcc/DDCCVSCoreDataSetQuestionnaire",
+    "version": "0.2.1",
+    "name": "DDCCCoreDataSetQuestionnaire"
+  },
+  {
+    "id": "fhir.who.ddcc-vs",
+    "type": "ImplementationGuide",
+    "url": "http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc-vs",
+    "version": "0.2.1",
+    "name": "ddccvs"
+  },
+  {
+    "id": "DDCC-QuestionnaireResponse-generateHealthCertificate",
+    "type": "OperationDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCGenerateHealthCertificate",
+    "version": "0.2.1",
+    "name": "QuestionnaireResponse_Generate_Health_Certificate"
+  },
+  {
+    "id": "DDCCHCIDRegistrationQuestionnaire",
+    "type": "Questionnaire",
+    "url": "http://worldhealthorganization.github.io/ddcc/Questionnaire/DDCCHCIDRegistrationQuestionnaire",
+    "version": "0.2.1",
+    "name": "DDCCHCIDRegistrationQuestionnaire"
+  },
+  {
+    "id": "DDCCAddBundle",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCAddBundle",
+    "version": "0.2.1",
+    "name": "DDCCAddBundle"
+  },
+  {
+    "id": "DDCCComposition",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition",
+    "version": "0.2.1",
+    "name": "DDCCComposition"
+  },
+  {
+    "id": "DDCCCoreDataSet",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSet",
+    "version": "0.2.1",
+    "name": "DDCCCoreDataSet"
+  },
+  {
+    "id": "DDCCCoreDataSetCoC",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSetCoC",
+    "version": "0.2.1",
+    "name": "DDCCCoreDataSetCoC"
+  },
+  {
+    "id": "DDCCCoreDataSetPoV",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSetPoV",
+    "version": "0.2.1",
+    "name": "DDCCCoreDataSetPoV"
+  },
+  {
+    "id": "DDCCCountryOfVaccination",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination",
+    "version": "0.2.1",
+    "name": "DDCCCountryOfVaccination"
+  },
+  {
+    "id": "DDCCDocument",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument",
+    "version": "0.2.1",
+    "name": "DDCCDocument"
+  },
+  {
+    "id": "DDCCDocumentReference",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReference",
+    "version": "0.2.1",
+    "name": "DDCCDocumentReference"
+  },
+  {
+    "id": "DDCCDocumentReferenceQR",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReferenceQR",
+    "version": "0.2.1",
+    "name": "DDCCDocumentReferenceQR"
+  },
+  {
+    "id": "DDCCFolder",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder",
+    "version": "0.2.1",
+    "name": "DDCCFolder"
+  },
+  {
+    "id": "DDCCGenerateHealthCertificateParameters",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCGenerateHealthCertificateParameters",
+    "version": "0.2.1",
+    "name": "DDCCGenerateHealthCertificateParameters"
+  },
+  {
+    "id": "DDCCImmunization",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization",
+    "version": "0.2.1",
+    "name": "DDCCImmunization"
+  },
+  {
+    "id": "DDCCImmunizationRecommendation",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation",
+    "version": "0.2.1",
+    "name": "DDCCImmunizationRecommendation"
+  },
+  {
+    "id": "DDCCOrganization",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization",
+    "version": "0.2.1",
+    "name": "DDCCOrganization"
+  },
+  {
+    "id": "DDCCPatient",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient",
+    "version": "0.2.1",
+    "name": "DDCCPatient"
+  },
+  {
+    "id": "DDCCPractitioner",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitioner",
+    "version": "0.2.1",
+    "name": "DDCCPractitioner"
+  },
+  {
+    "id": "DDCCPractitionerRole",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitionerRole",
+    "version": "0.2.1",
+    "name": "DDCCPractitionerRole"
+  },
+  {
+    "id": "DDCCProvideDocumentBundle",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCProvideDocumentBundle",
+    "version": "0.2.1",
+    "name": "DDCCProvideDocumentBundle"
+  },
+  {
+    "id": "DDCCQuestionnaire",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaire",
+    "version": "0.2.1",
+    "name": "DDCCQuestionnaire"
+  },
+  {
+    "id": "DDCCQuestionnaireResponse",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse",
+    "version": "0.2.1",
+    "name": "DDCCQuestionnaireResponse"
+  },
+  {
+    "id": "DDCCQuestionnaireSDC",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireSDC",
+    "version": "0.2.1",
+    "name": "DDCCQuestionnaireSDC"
+  },
+  {
+    "id": "DDCCSubmissionSet",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmissionSet",
+    "version": "0.2.1",
+    "name": "DDCCSubmissionSet"
+  },
+  {
+    "id": "DDCCSubmitHealthEventRequest",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventRequest",
+    "version": "0.2.1",
+    "name": "DDCCSubmitHealthEventRequest"
+  },
+  {
+    "id": "DDCCSubmitHealthEventResponse",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventResponse",
+    "version": "0.2.1",
+    "name": "DDCCSubmitHealthEventResponse"
+  },
+  {
+    "id": "DDCCVaccineBrand",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand",
+    "version": "0.2.1",
+    "name": "DDCCVaccineBrand"
+  },
+  {
+    "id": "DDCCVaccineMarketAuthorization",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineMarketAuthorization",
+    "version": "0.2.1",
+    "name": "DDCCVaccineMarketAuthorization"
+  },
+  {
+    "id": "DDCCVaccineValidFrom",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineValidFrom",
+    "version": "0.2.1",
+    "name": "DDCCVaccineValidFrom"
+  },
+  {
+    "id": "DDCC-Folder-DesignationType",
+    "type": "ValueSet",
+    "url": "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-Folder-DesignationType",
+    "version": "0.2.1",
+    "name": "DDCC_Folder_DesignationType_ValueSet"
+  },
+  {
+    "id": "DDCC-QR-Category-Usage-ValueSet",
+    "type": "ValueSet",
+    "url": "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Category-Usage-ValueSet",
+    "version": "0.2.1",
+    "name": "DDCC_QR_Category_Usage_ValueSet"
+  },
+  {
+    "id": "DDCC-QR-Format-ValueSet",
+    "type": "ValueSet",
+    "url": "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Format-ValueSet",
+    "version": "0.2.1",
+    "name": "DDCC_QR_Format_ValueSet"
+  },
+  {
+    "id": "who-ddcc-disease-targeted-covid-19",
+    "type": "ValueSet",
+    "url": "http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19",
+    "version": "0.2.1",
+    "name": "WHO_DDCC_Disease_Targeted_COVID_19"
+  },
+  {
+    "id": "who-ddcc-vaccines-covid-19",
+    "type": "ValueSet",
+    "url": "http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-vaccines-covid-19",
+    "version": "0.2.1",
+    "name": "WHO_DDCC_Vaccines_COVID_19"
+  }
+]

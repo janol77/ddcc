@@ -1,0 +1,215 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://worldhealthorganization.github.io/ddcc/QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Example> a fhir:QuestionnaireResponse;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "DDCC-VS-QuestionnaireResponse-Example"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse";
+       fhir:index 0;
+       fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"DDCC-VS-QuestionnaireResponse-Example\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DDCCQuestionnaireResponse.html\">DDCC Questionnaire Response</a></p></div><p><b>questionnaire</b>: <a href=\"http://worldhealthorganization.github.io/ddcc/DDCCVSCoreDataSetQuestionnaire\">http://worldhealthorganization.github.io/ddcc/DDCCVSCoreDataSetQuestionnaire</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-DDCC-Patient-English.html\">Patient/DDCC-Patient-English</a> \"\"</p><p><b>authored</b>: 2021-04-01</p><blockquote><p><b>item</b></p><p><b>linkId</b>: name</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Aulus Agerius</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: birthDate</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>2003-03-03</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: identifier</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>1234567890</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: sex</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Male (Details: http://hl7.org/fhir/administrative-gender code male = 'Male', stated as 'null')</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: vaccine</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>XM1NL1 (Details: http://id.who.int/icd11/mms code XM1NL1 = 'XM1NL1', stated as 'null')</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: brand</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Test (Details: http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Example-Test-CodeSystem code TEST = 'Test', stated as 'null')</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: manufacturer</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Test (Details: http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Example-Test-CodeSystem code TEST = 'Test', stated as 'null')</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: ma_holder</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Test (Details: http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Example-Test-CodeSystem code TEST = 'Test', stated as 'null')</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: lot</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>ER8732</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: date</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>2021-04-05</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: vaccine_valid</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>2021-04-19</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: dose</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>1</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: total_doses</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>2</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: country</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>United States of America (Details: urn:iso:std:iso:3166 code USA = 'United States of America', stated as 'null')</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: centre</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Vaccination Site</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: hw</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>lAH8TnzqAInqwkslHzOlSA</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: disease</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>RA01 (Details: http://id.who.int/icd11/mms code RA01 = 'RA01', stated as 'null')</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: due_date</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>2021-04-28</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: pha</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>dPD2PfwzBQyphcjeUiAdRP</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: hcid</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>bMlJkAt0V92RYhhG3fNt</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: valid_from</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>2021-04-05</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: valid_until</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>2022-04-05</td></tr></table></blockquote></div>"
+  ];
+  fhir:QuestionnaireResponse.questionnaire [
+     fhir:value "http://worldhealthorganization.github.io/ddcc/DDCCVSCoreDataSetQuestionnaire";
+     fhir:link <http://worldhealthorganization.github.io/ddcc/DDCCVSCoreDataSetQuestionnaire>
+  ];
+  fhir:QuestionnaireResponse.status [ fhir:value "completed"];
+  fhir:QuestionnaireResponse.subject [
+     fhir:link <http://worldhealthorganization.github.io/ddcc/Patient/DDCC-Patient-English>;
+     fhir:Reference.reference [ fhir:value "Patient/DDCC-Patient-English" ]
+  ];
+  fhir:QuestionnaireResponse.authored [ fhir:value "2021-04-01"^^xsd:date];
+  fhir:QuestionnaireResponse.item [
+     fhir:index 0;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "name" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "Aulus Agerius" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "birthDate" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueDate [ fhir:value "2003-03-03"^^xsd:date ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "identifier" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "1234567890" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "sex" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueCoding [
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/administrative-gender" ];
+         fhir:Coding.code [ fhir:value "male" ]
+       ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "vaccine" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueCoding [
+         fhir:Coding.system [ fhir:value "http://id.who.int/icd11/mms" ];
+         fhir:Coding.code [ fhir:value "XM1NL1" ]
+       ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "brand" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueCoding [
+         fhir:Coding.system [ fhir:value "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Example-Test-CodeSystem" ];
+         fhir:Coding.code [ fhir:value "TEST" ]
+       ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "manufacturer" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueCoding [
+         fhir:Coding.system [ fhir:value "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Example-Test-CodeSystem" ];
+         fhir:Coding.code [ fhir:value "TEST" ]
+       ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "ma_holder" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueCoding [
+         fhir:Coding.system [ fhir:value "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Example-Test-CodeSystem" ];
+         fhir:Coding.code [ fhir:value "TEST" ]
+       ]
+     ]
+  ], [
+     fhir:index 8;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "lot" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "ER8732" ]
+     ]
+  ], [
+     fhir:index 9;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "date" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueDate [ fhir:value "2021-04-05"^^xsd:date ]
+     ]
+  ], [
+     fhir:index 10;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "vaccine_valid" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueDate [ fhir:value "2021-04-19"^^xsd:date ]
+     ]
+  ], [
+     fhir:index 11;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "dose" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueInteger [ fhir:value "1"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 12;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "total_doses" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueInteger [ fhir:value "2"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 13;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "country" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueCoding [
+         fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+         fhir:Coding.code [ fhir:value "USA" ]
+       ]
+     ]
+  ], [
+     fhir:index 14;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "centre" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "Vaccination Site" ]
+     ]
+  ], [
+     fhir:index 15;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "hw" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "lAH8TnzqAInqwkslHzOlSA" ]
+     ]
+  ], [
+     fhir:index 16;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "disease" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueCoding [
+         fhir:Coding.system [ fhir:value "http://id.who.int/icd11/mms" ];
+         fhir:Coding.code [ fhir:value "RA01" ]
+       ]
+     ]
+  ], [
+     fhir:index 17;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "due_date" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueDate [ fhir:value "2021-04-28"^^xsd:date ]
+     ]
+  ], [
+     fhir:index 18;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "pha" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "dPD2PfwzBQyphcjeUiAdRP" ]
+     ]
+  ], [
+     fhir:index 19;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "hcid" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "bMlJkAt0V92RYhhG3fNt" ]
+     ]
+  ], [
+     fhir:index 20;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "valid_from" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueDate [ fhir:value "2021-04-05"^^xsd:date ]
+     ]
+  ], [
+     fhir:index 21;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "valid_until" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueDate [ fhir:value "2022-04-05"^^xsd:date ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://worldhealthorganization.github.io/ddcc/QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Example.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
