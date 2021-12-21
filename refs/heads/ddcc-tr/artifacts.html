@@ -278,6 +278,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-DDCCCoreDataSet.TR.html" title="StructureDefinition/DDCCCoreDataSet.TR">DDCC Core Data Set Logical Model for Test Results</a>
+               </td>
+               <td>
+<p>Data elements for the DDCC Core Data Set for Test Results.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-DDCCCoreDataSet.VS.html" title="StructureDefinition/DDCCCoreDataSet.VS">DDCC Core Data Set Logical Model for Vaccine Status</a>
                </td>
                <td>
@@ -298,6 +306,30 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Data elements for the DDCC Core Data Set - Vaccine Status - Proof of Vaccination.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-HC1.html" title="StructureDefinition/HC1">EU DCC</a>
+               </td>
+               <td>
+<p>EU Digital Covid Certificate</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-t.html" title="StructureDefinition/t">Test Group</a>
+               </td>
+               <td>
+<p>Test Group</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-v.html" title="StructureDefinition/v">Vaccination Group</a>
+               </td>
+               <td>
+<p>Vaccination Group</p>
 </td>
             </tr>
          </tbody>
@@ -460,6 +492,17 @@ a patient should return for a booster shot.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-DDCCObservation.html" title="StructureDefinition/DDCCObservation">DDCC Observation</a>
+               </td>
+               <td>
+<p>A DDCC Observation contains the content corresponding to a row in the Test 
+Events section of a Paper DDCC. While this is not a further profile of the International
+Patient Summary (IPS) Observation resouce, this is intended to map into an IPS 
+Observation resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-DDCCOrganization.html" title="StructureDefinition/DDCCOrganization">DDCC Organization</a>
                </td>
                <td>
@@ -589,18 +632,42 @@ It describes the event of a patient being administered a vaccination or a record
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCCountryOfVaccination.html" title="StructureDefinition/DDCCCountryOfVaccination">DDCC Country Of Vaccination for Immunization</a>
+                  <a href="StructureDefinition-DDCCCountryOfEvent.html" title="StructureDefinition/DDCCCountryOfEvent">DDCC Country Of Event for Immunization</a>
                </td>
                <td>
-<p>DDCC Country Of Vaccination for Immunization</p>
+<p>DDCC Country Of Event for Immunization</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCVaccineBrand.html" title="StructureDefinition/DDCCVaccineBrand">DDCC Vaccine Brand for Immunization</a>
+                  <a href="StructureDefinition-DDCCEventBrand.html" title="StructureDefinition/DDCCEventBrand">DDCC Event Brand for Immunization</a>
                </td>
                <td>
-<p>DDCC Vaccine Brand for Immunization</p>
+<p>DDCC Event Brand for Immunization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DDCCTestCentre.html" title="StructureDefinition/DDCCTestCentre">DDCC Test Centre for Observation</a>
+               </td>
+               <td>
+<p>DDCC Test Centre for Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DDCCTestManufacturer.html" title="StructureDefinition/DDCCTestManufacturer">DDCC Test Manufacturer for Observation</a>
+               </td>
+               <td>
+<p>DDCC Test Manufacturer for Observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DDCCTestPathogen.html" title="StructureDefinition/DDCCTestPathogen">DDCC Test Pathogen for Observation</a>
+               </td>
+               <td>
+<p>DDCC Test Pathogen for Observation</p>
 </td>
             </tr>
             <tr>
@@ -665,10 +732,42 @@ It describes the event of a patient being administered a vaccination or a record
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="ValueSet-who-ddcc-agent-targeted-covid-19.html" title="ValueSet/who-ddcc-agent-targeted-covid-19">WHO Agent Targeted (COVID-19)</a>
+               </td>
+               <td>
+<p>WHO Agent Targeted List (COVID-19) from <a href="https://icd.who.int/browse11">ICD 11</a></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="ValueSet-who-ddcc-disease-targeted-covid-19.html" title="ValueSet/who-ddcc-disease-targeted-covid-19">WHO Disease or Agent Targeted (COVID-19)</a>
                </td>
                <td>
 <p>WHO Disease or Agent Targeted List (COVID-19) from <a href="https://icd.who.int/browse11">ICD 11</a></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-who-ddcc-sample-origin-covid-19.html" title="ValueSet/who-ddcc-sample-origin-covid-19">WHO Speciman Sample Origin (COVID-19)</a>
+               </td>
+               <td>
+<p>WHO Speciman Sample Origin List (COVID-19)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-who-ddcc-test-result-covid-19.html" title="ValueSet/who-ddcc-test-result-covid-19">WHO Test Result (COVID-19)</a>
+               </td>
+               <td>
+<p>WHO COVID-19 Test Result from <a href="https://icd.who.int/browse11">ICD 11</a></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-who-ddcc-type-of-test-covid-19.html" title="ValueSet/who-ddcc-type-of-test-covid-19">WHO Type of Covid-19 Test</a>
+               </td>
+               <td>
+<p>WHO Type of COVID-19 Test</p>
 </td>
             </tr>
             <tr>
@@ -805,6 +904,14 @@ It describes the event of a patient being administered a vaccination or a record
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="ConceptMap-who-ddcc-map-icd11-sct-agent-targeted.html" title="ConceptMap/who-ddcc-map-icd11-sct-agent-targeted">WHO_DDCC_Map_ICD11_to_SCT_Agent_Targeted</a>
+               </td>
+               <td>
+<p>Mapping from ICD-11 to SNOMED CT for COVID-19 Agent Targeted</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="ConceptMap-who-ddcc-map-icd11-sct-disease-targeted.html" title="ConceptMap/who-ddcc-map-icd11-sct-disease-targeted">WHO_DDCC_Map_ICD11_to_SCT_Disease_Targeted</a>
                </td>
                <td>
@@ -813,10 +920,26 @@ It describes the event of a patient being administered a vaccination or a record
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="ConceptMap-who-ddcc-map-icd11-sct-test-result.html" title="ConceptMap/who-ddcc-map-icd11-sct-test-result">WHO_DDCC_Map_ICD11_to_SCT_Test_Result</a>
+               </td>
+               <td>
+<p>Mapping from ICD-11 to SNOMED CT for COVID-19 Test Result</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="ConceptMap-who-ddcc-map-icd11-sct-vaccines.html" title="ConceptMap/who-ddcc-map-icd11-sct-vaccines">WHO_DDCC_Map_ICD11_to_SCT_Vaccines</a>
                </td>
                <td>
 <p>Mapping from ICD-11 to SNOMED CT for COVID-19 Vaccines</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ConceptMap-who-ddcc-map-loinc-sct-type-of-test.html" title="ConceptMap/who-ddcc-map-loinc-sct-type-of-test">WHO_DDCC_Map_LOINC_to_SCT_Type_of_Test</a>
+               </td>
+               <td>
+<p>Mapping from LOINC to SNOMED CT for COVID-19 Type of Test</p>
 </td>
             </tr>
          </tbody>
@@ -1114,8 +1237,8 @@ It describes the event of a patient being administered a vaccination or a record
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l2109">​</a>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc-vs#0.3.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Dec 15, 2021 00:34+0000">2021-12-15</span>
+        <p><a name="l2338">​</a>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc-vs#0.3.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 21, 2021 21:05+0000">2021-12-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

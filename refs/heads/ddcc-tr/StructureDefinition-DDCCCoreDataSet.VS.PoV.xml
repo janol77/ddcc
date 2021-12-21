@@ -11,7 +11,7 @@
   <name value="DDCCCoreDataSet_VS_PoV"/>
   <title value="DDCC Core Data Set Logical Model - Vaccine Status - Proof of Vaccination"/>
   <status value="draft"/>
-  <date value="2021-12-15T00:34:29+00:00"/>
+  <date value="2021-12-21T21:05:49+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -29,8 +29,28 @@
   </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <mapping>
-    <identity value="ddcc"/>
-    <uri value="http://worldhealthorganization.github.io/ddcc"/>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <mapping>
+    <identity value="ddcc-immunization"/>
+    <uri value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization"/>
+    <name value="WHO Digital Documentation of COVID Certificates"/>
+  </mapping>
+  <mapping>
+    <identity value="ddcc-immunization-recommendation"/>
+    <uri value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation"/>
+    <name value="WHO Digital Documentation of COVID Certificates"/>
+  </mapping>
+  <mapping>
+    <identity value="ddcc-composition"/>
+    <uri value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition"/>
+    <name value="WHO Digital Documentation of COVID Certificates"/>
+  </mapping>
+  <mapping>
+    <identity value="ddcc-patient"/>
+    <uri value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient"/>
     <name value="WHO Digital Documentation of COVID Certificates"/>
   </mapping>
   <kind value="logical"/>
@@ -55,7 +75,7 @@
     <element id="DDCCCoreDataSet.name">
       <path value="DDCCCoreDataSet.name"/>
       <short value="Name"/>
-      <definition value="The full name of the vaccinated person."/>
+      <definition value="The full name of the person."/>
       <min value="1"/>
       <max value="1"/>
       <base>
@@ -68,14 +88,14 @@
       </type>
       <isSummary value="true"/>
       <mapping>
-        <identity value="ddcc"/>
+        <identity value="ddcc-patient"/>
         <map value="Patient.name.text"/>
       </mapping>
     </element>
     <element id="DDCCCoreDataSet.birthDate">
       <path value="DDCCCoreDataSet.birthDate"/>
       <short value="Date of birth"/>
-      <definition value="The vaccinated person&#39;s date of birth (DOB) if known. If unknown, use given DOB for administrative purposes"/>
+      <definition value="The person&#39;s date of birth (DOB) if known. If unknown, use given DOB for administrative purposes"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -88,14 +108,14 @@
       </type>
       <isSummary value="true"/>
       <mapping>
-        <identity value="ddcc"/>
+        <identity value="ddcc-patient"/>
         <map value="Patient.birthDate"/>
       </mapping>
     </element>
     <element id="DDCCCoreDataSet.identifier">
       <path value="DDCCCoreDataSet.identifier"/>
       <short value="Unique identifier"/>
-      <definition value="Unique identifier for the vaccinated person, according to the policies applicable to each country. There can be more than one unique identifier used to link records. (e.g. national ID, health ID, immunization information system ID, medical record ID)."/>
+      <definition value="Unique identifier for the person, according to the policies applicable to each country. There can be more than one unique identifier used to link records. (e.g. national ID, health ID, immunization information system ID, medical record ID)."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -108,32 +128,8 @@
       </type>
       <isSummary value="true"/>
       <mapping>
-        <identity value="ddcc"/>
+        <identity value="ddcc-patient"/>
         <map value="Patient.identifier"/>
-      </mapping>
-    </element>
-    <element id="DDCCCoreDataSet.sex">
-      <path value="DDCCCoreDataSet.sex"/>
-      <short value="Sex"/>
-      <definition value="Documentation of a specific instance of sex information for the vaccinated person."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="DDCCCoreDataSet.sex"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <isSummary value="true"/>
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
-      </binding>
-      <mapping>
-        <identity value="ddcc"/>
-        <map value="Patient.gender"/>
       </mapping>
     </element>
     <element id="DDCCCoreDataSet.certificate">
@@ -168,6 +164,14 @@
         <targetProfile value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization"/>
       </type>
       <isSummary value="true"/>
+      <mapping>
+        <identity value="ddcc-composition"/>
+        <map value="Composition.author.identifier"/>
+      </mapping>
+      <mapping>
+        <identity value="ddcc-immunization"/>
+        <map value="Immunization.protocolApplied.authority.identifier"/>
+      </mapping>
     </element>
     <element id="DDCCCoreDataSet.certificate.hcid">
       <path value="DDCCCoreDataSet.certificate.hcid"/>
@@ -178,6 +182,22 @@
       <base>
         <path value="DDCCCoreDataSet.certificate.hcid"/>
         <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="DDCCCoreDataSet.certificate.ddccid">
+      <path value="DDCCCoreDataSet.certificate.ddccid"/>
+      <short value="DDCC Identifier"/>
+      <definition value="DDCC Identifier"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DDCCCoreDataSet.certificate.ddccid"/>
+        <min value="0"/>
         <max value="1"/>
       </base>
       <type>
@@ -215,6 +235,10 @@
       <type>
         <code value="Period"/>
       </type>
+      <mapping>
+        <identity value="ddcc-composition"/>
+        <map value="Composition.event.period"/>
+      </mapping>
     </element>
     <element id="DDCCCoreDataSet.certificate.period.start">
       <path value="DDCCCoreDataSet.certificate.period.start"/>
@@ -250,11 +274,11 @@
       <path value="DDCCCoreDataSet.vaccination"/>
       <short value="Vaccination Event"/>
       <definition value="A vaccination event."/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <base>
         <path value="DDCCCoreDataSet.vaccination"/>
-        <min value="0"/>
+        <min value="1"/>
         <max value="1"/>
       </base>
       <type>
@@ -289,7 +313,7 @@
         <valueSet value="http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-vaccines-covid-19"/>
       </binding>
       <mapping>
-        <identity value="ddcc"/>
+        <identity value="ddcc-immunization"/>
         <map value="Immunization.vaccineCode"/>
       </mapping>
     </element>
@@ -309,8 +333,8 @@
       </type>
       <isSummary value="true"/>
       <mapping>
-        <identity value="ddcc"/>
-        <map value="Immunization.extension.where(url=&#39;https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand&#39;)"/>
+        <identity value="ddcc-immunization"/>
+        <map value="Immunization.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCEventBrand]"/>
       </mapping>
     </element>
     <element id="DDCCCoreDataSet.vaccination.manufacturer">
@@ -329,7 +353,7 @@
       </type>
       <isSummary value="true"/>
       <mapping>
-        <identity value="ddcc"/>
+        <identity value="ddcc-immunization"/>
         <map value="Immunization.manufacturer"/>
       </mapping>
     </element>
@@ -349,8 +373,8 @@
       </type>
       <isSummary value="true"/>
       <mapping>
-        <identity value="ddcc"/>
-        <map value="Immunization.extension.where(url=&#39;https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineMarketAuthorization&#39;)"/>
+        <identity value="ddcc-immunization"/>
+        <map value="Immunization.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineMarketAuthorization]"/>
       </mapping>
     </element>
     <element id="DDCCCoreDataSet.vaccination.lot">
@@ -369,7 +393,7 @@
       </type>
       <isSummary value="true"/>
       <mapping>
-        <identity value="ddcc"/>
+        <identity value="ddcc-immunization"/>
         <map value="Immunization.lotNumber"/>
       </mapping>
     </element>
@@ -389,7 +413,7 @@
       </type>
       <isSummary value="true"/>
       <mapping>
-        <identity value="ddcc"/>
+        <identity value="ddcc-immunization"/>
         <map value="Immunization.occurrence"/>
       </mapping>
     </element>
@@ -408,8 +432,8 @@
         <code value="date"/>
       </type>
       <mapping>
-        <identity value="ddcc"/>
-        <map value="Immunization.extension.where(url=&#39;https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineValidFrom&#39;)"/>
+        <identity value="ddcc-immunization"/>
+        <map value="Immunization.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineValidFrom]"/>
       </mapping>
     </element>
     <element id="DDCCCoreDataSet.vaccination.dose">
@@ -428,7 +452,7 @@
       </type>
       <isSummary value="true"/>
       <mapping>
-        <identity value="ddcc"/>
+        <identity value="ddcc-immunization"/>
         <map value="Immunization.protocolApplied.doseNumber"/>
       </mapping>
     </element>
@@ -447,7 +471,7 @@
         <code value="positiveInt"/>
       </type>
       <mapping>
-        <identity value="ddcc"/>
+        <identity value="ddcc-immunization"/>
         <map value="Immunization.protocolApplied.seriesDoses"/>
       </mapping>
     </element>
@@ -474,6 +498,10 @@
         <identity value="ddcc"/>
         <map value="Immunization.extension.where(url=&#39;https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination&#39;)"/>
       </mapping>
+      <mapping>
+        <identity value="ddcc-immunization"/>
+        <map value="Immunization.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent]"/>
+      </mapping>
     </element>
     <element id="DDCCCoreDataSet.vaccination.centre">
       <path value="DDCCCoreDataSet.vaccination.centre"/>
@@ -490,7 +518,7 @@
         <code value="string"/>
       </type>
       <mapping>
-        <identity value="ddcc"/>
+        <identity value="ddcc-immunization"/>
         <map value="Immunization.location"/>
       </mapping>
     </element>
@@ -524,7 +552,7 @@
         <code value="Identifier"/>
       </type>
       <mapping>
-        <identity value="ddcc"/>
+        <identity value="ddcc-immunization"/>
         <map value="Immunization.performer.actor"/>
       </mapping>
     </element>
@@ -547,7 +575,7 @@
         <valueSet value="http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19"/>
       </binding>
       <mapping>
-        <identity value="ddcc"/>
+        <identity value="ddcc-immunization"/>
         <map value="Immunization.protocolApplied.targetDisease"/>
       </mapping>
     </element>
@@ -566,7 +594,7 @@
         <code value="date"/>
       </type>
       <mapping>
-        <identity value="ddcc"/>
+        <identity value="ddcc-immunization-recommendation"/>
         <map value="ImmunizationRecommendation.dateCriterion.value"/>
       </mapping>
     </element>

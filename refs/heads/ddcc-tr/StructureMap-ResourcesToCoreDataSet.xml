@@ -4,7 +4,7 @@
   <id value="ResourcesToCoreDataSet"/>
   <meta>
     <versionId value="1"/>
-    <lastUpdated value="2021-12-09T20:50:39.188+00:00"/>
+    <lastUpdated value="2021-12-21T20:57:05.702+00:00"/>
   </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><pre>map &quot;http://worldhealthorganization.github.io/ddcc/StructureMap/ResourcesToCoreDataSet&quot; = &quot;ResourcesToCoreDataSet&quot;
@@ -24,6 +24,7 @@ group ResourcesToCoreDataSet(source bundle : Bundle, target ddcc : DDCCPoV) {
       // There's got to be a better way to do this
       link.url as url -&gt; hcid.value = (url.replaceMatches('[Uu][Rr][Nn]:[Hh][Cc][Ii][Dd]:', '')) &quot;set hcid value&quot;;
     } &quot;set hcid&quot;;
+    bundle.id as id -&gt;  certificate.ddccid as ddccid,  ddccid.value = id &quot;set ddcc id value&quot;;
     bundle.entry as entry then {
       entry.resource : Patient first as patient then PatientToDDCCVS(patient, ddcc) &quot;set patient details&quot;;
       entry.resource : Immunization first as immunization then ImmunizationToDDCCVS(immunization, vaccination, certificate) &quot;set immunization&quot;;
@@ -127,7 +128,7 @@ group ImmRecToDDCCVS(source immRec : DDCCImmunizationRecommendation, target vacc
   <version value="0.3.1"/>
   <name value="ResourcesToCoreDataSet"/>
   <status value="draft"/>
-  <date value="2021-12-15T00:34:29+00:00"/>
+  <date value="2021-12-21T21:05:49+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -239,6 +240,29 @@ group ImmRecToDDCCVS(source immRec : DDCCImmunizationRecommendation, target vacc
           </target>
           <documentation value="There&#39;s got to be a better way to do this"/>
         </rule>
+      </rule>
+      <rule>
+        <name value="set ddcc id value"/>
+        <source>
+          <context value="bundle"/>
+          <element value="id"/>
+          <variable value="id"/>
+        </source>
+        <target>
+          <context value="certificate"/>
+          <contextType value="variable"/>
+          <element value="ddccid"/>
+          <variable value="ddccid"/>
+        </target>
+        <target>
+          <context value="ddccid"/>
+          <contextType value="variable"/>
+          <element value="value"/>
+          <transform value="copy"/>
+          <parameter>
+            <valueId value="id"/>
+          </parameter>
+        </target>
       </rule>
       <rule>
         <name value="set header from patient"/>

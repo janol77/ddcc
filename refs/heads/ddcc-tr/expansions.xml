@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="ae90300d-41c8-4857-be92-66940aede8fb"/>
+  <id value="da500c6d-f6a6-497b-b8f7-7a2bd2e91848"/>
   <meta>
-    <lastUpdated value="2021-12-15T00:34:29.621+00:00"/>
+    <lastUpdated value="2021-12-21T21:05:49.860+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -59,7 +59,7 @@
         <name value="DDCC_Composition_Category_ValueSet"/>
         <title value="DDCC Composition Category Codes"/>
         <status value="active"/>
-        <date value="2021-12-15T00:34:29+00:00"/>
+        <date value="2021-12-21T21:05:49+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -76,8 +76,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:040950be-71cb-418f-ae71-80eefa363951"/>
-          <timestamp value="2021-12-15T00:35:32+00:00"/>
+          <identifier value="urn:uuid:6264e877-700f-485e-9459-a32b8210097f"/>
+          <timestamp value="2021-12-21T21:07:05+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -146,7 +146,7 @@
         <name value="DDCC_Folder_DesignationType_ValueSet"/>
         <title value="DDCC DesignationTypes for Folder"/>
         <status value="active"/>
-        <date value="2021-12-15T00:34:29+00:00"/>
+        <date value="2021-12-21T21:05:49+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -163,8 +163,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:877010ef-a4bd-4435-ad36-d21999605262"/>
-          <timestamp value="2021-12-15T00:35:32+00:00"/>
+          <identifier value="urn:uuid:45e77a74-d272-44f3-ba96-ec4edefd8879"/>
+          <timestamp value="2021-12-21T21:07:05+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -268,7 +268,7 @@
         <name value="DDCC_QR_Category_Usage_ValueSet"/>
         <title value="DDCC QR Category Usage Codes"/>
         <status value="active"/>
-        <date value="2021-12-15T00:34:29+00:00"/>
+        <date value="2021-12-21T21:05:49+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -285,8 +285,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b8498df1-8630-4f33-b0cb-93b6b0397276"/>
-          <timestamp value="2021-12-15T00:35:33+00:00"/>
+          <identifier value="urn:uuid:aff83502-c942-4369-b956-a365dea8c135"/>
+          <timestamp value="2021-12-21T21:07:05+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -391,7 +391,7 @@
         <name value="DDCC_QR_Format_ValueSet"/>
         <title value="DDCC QR Format Codes"/>
         <status value="active"/>
-        <date value="2021-12-15T00:34:29+00:00"/>
+        <date value="2021-12-21T21:05:49+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -408,8 +408,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c8842550-f6a3-413e-807c-2b73441a6440"/>
-          <timestamp value="2021-12-15T00:35:33+00:00"/>
+          <identifier value="urn:uuid:e1628b53-e862-4ca8-a866-73fbdf199e2a"/>
+          <timestamp value="2021-12-21T21:07:06+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -434,6 +434,254 @@
             <code value="pdf"/>
             <display value="PDF version of the QR image"/>
           </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-sample-origin-covid-19"/>
+    <resource>
+      <ValueSet>
+        <id value="who-ddcc-sample-origin-covid-19"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 9 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-258500001"> </a>
+                  <a href="http://snomed.info/id/258500001">258500001</a>
+                </td>
+                <td>Nasopharyngeal swab</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-461911000124106"> </a>
+                  <a href="http://snomed.info/id/461911000124106">461911000124106</a>
+                </td>
+                <td>Oropharyngeal swab</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-472881004"> </a>
+                  <a href="http://snomed.info/id/472881004">472881004</a>
+                </td>
+                <td>Pharyngeal swab</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-472901003"> </a>
+                  <a href="http://snomed.info/id/472901003">472901003</a>
+                </td>
+                <td>Swab from nasal sinus</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-119342007"> </a>
+                  <a href="http://snomed.info/id/119342007">119342007</a>
+                </td>
+                <td>Saliva specimen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-119297000"> </a>
+                  <a href="http://snomed.info/id/119297000">119297000</a>
+                </td>
+                <td>Blood specimen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-119361006"> </a>
+                  <a href="http://snomed.info/id/119361006">119361006</a>
+                </td>
+                <td>Plasma specimen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-119364003"> </a>
+                  <a href="http://snomed.info/id/119364003">119364003</a>
+                </td>
+                <td>Serum specimen</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-122592007"> </a>
+                  <a href="http://snomed.info/id/122592007">122592007</a>
+                </td>
+                <td>Acellular blood (serum or plasma) specimen</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-sample-origin-covid-19"/>
+        <version value="0.3.1"/>
+        <name value="WHO_DDCC_Sample_Origin_COVID_19"/>
+        <title value="WHO Speciman Sample Origin (COVID-19)"/>
+        <status value="draft"/>
+        <date value="2021-12-21T21:05:49+00:00"/>
+        <publisher value="WHO"/>
+        <contact>
+          <name value="WHO"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://who.int"/>
+          </telecom>
+        </contact>
+        <description value="WHO Speciman Sample Origin List (COVID-19)"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:6e0d77dd-55c7-47b4-b194-71e34ca8d48d"/>
+          <timestamp value="2021-12-21T21:07:07+00:00"/>
+          <total value="9"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="258500001"/>
+            <display value="Nasopharyngeal swab"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="461911000124106"/>
+            <display value="Oropharyngeal swab"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="472881004"/>
+            <display value="Pharyngeal swab"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="472901003"/>
+            <display value="Swab from nasal sinus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="119342007"/>
+            <display value="Saliva specimen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="119297000"/>
+            <display value="Blood specimen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="119361006"/>
+            <display value="Plasma specimen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="119364003"/>
+            <display value="Serum specimen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="122592007"/>
+            <display value="Acellular blood (serum or plasma) specimen"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-type-of-test-covid-19"/>
+    <resource>
+      <ValueSet>
+        <id value="who-ddcc-type-of-test-covid-19"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-type-of-test-covid-19"/>
+        <version value="0.3.1"/>
+        <name value="WHO_DDCC_Type_of_Test_COVID_19"/>
+        <title value="WHO Type of Covid-19 Test"/>
+        <status value="draft"/>
+        <date value="2021-12-21T21:05:49+00:00"/>
+        <publisher value="WHO"/>
+        <contact>
+          <name value="WHO"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://who.int"/>
+          </telecom>
+        </contact>
+        <description value="WHO Type of COVID-19 Test"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:cedff4c4-4d10-417a-a23d-1430c138c5e9"/>
+          <timestamp value="2021-12-21T21:07:08+00:00"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
         </expansion>
       </ValueSet>
     </resource>

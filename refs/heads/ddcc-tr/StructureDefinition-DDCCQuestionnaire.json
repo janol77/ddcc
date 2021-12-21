@@ -10,7 +10,7 @@
   "name": "DDCCQuestionnaire",
   "title": "DDCC Questionniare",
   "status": "active",
-  "date": "2021-12-15T00:34:29+00:00",
+  "date": "2021-12-21T21:05:49+00:00",
   "publisher": "WHO",
   "contact": [
     {
@@ -580,7 +580,7 @@
         "path": "Questionnaire.extension",
         "sliceName": "is-modular",
         "short": "Questionnaire is modular",
-        "definition": "If present, indicates that this is a 'modular' questionnaire that requires some degree of assembly (e.g. using the [$assemble](http://hl7.org/fhir/uv/sdc/OperationDefinition/Questionnaire-assemble) operation) prior to being presented in a Form Filler.  This might mean filling in item metadata based on information looked up from item.definitions and/or retrieving sub-questionnaires pointed to by [sub-questionnaire](https://build.fhir.org/ig/HL7/sdc/StructureDefinition-sdc-questionnaire.html/StructureDefinition-sdc-questionnaire-subQuestionnaire.html) extensions.",
+        "definition": "If present, indicates that this is a 'modular' questionnaire that requires some degree of assembly (e.g. using the [$assemble](http://hl7.org/fhir/uv/sdc/OperationDefinition/Questionnaire-assemble) operation) prior to being presented in a Form Filler.  This might mean filling in item metadata based on information looked up from item.definitions and/or retrieving sub-questionnaires pointed to by [sub-questionnaire](StructureDefinition-sdc-questionnaire-subQuestionnaire.html) extensions.",
         "comment": "SDC-conformant Questionnaires **SHALL** declare this extension if they require an assembly process prior to use.",
         "min": 0,
         "max": "1",

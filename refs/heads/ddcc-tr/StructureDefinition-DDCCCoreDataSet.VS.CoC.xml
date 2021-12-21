@@ -4,8 +4,9 @@
   <id value="DDCCCoreDataSet.VS.CoC"/>
   <text>
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-DDCCCoreDataSet.VS.CoC-definitions.html#DDCCCoreDataSet" title="Data elements for the DDCC Core Data Set - Vaccine Status - Continuity of Care.">DDCCCoreDataSet</a><a name="DDCCCoreDataSet"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-DDCCCoreDataSet.VS.html">DDCCCoreDataSet_VS</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">DDCC Core Data Set Logical Model - Vaccine Status - Continuity of Care</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-DDCCCoreDataSet.VS.CoC-definitions.html#DDCCCoreDataSet.vaccination">vaccination</a><a name="DDCCCoreDataSet.vaccination"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-DDCCCoreDataSet.VS.CoC-definitions.html#DDCCCoreDataSet.vaccination.centre" title="The name or identifier of the vaccination facility responsible for providing the vaccination.">centre</a><a name="DDCCCoreDataSet.vaccination.centre"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Administering centre</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-DDCCCoreDataSet.VS.CoC-definitions.html#DDCCCoreDataSet.vaccination">vaccination</a><a name="DDCCCoreDataSet.vaccination"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-DDCCCoreDataSet.VS.CoC-definitions.html#DDCCCoreDataSet.vaccination.centre" title="The name or identifier of the vaccination facility responsible for providing the vaccination.">centre</a><a name="DDCCCoreDataSet.vaccination.centre"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Administering centre</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-DDCCCoreDataSet.VS.CoC-definitions.html#DDCCCoreDataSet.sex" title="Documentation of a specific instance of sex information for the vaccinated person.">sex</a><a name="DDCCCoreDataSet.sex"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Sex<br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-administrative-gender.html">AdministrativeGender</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>)</td></tr>
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSet.VS.CoC"/>
@@ -13,7 +14,7 @@
   <name value="DDCCCoreDataSet_VS_CoC"/>
   <title value="DDCC Core Data Set Logical Model - Vaccine Status - Continuity of Care"/>
   <status value="draft"/>
-  <date value="2021-12-15T00:34:29+00:00"/>
+  <date value="2021-12-21T21:05:49+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -31,8 +32,28 @@
   </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <mapping>
-    <identity value="ddcc"/>
-    <uri value="http://worldhealthorganization.github.io/ddcc"/>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <mapping>
+    <identity value="ddcc-vs-coc-immunization-recommendation"/>
+    <uri value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient"/>
+    <name value="WHO Digital Documentation of COVID Certificates"/>
+  </mapping>
+  <mapping>
+    <identity value="ddcc-immunization"/>
+    <uri value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization"/>
+    <name value="WHO Digital Documentation of COVID Certificates"/>
+  </mapping>
+  <mapping>
+    <identity value="ddcc-immunization-recommendation"/>
+    <uri value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation"/>
+    <name value="WHO Digital Documentation of COVID Certificates"/>
+  </mapping>
+  <mapping>
+    <identity value="ddcc-composition"/>
+    <uri value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition"/>
     <name value="WHO Digital Documentation of COVID Certificates"/>
   </mapping>
   <kind value="logical"/>
@@ -57,7 +78,7 @@
     <element id="DDCCCoreDataSet.name">
       <path value="DDCCCoreDataSet.name"/>
       <short value="Name"/>
-      <definition value="The full name of the vaccinated person."/>
+      <definition value="The full name of the person."/>
       <min value="1"/>
       <max value="1"/>
       <base>
@@ -70,14 +91,14 @@
       </type>
       <isSummary value="true"/>
       <mapping>
-        <identity value="ddcc"/>
+        <identity value="ddcc-patient"/>
         <map value="Patient.name.text"/>
       </mapping>
     </element>
     <element id="DDCCCoreDataSet.birthDate">
       <path value="DDCCCoreDataSet.birthDate"/>
       <short value="Date of birth"/>
-      <definition value="The vaccinated person&#39;s date of birth (DOB) if known. If unknown, use given DOB for administrative purposes"/>
+      <definition value="The person&#39;s date of birth (DOB) if known. If unknown, use given DOB for administrative purposes"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -90,14 +111,14 @@
       </type>
       <isSummary value="true"/>
       <mapping>
-        <identity value="ddcc"/>
+        <identity value="ddcc-patient"/>
         <map value="Patient.birthDate"/>
       </mapping>
     </element>
     <element id="DDCCCoreDataSet.identifier">
       <path value="DDCCCoreDataSet.identifier"/>
       <short value="Unique identifier"/>
-      <definition value="Unique identifier for the vaccinated person, according to the policies applicable to each country. There can be more than one unique identifier used to link records. (e.g. national ID, health ID, immunization information system ID, medical record ID)."/>
+      <definition value="Unique identifier for the person, according to the policies applicable to each country. There can be more than one unique identifier used to link records. (e.g. national ID, health ID, immunization information system ID, medical record ID)."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -110,32 +131,8 @@
       </type>
       <isSummary value="true"/>
       <mapping>
-        <identity value="ddcc"/>
+        <identity value="ddcc-patient"/>
         <map value="Patient.identifier"/>
-      </mapping>
-    </element>
-    <element id="DDCCCoreDataSet.sex">
-      <path value="DDCCCoreDataSet.sex"/>
-      <short value="Sex"/>
-      <definition value="Documentation of a specific instance of sex information for the vaccinated person."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="DDCCCoreDataSet.sex"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <isSummary value="true"/>
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
-      </binding>
-      <mapping>
-        <identity value="ddcc"/>
-        <map value="Patient.gender"/>
       </mapping>
     </element>
     <element id="DDCCCoreDataSet.certificate">
@@ -170,6 +167,14 @@
         <targetProfile value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization"/>
       </type>
       <isSummary value="true"/>
+      <mapping>
+        <identity value="ddcc-composition"/>
+        <map value="Composition.author.identifier"/>
+      </mapping>
+      <mapping>
+        <identity value="ddcc-immunization"/>
+        <map value="Immunization.protocolApplied.authority.identifier"/>
+      </mapping>
     </element>
     <element id="DDCCCoreDataSet.certificate.hcid">
       <path value="DDCCCoreDataSet.certificate.hcid"/>
@@ -180,6 +185,22 @@
       <base>
         <path value="DDCCCoreDataSet.certificate.hcid"/>
         <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="DDCCCoreDataSet.certificate.ddccid">
+      <path value="DDCCCoreDataSet.certificate.ddccid"/>
+      <short value="DDCC Identifier"/>
+      <definition value="DDCC Identifier"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DDCCCoreDataSet.certificate.ddccid"/>
+        <min value="0"/>
         <max value="1"/>
       </base>
       <type>
@@ -217,6 +238,10 @@
       <type>
         <code value="Period"/>
       </type>
+      <mapping>
+        <identity value="ddcc-composition"/>
+        <map value="Composition.event.period"/>
+      </mapping>
     </element>
     <element id="DDCCCoreDataSet.certificate.period.start">
       <path value="DDCCCoreDataSet.certificate.period.start"/>
@@ -252,11 +277,11 @@
       <path value="DDCCCoreDataSet.vaccination"/>
       <short value="Vaccination Event"/>
       <definition value="A vaccination event."/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <base>
         <path value="DDCCCoreDataSet.vaccination"/>
-        <min value="0"/>
+        <min value="1"/>
         <max value="1"/>
       </base>
       <type>
@@ -291,7 +316,7 @@
         <valueSet value="http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-vaccines-covid-19"/>
       </binding>
       <mapping>
-        <identity value="ddcc"/>
+        <identity value="ddcc-immunization"/>
         <map value="Immunization.vaccineCode"/>
       </mapping>
     </element>
@@ -311,8 +336,8 @@
       </type>
       <isSummary value="true"/>
       <mapping>
-        <identity value="ddcc"/>
-        <map value="Immunization.extension.where(url=&#39;https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand&#39;)"/>
+        <identity value="ddcc-immunization"/>
+        <map value="Immunization.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCEventBrand]"/>
       </mapping>
     </element>
     <element id="DDCCCoreDataSet.vaccination.manufacturer">
@@ -331,7 +356,7 @@
       </type>
       <isSummary value="true"/>
       <mapping>
-        <identity value="ddcc"/>
+        <identity value="ddcc-immunization"/>
         <map value="Immunization.manufacturer"/>
       </mapping>
     </element>
@@ -351,8 +376,8 @@
       </type>
       <isSummary value="true"/>
       <mapping>
-        <identity value="ddcc"/>
-        <map value="Immunization.extension.where(url=&#39;https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineMarketAuthorization&#39;)"/>
+        <identity value="ddcc-immunization"/>
+        <map value="Immunization.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineMarketAuthorization]"/>
       </mapping>
     </element>
     <element id="DDCCCoreDataSet.vaccination.lot">
@@ -371,7 +396,7 @@
       </type>
       <isSummary value="true"/>
       <mapping>
-        <identity value="ddcc"/>
+        <identity value="ddcc-immunization"/>
         <map value="Immunization.lotNumber"/>
       </mapping>
     </element>
@@ -391,7 +416,7 @@
       </type>
       <isSummary value="true"/>
       <mapping>
-        <identity value="ddcc"/>
+        <identity value="ddcc-immunization"/>
         <map value="Immunization.occurrence"/>
       </mapping>
     </element>
@@ -410,8 +435,8 @@
         <code value="date"/>
       </type>
       <mapping>
-        <identity value="ddcc"/>
-        <map value="Immunization.extension.where(url=&#39;https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineValidFrom&#39;)"/>
+        <identity value="ddcc-immunization"/>
+        <map value="Immunization.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineValidFrom]"/>
       </mapping>
     </element>
     <element id="DDCCCoreDataSet.vaccination.dose">
@@ -430,7 +455,7 @@
       </type>
       <isSummary value="true"/>
       <mapping>
-        <identity value="ddcc"/>
+        <identity value="ddcc-immunization"/>
         <map value="Immunization.protocolApplied.doseNumber"/>
       </mapping>
     </element>
@@ -449,7 +474,7 @@
         <code value="positiveInt"/>
       </type>
       <mapping>
-        <identity value="ddcc"/>
+        <identity value="ddcc-immunization"/>
         <map value="Immunization.protocolApplied.seriesDoses"/>
       </mapping>
     </element>
@@ -476,6 +501,10 @@
         <identity value="ddcc"/>
         <map value="Immunization.extension.where(url=&#39;https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination&#39;)"/>
       </mapping>
+      <mapping>
+        <identity value="ddcc-immunization"/>
+        <map value="Immunization.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent]"/>
+      </mapping>
     </element>
     <element id="DDCCCoreDataSet.vaccination.centre">
       <path value="DDCCCoreDataSet.vaccination.centre"/>
@@ -492,7 +521,7 @@
         <code value="string"/>
       </type>
       <mapping>
-        <identity value="ddcc"/>
+        <identity value="ddcc-immunization"/>
         <map value="Immunization.location"/>
       </mapping>
     </element>
@@ -526,7 +555,7 @@
         <code value="Identifier"/>
       </type>
       <mapping>
-        <identity value="ddcc"/>
+        <identity value="ddcc-immunization"/>
         <map value="Immunization.performer.actor"/>
       </mapping>
     </element>
@@ -549,7 +578,7 @@
         <valueSet value="http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19"/>
       </binding>
       <mapping>
-        <identity value="ddcc"/>
+        <identity value="ddcc-immunization"/>
         <map value="Immunization.protocolApplied.targetDisease"/>
       </mapping>
     </element>
@@ -568,8 +597,32 @@
         <code value="date"/>
       </type>
       <mapping>
-        <identity value="ddcc"/>
+        <identity value="ddcc-immunization-recommendation"/>
         <map value="ImmunizationRecommendation.dateCriterion.value"/>
+      </mapping>
+    </element>
+    <element id="DDCCCoreDataSet.sex">
+      <path value="DDCCCoreDataSet.sex"/>
+      <short value="Sex"/>
+      <definition value="Documentation of a specific instance of sex information for the vaccinated person."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DDCCCoreDataSet.sex"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
+      </binding>
+      <mapping>
+        <identity value="ddcc-vs-coc-immunization-recommendation"/>
+        <map value="Patient.gender"/>
       </mapping>
     </element>
   </snapshot>
@@ -588,6 +641,25 @@
       <type>
         <code value="string"/>
       </type>
+    </element>
+    <element id="DDCCCoreDataSet.sex">
+      <path value="DDCCCoreDataSet.sex"/>
+      <short value="Sex"/>
+      <definition value="Documentation of a specific instance of sex information for the vaccinated person."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
+      </binding>
+      <mapping>
+        <identity value="ddcc-vs-coc-immunization-recommendation"/>
+        <map value="Patient.gender"/>
+      </mapping>
     </element>
   </differential>
 </StructureDefinition>

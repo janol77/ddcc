@@ -458,6 +458,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/DDCCObservation"
+        },
+        "name": "DDCC Observation",
+        "description": "A DDCC Observation contains the content corresponding to a row in the Test \nEvents section of a Paper DDCC. While this is not a further profile of the International\nPatient Summary (IPS) Observation resouce, this is intended to map into an IPS \nObservation resource.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/DDCCOrganization"
         },
         "name": "DDCC Organization",
@@ -640,10 +654,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/DDCCCountryOfVaccination"
+          "reference": "StructureDefinition/DDCCCountryOfEvent"
         },
-        "name": "DDCC Country Of Vaccination for Immunization",
-        "description": "DDCC Country Of Vaccination for Immunization",
+        "name": "DDCC Country Of Event for Immunization",
+        "description": "DDCC Country Of Event for Immunization",
         "exampleBoolean": false
       },
       {
@@ -654,10 +668,52 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/DDCCVaccineBrand"
+          "reference": "StructureDefinition/DDCCEventBrand"
         },
-        "name": "DDCC Vaccine Brand for Immunization",
-        "description": "DDCC Vaccine Brand for Immunization",
+        "name": "DDCC Event Brand for Immunization",
+        "description": "DDCC Event Brand for Immunization",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCTestCentre"
+        },
+        "name": "DDCC Test Centre for Observation",
+        "description": "DDCC Test Centre for Observation",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCTestManufacturer"
+        },
+        "name": "DDCC Test Manufacturer for Observation",
+        "description": "DDCC Test Manufacturer for Observation",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCTestPathogen"
+        },
+        "name": "DDCC Test Pathogen for Observation",
+        "description": "DDCC Test Pathogen for Observation",
         "exampleBoolean": false
       },
       {
@@ -700,6 +756,20 @@
         },
         "name": "DDCC Core Data Set Logical Model",
         "description": "Data elements for the DDCC Core Data Set.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical:abstract"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCCoreDataSet.TR"
+        },
+        "name": "DDCC Core Data Set Logical Model for Test Results",
+        "description": "Data elements for the DDCC Core Data Set for Test Results.",
         "exampleBoolean": false
       },
       {
@@ -808,10 +878,66 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/who-ddcc-agent-targeted-covid-19"
+        },
+        "name": "WHO Agent Targeted (COVID-19)",
+        "description": "WHO Agent Targeted List (COVID-19) from [ICD 11](https://icd.who.int/browse11)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/who-ddcc-disease-targeted-covid-19"
         },
         "name": "WHO Disease or Agent Targeted (COVID-19)",
         "description": "WHO Disease or Agent Targeted List (COVID-19) from [ICD 11](https://icd.who.int/browse11)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/who-ddcc-sample-origin-covid-19"
+        },
+        "name": "WHO Speciman Sample Origin (COVID-19)",
+        "description": "WHO Speciman Sample Origin List (COVID-19)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/who-ddcc-test-result-covid-19"
+        },
+        "name": "WHO Test Result (COVID-19)",
+        "description": "WHO COVID-19 Test Result from [ICD 11](https://icd.who.int/browse11)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/who-ddcc-type-of-test-covid-19"
+        },
+        "name": "WHO Type of Covid-19 Test",
+        "description": "WHO Type of COVID-19 Test",
         "exampleBoolean": false
       },
       {
@@ -1586,6 +1712,20 @@
           }
         ],
         "reference": {
+          "reference": "ConceptMap/who-ddcc-map-icd11-sct-agent-targeted"
+        },
+        "name": "WHO_DDCC_Map_ICD11_to_SCT_Agent_Targeted",
+        "description": "Mapping from ICD-11 to SNOMED CT for COVID-19 Agent Targeted",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ConceptMap"
+          }
+        ],
+        "reference": {
           "reference": "ConceptMap/who-ddcc-map-icd11-sct-disease-targeted"
         },
         "name": "WHO_DDCC_Map_ICD11_to_SCT_Disease_Targeted",
@@ -1600,10 +1740,38 @@
           }
         ],
         "reference": {
+          "reference": "ConceptMap/who-ddcc-map-icd11-sct-test-result"
+        },
+        "name": "WHO_DDCC_Map_ICD11_to_SCT_Test_Result",
+        "description": "Mapping from ICD-11 to SNOMED CT for COVID-19 Test Result",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ConceptMap"
+          }
+        ],
+        "reference": {
           "reference": "ConceptMap/who-ddcc-map-icd11-sct-vaccines"
         },
         "name": "WHO_DDCC_Map_ICD11_to_SCT_Vaccines",
         "description": "Mapping from ICD-11 to SNOMED CT for COVID-19 Vaccines",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ConceptMap"
+          }
+        ],
+        "reference": {
+          "reference": "ConceptMap/who-ddcc-map-loinc-sct-type-of-test"
+        },
+        "name": "WHO_DDCC_Map_LOINC_to_SCT_Type_of_Test",
+        "description": "Mapping from LOINC to SNOMED CT for COVID-19 Type of Test",
         "exampleBoolean": false
       },
       {
@@ -1673,6 +1841,48 @@
         },
         "name": "Patient (IPS)",
         "description": "This profile represents the constraints applied to the Patient resource by the International Patient Summary (IPS) FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the IPS composition or in one of the referred resources.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical:abstract"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/HC1"
+        },
+        "name": "EU DCC",
+        "description": "EU Digital Covid Certificate",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical:abstract"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/t"
+        },
+        "name": "Test Group",
+        "description": "Test Group",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical:abstract"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/v"
+        },
+        "name": "Vaccination Group",
+        "description": "Vaccination Group",
         "exampleBoolean": false
       },
       {

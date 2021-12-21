@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "ae90300d-41c8-4857-be92-66940aede8fb",
+  "id" : "da500c6d-f6a6-497b-b8f7-7a2bd2e91848",
   "meta" : {
-    "lastUpdated" : "2021-12-15T00:34:29.621+00:00"
+    "lastUpdated" : "2021-12-21T21:05:49.860+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "DDCC_Composition_Category_ValueSet",
       "title" : "DDCC Composition Category Codes",
       "status" : "active",
-      "date" : "2021-12-15T00:34:29+00:00",
+      "date" : "2021-12-21T21:05:49+00:00",
       "publisher" : "WHO",
       "contact" : [{
         "name" : "WHO",
@@ -36,8 +36,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:040950be-71cb-418f-ae71-80eefa363951",
-        "timestamp" : "2021-12-15T00:35:32+00:00",
+        "identifier" : "urn:uuid:6264e877-700f-485e-9459-a32b8210097f",
+        "timestamp" : "2021-12-21T21:07:05+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -74,7 +74,7 @@
       "name" : "DDCC_Folder_DesignationType_ValueSet",
       "title" : "DDCC DesignationTypes for Folder",
       "status" : "active",
-      "date" : "2021-12-15T00:34:29+00:00",
+      "date" : "2021-12-21T21:05:49+00:00",
       "publisher" : "WHO",
       "contact" : [{
         "name" : "WHO",
@@ -91,8 +91,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:877010ef-a4bd-4435-ad36-d21999605262",
-        "timestamp" : "2021-12-15T00:35:32+00:00",
+        "identifier" : "urn:uuid:45e77a74-d272-44f3-ba96-ec4edefd8879",
+        "timestamp" : "2021-12-21T21:07:05+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -124,7 +124,7 @@
       "name" : "DDCC_QR_Category_Usage_ValueSet",
       "title" : "DDCC QR Category Usage Codes",
       "status" : "active",
-      "date" : "2021-12-15T00:34:29+00:00",
+      "date" : "2021-12-21T21:05:49+00:00",
       "publisher" : "WHO",
       "contact" : [{
         "name" : "WHO",
@@ -141,8 +141,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b8498df1-8630-4f33-b0cb-93b6b0397276",
-        "timestamp" : "2021-12-15T00:35:33+00:00",
+        "identifier" : "urn:uuid:aff83502-c942-4369-b956-a365dea8c135",
+        "timestamp" : "2021-12-21T21:07:05+00:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",
@@ -199,7 +199,7 @@
       "name" : "DDCC_QR_Format_ValueSet",
       "title" : "DDCC QR Format Codes",
       "status" : "active",
-      "date" : "2021-12-15T00:34:29+00:00",
+      "date" : "2021-12-21T21:05:49+00:00",
       "publisher" : "WHO",
       "contact" : [{
         "name" : "WHO",
@@ -216,8 +216,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c8842550-f6a3-413e-807c-2b73441a6440",
-        "timestamp" : "2021-12-15T00:35:33+00:00",
+        "identifier" : "urn:uuid:e1628b53-e862-4ca8-a866-73fbdf199e2a",
+        "timestamp" : "2021-12-21T21:07:06+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -241,6 +241,144 @@
           "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem",
           "code" : "pdf",
           "display" : "PDF version of the QR image"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-sample-origin-covid-19",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "who-ddcc-sample-origin-covid-19",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 9 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-258500001\"> </a><a href=\"http://snomed.info/id/258500001\">258500001</a></td><td>Nasopharyngeal swab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-461911000124106\"> </a><a href=\"http://snomed.info/id/461911000124106\">461911000124106</a></td><td>Oropharyngeal swab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-472881004\"> </a><a href=\"http://snomed.info/id/472881004\">472881004</a></td><td>Pharyngeal swab</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-472901003\"> </a><a href=\"http://snomed.info/id/472901003\">472901003</a></td><td>Swab from nasal sinus</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-119342007\"> </a><a href=\"http://snomed.info/id/119342007\">119342007</a></td><td>Saliva specimen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-119297000\"> </a><a href=\"http://snomed.info/id/119297000\">119297000</a></td><td>Blood specimen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-119361006\"> </a><a href=\"http://snomed.info/id/119361006\">119361006</a></td><td>Plasma specimen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-119364003\"> </a><a href=\"http://snomed.info/id/119364003\">119364003</a></td><td>Serum specimen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-122592007\"> </a><a href=\"http://snomed.info/id/122592007\">122592007</a></td><td>Acellular blood (serum or plasma) specimen</td><td/></tr></table></div>"
+      },
+      "url" : "http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-sample-origin-covid-19",
+      "version" : "0.3.1",
+      "name" : "WHO_DDCC_Sample_Origin_COVID_19",
+      "title" : "WHO Speciman Sample Origin (COVID-19)",
+      "status" : "draft",
+      "date" : "2021-12-21T21:05:49+00:00",
+      "publisher" : "WHO",
+      "contact" : [{
+        "name" : "WHO",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://who.int"
+        }]
+      }],
+      "description" : "WHO Speciman Sample Origin List (COVID-19)",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:6e0d77dd-55c7-47b4-b194-71e34ca8d48d",
+        "timestamp" : "2021-12-21T21:07:07+00:00",
+        "total" : 9,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "258500001",
+          "display" : "Nasopharyngeal swab"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "461911000124106",
+          "display" : "Oropharyngeal swab"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "472881004",
+          "display" : "Pharyngeal swab"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "472901003",
+          "display" : "Swab from nasal sinus"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "119342007",
+          "display" : "Saliva specimen"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "119297000",
+          "display" : "Blood specimen"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "119361006",
+          "display" : "Plasma specimen"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "119364003",
+          "display" : "Serum specimen"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "122592007",
+          "display" : "Acellular blood (serum or plasma) specimen"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-type-of-test-covid-19",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "who-ddcc-type-of-test-covid-19",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-type-of-test-covid-19",
+      "version" : "0.3.1",
+      "name" : "WHO_DDCC_Type_of_Test_COVID_19",
+      "title" : "WHO Type of Covid-19 Test",
+      "status" : "draft",
+      "date" : "2021-12-21T21:05:49+00:00",
+      "publisher" : "WHO",
+      "contact" : [{
+        "name" : "WHO",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://who.int"
+        }]
+      }],
+      "description" : "WHO Type of COVID-19 Test",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:cedff4c4-4d10-417a-a23d-1430c138c5e9",
+        "timestamp" : "2021-12-21T21:07:08+00:00",
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
         }]
       }
     }

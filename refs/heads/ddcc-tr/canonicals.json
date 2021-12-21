@@ -1,5 +1,26 @@
 [
   {
+    "id": "HC1",
+    "type": "StructureDefinition",
+    "url": "http://hl7.eu/fhir/ig/dcc/StructureDefinition/HC1",
+    "version": "0.3.1",
+    "name": "dcc"
+  },
+  {
+    "id": "t",
+    "type": "StructureDefinition",
+    "url": "http://hl7.eu/fhir/ig/dcc/StructureDefinition/t",
+    "version": "0.3.1",
+    "name": "t"
+  },
+  {
+    "id": "v",
+    "type": "StructureDefinition",
+    "url": "http://hl7.eu/fhir/ig/dcc/StructureDefinition/v",
+    "version": "0.3.1",
+    "name": "v"
+  },
+  {
     "id": "Immunization-pre-uv-ips",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-pre-uv-ips",
@@ -77,6 +98,13 @@
     "name": "ICD_11_ICD_10_COVID19_Disease"
   },
   {
+    "id": "who-ddcc-map-icd11-sct-agent-targeted",
+    "type": "ConceptMap",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_SCT_Agent_Targeted",
+    "version": "0.3.1",
+    "name": "ICD11_SNOMED_CT_COVID19_Agent_Targeted"
+  },
+  {
     "id": "who-ddcc-map-icd11-sct-disease-targeted",
     "type": "ConceptMap",
     "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_SCT_Disease_Targeted",
@@ -84,11 +112,25 @@
     "name": "ICD_11_SNOMED_CT_COVID19_Disease"
   },
   {
+    "id": "who-ddcc-map-icd11-sct-test-result",
+    "type": "ConceptMap",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_SCT_Test_Result",
+    "version": "0.3.1",
+    "name": "ICD11_SNOMED_CT_COVID19_Test_Result"
+  },
+  {
     "id": "who-ddcc-map-icd11-sct-vaccines",
     "type": "ConceptMap",
     "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_SCT_Vaccines",
     "version": "0.3.1",
     "name": "ICD11_SNOMED_CT_COVID19_vaccines"
+  },
+  {
+    "id": "who-ddcc-map-loinc-sct-type-of-test",
+    "type": "ConceptMap",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_LOINC_to_SCT_Type_of_Test",
+    "version": "0.3.1",
+    "name": "LOINC_SNOMED_CT_COVID19_Type_of_Test"
   },
   {
     "id": "DDCCVSCoreDataSetQuestionnaire",
@@ -140,6 +182,13 @@
     "name": "DDCCCoreDataSet"
   },
   {
+    "id": "DDCCCoreDataSet.TR",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSet.TR",
+    "version": "0.3.1",
+    "name": "DDCCCoreDataSet_TR"
+  },
+  {
     "id": "DDCCCoreDataSet.VS",
     "type": "StructureDefinition",
     "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSet.VS",
@@ -161,11 +210,11 @@
     "name": "DDCCCoreDataSet_VS_PoV"
   },
   {
-    "id": "DDCCCountryOfVaccination",
+    "id": "DDCCCountryOfEvent",
     "type": "StructureDefinition",
-    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent",
     "version": "0.3.1",
-    "name": "DDCCCountryOfVaccination"
+    "name": "DDCCCountryOfEvent"
   },
   {
     "id": "DDCCDocument",
@@ -196,6 +245,13 @@
     "name": "DDCCDocumentSigned"
   },
   {
+    "id": "DDCCEventBrand",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCEventBrand",
+    "version": "0.3.1",
+    "name": "DDCCEventBrand"
+  },
+  {
     "id": "DDCCFolder",
     "type": "StructureDefinition",
     "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder",
@@ -222,6 +278,13 @@
     "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation",
     "version": "0.3.1",
     "name": "DDCCImmunizationRecommendation"
+  },
+  {
+    "id": "DDCCObservation",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCObservation",
+    "version": "0.3.1",
+    "name": "DDCCObservation"
   },
   {
     "id": "DDCCOrganization",
@@ -308,18 +371,32 @@
     "name": "DDCCTRComposition"
   },
   {
+    "id": "DDCCTestCentre",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestCentre",
+    "version": "0.3.1",
+    "name": "DDCCTestCentre"
+  },
+  {
+    "id": "DDCCTestManufacturer",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestManufacturer",
+    "version": "0.3.1",
+    "name": "DDCCTestManufacturer"
+  },
+  {
+    "id": "DDCCTestPathogen",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestPathogen",
+    "version": "0.3.1",
+    "name": "DDCCTestPathogen"
+  },
+  {
     "id": "DDCCVSComposition",
     "type": "StructureDefinition",
     "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition",
     "version": "0.3.1",
     "name": "DDCCVSComposition"
-  },
-  {
-    "id": "DDCCVaccineBrand",
-    "type": "StructureDefinition",
-    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand",
-    "version": "0.3.1",
-    "name": "DDCCVaccineBrand"
   },
   {
     "id": "DDCCVaccineMarketAuthorization",
@@ -413,11 +490,39 @@
     "name": "DDCC_QR_Format_ValueSet"
   },
   {
+    "id": "who-ddcc-agent-targeted-covid-19",
+    "type": "ValueSet",
+    "url": "http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-agent-targeted-covid-19",
+    "version": "0.3.1",
+    "name": "WHO_DDCC_Agent_Targeted_COVID_19"
+  },
+  {
     "id": "who-ddcc-disease-targeted-covid-19",
     "type": "ValueSet",
     "url": "http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19",
     "version": "0.3.1",
     "name": "WHO_DDCC_Disease_Targeted_COVID_19"
+  },
+  {
+    "id": "who-ddcc-sample-origin-covid-19",
+    "type": "ValueSet",
+    "url": "http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-sample-origin-covid-19",
+    "version": "0.3.1",
+    "name": "WHO_DDCC_Sample_Origin_COVID_19"
+  },
+  {
+    "id": "who-ddcc-test-result-covid-19",
+    "type": "ValueSet",
+    "url": "http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-test-result-covid-19",
+    "version": "0.3.1",
+    "name": "WHO_DDCC_Test_Result_COVID_19"
+  },
+  {
+    "id": "who-ddcc-type-of-test-covid-19",
+    "type": "ValueSet",
+    "url": "http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-type-of-test-covid-19",
+    "version": "0.3.1",
+    "name": "WHO_DDCC_Type_of_Test_COVID_19"
   },
   {
     "id": "who-ddcc-vaccines-covid-19",

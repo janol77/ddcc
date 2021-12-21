@@ -10,7 +10,7 @@
   "name": "DDCCCoreDataSet_VS_PoV",
   "title": "DDCC Core Data Set Logical Model - Vaccine Status - Proof of Vaccination",
   "status": "draft",
-  "date": "2021-12-15T00:34:29+00:00",
+  "date": "2021-12-21T21:05:49+00:00",
   "publisher": "WHO",
   "contact": [
     {
@@ -37,8 +37,28 @@
   "fhirVersion": "4.0.1",
   "mapping": [
     {
-      "identity": "ddcc",
-      "uri": "http://worldhealthorganization.github.io/ddcc",
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "ddcc-immunization",
+      "uri": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization",
+      "name": "WHO Digital Documentation of COVID Certificates"
+    },
+    {
+      "identity": "ddcc-immunization-recommendation",
+      "uri": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation",
+      "name": "WHO Digital Documentation of COVID Certificates"
+    },
+    {
+      "identity": "ddcc-composition",
+      "uri": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition",
+      "name": "WHO Digital Documentation of COVID Certificates"
+    },
+    {
+      "identity": "ddcc-patient",
+      "uri": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient",
       "name": "WHO Digital Documentation of COVID Certificates"
     }
   ],
@@ -67,7 +87,7 @@
         "id": "DDCCCoreDataSet.name",
         "path": "DDCCCoreDataSet.name",
         "short": "Name",
-        "definition": "The full name of the vaccinated person.",
+        "definition": "The full name of the person.",
         "min": 1,
         "max": "1",
         "base": {
@@ -83,7 +103,7 @@
         "isSummary": true,
         "mapping": [
           {
-            "identity": "ddcc",
+            "identity": "ddcc-patient",
             "map": "Patient.name.text"
           }
         ]
@@ -92,7 +112,7 @@
         "id": "DDCCCoreDataSet.birthDate",
         "path": "DDCCCoreDataSet.birthDate",
         "short": "Date of birth",
-        "definition": "The vaccinated person's date of birth (DOB) if known. If unknown, use given DOB for administrative purposes",
+        "definition": "The person's date of birth (DOB) if known. If unknown, use given DOB for administrative purposes",
         "min": 0,
         "max": "1",
         "base": {
@@ -108,7 +128,7 @@
         "isSummary": true,
         "mapping": [
           {
-            "identity": "ddcc",
+            "identity": "ddcc-patient",
             "map": "Patient.birthDate"
           }
         ]
@@ -117,7 +137,7 @@
         "id": "DDCCCoreDataSet.identifier",
         "path": "DDCCCoreDataSet.identifier",
         "short": "Unique identifier",
-        "definition": "Unique identifier for the vaccinated person, according to the policies applicable to each country. There can be more than one unique identifier used to link records. (e.g. national ID, health ID, immunization information system ID, medical record ID).",
+        "definition": "Unique identifier for the person, according to the policies applicable to each country. There can be more than one unique identifier used to link records. (e.g. national ID, health ID, immunization information system ID, medical record ID).",
         "min": 0,
         "max": "1",
         "base": {
@@ -133,37 +153,8 @@
         "isSummary": true,
         "mapping": [
           {
-            "identity": "ddcc",
+            "identity": "ddcc-patient",
             "map": "Patient.identifier"
-          }
-        ]
-      },
-      {
-        "id": "DDCCCoreDataSet.sex",
-        "path": "DDCCCoreDataSet.sex",
-        "short": "Sex",
-        "definition": "Documentation of a specific instance of sex information for the vaccinated person.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "DDCCCoreDataSet.sex",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "isSummary": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://hl7.org/fhir/ValueSet/administrative-gender"
-        },
-        "mapping": [
-          {
-            "identity": "ddcc",
-            "map": "Patient.gender"
           }
         ]
       },
@@ -206,7 +197,17 @@
             ]
           }
         ],
-        "isSummary": true
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "ddcc-composition",
+            "map": "Composition.author.identifier"
+          },
+          {
+            "identity": "ddcc-immunization",
+            "map": "Immunization.protocolApplied.authority.identifier"
+          }
+        ]
       },
       {
         "id": "DDCCCoreDataSet.certificate.hcid",
@@ -218,6 +219,25 @@
         "base": {
           "path": "DDCCCoreDataSet.certificate.hcid",
           "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "id": "DDCCCoreDataSet.certificate.ddccid",
+        "path": "DDCCCoreDataSet.certificate.ddccid",
+        "short": "DDCC Identifier",
+        "definition": "DDCC Identifier",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DDCCCoreDataSet.certificate.ddccid",
+          "min": 0,
           "max": "1"
         },
         "type": [
@@ -262,6 +282,12 @@
           {
             "code": "Period"
           }
+        ],
+        "mapping": [
+          {
+            "identity": "ddcc-composition",
+            "map": "Composition.event.period"
+          }
         ]
       },
       {
@@ -305,11 +331,11 @@
         "path": "DDCCCoreDataSet.vaccination",
         "short": "Vaccination Event",
         "definition": "A vaccination event.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "DDCCCoreDataSet.vaccination",
-          "min": 0,
+          "min": 1,
           "max": "1"
         },
         "type": [
@@ -352,7 +378,7 @@
         },
         "mapping": [
           {
-            "identity": "ddcc",
+            "identity": "ddcc-immunization",
             "map": "Immunization.vaccineCode"
           }
         ]
@@ -377,8 +403,8 @@
         "isSummary": true,
         "mapping": [
           {
-            "identity": "ddcc",
-            "map": "Immunization.extension.where(url='https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand')"
+            "identity": "ddcc-immunization",
+            "map": "Immunization.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCEventBrand]"
           }
         ]
       },
@@ -402,7 +428,7 @@
         "isSummary": true,
         "mapping": [
           {
-            "identity": "ddcc",
+            "identity": "ddcc-immunization",
             "map": "Immunization.manufacturer"
           }
         ]
@@ -427,8 +453,8 @@
         "isSummary": true,
         "mapping": [
           {
-            "identity": "ddcc",
-            "map": "Immunization.extension.where(url='https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineMarketAuthorization')"
+            "identity": "ddcc-immunization",
+            "map": "Immunization.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineMarketAuthorization]"
           }
         ]
       },
@@ -452,7 +478,7 @@
         "isSummary": true,
         "mapping": [
           {
-            "identity": "ddcc",
+            "identity": "ddcc-immunization",
             "map": "Immunization.lotNumber"
           }
         ]
@@ -477,7 +503,7 @@
         "isSummary": true,
         "mapping": [
           {
-            "identity": "ddcc",
+            "identity": "ddcc-immunization",
             "map": "Immunization.occurrence"
           }
         ]
@@ -501,8 +527,8 @@
         ],
         "mapping": [
           {
-            "identity": "ddcc",
-            "map": "Immunization.extension.where(url='https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineValidFrom')"
+            "identity": "ddcc-immunization",
+            "map": "Immunization.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineValidFrom]"
           }
         ]
       },
@@ -526,7 +552,7 @@
         "isSummary": true,
         "mapping": [
           {
-            "identity": "ddcc",
+            "identity": "ddcc-immunization",
             "map": "Immunization.protocolApplied.doseNumber"
           }
         ]
@@ -550,7 +576,7 @@
         ],
         "mapping": [
           {
-            "identity": "ddcc",
+            "identity": "ddcc-immunization",
             "map": "Immunization.protocolApplied.seriesDoses"
           }
         ]
@@ -581,6 +607,10 @@
           {
             "identity": "ddcc",
             "map": "Immunization.extension.where(url='https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination')"
+          },
+          {
+            "identity": "ddcc-immunization",
+            "map": "Immunization.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent]"
           }
         ]
       },
@@ -603,7 +633,7 @@
         ],
         "mapping": [
           {
-            "identity": "ddcc",
+            "identity": "ddcc-immunization",
             "map": "Immunization.location"
           }
         ]
@@ -645,7 +675,7 @@
         ],
         "mapping": [
           {
-            "identity": "ddcc",
+            "identity": "ddcc-immunization",
             "map": "Immunization.performer.actor"
           }
         ]
@@ -673,7 +703,7 @@
         },
         "mapping": [
           {
-            "identity": "ddcc",
+            "identity": "ddcc-immunization",
             "map": "Immunization.protocolApplied.targetDisease"
           }
         ]
@@ -697,7 +727,7 @@
         ],
         "mapping": [
           {
-            "identity": "ddcc",
+            "identity": "ddcc-immunization-recommendation",
             "map": "ImmunizationRecommendation.dateCriterion.value"
           }
         ]

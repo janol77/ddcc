@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "DDCCCoreDataSet_VS_PoV"];
   fhir:StructureDefinition.title [ fhir:value "DDCC Core Data Set Logical Model - Vaccine Status - Proof of Vaccination"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2021-12-15T00:34:29+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-12-21T21:05:49+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "WHO"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -40,8 +40,28 @@
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;
-     fhir:StructureDefinition.mapping.identity [ fhir:value "ddcc" ];
-     fhir:StructureDefinition.mapping.uri [ fhir:value "http://worldhealthorganization.github.io/ddcc" ];
+     fhir:StructureDefinition.mapping.identity [ fhir:value "rim" ];
+     fhir:StructureDefinition.mapping.uri [ fhir:value "http://hl7.org/v3" ];
+     fhir:StructureDefinition.mapping.name [ fhir:value "RIM Mapping" ]
+  ], [
+     fhir:index 1;
+     fhir:StructureDefinition.mapping.identity [ fhir:value "ddcc-immunization" ];
+     fhir:StructureDefinition.mapping.uri [ fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization" ];
+     fhir:StructureDefinition.mapping.name [ fhir:value "WHO Digital Documentation of COVID Certificates" ]
+  ], [
+     fhir:index 2;
+     fhir:StructureDefinition.mapping.identity [ fhir:value "ddcc-immunization-recommendation" ];
+     fhir:StructureDefinition.mapping.uri [ fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation" ];
+     fhir:StructureDefinition.mapping.name [ fhir:value "WHO Digital Documentation of COVID Certificates" ]
+  ], [
+     fhir:index 3;
+     fhir:StructureDefinition.mapping.identity [ fhir:value "ddcc-composition" ];
+     fhir:StructureDefinition.mapping.uri [ fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition" ];
+     fhir:StructureDefinition.mapping.name [ fhir:value "WHO Digital Documentation of COVID Certificates" ]
+  ], [
+     fhir:index 4;
+     fhir:StructureDefinition.mapping.identity [ fhir:value "ddcc-patient" ];
+     fhir:StructureDefinition.mapping.uri [ fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient" ];
      fhir:StructureDefinition.mapping.name [ fhir:value "WHO Digital Documentation of COVID Certificates" ]
   ];
   fhir:StructureDefinition.kind [ fhir:value "logical"];
@@ -72,7 +92,7 @@
        fhir:Element.id [ fhir:value "DDCCCoreDataSet.name" ];
        fhir:ElementDefinition.path [ fhir:value "DDCCCoreDataSet.name" ];
        fhir:ElementDefinition.short [ fhir:value "Name" ];
-       fhir:ElementDefinition.definition [ fhir:value "The full name of the vaccinated person." ];
+       fhir:ElementDefinition.definition [ fhir:value "The full name of the person." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
@@ -87,7 +107,7 @@
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc" ];
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-patient" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Patient.name.text" ]
        ]
      ], [
@@ -95,7 +115,7 @@
        fhir:Element.id [ fhir:value "DDCCCoreDataSet.birthDate" ];
        fhir:ElementDefinition.path [ fhir:value "DDCCCoreDataSet.birthDate" ];
        fhir:ElementDefinition.short [ fhir:value "Date of birth" ];
-       fhir:ElementDefinition.definition [ fhir:value "The vaccinated person's date of birth (DOB) if known. If unknown, use given DOB for administrative purposes" ];
+       fhir:ElementDefinition.definition [ fhir:value "The person's date of birth (DOB) if known. If unknown, use given DOB for administrative purposes" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
@@ -110,7 +130,7 @@
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc" ];
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-patient" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Patient.birthDate" ]
        ]
      ], [
@@ -118,7 +138,7 @@
        fhir:Element.id [ fhir:value "DDCCCoreDataSet.identifier" ];
        fhir:ElementDefinition.path [ fhir:value "DDCCCoreDataSet.identifier" ];
        fhir:ElementDefinition.short [ fhir:value "Unique identifier" ];
-       fhir:ElementDefinition.definition [ fhir:value "Unique identifier for the vaccinated person, according to the policies applicable to each country. There can be more than one unique identifier used to link records. (e.g. national ID, health ID, immunization information system ID, medical record ID)." ];
+       fhir:ElementDefinition.definition [ fhir:value "Unique identifier for the person, according to the policies applicable to each country. There can be more than one unique identifier used to link records. (e.g. national ID, health ID, immunization information system ID, medical record ID)." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
@@ -133,41 +153,11 @@
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc" ];
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-patient" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Patient.identifier" ]
        ]
      ], [
        fhir:index 4;
-       fhir:Element.id [ fhir:value "DDCCCoreDataSet.sex" ];
-       fhir:ElementDefinition.path [ fhir:value "DDCCCoreDataSet.sex" ];
-       fhir:ElementDefinition.short [ fhir:value "Sex" ];
-       fhir:ElementDefinition.definition [ fhir:value "Documentation of a specific instance of sex information for the vaccinated person." ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "DDCCCoreDataSet.sex" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "1" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "code" ]
-       ];
-       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.binding [
-         fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
-         fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/administrative-gender";
-           fhir:link <http://hl7.org/fhir/ValueSet/administrative-gender>
-         ]
-       ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "Patient.gender" ]
-       ]
-     ], [
-       fhir:index 5;
        fhir:Element.id [ fhir:value "DDCCCoreDataSet.certificate" ];
        fhir:ElementDefinition.path [ fhir:value "DDCCCoreDataSet.certificate" ];
        fhir:ElementDefinition.short [ fhir:value "Certificate Metadata" ];
@@ -185,7 +175,7 @@
        ];
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 6;
+       fhir:index 5;
        fhir:Element.id [ fhir:value "DDCCCoreDataSet.certificate.issuer" ];
        fhir:ElementDefinition.path [ fhir:value "DDCCCoreDataSet.certificate.issuer" ];
        fhir:ElementDefinition.short [ fhir:value "Certificate issuer" ];
@@ -206,9 +196,18 @@
            fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
          ]
        ];
-       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-composition" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Composition.author.identifier" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-immunization" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Immunization.protocolApplied.authority.identifier" ]
+       ]
      ], [
-       fhir:index 7;
+       fhir:index 6;
        fhir:Element.id [ fhir:value "DDCCCoreDataSet.certificate.hcid" ];
        fhir:ElementDefinition.path [ fhir:value "DDCCCoreDataSet.certificate.hcid" ];
        fhir:ElementDefinition.short [ fhir:value "Health certificate identifier (HCID)" ];
@@ -218,6 +217,24 @@
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "DDCCCoreDataSet.certificate.hcid" ];
          fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Identifier" ]
+       ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.id [ fhir:value "DDCCCoreDataSet.certificate.ddccid" ];
+       fhir:ElementDefinition.path [ fhir:value "DDCCCoreDataSet.certificate.ddccid" ];
+       fhir:ElementDefinition.short [ fhir:value "DDCC Identifier" ];
+       fhir:ElementDefinition.definition [ fhir:value "DDCC Identifier" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DDCCCoreDataSet.certificate.ddccid" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
          fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ];
        fhir:ElementDefinition.type [
@@ -259,6 +276,11 @@
        fhir:ElementDefinition.type [
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Period" ]
+       ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-composition" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Composition.event.period" ]
        ]
      ], [
        fhir:index 10;
@@ -300,11 +322,11 @@
        fhir:ElementDefinition.path [ fhir:value "DDCCCoreDataSet.vaccination" ];
        fhir:ElementDefinition.short [ fhir:value "Vaccination Event" ];
        fhir:ElementDefinition.definition [ fhir:value "A vaccination event." ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "DDCCCoreDataSet.vaccination" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
          fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ];
        fhir:ElementDefinition.type [
@@ -350,7 +372,7 @@
        ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc" ];
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-immunization" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Immunization.vaccineCode" ]
        ]
      ], [
@@ -373,8 +395,8 @@
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "Immunization.extension.where(url='https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand')" ]
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-immunization" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Immunization.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCEventBrand]" ]
        ]
      ], [
        fhir:index 15;
@@ -396,7 +418,7 @@
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc" ];
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-immunization" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Immunization.manufacturer" ]
        ]
      ], [
@@ -419,8 +441,8 @@
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "Immunization.extension.where(url='https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineMarketAuthorization')" ]
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-immunization" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Immunization.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineMarketAuthorization]" ]
        ]
      ], [
        fhir:index 17;
@@ -442,7 +464,7 @@
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc" ];
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-immunization" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Immunization.lotNumber" ]
        ]
      ], [
@@ -465,7 +487,7 @@
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc" ];
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-immunization" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Immunization.occurrence" ]
        ]
      ], [
@@ -487,8 +509,8 @@
        ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "Immunization.extension.where(url='https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineValidFrom')" ]
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-immunization" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Immunization.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineValidFrom]" ]
        ]
      ], [
        fhir:index 20;
@@ -510,7 +532,7 @@
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc" ];
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-immunization" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Immunization.protocolApplied.doseNumber" ]
        ]
      ], [
@@ -532,7 +554,7 @@
        ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc" ];
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-immunization" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Immunization.protocolApplied.seriesDoses" ]
        ]
      ], [
@@ -564,6 +586,10 @@
          fhir:index 0;
          fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Immunization.extension.where(url='https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination')" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-immunization" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Immunization.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent]" ]
        ]
      ], [
        fhir:index 23;
@@ -584,7 +610,7 @@
        ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc" ];
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-immunization" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Immunization.location" ]
        ]
      ], [
@@ -623,7 +649,7 @@
        ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc" ];
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-immunization" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Immunization.performer.actor" ]
        ]
      ], [
@@ -652,7 +678,7 @@
        ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc" ];
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-immunization" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Immunization.protocolApplied.targetDisease" ]
        ]
      ], [
@@ -674,7 +700,7 @@
        ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc" ];
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-immunization-recommendation" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "ImmunizationRecommendation.dateCriterion.value" ]
        ]
      ]

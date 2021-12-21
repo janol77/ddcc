@@ -313,6 +313,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/DDCCObservation"/>
+      </reference>
+      <name value="DDCC Observation"/>
+      <description value="A DDCC Observation contains the content corresponding to a row in the Test &#xA;Events section of a Paper DDCC. While this is not a further profile of the International&#xA;Patient Summary (IPS) Observation resouce, this is intended to map into an IPS &#xA;Observation resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/DDCCOrganization"/>
       </reference>
       <name value="DDCC Organization"/>
@@ -456,10 +467,10 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/DDCCCountryOfVaccination"/>
+        <reference value="StructureDefinition/DDCCCountryOfEvent"/>
       </reference>
-      <name value="DDCC Country Of Vaccination for Immunization"/>
-      <description value="DDCC Country Of Vaccination for Immunization"/>
+      <name value="DDCC Country Of Event for Immunization"/>
+      <description value="DDCC Country Of Event for Immunization"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -467,10 +478,43 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/DDCCVaccineBrand"/>
+        <reference value="StructureDefinition/DDCCEventBrand"/>
       </reference>
-      <name value="DDCC Vaccine Brand for Immunization"/>
-      <description value="DDCC Vaccine Brand for Immunization"/>
+      <name value="DDCC Event Brand for Immunization"/>
+      <description value="DDCC Event Brand for Immunization"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCTestCentre"/>
+      </reference>
+      <name value="DDCC Test Centre for Observation"/>
+      <description value="DDCC Test Centre for Observation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCTestManufacturer"/>
+      </reference>
+      <name value="DDCC Test Manufacturer for Observation"/>
+      <description value="DDCC Test Manufacturer for Observation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCTestPathogen"/>
+      </reference>
+      <name value="DDCC Test Pathogen for Observation"/>
+      <description value="DDCC Test Pathogen for Observation"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -504,6 +548,17 @@
       </reference>
       <name value="DDCC Core Data Set Logical Model"/>
       <description value="Data elements for the DDCC Core Data Set."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical:abstract"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCCoreDataSet.TR"/>
+      </reference>
+      <name value="DDCC Core Data Set Logical Model for Test Results"/>
+      <description value="Data elements for the DDCC Core Data Set for Test Results."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -588,10 +643,54 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/who-ddcc-agent-targeted-covid-19"/>
+      </reference>
+      <name value="WHO Agent Targeted (COVID-19)"/>
+      <description value="WHO Agent Targeted List (COVID-19) from [ICD 11](https://icd.who.int/browse11)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/who-ddcc-disease-targeted-covid-19"/>
       </reference>
       <name value="WHO Disease or Agent Targeted (COVID-19)"/>
       <description value="WHO Disease or Agent Targeted List (COVID-19) from [ICD 11](https://icd.who.int/browse11)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/who-ddcc-sample-origin-covid-19"/>
+      </reference>
+      <name value="WHO Speciman Sample Origin (COVID-19)"/>
+      <description value="WHO Speciman Sample Origin List (COVID-19)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/who-ddcc-test-result-covid-19"/>
+      </reference>
+      <name value="WHO Test Result (COVID-19)"/>
+      <description value="WHO COVID-19 Test Result from [ICD 11](https://icd.who.int/browse11)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/who-ddcc-type-of-test-covid-19"/>
+      </reference>
+      <name value="WHO Type of Covid-19 Test"/>
+      <description value="WHO Type of COVID-19 Test"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1189,6 +1288,17 @@
         <valueString value="ConceptMap"/>
       </extension>
       <reference>
+        <reference value="ConceptMap/who-ddcc-map-icd11-sct-agent-targeted"/>
+      </reference>
+      <name value="WHO_DDCC_Map_ICD11_to_SCT_Agent_Targeted"/>
+      <description value="Mapping from ICD-11 to SNOMED CT for COVID-19 Agent Targeted"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
         <reference value="ConceptMap/who-ddcc-map-icd11-sct-disease-targeted"/>
       </reference>
       <name value="WHO_DDCC_Map_ICD11_to_SCT_Disease_Targeted"/>
@@ -1200,10 +1310,32 @@
         <valueString value="ConceptMap"/>
       </extension>
       <reference>
+        <reference value="ConceptMap/who-ddcc-map-icd11-sct-test-result"/>
+      </reference>
+      <name value="WHO_DDCC_Map_ICD11_to_SCT_Test_Result"/>
+      <description value="Mapping from ICD-11 to SNOMED CT for COVID-19 Test Result"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
         <reference value="ConceptMap/who-ddcc-map-icd11-sct-vaccines"/>
       </reference>
       <name value="WHO_DDCC_Map_ICD11_to_SCT_Vaccines"/>
       <description value="Mapping from ICD-11 to SNOMED CT for COVID-19 Vaccines"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/who-ddcc-map-loinc-sct-type-of-test"/>
+      </reference>
+      <name value="WHO_DDCC_Map_LOINC_to_SCT_Type_of_Test"/>
+      <description value="Mapping from LOINC to SNOMED CT for COVID-19 Type of Test"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1258,6 +1390,39 @@
       </reference>
       <name value="Patient (IPS)"/>
       <description value="This profile represents the constraints applied to the Patient resource by the International Patient Summary (IPS) FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the IPS composition or in one of the referred resources."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical:abstract"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/HC1"/>
+      </reference>
+      <name value="EU DCC"/>
+      <description value="EU Digital Covid Certificate"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical:abstract"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/t"/>
+      </reference>
+      <name value="Test Group"/>
+      <description value="Test Group"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical:abstract"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/v"/>
+      </reference>
+      <name value="Vaccination Group"/>
+      <description value="Vaccination Group"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

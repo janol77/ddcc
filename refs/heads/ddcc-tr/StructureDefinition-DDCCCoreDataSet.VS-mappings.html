@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"24.5"}
-    h3,h4,h5,h6{--heading-prefix:"24.5"}</style>
+    <style type="text/css">h2{--heading-prefix:"24.6"}
+    h3,h4,h5,h6{--heading-prefix:"24.6"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -226,28 +226,48 @@
 
 
 
-  <a name="ddcc"> </a><h3>Mappings for WHO Digital Documentation of COVID Certificates (http://worldhealthorganization.github.io/ddcc)</h3><table class="grid">
+  <a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
+ <tr><td colspan="3"><b>DDCCCoreDataSet_VS</b></td></tr>
+</table>
+<a name="ddcc-immunization"> </a><h3>Mappings for WHO Digital Documentation of COVID Certificates (http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization)</h3><table class="grid">
+ <tr><td colspan="3"><b>DDCCCoreDataSet_VS</b></td></tr>
+ <tr><td>DDCCCoreDataSet</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;certificate</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;issuer</td><td>Immunization.protocolApplied.authority.identifier</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;vaccination</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vaccine</td><td>Immunization.vaccineCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;brand</td><td>Immunization.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCEventBrand]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;manufacturer</td><td>Immunization.manufacturer</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maholder</td><td>Immunization.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineMarketAuthorization]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lot</td><td>Immunization.lotNumber</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;date</td><td>Immunization.occurrence</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;validFrom</td><td>Immunization.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineValidFrom]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dose</td><td>Immunization.protocolApplied.doseNumber</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;totalDoses</td><td>Immunization.protocolApplied.seriesDoses</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;country</td><td>Immunization.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;centre</td><td>Immunization.location</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;practitioner</td><td>Immunization.performer.actor</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;disease</td><td>Immunization.protocolApplied.targetDisease</td> </tr>
+</table>
+<a name="ddcc-immunization-recommendation"> </a><h3>Mappings for WHO Digital Documentation of COVID Certificates (http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation)</h3><table class="grid">
+ <tr><td colspan="3"><b>DDCCCoreDataSet_VS</b></td></tr>
+ <tr><td>DDCCCoreDataSet</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;vaccination</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nextDose</td><td>ImmunizationRecommendation.dateCriterion.value</td> </tr>
+</table>
+<a name="ddcc-composition"> </a><h3>Mappings for WHO Digital Documentation of COVID Certificates (http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition)</h3><table class="grid">
+ <tr><td colspan="3"><b>DDCCCoreDataSet_VS</b></td></tr>
+ <tr><td>DDCCCoreDataSet</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;certificate</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;issuer</td><td>Composition.author.identifier</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>Composition.event.period</td> </tr>
+</table>
+<a name="ddcc-patient"> </a><h3>Mappings for WHO Digital Documentation of COVID Certificates (http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient)</h3><table class="grid">
  <tr><td colspan="3"><b>DDCCCoreDataSet_VS</b></td></tr>
  <tr><td>DDCCCoreDataSet</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;name</td><td>Patient.name.text</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;birthDate</td><td>Patient.birthDate</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>Patient.identifier</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;sex</td><td>Patient.gender</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;vaccination</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vaccine</td><td>Immunization.vaccineCode</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;brand</td><td>Immunization.extension.where(url='https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand')</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;manufacturer</td><td>Immunization.manufacturer</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maholder</td><td>Immunization.extension.where(url='https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineMarketAuthorization')</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lot</td><td>Immunization.lotNumber</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;date</td><td>Immunization.occurrence</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;validFrom</td><td>Immunization.extension.where(url='https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineValidFrom')</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dose</td><td>Immunization.protocolApplied.doseNumber</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;totalDoses</td><td>Immunization.protocolApplied.seriesDoses</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;country</td><td>Immunization.extension.where(url='https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination')</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;centre</td><td>Immunization.location</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;practitioner</td><td>Immunization.performer.actor</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;disease</td><td>Immunization.protocolApplied.targetDisease</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nextDose</td><td>ImmunizationRecommendation.dateCriterion.value</td> </tr>
 </table>
 
 
@@ -301,8 +321,8 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l561">​</a>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc-vs#0.3.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Dec 15, 2021 00:34+0000">2021-12-15</span>
+        <p><a name="l662">​</a>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc-vs#0.3.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 21, 2021 21:05+0000">2021-12-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

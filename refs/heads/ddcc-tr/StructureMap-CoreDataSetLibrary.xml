@@ -4,13 +4,13 @@
   <id value="CoreDataSetLibrary"/>
   <meta>
     <versionId value="1"/>
-    <lastUpdated value="2021-12-09T20:50:36.464+00:00"/>
+    <lastUpdated value="2021-12-21T20:57:02.028+00:00"/>
   </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><pre>map &quot;http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetLibrary&quot; = &quot;CoreDataSetLibrary&quot;
 
 
-uses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSet.VS.PoV&quot; alias DDCCVS as source
+uses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSet.VS&quot; alias DDCCVS as source
 uses &quot;http://hl7.org/fhir/StructureDefinition/Patient&quot; alias Patient as target
 uses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient&quot; alias DDCCPatient as produced
 uses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReferenceQR&quot; alias DDCCDocRefQR as produced
@@ -22,7 +22,6 @@ group DDCCToPatient(source src : DDCCVS, target patient : DDCCPatient, source pi
     name as content -&gt; tName.text = content &quot;set name&quot;;
   } &quot;set full name&quot;;
   src.birthDate as birthDate -&gt; patient.birthDate = birthDate &quot;set birthDate&quot;;
-  src.sex as sex -&gt; patient.gender = sex &quot;set gender&quot;;
   src.identifier as identifier -&gt; patient.identifier = identifier &quot;set identifier&quot;;
 }
 
@@ -66,7 +65,7 @@ group DDCCToComposition(source src : DDCCVS, target comp : DDCCComposition, sour
   <version value="0.3.1"/>
   <name value="CoreDataSetLibrary"/>
   <status value="draft"/>
-  <date value="2021-12-15T00:34:29+00:00"/>
+  <date value="2021-12-21T21:05:49+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -82,7 +81,7 @@ group DDCCToComposition(source src : DDCCVS, target comp : DDCCComposition, sour
     </coding>
   </jurisdiction>
   <structure>
-    <url value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSet.VS.PoV"/>
+    <url value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSet.VS"/>
     <mode value="source"/>
     <alias value="DDCCVS"/>
   </structure>
@@ -182,23 +181,6 @@ group DDCCToComposition(source src : DDCCVS, target comp : DDCCComposition, sour
         <transform value="copy"/>
         <parameter>
           <valueId value="birthDate"/>
-        </parameter>
-      </target>
-    </rule>
-    <rule>
-      <name value="set gender"/>
-      <source>
-        <context value="src"/>
-        <element value="sex"/>
-        <variable value="sex"/>
-      </source>
-      <target>
-        <context value="patient"/>
-        <contextType value="variable"/>
-        <element value="gender"/>
-        <transform value="copy"/>
-        <parameter>
-          <valueId value="sex"/>
         </parameter>
       </target>
     </rule>

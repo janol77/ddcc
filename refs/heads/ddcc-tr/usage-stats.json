@@ -5,16 +5,40 @@
   "jurisdiction": "001",
   "extensions": [
     {
-      "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination",
-      "title": "DDCC Country Of Vaccination for Immunization",
+      "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent",
+      "title": "DDCC Country Of Event for Immunization",
       "types": [
         "code",
         "code"
       ]
     },
     {
-      "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand",
-      "title": "DDCC Vaccine Brand for Immunization",
+      "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCEventBrand",
+      "title": "DDCC Event Brand for Immunization",
+      "types": [
+        "Coding",
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestCentre",
+      "title": "DDCC Test Centre for Observation",
+      "types": [
+        "Coding",
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestManufacturer",
+      "title": "DDCC Test Manufacturer for Observation",
+      "types": [
+        "Coding",
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestPathogen",
+      "title": "DDCC Test Pathogen for Observation",
       "types": [
         "Coding",
         "Coding"
@@ -98,6 +122,12 @@
         "title": "DDCC Immunization Recommendation"
       }
     ],
+    "Observation": [
+      {
+        "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCObservation",
+        "title": "DDCC Observation"
+      }
+    ],
     "Organization": [
       {
         "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization",
@@ -134,7 +164,8 @@
       "Questionnaire"
     ],
     "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
-      "Immunization.occurrence[x]"
+      "Immunization.occurrence[x]",
+      "Observation.effective[x]"
     ],
     "http://hl7.org/fhir/StructureDefinition/designNote": [
       "Questionnaire",
@@ -184,6 +215,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.differential.element",
@@ -282,13 +316,24 @@
     "http://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-sourceId": [
       "List"
     ],
-    "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination": [
+    "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent": [
       "Bundle.entry.resource",
-      "Immunization"
+      "Immunization",
+      "Observation"
     ],
-    "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand": [
+    "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCEventBrand": [
       "Bundle.entry.resource",
-      "Immunization"
+      "Immunization",
+      "Observation"
+    ],
+    "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestCentre": [
+      "Observation"
+    ],
+    "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestManufacturer": [
+      "Observation"
+    ],
+    "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestPathogen": [
+      "Observation"
     ],
     "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineMarketAuthorization": [
       "Bundle.entry.resource",

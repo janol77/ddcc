@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "DDCCQuestionnaire"];
   fhir:StructureDefinition.title [ fhir:value "DDCC Questionniare"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-12-15T00:34:29+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-12-21T21:05:49+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "WHO"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -648,7 +648,7 @@
        fhir:ElementDefinition.path [ fhir:value "Questionnaire.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "is-modular" ];
        fhir:ElementDefinition.short [ fhir:value "Questionnaire is modular" ];
-       fhir:ElementDefinition.definition [ fhir:value "If present, indicates that this is a 'modular' questionnaire that requires some degree of assembly (e.g. using the [$assemble](http://hl7.org/fhir/uv/sdc/OperationDefinition/Questionnaire-assemble) operation) prior to being presented in a Form Filler.  This might mean filling in item metadata based on information looked up from item.definitions and/or retrieving sub-questionnaires pointed to by [sub-questionnaire](https://build.fhir.org/ig/HL7/sdc/StructureDefinition-sdc-questionnaire.html/StructureDefinition-sdc-questionnaire-subQuestionnaire.html) extensions." ];
+       fhir:ElementDefinition.definition [ fhir:value "If present, indicates that this is a 'modular' questionnaire that requires some degree of assembly (e.g. using the [$assemble](http://hl7.org/fhir/uv/sdc/OperationDefinition/Questionnaire-assemble) operation) prior to being presented in a Form Filler.  This might mean filling in item metadata based on information looked up from item.definitions and/or retrieving sub-questionnaires pointed to by [sub-questionnaire](StructureDefinition-sdc-questionnaire-subQuestionnaire.html) extensions." ];
        fhir:ElementDefinition.comment [ fhir:value "SDC-conformant Questionnaires **SHALL** declare this extension if they require an assembly process prior to use." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
