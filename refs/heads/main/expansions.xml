@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="1ec8cdd3-89eb-4bb6-bf6e-345cc689d5e5"/>
+  <id value="753c742e-881e-4c73-aa29-b47185390d19"/>
   <meta>
-    <lastUpdated value="2021-12-10T20:06:08.357+00:00"/>
+    <lastUpdated value="2022-01-10T15:11:55.545+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -51,7 +51,7 @@
         <name value="DDCC_Folder_DesignationType_ValueSet"/>
         <title value="DDCC DesignationTypes for Folder"/>
         <status value="active"/>
-        <date value="2021-12-10T20:06:08+00:00"/>
+        <date value="2022-01-10T15:11:55+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -68,8 +68,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:60634f1f-4dfe-4a05-b570-cba9e3cee543"/>
-          <timestamp value="2021-12-10T20:07:37+00:00"/>
+          <identifier value="urn:uuid:f56e57dd-4273-4ac3-b599-6a7b5bae8bcb"/>
+          <timestamp value="2022-01-10T15:12:50+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -165,7 +165,7 @@
         <name value="DDCC_QR_Category_Usage_ValueSet"/>
         <title value="DDCC QR Category Usage Codes"/>
         <status value="active"/>
-        <date value="2021-12-10T20:06:08+00:00"/>
+        <date value="2022-01-10T15:11:55+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -182,8 +182,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b3a23995-5252-47db-996e-6cb1b0624c16"/>
-          <timestamp value="2021-12-10T20:07:37+00:00"/>
+          <identifier value="urn:uuid:9135e544-a23e-49ac-bc2d-47436bbc3957"/>
+          <timestamp value="2022-01-10T15:12:50+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -283,7 +283,7 @@
         <name value="DDCC_QR_Format_ValueSet"/>
         <title value="DDCC QR Format Codes"/>
         <status value="active"/>
-        <date value="2021-12-10T20:06:08+00:00"/>
+        <date value="2022-01-10T15:11:55+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -300,8 +300,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7d7d8186-6463-4054-adaa-065bfbfa1917"/>
-          <timestamp value="2021-12-10T20:07:37+00:00"/>
+          <identifier value="urn:uuid:31ce8049-3d9c-4c60-a2ad-a3969ce7572b"/>
+          <timestamp value="2022-01-10T15:12:50+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>

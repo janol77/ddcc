@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "WHO_DDCC_Vaccines_COVID_19"];
   fhir:ValueSet.title [ fhir:value "WHO Vaccine List (COVID-19)"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2021-12-10T20:06:08+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-01-10T15:11:55+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "WHO"];
   fhir:ValueSet.contact [
      fhir:index 0;
