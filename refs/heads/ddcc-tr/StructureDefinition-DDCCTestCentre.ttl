@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "DDCCTestCentre"];
   fhir:StructureDefinition.title [ fhir:value "DDCC Test Centre for Observation"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-01-10T20:19:56+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-01-10T22:39:32+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "WHO"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
