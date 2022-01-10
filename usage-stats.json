@@ -210,18 +210,12 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-answerExpression": [
-      "Questionnaire.item"
-    ],
     "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-candidateExpression": [
       "Questionnaire.item"
     ],
     "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-choiceColumn": [
       "Questionnaire.item",
       "Questionnaire.item.extension"
-    ],
-    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-choiceConstraint": [
-      "Questionnaire.item"
     ],
     "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-contextExpression": [
       "Questionnaire.item"
@@ -231,6 +225,9 @@
     ],
     "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-is-modular": [
       "Questionnaire"
+    ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-isSubject": [
+      "Questionnaire.item"
     ],
     "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemAnswerMedia": [
       "QuestionnaireResponse.item.answer"
@@ -259,12 +256,6 @@
     ],
     "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap": [
       "Questionnaire"
-    ],
-    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-unitOpen": [
-      "Questionnaire.item"
-    ],
-    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-unitSupplementalSystem": [
-      "Questionnaire.item"
     ],
     "http://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-authorOrg": [
       "List.source"

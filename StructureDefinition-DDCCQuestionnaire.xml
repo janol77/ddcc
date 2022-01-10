@@ -15,7 +15,7 @@
   <name value="DDCCQuestionnaire"/>
   <title value="DDCC Questionniare"/>
   <status value="active"/>
-  <date value="2021-12-10T20:06:08+00:00"/>
+  <date value="2022-01-10T15:11:55+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -486,7 +486,7 @@
       <path value="Questionnaire.extension"/>
       <sliceName value="is-modular"/>
       <short value="Questionnaire is modular"/>
-      <definition value="If present, indicates that this is a &#39;modular&#39; questionnaire that requires some degree of assembly (e.g. using the [$assemble](http://hl7.org/fhir/uv/sdc/OperationDefinition/Questionnaire-assemble) operation) prior to being presented in a Form Filler.  This might mean filling in item metadata based on information looked up from item.definitions and/or retrieving sub-questionnaires pointed to by [sub-questionnaire](https://build.fhir.org/ig/HL7/sdc/StructureDefinition-sdc-questionnaire.html/StructureDefinition-sdc-questionnaire-subQuestionnaire.html) extensions."/>
+      <definition value="If present, indicates that this is a &#39;modular&#39; questionnaire that requires some degree of assembly (e.g. using the [$assemble](http://hl7.org/fhir/uv/sdc/OperationDefinition/Questionnaire-assemble) operation) prior to being presented in a Form Filler.  This might mean filling in item metadata based on information looked up from item.definitions and/or retrieving sub-questionnaires pointed to by [sub-questionnaire](StructureDefinition-sdc-questionnaire-subQuestionnaire.html) extensions."/>
       <comment value="SDC-conformant Questionnaires **SHALL** declare this extension if they require an assembly process prior to use."/>
       <min value="0"/>
       <max value="1"/>
@@ -1591,7 +1591,7 @@
       <short value="Questions and sections within the Questionnaire"/>
       <definition value="A particular question, question grouping or display text that is part of the questionnaire."/>
       <comment value="The content of the questionnaire is constructed from an ordered, hierarchical collection of items."/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="*"/>
       <base>
         <path value="Questionnaire.item"/>
@@ -1697,14 +1697,6 @@
         <expression value="repeats=true or initial.count() &lt;= 1"/>
         <xpath value="f:repeats/@value=&#39;true&#39; or count(f:initial)&lt;=1"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Questionnaire"/>
-      </constraint>
-      <constraint>
-        <key value="sdc-2"/>
-        <severity value="error"/>
-        <human value="A choiceConstraint is only valid if item has a list of choice options (with an answerValueSet, answerExpression or at least one answerOption listed)."/>
-        <expression value="choiceConstraint.empty() or (answerValueSet.empty().not() or answerOption.empty().not() or extension(&#39;http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-answerExpression&#39;).empty().not)"/>
-        <xpath value="not(f:choiceConstraint) or ((f:answerValueSet) or (f:answerOption) or (f:extension[@url=&#39;http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-answerExpression&#39;]))"/>
-        <source value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"/>
       </constraint>
       <constraint>
         <key value="sdc-1"/>
@@ -1866,152 +1858,6 @@
       <mustSupport value="false"/>
       <isModifier value="false"/>
     </element>
-    <element id="Questionnaire.item.extension:answerExpression">
-      <path value="Questionnaire.item.extension"/>
-      <sliceName value="answerExpression"/>
-      <short value="Expression for possible answers"/>
-      <definition value="An expression (FHIRPath, CQL or FHIR Query) that resolves to a list of permitted answers for the question item or that establishes context for a group item.  The user may select from among the list to choose answers for the question."/>
-      <comment value="This is only permitted when the containing item does NOT have any answerOption or answerValueSet elements. The results of the expression must correspond to the item type of the question the element appears on or must correspond to a resource, backbone element or complex data type for a group item.  Resources are considered a match for the Reference item type.  Quantity can be a match for decimal and integer items so long as a questionnaire-unit extension is present."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="Element.extension"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-answerExpression"/>
-      </type>
-      <condition value="ele-1"/>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <constraint>
-        <key value="ext-1"/>
-        <severity value="error"/>
-        <human value="Must have either extensions or value[x], not both"/>
-        <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
-      </constraint>
-      <mustSupport value="true"/>
-      <isModifier value="false"/>
-    </element>
-    <element id="Questionnaire.item.extension:choiceConstraint">
-      <path value="Questionnaire.item.extension"/>
-      <sliceName value="choiceConstraint"/>
-      <short value="optionsOnly | optionOrType | optionOrString"/>
-      <definition value="Controls what the user is allowed to enter as an answer aside from the answer options provided. NOTE: This extension should be moved to core in R5."/>
-      <comment value="This element is useful for questions with &quot;Other&quot; textbox or comment field. It allows users to either provide an alternative answer (if any of the answer options do not apply to them)  or offer additional information about their choice."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="Element.extension"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-choiceConstraint"/>
-      </type>
-      <condition value="ele-1"/>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <constraint>
-        <key value="ext-1"/>
-        <severity value="error"/>
-        <human value="Must have either extensions or value[x], not both"/>
-        <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
-      </constraint>
-      <mustSupport value="true"/>
-      <isModifier value="false"/>
-    </element>
-    <element id="Questionnaire.item.extension:UnitOpen">
-      <path value="Questionnaire.item.extension"/>
-      <sliceName value="UnitOpen"/>
-      <short value="Used to denote if user can specify alternate codes"/>
-      <definition value="Indicates whether the list of supported units (conveyed in other extensions) are the exhaustive list from which the user must choose or whether they&#39;re able to select alternate codes or specify a string."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="Element.extension"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-unitOpen"/>
-      </type>
-      <condition value="ele-1"/>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <constraint>
-        <key value="ext-1"/>
-        <severity value="error"/>
-        <human value="Must have either extensions or value[x], not both"/>
-        <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
-      </constraint>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
-    </element>
-    <element id="Questionnaire.item.extension:UnitSupplementalSystem">
-      <path value="Questionnaire.item.extension"/>
-      <sliceName value="UnitSupplementalSystem"/>
-      <short value="This extension indicates the code system the additional units are drawn from"/>
-      <definition value="If the questionnaire-unit-open extension indicates that additional units other than the set of options provided for the question are allowed, this indicates the code system those units are expected to be drawn from.  This extension SHOULD be present on any question where questionare-unit-open allows additional coded values."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="Element.extension"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-unitSupplementalSystem"/>
-      </type>
-      <condition value="ele-1"/>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <constraint>
-        <key value="ext-1"/>
-        <severity value="error"/>
-        <human value="Must have either extensions or value[x], not both"/>
-        <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
-      </constraint>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
-    </element>
     <element id="Questionnaire.item.extension:unit">
       <path value="Questionnaire.item.extension"/>
       <sliceName value="unit"/>
@@ -2093,6 +1939,43 @@
         <identity value="ihe-sdc"/>
         <map value="Any element with @initial_state=&quot;hidden&quot; and no rule that unhides the element"/>
       </mapping>
+    </element>
+    <element id="Questionnaire.item.extension:isSubject">
+      <path value="Questionnaire.item.extension"/>
+      <sliceName value="isSubject"/>
+      <short value="Marks that this item identifies a different subject"/>
+      <definition value="If present and true, indicates that the item establishes a different subject for the group in a response."/>
+      <comment value="The item type must be &quot;reference&quot; and there can only be one item with this extension in each group."/>
+      <requirements value="Allows the extraction process to leverage the fact that the subject for this group and descendants is distinct"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-isSubject"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
     </element>
     <element id="Questionnaire.item.modifierExtension">
       <path value="Questionnaire.item.modifierExtension"/>

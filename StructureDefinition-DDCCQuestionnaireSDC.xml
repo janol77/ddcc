@@ -5,10 +5,10 @@
   <text>
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-DDCCQuestionnaireSDC-definitions.html#Questionnaire">Questionnaire</a><a name="Questionnaire"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/HL7/sdc//StructureDefinition-sdc-questionnaire-pop-exp.html">QuestionnairePopulateExpression</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Populatable Questionnaire - Expression</span></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-DDCCQuestionnaireSDC-definitions.html#Questionnaire.item">item</a><a name="Questionnaire.item"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck014.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-DDCCQuestionnaireSDC-definitions.html#Questionnaire.item.extension:extractionContext" title="Extension URL = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext">sdc-questionnaire-itemExtractionContext</a><a name="Questionnaire.item.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Expression">Expression</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Establishes mapping context for a Questionnaire item</span><br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/R4/https://build.fhir.org/ig/HL7/sdc//StructureDefinition-sdc-questionnaire-itemExtractionContext.html">http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext</a><br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-resource-types.html">ResourceType</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>): If code is specified, then the extraction is always the creation of a new resource of the specified type.<br/><br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck014.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-DDCCQuestionnaireSDC-definitions.html#Questionnaire.item.extension:extractionContext" title="Extension URL = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext">sdc-questionnaire-itemExtractionContext</a><a name="Questionnaire.item.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Expression">Expression</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Establishes mapping context for a Questionnaire item</span><br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/R4/https://build.fhir.org/ig/HL7/sdc//StructureDefinition-sdc-questionnaire-itemExtractionContext.html">http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext</a><br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-resource-types.html">ResourceType</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>): If value is of type 'code', then the extraction is always the creation of a new resource of the specified type.<br/><br/></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck001.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-DDCCQuestionnaireSDC-definitions.html#Questionnaire.item.item">item</a><a name="Questionnaire.item.item"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Nested questionnaire items</span></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0012.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: white; background-color: inherit" title="Simple Extension" class="hierarchy"/> <a href="StructureDefinition-DDCCQuestionnaireSDC-definitions.html#Questionnaire.item.item.extension">Slices for extension</a><a name="Questionnaire.item.item.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Extension</span><br/><span style="font-weight:bold">Slice: </span>Unordered, Open by value:url</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0014.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-DDCCQuestionnaireSDC-definitions.html#Questionnaire.item.item.extension:extractionContext" title="Extension URL = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext">sdc-questionnaire-itemExtractionContext</a><a name="Questionnaire.item.item.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Expression">Expression</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Establishes mapping context for a Questionnaire item</span><br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/R4/https://build.fhir.org/ig/HL7/sdc//StructureDefinition-sdc-questionnaire-itemExtractionContext.html">http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext</a><br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-resource-types.html">ResourceType</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>): If code is specified, then the extraction is always the creation of a new resource of the specified type.<br/><br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0014.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-DDCCQuestionnaireSDC-definitions.html#Questionnaire.item.item.extension:extractionContext" title="Extension URL = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext">sdc-questionnaire-itemExtractionContext</a><a name="Questionnaire.item.item.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Expression">Expression</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Establishes mapping context for a Questionnaire item</span><br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/R4/https://build.fhir.org/ig/HL7/sdc//StructureDefinition-sdc-questionnaire-itemExtractionContext.html">http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext</a><br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-resource-types.html">ResourceType</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>): If value is of type 'code', then the extraction is always the creation of a new resource of the specified type.<br/><br/></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0014.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-DDCCQuestionnaireSDC-definitions.html#Questionnaire.item.item.extension:populationContext" title="Extension URL = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemPopulationContext">sdc-questionnaire-itemPopulationContext</a><a name="Questionnaire.item.item.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Expression">Expression</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Establishes mapping context for a Questionnaire item</span><br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/R4/https://build.fhir.org/ig/HL7/sdc//StructureDefinition-sdc-questionnaire-itemPopulationContext.html">http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemPopulationContext</a></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0004.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-DDCCQuestionnaireSDC-definitions.html#Questionnaire.item.item.extension:hiddenItem" title="Extension URL = http://hl7.org/fhir/StructureDefinition/questionnaire-hidden">questionnaire-hidden</a><a name="Questionnaire.item.item.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Don't display to user</span><br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/R4/extension-questionnaire-hidden.html">http://hl7.org/fhir/StructureDefinition/questionnaire-hidden</a></td></tr>
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
@@ -18,7 +18,7 @@
   <name value="DDCCQuestionnaireSDC"/>
   <title value="DDCC Questionnaire based on SDC"/>
   <status value="active"/>
-  <date value="2021-12-10T20:06:08+00:00"/>
+  <date value="2022-01-10T15:11:55+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -489,7 +489,7 @@
       <path value="Questionnaire.extension"/>
       <sliceName value="is-modular"/>
       <short value="Questionnaire is modular"/>
-      <definition value="If present, indicates that this is a &#39;modular&#39; questionnaire that requires some degree of assembly (e.g. using the [$assemble](http://hl7.org/fhir/uv/sdc/OperationDefinition/Questionnaire-assemble) operation) prior to being presented in a Form Filler.  This might mean filling in item metadata based on information looked up from item.definitions and/or retrieving sub-questionnaires pointed to by [sub-questionnaire](https://build.fhir.org/ig/HL7/sdc/StructureDefinition-sdc-questionnaire.html/StructureDefinition-sdc-questionnaire-subQuestionnaire.html) extensions."/>
+      <definition value="If present, indicates that this is a &#39;modular&#39; questionnaire that requires some degree of assembly (e.g. using the [$assemble](http://hl7.org/fhir/uv/sdc/OperationDefinition/Questionnaire-assemble) operation) prior to being presented in a Form Filler.  This might mean filling in item metadata based on information looked up from item.definitions and/or retrieving sub-questionnaires pointed to by [sub-questionnaire](StructureDefinition-sdc-questionnaire-subQuestionnaire.html) extensions."/>
       <comment value="SDC-conformant Questionnaires **SHALL** declare this extension if they require an assembly process prior to use."/>
       <min value="0"/>
       <max value="1"/>
@@ -599,7 +599,7 @@
       <path value="Questionnaire.extension"/>
       <sliceName value="itemPopulationContext"/>
       <short value="Establishes mapping context for a Questionnaire item"/>
-      <definition value="Specifies a query that identifies the resource (or set of resources for a repeating item) that should be used to support the population of this Questionnaire or Questionnaire.item on initial population.  When populating the questionnaire, it will set the specified variable name to that resource repetition for use in processing items within the group."/>
+      <definition value="Specifies a query or other expression that identifies the resource (or set of resources for a repeating item) that should be used to support the population of this Questionnaire or Questionnaire.item on initial population.  When populating the questionnaire, it will set the specified variable name to that resource repetition for use in processing items within the group."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -1546,7 +1546,7 @@
       <short value="Questions and sections within the Questionnaire"/>
       <definition value="A particular question, question grouping or display text that is part of the questionnaire."/>
       <comment value="The content of the questionnaire is constructed from an ordered, hierarchical collection of items."/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="*"/>
       <base>
         <path value="Questionnaire.item"/>
@@ -1652,14 +1652,6 @@
         <expression value="repeats=true or initial.count() &lt;= 1"/>
         <xpath value="f:repeats/@value=&#39;true&#39; or count(f:initial)&lt;=1"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Questionnaire"/>
-      </constraint>
-      <constraint>
-        <key value="sdc-2"/>
-        <severity value="error"/>
-        <human value="A choiceConstraint is only valid if item has a list of choice options (with an answerValueSet, answerExpression or at least one answerOption listed)."/>
-        <expression value="choiceConstraint.empty() or (answerValueSet.empty().not() or answerOption.empty().not() or extension(&#39;http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-answerExpression&#39;).empty().not)"/>
-        <xpath value="not(f:choiceConstraint) or ((f:answerValueSet) or (f:answerOption) or (f:extension[@url=&#39;http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-answerExpression&#39;]))"/>
-        <source value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"/>
       </constraint>
       <constraint>
         <key value="sdc-1"/>
@@ -1828,152 +1820,6 @@
       <mustSupport value="false"/>
       <isModifier value="false"/>
     </element>
-    <element id="Questionnaire.item.extension:answerExpression">
-      <path value="Questionnaire.item.extension"/>
-      <sliceName value="answerExpression"/>
-      <short value="Expression for possible answers"/>
-      <definition value="An expression (FHIRPath, CQL or FHIR Query) that resolves to a list of permitted answers for the question item or that establishes context for a group item.  The user may select from among the list to choose answers for the question."/>
-      <comment value="This is only permitted when the containing item does NOT have any answerOption or answerValueSet elements. The results of the expression must correspond to the item type of the question the element appears on or must correspond to a resource, backbone element or complex data type for a group item.  Resources are considered a match for the Reference item type.  Quantity can be a match for decimal and integer items so long as a questionnaire-unit extension is present."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="Element.extension"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-answerExpression"/>
-      </type>
-      <condition value="ele-1"/>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <constraint>
-        <key value="ext-1"/>
-        <severity value="error"/>
-        <human value="Must have either extensions or value[x], not both"/>
-        <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
-      </constraint>
-      <mustSupport value="true"/>
-      <isModifier value="false"/>
-    </element>
-    <element id="Questionnaire.item.extension:choiceConstraint">
-      <path value="Questionnaire.item.extension"/>
-      <sliceName value="choiceConstraint"/>
-      <short value="optionsOnly | optionOrType | optionOrString"/>
-      <definition value="Controls what the user is allowed to enter as an answer aside from the answer options provided. NOTE: This extension should be moved to core in R5."/>
-      <comment value="This element is useful for questions with &quot;Other&quot; textbox or comment field. It allows users to either provide an alternative answer (if any of the answer options do not apply to them)  or offer additional information about their choice."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="Element.extension"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-choiceConstraint"/>
-      </type>
-      <condition value="ele-1"/>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <constraint>
-        <key value="ext-1"/>
-        <severity value="error"/>
-        <human value="Must have either extensions or value[x], not both"/>
-        <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
-      </constraint>
-      <mustSupport value="true"/>
-      <isModifier value="false"/>
-    </element>
-    <element id="Questionnaire.item.extension:UnitOpen">
-      <path value="Questionnaire.item.extension"/>
-      <sliceName value="UnitOpen"/>
-      <short value="Used to denote if user can specify alternate codes"/>
-      <definition value="Indicates whether the list of supported units (conveyed in other extensions) are the exhaustive list from which the user must choose or whether they&#39;re able to select alternate codes or specify a string."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="Element.extension"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-unitOpen"/>
-      </type>
-      <condition value="ele-1"/>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <constraint>
-        <key value="ext-1"/>
-        <severity value="error"/>
-        <human value="Must have either extensions or value[x], not both"/>
-        <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
-      </constraint>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
-    </element>
-    <element id="Questionnaire.item.extension:UnitSupplementalSystem">
-      <path value="Questionnaire.item.extension"/>
-      <sliceName value="UnitSupplementalSystem"/>
-      <short value="This extension indicates the code system the additional units are drawn from"/>
-      <definition value="If the questionnaire-unit-open extension indicates that additional units other than the set of options provided for the question are allowed, this indicates the code system those units are expected to be drawn from.  This extension SHOULD be present on any question where questionare-unit-open allows additional coded values."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="Element.extension"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-unitSupplementalSystem"/>
-      </type>
-      <condition value="ele-1"/>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <constraint>
-        <key value="ext-1"/>
-        <severity value="error"/>
-        <human value="Must have either extensions or value[x], not both"/>
-        <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
-      </constraint>
-      <mustSupport value="false"/>
-      <isModifier value="false"/>
-    </element>
     <element id="Questionnaire.item.extension:unit">
       <path value="Questionnaire.item.extension"/>
       <sliceName value="unit"/>
@@ -2019,7 +1865,7 @@
       <path value="Questionnaire.item.extension"/>
       <sliceName value="itemPopulationContext"/>
       <short value="Establishes mapping context for a Questionnaire item"/>
-      <definition value="Specifies a query that identifies the resource (or set of resources for a repeating item) that should be used to support the population of this Questionnaire or Questionnaire.item on initial population.  When populating the questionnaire, it will set the specified variable name to that resource repetition for use in processing items within the group."/>
+      <definition value="Specifies a query or other expression that identifies the resource (or set of resources for a repeating item) that should be used to support the population of this Questionnaire or Questionnaire.item on initial population.  When populating the questionnaire, it will set the specified variable name to that resource repetition for use in processing items within the group."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -3456,11 +3302,48 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
+    <element id="Questionnaire.item.extension:isSubject">
+      <path value="Questionnaire.item.extension"/>
+      <sliceName value="isSubject"/>
+      <short value="Marks that this item identifies a different subject"/>
+      <definition value="If present and true, indicates that the item establishes a different subject for the group in a response."/>
+      <comment value="The item type must be &quot;reference&quot; and there can only be one item with this extension in each group."/>
+      <requirements value="Allows the population process to leverage the fact that the subject for this group and descendants is distinct"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-isSubject"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
     <element id="Questionnaire.item.extension:extractionContext">
       <path value="Questionnaire.item.extension"/>
       <sliceName value="extractionContext"/>
       <short value="Establishes mapping context for a Questionnaire item"/>
-      <definition value="Specifies a query that identifies the resource (or set of resources for a repeating item)  to be extracted from this item once the QuestionnaireResponse is complete."/>
+      <definition value="Specifies a query or other expression that identifies the resource (or set of resources for a repeating item)  to be extracted from this item once the QuestionnaireResponse is complete."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -4818,7 +4701,7 @@
       <path value="Questionnaire.item.item.extension"/>
       <sliceName value="extractionContext"/>
       <short value="Establishes mapping context for a Questionnaire item"/>
-      <definition value="Specifies a query that identifies the resource (or set of resources for a repeating item)  to be extracted from this item once the QuestionnaireResponse is complete."/>
+      <definition value="Specifies a query or other expression that identifies the resource (or set of resources for a repeating item)  to be extracted from this item once the QuestionnaireResponse is complete."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -4853,7 +4736,7 @@
       <path value="Questionnaire.item.item.extension"/>
       <sliceName value="populationContext"/>
       <short value="Establishes mapping context for a Questionnaire item"/>
-      <definition value="Specifies a query that identifies the resource (or set of resources for a repeating item) that should be used to support the population of this Questionnaire or Questionnaire.item on initial population.  When populating the questionnaire, it will set the specified variable name to that resource repetition for use in processing items within the group."/>
+      <definition value="Specifies a query or other expression that identifies the resource (or set of resources for a repeating item) that should be used to support the population of this Questionnaire or Questionnaire.item on initial population.  When populating the questionnaire, it will set the specified variable name to that resource repetition for use in processing items within the group."/>
       <min value="0"/>
       <max value="1"/>
       <base>
