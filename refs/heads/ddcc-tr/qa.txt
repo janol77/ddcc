@@ -1,10 +1,10 @@
 ﻿ddccvs : Validation Results
 =========================================
 
-err = 331, warn = 96, info = 29
-IG Publisher Version: 1.1.93
-Generated Mon Jan 10 23:19:28 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.3.1 (canonical = http://worldhealthorganization.github.io/ddcc)
- Build Errors : 805 / 57 / 0
+err = 328, warn = 96, info = 29
+IG Publisher Version: 1.1.94
+Generated Fri Jan 14 00:20:58 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.3.1 (canonical = http://worldhealthorganization.github.io/ddcc)
+ Build Errors : 807 / 57 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 2 / 0 / 12
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Arabic : 2 / 0 / 12
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Chinese : 2 / 0 / 12
@@ -119,9 +119,9 @@ Generated Mon Jan 10 23:19:28 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc-vs#
  /github/workspace/input/resources/CapabilityStatement-WHO.DDCC.RegistryService : 0 / 0 / 1
  /github/workspace/input/resources/Immunization-pre-uv-ips.StructureDefinition : 0 / 1 / 1
  /github/workspace/input/resources/Patient-pre-uv-ips.StructureDefinition : 0 / 1 / 1
- /github/workspace/input/resources/StructureDefinition-HC1 : 1 / 1 / 1
- /github/workspace/input/resources/StructureDefinition-t : 16 / 1 / 1
- /github/workspace/input/resources/StructureDefinition-v : 1 / 1 / 1
+ /github/workspace/input/resources/StructureDefinition-HC1 : 0 / 1 / 1
+ /github/workspace/input/resources/StructureDefinition-t : 15 / 1 / 1
+ /github/workspace/input/resources/StructureDefinition-v : 0 / 1 / 1
  /github/workspace/input/resources/StructureMap-CoreDataSetLibrary : 26 / 0 / 1
  /github/workspace/input/resources/StructureMap-CoreDataSetVSLibrary : 92 / 0 / 1
  /github/workspace/input/resources/StructureMap-CoreDataSetVSToAddBundle : 1 / 0 / 1
@@ -714,7 +714,8 @@ ERROR: /github/workspace/output/StructureDefinition-DDCCProvideDocumentBundle.pr
 ERROR: /github/workspace/output/StructureDefinition-DDCCProvideDocumentBundle.profile.json.html#/html/body/div/div/div/p/a at Line 8868, column 19: The link 'license.html' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCProvideDocumentBundle.profile.ttl.html#/html/body/div/div/div/p/a at Line 7915, column 19: The link 'license.html' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCProvideDocumentBundle.profile.xml.html#/html/body/div/div/div/p/a at Line 8044, column 19: The link 'license.html' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaire-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 337, column 444: The link 'StructureDefinition-sdc-questionnaire-subQuestionnaire.html' for "sub-questionnaire" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaire-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 337, column 238: The link 'OperationDefinition-Questionnaire-assemble.html' for "$assemble" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaire-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 337, column 580: The link 'StructureDefinition-sdc-questionnaire-subQuestionnaire.html' for "sub-questionnaire" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaire-definitions.html#/html/body/div/div/div/p/a at Line 1145, column 19: The link 'license.html' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaire-examples.html#/html/body/div/div/div/p/a at Line 298, column 19: The link 'license.html' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaire-mappings.html#/html/body/div/div/div/p/a at Line 421, column 19: The link 'license.html' for "" cannot be resolved
@@ -731,7 +732,8 @@ ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaireResponse.pr
 ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaireResponse.profile.json.html#/html/body/div/div/div/p/a at Line 2383, column 19: The link 'license.html' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaireResponse.profile.ttl.html#/html/body/div/div/div/p/a at Line 2185, column 19: The link 'license.html' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaireResponse.profile.xml.html#/html/body/div/div/div/p/a at Line 2173, column 19: The link 'license.html' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaireSDC-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 337, column 444: The link 'StructureDefinition-sdc-questionnaire-subQuestionnaire.html' for "sub-questionnaire" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaireSDC-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 337, column 238: The link 'OperationDefinition-Questionnaire-assemble.html' for "$assemble" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaireSDC-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 337, column 580: The link 'StructureDefinition-sdc-questionnaire-subQuestionnaire.html' for "sub-questionnaire" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaireSDC-definitions.html#/html/body/div/div/div/p/a at Line 1778, column 19: The link 'license.html' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaireSDC-examples.html#/html/body/div/div/div/p/a at Line 298, column 19: The link 'license.html' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaireSDC-mappings.html#/html/body/div/div/div/p/a at Line 475, column 19: The link 'license.html' for "" cannot be resolved
@@ -992,7 +994,7 @@ ERROR: /github/workspace/output/transactions.20210702.html#/html/body/div/div/di
 ERROR: /github/workspace/output/transactions.20210702.html#/html/body/div/div/div/div/div/div/a at Line 326, column 223: The link 'actors.html#who-pkd' for "WHO Public Key Directory" cannot be resolved (valid targets: [digital-health-solution, subject-of-care, ddcc-generation-service, public-health-authority, ddcc-registry, publish-box, ddcc-registry-service, vaccinator, segment-post-footer, family-logo, top, ddcc-repository-service, stripe, segment-footer, segment-content, ddcc-generator, 10, 11, segment-header, ddcc-repository, bottom, ddcc-holder, family-nav, ig-status, actors, 1, 2, 3, public-health-authority-pha, data-entry-personnel, 4, 5, 6, verifier, 7, 8, 9, segment-navbar, tested-person, segment-breadcrumb])
 ERROR: /github/workspace/output/transactions.20210702.html#/html/body/div/div/div/p/a at Line 359, column 19: The link 'license.html' for "" cannot be resolved
 ERROR: /github/workspace/output/transactions.html#/html/body/div/div/div/p/a at Line 418, column 19: The link 'license.html' for "" cannot be resolved
-ERROR: /github/workspace/output/usecases.html#/html/body/div/div/div/p/a at Line 244, column 19: The link 'license.html' for "" cannot be resolved
+ERROR: /github/workspace/output/usecases.html#/html/body/div/div/div/p/a at Line 260, column 19: The link 'license.html' for "" cannot be resolved
 ERROR: /github/workspace/output/workflows.html#/html/body/div/div/div/p/a at Line 221, column 19: The link 'license.html' for "" cannot be resolved
 == fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1.json ==
 ERROR: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[4].answer[0]: The value provided (http://id.who.int/icd11/mms::XM1NL1) is not in the options value set in the questionnaire
@@ -1220,7 +1222,6 @@ WARNING: ValueSet/who-ddcc-vaccines-covid-19: ValueSet.compose[0].include[0]: Un
 == input/resources/Patient-pre-uv-ips.StructureDefinition.xml ==
 == input/resources/StructureDefinition-HC1.json ==
 WARNING: StructureDefinition/HC1: StructureDefinition: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-ERROR: StructureDefinition/HC1: StructureDefinition: The structure definition constrains a kind of complex-type, but has a different kind (logical)
 == input/resources/StructureDefinition-t.json ==
 ERROR: http://hl7.eu/fhir/ig/dcc/StructureDefinition/t.t.co: Duplicate Element id t.co
 ERROR: http://hl7.eu/fhir/ig/dcc/StructureDefinition/t.t.is: Duplicate Element id t.is
@@ -1238,10 +1239,8 @@ ERROR: StructureDefinition/t: StructureDefinition.snapshot.element[12]: Duplicat
 ERROR: StructureDefinition/t: StructureDefinition.differential.element[8]: Duplicate id value 't.co'
 ERROR: StructureDefinition/t: StructureDefinition.differential.element[9]: Duplicate id value 't.is'
 ERROR: StructureDefinition/t: StructureDefinition.differential.element[10]: Duplicate id value 't.ci'
-ERROR: StructureDefinition/t: StructureDefinition: The structure definition constrains a kind of complex-type, but has a different kind (logical)
 == input/resources/StructureDefinition-v.json ==
 WARNING: StructureDefinition/v: StructureDefinition: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-ERROR: StructureDefinition/v: StructureDefinition: The structure definition constrains a kind of complex-type, but has a different kind (logical)
 == input/resources/StructureMap-CoreDataSetLibrary.json ==
 ERROR: StructureMap/CoreDataSetLibrary: StructureMap.group[0].rule[0].name: id value 'set id' is not valid
 ERROR: StructureMap/CoreDataSetLibrary: StructureMap.group[0].rule[1].name: id value 'set full name' is not valid

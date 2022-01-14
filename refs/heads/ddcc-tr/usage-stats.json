@@ -248,6 +248,9 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-assemble-expectation": [
+      "Questionnaire"
+    ],
     "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-candidateExpression": [
       "Questionnaire.item"
     ],
@@ -260,9 +263,6 @@
     ],
     "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression": [
       "Questionnaire.item"
-    ],
-    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-is-modular": [
-      "Questionnaire"
     ],
     "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-isSubject": [
       "Questionnaire.item"
