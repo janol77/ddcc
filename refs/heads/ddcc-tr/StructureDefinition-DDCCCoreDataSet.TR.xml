@@ -21,7 +21,7 @@
   <name value="DDCCCoreDataSet_TR"/>
   <title value="DDCC Core Data Set Logical Model for Test Results"/>
   <status value="draft"/>
-  <date value="2022-01-14T00:18:13+00:00"/>
+  <date value="2022-01-16T20:26:17+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -46,6 +46,26 @@
   <mapping>
     <identity value="ddcc-observation"/>
     <uri value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCObservation"/>
+    <name value="WHO Digital Documentation of COVID Certificates"/>
+  </mapping>
+  <mapping>
+    <identity value="ddcc-specimen"/>
+    <uri value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSpecimen"/>
+    <name value="WHO Digital Documentation of COVID Certificates"/>
+  </mapping>
+  <mapping>
+    <identity value="ddcc-test"/>
+    <uri value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTest"/>
+    <name value="WHO Digital Documentation of COVID Certificates"/>
+  </mapping>
+  <mapping>
+    <identity value="ddcc-diagnostic-report"/>
+    <uri value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDiagnosticReport"/>
+    <name value="WHO Digital Documentation of COVID Certificates"/>
+  </mapping>
+  <mapping>
+    <identity value="ddcc-procedure"/>
+    <uri value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCProcedure"/>
     <name value="WHO Digital Documentation of COVID Certificates"/>
   </mapping>
   <mapping>
@@ -307,8 +327,8 @@
         <valueSet value="http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-agent-targeted-covid-19"/>
       </binding>
       <mapping>
-        <identity value="ddcc-observation"/>
-        <map value="Observation.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestPathogen]"/>
+        <identity value="ddcc-test"/>
+        <map value="Device.property.valueCode"/>
       </mapping>
     </element>
     <element id="DDCCCoreDataSet.test.type">
@@ -334,6 +354,14 @@
         <identity value="ddcc-observation"/>
         <map value="Observation.code"/>
       </mapping>
+      <mapping>
+        <identity value="ddcc-test"/>
+        <map value="Device.type"/>
+      </mapping>
+      <mapping>
+        <identity value="ddcc-diagnostic-report"/>
+        <map value="DiagnosticReport.code"/>
+      </mapping>
     </element>
     <element id="DDCCCoreDataSet.test.brand">
       <path value="DDCCCoreDataSet.test.brand"/>
@@ -351,8 +379,8 @@
       </type>
       <isSummary value="true"/>
       <mapping>
-        <identity value="ddcc-observation"/>
-        <map value="Observation.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCEventBrand]"/>
+        <identity value="ddcc-test"/>
+        <map value="Device.property.valueCode"/>
       </mapping>
     </element>
     <element id="DDCCCoreDataSet.test.manufacturer">
@@ -371,8 +399,8 @@
       </type>
       <isSummary value="true"/>
       <mapping>
-        <identity value="ddcc-observation"/>
-        <map value="Observation.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestManufacturer]"/>
+        <identity value="ddcc-test"/>
+        <map value="Device.manufacturer"/>
       </mapping>
     </element>
     <element id="DDCCCoreDataSet.test.origin">
@@ -398,6 +426,10 @@
         <identity value="ddcc-observation"/>
         <map value="Observation.method"/>
       </mapping>
+      <mapping>
+        <identity value="ddcc-specimen"/>
+        <map value="Specimen.code"/>
+      </mapping>
     </element>
     <element id="DDCCCoreDataSet.test.date">
       <path value="DDCCCoreDataSet.test.date"/>
@@ -417,6 +449,18 @@
       <mapping>
         <identity value="ddcc-observation"/>
         <map value="Observation.effective"/>
+      </mapping>
+      <mapping>
+        <identity value="ddcc-specimen"/>
+        <map value="Specimen.collection.collected"/>
+      </mapping>
+      <mapping>
+        <identity value="ddcc-diagnostic-report"/>
+        <map value="DiagnosticReport.effective"/>
+      </mapping>
+      <mapping>
+        <identity value="ddcc-procedure"/>
+        <map value="Procedure.performed"/>
       </mapping>
     </element>
     <element id="DDCCCoreDataSet.test.result">
@@ -457,8 +501,8 @@
         <code value="Coding"/>
       </type>
       <mapping>
-        <identity value="ddcc-observation"/>
-        <map value="Observation.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestCentre]"/>
+        <identity value="ddcc-procedure"/>
+        <map value="Procedure.location"/>
       </mapping>
     </element>
     <element id="DDCCCoreDataSet.test.country">
@@ -481,8 +525,8 @@
         <valueSet value="http://hl7.org/fhir/ValueSet/iso3166-1-3"/>
       </binding>
       <mapping>
-        <identity value="ddcc-observation"/>
-        <map value="Observation.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent]"/>
+        <identity value="ddcc-procedure"/>
+        <map value="Procedure.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent]"/>
       </mapping>
     </element>
   </snapshot>
@@ -518,8 +562,8 @@
         <valueSet value="http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-agent-targeted-covid-19"/>
       </binding>
       <mapping>
-        <identity value="ddcc-observation"/>
-        <map value="Observation.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestPathogen]"/>
+        <identity value="ddcc-test"/>
+        <map value="Device.property.valueCode"/>
       </mapping>
     </element>
     <element id="DDCCCoreDataSet.test.type">
@@ -540,6 +584,14 @@
         <identity value="ddcc-observation"/>
         <map value="Observation.code"/>
       </mapping>
+      <mapping>
+        <identity value="ddcc-test"/>
+        <map value="Device.type"/>
+      </mapping>
+      <mapping>
+        <identity value="ddcc-diagnostic-report"/>
+        <map value="DiagnosticReport.code"/>
+      </mapping>
     </element>
     <element id="DDCCCoreDataSet.test.brand">
       <path value="DDCCCoreDataSet.test.brand"/>
@@ -552,8 +604,8 @@
       </type>
       <isSummary value="true"/>
       <mapping>
-        <identity value="ddcc-observation"/>
-        <map value="Observation.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCEventBrand]"/>
+        <identity value="ddcc-test"/>
+        <map value="Device.property.valueCode"/>
       </mapping>
     </element>
     <element id="DDCCCoreDataSet.test.manufacturer">
@@ -567,8 +619,8 @@
       </type>
       <isSummary value="true"/>
       <mapping>
-        <identity value="ddcc-observation"/>
-        <map value="Observation.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestManufacturer]"/>
+        <identity value="ddcc-test"/>
+        <map value="Device.manufacturer"/>
       </mapping>
     </element>
     <element id="DDCCCoreDataSet.test.origin">
@@ -589,6 +641,10 @@
         <identity value="ddcc-observation"/>
         <map value="Observation.method"/>
       </mapping>
+      <mapping>
+        <identity value="ddcc-specimen"/>
+        <map value="Specimen.code"/>
+      </mapping>
     </element>
     <element id="DDCCCoreDataSet.test.date">
       <path value="DDCCCoreDataSet.test.date"/>
@@ -603,6 +659,18 @@
       <mapping>
         <identity value="ddcc-observation"/>
         <map value="Observation.effective"/>
+      </mapping>
+      <mapping>
+        <identity value="ddcc-specimen"/>
+        <map value="Specimen.collection.collected"/>
+      </mapping>
+      <mapping>
+        <identity value="ddcc-diagnostic-report"/>
+        <map value="DiagnosticReport.effective"/>
+      </mapping>
+      <mapping>
+        <identity value="ddcc-procedure"/>
+        <map value="Procedure.performed"/>
       </mapping>
     </element>
     <element id="DDCCCoreDataSet.test.result">
@@ -633,8 +701,8 @@
         <code value="Coding"/>
       </type>
       <mapping>
-        <identity value="ddcc-observation"/>
-        <map value="Observation.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestCentre]"/>
+        <identity value="ddcc-procedure"/>
+        <map value="Procedure.location"/>
       </mapping>
     </element>
     <element id="DDCCCoreDataSet.test.country">
@@ -652,8 +720,8 @@
         <valueSet value="http://hl7.org/fhir/ValueSet/iso3166-1-3"/>
       </binding>
       <mapping>
-        <identity value="ddcc-observation"/>
-        <map value="Observation.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent]"/>
+        <identity value="ddcc-procedure"/>
+        <map value="Procedure.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent]"/>
       </mapping>
     </element>
   </differential>

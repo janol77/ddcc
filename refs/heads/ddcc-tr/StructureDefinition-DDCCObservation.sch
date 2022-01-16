@@ -10,18 +10,6 @@
     single schematron that validates contained resources (if you have any) 
   -->
   <sch:pattern>
-    <sch:title>f:Observation</sch:title>
-    <sch:rule context="f:Observation">
-      <sch:assert test="count(f:extension[@url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestPathogen']) &gt;= 1">extension with URL = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestPathogen': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestPathogen']) &lt;= 1">extension with URL = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestPathogen': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCEventBrand']) &lt;= 1">extension with URL = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCEventBrand': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestManufacturer']) &lt;= 1">extension with URL = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestManufacturer': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestCentre']) &lt;= 1">extension with URL = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestCentre': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent']) &gt;= 1">extension with URL = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent']) &lt;= 1">extension with URL = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent': maximum cardinality of 'extension' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
     <sch:title>Observation</sch:title>
     <sch:rule context="f:Observation">
       <sch:assert test="not(parent::f:contained and f:contained)">If the resource is contained in another resource, it SHALL NOT contain nested Resources (inherited)</sch:assert>
@@ -62,16 +50,6 @@
     <sch:rule context="f:Observation/f:extension">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

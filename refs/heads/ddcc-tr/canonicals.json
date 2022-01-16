@@ -63,6 +63,13 @@
     "name": "DDCC_Composition_Category_CodeSystem"
   },
   {
+    "id": "DDCC-Device-Property-CodeSystem",
+    "type": "CodeSystem",
+    "url": "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Device-Property-CodeSystem",
+    "version": "0.3.1",
+    "name": "DDCC_Device_Property_CodeSystem"
+  },
+  {
     "id": "DDCC-Example-Test-CodeSystem",
     "type": "CodeSystem",
     "url": "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Example-Test-CodeSystem",
@@ -77,18 +84,18 @@
     "name": "DDCC_Folder_DesignationType_Codesystem"
   },
   {
-    "id": "DDCC-QR-Category-Usage-CodeSystem",
-    "type": "CodeSystem",
-    "url": "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem",
-    "version": "0.3.1",
-    "name": "DDCC_QR_Category_Usage_CodeSystem"
-  },
-  {
     "id": "DDCC-QR-Format-CodeSystem",
     "type": "CodeSystem",
     "url": "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem",
     "version": "0.3.1",
     "name": "DDCC_QR_Format_CodeSystem"
+  },
+  {
+    "id": "DDCC-QR-Type-CodeSystem",
+    "type": "CodeSystem",
+    "url": "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem",
+    "version": "0.3.1",
+    "name": "DDCC_QR_Type_CodeSystem"
   },
   {
     "id": "who-ddcc-map-icd11-icd10-disease-targeted",
@@ -133,11 +140,18 @@
     "name": "LOINC_SNOMED_CT_COVID19_Type_of_Test"
   },
   {
+    "id": "DDCCTRCoreDataSetQuestionnaire",
+    "type": "Questionnaire",
+    "url": "http://worldhealthorganization.github.io/ddcc/DDCCTRCoreDataSetQuestionnaire",
+    "version": "0.3.1",
+    "name": "DDCCTRCoreDataSetQuestionnaire"
+  },
+  {
     "id": "DDCCVSCoreDataSetQuestionnaire",
     "type": "Questionnaire",
     "url": "http://worldhealthorganization.github.io/ddcc/DDCCVSCoreDataSetQuestionnaire",
     "version": "0.3.1",
-    "name": "DDCCCoreDataSetQuestionnaire"
+    "name": "DDCCVSCoreDataSetQuestionnaire"
   },
   {
     "id": "fhir.who.ddcc-vs",
@@ -152,6 +166,13 @@
     "url": "http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCGenerateHealthCertificate",
     "version": "0.3.1",
     "name": "QuestionnaireResponse_Generate_Health_Certificate"
+  },
+  {
+    "id": "DDCC-QuestionnaireResponse-revokeHealthCertificate",
+    "type": "OperationDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCRevokeHealthCertificate",
+    "version": "0.3.1",
+    "name": "QuestionnaireResponse_Revoke_Health_Certificate"
   },
   {
     "id": "DDCCHCIDRegistrationQuestionnaire",
@@ -215,6 +236,13 @@
     "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent",
     "version": "0.3.1",
     "name": "DDCCCountryOfEvent"
+  },
+  {
+    "id": "DDCCDiagnosticReport",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDiagnosticReport",
+    "version": "0.3.1",
+    "name": "DDCCDiagnosticReport"
   },
   {
     "id": "DDCCDocument",
@@ -315,6 +343,13 @@
     "name": "DDCCPractitionerRole"
   },
   {
+    "id": "DDCCProcedure",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCProcedure",
+    "version": "0.3.1",
+    "name": "DDCCProcedure"
+  },
+  {
     "id": "DDCCProvideDocumentBundle",
     "type": "StructureDefinition",
     "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCProvideDocumentBundle",
@@ -341,6 +376,20 @@
     "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireSDC",
     "version": "0.3.1",
     "name": "DDCCQuestionnaireSDC"
+  },
+  {
+    "id": "DDCCRevokeHealthCertificateParameters",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCRevokeHealthCertificateParameters",
+    "version": "0.3.1",
+    "name": "DDCCRevokeHealthCertificateParameters"
+  },
+  {
+    "id": "DDCCSpecimen",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSpecimen",
+    "version": "0.3.1",
+    "name": "DDCCSpecimen"
   },
   {
     "id": "DDCCSubmissionSet",
@@ -371,25 +420,11 @@
     "name": "DDCCTRComposition"
   },
   {
-    "id": "DDCCTestCentre",
+    "id": "DDCCTest",
     "type": "StructureDefinition",
-    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestCentre",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTest",
     "version": "0.3.1",
-    "name": "DDCCTestCentre"
-  },
-  {
-    "id": "DDCCTestManufacturer",
-    "type": "StructureDefinition",
-    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestManufacturer",
-    "version": "0.3.1",
-    "name": "DDCCTestManufacturer"
-  },
-  {
-    "id": "DDCCTestPathogen",
-    "type": "StructureDefinition",
-    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestPathogen",
-    "version": "0.3.1",
-    "name": "DDCCTestPathogen"
+    "name": "DDCCTest"
   },
   {
     "id": "DDCCVSComposition",
@@ -469,6 +504,13 @@
     "name": "DDCC_Composition_Category_ValueSet"
   },
   {
+    "id": "DDCC-Device-Property-ValueSet",
+    "type": "ValueSet",
+    "url": "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-Device-Property-ValueSet",
+    "version": "0.3.1",
+    "name": "DDCC_Device_Property_ValueSet"
+  },
+  {
     "id": "DDCC-Folder-DesignationType",
     "type": "ValueSet",
     "url": "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-Folder-DesignationType",
@@ -476,18 +518,18 @@
     "name": "DDCC_Folder_DesignationType_ValueSet"
   },
   {
-    "id": "DDCC-QR-Category-Usage-ValueSet",
-    "type": "ValueSet",
-    "url": "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Category-Usage-ValueSet",
-    "version": "0.3.1",
-    "name": "DDCC_QR_Category_Usage_ValueSet"
-  },
-  {
     "id": "DDCC-QR-Format-ValueSet",
     "type": "ValueSet",
     "url": "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Format-ValueSet",
     "version": "0.3.1",
     "name": "DDCC_QR_Format_ValueSet"
+  },
+  {
+    "id": "DDCC-QR-Type-ValueSet",
+    "type": "ValueSet",
+    "url": "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Type-ValueSet",
+    "version": "0.3.1",
+    "name": "DDCC_QR_Type_ValueSet"
   },
   {
     "id": "who-ddcc-agent-targeted-covid-19",

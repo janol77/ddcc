@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "DDCCCoreDataSet_TR"];
   fhir:StructureDefinition.title [ fhir:value "DDCC Core Data Set Logical Model for Test Results"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2022-01-14T00:18:13+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-01-16T20:26:17+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "WHO"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -50,11 +50,31 @@
      fhir:StructureDefinition.mapping.name [ fhir:value "WHO Digital Documentation of COVID Certificates" ]
   ], [
      fhir:index 2;
+     fhir:StructureDefinition.mapping.identity [ fhir:value "ddcc-specimen" ];
+     fhir:StructureDefinition.mapping.uri [ fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSpecimen" ];
+     fhir:StructureDefinition.mapping.name [ fhir:value "WHO Digital Documentation of COVID Certificates" ]
+  ], [
+     fhir:index 3;
+     fhir:StructureDefinition.mapping.identity [ fhir:value "ddcc-test" ];
+     fhir:StructureDefinition.mapping.uri [ fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTest" ];
+     fhir:StructureDefinition.mapping.name [ fhir:value "WHO Digital Documentation of COVID Certificates" ]
+  ], [
+     fhir:index 4;
+     fhir:StructureDefinition.mapping.identity [ fhir:value "ddcc-diagnostic-report" ];
+     fhir:StructureDefinition.mapping.uri [ fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDiagnosticReport" ];
+     fhir:StructureDefinition.mapping.name [ fhir:value "WHO Digital Documentation of COVID Certificates" ]
+  ], [
+     fhir:index 5;
+     fhir:StructureDefinition.mapping.identity [ fhir:value "ddcc-procedure" ];
+     fhir:StructureDefinition.mapping.uri [ fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCProcedure" ];
+     fhir:StructureDefinition.mapping.name [ fhir:value "WHO Digital Documentation of COVID Certificates" ]
+  ], [
+     fhir:index 6;
      fhir:StructureDefinition.mapping.identity [ fhir:value "ddcc-composition" ];
      fhir:StructureDefinition.mapping.uri [ fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition" ];
      fhir:StructureDefinition.mapping.name [ fhir:value "WHO Digital Documentation of COVID Certificates" ]
   ], [
-     fhir:index 3;
+     fhir:index 7;
      fhir:StructureDefinition.mapping.identity [ fhir:value "ddcc-patient" ];
      fhir:StructureDefinition.mapping.uri [ fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient" ];
      fhir:StructureDefinition.mapping.name [ fhir:value "WHO Digital Documentation of COVID Certificates" ]
@@ -352,8 +372,8 @@
        ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-observation" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "Observation.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestPathogen]" ]
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-test" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Device.property.valueCode" ]
        ]
      ], [
        fhir:index 14;
@@ -384,6 +404,14 @@
          fhir:index 0;
          fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-observation" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Observation.code" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-test" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Device.type" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-diagnostic-report" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "DiagnosticReport.code" ]
        ]
      ], [
        fhir:index 15;
@@ -405,8 +433,8 @@
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-observation" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "Observation.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCEventBrand]" ]
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-test" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Device.property.valueCode" ]
        ]
      ], [
        fhir:index 16;
@@ -428,8 +456,8 @@
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-observation" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "Observation.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestManufacturer]" ]
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-test" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Device.manufacturer" ]
        ]
      ], [
        fhir:index 17;
@@ -460,6 +488,10 @@
          fhir:index 0;
          fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-observation" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Observation.method" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-specimen" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Specimen.code" ]
        ]
      ], [
        fhir:index 18;
@@ -483,6 +515,18 @@
          fhir:index 0;
          fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-observation" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Observation.effective" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-specimen" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Specimen.collection.collected" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-diagnostic-report" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "DiagnosticReport.effective" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-procedure" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Procedure.performed" ]
        ]
      ], [
        fhir:index 19;
@@ -532,8 +576,8 @@
        ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-observation" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "Observation.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestCentre]" ]
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-procedure" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Procedure.location" ]
        ]
      ], [
        fhir:index 21;
@@ -562,8 +606,8 @@
        ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-observation" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "Observation.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent]" ]
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-procedure" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Procedure.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent]" ]
        ]
      ]
   ];
@@ -609,8 +653,8 @@
        ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-observation" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "Observation.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestPathogen]" ]
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-test" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Device.property.valueCode" ]
        ]
      ], [
        fhir:index 3;
@@ -636,6 +680,14 @@
          fhir:index 0;
          fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-observation" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Observation.code" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-test" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Device.type" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-diagnostic-report" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "DiagnosticReport.code" ]
        ]
      ], [
        fhir:index 4;
@@ -652,8 +704,8 @@
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-observation" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "Observation.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCEventBrand]" ]
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-test" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Device.property.valueCode" ]
        ]
      ], [
        fhir:index 5;
@@ -670,8 +722,8 @@
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-observation" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "Observation.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestManufacturer]" ]
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-test" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Device.manufacturer" ]
        ]
      ], [
        fhir:index 6;
@@ -697,6 +749,10 @@
          fhir:index 0;
          fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-observation" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Observation.method" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-specimen" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Specimen.code" ]
        ]
      ], [
        fhir:index 7;
@@ -715,6 +771,18 @@
          fhir:index 0;
          fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-observation" ];
          fhir:ElementDefinition.mapping.map [ fhir:value "Observation.effective" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-specimen" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Specimen.collection.collected" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-diagnostic-report" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "DiagnosticReport.effective" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-procedure" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Procedure.performed" ]
        ]
      ], [
        fhir:index 8;
@@ -754,8 +822,8 @@
        ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-observation" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "Observation.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestCentre]" ]
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-procedure" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Procedure.location" ]
        ]
      ], [
        fhir:index 10;
@@ -779,8 +847,8 @@
        ];
        fhir:ElementDefinition.mapping [
          fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-observation" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "Observation.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent]" ]
+         fhir:ElementDefinition.mapping.identity [ fhir:value "ddcc-procedure" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Procedure.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent]" ]
        ]
      ]
   ] .

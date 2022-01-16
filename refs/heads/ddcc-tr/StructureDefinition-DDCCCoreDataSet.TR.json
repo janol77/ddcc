@@ -10,7 +10,7 @@
   "name": "DDCCCoreDataSet_TR",
   "title": "DDCC Core Data Set Logical Model for Test Results",
   "status": "draft",
-  "date": "2022-01-14T00:18:13+00:00",
+  "date": "2022-01-16T20:26:17+00:00",
   "publisher": "WHO",
   "contact": [
     {
@@ -44,6 +44,26 @@
     {
       "identity": "ddcc-observation",
       "uri": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCObservation",
+      "name": "WHO Digital Documentation of COVID Certificates"
+    },
+    {
+      "identity": "ddcc-specimen",
+      "uri": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSpecimen",
+      "name": "WHO Digital Documentation of COVID Certificates"
+    },
+    {
+      "identity": "ddcc-test",
+      "uri": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTest",
+      "name": "WHO Digital Documentation of COVID Certificates"
+    },
+    {
+      "identity": "ddcc-diagnostic-report",
+      "uri": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDiagnosticReport",
+      "name": "WHO Digital Documentation of COVID Certificates"
+    },
+    {
+      "identity": "ddcc-procedure",
+      "uri": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCProcedure",
       "name": "WHO Digital Documentation of COVID Certificates"
     },
     {
@@ -360,8 +380,8 @@
         },
         "mapping": [
           {
-            "identity": "ddcc-observation",
-            "map": "Observation.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestPathogen]"
+            "identity": "ddcc-test",
+            "map": "Device.property.valueCode"
           }
         ]
       },
@@ -391,6 +411,14 @@
           {
             "identity": "ddcc-observation",
             "map": "Observation.code"
+          },
+          {
+            "identity": "ddcc-test",
+            "map": "Device.type"
+          },
+          {
+            "identity": "ddcc-diagnostic-report",
+            "map": "DiagnosticReport.code"
           }
         ]
       },
@@ -414,8 +442,8 @@
         "isSummary": true,
         "mapping": [
           {
-            "identity": "ddcc-observation",
-            "map": "Observation.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCEventBrand]"
+            "identity": "ddcc-test",
+            "map": "Device.property.valueCode"
           }
         ]
       },
@@ -439,8 +467,8 @@
         "isSummary": true,
         "mapping": [
           {
-            "identity": "ddcc-observation",
-            "map": "Observation.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestManufacturer]"
+            "identity": "ddcc-test",
+            "map": "Device.manufacturer"
           }
         ]
       },
@@ -470,6 +498,10 @@
           {
             "identity": "ddcc-observation",
             "map": "Observation.method"
+          },
+          {
+            "identity": "ddcc-specimen",
+            "map": "Specimen.code"
           }
         ]
       },
@@ -495,6 +527,18 @@
           {
             "identity": "ddcc-observation",
             "map": "Observation.effective"
+          },
+          {
+            "identity": "ddcc-specimen",
+            "map": "Specimen.collection.collected"
+          },
+          {
+            "identity": "ddcc-diagnostic-report",
+            "map": "DiagnosticReport.effective"
+          },
+          {
+            "identity": "ddcc-procedure",
+            "map": "Procedure.performed"
           }
         ]
       },
@@ -545,8 +589,8 @@
         ],
         "mapping": [
           {
-            "identity": "ddcc-observation",
-            "map": "Observation.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestCentre]"
+            "identity": "ddcc-procedure",
+            "map": "Procedure.location"
           }
         ]
       },
@@ -574,8 +618,8 @@
         },
         "mapping": [
           {
-            "identity": "ddcc-observation",
-            "map": "Observation.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent]"
+            "identity": "ddcc-procedure",
+            "map": "Procedure.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent]"
           }
         ]
       }
@@ -622,8 +666,8 @@
         },
         "mapping": [
           {
-            "identity": "ddcc-observation",
-            "map": "Observation.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestPathogen]"
+            "identity": "ddcc-test",
+            "map": "Device.property.valueCode"
           }
         ]
       },
@@ -648,6 +692,14 @@
           {
             "identity": "ddcc-observation",
             "map": "Observation.code"
+          },
+          {
+            "identity": "ddcc-test",
+            "map": "Device.type"
+          },
+          {
+            "identity": "ddcc-diagnostic-report",
+            "map": "DiagnosticReport.code"
           }
         ]
       },
@@ -666,8 +718,8 @@
         "isSummary": true,
         "mapping": [
           {
-            "identity": "ddcc-observation",
-            "map": "Observation.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCEventBrand]"
+            "identity": "ddcc-test",
+            "map": "Device.property.valueCode"
           }
         ]
       },
@@ -686,8 +738,8 @@
         "isSummary": true,
         "mapping": [
           {
-            "identity": "ddcc-observation",
-            "map": "Observation.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestManufacturer]"
+            "identity": "ddcc-test",
+            "map": "Device.manufacturer"
           }
         ]
       },
@@ -712,6 +764,10 @@
           {
             "identity": "ddcc-observation",
             "map": "Observation.method"
+          },
+          {
+            "identity": "ddcc-specimen",
+            "map": "Specimen.code"
           }
         ]
       },
@@ -732,6 +788,18 @@
           {
             "identity": "ddcc-observation",
             "map": "Observation.effective"
+          },
+          {
+            "identity": "ddcc-specimen",
+            "map": "Specimen.collection.collected"
+          },
+          {
+            "identity": "ddcc-diagnostic-report",
+            "map": "DiagnosticReport.effective"
+          },
+          {
+            "identity": "ddcc-procedure",
+            "map": "Procedure.performed"
           }
         ]
       },
@@ -772,8 +840,8 @@
         ],
         "mapping": [
           {
-            "identity": "ddcc-observation",
-            "map": "Observation.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestCentre]"
+            "identity": "ddcc-procedure",
+            "map": "Procedure.location"
           }
         ]
       },
@@ -796,8 +864,8 @@
         },
         "mapping": [
           {
-            "identity": "ddcc-observation",
-            "map": "Observation.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent]"
+            "identity": "ddcc-procedure",
+            "map": "Procedure.extension[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent]"
           }
         ]
       }

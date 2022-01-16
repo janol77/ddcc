@@ -21,30 +21,6 @@
       ]
     },
     {
-      "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestCentre",
-      "title": "DDCC Test Centre for Observation",
-      "types": [
-        "Coding",
-        "Coding"
-      ]
-    },
-    {
-      "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestManufacturer",
-      "title": "DDCC Test Manufacturer for Observation",
-      "types": [
-        "Coding",
-        "Coding"
-      ]
-    },
-    {
-      "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestPathogen",
-      "title": "DDCC Test Pathogen for Observation",
-      "types": [
-        "Coding",
-        "Coding"
-      ]
-    },
-    {
       "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineMarketAuthorization",
       "title": "DDCC Vaccine Market Authorization for Immunization",
       "types": [
@@ -86,12 +62,14 @@
     ],
     "Composition": [
       {
-        "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTRComposition",
-        "title": "DDCC:TR Composition"
-      },
-      {
         "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition",
         "title": "DDCC:VS Composition"
+      }
+    ],
+    "DiagnosticReport": [
+      {
+        "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDiagnosticReport",
+        "title": "DDCC Diagnostic Report"
       }
     ],
     "DocumentReference": [
@@ -112,8 +90,8 @@
     ],
     "Parameters": [
       {
-        "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCGenerateHealthCertificateParameters",
-        "title": "DDCC Generate Health Certificate Parameters"
+        "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCRevokeHealthCertificateParameters",
+        "title": "DDCC Revoke Health Certificate Parameters"
       }
     ],
     "ImmunizationRecommendation": [
@@ -146,6 +124,12 @@
         "title": "DDCC Practitioner Role"
       }
     ],
+    "Procedure": [
+      {
+        "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCProcedure",
+        "title": "DDCC Procedure"
+      }
+    ],
     "Questionnaire": [
       {
         "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireSDC",
@@ -157,6 +141,18 @@
         "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse",
         "title": "DDCC Questionnaire Response"
       }
+    ],
+    "Specimen": [
+      {
+        "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSpecimen",
+        "title": "DDCC Specimen"
+      }
+    ],
+    "Device": [
+      {
+        "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTest",
+        "title": "DDCC Test"
+      }
     ]
   },
   "usage": {
@@ -164,8 +160,10 @@
       "Questionnaire"
     ],
     "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
+      "DiagnosticReport.effective[x]",
       "Immunization.occurrence[x]",
-      "Observation.effective[x]"
+      "Observation.effective[x]",
+      "Procedure.performed[x]"
     ],
     "http://hl7.org/fhir/StructureDefinition/designNote": [
       "Questionnaire",
@@ -310,21 +308,11 @@
     "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent": [
       "Bundle.entry.resource",
       "Immunization",
-      "Observation"
+      "Procedure"
     ],
     "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCEventBrand": [
       "Bundle.entry.resource",
-      "Immunization",
-      "Observation"
-    ],
-    "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestCentre": [
-      "Observation"
-    ],
-    "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestManufacturer": [
-      "Observation"
-    ],
-    "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTestPathogen": [
-      "Observation"
+      "Immunization"
     ],
     "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineMarketAuthorization": [
       "Bundle.entry.resource",

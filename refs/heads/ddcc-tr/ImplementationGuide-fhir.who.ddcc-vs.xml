@@ -225,6 +225,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/DDCCDiagnosticReport"/>
+      </reference>
+      <name value="DDCC Diagnostic Report"/>
+      <description value="A DDCC Diagnostic Report contains the content corresponding to a row in the Test &#xA;Events section of a Paper DDCC. While this is not a further profile of the International&#xA;Patient Summary (IPS) DiagnosticReport resouce, this is intended to map into an IPS &#xA;DiagnosticReport resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/DDCCDocument"/>
       </reference>
       <name value="DDCC Document"/>
@@ -368,6 +379,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/DDCCProcedure"/>
+      </reference>
+      <name value="DDCC Procedure"/>
+      <description value="A DDCC Procedure contains the content corresponding to a row in the Test &#xA;Events section of a Paper DDCC. While this is not a further profile of the International&#xA;Patient Summary (IPS) Procedure resouce, this is intended to map into an IPS &#xA;Procedure resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/DDCCProvideDocumentBundle"/>
       </reference>
       <name value="DDCC Provide Document Bundle"/>
@@ -405,6 +427,28 @@
       </reference>
       <name value="DDCC Questionnaire based on SDC"/>
       <description value="DDCC Questionniare based on SDC Populatable Questionnaire with additional extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCRevokeHealthCertificateParameters"/>
+      </reference>
+      <name value="DDCC Revoke Health Certificate Parameters"/>
+      <description value="Parameters for the [DDCC Revoke Health Certificate Operation](OperationDefinition-DDCC-QuestionnaireResponse-revokeHealthCertificate.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCSpecimen"/>
+      </reference>
+      <name value="DDCC Specimen"/>
+      <description value="A DDCC Specimen contains the content corresponding to a row in the Test &#xA;Events section of a Paper DDCC. While this is not a further profile of the International&#xA;Patient Summary (IPS) Specimen resouce, this is intended to map into an IPS &#xA;Specimen resource."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -456,6 +500,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/DDCCTest"/>
+      </reference>
+      <name value="DDCC Test"/>
+      <description value="A DDCC Test contains the content corresponding to a row in the Test &#xA;Events section of a Paper DDCC. While this is not a further profile of the International&#xA;Patient Summary (IPS) Device resouce, this is intended to map into an IPS &#xA;Device resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/DDCCVSComposition"/>
       </reference>
       <name value="DDCC:VS Composition"/>
@@ -482,39 +537,6 @@
       </reference>
       <name value="DDCC Event Brand for Immunization"/>
       <description value="DDCC Event Brand for Immunization"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DDCCTestCentre"/>
-      </reference>
-      <name value="DDCC Test Centre for Observation"/>
-      <description value="DDCC Test Centre for Observation"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DDCCTestManufacturer"/>
-      </reference>
-      <name value="DDCC Test Manufacturer for Observation"/>
-      <description value="DDCC Test Manufacturer for Observation"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DDCCTestPathogen"/>
-      </reference>
-      <name value="DDCC Test Pathogen for Observation"/>
-      <description value="DDCC Test Pathogen for Observation"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -610,6 +632,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/DDCC-Device-Property-ValueSet"/>
+      </reference>
+      <name value="DDCC Device Property Codes"/>
+      <description value="Properties of DDCC devices"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/DDCC-Folder-DesignationType"/>
       </reference>
       <name value="DDCC DesignationTypes for Folder"/>
@@ -621,10 +654,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/DDCC-QR-Category-Usage-ValueSet"/>
+        <reference value="ValueSet/DDCC-QR-Format-ValueSet"/>
       </reference>
-      <name value="DDCC QR Category Usage Codes"/>
-      <description value="Categorization of QR codes by their business usage"/>
+      <name value="DDCC QR Format Codes"/>
+      <description value="Format of the representation of QR code"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -632,10 +665,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/DDCC-QR-Format-ValueSet"/>
+        <reference value="ValueSet/DDCC-QR-Type-ValueSet"/>
       </reference>
-      <name value="DDCC QR Format Codes"/>
-      <description value="Format of the representation of QR code"/>
+      <name value="DDCC QR Type Codes"/>
+      <description value="Type of QR codes by their business usage"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -720,6 +753,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/DDCC-Device-Property-CodeSystem"/>
+      </reference>
+      <name value="DDCC Device Property Codes"/>
+      <description value="Possible properties available for devices."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/DDCC-Example-Test-CodeSystem"/>
       </reference>
       <name value="DDCC Codes for examples"/>
@@ -742,10 +786,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/DDCC-QR-Category-Usage-CodeSystem"/>
+        <reference value="CodeSystem/DDCC-QR-Format-CodeSystem"/>
       </reference>
-      <name value="DDCC QR Category Usage Codes"/>
-      <description value="Possible formats available for QR usage."/>
+      <name value="DDCC QR Format Codes"/>
+      <description value="Possible formats available for QR data."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -753,10 +797,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/DDCC-QR-Format-CodeSystem"/>
+        <reference value="CodeSystem/DDCC-QR-Type-CodeSystem"/>
       </reference>
-      <name value="DDCC QR Format Codes"/>
-      <description value="Possible formats available for QR data."/>
+      <name value="DDCC QR Category Usage Codes"/>
+      <description value="Possible formats available for QR usage."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1072,6 +1116,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/DDCC-QuestionnaireResponse-revokeHealthCertificate"/>
+      </reference>
+      <name value="DDCCRevokeHealthCertificate"/>
+      <description value="Revoke a DDCC Document."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <reference>
@@ -1199,6 +1254,17 @@
       </reference>
       <name value="DDCCHCIDRegistrationQuestionnaire"/>
       <description value="DDCC HCID Registration Questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/DDCCTRCoreDataSetQuestionnaire"/>
+      </reference>
+      <name value="DDCCTRCoreDataSetQuestionnaire"/>
+      <description value="DDCC Questionnaire for a Test event."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

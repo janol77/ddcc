@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "118f9a44-fe5b-4357-b2ca-e6bc7e6515f5",
+  "id" : "b9fcf082-3de7-4926-9bd6-d7e82a631e2a",
   "meta" : {
-    "lastUpdated" : "2022-01-14T00:18:13.889+00:00"
+    "lastUpdated" : "2022-01-16T20:26:17.214+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "DDCC_Composition_Category_ValueSet",
       "title" : "DDCC Composition Category Codes",
       "status" : "active",
-      "date" : "2022-01-14T00:18:13+00:00",
+      "date" : "2022-01-16T20:26:17+00:00",
       "publisher" : "WHO",
       "contact" : [{
         "name" : "WHO",
@@ -36,8 +36,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b0f9ec99-d511-488b-9a85-24e0364afb2a",
-        "timestamp" : "2022-01-14T00:19:38+00:00",
+        "identifier" : "urn:uuid:2aac7049-3a18-4190-8f16-411f7240e642",
+        "timestamp" : "2022-01-16T20:27:25+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -61,6 +61,61 @@
     }
   },
   {
+    "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-Device-Property-ValueSet",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "DDCC-Device-Property-ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-DDCC-Device-Property-CodeSystem.html\">DDCC Device Property Codes v0.3.1 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-DDCC-Device-Property-CodeSystem.html\"><code>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Device-Property-CodeSystem</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Device-Property-CodeSystem-pathogen\"> </a><a href=\"CodeSystem-DDCC-Device-Property-CodeSystem.html#DDCC-Device-Property-CodeSystem-pathogen\">pathogen</a></td><td>Pathogen Targeted</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Device-Property-CodeSystem-brand\"> </a><a href=\"CodeSystem-DDCC-Device-Property-CodeSystem.html#DDCC-Device-Property-CodeSystem-brand\">brand</a></td><td>Test Brand</td><td/></tr></table></div>"
+      },
+      "url" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-Device-Property-ValueSet",
+      "version" : "0.3.1",
+      "name" : "DDCC_Device_Property_ValueSet",
+      "title" : "DDCC Device Property Codes",
+      "status" : "active",
+      "date" : "2022-01-16T20:26:17+00:00",
+      "publisher" : "WHO",
+      "contact" : [{
+        "name" : "WHO",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://who.int"
+        }]
+      }],
+      "description" : "Properties of DDCC devices",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:18d27fa2-a1ca-4684-8d73-cc353cb4ecd7",
+        "timestamp" : "2022-01-16T20:27:25+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Device-Property-CodeSystem|0.3.1"
+        }],
+        "contains" : [{
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Device-Property-CodeSystem",
+          "code" : "pathogen",
+          "display" : "Pathogen Targeted"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Device-Property-CodeSystem",
+          "code" : "brand",
+          "display" : "Test Brand"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-Folder-DesignationType",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -74,7 +129,7 @@
       "name" : "DDCC_Folder_DesignationType_ValueSet",
       "title" : "DDCC DesignationTypes for Folder",
       "status" : "active",
-      "date" : "2022-01-14T00:18:13+00:00",
+      "date" : "2022-01-16T20:26:17+00:00",
       "publisher" : "WHO",
       "contact" : [{
         "name" : "WHO",
@@ -91,8 +146,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:22ff5040-fda5-48b9-a265-9b81b38036f4",
-        "timestamp" : "2022-01-14T00:19:38+00:00",
+        "identifier" : "urn:uuid:f36ff1ab-3e66-4b02-9e71-1a5ac99e62ee",
+        "timestamp" : "2022-01-16T20:27:25+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -111,81 +166,6 @@
     }
   },
   {
-    "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Category-Usage-ValueSet",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "DDCC-QR-Category-Usage-ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-DDCC-QR-Category-Usage-CodeSystem.html\">DDCC QR Category Usage Codes v0.3.1 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-DDCC-QR-Category-Usage-CodeSystem.html\"><code>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Category-Usage-CodeSystem-who\"> </a><a href=\"CodeSystem-DDCC-QR-Category-Usage-CodeSystem.html#DDCC-QR-Category-Usage-CodeSystem-who\">who</a></td><td>WHO SVC</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Category-Usage-CodeSystem-dcc\"> </a><a href=\"CodeSystem-DDCC-QR-Category-Usage-CodeSystem.html#DDCC-QR-Category-Usage-CodeSystem-dcc\">dcc</a></td><td>EU DCC</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Category-Usage-CodeSystem-icao\"> </a><a href=\"CodeSystem-DDCC-QR-Category-Usage-CodeSystem.html#DDCC-QR-Category-Usage-CodeSystem-icao\">icao</a></td><td>ICAO</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Category-Usage-CodeSystem-au\"> </a><a href=\"CodeSystem-DDCC-QR-Category-Usage-CodeSystem.html#DDCC-QR-Category-Usage-CodeSystem-au\">au</a></td><td>AU</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Category-Usage-CodeSystem-shc\"> </a><a href=\"CodeSystem-DDCC-QR-Category-Usage-CodeSystem.html#DDCC-QR-Category-Usage-CodeSystem-shc\">shc</a></td><td>SMART Health Card</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Category-Usage-CodeSystem-divoc\"> </a><a href=\"CodeSystem-DDCC-QR-Category-Usage-CodeSystem.html#DDCC-QR-Category-Usage-CodeSystem-divoc\">divoc</a></td><td>DIVOC</td><td/></tr></table></div>"
-      },
-      "url" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Category-Usage-ValueSet",
-      "version" : "0.3.1",
-      "name" : "DDCC_QR_Category_Usage_ValueSet",
-      "title" : "DDCC QR Category Usage Codes",
-      "status" : "active",
-      "date" : "2022-01-14T00:18:13+00:00",
-      "publisher" : "WHO",
-      "contact" : [{
-        "name" : "WHO",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://who.int"
-        }]
-      }],
-      "description" : "Categorization of QR codes by their business usage",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:81196d47-96a2-4dc4-ad37-55a32a85a23e",
-        "timestamp" : "2022-01-14T00:19:38+00:00",
-        "total" : 6,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem|0.3.1"
-        }],
-        "contains" : [{
-          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem",
-          "code" : "who",
-          "display" : "WHO SVC"
-        },
-        {
-          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem",
-          "code" : "dcc",
-          "display" : "EU DCC"
-        },
-        {
-          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem",
-          "code" : "icao",
-          "display" : "ICAO"
-        },
-        {
-          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem",
-          "code" : "au",
-          "display" : "AU"
-        },
-        {
-          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem",
-          "code" : "shc",
-          "display" : "SMART Health Card"
-        },
-        {
-          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem",
-          "code" : "divoc",
-          "display" : "DIVOC"
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Format-ValueSet",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -199,7 +179,7 @@
       "name" : "DDCC_QR_Format_ValueSet",
       "title" : "DDCC QR Format Codes",
       "status" : "active",
-      "date" : "2022-01-14T00:18:13+00:00",
+      "date" : "2022-01-16T20:26:17+00:00",
       "publisher" : "WHO",
       "contact" : [{
         "name" : "WHO",
@@ -216,8 +196,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:83f8392d-540d-4302-876a-71450e9e3e07",
-        "timestamp" : "2022-01-14T00:19:38+00:00",
+        "identifier" : "urn:uuid:952cd401-5ca3-4f47-9a43-b3129e6ae669",
+        "timestamp" : "2022-01-16T20:27:25+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -246,6 +226,81 @@
     }
   },
   {
+    "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Type-ValueSet",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "DDCC-QR-Type-ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-DDCC-QR-Type-CodeSystem.html\">DDCC QR Category Usage Codes v0.3.1 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-DDCC-QR-Type-CodeSystem.html\"><code>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-who\"> </a><a href=\"CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-who\">who</a></td><td>WHO DDCC</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-dcc\"> </a><a href=\"CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-dcc\">dcc</a></td><td>EU DCC</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-icao\"> </a><a href=\"CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-icao\">icao</a></td><td>ICAO</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-au\"> </a><a href=\"CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-au\">au</a></td><td>AU</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-shc\"> </a><a href=\"CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-shc\">shc</a></td><td>SMART Health Card</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-divoc\"> </a><a href=\"CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-divoc\">divoc</a></td><td>DIVOC</td><td/></tr></table></div>"
+      },
+      "url" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Type-ValueSet",
+      "version" : "0.3.1",
+      "name" : "DDCC_QR_Type_ValueSet",
+      "title" : "DDCC QR Type Codes",
+      "status" : "active",
+      "date" : "2022-01-16T20:26:17+00:00",
+      "publisher" : "WHO",
+      "contact" : [{
+        "name" : "WHO",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://who.int"
+        }]
+      }],
+      "description" : "Type of QR codes by their business usage",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:afaef9d2-0a4b-409c-a013-80296b3be7e5",
+        "timestamp" : "2022-01-16T20:27:25+00:00",
+        "total" : 6,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem|0.3.1"
+        }],
+        "contains" : [{
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem",
+          "code" : "who",
+          "display" : "WHO DDCC"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem",
+          "code" : "dcc",
+          "display" : "EU DCC"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem",
+          "code" : "icao",
+          "display" : "ICAO"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem",
+          "code" : "au",
+          "display" : "AU"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem",
+          "code" : "shc",
+          "display" : "SMART Health Card"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem",
+          "code" : "divoc",
+          "display" : "DIVOC"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-sample-origin-covid-19",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -259,7 +314,7 @@
       "name" : "WHO_DDCC_Sample_Origin_COVID_19",
       "title" : "WHO Speciman Sample Origin (COVID-19)",
       "status" : "draft",
-      "date" : "2022-01-14T00:18:13+00:00",
+      "date" : "2022-01-16T20:26:17+00:00",
       "publisher" : "WHO",
       "contact" : [{
         "name" : "WHO",
@@ -276,8 +331,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:326b4d7d-7e2d-477a-8c64-888f837cb558",
-        "timestamp" : "2022-01-14T00:19:40+00:00",
+        "identifier" : "urn:uuid:873b1384-1558-47de-ac42-ecc3d38aecb1",
+        "timestamp" : "2022-01-16T20:27:28+00:00",
         "total" : 9,
         "parameter" : [{
           "name" : "excludeNested",
@@ -353,7 +408,7 @@
       "name" : "WHO_DDCC_Type_of_Test_COVID_19",
       "title" : "WHO Type of Covid-19 Test",
       "status" : "draft",
-      "date" : "2022-01-14T00:18:13+00:00",
+      "date" : "2022-01-16T20:26:17+00:00",
       "publisher" : "WHO",
       "contact" : [{
         "name" : "WHO",
@@ -370,8 +425,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:e4ce9d02-84d5-4126-89f2-51eb34f8f9b9",
-        "timestamp" : "2022-01-14T00:19:41+00:00",
+        "identifier" : "urn:uuid:e91bc2d8-6e8b-4eba-8b25-247febb96b09",
+        "timestamp" : "2022-01-16T20:27:29+00:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false

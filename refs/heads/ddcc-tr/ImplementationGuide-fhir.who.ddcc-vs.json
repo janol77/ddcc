@@ -346,6 +346,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/DDCCDiagnosticReport"
+        },
+        "name": "DDCC Diagnostic Report",
+        "description": "A DDCC Diagnostic Report contains the content corresponding to a row in the Test \nEvents section of a Paper DDCC. While this is not a further profile of the International\nPatient Summary (IPS) DiagnosticReport resouce, this is intended to map into an IPS \nDiagnosticReport resource.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/DDCCDocument"
         },
         "name": "DDCC Document",
@@ -528,6 +542,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/DDCCProcedure"
+        },
+        "name": "DDCC Procedure",
+        "description": "A DDCC Procedure contains the content corresponding to a row in the Test \nEvents section of a Paper DDCC. While this is not a further profile of the International\nPatient Summary (IPS) Procedure resouce, this is intended to map into an IPS \nProcedure resource.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/DDCCProvideDocumentBundle"
         },
         "name": "DDCC Provide Document Bundle",
@@ -574,6 +602,34 @@
         },
         "name": "DDCC Questionnaire based on SDC",
         "description": "DDCC Questionniare based on SDC Populatable Questionnaire with additional extension",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCRevokeHealthCertificateParameters"
+        },
+        "name": "DDCC Revoke Health Certificate Parameters",
+        "description": "Parameters for the [DDCC Revoke Health Certificate Operation](OperationDefinition-DDCC-QuestionnaireResponse-revokeHealthCertificate.html).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCSpecimen"
+        },
+        "name": "DDCC Specimen",
+        "description": "A DDCC Specimen contains the content corresponding to a row in the Test \nEvents section of a Paper DDCC. While this is not a further profile of the International\nPatient Summary (IPS) Specimen resouce, this is intended to map into an IPS \nSpecimen resource.",
         "exampleBoolean": false
       },
       {
@@ -640,6 +696,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/DDCCTest"
+        },
+        "name": "DDCC Test",
+        "description": "A DDCC Test contains the content corresponding to a row in the Test \nEvents section of a Paper DDCC. While this is not a further profile of the International\nPatient Summary (IPS) Device resouce, this is intended to map into an IPS \nDevice resource.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/DDCCVSComposition"
         },
         "name": "DDCC:VS Composition",
@@ -672,48 +742,6 @@
         },
         "name": "DDCC Event Brand for Immunization",
         "description": "DDCC Event Brand for Immunization",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/DDCCTestCentre"
-        },
-        "name": "DDCC Test Centre for Observation",
-        "description": "DDCC Test Centre for Observation",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/DDCCTestManufacturer"
-        },
-        "name": "DDCC Test Manufacturer for Observation",
-        "description": "DDCC Test Manufacturer for Observation",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/DDCCTestPathogen"
-        },
-        "name": "DDCC Test Pathogen for Observation",
-        "description": "DDCC Test Pathogen for Observation",
         "exampleBoolean": false
       },
       {
@@ -836,6 +864,20 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/DDCC-Device-Property-ValueSet"
+        },
+        "name": "DDCC Device Property Codes",
+        "description": "Properties of DDCC devices",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/DDCC-Folder-DesignationType"
         },
         "name": "DDCC DesignationTypes for Folder",
@@ -850,10 +892,10 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/DDCC-QR-Category-Usage-ValueSet"
+          "reference": "ValueSet/DDCC-QR-Format-ValueSet"
         },
-        "name": "DDCC QR Category Usage Codes",
-        "description": "Categorization of QR codes by their business usage",
+        "name": "DDCC QR Format Codes",
+        "description": "Format of the representation of QR code",
         "exampleBoolean": false
       },
       {
@@ -864,10 +906,10 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/DDCC-QR-Format-ValueSet"
+          "reference": "ValueSet/DDCC-QR-Type-ValueSet"
         },
-        "name": "DDCC QR Format Codes",
-        "description": "Format of the representation of QR code",
+        "name": "DDCC QR Type Codes",
+        "description": "Type of QR codes by their business usage",
         "exampleBoolean": false
       },
       {
@@ -976,6 +1018,20 @@
           }
         ],
         "reference": {
+          "reference": "CodeSystem/DDCC-Device-Property-CodeSystem"
+        },
+        "name": "DDCC Device Property Codes",
+        "description": "Possible properties available for devices.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
           "reference": "CodeSystem/DDCC-Example-Test-CodeSystem"
         },
         "name": "DDCC Codes for examples",
@@ -1004,10 +1060,10 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/DDCC-QR-Category-Usage-CodeSystem"
+          "reference": "CodeSystem/DDCC-QR-Format-CodeSystem"
         },
-        "name": "DDCC QR Category Usage Codes",
-        "description": "Possible formats available for QR usage.",
+        "name": "DDCC QR Format Codes",
+        "description": "Possible formats available for QR data.",
         "exampleBoolean": false
       },
       {
@@ -1018,10 +1074,10 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/DDCC-QR-Format-CodeSystem"
+          "reference": "CodeSystem/DDCC-QR-Type-CodeSystem"
         },
-        "name": "DDCC QR Format Codes",
-        "description": "Possible formats available for QR data.",
+        "name": "DDCC QR Category Usage Codes",
+        "description": "Possible formats available for QR usage.",
         "exampleBoolean": false
       },
       {
@@ -1432,6 +1488,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "OperationDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "OperationDefinition/DDCC-QuestionnaireResponse-revokeHealthCertificate"
+        },
+        "name": "DDCCRevokeHealthCertificate",
+        "description": "Revoke a DDCC Document.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Bundle"
           }
         ],
@@ -1596,6 +1666,20 @@
         },
         "name": "DDCCHCIDRegistrationQuestionnaire",
         "description": "DDCC HCID Registration Questionnaire",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Questionnaire"
+          }
+        ],
+        "reference": {
+          "reference": "Questionnaire/DDCCTRCoreDataSetQuestionnaire"
+        },
+        "name": "DDCCTRCoreDataSetQuestionnaire",
+        "description": "DDCC Questionnaire for a Test event.",
         "exampleBoolean": false
       },
       {
