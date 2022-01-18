@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="b9fcf082-3de7-4926-9bd6-d7e82a631e2a"/>
+  <id value="ee624df4-7657-46cc-9ebd-220478f75b4b"/>
   <meta>
-    <lastUpdated value="2022-01-16T20:26:17.214+00:00"/>
+    <lastUpdated value="2022-01-18T14:34:22.417+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -31,9 +31,6 @@
                 <td>
                   <b>Display</b>
                 </td>
-                <td>
-                  <b>Definition</b>
-                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -41,7 +38,6 @@
                   <a href="CodeSystem-DDCC-Composition-Category-CodeSystem.html#DDCC-Composition-Category-CodeSystem-ddcc-vs">ddcc-vs</a>
                 </td>
                 <td>DDCC:VS</td>
-                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -49,7 +45,6 @@
                   <a href="CodeSystem-DDCC-Composition-Category-CodeSystem.html#DDCC-Composition-Category-CodeSystem-ddcc-tr">ddcc-tr</a>
                 </td>
                 <td>DDCC:TR</td>
-                <td/>
               </tr>
             </table>
           </div>
@@ -59,7 +54,7 @@
         <name value="DDCC_Composition_Category_ValueSet"/>
         <title value="DDCC Composition Category Codes"/>
         <status value="active"/>
-        <date value="2022-01-16T20:26:17+00:00"/>
+        <date value="2022-01-18T14:34:22+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -76,8 +71,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2aac7049-3a18-4190-8f16-411f7240e642"/>
-          <timestamp value="2022-01-16T20:27:25+00:00"/>
+          <identifier value="urn:uuid:9f63fa75-5e47-4794-8162-3e173fa4de95"/>
+          <timestamp value="2022-01-18T14:35:37+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -126,9 +121,6 @@
                 <td>
                   <b>Display</b>
                 </td>
-                <td>
-                  <b>Definition</b>
-                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -136,7 +128,6 @@
                   <a href="CodeSystem-DDCC-Device-Property-CodeSystem.html#DDCC-Device-Property-CodeSystem-pathogen">pathogen</a>
                 </td>
                 <td>Pathogen Targeted</td>
-                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -144,7 +135,6 @@
                   <a href="CodeSystem-DDCC-Device-Property-CodeSystem.html#DDCC-Device-Property-CodeSystem-brand">brand</a>
                 </td>
                 <td>Test Brand</td>
-                <td/>
               </tr>
             </table>
           </div>
@@ -154,7 +144,7 @@
         <name value="DDCC_Device_Property_ValueSet"/>
         <title value="DDCC Device Property Codes"/>
         <status value="active"/>
-        <date value="2022-01-16T20:26:17+00:00"/>
+        <date value="2022-01-18T14:34:22+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -171,8 +161,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:18d27fa2-a1ca-4684-8d73-cc353cb4ecd7"/>
-          <timestamp value="2022-01-16T20:27:25+00:00"/>
+          <identifier value="urn:uuid:3ab4d4b1-802c-452e-9de5-d8a1f872afb9"/>
+          <timestamp value="2022-01-18T14:35:37+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -221,9 +211,6 @@
                 <td>
                   <b>Display</b>
                 </td>
-                <td>
-                  <b>Definition</b>
-                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -231,7 +218,6 @@
                   <a href="CodeSystem-DDCC-Folder-DesignationType.html#DDCC-Folder-DesignationType-ddcc">ddcc</a>
                 </td>
                 <td>DDCC</td>
-                <td/>
               </tr>
             </table>
           </div>
@@ -241,7 +227,7 @@
         <name value="DDCC_Folder_DesignationType_ValueSet"/>
         <title value="DDCC DesignationTypes for Folder"/>
         <status value="active"/>
-        <date value="2022-01-16T20:26:17+00:00"/>
+        <date value="2022-01-18T14:34:22+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -258,8 +244,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f36ff1ab-3e66-4b02-9e71-1a5ac99e62ee"/>
-          <timestamp value="2022-01-16T20:27:25+00:00"/>
+          <identifier value="urn:uuid:46d9acee-b02b-4a8b-b228-38a62311efe2"/>
+          <timestamp value="2022-01-18T14:35:37+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -303,9 +289,6 @@
                 <td>
                   <b>Display</b>
                 </td>
-                <td>
-                  <b>Definition</b>
-                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -313,7 +296,6 @@
                   <a href="CodeSystem-DDCC-QR-Format-CodeSystem.html#DDCC-QR-Format-CodeSystem-image">image</a>
                 </td>
                 <td>Image</td>
-                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -321,7 +303,6 @@
                   <a href="CodeSystem-DDCC-QR-Format-CodeSystem.html#DDCC-QR-Format-CodeSystem-serialized">serialized</a>
                 </td>
                 <td>Serialized QR Content</td>
-                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -329,7 +310,6 @@
                   <a href="CodeSystem-DDCC-QR-Format-CodeSystem.html#DDCC-QR-Format-CodeSystem-pdf">pdf</a>
                 </td>
                 <td>PDF version of the QR image</td>
-                <td/>
               </tr>
             </table>
           </div>
@@ -339,7 +319,7 @@
         <name value="DDCC_QR_Format_ValueSet"/>
         <title value="DDCC QR Format Codes"/>
         <status value="active"/>
-        <date value="2022-01-16T20:26:17+00:00"/>
+        <date value="2022-01-18T14:34:22+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -356,8 +336,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:952cd401-5ca3-4f47-9a43-b3129e6ae669"/>
-          <timestamp value="2022-01-16T20:27:25+00:00"/>
+          <identifier value="urn:uuid:b1f4b0a7-c012-463f-a74d-b6633eb90cf7"/>
+          <timestamp value="2022-01-18T14:35:37+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -411,9 +391,6 @@
                 <td>
                   <b>Display</b>
                 </td>
-                <td>
-                  <b>Definition</b>
-                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -421,7 +398,6 @@
                   <a href="CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-who">who</a>
                 </td>
                 <td>WHO DDCC</td>
-                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -429,7 +405,6 @@
                   <a href="CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-dcc">dcc</a>
                 </td>
                 <td>EU DCC</td>
-                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -437,7 +412,6 @@
                   <a href="CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-icao">icao</a>
                 </td>
                 <td>ICAO</td>
-                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -445,7 +419,6 @@
                   <a href="CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-au">au</a>
                 </td>
                 <td>AU</td>
-                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -453,7 +426,6 @@
                   <a href="CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-shc">shc</a>
                 </td>
                 <td>SMART Health Card</td>
-                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -461,7 +433,6 @@
                   <a href="CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-divoc">divoc</a>
                 </td>
                 <td>DIVOC</td>
-                <td/>
               </tr>
             </table>
           </div>
@@ -471,7 +442,7 @@
         <name value="DDCC_QR_Type_ValueSet"/>
         <title value="DDCC QR Type Codes"/>
         <status value="active"/>
-        <date value="2022-01-16T20:26:17+00:00"/>
+        <date value="2022-01-18T14:34:22+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -488,8 +459,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:afaef9d2-0a4b-409c-a013-80296b3be7e5"/>
-          <timestamp value="2022-01-16T20:27:25+00:00"/>
+          <identifier value="urn:uuid:c8fb3876-7a9d-42fe-a7ba-9a0a0273d56b"/>
+          <timestamp value="2022-01-18T14:35:37+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -556,9 +527,6 @@
                 <td>
                   <b>Display</b>
                 </td>
-                <td>
-                  <b>Definition</b>
-                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -566,7 +534,6 @@
                   <a href="http://snomed.info/id/258500001">258500001</a>
                 </td>
                 <td>Nasopharyngeal swab</td>
-                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -574,7 +541,6 @@
                   <a href="http://snomed.info/id/461911000124106">461911000124106</a>
                 </td>
                 <td>Oropharyngeal swab</td>
-                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -582,7 +548,6 @@
                   <a href="http://snomed.info/id/472881004">472881004</a>
                 </td>
                 <td>Pharyngeal swab</td>
-                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -590,7 +555,6 @@
                   <a href="http://snomed.info/id/472901003">472901003</a>
                 </td>
                 <td>Swab from nasal sinus</td>
-                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -598,7 +562,6 @@
                   <a href="http://snomed.info/id/119342007">119342007</a>
                 </td>
                 <td>Saliva specimen</td>
-                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -606,7 +569,6 @@
                   <a href="http://snomed.info/id/119297000">119297000</a>
                 </td>
                 <td>Blood specimen</td>
-                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -614,7 +576,6 @@
                   <a href="http://snomed.info/id/119361006">119361006</a>
                 </td>
                 <td>Plasma specimen</td>
-                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -622,7 +583,6 @@
                   <a href="http://snomed.info/id/119364003">119364003</a>
                 </td>
                 <td>Serum specimen</td>
-                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -630,7 +590,6 @@
                   <a href="http://snomed.info/id/122592007">122592007</a>
                 </td>
                 <td>Acellular blood (serum or plasma) specimen</td>
-                <td/>
               </tr>
             </table>
           </div>
@@ -640,7 +599,7 @@
         <name value="WHO_DDCC_Sample_Origin_COVID_19"/>
         <title value="WHO Speciman Sample Origin (COVID-19)"/>
         <status value="draft"/>
-        <date value="2022-01-16T20:26:17+00:00"/>
+        <date value="2022-01-18T14:34:22+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -657,8 +616,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:873b1384-1558-47de-ac42-ecc3d38aecb1"/>
-          <timestamp value="2022-01-16T20:27:28+00:00"/>
+          <identifier value="urn:uuid:29675bb8-5016-4c5e-a312-ada1dcd63f06"/>
+          <timestamp value="2022-01-18T14:35:42+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -750,7 +709,7 @@
         <name value="WHO_DDCC_Type_of_Test_COVID_19"/>
         <title value="WHO Type of Covid-19 Test"/>
         <status value="draft"/>
-        <date value="2022-01-16T20:26:17+00:00"/>
+        <date value="2022-01-18T14:34:22+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -767,8 +726,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e91bc2d8-6e8b-4eba-8b25-247febb96b09"/>
-          <timestamp value="2022-01-16T20:27:29+00:00"/>
+          <identifier value="urn:uuid:3b71df41-f052-4428-b793-fe4ce6c0d235"/>
+          <timestamp value="2022-01-18T14:35:43+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
