@@ -15,7 +15,7 @@
   fhir:ImplementationGuide.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc-vs"];
   fhir:ImplementationGuide.version [ fhir:value "0.3.1"];
   fhir:ImplementationGuide.name [ fhir:value "ddccvs"];
-  fhir:ImplementationGuide.title [ fhir:value "WHO Digital Documentation of COVID-19 Certificates: Vaccination Status (DDCC:VS)"];
+  fhir:ImplementationGuide.title [ fhir:value "WHO Digital Documentation of COVID-19 Certificates (DDCC)"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.date [ fhir:value "2021-11-12"^^xsd:date];
   fhir:ImplementationGuide.publisher [ fhir:value "WHO"];
