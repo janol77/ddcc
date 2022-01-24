@@ -444,6 +444,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/DDCCGenerateHealthFolderParameters"
+        },
+        "name": "DDCC Generate Health Folder Parameters",
+        "description": "Parameters for the [DDCC Generate Health Folder Operation](OperationDefinition-DDCC-QuestionnaireResponse-generateHealthFolder.html).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/DDCCImmunization"
         },
         "name": "DDCC Immunization",
@@ -1538,6 +1552,20 @@
         },
         "name": "DDCCGenerateHealthCertificate",
         "description": "Generate one or more signed DDCC Documents based on a [DDCC QuestionnaireResponse](StructureDefinition-DDCCQuestionnaireResponse.html)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "OperationDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "OperationDefinition/DDCC-QuestionnaireResponse-generateHealthFolder"
+        },
+        "name": "DDCCGenerateHealthFolder",
+        "description": "Generate a DDCC Folder from an IPS Bundle.",
         "exampleBoolean": false
       },
       {

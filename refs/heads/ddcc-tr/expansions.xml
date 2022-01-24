@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="07a675a5-31c0-4dc0-a96f-84a83b669787"/>
+  <id value="f8867748-e77a-439f-b46b-7e7800d479a5"/>
   <meta>
-    <lastUpdated value="2022-01-24T18:58:51.727+00:00"/>
+    <lastUpdated value="2022-01-24T20:22:18.555+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -54,7 +54,7 @@
         <name value="DDCC_Composition_Category_ValueSet"/>
         <title value="DDCC Composition Category Codes"/>
         <status value="active"/>
-        <date value="2022-01-24T18:58:51+00:00"/>
+        <date value="2022-01-24T20:22:18+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -71,8 +71,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:09a4e983-f65d-4a0b-8084-11938faa60fb"/>
-          <timestamp value="2022-01-24T19:00:38+00:00"/>
+          <identifier value="urn:uuid:d6c60506-4b93-4ac3-921a-6a6bc39cacca"/>
+          <timestamp value="2022-01-24T20:23:43+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -144,7 +144,7 @@
         <name value="DDCC_Device_Property_ValueSet"/>
         <title value="DDCC Device Property Codes"/>
         <status value="active"/>
-        <date value="2022-01-24T18:58:51+00:00"/>
+        <date value="2022-01-24T20:22:18+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -161,8 +161,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c8f5f7bf-bb72-4d6c-b7af-0f81173d7a60"/>
-          <timestamp value="2022-01-24T19:00:38+00:00"/>
+          <identifier value="urn:uuid:70e0311f-1691-4e4a-8b47-e4f6ea6d4fbc"/>
+          <timestamp value="2022-01-24T20:23:43+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -227,7 +227,7 @@
         <name value="DDCC_Folder_DesignationType_ValueSet"/>
         <title value="DDCC DesignationTypes for Folder"/>
         <status value="active"/>
-        <date value="2022-01-24T18:58:51+00:00"/>
+        <date value="2022-01-24T20:22:18+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -244,8 +244,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:860c58e8-4522-4e8d-8032-728cb47242a5"/>
-          <timestamp value="2022-01-24T19:00:39+00:00"/>
+          <identifier value="urn:uuid:b3a6c4c3-05d7-4051-814b-8819ec75518e"/>
+          <timestamp value="2022-01-24T20:23:43+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -319,7 +319,7 @@
         <name value="DDCC_QR_Format_ValueSet"/>
         <title value="DDCC QR Format Codes"/>
         <status value="active"/>
-        <date value="2022-01-24T18:58:51+00:00"/>
+        <date value="2022-01-24T20:22:18+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -336,8 +336,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2a69ad8c-0fcf-4674-948d-02e1577dffa2"/>
-          <timestamp value="2022-01-24T19:00:39+00:00"/>
+          <identifier value="urn:uuid:ec1ceb73-fccd-4989-8e9a-4bda5849e547"/>
+          <timestamp value="2022-01-24T20:23:43+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -442,7 +442,7 @@
         <name value="DDCC_QR_Type_ValueSet"/>
         <title value="DDCC QR Type Codes"/>
         <status value="active"/>
-        <date value="2022-01-24T18:58:51+00:00"/>
+        <date value="2022-01-24T20:22:18+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -459,8 +459,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6ffaa542-f9ce-4922-858d-18fc4f815f52"/>
-          <timestamp value="2022-01-24T19:00:39+00:00"/>
+          <identifier value="urn:uuid:21d0ec57-796f-49c2-8791-5a78b3c35a30"/>
+          <timestamp value="2022-01-24T20:23:43+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -599,7 +599,7 @@
         <name value="WHO_DDCC_Sample_Origin_COVID_19"/>
         <title value="WHO Speciman Sample Origin (COVID-19)"/>
         <status value="draft"/>
-        <date value="2022-01-24T18:58:51+00:00"/>
+        <date value="2022-01-24T20:22:18+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -616,8 +616,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:934d58a6-620b-4951-99d9-39b2759a9c67"/>
-          <timestamp value="2022-01-24T19:00:41+00:00"/>
+          <identifier value="urn:uuid:c0457bd3-c8b2-45ea-9a61-98576ef8d579"/>
+          <timestamp value="2022-01-24T20:23:45+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -709,7 +709,7 @@
         <name value="WHO_DDCC_Type_of_Test_COVID_19"/>
         <title value="WHO Type of Covid-19 Test"/>
         <status value="draft"/>
-        <date value="2022-01-24T18:58:51+00:00"/>
+        <date value="2022-01-24T20:22:18+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -726,8 +726,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b6cce70a-5a7b-4807-9916-58e6935d3f55"/>
-          <timestamp value="2022-01-24T19:00:42+00:00"/>
+          <identifier value="urn:uuid:46420934-9e23-4ad4-be8f-da23d5071f5c"/>
+          <timestamp value="2022-01-24T20:23:47+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>

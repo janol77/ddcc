@@ -302,6 +302,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/DDCCGenerateHealthFolderParameters"/>
+      </reference>
+      <name value="DDCC Generate Health Folder Parameters"/>
+      <description value="Parameters for the [DDCC Generate Health Folder Operation](OperationDefinition-DDCC-QuestionnaireResponse-generateHealthFolder.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/DDCCImmunization"/>
       </reference>
       <name value="DDCC Immunization"/>
@@ -1156,6 +1167,17 @@
       </reference>
       <name value="DDCCGenerateHealthCertificate"/>
       <description value="Generate one or more signed DDCC Documents based on a [DDCC QuestionnaireResponse](StructureDefinition-DDCCQuestionnaireResponse.html)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/DDCC-QuestionnaireResponse-generateHealthFolder"/>
+      </reference>
+      <name value="DDCCGenerateHealthFolder"/>
+      <description value="Generate a DDCC Folder from an IPS Bundle."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

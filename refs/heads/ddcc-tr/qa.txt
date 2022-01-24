@@ -1,16 +1,16 @@
 ﻿ddccvs : Validation Results
 =========================================
 
-err = 335, warn = 96, info = 30
+err = 330, warn = 96, info = 30
 IG Publisher Version: 1.1.97
-Generated Mon Jan 24 19:02:23 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.3.1 (canonical = http://worldhealthorganization.github.io/ddcc)
- Build Errors : 879 / 57 / 0
- /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 3 / 0 / 12
- /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Arabic : 3 / 0 / 12
- /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Chinese : 3 / 0 / 12
- /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-French : 3 / 0 / 12
- /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Russian : 3 / 0 / 12
- /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Spanish : 3 / 0 / 12
+Generated Mon Jan 24 20:25:01 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.3.1 (canonical = http://worldhealthorganization.github.io/ddcc)
+ Build Errors : 892 / 57 / 0
+ /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 2 / 0 / 12
+ /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Arabic : 2 / 0 / 12
+ /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Chinese : 2 / 0 / 12
+ /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-French : 2 / 0 / 12
+ /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Russian : 2 / 0 / 12
+ /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Spanish : 2 / 0 / 12
  /github/workspace/fsh-generated/resources/Bundle-Example-Arabic : 0 / 1 / 21
  /github/workspace/fsh-generated/resources/Bundle-Example-Chinese : 0 / 1 / 21
  /github/workspace/fsh-generated/resources/Bundle-Example-English : 0 / 1 / 21
@@ -49,6 +49,7 @@ Generated Mon Jan 24 19:02:23 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc-vs#
  /github/workspace/fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Spanish : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.who.ddcc-vs : 0 / 15 / 1
  /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthFolder : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-revokeHealthCertificate : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-DDCC-Organization-Arabic : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-DDCC-Organization-Chinese : 0 / 0 / 1
@@ -87,6 +88,7 @@ Generated Mon Jan 24 19:02:23 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc-vs#
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCEventBrand : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCFolder : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCGenerateHealthCertificateParameters : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-DDCCGenerateHealthFolderParameters : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCImmunization : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCImmunizationRecommendation : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCObservation : 3 / 1 / 1
@@ -425,10 +427,15 @@ ERROR: /github/workspace/output/ImmunizationRecommendation-DDCC-ImmunizationReco
 ERROR: /github/workspace/output/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Spanish.ttl.html#/html/body/div/div/div/p/a at Line 311, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Spanish.xml.html#/html/body/div/div/div/p/a at Line 295, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.change.history.html#/html/body/div/div/div/p/a at Line 265, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.html#/html/body/div/div/div/p/a at Line 256, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.json.html#/html/body/div/div/div/p/a at Line 324, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.ttl.html#/html/body/div/div/div/p/a at Line 332, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.xml.html#/html/body/div/div/div/p/a at Line 322, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.html#/html/body/div/div/div/p/a at Line 255, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.json.html#/html/body/div/div/div/p/a at Line 317, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.ttl.html#/html/body/div/div/div/p/a at Line 327, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.xml.html#/html/body/div/div/div/p/a at Line 313, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthFolder.change.history.html#/html/body/div/div/div/p/a at Line 265, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthFolder.html#/html/body/div/div/div/p/a at Line 255, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthFolder.json.html#/html/body/div/div/div/p/a at Line 316, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthFolder.ttl.html#/html/body/div/div/div/p/a at Line 324, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthFolder.xml.html#/html/body/div/div/div/p/a at Line 309, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/OperationDefinition-DDCC-QuestionnaireResponse-revokeHealthCertificate.change.history.html#/html/body/div/div/div/p/a at Line 265, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/OperationDefinition-DDCC-QuestionnaireResponse-revokeHealthCertificate.html#/html/body/div/div/div/p/a at Line 255, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/OperationDefinition-DDCC-QuestionnaireResponse-revokeHealthCertificate.json.html#/html/body/div/div/div/p/a at Line 313, column 135: The link 'license.html' for "License" cannot be resolved
@@ -675,14 +682,22 @@ ERROR: /github/workspace/output/StructureDefinition-DDCCFolder.profile.history.h
 ERROR: /github/workspace/output/StructureDefinition-DDCCFolder.profile.json.html#/html/body/div/div/div/p/a at Line 3830, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCFolder.profile.ttl.html#/html/body/div/div/div/p/a at Line 3328, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCFolder.profile.xml.html#/html/body/div/div/div/p/a at Line 3411, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCGenerateHealthCertificateParameters-definitions.html#/html/body/div/div/div/p/a at Line 545, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCGenerateHealthCertificateParameters-definitions.html#/html/body/div/div/div/p/a at Line 477, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCGenerateHealthCertificateParameters-examples.html#/html/body/div/div/div/p/a at Line 297, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCGenerateHealthCertificateParameters-mappings.html#/html/body/div/div/div/p/a at Line 316, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCGenerateHealthCertificateParameters.html#/html/body/div/div/div/p/a at Line 1226, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCGenerateHealthCertificateParameters-mappings.html#/html/body/div/div/div/p/a at Line 312, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCGenerateHealthCertificateParameters.html#/html/body/div/div/div/p/a at Line 977, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCGenerateHealthCertificateParameters.profile.history.html#/html/body/div/div/div/p/a at Line 286, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCGenerateHealthCertificateParameters.profile.json.html#/html/body/div/div/div/p/a at Line 1917, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCGenerateHealthCertificateParameters.profile.ttl.html#/html/body/div/div/div/p/a at Line 1642, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCGenerateHealthCertificateParameters.profile.xml.html#/html/body/div/div/div/p/a at Line 1776, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCGenerateHealthCertificateParameters.profile.json.html#/html/body/div/div/div/p/a at Line 1474, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCGenerateHealthCertificateParameters.profile.ttl.html#/html/body/div/div/div/p/a at Line 1281, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCGenerateHealthCertificateParameters.profile.xml.html#/html/body/div/div/div/p/a at Line 1368, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCGenerateHealthFolderParameters-definitions.html#/html/body/div/div/div/p/a at Line 477, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCGenerateHealthFolderParameters-examples.html#/html/body/div/div/div/p/a at Line 297, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCGenerateHealthFolderParameters-mappings.html#/html/body/div/div/div/p/a at Line 312, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCGenerateHealthFolderParameters.html#/html/body/div/div/div/p/a at Line 951, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCGenerateHealthFolderParameters.profile.history.html#/html/body/div/div/div/p/a at Line 286, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCGenerateHealthFolderParameters.profile.json.html#/html/body/div/div/div/p/a at Line 1462, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCGenerateHealthFolderParameters.profile.ttl.html#/html/body/div/div/div/p/a at Line 1269, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCGenerateHealthFolderParameters.profile.xml.html#/html/body/div/div/div/p/a at Line 1356, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization-definitions.html#/html/body/div/div/div/p/a at Line 1362, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization-examples.html#/html/body/div/div/div/p/a at Line 348, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization-mappings.html#/html/body/div/div/div/p/a at Line 498, column 135: The link 'license.html' for "License" cannot be resolved
@@ -1029,13 +1044,13 @@ ERROR: /github/workspace/output/ValueSet-who-ddcc-vaccines-covid-19.json.html#/h
 ERROR: /github/workspace/output/ValueSet-who-ddcc-vaccines-covid-19.ttl.html#/html/body/div/div/div/p/a at Line 396, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-who-ddcc-vaccines-covid-19.xml.html#/html/body/div/div/div/p/a at Line 412, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/actors.html#/html/body/div/div/div/p/a at Line 243, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 1474, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 1492, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/background.html#/html/body/div/div/div/p/a at Line 202, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/changes.html#/html/body/div/div/div/p/a at Line 219, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/concepts.html#/html/body/div/div/div/p/a at Line 458, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/content_profiles.html#/html/body/div/div/div/p/a at Line 236, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/data_exchange.html#/html/body/div/div/div/p/a at Line 213, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/dependencies.html#/html/body/div/div/div/p/a at Line 214, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/dependencies.html#/html/body/div/div/div/p/a at Line 227, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/deployment.html#/html/body/div/div/div/p/a at Line 215, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/dictionary.html#/html/body/div/div/div/div/div/div/div/ul/li/a at Line 177, column 12: The link 'StructureDefinition-DDCCCoreDataSetCoC.html' for "Continuity of Care Core Data Set" cannot be resolved
 ERROR: /github/workspace/output/dictionary.html#/html/body/div/div/div/div/div/div/div/ul/li/a at Line 178, column 12: The link 'StructureDefinition-DDCCCoreDataSetPoV.html' for "Proof of Vaccination Core Data Set" cannot be resolved
@@ -1079,27 +1094,21 @@ ERROR: /github/workspace/output/transactions.html#/html/body/div/div/div/p/a at 
 ERROR: /github/workspace/output/usecases.html#/html/body/div/div/div/p/a at Line 259, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/workflows.html#/html/body/div/div/div/p/a at Line 220, column 135: The link 'license.html' for "License" cannot be resolved
 == fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1.json ==
-ERROR: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0]: Slicing cannot be evaluated: Could not match discriminator ([name]) for slice Parameters.parameter:ddccBundle in profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCGenerateHealthCertificateParameters - the discriminator [name] does not have fixed value, binding or existence assertions
 ERROR: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[4].answer[0]: The value provided (http://id.who.int/icd11/mms::XM1NL1) is not in the options value set in the questionnaire
 ERROR: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[16].answer[0]: The value provided (http://id.who.int/icd11/mms::RA01) is not in the options value set in the questionnaire
 == fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Arabic.json ==
-ERROR: Bundle/DDCC-TX-SHE-bundle-example-Arabic: Bundle.entry[0].resource.ofType(Parameters).parameter[0]: Slicing cannot be evaluated: Could not match discriminator ([name]) for slice Parameters.parameter:ddccBundle in profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCGenerateHealthCertificateParameters - the discriminator [name] does not have fixed value, binding or existence assertions
 ERROR: Bundle/DDCC-TX-SHE-bundle-example-Arabic: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[4].answer[0]: The value provided (http://id.who.int/icd11/mms::XM1NL1) is not in the options value set in the questionnaire
 ERROR: Bundle/DDCC-TX-SHE-bundle-example-Arabic: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[16].answer[0]: The value provided (http://id.who.int/icd11/mms::RA01) is not in the options value set in the questionnaire
 == fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Chinese.json ==
-ERROR: Bundle/DDCC-TX-SHE-bundle-example-Chinese: Bundle.entry[0].resource.ofType(Parameters).parameter[0]: Slicing cannot be evaluated: Could not match discriminator ([name]) for slice Parameters.parameter:ddccBundle in profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCGenerateHealthCertificateParameters - the discriminator [name] does not have fixed value, binding or existence assertions
 ERROR: Bundle/DDCC-TX-SHE-bundle-example-Chinese: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[4].answer[0]: The value provided (http://id.who.int/icd11/mms::XM1NL1) is not in the options value set in the questionnaire
 ERROR: Bundle/DDCC-TX-SHE-bundle-example-Chinese: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[16].answer[0]: The value provided (http://id.who.int/icd11/mms::RA01) is not in the options value set in the questionnaire
 == fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-French.json ==
-ERROR: Bundle/DDCC-TX-SHE-bundle-example-French: Bundle.entry[0].resource.ofType(Parameters).parameter[0]: Slicing cannot be evaluated: Could not match discriminator ([name]) for slice Parameters.parameter:ddccBundle in profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCGenerateHealthCertificateParameters - the discriminator [name] does not have fixed value, binding or existence assertions
 ERROR: Bundle/DDCC-TX-SHE-bundle-example-French: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[4].answer[0]: The value provided (http://id.who.int/icd11/mms::XM1NL1) is not in the options value set in the questionnaire
 ERROR: Bundle/DDCC-TX-SHE-bundle-example-French: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[16].answer[0]: The value provided (http://id.who.int/icd11/mms::RA01) is not in the options value set in the questionnaire
 == fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Russian.json ==
-ERROR: Bundle/DDCC-TX-SHE-bundle-example-Russian: Bundle.entry[0].resource.ofType(Parameters).parameter[0]: Slicing cannot be evaluated: Could not match discriminator ([name]) for slice Parameters.parameter:ddccBundle in profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCGenerateHealthCertificateParameters - the discriminator [name] does not have fixed value, binding or existence assertions
 ERROR: Bundle/DDCC-TX-SHE-bundle-example-Russian: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[4].answer[0]: The value provided (http://id.who.int/icd11/mms::XM1NL1) is not in the options value set in the questionnaire
 ERROR: Bundle/DDCC-TX-SHE-bundle-example-Russian: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[16].answer[0]: The value provided (http://id.who.int/icd11/mms::RA01) is not in the options value set in the questionnaire
 == fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Spanish.json ==
-ERROR: Bundle/DDCC-TX-SHE-bundle-example-Spanish: Bundle.entry[0].resource.ofType(Parameters).parameter[0]: Slicing cannot be evaluated: Could not match discriminator ([name]) for slice Parameters.parameter:ddccBundle in profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCGenerateHealthCertificateParameters - the discriminator [name] does not have fixed value, binding or existence assertions
 ERROR: Bundle/DDCC-TX-SHE-bundle-example-Spanish: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[4].answer[0]: The value provided (http://id.who.int/icd11/mms::XM1NL1) is not in the options value set in the questionnaire
 ERROR: Bundle/DDCC-TX-SHE-bundle-example-Spanish: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[16].answer[0]: The value provided (http://id.who.int/icd11/mms::RA01) is not in the options value set in the questionnaire
 == fsh-generated/resources/Bundle-Example-Arabic.json ==
@@ -1198,19 +1207,21 @@ WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide: ig-0: 'Name 
 WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[1].description: value should not start or finish with whitespace
 WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[3].description: value should not start or finish with whitespace
 WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[6].description: value should not start or finish with whitespace
-WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[13].description: value should not start or finish with whitespace
 WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[14].description: value should not start or finish with whitespace
 WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[15].description: value should not start or finish with whitespace
-WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[19].description: value should not start or finish with whitespace
-WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[25].description: value should not start or finish with whitespace
+WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[16].description: value should not start or finish with whitespace
+WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[20].description: value should not start or finish with whitespace
 WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[26].description: value should not start or finish with whitespace
 WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[27].description: value should not start or finish with whitespace
 WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[28].description: value should not start or finish with whitespace
-WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[30].description: value should not start or finish with whitespace
+WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[29].description: value should not start or finish with whitespace
 WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[31].description: value should not start or finish with whitespace
 WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[32].description: value should not start or finish with whitespace
+WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[33].description: value should not start or finish with whitespace
 == fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.json ==
 ERROR: OperationDefinition.url: Resource id/url mismatch: DDCC-QuestionnaireResponse-generateHealthCertificate/http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCGenerateHealthCertificate
+== fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthFolder.json ==
+ERROR: OperationDefinition.url: Resource id/url mismatch: DDCC-QuestionnaireResponse-generateHealthFolder/http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCGenerateHealthFolder
 == fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-revokeHealthCertificate.json ==
 ERROR: OperationDefinition.url: Resource id/url mismatch: DDCC-QuestionnaireResponse-revokeHealthCertificate/http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCRevokeHealthCertificate
 == fsh-generated/resources/Organization-DDCC-Organization-Arabic.json ==
@@ -1269,6 +1280,7 @@ WARNING: StructureDefinition/DDCCCoreDataSet: StructureDefinition: Unable to fin
 == fsh-generated/resources/StructureDefinition-DDCCEventBrand.json ==
 == fsh-generated/resources/StructureDefinition-DDCCFolder.json ==
 == fsh-generated/resources/StructureDefinition-DDCCGenerateHealthCertificateParameters.json ==
+== fsh-generated/resources/StructureDefinition-DDCCGenerateHealthFolderParameters.json ==
 == fsh-generated/resources/StructureDefinition-DDCCImmunization.json ==
 == fsh-generated/resources/StructureDefinition-DDCCImmunizationRecommendation.json ==
 == fsh-generated/resources/StructureDefinition-DDCCObservation.json ==
