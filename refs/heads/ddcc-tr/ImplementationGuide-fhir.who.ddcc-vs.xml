@@ -500,6 +500,28 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/DDCCTRDocument"/>
+      </reference>
+      <name value="DDCC:VS Document"/>
+      <description value="A [DDCC:VS Document](StructureDefinition-DDCCVSDocument.html) is a document bundle containing the DDCC:VS.&#xA;"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCTRDocumentSigned"/>
+      </reference>
+      <name value="DDCC:TR DocumentSigned"/>
+      <description value="A [DDCC:TR Document Signed](StructureDefinition-DDCCTRDocumentSigned.html) is a document bundle containing the DDCC:TR&#xA;that has a digital signature.&#xA;"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/DDCCTest"/>
       </reference>
       <name value="DDCC Test"/>
@@ -515,6 +537,28 @@
       </reference>
       <name value="DDCC:VS Composition"/>
       <description value="Describes the logical structure for a Digital Documentation of COVID-19 Certificates - Vaccination Status&#xA;(DDCC:VS).  "/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCVSDocument"/>
+      </reference>
+      <name value="DDCC:VS Document"/>
+      <description value="A [DDCC:VS Document](StructureDefinition-DDCCVSDocument.html) is a document bundle containing the DDCC:VS.&#xA;"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCVSDocumentSigned"/>
+      </reference>
+      <name value="DDCC:VS DocumentSigned"/>
+      <description value="A [DDCC:VS Document Signed](StructureDefinition-DDCCVSDocumentSigned.html) is a document bundle containing the DDCC:VS&#xA;that has a digital signature.&#xA;"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -811,7 +855,7 @@
         <reference value="Composition/DDCC-Composition-Example-Arabic"/>
       </reference>
       <name value="DDCC-Composition-Example-Arabic"/>
-      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition"/>
+      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -821,7 +865,7 @@
         <reference value="Composition/DDCC-Composition-Example-Chinese"/>
       </reference>
       <name value="DDCC-Composition-Example-Chinese"/>
-      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition"/>
+      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -831,7 +875,7 @@
         <reference value="Composition/DDCC-Composition-Example-English"/>
       </reference>
       <name value="DDCC-Composition-Example-English"/>
-      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition"/>
+      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -841,7 +885,7 @@
         <reference value="Composition/DDCC-Composition-Example-French"/>
       </reference>
       <name value="DDCC-Composition-Example-French"/>
-      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition"/>
+      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -851,7 +895,7 @@
         <reference value="Composition/DDCC-Composition-Example-Russian"/>
       </reference>
       <name value="DDCC-Composition-Example-Russian"/>
-      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition"/>
+      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -861,7 +905,7 @@
         <reference value="Composition/DDCC-Composition-Example-Spanish"/>
       </reference>
       <name value="DDCC-Composition-Example-Spanish"/>
-      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition"/>
+      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1286,7 +1330,7 @@
         <reference value="Bundle/Example-Arabic"/>
       </reference>
       <name value="Example-Arabic"/>
-      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument"/>
+      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocument"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1296,7 +1340,7 @@
         <reference value="Bundle/Example-Chinese"/>
       </reference>
       <name value="Example-Chinese"/>
-      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument"/>
+      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocument"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1306,7 +1350,7 @@
         <reference value="Bundle/Example-English"/>
       </reference>
       <name value="Example-English"/>
-      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument"/>
+      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocument"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1316,7 +1360,7 @@
         <reference value="Bundle/Example-French"/>
       </reference>
       <name value="Example-French"/>
-      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument"/>
+      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocument"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1326,7 +1370,7 @@
         <reference value="Bundle/Example-Russian"/>
       </reference>
       <name value="Example-Russian"/>
-      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument"/>
+      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocument"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1336,7 +1380,7 @@
         <reference value="Bundle/Example-Spanish"/>
       </reference>
       <name value="Example-Spanish"/>
-      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument"/>
+      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocument"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

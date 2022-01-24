@@ -420,6 +420,20 @@
     "name": "DDCCTRComposition"
   },
   {
+    "id": "DDCCTRDocument",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTRDocument",
+    "version": "0.3.1",
+    "name": "DDCCTRDocument"
+  },
+  {
+    "id": "DDCCTRDocumentSigned",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTRDocumentSigned",
+    "version": "0.3.1",
+    "name": "DDCCTRDocumentSigned"
+  },
+  {
     "id": "DDCCTest",
     "type": "StructureDefinition",
     "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCTest",
@@ -432,6 +446,20 @@
     "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition",
     "version": "0.3.1",
     "name": "DDCCVSComposition"
+  },
+  {
+    "id": "DDCCVSDocument",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocument",
+    "version": "0.3.1",
+    "name": "DDCCVSDocument"
+  },
+  {
+    "id": "DDCCVSDocumentSigned",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocumentSigned",
+    "version": "0.3.1",
+    "name": "DDCCVSDocumentSigned"
   },
   {
     "id": "DDCCVaccineMarketAuthorization",

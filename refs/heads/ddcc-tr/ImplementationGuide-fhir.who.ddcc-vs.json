@@ -696,6 +696,34 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/DDCCTRDocument"
+        },
+        "name": "DDCC:VS Document",
+        "description": "A [DDCC:VS Document](StructureDefinition-DDCCVSDocument.html) is a document bundle containing the DDCC:VS.\n",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCTRDocumentSigned"
+        },
+        "name": "DDCC:TR DocumentSigned",
+        "description": "A [DDCC:TR Document Signed](StructureDefinition-DDCCTRDocumentSigned.html) is a document bundle containing the DDCC:TR\nthat has a digital signature.\n",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/DDCCTest"
         },
         "name": "DDCC Test",
@@ -714,6 +742,34 @@
         },
         "name": "DDCC:VS Composition",
         "description": "Describes the logical structure for a Digital Documentation of COVID-19 Certificates - Vaccination Status\n(DDCC:VS).  ",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCVSDocument"
+        },
+        "name": "DDCC:VS Document",
+        "description": "A [DDCC:VS Document](StructureDefinition-DDCCVSDocument.html) is a document bundle containing the DDCC:VS.\n",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCVSDocumentSigned"
+        },
+        "name": "DDCC:VS DocumentSigned",
+        "description": "A [DDCC:VS Document Signed](StructureDefinition-DDCCVSDocumentSigned.html) is a document bundle containing the DDCC:VS\nthat has a digital signature.\n",
         "exampleBoolean": false
       },
       {
@@ -1091,7 +1147,7 @@
           "reference": "Composition/DDCC-Composition-Example-Arabic"
         },
         "name": "DDCC-Composition-Example-Arabic",
-        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition"
+        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition"
       },
       {
         "extension": [
@@ -1104,7 +1160,7 @@
           "reference": "Composition/DDCC-Composition-Example-Chinese"
         },
         "name": "DDCC-Composition-Example-Chinese",
-        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition"
+        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition"
       },
       {
         "extension": [
@@ -1117,7 +1173,7 @@
           "reference": "Composition/DDCC-Composition-Example-English"
         },
         "name": "DDCC-Composition-Example-English",
-        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition"
+        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition"
       },
       {
         "extension": [
@@ -1130,7 +1186,7 @@
           "reference": "Composition/DDCC-Composition-Example-French"
         },
         "name": "DDCC-Composition-Example-French",
-        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition"
+        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition"
       },
       {
         "extension": [
@@ -1143,7 +1199,7 @@
           "reference": "Composition/DDCC-Composition-Example-Russian"
         },
         "name": "DDCC-Composition-Example-Russian",
-        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition"
+        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition"
       },
       {
         "extension": [
@@ -1156,7 +1212,7 @@
           "reference": "Composition/DDCC-Composition-Example-Spanish"
         },
         "name": "DDCC-Composition-Example-Spanish",
-        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition"
+        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition"
       },
       {
         "extension": [
@@ -1707,7 +1763,7 @@
           "reference": "Bundle/Example-Arabic"
         },
         "name": "Example-Arabic",
-        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument"
+        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocument"
       },
       {
         "extension": [
@@ -1720,7 +1776,7 @@
           "reference": "Bundle/Example-Chinese"
         },
         "name": "Example-Chinese",
-        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument"
+        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocument"
       },
       {
         "extension": [
@@ -1733,7 +1789,7 @@
           "reference": "Bundle/Example-English"
         },
         "name": "Example-English",
-        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument"
+        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocument"
       },
       {
         "extension": [
@@ -1746,7 +1802,7 @@
           "reference": "Bundle/Example-French"
         },
         "name": "Example-French",
-        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument"
+        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocument"
       },
       {
         "extension": [
@@ -1759,7 +1815,7 @@
           "reference": "Bundle/Example-Russian"
         },
         "name": "Example-Russian",
-        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument"
+        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocument"
       },
       {
         "extension": [
@@ -1772,7 +1828,7 @@
           "reference": "Bundle/Example-Spanish"
         },
         "name": "Example-Spanish",
-        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument"
+        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocument"
       },
       {
         "extension": [

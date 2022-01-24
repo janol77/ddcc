@@ -165,7 +165,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <!-- ReleaseHeader --><p id="publish-box">WHO Digital Documentation of COVID-19 Certificates: Vaccination Status (DDCC:VS) - Local Development build (v0.3.1). See the <a href="http://worldhealthorganization.github.io/ddcc/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Transactions</h2>
   
-  <div><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Submit Health Event</a></li><li><a href="#2">Store Health Certificate</a></li><li><a href="#3"> Register Health Certificate</a></li><li><a href="#4"> Retrieve Health Certificate Reference</a></li><li><a href="#5"> Retrieve Health Certificate</a></li><li><a href="#6"> Retrieve Health Folder</a></li></ul></div>
+  <div><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Submit Health Event</a></li><li><a href="#2">Store Health Certificate</a></li><li><a href="#3"> Register Health Certificate</a></li><li><a href="#4"> Retrieve Health Certificate Reference</a></li><li><a href="#5"> Retrieve Health Certificate</a></li><li><a href="#6"> Retrieve Health Folder</a></li><li><a href="#7"> Revoke Health Certificate</a></li></ul></div>
   
   <a name="1"></a><h3 id="submit-health-event">Submit Health Event</h3> 
   <p>
@@ -185,14 +185,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </ul>
   </p>
 
-  <a name="2"></a><h4 id="register-health-certificate-message-semantics">Message Semantics</h4>
+  <a name="2"></a><h4 id="submit-health-event-message-semantics">Message Semantics</h4>
 
-  <a name="2.1"></a><h5 id="register-health-certificate-message-semantics-request"> Message Semantics Request</h5>
+  <a name="2.1"></a><h5 id="submit-health-event-message-semantics-request"> Message Semantics Request</h5>
   <p>
     The message semantics for the Register Health  Certificate transaction utilizes a <a href="StructureDefinition-DDCCSubmitHealthEventRequest.html">DDCC Submit Health Event Request</a> which is a batch Bundle of <a href="StructureDefinition-DDCCGenerateHealthCertificateParameters.html">Parameters</a> for the <a href="OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.html">Generate Health Certificate Operation</a> which include <a href="StructureDefinition-DDCCQuestionnaireResponse.html">DDCC Questionnaire Response</a> resources for the request message. The specific DDCC Questionnaire Response resource is determined by the health event that is the subject of the transaction  
   </p>
   
-  <a name="2.2"></a><h5 id="register-health-certificate-message-semantics-response"> Message Semantics Response</h5>
+  <a name="2.2"></a><h5 id="submit-health-event-message-semantics-response"> Message Semantics Response</h5>
   <p>
     The response to a Register Health Certificate transaction is a <a href="StructureDefinition-DDCCSubmitHealthEventResponse.html">DDCC Submit Health Event Response</a> which consists of a Bundle of type batch-response following the FHIR specification for <a href="https://www.hl7.org/fhir/http.html#transaction-response">transaction responses</a>.  
   </p>
@@ -244,24 +244,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <!-- ?xml version="1.0" encoding="UTF-8" standalone="no"? --><svg contentStyleType="text/css" viewBox="0 0 435 193" zoomAndPan="magnify" preserveAspectRatio="none" width="435px" style="width:435px;height:193px;background:#FFFFFF;" contentScriptType="application/ecmascript" version="1.1" height="193px"><defs><filter width="300%" x="-1" y="-1" id="fesxg3djyy3k6" height="300%"><feGaussianBlur result="blurOut" stdDeviation="2.0"></feGaussianBlur><feColorMatrix result="blurOut2" in="blurOut" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" type="matrix"></feColorMatrix><feOffset result="blurOut3" dx="4.0" dy="4.0" in="blurOut2"></feOffset><feBlend mode="normal" in="SourceGraphic" in2="blurOut3"></feBlend></filter></defs><g><text lengthAdjust="spacing" x="53.25" font-size="18" textLength="324" y="28.708" font-family="Roboto Condensed" fill="#000000">Transaction: Store Health Certificate</text><line y1="107.8438" x1="52" y2="186.1094" style="stroke:#107050;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x2="52"></line><line y1="107.8438" x1="379.5" y2="186.1094" style="stroke:#107050;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x2="379.5"></line><rect filter="url(#fesxg3djyy3k6)" rx="4.5" ry="4.5" width="91" x="5" y="39.9531" style="stroke:#107050;stroke-width:1.5;" fill="#FFFFFF" height="62.8906"></rect><text lengthAdjust="spacing" x="18" font-size="14" textLength="65" y="59.9482" font-family="Roboto Condensed" fill="#000000">DDCC:VS</text><text lengthAdjust="spacing" x="12" font-size="14" textLength="77" y="76.2451" font-family="Roboto Condensed" fill="#000000">Generation</text><text lengthAdjust="spacing" x="25.5" font-size="14" textLength="50" y="92.542" font-family="Roboto Condensed" fill="#000000">Service</text><rect filter="url(#fesxg3djyy3k6)" rx="4.5" ry="4.5" width="88" x="333.5" y="39.9531" style="stroke:#107050;stroke-width:1.5;" fill="#FFFFFF" height="62.8906"></rect><text lengthAdjust="spacing" x="345" font-size="14" textLength="65" y="59.9482" font-family="Roboto Condensed" fill="#000000">DDCC:VS</text><text lengthAdjust="spacing" x="340.5" font-size="14" textLength="74" y="76.2451" font-family="Roboto Condensed" fill="#000000">Repository</text><text lengthAdjust="spacing" x="352.5" font-size="14" textLength="50" y="92.542" font-family="Roboto Condensed" fill="#000000">Service</text><polygon style="stroke:#107050;stroke-width:1.0;" fill="#107050" points="367.5,134.9766,377.5,138.9766,367.5,142.9766,371.5,138.9766"></polygon><line y1="138.9766" x1="52.5" y2="138.9766" style="stroke:#107050;stroke-width:1.0;" x2="373.5"></line><text font-weight="bold" lengthAdjust="spacing" x="59.5" font-size="13" textLength="37" y="133.9106" font-family="Roboto Condensed" fill="#000000">1.1.1</text><text lengthAdjust="spacing" x="100.5" font-size="13" textLength="206" y="133.9106" font-family="Roboto Condensed" fill="#000000">Store Health Certificate Request</text><polygon style="stroke:#107050;stroke-width:1.0;" fill="#107050" points="63.5,164.1094,53.5,168.1094,63.5,172.1094,59.5,168.1094"></polygon><line y1="168.1094" x1="57.5" y2="168.1094" style="stroke:#107050;stroke-width:1.0;" x2="378.5"></line><text font-weight="bold" lengthAdjust="spacing" x="69.5" font-size="13" textLength="37" y="163.0435" font-family="Roboto Condensed" fill="#000000">1.1.2</text><text lengthAdjust="spacing" x="110.5" font-size="13" textLength="262" y="163.0435" font-family="Roboto Condensed" fill="#000000">Return Store Health Certificate Response</text></g></svg>
   
 
-  <a name="2.1"></a><h4 id="submit-health-event-trigger">Trigger Event </h4>
+  <a name="2.1"></a><h4 id="store-health-certificate-trigger">Trigger Event </h4>
   <p>
     The Submit Health Event transaction may be initiated when a <a href="actors.html#ddcc-generator">DDCC:VS Generation Service</a> has received a <a href="#submit-health-event">Submit Health Event</a> and needs to store the resulting DDCC Document in the DDCC:VS Repository Service.
   </p>
 
-  <a name="2.2"></a><h4 id="register-health-certificate-message-semantics">Message Semantics</h4>
+  <a name="2.2"></a><h4 id="store-health-certificate-message-semantics">Message Semantics</h4>
 
-  <a name="2.2.1"></a><h5 id="register-health-certificate-message-semantics-request"> Message Semantics Request</h5>
+  <a name="2.2.1"></a><h5 id="store-health-certificate-message-semantics-request"> Message Semantics Request</h5>
   <p>
     The message semantics for the Store Health Certificate transaction utilizes a <a href="https://www.hl7.org/fhir/http.html#create">FHIR Create interaction</a> to create a <a href="StructureDefinition-DDCCDocument.html">DDCC Document</a>.
   </p>
   
-  <a name="2.2.2"></a><h5 id="register-health-certificate-message-semantics-response"> Message Semantics Response</h5>
+  <a name="2.2.2"></a><h5 id="store-health-certificate-message-semantics-response"> Message Semantics Response</h5>
   <p>
     The response to a Store Health Certificate transaction is documented in the <a href="https://www.hl7.org/fhir/http.html#create">FHIR create interaction</a>.
   </p>
 
-  <a name="2.3"></a><h4 id="submit-health-event-expected-actions"> Expected Actions</h4>
+  <a name="2.3"></a><h4 id="store-health-certificate-expected-actions"> Expected Actions</h4>
   <p>
     The following are the expected actions for the <a href="actors.html#ddcc-repository">DDCC:VS Repository Service</a> in this transaction:
     <ol>
@@ -317,7 +317,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
     <!-- ?xml version="1.0" encoding="UTF-8" standalone="no"? --><svg contentStyleType="text/css" viewBox="0 0 475 193" zoomAndPan="magnify" preserveAspectRatio="none" width="475px" style="width:475px;height:193px;background:#FFFFFF;" contentScriptType="application/ecmascript" version="1.1" height="193px"><defs><filter width="300%" x="-1" y="-1" id="f5mubohib37c5" height="300%"><feGaussianBlur result="blurOut" stdDeviation="2.0"></feGaussianBlur><feColorMatrix result="blurOut2" in="blurOut" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" type="matrix"></feColorMatrix><feOffset result="blurOut3" dx="4.0" dy="4.0" in="blurOut2"></feOffset><feBlend mode="normal" in="SourceGraphic" in2="blurOut3"></feBlend></filter></defs><g><text lengthAdjust="spacing" x="9" font-size="18" textLength="450" y="28.708" font-family="Roboto Condensed" fill="#000000">Transaction: Retrieve Health Certificate Reference</text><line y1="107.8438" x1="46" y2="186.1094" style="stroke:#107050;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x2="46"></line><line y1="107.8438" x1="412" y2="186.1094" style="stroke:#107050;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x2="412"></line><rect filter="url(#f5mubohib37c5)" rx="4.5" ry="4.5" width="61" x="14" y="72.5469" style="stroke:#107050;stroke-width:1.5;" fill="#FFFFFF" height="30.2969"></rect><text lengthAdjust="spacing" x="21" font-size="14" textLength="47" y="92.542" font-family="Roboto Condensed" fill="#000000">Verifier</text><rect filter="url(#f5mubohib37c5)" rx="4.5" ry="4.5" width="79" x="371" y="39.9531" style="stroke:#107050;stroke-width:1.5;" fill="#FFFFFF" height="62.8906"></rect><text lengthAdjust="spacing" x="378" font-size="14" textLength="65" y="59.9482" font-family="Roboto Condensed" fill="#000000">DDCC:VS</text><text lengthAdjust="spacing" x="382.5" font-size="14" textLength="56" y="76.2451" font-family="Roboto Condensed" fill="#000000">Registry</text><text lengthAdjust="spacing" x="385.5" font-size="14" textLength="50" y="92.542" font-family="Roboto Condensed" fill="#000000">Service</text><polygon style="stroke:#107050;stroke-width:1.0;" fill="#107050" points="400.5,134.9766,410.5,138.9766,400.5,142.9766,404.5,138.9766"></polygon><line y1="138.9766" x1="46.5" y2="138.9766" style="stroke:#107050;stroke-width:1.0;" x2="406.5"></line><text font-weight="bold" lengthAdjust="spacing" x="53.5" font-size="13" textLength="37" y="133.9106" font-family="Roboto Condensed" fill="#000000">1.1.1</text><text lengthAdjust="spacing" x="94.5" font-size="13" textLength="291" y="133.9106" font-family="Roboto Condensed" fill="#000000">Retrieve Health Certificate Reference Request</text><polygon style="stroke:#107050;stroke-width:1.0;" fill="#107050" points="57.5,164.1094,47.5,168.1094,57.5,172.1094,53.5,168.1094"></polygon><line y1="168.1094" x1="51.5" y2="168.1094" style="stroke:#107050;stroke-width:1.0;" x2="411.5"></line><text font-weight="bold" lengthAdjust="spacing" x="63.5" font-size="13" textLength="37" y="163.0435" font-family="Roboto Condensed" fill="#000000">1.1.2</text><text lengthAdjust="spacing" x="104.5" font-size="13" textLength="301" y="163.0435" font-family="Roboto Condensed" fill="#000000">Retrieve Health Certificate Reference Response</text></g></svg>
   
-  <a name="4.1"></a><h4 id="retrieve-health-certificate-trigger"> Trigger Event</h4>  
+  <a name="4.1"></a><h4 id="retrieve-health-certificate-reference-trigger"> Trigger Event</h4>  
   <p>
   The Retrieve Health Certificate Reference may be initiated by:
   <ol>
@@ -381,6 +381,42 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </ol>
   </p>
 
+
+  <a name="7"></a><h3 id="revoke-health-certificate"> Revoke Health Certificate</h3>  
+  <p>
+  The Revoke Health Certificate transaction is used in the Digital-Online context and is used for the revocation of a DDCC contained in the <a href="StructureDefinition-DDCCFolder.html">DDCC Folder</a>.
+  </p>
+
+  <p>
+  The Revoke Health Certificate transaction may be initiated by a <a href="actors.html#digital-health-solution">Digital Health Solution</a> against the <a href="actors.html#ddcc-generator">DDCC:VS Generation Service</a> in a jursidicition particpating in the Digital-Online scenario.
+  </p>
+
+  <p><a name="l1121">​</a>
+  The Revoke Health Certificate transaction is a <a href="OperationDefinition-DDCC-QuestionnaireResponse-revpleHealthCertificate.html">Revoke Health Certificate Operation</a>.  The client will submit
+   <a href="StructureDefinition-DDCCRevokeHealthCertificateParameters.html">Parameters</a> which include the DDCC ID of the DDCC to be revoked.  The response will be a boolean whether the revocation
+   succeeded or not.
+
+  </p>
+  
+  <a name="7.1"></a><h4 id="revoke-health-certificate-trigger"> Trigger Event</h4>  
+  <p>
+  The Retrieve Health Folder may be initiated by:
+  <ol>
+    <li> a <a href="actors.html#digital-health-solution">Digital Health Solution</a> that has uncovered an issue with the DDCC, e.g. the lot used was invalid</li>
+  </ol>
+  </p>
+
+  <a name="7.2"></a><h4 id="revoke-health-certificate-expected-actions"> Expected Actions</h4>
+  
+  <p>
+    The <a href="actors.html#ddcc-generator">DDCC:VS Generation Service</a> will update the DDCC Registry and DDCC Repository if it exists.
+    <ol>
+      <li>The DDCC Folder will be updated to remove the DDCC Document Reference using MHD's <a href="https://profiles.ihe.net/ITI/MHD/ITI-65.html">Provide Document Bundle [ITI-65]</a>.</li>
+      <li>The DDCC Document Reference will be updated to set the status to entered-in-error.</li>
+      <li>The DDCC Document will be deleted from the DDCC Repository.</li>
+    </ol>
+  </p>
+
 </div>
 </div>
         </div>    <!-- /inner-wrapper -->
@@ -403,8 +439,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l1137">​</a>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc-vs#0.3.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jan 19, 2022 20:52+0000">2022-01-19</span>
+        <p><a name="l1209">​</a>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc-vs#0.3.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 24, 2022 12:54+0000">2022-01-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
