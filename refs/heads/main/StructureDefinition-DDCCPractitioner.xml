@@ -19,11 +19,11 @@
     <valueCode value="individual"/>
   </extension>
   <url value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitioner"/>
-  <version value="0.2.1"/>
+  <version value="0.3.1"/>
   <name value="DDCCPractitioner"/>
   <title value="DDCC Practitioner"/>
   <status value="active"/>
-  <date value="2022-01-10T15:11:55+00:00"/>
+  <date value="2022-01-25T14:39:04+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
