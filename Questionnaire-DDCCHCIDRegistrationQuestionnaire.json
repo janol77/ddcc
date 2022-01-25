@@ -33,7 +33,7 @@
     }
   ],
   "url": "http://worldhealthorganization.github.io/ddcc/Questionnaire/DDCCHCIDRegistrationQuestionnaire",
-  "version": "0.2.1",
+  "version": "0.3.1",
   "name": "DDCCHCIDRegistrationQuestionnaire",
   "title": "DDCC HCID Registration Questionnaire",
   "status": "draft",
