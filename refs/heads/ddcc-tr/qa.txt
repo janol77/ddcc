@@ -3,7 +3,7 @@
 
 err = 330, warn = 96, info = 30
 IG Publisher Version: 1.1.97
-Generated Mon Jan 24 20:25:01 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.3.1 (canonical = http://worldhealthorganization.github.io/ddcc)
+Generated Tue Jan 25 14:36:06 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.3.1 (canonical = http://worldhealthorganization.github.io/ddcc)
  Build Errors : 892 / 57 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 2 / 0 / 12
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Arabic : 2 / 0 / 12
@@ -1091,7 +1091,7 @@ ERROR: /github/workspace/output/transactions.20210702.html#/html/body/div/div/di
 ERROR: /github/workspace/output/transactions.20210702.html#/html/body/div/div/div/p/a at Line 358, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/transactions.html#/html/body/div/div/div/div/div/div/p/a at Line 398, column 51: The link 'OperationDefinition-DDCC-QuestionnaireResponse-revpleHealthCertificate.html' for "Revoke Health Certificate Operation" cannot be resolved
 ERROR: /github/workspace/output/transactions.html#/html/body/div/div/div/p/a at Line 453, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/usecases.html#/html/body/div/div/div/p/a at Line 259, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/usecases.html#/html/body/div/div/div/p/a at Line 257, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/workflows.html#/html/body/div/div/div/p/a at Line 220, column 135: The link 'license.html' for "License" cannot be resolved
 == fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1.json ==
 ERROR: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[4].answer[0]: The value provided (http://id.who.int/icd11/mms::XM1NL1) is not in the options value set in the questionnaire
