@@ -3,8 +3,8 @@
 <StructureMap xmlns="http://hl7.org/fhir">
   <id value="CoreDataSetVSLibrary"/>
   <meta>
-    <versionId value="1"/>
-    <lastUpdated value="2021-12-21T20:57:02.768+00:00"/>
+    <versionId value="4"/>
+    <lastUpdated value="2022-01-31T19:57:14.519+00:00"/>
   </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><pre>map &quot;http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSLibrary&quot; = &quot;CoreDataSetVSLibrary&quot;
@@ -15,7 +15,7 @@ uses &quot;http://hl7.org/fhir/StructureDefinition/Bundle&quot; alias AddBundle 
 uses &quot;http://hl7.org/fhir/StructureDefinition/Patient&quot; alias Patient as target
 uses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient&quot; alias DDCCPatient as produced
 uses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReferenceQR&quot; alias DDCCDocRefQR as produced
-uses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition&quot; alias DDCCComposition as produced
+uses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition&quot; alias DDCCVSComposition as produced
 uses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization&quot; alias DDCCImmunization as produced
 uses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation&quot; alias DDCCImmRec as produced
 
@@ -28,7 +28,7 @@ group VSToAddBundle(source ddcc : DDCCVS, target bundle : AddBundle) {
       ddcc then DDCCToPatient(ddcc, patient, pid) &quot;setup patient&quot;;
       ddcc -&gt; entry.resource = patient &quot;set patient resource&quot;;
     } &quot;create patient resource&quot;;
-    ddcc -&gt;  bundle.entry as entry,  entry.fullUrl = append('urn:uuid:', compid),  entry.request as request,  request.method = 'PUT',  request.url = append('Composition/', compid),  create('http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition') as comp then {
+    ddcc -&gt;  bundle.entry as entry,  entry.fullUrl = append('urn:uuid:', compid),  entry.request as request,  request.method = 'PUT',  request.url = append('Composition/', compid),  create('http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition') as comp then {
       ddcc then DDCCToComposition(ddcc, comp, compid, pid) &quot;setup composition&quot;;
       ddcc -&gt;  comp.category as category,  category.coding as coding,  coding.system = 'http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem',  coding.code = 'ddcc-vs' &quot;set category&quot;;
       ddcc -&gt; comp.title = 'International Certificate of Vaccination or Prophylaxis' &quot;set title&quot;;
@@ -158,7 +158,7 @@ group DDCCToImmRec(source src, target immrec : DDCCImmunizationRecommendation, s
   <version value="0.3.1"/>
   <name value="CoreDataSetVSLibrary"/>
   <status value="draft"/>
-  <date value="2022-01-31T16:29:45+00:00"/>
+  <date value="2022-01-31T20:10:04+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -199,9 +199,9 @@ group DDCCToImmRec(source src, target immrec : DDCCImmunizationRecommendation, s
     <alias value="DDCCDocRefQR"/>
   </structure>
   <structure>
-    <url value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition"/>
+    <url value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition"/>
     <mode value="produced"/>
-    <alias value="DDCCComposition"/>
+    <alias value="DDCCVSComposition"/>
   </structure>
   <structure>
     <url value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization"/>
@@ -418,7 +418,7 @@ group DDCCToImmRec(source src, target immrec : DDCCImmunizationRecommendation, s
           <variable value="comp"/>
           <transform value="create"/>
           <parameter>
-            <valueString value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition"/>
+            <valueString value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition"/>
           </parameter>
         </target>
         <rule>

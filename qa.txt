@@ -1,10 +1,10 @@
 ﻿ddccvs : Validation Results
 =========================================
 
-err = 330, warn = 96, info = 30
+err = 443, warn = 98, info = 30
 IG Publisher Version: 1.1.97
-Generated Mon Jan 31 16:34:40 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.3.1 (canonical = http://worldhealthorganization.github.io/ddcc)
- Build Errors : 892 / 57 / 0
+Generated Mon Jan 31 20:16:05 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.3.1 (canonical = http://worldhealthorganization.github.io/ddcc)
+ Build Errors : 902 / 59 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 2 / 0 / 12
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Arabic : 2 / 0 / 12
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Chinese : 2 / 0 / 12
@@ -72,7 +72,6 @@ Generated Mon Jan 31 16:34:40 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc-vs#
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-French : 2 / 0 / 6
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Russian : 2 / 0 / 6
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Spanish : 2 / 0 / 6
- /github/workspace/fsh-generated/resources/StructureDefinition-DDCCAddBundle : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCComposition : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSet : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSet.TR : 0 / 0 / 1
@@ -110,6 +109,7 @@ Generated Mon Jan 31 16:34:40 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc-vs#
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCTRDocument : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCTRDocumentSigned : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCTest : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DDCCVSAddBundle : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCVSComposition : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCVSDocument : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCVSDocumentSigned : 0 / 1 / 1
@@ -137,10 +137,12 @@ Generated Mon Jan 31 16:34:40 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc-vs#
  /github/workspace/input/resources/StructureMap-CoreDataSetLibrary : 26 / 0 / 1
  /github/workspace/input/resources/StructureMap-CoreDataSetVSLibrary : 92 / 0 / 1
  /github/workspace/input/resources/StructureMap-CoreDataSetVSToAddBundle : 1 / 0 / 1
- /github/workspace/input/resources/StructureMap-DDCCtoCoredataset : 1 / 0 / 1
- /github/workspace/input/resources/StructureMap-DDCCtoEUdcc : 1 / 0 / 1
+ /github/workspace/input/resources/StructureMap-DDCCtoCoredataset : 0 / 0 / 1
+ /github/workspace/input/resources/StructureMap-DDCCtoEUdcc : 0 / 0 / 1
  /github/workspace/input/resources/StructureMap-QRespToCoreDataSet : 54 / 0 / 1
+ /github/workspace/input/resources/StructureMap-QRespToVSCoreDataSet : 54 / 0 / 1
  /github/workspace/input/resources/StructureMap-ResourcesToCoreDataSet : 61 / 0 / 1
+ /github/workspace/input/resources/StructureMap-ResourcesToVSCoreDataSet : 61 / 0 / 1
  /github/workspace/input/resources/svc-map-qr-uvci-bundle : 31 / 1 / 1
 </table>
 == n/a ==
@@ -199,7 +201,9 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/DDCCtoCoredataset.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/DDCCtoEUdcc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/QRespToCoreDataSet.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/QRespToVSCoreDataSet.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/ResourcesToCoreDataSet.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/ResourcesToVSCoreDataSet.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/svc-map-qr-uvci-bundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/Bundle-DDCC-TX-SHE-bundle-example-1.change.history.html#/html/body/div/div/div/p/a at Line 265, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/Bundle-DDCC-TX-SHE-bundle-example-1.html#/html/body/div/div/div/p/a at Line 251, column 135: The link 'license.html' for "License" cannot be resolved
@@ -564,14 +568,6 @@ ERROR: /github/workspace/output/QuestionnaireResponse-DDCC-VS-QuestionnaireRespo
 ERROR: /github/workspace/output/QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Spanish.json.html#/html/body/div/div/div/p/a at Line 470, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Spanish.ttl.html#/html/body/div/div/div/p/a at Line 436, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Spanish.xml.html#/html/body/div/div/div/p/a at Line 450, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCAddBundle-definitions.html#/html/body/div/div/div/p/a at Line 2443, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCAddBundle-examples.html#/html/body/div/div/div/p/a at Line 297, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCAddBundle-mappings.html#/html/body/div/div/div/p/a at Line 456, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCAddBundle.html#/html/body/div/div/div/p/a at Line 2024, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCAddBundle.profile.history.html#/html/body/div/div/div/p/a at Line 286, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCAddBundle.profile.json.html#/html/body/div/div/div/p/a at Line 9960, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCAddBundle.profile.ttl.html#/html/body/div/div/div/p/a at Line 8873, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCAddBundle.profile.xml.html#/html/body/div/div/div/p/a at Line 9056, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCComposition-definitions.html#/html/body/div/div/div/p/a at Line 1046, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCComposition-examples.html#/html/body/div/div/div/p/a at Line 297, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCComposition-mappings.html#/html/body/div/div/div/p/a at Line 453, column 135: The link 'license.html' for "License" cannot be resolved
@@ -870,6 +866,14 @@ ERROR: /github/workspace/output/StructureDefinition-DDCCTest.profile.history.htm
 ERROR: /github/workspace/output/StructureDefinition-DDCCTest.profile.json.html#/html/body/div/div/div/p/a at Line 4095, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCTest.profile.ttl.html#/html/body/div/div/div/p/a at Line 3592, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCTest.profile.xml.html#/html/body/div/div/div/p/a at Line 3645, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCVSAddBundle-definitions.html#/html/body/div/div/div/p/a at Line 2443, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCVSAddBundle-examples.html#/html/body/div/div/div/p/a at Line 297, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCVSAddBundle-mappings.html#/html/body/div/div/div/p/a at Line 456, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCVSAddBundle.html#/html/body/div/div/div/p/a at Line 2024, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCVSAddBundle.profile.history.html#/html/body/div/div/div/p/a at Line 286, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCVSAddBundle.profile.json.html#/html/body/div/div/div/p/a at Line 9960, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCVSAddBundle.profile.ttl.html#/html/body/div/div/div/p/a at Line 8873, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCVSAddBundle.profile.xml.html#/html/body/div/div/div/p/a at Line 9056, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCVSComposition-definitions.html#/html/body/div/div/div/p/a at Line 1212, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCVSComposition-examples.html#/html/body/div/div/div/p/a at Line 348, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCVSComposition-mappings.html#/html/body/div/div/div/p/a at Line 490, column 135: The link 'license.html' for "License" cannot be resolved
@@ -967,22 +971,32 @@ ERROR: /github/workspace/output/StructureMap-DDCCtoCoredataset.change.history.ht
 ERROR: /github/workspace/output/StructureMap-DDCCtoCoredataset.html#/html/body/div/div/div/p/a at Line 318, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-DDCCtoCoredataset.json.html#/html/body/div/div/div/p/a at Line 894, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-DDCCtoCoredataset.ttl.html#/html/body/div/div/div/p/a at Line 759, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureMap-DDCCtoCoredataset.xml.html#/html/body/div/div/div/p/a at Line 811, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-DDCCtoCoredataset.xml.html#/html/body/div/div/div/p/a at Line 812, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-DDCCtoEUdcc.change.history.html#/html/body/div/div/div/p/a at Line 265, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-DDCCtoEUdcc.html#/html/body/div/div/div/p/a at Line 328, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-DDCCtoEUdcc.json.html#/html/body/div/div/div/p/a at Line 944, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-DDCCtoEUdcc.ttl.html#/html/body/div/div/div/p/a at Line 794, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureMap-DDCCtoEUdcc.xml.html#/html/body/div/div/div/p/a at Line 854, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-DDCCtoEUdcc.xml.html#/html/body/div/div/div/p/a at Line 855, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-QRespToCoreDataSet.change.history.html#/html/body/div/div/div/p/a at Line 265, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-QRespToCoreDataSet.html#/html/body/div/div/div/p/a at Line 359, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-QRespToCoreDataSet.json.html#/html/body/div/div/div/p/a at Line 1420, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-QRespToCoreDataSet.ttl.html#/html/body/div/div/div/p/a at Line 1109, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-QRespToCoreDataSet.xml.html#/html/body/div/div/div/p/a at Line 1215, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-QRespToVSCoreDataSet.change.history.html#/html/body/div/div/div/p/a at Line 265, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-QRespToVSCoreDataSet.html#/html/body/div/div/div/p/a at Line 359, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-QRespToVSCoreDataSet.json.html#/html/body/div/div/div/p/a at Line 1420, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-QRespToVSCoreDataSet.ttl.html#/html/body/div/div/div/p/a at Line 1109, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-QRespToVSCoreDataSet.xml.html#/html/body/div/div/div/p/a at Line 1215, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-ResourcesToCoreDataSet.change.history.html#/html/body/div/div/div/p/a at Line 265, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-ResourcesToCoreDataSet.html#/html/body/div/div/div/p/a at Line 367, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-ResourcesToCoreDataSet.json.html#/html/body/div/div/div/p/a at Line 1663, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-ResourcesToCoreDataSet.ttl.html#/html/body/div/div/div/p/a at Line 1302, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-ResourcesToCoreDataSet.xml.html#/html/body/div/div/div/p/a at Line 1430, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-ResourcesToVSCoreDataSet.change.history.html#/html/body/div/div/div/p/a at Line 265, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-ResourcesToVSCoreDataSet.html#/html/body/div/div/div/p/a at Line 367, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-ResourcesToVSCoreDataSet.json.html#/html/body/div/div/div/p/a at Line 1663, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-ResourcesToVSCoreDataSet.ttl.html#/html/body/div/div/div/p/a at Line 1302, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-ResourcesToVSCoreDataSet.xml.html#/html/body/div/div/div/p/a at Line 1430, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-svc-map-qr-uvci-bundle.change.history.html#/html/body/div/div/div/p/a at Line 265, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-svc-map-qr-uvci-bundle.html#/html/body/div/div/div/p/a at Line 295, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-svc-map-qr-uvci-bundle.json.html#/html/body/div/div/div/p/a at Line 1066, column 135: The link 'license.html' for "License" cannot be resolved
@@ -1044,7 +1058,7 @@ ERROR: /github/workspace/output/ValueSet-who-ddcc-vaccines-covid-19.json.html#/h
 ERROR: /github/workspace/output/ValueSet-who-ddcc-vaccines-covid-19.ttl.html#/html/body/div/div/div/p/a at Line 396, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-who-ddcc-vaccines-covid-19.xml.html#/html/body/div/div/div/p/a at Line 412, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/actors.html#/html/body/div/div/div/p/a at Line 243, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 1492, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 1504, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/background.html#/html/body/div/div/div/p/a at Line 202, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/changes.html#/html/body/div/div/div/p/a at Line 219, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/concepts.html#/html/body/div/div/div/p/a at Line 458, column 135: The link 'license.html' for "License" cannot be resolved
@@ -1059,7 +1073,7 @@ ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/p/a at Lin
 ERROR: /github/workspace/output/expected_actions.html#/html/body/div/div/div/p/a at Line 203, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/functional.html#/html/body/div/div/div/p/a at Line 207, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 255, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/maps.html#/html/body/div/div/div/p/a at Line 216, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/maps.html#/html/body/div/div/div/p/a at Line 218, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/personas.html#/html/body/div/div/div/p/a at Line 204, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/references.html#/html/body/div/div/div/p/a at Line 264, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/requirements.html#/html/body/div/div/div/p/a at Line 213, column 135: The link 'license.html' for "License" cannot be resolved
@@ -1204,17 +1218,17 @@ WARNING: Immunization/DDCC-Immunization-Spanish: Immunization.protocolApplied[0]
 == fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Spanish.json ==
 == fsh-generated/resources/ImplementationGuide-fhir.who.ddcc-vs.json ==
 WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[1].description: value should not start or finish with whitespace
-WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[3].description: value should not start or finish with whitespace
-WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[6].description: value should not start or finish with whitespace
+WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[0].description: value should not start or finish with whitespace
+WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[2].description: value should not start or finish with whitespace
+WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[5].description: value should not start or finish with whitespace
+WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[13].description: value should not start or finish with whitespace
 WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[14].description: value should not start or finish with whitespace
 WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[15].description: value should not start or finish with whitespace
-WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[16].description: value should not start or finish with whitespace
-WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[20].description: value should not start or finish with whitespace
+WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[19].description: value should not start or finish with whitespace
+WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[25].description: value should not start or finish with whitespace
 WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[26].description: value should not start or finish with whitespace
 WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[27].description: value should not start or finish with whitespace
 WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[28].description: value should not start or finish with whitespace
-WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[29].description: value should not start or finish with whitespace
 WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[31].description: value should not start or finish with whitespace
 WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[32].description: value should not start or finish with whitespace
 WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[33].description: value should not start or finish with whitespace
@@ -1262,7 +1276,6 @@ ERROR: QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Russian: Questionnair
 == fsh-generated/resources/QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Spanish.json ==
 ERROR: QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Spanish: QuestionnaireResponse.item[4].answer[0]: The value provided (http://id.who.int/icd11/mms::XM1NL1) is not in the options value set in the questionnaire
 ERROR: QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Spanish: QuestionnaireResponse.item[16].answer[0]: The value provided (http://id.who.int/icd11/mms::RA01) is not in the options value set in the questionnaire
-== fsh-generated/resources/StructureDefinition-DDCCAddBundle.json ==
 == fsh-generated/resources/StructureDefinition-DDCCComposition.json ==
 == fsh-generated/resources/StructureDefinition-DDCCCoreDataSet.json ==
 ERROR: StructureDefinition/DDCCCoreDataSet: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
@@ -1305,6 +1318,7 @@ ERROR: StructureDefinition/DDCCObservation: StructureDefinition.snapshot.element
 == fsh-generated/resources/StructureDefinition-DDCCTRDocument.json ==
 == fsh-generated/resources/StructureDefinition-DDCCTRDocumentSigned.json ==
 == fsh-generated/resources/StructureDefinition-DDCCTest.json ==
+== fsh-generated/resources/StructureDefinition-DDCCVSAddBundle.json ==
 == fsh-generated/resources/StructureDefinition-DDCCVSComposition.json ==
 == fsh-generated/resources/StructureDefinition-DDCCVSDocument.json ==
 == fsh-generated/resources/StructureDefinition-DDCCVSDocumentSigned.json ==
@@ -1476,9 +1490,7 @@ ERROR: StructureMap/CoreDataSetVSLibrary: StructureMap.group[2].rule[2].rule[6].
 == input/resources/StructureMap-CoreDataSetVSToAddBundle.json ==
 ERROR: StructureMap/CoreDataSetVSToAddBundle: StructureMap.group[0].rule[0].name: id value 'setup add bundle' is not valid
 == input/resources/StructureMap-DDCCtoCoredataset.json ==
-ERROR: StructureMap.url: Resource id/url mismatch: DDCCtoCoredataset/http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-coredataset
 == input/resources/StructureMap-DDCCtoEUdcc.json ==
-ERROR: StructureMap.url: Resource id/url mismatch: DDCCtoEUdcc/http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-eu-dcc
 == input/resources/StructureMap-QRespToCoreDataSet.json ==
 ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[0].rule[0].name: id value 'set header content' is not valid
 ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[0].rule[1].name: id value 'set vaccination content' is not valid
@@ -1534,6 +1546,61 @@ ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[4].rule[0].rule[0].ru
 ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[4].rule[0].rule[1].name: id value 'first answser for hcid' is not valid
 ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[4].rule[0].rule[1].rule[0].name: id value 'set hcid and version' is not valid
 ERROR: StructureMap/QRespToCoreDataSet: StructureMap.group[4].rule[1].name: id value 'set vaccination period' is not valid
+== input/resources/StructureMap-QRespToVSCoreDataSet.json ==
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[0].rule[0].name: id value 'set header content' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[0].rule[1].name: id value 'set vaccination content' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[0].rule[2].name: id value 'set certificate content' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[1].rule[0].name: id value 'header items' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[1].rule[0].rule[0].name: id value 'first answser for name' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[1].rule[0].rule[0].rule[0].name: id value 'set name' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[1].rule[0].rule[1].name: id value 'first answer for birthDate' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[1].rule[0].rule[1].rule[0].name: id value 'set birthDate' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[1].rule[0].rule[2].name: id value 'first answer for identifier' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[1].rule[0].rule[2].rule[0].name: id value 'set identifier' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[1].rule[0].rule[3].name: id value 'first answer for sex' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[1].rule[0].rule[3].rule[0].name: id value 'process coding' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[1].rule[0].rule[3].rule[0].rule[0].name: id value 'set sex' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[2].rule[0].name: id value 'vaccination items' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[2].rule[0].rule[0].name: id value 'first answer for vaccine' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[2].rule[0].rule[0].rule[0].name: id value 'set vaccine' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[2].rule[0].rule[1].name: id value 'first answer for brand' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[2].rule[0].rule[1].rule[0].name: id value 'set brand' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[2].rule[0].rule[2].name: id value 'first answer for manufacturer' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[2].rule[0].rule[2].rule[0].name: id value 'set manufacturer' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[2].rule[0].rule[3].name: id value 'first answer for maholder' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[2].rule[0].rule[3].rule[0].name: id value 'set maholder' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[2].rule[0].rule[4].name: id value 'first answser for lot' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[2].rule[0].rule[4].rule[0].name: id value 'set lot' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[2].rule[0].rule[5].name: id value 'first answer for date' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[2].rule[0].rule[5].rule[0].name: id value 'set date' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[2].rule[0].rule[6].name: id value 'first answer for validFrom' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[2].rule[0].rule[6].rule[0].name: id value 'set validFrom' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[2].rule[0].rule[7].name: id value 'first answer for dose' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[2].rule[0].rule[7].rule[0].name: id value 'set dose' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[2].rule[0].rule[8].name: id value 'first answer for totalDoses' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[2].rule[0].rule[8].rule[0].name: id value 'set totalDoses' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[2].rule[0].rule[9].name: id value 'first answer for country' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[2].rule[0].rule[9].rule[0].name: id value 'set country' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[2].rule[0].rule[10].name: id value 'first answser for centre' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[2].rule[0].rule[10].rule[0].name: id value 'set centre' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[2].rule[0].rule[11].name: id value 'first answser for practitioner' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[2].rule[0].rule[11].rule[0].name: id value 'set practitioner' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[2].rule[0].rule[12].name: id value 'first answer for disease' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[2].rule[0].rule[12].rule[0].name: id value 'set disease' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[2].rule[0].rule[13].name: id value 'first answer for nextDose' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[2].rule[0].rule[13].rule[0].name: id value 'set nextDose' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[3].rule[0].name: id value 'vaccination validity items' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[3].rule[0].rule[0].name: id value 'first answer for valid_from' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[3].rule[0].rule[0].rule[0].name: id value 'set valid_from' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[3].rule[0].rule[1].name: id value 'first answer for valid_until' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[3].rule[0].rule[1].rule[0].name: id value 'set valid_until' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[4].rule[0].name: id value 'certificate items' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[4].rule[0].rule[0].name: id value 'first answser for hcid' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[4].rule[0].rule[0].rule[0].name: id value 'set issuer' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[4].rule[0].rule[0].rule[0].rule[0].name: id value 'set issuer identifier' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[4].rule[0].rule[1].name: id value 'first answser for hcid' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[4].rule[0].rule[1].rule[0].name: id value 'set hcid and version' is not valid
+ERROR: StructureMap/QRespToVSCoreDataSet: StructureMap.group[4].rule[1].name: id value 'set vaccination period' is not valid
 == input/resources/StructureMap-ResourcesToCoreDataSet.json ==
 ERROR: StructureMap/ResourcesToCoreDataSet: StructureMap.group[0].rule[0].name: id value 'setup ddcc' is not valid
 ERROR: StructureMap/ResourcesToCoreDataSet: StructureMap.group[0].rule[0].rule[0].name: id value 'set hcid' is not valid
@@ -1596,6 +1663,68 @@ ERROR: StructureMap/ResourcesToCoreDataSet: StructureMap.group[5].rule[0].rule[0
 ERROR: StructureMap/ResourcesToCoreDataSet: StructureMap.group[5].rule[0].rule[0].source[0].variable: id value 'due_date' is not valid
 ERROR: StructureMap/ResourcesToCoreDataSet: StructureMap.group[5].rule[0].rule[0].rule[0].name: id value 'set due date' is not valid
 ERROR: StructureMap/ResourcesToCoreDataSet: StructureMap.group[5].rule[0].rule[0].rule[0].source[0].context: id value 'due_date' is not valid
+== input/resources/StructureMap-ResourcesToVSCoreDataSet.json ==
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[0].rule[0].name: id value 'setup ddcc' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[0].rule[0].rule[0].name: id value 'set hcid' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[0].rule[0].rule[0].rule[0].name: id value 'set hcid value' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[0].rule[0].rule[1].name: id value 'set ddcc id value' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[0].rule[0].rule[2].name: id value 'set header from patient' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[0].rule[0].rule[2].rule[0].name: id value 'set patient details' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[0].rule[0].rule[2].rule[1].name: id value 'set immunization' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[0].rule[0].rule[2].rule[2].name: id value 'set immunization recommendation' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[0].rule[0].rule[2].rule[3].name: id value 'set composition' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[1].rule[0].name: id value 'set version' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[1].rule[1].name: id value 'set certificate period' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[1].rule[1].rule[0].name: id value 'set period' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[1].rule[1].rule[0].rule[0].name: id value 'set period start' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[1].rule[1].rule[0].rule[1].name: id value 'set period end' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[2].rule[0].name: id value 'set name' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[2].rule[1].name: id value 'set birth date' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[2].rule[2].name: id value 'set identifier from id' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[2].rule[3].name: id value 'set identifier from identifier' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[2].rule[3].rule[0].name: id value 'set identifier value' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[2].rule[4].name: id value 'set sex' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[3].rule[0].name: id value 'set first name' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[3].rule[1].name: id value 'set other names' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[3].rule[2].name: id value 'add family name' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[3].rule[3].name: id value 'set full name' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[0].name: id value 'set vaccine code' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[0].rule[0].name: id value 'set vaccine' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[1].name: id value 'set extensions' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[1].rule[0].name: id value 'set brand' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[1].rule[0].rule[0].name: id value 'set brand code' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[1].rule[1].name: id value 'set maholder' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[1].rule[1].rule[0].name: id value 'set maholder code' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[1].rule[2].name: id value 'set validFrom' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[1].rule[2].rule[0].name: id value 'set validFrom date' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[1].rule[3].name: id value 'set country' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[1].rule[3].rule[0].name: id value 'set country code' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[2].name: id value 'set manufacturer' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[2].rule[0].name: id value 'set manufacturer id' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[2].rule[0].rule[0].name: id value 'set manufacturer system' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[2].rule[0].rule[1].name: id value 'set manufactutuer code' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[3].name: id value 'set lot number' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[4].name: id value 'set date' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[5].name: id value 'set protocol applied' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[5].rule[0].name: id value 'set dose' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[5].rule[1].name: id value 'set totalDoses' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[5].rule[2].name: id value 'set disease' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[5].rule[2].rule[0].name: id value 'set disease coding' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[5].rule[3].name: id value 'set issuer' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[5].rule[3].rule[0].name: id value 'set issuer from reference' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[5].rule[3].rule[0].rule[0].name: id value 'set reference' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[5].rule[3].rule[1].name: id value 'set issuer identifier' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[6].name: id value 'set vaccination centre location' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[6].rule[0].name: id value 'set vaccination centre from reference' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[6].rule[1].name: id value 'set vaccination centre' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[7].name: id value 'set performer' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[7].rule[0].name: id value 'set actor' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[4].rule[7].rule[0].rule[0].name: id value 'set practitioner' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[5].rule[0].name: id value 'get recommendation' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[5].rule[0].rule[0].name: id value 'get date criterion' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[5].rule[0].rule[0].source[0].variable: id value 'due_date' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[5].rule[0].rule[0].rule[0].name: id value 'set due date' is not valid
+ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[5].rule[0].rule[0].rule[0].source[0].context: id value 'due_date' is not valid
 == input/resources/svc-map-qr-uvci-bundle.xml ==
 WARNING: StructureMap/svc-map-qr-uvci-bundle: StructureMap: smp-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[0].name: id value 'Decode_QR' is not valid

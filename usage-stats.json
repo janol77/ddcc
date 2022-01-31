@@ -50,16 +50,6 @@
         "title": "DDCC Patient"
       }
     ],
-    "Bundle": [
-      {
-        "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocument",
-        "title": "DDCC:VS Document"
-      },
-      {
-        "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocumentSigned",
-        "title": "DDCC:VS DocumentSigned"
-      }
-    ],
     "Composition": [
       {
         "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition",
@@ -70,6 +60,16 @@
       {
         "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDiagnosticReport",
         "title": "DDCC Diagnostic Report"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocument",
+        "title": "DDCC:VS Document"
+      },
+      {
+        "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocumentSigned",
+        "title": "DDCC:VS DocumentSigned"
       }
     ],
     "DocumentReference": [

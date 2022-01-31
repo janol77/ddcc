@@ -318,20 +318,6 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/DDCCAddBundle"
-        },
-        "name": "DDCC Add Bundle",
-        "description": "Bundle to be transformed to from the DDCC QuestionnaireResponse\nto add on the DDCC generator.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/DDCCComposition"
         },
         "name": "DDCC Composition",
@@ -742,6 +728,20 @@
         },
         "name": "DDCC Test",
         "description": "A DDCC Test contains the content corresponding to a row in the Test \nEvents section of a Paper DDCC. While this is not a further profile of the International\nPatient Summary (IPS) Device resouce, this is intended to map into an IPS \nDevice resource.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCVSAddBundle"
+        },
+        "name": "DDCC:VS Add Bundle",
+        "description": "Bundle to be transformed to from the DDCC:VS QuestionnaireResponse\nto add on the DDCC generator.",
         "exampleBoolean": false
       },
       {
@@ -2139,9 +2139,35 @@
           }
         ],
         "reference": {
+          "reference": "StructureMap/QRespToVSCoreDataSet"
+        },
+        "name": "QRespToVSCoreDataSet",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureMap"
+          }
+        ],
+        "reference": {
           "reference": "StructureMap/ResourcesToCoreDataSet"
         },
         "name": "ResourcesToCoreDataSet",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureMap"
+          }
+        ],
+        "reference": {
+          "reference": "StructureMap/ResourcesToVSCoreDataSet"
+        },
+        "name": "ResourcesToVSCoreDataSet",
         "exampleBoolean": false
       },
       {
