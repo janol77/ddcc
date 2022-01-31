@@ -218,7 +218,7 @@ uses "http://hl7.org/fhir/StructureDefinition/Bundle" alias AddBundle as target
 uses "http://hl7.org/fhir/StructureDefinition/Patient" alias Patient as target
 uses "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient" alias DDCCPatient as produced
 uses "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReferenceQR" alias DDCCDocRefQR as produced
-uses "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition" alias DDCCComposition as produced
+uses "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition" alias DDCCVSComposition as produced
 uses "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization" alias DDCCImmunization as produced
 uses "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation" alias DDCCImmRec as produced
 
@@ -231,7 +231,7 @@ group VSToAddBundle(source ddcc : DDCCVS, target bundle : AddBundle) {
       ddcc then DDCCToPatient(ddcc, patient, pid) "setup patient";
       ddcc -&gt; entry.resource = patient "set patient resource";
     } "create patient resource";
-    ddcc -&gt;  bundle.entry as entry,  entry.fullUrl = append('urn:uuid:', compid),  entry.request as request,  request.method = 'PUT',  request.url = append('Composition/', compid),  create('http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition') as comp then {
+    ddcc -&gt;  bundle.entry as entry,  entry.fullUrl = append('urn:uuid:', compid),  entry.request as request,  request.method = 'PUT',  request.url = append('Composition/', compid),  create('http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition') as comp then {
       ddcc then DDCCToComposition(ddcc, comp, compid, pid) "setup composition";
       ddcc -&gt;  comp.category as category,  category.coding as coding,  coding.system = 'http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem',  coding.code = 'ddcc-vs' "set category";
       ddcc -&gt; comp.title = 'International Certificate of Vaccination or Prophylaxis' "set title";
@@ -384,7 +384,7 @@ group DDCCToImmRec(source src, target immrec : DDCCImmunizationRecommendation, s
 
       <div class="inner-wrapper">
         <p><a name="l396">​</a>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc-vs#0.3.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 31, 2022 16:29+0000">2022-01-31</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc-vs#0.3.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 31, 2022 20:10+0000">2022-01-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

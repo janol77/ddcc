@@ -189,13 +189,6 @@
     "name": "DDCCHCIDRegistrationQuestionnaire"
   },
   {
-    "id": "DDCCAddBundle",
-    "type": "StructureDefinition",
-    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCAddBundle",
-    "version": "0.3.1",
-    "name": "DDCCAddBundle"
-  },
-  {
     "id": "DDCCComposition",
     "type": "StructureDefinition",
     "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition",
@@ -455,6 +448,13 @@
     "name": "DDCCTest"
   },
   {
+    "id": "DDCCVSAddBundle",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSAddBundle",
+    "version": "0.3.1",
+    "name": "DDCCVSAddBundle"
+  },
+  {
     "id": "DDCCVSComposition",
     "type": "StructureDefinition",
     "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition",
@@ -511,11 +511,32 @@
     "name": "CoreDataSetVSToAddBundle"
   },
   {
+    "id": "DDCCtoCoredataset",
+    "type": "StructureMap",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureMap/DDCCtoCoredataset",
+    "version": "0.3.1",
+    "name": "DDCCtoCoredataset"
+  },
+  {
+    "id": "DDCCtoEUdcc",
+    "type": "StructureMap",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureMap/DDCCtoEUdcc",
+    "version": "0.3.1",
+    "name": "DDCCtoEUdcc"
+  },
+  {
     "id": "QRespToCoreDataSet",
     "type": "StructureMap",
     "url": "http://worldhealthorganization.github.io/ddcc/StructureMap/QRespToCoreDataSet",
     "version": "0.3.1",
     "name": "QRespToCoreDataSet"
+  },
+  {
+    "id": "QRespToVSCoreDataSet",
+    "type": "StructureMap",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureMap/QRespToVSCoreDataSet",
+    "version": "0.3.1",
+    "name": "QRespToVSCoreDataSet"
   },
   {
     "id": "ResourcesToCoreDataSet",
@@ -525,18 +546,11 @@
     "name": "ResourcesToCoreDataSet"
   },
   {
-    "id": "DDCCtoCoredataset",
+    "id": "ResourcesToVSCoreDataSet",
     "type": "StructureMap",
-    "url": "http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-coredataset",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureMap/ResourcesToVSCoreDataSet",
     "version": "0.3.1",
-    "name": "DDCCtoCoredataset"
-  },
-  {
-    "id": "DDCCtoEUdcc",
-    "type": "StructureMap",
-    "url": "http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-eu-dcc",
-    "version": "0.3.1",
-    "name": "DDCCtoEUdcc"
+    "name": "ResourcesToVSCoreDataSet"
   },
   {
     "id": "DDCC-Composition-Category-ValueSet",

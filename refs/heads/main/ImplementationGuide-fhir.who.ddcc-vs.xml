@@ -203,17 +203,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/DDCCAddBundle"/>
-      </reference>
-      <name value="DDCC Add Bundle"/>
-      <description value="Bundle to be transformed to from the DDCC QuestionnaireResponse&#xA;to add on the DDCC generator."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/DDCCComposition"/>
       </reference>
       <name value="DDCC Composition"/>
@@ -537,6 +526,17 @@
       </reference>
       <name value="DDCC Test"/>
       <description value="A DDCC Test contains the content corresponding to a row in the Test &#xA;Events section of a Paper DDCC. While this is not a further profile of the International&#xA;Patient Summary (IPS) Device resouce, this is intended to map into an IPS &#xA;Device resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCVSAddBundle"/>
+      </reference>
+      <name value="DDCC:VS Add Bundle"/>
+      <description value="Bundle to be transformed to from the DDCC:VS QuestionnaireResponse&#xA;to add on the DDCC generator."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1622,9 +1622,29 @@
         <valueString value="StructureMap"/>
       </extension>
       <reference>
+        <reference value="StructureMap/QRespToVSCoreDataSet"/>
+      </reference>
+      <name value="QRespToVSCoreDataSet"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureMap"/>
+      </extension>
+      <reference>
         <reference value="StructureMap/ResourcesToCoreDataSet"/>
       </reference>
       <name value="ResourcesToCoreDataSet"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureMap"/>
+      </extension>
+      <reference>
+        <reference value="StructureMap/ResourcesToVSCoreDataSet"/>
+      </reference>
+      <name value="ResourcesToVSCoreDataSet"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

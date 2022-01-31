@@ -3,17 +3,17 @@
 <StructureMap xmlns="http://hl7.org/fhir">
   <id value="DDCCtoEUdcc"/>
   <meta>
-    <versionId value="1"/>
-    <lastUpdated value="2021-12-21T20:57:04.447+00:00"/>
+    <versionId value="2"/>
+    <lastUpdated value="2022-01-31T19:57:17.200+00:00"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><pre>map &quot;http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-eu-dcc&quot; = &quot;DDCCtoEUdcc&quot;
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><pre>map &quot;http://worldhealthorganization.github.io/ddcc/StructureMap/DDCCtoEUdcc&quot; = &quot;DDCCtoEUdcc&quot;
 
 
-uses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition&quot; alias DDCC as source
+uses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSomposition&quot; alias DDCC as source
 uses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument&quot; alias DDCCDocument as source
 uses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient&quot; alias DDCCPatient as source
-uses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition&quot; alias DDCCComposition as source
+uses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition&quot; alias DDCCVSComposition as source
 uses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization&quot; alias DDCCOrganization as source
 uses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination&quot; alias DDCCCountryOfVaccination as source
 uses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand&quot; alias DDCCVaccineBrand as source
@@ -51,11 +51,11 @@ group DecodeImmunizationToQR(source ddcc : DDCCDocument, source immunization : D
     } &quot;Protocol&quot;;
     immunization.occurrenceDateTime as date -&gt; vacEvent.dt = date;
     // TODO: need to populate vacEvent.ma market authorization holder
-    immunization.extension as country where (url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination') then {
+    immunization.extension as country where (url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent') then {
       country.valueCode as code -&gt; vacEvent.co = code;
     } &quot;Country&quot;;
     // immunization.extension : DDCCBrand as brand
-    immunization.extension as brand where (url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand') then {
+    immunization.extension as brand where (url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCEventBrand') then {
       brand.valueCoding as valueCoding then {
         valueCoding.code as code -&gt; vacEvent.mp = code;
       } &quot;Vaccine-Brand-Code&quot;;
@@ -73,7 +73,7 @@ group DecodeImmunizationToQR(source ddcc : DDCCDocument, source immunization : D
       } &quot;Centre-Name&quot;;
     } &quot;Vaccination-Centre&quot;;
     ddcc.entry as entry then {
-      // entry.resource : DDCCComposition as composition
+      // entry.resource : DDCCVSComposition as composition
       entry.resource : Composition as composition then {
         composition.identifier as identifier then {
           identifier.value as value -&gt; vacEvent.ci = value;
@@ -85,11 +85,11 @@ group DecodeImmunizationToQR(source ddcc : DDCCDocument, source immunization : D
 
 </pre></div>
   </text>
-  <url value="http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-eu-dcc"/>
+  <url value="http://worldhealthorganization.github.io/ddcc/StructureMap/DDCCtoEUdcc"/>
   <version value="0.3.1"/>
   <name value="DDCCtoEUdcc"/>
   <status value="draft"/>
-  <date value="2022-01-31T16:29:45+00:00"/>
+  <date value="2022-01-31T20:10:04+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -105,7 +105,7 @@ group DecodeImmunizationToQR(source ddcc : DDCCDocument, source immunization : D
     </coding>
   </jurisdiction>
   <structure>
-    <url value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition"/>
+    <url value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSomposition"/>
     <mode value="source"/>
     <alias value="DDCC"/>
   </structure>
@@ -120,9 +120,9 @@ group DecodeImmunizationToQR(source ddcc : DDCCDocument, source immunization : D
     <alias value="DDCCPatient"/>
   </structure>
   <structure>
-    <url value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition"/>
+    <url value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition"/>
     <mode value="source"/>
-    <alias value="DDCCComposition"/>
+    <alias value="DDCCVSComposition"/>
   </structure>
   <structure>
     <url value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization"/>
@@ -415,7 +415,7 @@ group DecodeImmunizationToQR(source ddcc : DDCCDocument, source immunization : D
           <context value="immunization"/>
           <element value="extension"/>
           <variable value="country"/>
-          <condition value="(url = &#39;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination&#39;)"/>
+          <condition value="(url = &#39;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent&#39;)"/>
         </source>
         <rule>
           <name value="valueCode"/>
@@ -442,7 +442,7 @@ group DecodeImmunizationToQR(source ddcc : DDCCDocument, source immunization : D
           <context value="immunization"/>
           <element value="extension"/>
           <variable value="brand"/>
-          <condition value="(url = &#39;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand&#39;)"/>
+          <condition value="(url = &#39;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCEventBrand&#39;)"/>
         </source>
         <rule>
           <name value="Vaccine-Brand-Code"/>
@@ -580,7 +580,7 @@ group DecodeImmunizationToQR(source ddcc : DDCCDocument, source immunization : D
               </target>
             </rule>
           </rule>
-          <documentation value="entry.resource : DDCCComposition as composition"/>
+          <documentation value="entry.resource : DDCCVSComposition as composition"/>
         </rule>
       </rule>
     </rule>
