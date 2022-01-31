@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "WHO_DDCC_Test_Result_COVID_19"];
   fhir:ValueSet.title [ fhir:value "WHO Test Result (COVID-19)"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2022-01-25T14:39:04+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-01-31T16:29:45+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "WHO"];
   fhir:ValueSet.contact [
      fhir:index 0;
