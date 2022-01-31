@@ -3,7 +3,7 @@
 
 err = 330, warn = 96, info = 30
 IG Publisher Version: 1.1.97
-Generated Tue Jan 25 14:48:59 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.3.1 (canonical = http://worldhealthorganization.github.io/ddcc)
+Generated Mon Jan 31 16:34:40 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.3.1 (canonical = http://worldhealthorganization.github.io/ddcc)
  Build Errors : 892 / 57 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 2 / 0 / 12
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Arabic : 2 / 0 / 12
@@ -572,14 +572,14 @@ ERROR: /github/workspace/output/StructureDefinition-DDCCAddBundle.profile.histor
 ERROR: /github/workspace/output/StructureDefinition-DDCCAddBundle.profile.json.html#/html/body/div/div/div/p/a at Line 9960, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCAddBundle.profile.ttl.html#/html/body/div/div/div/p/a at Line 8873, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCAddBundle.profile.xml.html#/html/body/div/div/div/p/a at Line 9056, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCComposition-definitions.html#/html/body/div/div/div/p/a at Line 1355, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCComposition-definitions.html#/html/body/div/div/div/p/a at Line 1046, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCComposition-examples.html#/html/body/div/div/div/p/a at Line 297, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCComposition-mappings.html#/html/body/div/div/div/p/a at Line 507, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCComposition.html#/html/body/div/div/div/p/a at Line 1284, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCComposition-mappings.html#/html/body/div/div/div/p/a at Line 453, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCComposition.html#/html/body/div/div/div/p/a at Line 1032, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCComposition.profile.history.html#/html/body/div/div/div/p/a at Line 286, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCComposition.profile.json.html#/html/body/div/div/div/p/a at Line 5563, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCComposition.profile.ttl.html#/html/body/div/div/div/p/a at Line 4905, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCComposition.profile.xml.html#/html/body/div/div/div/p/a at Line 5014, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCComposition.profile.json.html#/html/body/div/div/div/p/a at Line 4021, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCComposition.profile.ttl.html#/html/body/div/div/div/p/a at Line 3520, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCComposition.profile.xml.html#/html/body/div/div/div/p/a at Line 3622, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCCoreDataSet-definitions.html#/html/body/div/div/div/p/a at Line 359, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCCoreDataSet-examples.html#/html/body/div/div/div/p/a at Line 297, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCCoreDataSet-mappings.html#/html/body/div/div/div/p/a at Line 313, column 135: The link 'license.html' for "License" cannot be resolved
@@ -838,14 +838,14 @@ ERROR: /github/workspace/output/StructureDefinition-DDCCSubmitHealthEventRespons
 ERROR: /github/workspace/output/StructureDefinition-DDCCSubmitHealthEventResponse.profile.json.html#/html/body/div/div/div/p/a at Line 3578, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCSubmitHealthEventResponse.profile.ttl.html#/html/body/div/div/div/p/a at Line 3223, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCSubmitHealthEventResponse.profile.xml.html#/html/body/div/div/div/p/a at Line 3289, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCTRComposition-definitions.html#/html/body/div/div/div/p/a at Line 1356, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCTRComposition-definitions.html#/html/body/div/div/div/p/a at Line 1202, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCTRComposition-examples.html#/html/body/div/div/div/p/a at Line 297, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCTRComposition-mappings.html#/html/body/div/div/div/p/a at Line 480, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCTRComposition.html#/html/body/div/div/div/p/a at Line 1149, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCTRComposition.profile.history.html#/html/body/div/div/div/p/a at Line 286, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCTRComposition.profile.json.html#/html/body/div/div/div/p/a at Line 5372, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCTRComposition.profile.ttl.html#/html/body/div/div/div/p/a at Line 4729, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCTRComposition.profile.xml.html#/html/body/div/div/div/p/a at Line 4831, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCTRComposition.profile.json.html#/html/body/div/div/div/p/a at Line 4726, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCTRComposition.profile.ttl.html#/html/body/div/div/div/p/a at Line 4161, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCTRComposition.profile.xml.html#/html/body/div/div/div/p/a at Line 4262, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCTRDocument-definitions.html#/html/body/div/div/div/p/a at Line 3354, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCTRDocument-examples.html#/html/body/div/div/div/p/a at Line 297, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCTRDocument-mappings.html#/html/body/div/div/div/p/a at Line 513, column 135: The link 'license.html' for "License" cannot be resolved
@@ -870,14 +870,14 @@ ERROR: /github/workspace/output/StructureDefinition-DDCCTest.profile.history.htm
 ERROR: /github/workspace/output/StructureDefinition-DDCCTest.profile.json.html#/html/body/div/div/div/p/a at Line 4095, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCTest.profile.ttl.html#/html/body/div/div/div/p/a at Line 3592, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCTest.profile.xml.html#/html/body/div/div/div/p/a at Line 3645, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCVSComposition-definitions.html#/html/body/div/div/div/p/a at Line 1366, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCVSComposition-definitions.html#/html/body/div/div/div/p/a at Line 1212, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCVSComposition-examples.html#/html/body/div/div/div/p/a at Line 348, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCVSComposition-mappings.html#/html/body/div/div/div/p/a at Line 490, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCVSComposition.html#/html/body/div/div/div/p/a at Line 1159, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCVSComposition.html#/html/body/div/div/div/p/a at Line 1153, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCVSComposition.profile.history.html#/html/body/div/div/div/p/a at Line 296, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCVSComposition.profile.json.html#/html/body/div/div/div/p/a at Line 5382, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCVSComposition.profile.ttl.html#/html/body/div/div/div/p/a at Line 4739, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCVSComposition.profile.xml.html#/html/body/div/div/div/p/a at Line 4841, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCVSComposition.profile.json.html#/html/body/div/div/div/p/a at Line 4730, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCVSComposition.profile.ttl.html#/html/body/div/div/div/p/a at Line 4153, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCVSComposition.profile.xml.html#/html/body/div/div/div/p/a at Line 4260, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCVSDocument-definitions.html#/html/body/div/div/div/p/a at Line 2506, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCVSDocument-examples.html#/html/body/div/div/div/p/a at Line 348, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCVSDocument-mappings.html#/html/body/div/div/div/p/a at Line 471, column 135: The link 'license.html' for "License" cannot be resolved
