@@ -3,10 +3,10 @@
   "name": "ddccvs",
   "package-id": "fhir.who.ddcc-vs",
   "ig-ver": "0.3.1",
-  "date": "Mon, 31 Jan, 2022 20:10:04 +0000",
+  "date": "Fri, 11 Feb, 2022 00:28:19 +0000",
   "errs": 443,
   "warnings": 98,
-  "hints": 30,
+  "hints": 42,
   "version": "4.0.1",
   "tool": "5.0.0-snapshot1 (3)"
 }
