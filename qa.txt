@@ -1,9 +1,9 @@
 ﻿ddccvs : Validation Results
 =========================================
 
-err = 443, warn = 98, info = 30
-IG Publisher Version: 1.1.97
-Generated Mon Jan 31 20:16:05 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.3.1 (canonical = http://worldhealthorganization.github.io/ddcc)
+err = 443, warn = 98, info = 42
+IG Publisher Version: 1.1.99
+Generated Fri Feb 11 00:31:02 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.3.1 (canonical = http://worldhealthorganization.github.io/ddcc)
  Build Errors : 902 / 59 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 2 / 0 / 12
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Arabic : 2 / 0 / 12
@@ -97,11 +97,11 @@ Generated Mon Jan 31 20:16:05 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc-vs#
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCPractitionerRole : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCProcedure : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCProvideDocumentBundle : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-DDCCQuestionnaire : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-DDCCQuestionnaireResponse : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-DDCCQuestionnaireSDC : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DDCCQuestionnaire : 0 / 0 / 4
+ /github/workspace/fsh-generated/resources/StructureDefinition-DDCCQuestionnaireResponse : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-DDCCQuestionnaireSDC : 0 / 0 / 7
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCRevokeHealthCertificateParameters : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-DDCCSpecimen : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DDCCSpecimen : 0 / 1 / 3
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCSubmissionSet : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCSubmitHealthEventRequest : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCSubmitHealthEventResponse : 0 / 1 / 1
@@ -1072,7 +1072,7 @@ ERROR: /github/workspace/output/dictionary.html#/html/body/div/div/div/p/a at Li
 ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/p/a at Line 248, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/expected_actions.html#/html/body/div/div/div/p/a at Line 203, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/functional.html#/html/body/div/div/div/p/a at Line 207, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 255, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 270, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/maps.html#/html/body/div/div/div/p/a at Line 218, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/personas.html#/html/body/div/div/div/p/a at Line 204, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/references.html#/html/body/div/div/div/p/a at Line 264, column 135: The link 'license.html' for "License" cannot be resolved
@@ -1307,10 +1307,22 @@ ERROR: StructureDefinition/DDCCObservation: StructureDefinition.snapshot.element
 == fsh-generated/resources/StructureDefinition-DDCCProcedure.json ==
 == fsh-generated/resources/StructureDefinition-DDCCProvideDocumentBundle.json ==
 == fsh-generated/resources/StructureDefinition-DDCCQuestionnaire.json ==
+INFORMATION: StructureDefinition/DDCCQuestionnaire: StructureDefinition.snapshot.element[56].binding: The element Questionnaire.item.enableWhen.answer[x] has a binding, and has multiple types ([date, dateTime, boolean, string, Coding, Reference, Quantity, integer, time, decimal]). The binding will apply to all the types
+INFORMATION: StructureDefinition/DDCCQuestionnaire: StructureDefinition.snapshot.element[67].binding: The element Questionnaire.item.answerOption.value[x] has a binding, and has multiple types ([date, string, Coding, Reference, integer, time]). The binding will apply to all the types
+INFORMATION: StructureDefinition/DDCCQuestionnaire: StructureDefinition.snapshot.element[73].binding: The element Questionnaire.item.initial.value[x] has a binding, and has multiple types ([date, dateTime, boolean, string, Coding, Reference, Quantity, Attachment, integer, time, decimal, uri]). The binding will apply to all the types
 == fsh-generated/resources/StructureDefinition-DDCCQuestionnaireResponse.json ==
+INFORMATION: StructureDefinition/DDCCQuestionnaireResponse: StructureDefinition.snapshot.element[40].binding: The element QuestionnaireResponse.item.answer.value[x] has a binding, and has multiple types ([date, dateTime, boolean, string, Coding, Reference, Quantity, Attachment, time, integer, decimal, uri]). The binding will apply to all the types
 == fsh-generated/resources/StructureDefinition-DDCCQuestionnaireSDC.json ==
+INFORMATION: StructureDefinition/DDCCQuestionnaireSDC: StructureDefinition.snapshot.element[89].binding: The element Questionnaire.item.enableWhen.answer[x] has a binding, and has multiple types ([date, dateTime, boolean, string, Coding, Reference, Quantity, integer, time, decimal]). The binding will apply to all the types
+INFORMATION: StructureDefinition/DDCCQuestionnaireSDC: StructureDefinition.snapshot.element[100].binding: The element Questionnaire.item.answerOption.value[x] has a binding, and has multiple types ([date, string, Coding, Reference, integer, time]). The binding will apply to all the types
+INFORMATION: StructureDefinition/DDCCQuestionnaireSDC: StructureDefinition.snapshot.element[106].binding: The element Questionnaire.item.initial.value[x] has a binding, and has multiple types ([date, dateTime, boolean, string, Coding, Reference, Quantity, Attachment, integer, time, decimal, uri]). The binding will apply to all the types
+INFORMATION: StructureDefinition/DDCCQuestionnaireSDC: StructureDefinition.snapshot.element[126].binding: The element Questionnaire.item.item.enableWhen.answer[x] has a binding, and has multiple types ([date, dateTime, boolean, string, Coding, Reference, Quantity, integer, time, decimal]). The binding will apply to all the types
+INFORMATION: StructureDefinition/DDCCQuestionnaireSDC: StructureDefinition.snapshot.element[137].binding: The element Questionnaire.item.item.answerOption.value[x] has a binding, and has multiple types ([date, string, Coding, Reference, integer, time]). The binding will apply to all the types
+INFORMATION: StructureDefinition/DDCCQuestionnaireSDC: StructureDefinition.snapshot.element[143].binding: The element Questionnaire.item.item.initial.value[x] has a binding, and has multiple types ([date, dateTime, boolean, string, Coding, Reference, Quantity, Attachment, integer, time, decimal, uri]). The binding will apply to all the types
 == fsh-generated/resources/StructureDefinition-DDCCRevokeHealthCertificateParameters.json ==
 == fsh-generated/resources/StructureDefinition-DDCCSpecimen.json ==
+INFORMATION: StructureDefinition/DDCCSpecimen: StructureDefinition.snapshot.element[34].binding: The element Specimen.collection.fastingStatus[x] has a binding, and has multiple types ([Duration, CodeableConcept]). The binding will apply to all the types
+INFORMATION: StructureDefinition/DDCCSpecimen: StructureDefinition.snapshot.element[52].binding: The element Specimen.container.additive[x] has a binding, and has multiple types ([Reference, CodeableConcept]). The binding will apply to all the types
 == fsh-generated/resources/StructureDefinition-DDCCSubmissionSet.json ==
 == fsh-generated/resources/StructureDefinition-DDCCSubmitHealthEventRequest.json ==
 == fsh-generated/resources/StructureDefinition-DDCCSubmitHealthEventResponse.json ==
