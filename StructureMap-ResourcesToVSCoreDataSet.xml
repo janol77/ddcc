@@ -4,7 +4,7 @@
   <id value="ResourcesToVSCoreDataSet"/>
   <meta>
     <versionId value="1"/>
-    <lastUpdated value="2022-01-31T19:57:19.018+00:00"/>
+    <lastUpdated value="2022-03-01T19:17:58.969+00:00"/>
   </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><pre>map &quot;http://worldhealthorganization.github.io/ddcc/StructureMap/ResourcesToVSCoreDataSet&quot; = &quot;ResourcesToVSCoreDataSet&quot;
@@ -128,7 +128,7 @@ group ImmRecToDDCCVS(source immRec : DDCCImmunizationRecommendation, target vacc
   <version value="0.3.1"/>
   <name value="ResourcesToVSCoreDataSet"/>
   <status value="draft"/>
-  <date value="2022-02-13T22:11:31+00:00"/>
+  <date value="2022-03-01T19:29:42+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>

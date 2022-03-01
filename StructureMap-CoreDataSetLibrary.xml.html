@@ -54,7 +54,17 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">WHO Digital Documentation of COVID-19 Certificates (DDCC)</span><br/>0.3.1 - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">WHO Digital Documentation of COVID-19 Certificates (DDCC)</span>
+            <br/>
+            <span style="display:inline-block;">0.3.1 - CI Build
+
+
+
+  <img src="assets/images/001.svg" alt="International flag" title="International" height="16"/>
+
+
+            </span>
+          </p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -199,6 +209,21 @@
 
 
 <h2 id="root">: CoreDataSetLibrary - XML Representation</h2>
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2022-03-01
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
 
 <p><a href="StructureMap-CoreDataSetLibrary.xml" no-download="true">Raw xml</a> | <a download="null" href="StructureMap-CoreDataSetLibrary.xml">Download</a></p>
 
@@ -213,7 +238,7 @@
   &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="CoreDataSetLibrary"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.meta">meta</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.versionId">versionId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>="1"/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a> <a href="http://hl7.org/fhir/R4/datatypes.html#instant">value</a>="2021-12-21T20:57:02.028+00:00"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a> <a href="http://hl7.org/fhir/R4/datatypes.html#instant">value</a>="2022-03-01T19:17:52.081+00:00"/&gt;
   &lt;/meta&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="generated"/&gt;
@@ -229,7 +254,7 @@ uses &amp;quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition
 group DDCCToPatient(source src : DDCCVS, target patient : DDCCPatient, source pid) {
   pid -&amp;gt; patient.id = pid &amp;quot;set id&amp;quot;;
   src.name as name -&amp;gt; patient.name as tName then {
-    name as content -&amp;gt; tName.text = content &amp;quot;set name&amp;quot;;
+    name -&amp;gt; tName.text = name &amp;quot;set name&amp;quot;;
   } &amp;quot;set full name&amp;quot;;
   src.birthDate as birthDate -&amp;gt; patient.birthDate = birthDate &amp;quot;set birthDate&amp;quot;;
   src.identifier as identifier -&amp;gt; patient.identifier = identifier &amp;quot;set identifier&amp;quot;;
@@ -276,7 +301,7 @@ group DDCCToComposition(source src : DDCCVS, target comp : DDCCComposition, sour
   &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="0.3.1"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="CoreDataSetLibrary"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="draft"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2022-02-13T22:11:31+00:00"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2022-03-01T19:29:42+00:00"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="WHO"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="WHO"/&gt;
@@ -369,7 +394,6 @@ group DDCCToComposition(source src : DDCCVS, target comp : DDCCComposition, sour
         &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>="set name"/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>="name"/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>="content"/&gt;
         &lt;/source&gt;
         &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>="tName"/&gt;
@@ -377,7 +401,7 @@ group DDCCToComposition(source src : DDCCVS, target comp : DDCCComposition, sour
           &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="text"/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="copy"/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>="content"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>="name"/&gt;
           &lt;/parameter&gt;
         &lt;/target&gt;
       &lt;/rule&gt;
@@ -902,8 +926,8 @@ group DDCCToComposition(source src : DDCCVS, target comp : DDCCComposition, sour
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l2742">​</a>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc-vs#0.3.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Feb 13, 2022 22:11+0000">2022-02-13</span>
+        <p><a name="l2751">​</a>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc-vs#0.3.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 1, 2022 19:29+0000">2022-03-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -930,6 +954,8 @@ group DDCCToComposition(source src : DDCCVS, target comp : DDCCComposition, sour
   <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
   <script src="assets/js/respond.min.js" type="text/javascript"> </script>
   <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   

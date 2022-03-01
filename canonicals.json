@@ -525,13 +525,6 @@
     "name": "DDCCtoEUdcc"
   },
   {
-    "id": "QRespToCoreDataSet",
-    "type": "StructureMap",
-    "url": "http://worldhealthorganization.github.io/ddcc/StructureMap/QRespToCoreDataSet",
-    "version": "0.3.1",
-    "name": "QRespToCoreDataSet"
-  },
-  {
     "id": "QRespToVSCoreDataSet",
     "type": "StructureMap",
     "url": "http://worldhealthorganization.github.io/ddcc/StructureMap/QRespToVSCoreDataSet",
