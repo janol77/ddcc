@@ -4,7 +4,7 @@
   <id value="CoreDataSetLibrary"/>
   <meta>
     <versionId value="1"/>
-    <lastUpdated value="2021-12-21T20:57:02.028+00:00"/>
+    <lastUpdated value="2022-03-01T19:17:52.081+00:00"/>
   </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><pre>map &quot;http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetLibrary&quot; = &quot;CoreDataSetLibrary&quot;
@@ -19,7 +19,7 @@ uses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDC
 group DDCCToPatient(source src : DDCCVS, target patient : DDCCPatient, source pid) {
   pid -&gt; patient.id = pid &quot;set id&quot;;
   src.name as name -&gt; patient.name as tName then {
-    name as content -&gt; tName.text = content &quot;set name&quot;;
+    name -&gt; tName.text = name &quot;set name&quot;;
   } &quot;set full name&quot;;
   src.birthDate as birthDate -&gt; patient.birthDate = birthDate &quot;set birthDate&quot;;
   src.identifier as identifier -&gt; patient.identifier = identifier &quot;set identifier&quot;;
@@ -65,7 +65,7 @@ group DDCCToComposition(source src : DDCCVS, target comp : DDCCComposition, sour
   <version value="0.3.1"/>
   <name value="CoreDataSetLibrary"/>
   <status value="draft"/>
-  <date value="2022-02-13T22:11:31+00:00"/>
+  <date value="2022-03-01T19:29:42+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -154,7 +154,6 @@ group DDCCToComposition(source src : DDCCVS, target comp : DDCCComposition, sour
         <name value="set name"/>
         <source>
           <context value="name"/>
-          <variable value="content"/>
         </source>
         <target>
           <context value="tName"/>
@@ -162,7 +161,7 @@ group DDCCToComposition(source src : DDCCVS, target comp : DDCCComposition, sour
           <element value="text"/>
           <transform value="copy"/>
           <parameter>
-            <valueId value="content"/>
+            <valueId value="name"/>
           </parameter>
         </target>
       </rule>

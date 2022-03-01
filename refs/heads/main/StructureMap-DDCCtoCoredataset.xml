@@ -3,8 +3,8 @@
 <StructureMap xmlns="http://hl7.org/fhir">
   <id value="DDCCtoCoredataset"/>
   <meta>
-    <versionId value="2"/>
-    <lastUpdated value="2022-01-31T19:57:16.338+00:00"/>
+    <versionId value="1"/>
+    <lastUpdated value="2022-03-01T19:17:56.589+00:00"/>
   </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><pre>map &quot;http://worldhealthorganization.github.io/ddcc/StructureMap/DDCCtoCoredataset&quot; = &quot;DDCCtoCoredataset&quot;
@@ -79,7 +79,7 @@ group DecodeImmunizationToQR(source ddcc : DDCCDocument, source immunization : D
   <version value="0.3.1"/>
   <name value="DDCCtoCoredataset"/>
   <status value="draft"/>
-  <date value="2022-02-13T22:11:31+00:00"/>
+  <date value="2022-03-01T19:29:42+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>

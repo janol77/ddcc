@@ -54,7 +54,17 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">WHO Digital Documentation of COVID-19 Certificates (DDCC)</span><br/>0.3.1 - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">WHO Digital Documentation of COVID-19 Certificates (DDCC)</span>
+            <br/>
+            <span style="display:inline-block;">0.3.1 - CI Build
+
+
+
+  <img src="assets/images/001.svg" alt="International flag" title="International" height="16"/>
+
+
+            </span>
+          </p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -165,7 +175,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <!-- ReleaseHeader --><p id="publish-box">WHO Digital Documentation of COVID-19 Certificates (DDCC) - Local Development build (v0.3.1). See the <a href="http://worldhealthorganization.github.io/ddcc/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Transactions 20210702</h2>
   
-  <div><a name="l320">​</a><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Submit Health Event</a></li><li><a href="#2"> Register Health Certificate</a></li><li><a href="#3"> Retrieve Health Certificate</a></li><li><a href="#4"> Retrieve Health Folder</a></li></ul></div>
+  
+  
+  <div><a name="l326">​</a><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Submit Health Event</a></li><li><a href="#2"> Register Health Certificate</a></li><li><a href="#3"> Retrieve Health Certificate</a></li><li><a href="#4"> Retrieve Health Folder</a></li></ul></div>
   
   <a name="1"></a><h3 id="submit-health-event">Submit Health Event</h3> 
   The Submit Health Event transaction is initiated by a <a href="actors.html#point-of-care">Point of Care</a> system against the <a href="actors.html#ddcc-generator">DDCC Generator</a>.
@@ -176,8 +188,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <a name="1"></a><h4 id="submit-health-event-trigger">Trigger Event </h4>
   The Submit Health Event transaction may be initiated in any of the following ways:
   <ul>
-    <li><a name="l395">​</a>The <a href="actors.html#point-of-care">Point of Care</a> system is online and a health event was recorded by the Vaccinator or the Data Entry Personnel</li>
-    <li><a name="l401">​</a>The <a href="actors.html#point-of-care">Point of Care</a> system comes online after recording one or more health events while in an offline mode</li>
+    <li><a name="l401">​</a>The <a href="actors.html#point-of-care">Point of Care</a> system is online and a health event was recorded by the Vaccinator or the Data Entry Personnel</li>
+    <li><a name="l407">​</a>The <a href="actors.html#point-of-care">Point of Care</a> system comes online after recording one or more health events while in an offline mode</li>
   </ul>
 
   <a name="2"></a><h4 id="register-health-certificate-message-semantics">Message Semantics</h4>
@@ -201,7 +213,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <ol>
 	<li>serialize the <a href="StructureDefinition-DDCCQuestionnaireResponse.html">DDCC Questionnaire Response</a> content as payload for encoding as a QR code</li>
 	<li>use their DSC to sign the QR Code Content as part of the QR Content schema</li>
-	<li><a name="l467">​</a>return the generated signed <a href="StructureDefinition-DDCCDocument.html">DDCC Document</a> to the  <a href="actors.html#point-of-care">Point of Care</a> system</li>
+	<li><a name="l473">​</a>return the generated signed <a href="StructureDefinition-DDCCDocument.html">DDCC Document</a> to the  <a href="actors.html#point-of-care">Point of Care</a> system</li>
       </ol>
     </li>
     <li>
@@ -253,7 +265,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   The Retrieve Health Certificate may be initiated by:
   <ol>
     <li> a <a href="actors.html#verifier">Verifier</a> wishing to validate and verify content of a DDCC</li>
-    <li><a name="l689">​</a> a <a href="actors.html#point-of-care">Point of Care</a> wishing to retrieve a DDCC for continuity of care</li>
+    <li><a name="l695">​</a> a <a href="actors.html#point-of-care">Point of Care</a> wishing to retrieve a DDCC for continuity of care</li>
   </ol>
 
   <a name="3.2"></a><h4 id="retrieve-health-certificate-message-semantics"> Message Semantics</h4>
@@ -291,7 +303,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   The Retrieve Health Folder may be initiated by:
   <ol>
     <li> a <a href="actors.html#verifier">Verifier</a> wishing to validate and verify content of a DDCC</li>
-    <li><a name="l834">​</a> a <a href="actors.html#point-of-care">Point of Care</a> wishing to retrieve a DDCC for continuity of care</li>
+    <li><a name="l840">​</a> a <a href="actors.html#point-of-care">Point of Care</a> wishing to retrieve a DDCC for continuity of care</li>
   </ol>
 
   <a name="4.2"></a><h4 id="retrieve-health-folder-message-semantics"> Message Semantics</h4>
@@ -300,10 +312,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   The Retrieve Health Folder transaction request message is the request message of a  <a href="http://hl7.org/fhir/composition-operation-document.html">$document</a> operation perfomed on the <a href="StructureDefinition-shf-composition.html">SHF Composition</a> with the following parameters:
   <ul>
     <li>id: (Required) the id of the SHF Composition </li>
-    <li><a name="l860">​</a>
+    <li><a name="l866">​</a>
       graph: (Optional) a canonical reference to a  <a href="StructureDefinition-shf-graphdefinition.html">SHF Graph Defintion</a> resource indicating which of the linked DDCC should be included in the result.  The following options are required to be supported:
       <ul>
-	<li><a name="l867">​</a>GraphDefintion/svc-graph: will include the <a href="StructureDefintion-svc-bundle.html">SVC Bundle</a></li>
+	<li><a name="l873">​</a>GraphDefintion/svc-graph: will include the <a href="StructureDefintion-svc-bundle.html">SVC Bundle</a></li>
       </ul>
     </li>
   </ul>
@@ -312,7 +324,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <a name="4.2.2"></a><h5 id="retrieve-health-folder-message-semantics-response"> Message Semantics Response</h5>
   The Retrieve Health Folder transaction response message is the response message of a  <a href="http://hl7.org/fhir/composition-operation-document.html">$document</a> operation performed.  Specifically:
   <ul>
-    <li><a name="l884">​</a>An list of entries of <a href="StructureDefintion-DDCCComposition.html">DDCC Compositions</a> that the PHA wishes to expose to the requestor according to the polocy of the jursidiction</li>
+    <li><a name="l890">​</a>An list of entries of <a href="StructureDefintion-DDCCComposition.html">DDCC Compositions</a> that the PHA wishes to expose to the requestor according to the polocy of the jursidiction</li>
     <li>If the <i>graph</i> parameter was utilized, the linked resources as defined by the GraphDefintion</li>
   </ul>
 
@@ -344,8 +356,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l951">​</a>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc-vs#0.3.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Feb 13, 2022 22:11+0000">2022-02-13</span>
+        <p><a name="l957">​</a>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc-vs#0.3.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 1, 2022 19:29+0000">2022-03-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -372,6 +384,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
   <script src="assets/js/respond.min.js" type="text/javascript"> </script>
   <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   

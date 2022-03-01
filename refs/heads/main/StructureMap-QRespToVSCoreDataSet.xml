@@ -4,20 +4,16 @@
   <id value="QRespToVSCoreDataSet"/>
   <meta>
     <versionId value="1"/>
-    <lastUpdated value="2022-01-31T19:57:18.043+00:00"/>
+    <lastUpdated value="2022-03-01T19:17:58.292+00:00"/>
   </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><pre>map &quot;http://worldhealthorganization.github.io/ddcc/StructureMap/QRespToVSCoreDataSet&quot; = &quot;QRespToVSCoreDataSet&quot;
 
 
 uses &quot;http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse&quot; alias QResp as source
-uses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSet.VS.PoV&quot; alias DDCCPoV as target
+uses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSet.VS.CoC&quot; alias DDCC as target
 
-group QRespToCoreDataSet(source qr : QResp, target ddcc : DDCCPoV) {
-  // qr.item as item where item.linkId = 'name' -&gt; ddcc.name as name then {
-  //     log 'got answer';
-  //     item.answer first as answer -&gt; name = answer.valueString;
-  //   };
+group QRespToCoreDataSet(source qr : QResp, target ddcc : DDCC) {
   qr as src then QRespToHeader(src, ddcc) &quot;set header content&quot;;
   qr as src -&gt; ddcc.vaccination as vaccination then QRespToVaccination(src, vaccination) &quot;set vaccination content&quot;;
   qr as src -&gt; ddcc.certificate as certificate then QRespToCertificate(src, certificate) &quot;set certificate content&quot;;
@@ -120,7 +116,7 @@ group QRespToCertificate(source qr, target certificate) {
   <version value="0.3.1"/>
   <name value="QRespToVSCoreDataSet"/>
   <status value="draft"/>
-  <date value="2022-02-13T22:11:31+00:00"/>
+  <date value="2022-03-01T19:29:42+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -141,9 +137,9 @@ group QRespToCertificate(source qr, target certificate) {
     <alias value="QResp"/>
   </structure>
   <structure>
-    <url value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSet.VS.PoV"/>
+    <url value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSet.VS.CoC"/>
     <mode value="target"/>
-    <alias value="DDCCPoV"/>
+    <alias value="DDCC"/>
   </structure>
   <group>
     <name value="QRespToCoreDataSet"/>
@@ -155,7 +151,7 @@ group QRespToCertificate(source qr, target certificate) {
     </input>
     <input>
       <name value="ddcc"/>
-      <type value="DDCCPoV"/>
+      <type value="DDCC"/>
       <mode value="target"/>
     </input>
     <rule>
@@ -169,7 +165,6 @@ group QRespToCertificate(source qr, target certificate) {
         <variable value="src"/>
         <variable value="ddcc"/>
       </dependent>
-      <documentation value="qr.item as item where item.linkId = &#39;name&#39; -&gt; ddcc.name as name then {&#xD;&#xA;    log &#39;got answer&#39;;&#xD;&#xA;    item.answer first as answer -&gt; name = answer.valueString;&#xD;&#xA;  };"/>
     </rule>
     <rule>
       <name value="set vaccination content"/>
