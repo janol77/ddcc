@@ -3,7 +3,7 @@
 
 err = 389, warn = 97, info = 30
 IG Publisher Version: 1.1.111
-Generated Tue Mar 01 19:33:06 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.3.1 (canonical = http://worldhealthorganization.github.io/ddcc)
+Generated Fri Mar 04 23:17:23 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.3.1 (canonical = http://worldhealthorganization.github.io/ddcc)
  Build Errors : 891 / 58 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 2 / 0 / 12
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Arabic : 2 / 0 / 12
@@ -1090,8 +1090,8 @@ ERROR: /github/workspace/output/transactions.20210702.html#/html/body/div/div/di
 ERROR: /github/workspace/output/transactions.20210702.html#/html/body/div/div/div/div/div/div/a at Line 338, column 159: The link 'actors.html#npkd' for "National Public Key Directory" cannot be resolved (valid targets: [digital-health-solution, subject-of-care, ddcc-generation-service, public-health-authority, ddcc-registry, publish-box, ddcc-registry-service, vaccinator, segment-post-footer, family-logo, top, ddcc-repository-service, stripe, segment-footer, segment-content, ddcc-generator, 10, 11, segment-header, ddcc-repository, bottom, ddcc-holder, family-nav, ig-status, actors, 1, 2, 3, public-health-authority-pha, data-entry-personnel, 4, 5, 6, verifier, 7, 8, 9, segment-navbar, tested-person, segment-breadcrumb])
 ERROR: /github/workspace/output/transactions.20210702.html#/html/body/div/div/div/div/div/div/a at Line 338, column 223: The link 'actors.html#who-pkd' for "WHO Public Key Directory" cannot be resolved (valid targets: [digital-health-solution, subject-of-care, ddcc-generation-service, public-health-authority, ddcc-registry, publish-box, ddcc-registry-service, vaccinator, segment-post-footer, family-logo, top, ddcc-repository-service, stripe, segment-footer, segment-content, ddcc-generator, 10, 11, segment-header, ddcc-repository, bottom, ddcc-holder, family-nav, ig-status, actors, 1, 2, 3, public-health-authority-pha, data-entry-personnel, 4, 5, 6, verifier, 7, 8, 9, segment-navbar, tested-person, segment-breadcrumb])
 ERROR: /github/workspace/output/transactions.20210702.html#/html/body/div/div/div/p/a at Line 370, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/transactions.html#/html/body/div/div/div/div/div/div/p/a at Line 410, column 51: The link 'OperationDefinition-DDCC-QuestionnaireResponse-revpleHealthCertificate.html' for "Revoke Health Certificate Operation" cannot be resolved
-ERROR: /github/workspace/output/transactions.html#/html/body/div/div/div/p/a at Line 465, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/transactions.html#/html/body/div/div/div/div/div/div/p/a at Line 407, column 51: The link 'OperationDefinition-DDCC-QuestionnaireResponse-revpleHealthCertificate.html' for "Revoke Health Certificate Operation" cannot be resolved
+ERROR: /github/workspace/output/transactions.html#/html/body/div/div/div/p/a at Line 461, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/usecases.html#/html/body/div/div/div/p/a at Line 269, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/workflows.html#/html/body/div/div/div/p/a at Line 232, column 135: The link 'license.html' for "License" cannot be resolved
 == fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1.json ==
