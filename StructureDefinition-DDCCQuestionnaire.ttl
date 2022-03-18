@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "DDCCQuestionnaire"];
   fhir:StructureDefinition.title [ fhir:value "DDCC Questionniare"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-03-05T01:09:46+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-18T16:50:55+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "WHO"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -2722,7 +2722,11 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "If the operator is 'exists', the value must be a boolean" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "operator = 'exists' implies (answer is Boolean)" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "f:operator/@value != 'exists' or exists(f:answerBoolean)" ]
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "f:operator/@value != 'exists' or exists(f:answerBoolean)" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extr-smap";
+           fhir:link <http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extr-smap>
+         ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifierReason [ fhir:value "If enableWhen is present and the condition evaluates to false, then the Questionnaire behaves as though the elements weren't actually present" ];

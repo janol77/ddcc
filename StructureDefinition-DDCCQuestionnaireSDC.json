@@ -10,7 +10,7 @@
   "name": "DDCCQuestionnaireSDC",
   "title": "DDCC Questionnaire based on SDC",
   "status": "active",
-  "date": "2022-03-05T01:09:46+00:00",
+  "date": "2022-03-18T16:50:55+00:00",
   "publisher": "WHO",
   "contact": [
     {
@@ -1978,7 +1978,8 @@
             "severity": "error",
             "human": "An item cannot have both initial.value and initialExpression",
             "expression": "initial.empty() or extension('http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression').empty()",
-            "xpath": "not(exists(f:initial) and exists(f:extension[@url='http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression']))"
+            "xpath": "not(exists(f:initial) and exists(f:extension[@url='http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression']))",
+            "source": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-pop-exp"
           }
         ],
         "mustSupport": true,
@@ -4356,7 +4357,8 @@
             "severity": "error",
             "human": "If the operator is 'exists', the value must be a boolean",
             "expression": "operator = 'exists' implies (answer is Boolean)",
-            "xpath": "f:operator/@value != 'exists' or exists(f:answerBoolean)"
+            "xpath": "f:operator/@value != 'exists' or exists(f:answerBoolean)",
+            "source": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-pop-exp"
           }
         ],
         "isModifier": true,
@@ -6109,7 +6111,8 @@
             "severity": "error",
             "human": "If the operator is 'exists', the value must be a boolean",
             "expression": "operator = 'exists' implies (answer is Boolean)",
-            "xpath": "f:operator/@value != 'exists' or exists(f:answerBoolean)"
+            "xpath": "f:operator/@value != 'exists' or exists(f:answerBoolean)",
+            "source": "http://hl7.org/fhir/StructureDefinition/Questionnaire"
           }
         ],
         "isModifier": true,

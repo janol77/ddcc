@@ -128,7 +128,7 @@ group ImmRecToDDCCVS(source immRec : DDCCImmunizationRecommendation, target vacc
   <version value="0.3.1"/>
   <name value="ResourcesToVSCoreDataSet"/>
   <status value="draft"/>
-  <date value="2022-03-05T01:09:46+00:00"/>
+  <date value="2022-03-18T16:50:55+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -235,10 +235,10 @@ group ImmRecToDDCCVS(source immRec : DDCCImmunizationRecommendation, target vacc
             <element value="value"/>
             <transform value="evaluate"/>
             <parameter>
-              <valueString value="url.replaceMatches(&#39;[Uu][Rr][Nn]:[Hh][Cc][Ii][Dd]:&#39;, &#39;&#39;)"/>
+              <valueString value="url.replaceMatches('[Uu][Rr][Nn]:[Hh][Cc][Ii][Dd]:', '')"/>
             </parameter>
           </target>
-          <documentation value="There&#39;s got to be a better way to do this"/>
+          <documentation value="There's got to be a better way to do this"/>
         </rule>
       </rule>
       <rule>
@@ -563,10 +563,10 @@ group ImmRecToDDCCVS(source immRec : DDCCImmunizationRecommendation, target vacc
         <element value="name"/>
         <transform value="evaluate"/>
         <parameter>
-          <valueString value="given.replaceMatches(&#39;$&#39;, &#39; &#39;)"/>
+          <valueString value="given.replaceMatches('$', ' ')"/>
         </parameter>
       </target>
-      <documentation value="annoying because append doesn&#39;t work until ddcc.name is set"/>
+      <documentation value="annoying because append doesn't work until ddcc.name is set"/>
     </rule>
     <rule>
       <name value="set other names"/>
@@ -587,7 +587,7 @@ group ImmRecToDDCCVS(source immRec : DDCCImmunizationRecommendation, target vacc
         <variable value="spaced"/>
         <transform value="evaluate"/>
         <parameter>
-          <valueString value="other.replaceMatches(&#39;$&#39;, &#39; &#39;)"/>
+          <valueString value="other.replaceMatches('$', ' ')"/>
         </parameter>
       </target>
       <target>
@@ -703,7 +703,7 @@ group ImmRecToDDCCVS(source immRec : DDCCImmunizationRecommendation, target vacc
           <context value="ext"/>
           <listMode value="first"/>
           <variable value="brand"/>
-          <condition value="ext.url = &#39;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand&#39;"/>
+          <condition value="ext.url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand'"/>
         </source>
         <rule>
           <name value="set brand code"/>
@@ -729,7 +729,7 @@ group ImmRecToDDCCVS(source immRec : DDCCImmunizationRecommendation, target vacc
           <context value="ext"/>
           <listMode value="first"/>
           <variable value="maholder"/>
-          <condition value="ext.url = &#39;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineMarketAuthorization&#39;"/>
+          <condition value="ext.url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineMarketAuthorization'"/>
         </source>
         <rule>
           <name value="set maholder code"/>
@@ -755,7 +755,7 @@ group ImmRecToDDCCVS(source immRec : DDCCImmunizationRecommendation, target vacc
           <context value="ext"/>
           <listMode value="first"/>
           <variable value="valid"/>
-          <condition value="ext.url = &#39;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineValidFrom&#39;"/>
+          <condition value="ext.url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineValidFrom'"/>
         </source>
         <rule>
           <name value="set validFrom date"/>
@@ -781,7 +781,7 @@ group ImmRecToDDCCVS(source immRec : DDCCImmunizationRecommendation, target vacc
           <context value="ext"/>
           <listMode value="first"/>
           <variable value="country"/>
-          <condition value="ext.url = &#39;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination&#39;"/>
+          <condition value="ext.url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination'"/>
         </source>
         <rule>
           <name value="set country code"/>

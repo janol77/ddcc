@@ -11,7 +11,7 @@
   <name value="DDCCCoreDataSet_VS_PoV"/>
   <title value="DDCC Core Data Set Logical Model - Vaccine Status - Proof of Vaccination"/>
   <status value="draft"/>
-  <date value="2022-03-05T01:09:46+00:00"/>
+  <date value="2022-03-18T16:50:55+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -95,7 +95,7 @@
     <element id="DDCCCoreDataSet.birthDate">
       <path value="DDCCCoreDataSet.birthDate"/>
       <short value="Date of birth"/>
-      <definition value="The person&#39;s date of birth (DOB) if known. If unknown, use given DOB for administrative purposes"/>
+      <definition value="The person's date of birth (DOB) if known. If unknown, use given DOB for administrative purposes"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -496,7 +496,7 @@
       </binding>
       <mapping>
         <identity value="ddcc"/>
-        <map value="Immunization.extension.where(url=&#39;https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination&#39;)"/>
+        <map value="Immunization.extension.where(url='https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination')"/>
       </mapping>
       <mapping>
         <identity value="ddcc-immunization"/>
@@ -525,7 +525,7 @@
     <element id="DDCCCoreDataSet.vaccination.signature">
       <path value="DDCCCoreDataSet.vaccination.signature"/>
       <short value="Signature of health worker"/>
-      <definition value="REQUIRED for PAPER vaccination certificates ONLY. The health worker who provided the vaccination or the supervising clinician&#39;s hand-written signature."/>
+      <definition value="REQUIRED for PAPER vaccination certificates ONLY. The health worker who provided the vaccination or the supervising clinician's hand-written signature."/>
       <min value="0"/>
       <max value="1"/>
       <base>
