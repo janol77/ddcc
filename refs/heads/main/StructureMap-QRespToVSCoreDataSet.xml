@@ -116,7 +116,7 @@ group QRespToCertificate(source qr, target certificate) {
   <version value="0.3.1"/>
   <name value="QRespToVSCoreDataSet"/>
   <status value="draft"/>
-  <date value="2022-03-05T01:09:46+00:00"/>
+  <date value="2022-03-18T16:50:55+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -228,7 +228,7 @@ group QRespToCertificate(source qr, target certificate) {
           <element value="answer"/>
           <listMode value="first"/>
           <variable value="answer"/>
-          <condition value="item.linkId = &#39;name&#39;"/>
+          <condition value="item.linkId = 'name'"/>
         </source>
         <rule>
           <name value="set name"/>
@@ -255,7 +255,7 @@ group QRespToCertificate(source qr, target certificate) {
           <element value="answer"/>
           <listMode value="first"/>
           <variable value="answer"/>
-          <condition value="item.linkId = &#39;birthDate&#39;"/>
+          <condition value="item.linkId = 'birthDate'"/>
         </source>
         <rule>
           <name value="set birthDate"/>
@@ -282,7 +282,7 @@ group QRespToCertificate(source qr, target certificate) {
           <element value="answer"/>
           <listMode value="first"/>
           <variable value="answer"/>
-          <condition value="item.linkId = &#39;identifier&#39;"/>
+          <condition value="item.linkId = 'identifier'"/>
         </source>
         <target>
           <context value="ddcc"/>
@@ -315,7 +315,7 @@ group QRespToCertificate(source qr, target certificate) {
           <element value="answer"/>
           <listMode value="first"/>
           <variable value="answer"/>
-          <condition value="item.linkId = &#39;sex&#39;"/>
+          <condition value="item.linkId = 'sex'"/>
         </source>
         <rule>
           <name value="process coding"/>
@@ -370,7 +370,7 @@ group QRespToCertificate(source qr, target certificate) {
           <element value="answer"/>
           <listMode value="first"/>
           <variable value="answer"/>
-          <condition value="item.linkId = &#39;vaccine&#39;"/>
+          <condition value="item.linkId = 'vaccine'"/>
         </source>
         <rule>
           <name value="set vaccine"/>
@@ -397,7 +397,7 @@ group QRespToCertificate(source qr, target certificate) {
           <element value="answer"/>
           <listMode value="first"/>
           <variable value="answer"/>
-          <condition value="item.linkId = &#39;brand&#39;"/>
+          <condition value="item.linkId = 'brand'"/>
         </source>
         <rule>
           <name value="set brand"/>
@@ -424,7 +424,7 @@ group QRespToCertificate(source qr, target certificate) {
           <element value="answer"/>
           <listMode value="first"/>
           <variable value="answer"/>
-          <condition value="item.linkId = &#39;manufacturer&#39;"/>
+          <condition value="item.linkId = 'manufacturer'"/>
         </source>
         <rule>
           <name value="set manufacturer"/>
@@ -451,7 +451,7 @@ group QRespToCertificate(source qr, target certificate) {
           <element value="answer"/>
           <listMode value="first"/>
           <variable value="answer"/>
-          <condition value="item.linkId = &#39;ma_holder&#39;"/>
+          <condition value="item.linkId = 'ma_holder'"/>
         </source>
         <rule>
           <name value="set maholder"/>
@@ -478,7 +478,7 @@ group QRespToCertificate(source qr, target certificate) {
           <element value="answer"/>
           <listMode value="first"/>
           <variable value="answer"/>
-          <condition value="item.linkId = &#39;lot&#39;"/>
+          <condition value="item.linkId = 'lot'"/>
         </source>
         <rule>
           <name value="set lot"/>
@@ -505,7 +505,7 @@ group QRespToCertificate(source qr, target certificate) {
           <element value="answer"/>
           <listMode value="first"/>
           <variable value="answer"/>
-          <condition value="item.linkId = &#39;date&#39;"/>
+          <condition value="item.linkId = 'date'"/>
         </source>
         <rule>
           <name value="set date"/>
@@ -532,7 +532,7 @@ group QRespToCertificate(source qr, target certificate) {
           <element value="answer"/>
           <listMode value="first"/>
           <variable value="answer"/>
-          <condition value="item.linkId = &#39;vaccine_valid&#39;"/>
+          <condition value="item.linkId = 'vaccine_valid'"/>
         </source>
         <rule>
           <name value="set validFrom"/>
@@ -559,7 +559,7 @@ group QRespToCertificate(source qr, target certificate) {
           <element value="answer"/>
           <listMode value="first"/>
           <variable value="answer"/>
-          <condition value="item.linkId = &#39;dose&#39;"/>
+          <condition value="item.linkId = 'dose'"/>
         </source>
         <rule>
           <name value="set dose"/>
@@ -586,7 +586,7 @@ group QRespToCertificate(source qr, target certificate) {
           <element value="answer"/>
           <listMode value="first"/>
           <variable value="answer"/>
-          <condition value="item.linkId = &#39;total_doses&#39;"/>
+          <condition value="item.linkId = 'total_doses'"/>
         </source>
         <rule>
           <name value="set totalDoses"/>
@@ -613,7 +613,7 @@ group QRespToCertificate(source qr, target certificate) {
           <element value="answer"/>
           <listMode value="first"/>
           <variable value="answer"/>
-          <condition value="item.linkId = &#39;country&#39;"/>
+          <condition value="item.linkId = 'country'"/>
         </source>
         <rule>
           <name value="set country"/>
@@ -640,7 +640,7 @@ group QRespToCertificate(source qr, target certificate) {
           <element value="answer"/>
           <listMode value="first"/>
           <variable value="answer"/>
-          <condition value="item.linkId = &#39;centre&#39;"/>
+          <condition value="item.linkId = 'centre'"/>
         </source>
         <rule>
           <name value="set centre"/>
@@ -667,7 +667,7 @@ group QRespToCertificate(source qr, target certificate) {
           <element value="answer"/>
           <listMode value="first"/>
           <variable value="answer"/>
-          <condition value="item.linkId = &#39;hw&#39;"/>
+          <condition value="item.linkId = 'hw'"/>
         </source>
         <target>
           <context value="vaccination"/>
@@ -700,7 +700,7 @@ group QRespToCertificate(source qr, target certificate) {
           <element value="answer"/>
           <listMode value="first"/>
           <variable value="answer"/>
-          <condition value="item.linkId = &#39;disease&#39;"/>
+          <condition value="item.linkId = 'disease'"/>
         </source>
         <rule>
           <name value="set disease"/>
@@ -727,7 +727,7 @@ group QRespToCertificate(source qr, target certificate) {
           <element value="answer"/>
           <listMode value="first"/>
           <variable value="answer"/>
-          <condition value="item.linkId = &#39;due_date&#39;"/>
+          <condition value="item.linkId = 'due_date'"/>
         </source>
         <rule>
           <name value="set nextDose"/>
@@ -774,7 +774,7 @@ group QRespToCertificate(source qr, target certificate) {
           <element value="answer"/>
           <listMode value="first"/>
           <variable value="answer"/>
-          <condition value="item.linkId = &#39;valid_from&#39;"/>
+          <condition value="item.linkId = 'valid_from'"/>
         </source>
         <rule>
           <name value="set valid_from"/>
@@ -801,7 +801,7 @@ group QRespToCertificate(source qr, target certificate) {
           <element value="answer"/>
           <listMode value="first"/>
           <variable value="answer"/>
-          <condition value="item.linkId = &#39;valid_until&#39;"/>
+          <condition value="item.linkId = 'valid_until'"/>
         </source>
         <rule>
           <name value="set valid_until"/>
@@ -848,7 +848,7 @@ group QRespToCertificate(source qr, target certificate) {
           <element value="answer"/>
           <listMode value="first"/>
           <variable value="answer"/>
-          <condition value="item.linkId = &#39;pha&#39;"/>
+          <condition value="item.linkId = 'pha'"/>
         </source>
         <target>
           <context value="certificate"/>
@@ -894,7 +894,7 @@ group QRespToCertificate(source qr, target certificate) {
           <element value="answer"/>
           <listMode value="first"/>
           <variable value="answer"/>
-          <condition value="item.linkId = &#39;hcid&#39;"/>
+          <condition value="item.linkId = 'hcid'"/>
         </source>
         <target>
           <context value="certificate"/>

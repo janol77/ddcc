@@ -89,7 +89,7 @@ group DecodeImmunizationToQR(source ddcc : DDCCDocument, source immunization : D
   <version value="0.3.1"/>
   <name value="DDCCtoEUdcc"/>
   <status value="draft"/>
-  <date value="2022-03-05T01:09:46+00:00"/>
+  <date value="2022-03-18T16:50:55+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -415,7 +415,7 @@ group DecodeImmunizationToQR(source ddcc : DDCCDocument, source immunization : D
           <context value="immunization"/>
           <element value="extension"/>
           <variable value="country"/>
-          <condition value="(url = &#39;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent&#39;)"/>
+          <condition value="(url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent')"/>
         </source>
         <rule>
           <name value="valueCode"/>
@@ -442,7 +442,7 @@ group DecodeImmunizationToQR(source ddcc : DDCCDocument, source immunization : D
           <context value="immunization"/>
           <element value="extension"/>
           <variable value="brand"/>
-          <condition value="(url = &#39;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCEventBrand&#39;)"/>
+          <condition value="(url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCEventBrand')"/>
         </source>
         <rule>
           <name value="Vaccine-Brand-Code"/>

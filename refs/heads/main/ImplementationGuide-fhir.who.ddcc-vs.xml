@@ -1768,11 +1768,6 @@
         <generation value="html"/>
       </page>
       <page>
-        <nameUrl value="transactions.20210702.html"/>
-        <title value="Transactions 20210702"/>
-        <generation value="html"/>
-      </page>
-      <page>
         <nameUrl value="usecases.html"/>
         <title value="Usecases"/>
         <generation value="html"/>

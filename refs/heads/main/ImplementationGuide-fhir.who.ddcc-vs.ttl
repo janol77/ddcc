@@ -2436,16 +2436,11 @@
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
          fhir:index 20;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "transactions.20210702.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Transactions 20210702" ];
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
-       ], [
-         fhir:index 21;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "usecases.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Usecases" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
-         fhir:index 22;
+         fhir:index 21;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "workflows.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Workflows" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]

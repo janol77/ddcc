@@ -20,7 +20,7 @@
   "name": "DDCCComposition",
   "title": "DDCC Composition",
   "status": "active",
-  "date": "2022-03-05T01:09:46+00:00",
+  "date": "2022-03-18T16:50:55+00:00",
   "publisher": "WHO",
   "contact": [
     {
@@ -2942,14 +2942,16 @@
             "severity": "error",
             "human": "A section must contain at least one of text, entries, or sub-sections",
             "expression": "text.exists() or entry.exists() or section.exists()",
-            "xpath": "exists(f:text) or exists(f:entry) or exists(f:section)"
+            "xpath": "exists(f:text) or exists(f:entry) or exists(f:section)",
+            "source": "http://hl7.org/fhir/StructureDefinition/Composition"
           },
           {
             "key": "cmp-2",
             "severity": "error",
             "human": "A section can only have an emptyReason if it is empty",
             "expression": "emptyReason.empty() or entry.empty()",
-            "xpath": "not(exists(f:emptyReason) and exists(f:entry))"
+            "xpath": "not(exists(f:emptyReason) and exists(f:entry))",
+            "source": "http://hl7.org/fhir/StructureDefinition/Composition"
           },
           {
             "key": "ele-1",

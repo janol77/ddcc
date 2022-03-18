@@ -10,7 +10,7 @@
   "name": "DDCCImmunization",
   "title": "DDCC Immunization",
   "status": "active",
-  "date": "2022-03-05T01:09:46+00:00",
+  "date": "2022-03-18T16:50:55+00:00",
   "publisher": "WHO",
   "contact": [
     {
@@ -3711,7 +3711,8 @@
             "severity": "error",
             "human": "One of documentType or reference SHALL be present",
             "expression": "documentType.exists() or reference.exists()",
-            "xpath": "exists(f:documentType) or exists(f:reference)"
+            "xpath": "exists(f:documentType) or exists(f:reference)",
+            "source": "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-pre-uv-ips"
           }
         ],
         "isModifier": false,

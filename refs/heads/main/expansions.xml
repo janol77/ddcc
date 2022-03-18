@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="ccc04710-c4b8-4284-a0be-e8b71202ce3a"/>
+  <id value="55a0dddd-1905-4ec9-a8ec-aebdb8b97740"/>
   <meta>
-    <lastUpdated value="2022-03-05T01:09:46.005+00:00"/>
+    <lastUpdated value="2022-03-18T16:50:55.476+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -34,14 +34,14 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Composition-Category-CodeSystem-ddcc-vs"> </a>
+                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Composition-Category-CodeSystem-ddcc-vs"> </a>  
                   <a href="CodeSystem-DDCC-Composition-Category-CodeSystem.html#DDCC-Composition-Category-CodeSystem-ddcc-vs">ddcc-vs</a>
                 </td>
                 <td>DDCC:VS</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Composition-Category-CodeSystem-ddcc-tr"> </a>
+                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Composition-Category-CodeSystem-ddcc-tr"> </a>  
                   <a href="CodeSystem-DDCC-Composition-Category-CodeSystem.html#DDCC-Composition-Category-CodeSystem-ddcc-tr">ddcc-tr</a>
                 </td>
                 <td>DDCC:TR</td>
@@ -54,7 +54,7 @@
         <name value="DDCC_Composition_Category_ValueSet"/>
         <title value="DDCC Composition Category Codes"/>
         <status value="active"/>
-        <date value="2022-03-05T01:09:46+00:00"/>
+        <date value="2022-03-18T16:50:55+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -71,8 +71,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c1cfb38c-d54e-4e99-a60e-d8a183bb92fb"/>
-          <timestamp value="2022-03-05T01:11:15+00:00"/>
+          <identifier value="urn:uuid:5e53be77-17c5-48fb-ade1-208cac3514b9"/>
+          <timestamp value="2022-03-18T16:52:19+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -124,14 +124,14 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Device-Property-CodeSystem-pathogen"> </a>
+                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Device-Property-CodeSystem-pathogen"> </a>  
                   <a href="CodeSystem-DDCC-Device-Property-CodeSystem.html#DDCC-Device-Property-CodeSystem-pathogen">pathogen</a>
                 </td>
                 <td>Pathogen Targeted</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Device-Property-CodeSystem-brand"> </a>
+                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Device-Property-CodeSystem-brand"> </a>  
                   <a href="CodeSystem-DDCC-Device-Property-CodeSystem.html#DDCC-Device-Property-CodeSystem-brand">brand</a>
                 </td>
                 <td>Test Brand</td>
@@ -144,7 +144,7 @@
         <name value="DDCC_Device_Property_ValueSet"/>
         <title value="DDCC Device Property Codes"/>
         <status value="active"/>
-        <date value="2022-03-05T01:09:46+00:00"/>
+        <date value="2022-03-18T16:50:55+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -161,8 +161,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6afda0de-0923-4e64-9b17-8f27b7633168"/>
-          <timestamp value="2022-03-05T01:11:16+00:00"/>
+          <identifier value="urn:uuid:6b980f34-6840-4c65-aeb8-f23a083d7563"/>
+          <timestamp value="2022-03-18T16:52:19+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -214,7 +214,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Folder-DesignationType-ddcc"> </a>
+                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Folder-DesignationType-ddcc"> </a>  
                   <a href="CodeSystem-DDCC-Folder-DesignationType.html#DDCC-Folder-DesignationType-ddcc">ddcc</a>
                 </td>
                 <td>DDCC</td>
@@ -227,7 +227,7 @@
         <name value="DDCC_Folder_DesignationType_ValueSet"/>
         <title value="DDCC DesignationTypes for Folder"/>
         <status value="active"/>
-        <date value="2022-03-05T01:09:46+00:00"/>
+        <date value="2022-03-18T16:50:55+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -244,8 +244,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8bee8e9f-d1a7-46d3-9c23-aa440f95e312"/>
-          <timestamp value="2022-03-05T01:11:16+00:00"/>
+          <identifier value="urn:uuid:157826bd-00a3-4000-90e1-277187f8575f"/>
+          <timestamp value="2022-03-18T16:52:19+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -292,21 +292,21 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Format-CodeSystem-image"> </a>
+                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Format-CodeSystem-image"> </a>  
                   <a href="CodeSystem-DDCC-QR-Format-CodeSystem.html#DDCC-QR-Format-CodeSystem-image">image</a>
                 </td>
                 <td>Image</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Format-CodeSystem-serialized"> </a>
+                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Format-CodeSystem-serialized"> </a>  
                   <a href="CodeSystem-DDCC-QR-Format-CodeSystem.html#DDCC-QR-Format-CodeSystem-serialized">serialized</a>
                 </td>
                 <td>Serialized QR Content</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Format-CodeSystem-pdf"> </a>
+                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Format-CodeSystem-pdf"> </a>  
                   <a href="CodeSystem-DDCC-QR-Format-CodeSystem.html#DDCC-QR-Format-CodeSystem-pdf">pdf</a>
                 </td>
                 <td>PDF version of the QR image</td>
@@ -319,7 +319,7 @@
         <name value="DDCC_QR_Format_ValueSet"/>
         <title value="DDCC QR Format Codes"/>
         <status value="active"/>
-        <date value="2022-03-05T01:09:46+00:00"/>
+        <date value="2022-03-18T16:50:55+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -336,8 +336,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9538d74a-0cc6-4b0c-b2a0-951bc7f7e3dc"/>
-          <timestamp value="2022-03-05T01:11:16+00:00"/>
+          <identifier value="urn:uuid:8c00fe7c-958f-4067-9d0d-7b28d01e2a72"/>
+          <timestamp value="2022-03-18T16:52:19+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -394,42 +394,42 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-who"> </a>
+                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-who"> </a>  
                   <a href="CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-who">who</a>
                 </td>
                 <td>WHO DDCC</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-dcc"> </a>
+                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-dcc"> </a>  
                   <a href="CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-dcc">dcc</a>
                 </td>
                 <td>EU DCC</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-icao"> </a>
+                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-icao"> </a>  
                   <a href="CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-icao">icao</a>
                 </td>
                 <td>ICAO</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-au"> </a>
+                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-au"> </a>  
                   <a href="CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-au">au</a>
                 </td>
                 <td>AU</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-shc"> </a>
+                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-shc"> </a>  
                   <a href="CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-shc">shc</a>
                 </td>
                 <td>SMART Health Card</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-divoc"> </a>
+                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-divoc"> </a>  
                   <a href="CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-divoc">divoc</a>
                 </td>
                 <td>DIVOC</td>
@@ -442,7 +442,7 @@
         <name value="DDCC_QR_Type_ValueSet"/>
         <title value="DDCC QR Type Codes"/>
         <status value="active"/>
-        <date value="2022-03-05T01:09:46+00:00"/>
+        <date value="2022-03-18T16:50:55+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -459,8 +459,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3ffe8fc0-4821-4f97-8ec2-5e6eed8b1c46"/>
-          <timestamp value="2022-03-05T01:11:16+00:00"/>
+          <identifier value="urn:uuid:cff23735-5b4d-43db-ba68-44f65b09a95b"/>
+          <timestamp value="2022-03-18T16:52:19+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -530,63 +530,63 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-258500001"> </a>
+                  <a name="http---snomed.info-sct-258500001"> </a>  
                   <a href="http://snomed.info/id/258500001">258500001</a>
                 </td>
                 <td>Nasopharyngeal swab</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-461911000124106"> </a>
+                  <a name="http---snomed.info-sct-461911000124106"> </a>  
                   <a href="http://snomed.info/id/461911000124106">461911000124106</a>
                 </td>
                 <td>Oropharyngeal swab</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-472881004"> </a>
+                  <a name="http---snomed.info-sct-472881004"> </a>  
                   <a href="http://snomed.info/id/472881004">472881004</a>
                 </td>
                 <td>Pharyngeal swab</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-472901003"> </a>
+                  <a name="http---snomed.info-sct-472901003"> </a>  
                   <a href="http://snomed.info/id/472901003">472901003</a>
                 </td>
                 <td>Swab from nasal sinus</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-119342007"> </a>
+                  <a name="http---snomed.info-sct-119342007"> </a>  
                   <a href="http://snomed.info/id/119342007">119342007</a>
                 </td>
                 <td>Saliva specimen</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-119297000"> </a>
+                  <a name="http---snomed.info-sct-119297000"> </a>  
                   <a href="http://snomed.info/id/119297000">119297000</a>
                 </td>
                 <td>Blood specimen</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-119361006"> </a>
+                  <a name="http---snomed.info-sct-119361006"> </a>  
                   <a href="http://snomed.info/id/119361006">119361006</a>
                 </td>
                 <td>Plasma specimen</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-119364003"> </a>
+                  <a name="http---snomed.info-sct-119364003"> </a>  
                   <a href="http://snomed.info/id/119364003">119364003</a>
                 </td>
                 <td>Serum specimen</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-122592007"> </a>
+                  <a name="http---snomed.info-sct-122592007"> </a>  
                   <a href="http://snomed.info/id/122592007">122592007</a>
                 </td>
                 <td>Acellular blood (serum or plasma) specimen</td>
@@ -599,7 +599,7 @@
         <name value="WHO_DDCC_Sample_Origin_COVID_19"/>
         <title value="WHO Speciman Sample Origin (COVID-19)"/>
         <status value="draft"/>
-        <date value="2022-03-05T01:09:46+00:00"/>
+        <date value="2022-03-18T16:50:55+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -616,8 +616,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:bc6368d0-db7a-43ae-936d-938421b7667c"/>
-          <timestamp value="2022-03-05T01:11:17+00:00"/>
+          <identifier value="urn:uuid:861d4789-8169-4886-b281-f91827249897"/>
+          <timestamp value="2022-03-18T16:52:20+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -709,7 +709,7 @@
         <name value="WHO_DDCC_Type_of_Test_COVID_19"/>
         <title value="WHO Type of Covid-19 Test"/>
         <status value="draft"/>
-        <date value="2022-03-05T01:09:46+00:00"/>
+        <date value="2022-03-18T16:50:55+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -726,8 +726,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:211d8c54-810a-445f-87a2-1c53a257ef46"/>
-          <timestamp value="2022-03-05T01:11:18+00:00"/>
+          <identifier value="urn:uuid:248e50fc-4c61-4b47-b106-c1af38ee4f2f"/>
+          <timestamp value="2022-03-18T16:52:21+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>

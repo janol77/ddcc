@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "DDCCImmunization"];
   fhir:StructureDefinition.title [ fhir:value "DDCC Immunization"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-03-05T01:09:46+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-18T16:50:55+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "WHO"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -3888,7 +3888,11 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "One of documentType or reference SHALL be present" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "documentType.exists() or reference.exists()" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:documentType) or exists(f:reference)" ]
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:documentType) or exists(f:reference)" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-pre-uv-ips";
+           fhir:link <http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-pre-uv-ips>
+         ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];

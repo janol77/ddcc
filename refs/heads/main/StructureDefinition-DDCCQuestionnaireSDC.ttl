@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "DDCCQuestionnaireSDC"];
   fhir:StructureDefinition.title [ fhir:value "DDCC Questionnaire based on SDC"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-03-05T01:09:46+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-18T16:50:55+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "WHO"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -2137,7 +2137,11 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "An item cannot have both initial.value and initialExpression" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "initial.empty() or extension('http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression').empty()" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "not(exists(f:initial) and exists(f:extension[@url='http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression']))" ]
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "not(exists(f:initial) and exists(f:extension[@url='http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression']))" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-pop-exp";
+           fhir:link <http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-pop-exp>
+         ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
@@ -4624,7 +4628,11 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "If the operator is 'exists', the value must be a boolean" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "operator = 'exists' implies (answer is Boolean)" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "f:operator/@value != 'exists' or exists(f:answerBoolean)" ]
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "f:operator/@value != 'exists' or exists(f:answerBoolean)" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-pop-exp";
+           fhir:link <http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-pop-exp>
+         ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifierReason [ fhir:value "If enableWhen is present and the condition evaluates to false, then the Questionnaire behaves as though the elements weren't actually present" ];
@@ -6483,7 +6491,11 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "If the operator is 'exists', the value must be a boolean" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "operator = 'exists' implies (answer is Boolean)" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "f:operator/@value != 'exists' or exists(f:answerBoolean)" ]
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "f:operator/@value != 'exists' or exists(f:answerBoolean)" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Questionnaire";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Questionnaire>
+         ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ];
        fhir:ElementDefinition.isModifierReason [ fhir:value "If enableWhen is present and the condition evaluates to false, then the Questionnaire behaves as though the elements weren't actually present" ];

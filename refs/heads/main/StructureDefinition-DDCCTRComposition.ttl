@@ -27,7 +27,7 @@
   fhir:StructureDefinition.name [ fhir:value "DDCCTRComposition"];
   fhir:StructureDefinition.title [ fhir:value "DDCC:TR Composition"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-03-05T01:09:46+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-18T16:50:55+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "WHO"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -3102,8 +3102,8 @@
          fhir:ElementDefinition.constraint.expression [ fhir:value "text.exists() or entry.exists() or section.exists()" ];
          fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:text) or exists(f:entry) or exists(f:section)" ];
          fhir:ElementDefinition.constraint.source [
-           fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition";
-           fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition>
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Composition";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Composition>
          ]
        ], [
          fhir:index 1;
@@ -3113,8 +3113,8 @@
          fhir:ElementDefinition.constraint.expression [ fhir:value "emptyReason.empty() or entry.empty()" ];
          fhir:ElementDefinition.constraint.xpath [ fhir:value "not(exists(f:emptyReason) and exists(f:entry))" ];
          fhir:ElementDefinition.constraint.source [
-           fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition";
-           fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition>
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Composition";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Composition>
          ]
        ], [
          fhir:index 2;
@@ -3847,8 +3847,8 @@
          fhir:ElementDefinition.constraint.expression [ fhir:value "text.exists() or entry.exists() or section.exists()" ];
          fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:text) or exists(f:entry) or exists(f:section)" ];
          fhir:ElementDefinition.constraint.source [
-           fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition";
-           fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition>
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Composition";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Composition>
          ]
        ], [
          fhir:index 1;
@@ -3858,8 +3858,8 @@
          fhir:ElementDefinition.constraint.expression [ fhir:value "emptyReason.empty() or entry.empty()" ];
          fhir:ElementDefinition.constraint.xpath [ fhir:value "not(exists(f:emptyReason) and exists(f:entry))" ];
          fhir:ElementDefinition.constraint.source [
-           fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition";
-           fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition>
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Composition";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Composition>
          ]
        ], [
          fhir:index 2;
