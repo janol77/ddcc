@@ -3,14 +3,14 @@
   "id": "who-ddcc-sample-origin-covid-19",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/258500001\">258500001</a></td><td>Nasopharyngeal swab</td></tr><tr><td><a href=\"http://snomed.info/id/461911000124106\">461911000124106</a></td><td>Oropharyngeal swab</td></tr><tr><td><a href=\"http://snomed.info/id/472881004\">472881004</a></td><td>Pharyngeal swab</td></tr><tr><td><a href=\"http://snomed.info/id/472901003\">472901003</a></td><td>Swab from nasal sinus</td></tr><tr><td><a href=\"http://snomed.info/id/119342007\">119342007</a></td><td>Saliva specimen</td></tr><tr><td><a href=\"http://snomed.info/id/119297000\">119297000</a></td><td>Blood specimen</td></tr><tr><td><a href=\"http://snomed.info/id/119361006\">119361006</a></td><td>Plasma specimen</td></tr><tr><td><a href=\"http://snomed.info/id/119364003\">119364003</a></td><td>Serum specimen</td></tr><tr><td><a href=\"http://snomed.info/id/122592007\">122592007</a></td><td>Acellular blood (serum or plasma) specimen</td></tr></table></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://id.who.int/icd/entity</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>50872817</td><td>Nasopharyngeal swab</td></tr><tr><td>555916027</td><td>Oropharyngeal swab</td></tr><tr><td>608172011</td><td>Swab from nasal sinus</td></tr><tr><td>1162766848</td><td>Saliva specimen</td></tr><tr><td>1695591348</td><td>Blood specimen</td></tr></table></li></ul></div>"
   },
   "url": "http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-sample-origin-covid-19",
-  "version": "0.3.1",
+  "version": "1.0.0",
   "name": "WHO_DDCC_Sample_Origin_COVID_19",
   "title": "WHO Speciman Sample Origin (COVID-19)",
   "status": "draft",
-  "date": "2022-03-21T18:09:33+00:00",
+  "date": "2022-03-22T20:54:15+00:00",
   "publisher": "WHO",
   "contact": [
     {
@@ -37,43 +37,27 @@
   "compose": {
     "include": [
       {
-        "system": "http://snomed.info/sct",
+        "system": "http://id.who.int/icd/entity",
         "concept": [
           {
-            "code": "258500001",
+            "code": "50872817",
             "display": "Nasopharyngeal swab"
           },
           {
-            "code": "461911000124106",
+            "code": "555916027",
             "display": "Oropharyngeal swab"
           },
           {
-            "code": "472881004",
-            "display": "Pharyngeal swab"
-          },
-          {
-            "code": "472901003",
+            "code": "608172011",
             "display": "Swab from nasal sinus"
           },
           {
-            "code": "119342007",
+            "code": "1162766848",
             "display": "Saliva specimen"
           },
           {
-            "code": "119297000",
+            "code": "1695591348",
             "display": "Blood specimen"
-          },
-          {
-            "code": "119361006",
-            "display": "Plasma specimen"
-          },
-          {
-            "code": "119364003",
-            "display": "Serum specimen"
-          },
-          {
-            "code": "122592007",
-            "display": "Acellular blood (serum or plasma) specimen"
           }
         ]
       }

@@ -29,11 +29,11 @@
     <valueCode value="not-classified"/>
   </extension>
   <url value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument"/>
-  <version value="0.3.1"/>
+  <version value="1.0.0"/>
   <name value="DDCCDocument"/>
   <title value="DDCC Document"/>
   <status value="active"/>
-  <date value="2022-03-21T18:09:33+00:00"/>
+  <date value="2022-03-22T20:54:15+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>

@@ -16,11 +16,11 @@
     }
   ],
   "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocument",
-  "version": "0.3.1",
+  "version": "1.0.0",
   "name": "DDCCVSDocument",
   "title": "DDCC:VS Document",
   "status": "active",
-  "date": "2022-03-21T18:09:33+00:00",
+  "date": "2022-03-22T20:54:15+00:00",
   "publisher": "WHO",
   "contact": [
     {

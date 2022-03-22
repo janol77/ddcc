@@ -3,14 +3,14 @@
   "id": "fhir.who.ddcc-vs",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ddccvs</h2><p>The official URL for this implementation guide is: </p><pre>http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc-vs</pre><div><p>TODO</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ddccvs</h2><p>The official URL for this implementation guide is: </p><pre>http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc-vs</pre><div><p>This WHO Digital Documentation of COVID-19 Certificates (DDCC) Implementation Guide details how to use Health Level 7 (HL7) Fast Healthcare Interoperability Resources (FHIR) for consistent digital representation of COVID-19 certificates and interoperability.</p>\n</div></div>"
   },
   "url": "http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc-vs",
-  "version": "0.3.1",
+  "version": "1.0.0",
   "name": "ddccvs",
   "title": "WHO Digital Documentation of COVID-19 Certificates (DDCC)",
   "status": "draft",
-  "date": "2021-11-12",
+  "date": "2022-03-22",
   "publisher": "WHO",
   "contact": [
     {
@@ -23,7 +23,7 @@
       ]
     }
   ],
-  "description": "TODO",
+  "description": "This WHO Digital Documentation of COVID-19 Certificates (DDCC) Implementation Guide details how to use Health Level 7 (HL7) Fast Healthcare Interoperability Resources (FHIR) for consistent digital representation of COVID-19 certificates and interoperability.",
   "jurisdiction": [
     {
       "coding": [
@@ -1934,20 +1934,6 @@
           }
         ],
         "reference": {
-          "reference": "ConceptMap/who-ddcc-map-icd11-sct-test-result"
-        },
-        "name": "WHO_DDCC_Map_ICD11_to_SCT_Test_Result",
-        "description": "Mapping from ICD-11 to SNOMED CT for COVID-19 Test Result",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ConceptMap"
-          }
-        ],
-        "reference": {
           "reference": "ConceptMap/who-ddcc-map-icd11-sct-vaccines"
         },
         "name": "WHO_DDCC_Map_ICD11_to_SCT_Vaccines",
@@ -1962,10 +1948,24 @@
           }
         ],
         "reference": {
-          "reference": "ConceptMap/who-ddcc-map-loinc-sct-type-of-test"
+          "reference": "ConceptMap/who-ddcc-map-ichi-sct-type-of-test"
         },
         "name": "WHO_DDCC_Map_LOINC_to_SCT_Type_of_Test",
         "description": "Mapping from LOINC to SNOMED CT for COVID-19 Type of Test",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ConceptMap"
+          }
+        ],
+        "reference": {
+          "reference": "ConceptMap/who-ddcc-map-sct-ichi-specimen-origin"
+        },
+        "name": "WHO_DDCC_Map_ICD11_to_SCT_Test_Result",
+        "description": "Mapping from ICD-11 to SNOMED CT for COVID-19 Test Result",
         "exampleBoolean": false
       },
       {

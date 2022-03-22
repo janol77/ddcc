@@ -3,15 +3,15 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="fhir.who.ddcc-vs"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ddccvs</h2><p>The official URL for this implementation guide is: </p><pre>http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc-vs</pre><div><p>TODO</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ddccvs</h2><p>The official URL for this implementation guide is: </p><pre>http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc-vs</pre><div><p>This WHO Digital Documentation of COVID-19 Certificates (DDCC) Implementation Guide details how to use Health Level 7 (HL7) Fast Healthcare Interoperability Resources (FHIR) for consistent digital representation of COVID-19 certificates and interoperability.</p>
 </div></div>
   </text>
   <url value="http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc-vs"/>
-  <version value="0.3.1"/>
+  <version value="1.0.0"/>
   <name value="ddccvs"/>
   <title value="WHO Digital Documentation of COVID-19 Certificates (DDCC)"/>
   <status value="draft"/>
-  <date value="2021-11-12"/>
+  <date value="2022-03-22"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -20,7 +20,7 @@
       <value value="http://who.int"/>
     </telecom>
   </contact>
-  <description value="TODO"/>
+  <description value="This WHO Digital Documentation of COVID-19 Certificates (DDCC) Implementation Guide details how to use Health Level 7 (HL7) Fast Healthcare Interoperability Resources (FHIR) for consistent digital representation of COVID-19 certificates and interoperability."/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -1458,17 +1458,6 @@
         <valueString value="ConceptMap"/>
       </extension>
       <reference>
-        <reference value="ConceptMap/who-ddcc-map-icd11-sct-test-result"/>
-      </reference>
-      <name value="WHO_DDCC_Map_ICD11_to_SCT_Test_Result"/>
-      <description value="Mapping from ICD-11 to SNOMED CT for COVID-19 Test Result"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ConceptMap"/>
-      </extension>
-      <reference>
         <reference value="ConceptMap/who-ddcc-map-icd11-sct-vaccines"/>
       </reference>
       <name value="WHO_DDCC_Map_ICD11_to_SCT_Vaccines"/>
@@ -1480,10 +1469,21 @@
         <valueString value="ConceptMap"/>
       </extension>
       <reference>
-        <reference value="ConceptMap/who-ddcc-map-loinc-sct-type-of-test"/>
+        <reference value="ConceptMap/who-ddcc-map-ichi-sct-type-of-test"/>
       </reference>
       <name value="WHO_DDCC_Map_LOINC_to_SCT_Type_of_Test"/>
       <description value="Mapping from LOINC to SNOMED CT for COVID-19 Type of Test"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/who-ddcc-map-sct-ichi-specimen-origin"/>
+      </reference>
+      <name value="WHO_DDCC_Map_ICD11_to_SCT_Test_Result"/>
+      <description value="Mapping from ICD-11 to SNOMED CT for COVID-19 Test Result"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
