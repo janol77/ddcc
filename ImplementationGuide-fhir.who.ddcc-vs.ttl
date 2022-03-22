@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "fhir.who.ddcc-vs"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ddccvs</h2><p>The official URL for this implementation guide is: </p><pre>http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc-vs</pre><div><p>TODO</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ddccvs</h2><p>The official URL for this implementation guide is: </p><pre>http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc-vs</pre><div><p>This WHO Digital Documentation of COVID-19 Certificates (DDCC) Implementation Guide details how to use Health Level 7 (HL7) Fast Healthcare Interoperability Resources (FHIR) for consistent digital representation of COVID-19 certificates and interoperability.</p>\n</div></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc-vs"];
-  fhir:ImplementationGuide.version [ fhir:value "0.3.1"];
+  fhir:ImplementationGuide.version [ fhir:value "1.0.0"];
   fhir:ImplementationGuide.name [ fhir:value "ddccvs"];
   fhir:ImplementationGuide.title [ fhir:value "WHO Digital Documentation of COVID-19 Certificates (DDCC)"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-11-12"^^xsd:date];
+  fhir:ImplementationGuide.date [ fhir:value "2022-03-22"^^xsd:date];
   fhir:ImplementationGuide.publisher [ fhir:value "WHO"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -28,7 +28,7 @@
        fhir:ContactPoint.value [ fhir:value "http://who.int" ]
      ]
   ];
-  fhir:ImplementationGuide.description [ fhir:value "TODO"];
+  fhir:ImplementationGuide.description [ fhir:value "This WHO Digital Documentation of COVID-19 Certificates (DDCC) Implementation Guide details how to use Health Level 7 (HL7) Fast Healthcare Interoperability Resources (FHIR) for consistent digital representation of COVID-19 certificates and interoperability."];
   fhir:ImplementationGuide.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -2067,11 +2067,11 @@
          fhir:Extension.valueString [ fhir:value "ConceptMap" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-sct-test-result>;
-         fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-icd11-sct-test-result" ]
+         fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-sct-vaccines>;
+         fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-icd11-sct-vaccines" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_ICD11_to_SCT_Test_Result" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from ICD-11 to SNOMED CT for COVID-19 Test Result" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_ICD11_to_SCT_Vaccines" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from ICD-11 to SNOMED CT for COVID-19 Vaccines" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 118;
@@ -2081,11 +2081,11 @@
          fhir:Extension.valueString [ fhir:value "ConceptMap" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-sct-vaccines>;
-         fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-icd11-sct-vaccines" ]
+         fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-ichi-sct-type-of-test>;
+         fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-ichi-sct-type-of-test" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_ICD11_to_SCT_Vaccines" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from ICD-11 to SNOMED CT for COVID-19 Vaccines" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_LOINC_to_SCT_Type_of_Test" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from LOINC to SNOMED CT for COVID-19 Type of Test" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 119;
@@ -2095,11 +2095,11 @@
          fhir:Extension.valueString [ fhir:value "ConceptMap" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-loinc-sct-type-of-test>;
-         fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-loinc-sct-type-of-test" ]
+         fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-sct-ichi-specimen-origin>;
+         fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-sct-ichi-specimen-origin" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_LOINC_to_SCT_Type_of_Test" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from LOINC to SNOMED CT for COVID-19 Type of Test" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_ICD11_to_SCT_Test_Result" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from ICD-11 to SNOMED CT for COVID-19 Test Result" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 120;

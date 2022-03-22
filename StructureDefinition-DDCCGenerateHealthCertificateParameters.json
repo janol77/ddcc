@@ -12,11 +12,11 @@
     }
   ],
   "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCGenerateHealthCertificateParameters",
-  "version": "0.3.1",
+  "version": "1.0.0",
   "name": "DDCCGenerateHealthCertificateParameters",
   "title": "DDCC Generate Health Certificate Parameters",
   "status": "active",
-  "date": "2022-03-21T18:09:33+00:00",
+  "date": "2022-03-22T20:54:15+00:00",
   "publisher": "WHO",
   "contact": [
     {

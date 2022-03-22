@@ -12,11 +12,11 @@
     }
   ],
   "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCGenerateHealthFolderParameters",
-  "version": "0.3.1",
+  "version": "1.0.0",
   "name": "DDCCGenerateHealthFolderParameters",
   "title": "DDCC Generate Health Folder Parameters",
   "status": "active",
-  "date": "2022-03-21T18:09:33+00:00",
+  "date": "2022-03-22T20:54:15+00:00",
   "publisher": "WHO",
   "contact": [
     {

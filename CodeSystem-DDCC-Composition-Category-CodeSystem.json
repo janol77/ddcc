@@ -6,11 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">ddcc-vs<a name=\"DDCC-Composition-Category-CodeSystem-ddcc-vs\"> </a></td><td>DDCC:VS</td></tr><tr><td style=\"white-space:nowrap\">ddcc-tr<a name=\"DDCC-Composition-Category-CodeSystem-ddcc-tr\"> </a></td><td>DDCC:TR</td></tr></table></div>"
   },
   "url": "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem",
-  "version": "0.3.1",
+  "version": "1.0.0",
   "name": "DDCC_Composition_Category_CodeSystem",
   "title": "DDCC Composition Category Codes",
   "status": "active",
-  "date": "2022-03-21T18:09:33+00:00",
+  "date": "2022-03-22T20:54:15+00:00",
   "publisher": "WHO",
   "contact": [
     {

@@ -10,10 +10,10 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><pre>map &quot;http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSToAddBundle&quot; = &quot;CoreDataSetVSToAddBundle&quot;\r\n\r\n\r\nuses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSet.VS&quot; alias DDCCVS as source\r\nuses &quot;http://hl7.org/fhir/StructureDefinition/Bundle&quot; alias AddBundle as target\r\n\r\nimports &quot;http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSLibrary&quot;\r\n\r\ngroup CoreDataSetToAddBundle(source ddcc : DDCCVS, target bundle : AddBundle) {\r\n  ddcc -&gt; bundle then VSToAddBundle(ddcc, bundle) &quot;setup add bundle&quot;;\r\n}\r\n\r\n</pre></div>"
   },
   "url": "http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSToAddBundle",
-  "version": "0.3.1",
+  "version": "1.0.0",
   "name": "CoreDataSetVSToAddBundle",
   "status": "draft",
-  "date": "2022-03-21T18:09:33+00:00",
+  "date": "2022-03-22T20:54:15+00:00",
   "publisher": "WHO",
   "contact": [
     {
