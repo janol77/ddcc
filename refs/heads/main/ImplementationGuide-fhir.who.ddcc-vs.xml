@@ -1733,8 +1733,8 @@
         <generation value="html"/>
       </page>
       <page>
-        <nameUrl value="functional_requirements_mapping.html"/>
-        <title value="Functional Requirements Mapping"/>
+        <nameUrl value="functional_requirements.html"/>
+        <title value="Functional Requirements"/>
         <generation value="markdown"/>
       </page>
       <page>
