@@ -128,7 +128,7 @@ group ImmRecToDDCCVS(source immRec : DDCCImmunizationRecommendation, target vacc
   <version value="1.0.0"/>
   <name value="ResourcesToCoreDataSet"/>
   <status value="draft"/>
-  <date value="2022-03-23T00:19:03+00:00"/>
+  <date value="2022-03-23T00:33:43+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
