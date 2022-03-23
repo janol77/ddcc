@@ -1733,6 +1733,11 @@
         <generation value="html"/>
       </page>
       <page>
+        <nameUrl value="functional_requirements_mapping.html"/>
+        <title value="Functional Requirements Mapping"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="maps.html"/>
         <title value="Maps"/>
         <generation value="html"/>
