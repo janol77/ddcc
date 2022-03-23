@@ -16,7 +16,7 @@
   fhir:StructureMap.version [ fhir:value "1.0.0"];
   fhir:StructureMap.name [ fhir:value "svc-map-qr-uvci-bundle"];
   fhir:StructureMap.status [ fhir:value "draft"];
-  fhir:StructureMap.date [ fhir:value "2022-03-23T20:39:07+00:00"^^xsd:dateTime];
+  fhir:StructureMap.date [ fhir:value "2022-03-23T21:03:35+00:00"^^xsd:dateTime];
   fhir:StructureMap.publisher [ fhir:value "WHO"];
   fhir:StructureMap.contact [
      fhir:index 0;
