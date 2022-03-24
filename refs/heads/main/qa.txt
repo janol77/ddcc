@@ -1,10 +1,10 @@
 ﻿ddccvs : Validation Results
 =========================================
 
-err = 388, warn = 99, info = 30
+err = 357, warn = 97, info = 30
 IG Publisher Version: 1.1.113
-Generated Wed Mar 23 21:06:26 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc-vs#1.0.0 (canonical = http://worldhealthorganization.github.io/ddcc)
- Build Errors : 870 / 58 / 0
+Generated Thu Mar 24 19:06:25 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0.0 (canonical = http://worldhealthorganization.github.io/ddcc)
+ Build Errors : 865 / 57 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 2 / 0 / 12
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Arabic : 2 / 0 / 12
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Chinese : 2 / 0 / 12
@@ -47,7 +47,7 @@ Generated Wed Mar 23 21:06:26 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc-vs#
  /github/workspace/fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-French : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Russian : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Spanish : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.who.ddcc-vs : 0 / 15 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.who.ddcc : 0 / 15 / 1
  /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthFolder : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-revokeHealthCertificate : 1 / 0 / 1
@@ -142,7 +142,6 @@ Generated Wed Mar 23 21:06:26 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc-vs#
  /github/workspace/input/resources/StructureMap-QRespToVSCoreDataSet : 54 / 0 / 1
  /github/workspace/input/resources/StructureMap-ResourcesToCoreDataSet : 61 / 0 / 1
  /github/workspace/input/resources/StructureMap-ResourcesToVSCoreDataSet : 61 / 0 / 1
- /github/workspace/input/resources/svc-map-qr-uvci-bundle : 31 / 1 / 1
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Composition/DDCC-Composition-Example-Arabic.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -202,7 +201,6 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/QRespToVSCoreDataSet.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/ResourcesToCoreDataSet.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/ResourcesToVSCoreDataSet.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/svc-map-qr-uvci-bundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/Bundle-DDCC-TX-SHE-bundle-example-1.change.history.html#/html/body/div/div/div/p/a at Line 278, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/Bundle-DDCC-TX-SHE-bundle-example-1.html#/html/body/div/div/div/p/a at Line 302, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/Bundle-DDCC-TX-SHE-bundle-example-1.json.html#/html/body/div/div/div/p/a at Line 525, column 135: The link 'license.html' for "License" cannot be resolved
@@ -584,7 +582,7 @@ ERROR: /github/workspace/output/StructureDefinition-DDCCCoreDataSet.TR.html#/htm
 ERROR: /github/workspace/output/StructureDefinition-DDCCCoreDataSet.TR.profile.history.html#/html/body/div/div/div/p/a at Line 315, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCCoreDataSet.TR.profile.json.html#/html/body/div/div/div/p/a at Line 1206, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCCoreDataSet.TR.profile.ttl.html#/html/body/div/div/div/p/a at Line 1050, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCCoreDataSet.TR.profile.xml.html#/html/body/div/div/div/p/a at Line 1095, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCCoreDataSet.TR.profile.xml.html#/html/body/div/div/div/p/a at Line 1094, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCCoreDataSet.VS-definitions.html#/html/body/div/div/div/p/a at Line 473, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCCoreDataSet.VS-examples.html#/html/body/div/div/div/p/a at Line 326, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCCoreDataSet.VS-mappings.html#/html/body/div/div/div/p/a at Line 368, column 135: The link 'license.html' for "License" cannot be resolved
@@ -986,11 +984,6 @@ ERROR: /github/workspace/output/StructureMap-ResourcesToVSCoreDataSet.html#/html
 ERROR: /github/workspace/output/StructureMap-ResourcesToVSCoreDataSet.json.html#/html/body/div/div/div/p/a at Line 1691, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-ResourcesToVSCoreDataSet.ttl.html#/html/body/div/div/div/p/a at Line 1330, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-ResourcesToVSCoreDataSet.xml.html#/html/body/div/div/div/p/a at Line 1458, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureMap-svc-map-qr-uvci-bundle.change.history.html#/html/body/div/div/div/p/a at Line 278, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureMap-svc-map-qr-uvci-bundle.html#/html/body/div/div/div/p/a at Line 351, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureMap-svc-map-qr-uvci-bundle.json.html#/html/body/div/div/div/p/a at Line 1094, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureMap-svc-map-qr-uvci-bundle.ttl.html#/html/body/div/div/div/p/a at Line 917, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureMap-svc-map-qr-uvci-bundle.xml.html#/html/body/div/div/div/p/a at Line 973, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-DDCC-Composition-Category-ValueSet.change.history.html#/html/body/div/div/div/p/a at Line 278, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-DDCC-Composition-Category-ValueSet.html#/html/body/div/div/div/p/a at Line 354, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-DDCC-Composition-Category-ValueSet.json.html#/html/body/div/div/div/p/a at Line 324, column 135: The link 'license.html' for "License" cannot be resolved
@@ -1047,7 +1040,7 @@ ERROR: /github/workspace/output/ValueSet-who-ddcc-vaccines-covid-19.json.html#/h
 ERROR: /github/workspace/output/ValueSet-who-ddcc-vaccines-covid-19.ttl.html#/html/body/div/div/div/p/a at Line 424, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-who-ddcc-vaccines-covid-19.xml.html#/html/body/div/div/div/p/a at Line 440, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/actors.html#/html/body/div/div/div/p/a at Line 258, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 1513, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 1507, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/background.html#/html/body/div/div/div/p/a at Line 217, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/changes.html#/html/body/div/div/div/p/a at Line 234, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/concepts.html#/html/body/div/div/div/p/a at Line 417, column 135: The link 'license.html' for "License" cannot be resolved
@@ -1061,7 +1054,7 @@ ERROR: /github/workspace/output/expected_actions.html#/html/body/div/div/div/p/a
 ERROR: /github/workspace/output/functional.html#/html/body/div/div/div/p/a at Line 222, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/functional_requirements.html#/html/body/div/div/div/p/a at Line 1186, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 325, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/maps.html#/html/body/div/div/div/p/a at Line 232, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/maps.html#/html/body/div/div/div/p/a at Line 231, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/personas.html#/html/body/div/div/div/p/a at Line 219, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/references.html#/html/body/div/div/div/p/a at Line 242, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/requirements.html#/html/body/div/div/div/p/a at Line 229, column 135: The link 'license.html' for "License" cannot be resolved
@@ -1181,31 +1174,31 @@ WARNING: Immunization/DDCC-Immunization-Spanish: Immunization.protocolApplied[0]
 == fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-French.json ==
 == fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Russian.json ==
 == fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Spanish.json ==
-== fsh-generated/resources/ImplementationGuide-fhir.who.ddcc-vs.json ==
-WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[0].description: value should not start or finish with whitespace 'Describes...(DDCC).  '
-WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[2].description: value should not start or finish with whitespace 'A...DDCC.
+== fsh-generated/resources/ImplementationGuide-fhir.who.ddcc.json ==
+WARNING: ImplementationGuide/fhir.who.ddcc: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+WARNING: ImplementationGuide/fhir.who.ddcc: ImplementationGuide.definition.resource[0].description: value should not start or finish with whitespace 'Describes...(DDCC).  '
+WARNING: ImplementationGuide/fhir.who.ddcc: ImplementationGuide.definition.resource[2].description: value should not start or finish with whitespace 'A...DDCC.
 '
-WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[5].description: value should not start or finish with whitespace 'A...signature.
+WARNING: ImplementationGuide/fhir.who.ddcc: ImplementationGuide.definition.resource[5].description: value should not start or finish with whitespace 'A...signature.
 '
-WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[13].description: value should not start or finish with whitespace 'A...who-ddcc-patient-1
+WARNING: ImplementationGuide/fhir.who.ddcc: ImplementationGuide.definition.resource[13].description: value should not start or finish with whitespace 'A...who-ddcc-patient-1
 '
-WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[14].description: value should not start or finish with whitespace 'Container...Patient](StructureDefinition-DDCCPatient.html).
+WARNING: ImplementationGuide/fhir.who.ddcc: ImplementationGuide.definition.resource[14].description: value should not start or finish with whitespace 'Container...Patient](StructureDefinition-DDCCPatient.html).
 '
-WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[15].description: value should not start or finish with whitespace 'Association...Patient](StructureDefinition-DDCCPatient.html).
+WARNING: ImplementationGuide/fhir.who.ddcc: ImplementationGuide.definition.resource[15].description: value should not start or finish with whitespace 'Association...Patient](StructureDefinition-DDCCPatient.html).
 '
-WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[19].description: value should not start or finish with whitespace 'Describes...Questionaire](StructureDefinition-DDCCQuestionnaire.html). '
-WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[25].description: value should not start or finish with whitespace 'A...transaction.
+WARNING: ImplementationGuide/fhir.who.ddcc: ImplementationGuide.definition.resource[19].description: value should not start or finish with whitespace 'Describes...Questionaire](StructureDefinition-DDCCQuestionnaire.html). '
+WARNING: ImplementationGuide/fhir.who.ddcc: ImplementationGuide.definition.resource[25].description: value should not start or finish with whitespace 'A...transaction.
 '
-WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[26].description: value should not start or finish with whitespace 'Describes...(DDCC:TR).  '
-WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[27].description: value should not start or finish with whitespace 'A...DDCC:VS.
+WARNING: ImplementationGuide/fhir.who.ddcc: ImplementationGuide.definition.resource[26].description: value should not start or finish with whitespace 'Describes...(DDCC:TR).  '
+WARNING: ImplementationGuide/fhir.who.ddcc: ImplementationGuide.definition.resource[27].description: value should not start or finish with whitespace 'A...DDCC:VS.
 '
-WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[28].description: value should not start or finish with whitespace 'A...signature.
+WARNING: ImplementationGuide/fhir.who.ddcc: ImplementationGuide.definition.resource[28].description: value should not start or finish with whitespace 'A...signature.
 '
-WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[31].description: value should not start or finish with whitespace 'Describes...(DDCC:VS).  '
-WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[32].description: value should not start or finish with whitespace 'A...DDCC:VS.
+WARNING: ImplementationGuide/fhir.who.ddcc: ImplementationGuide.definition.resource[31].description: value should not start or finish with whitespace 'Describes...(DDCC:VS).  '
+WARNING: ImplementationGuide/fhir.who.ddcc: ImplementationGuide.definition.resource[32].description: value should not start or finish with whitespace 'A...DDCC:VS.
 '
-WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[33].description: value should not start or finish with whitespace 'A...signature.
+WARNING: ImplementationGuide/fhir.who.ddcc: ImplementationGuide.definition.resource[33].description: value should not start or finish with whitespace 'A...signature.
 '
 == fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.json ==
 ERROR: OperationDefinition.url: Resource id/url mismatch: DDCC-QuestionnaireResponse-generateHealthCertificate/http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCGenerateHealthCertificate
@@ -1647,36 +1640,3 @@ ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[5].rule[0].rule
 ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[5].rule[0].rule[0].source[0].variable: id value 'due_date' is not valid
 ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[5].rule[0].rule[0].rule[0].name: id value 'set due date' is not valid
 ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[5].rule[0].rule[0].rule[0].source[0].context: id value 'due_date' is not valid
-== input/resources/svc-map-qr-uvci-bundle.xml ==
-WARNING: StructureMap/svc-map-qr-uvci-bundle: StructureMap: smp-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[0].name: id value 'Decode_QR' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[0].rule[0].name: id value 'Create resources and process bundle' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[0].rule[0].dependent[0].name: id value 'Decode_QR_Patient' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[0].rule[0].dependent[1].name: id value 'Decode_QR_Organization' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[0].rule[0].dependent[2].name: id value 'Decode_QR_Bundle' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[1].name: id value 'Decode_QR_Patient' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[1].rule[0].name: id value 'Load Name' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[1].rule[1].name: id value 'Load Patient Identifer' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[1].rule[2].name: id value 'Load Birth Date' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[2].name: id value 'Decode_QR_Organization' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[2].rule[0].name: id value 'Load PHA ID' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].name: id value 'Decode_QR_Bundle' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].rule[0].name: id value 'Set Bundle Metadata' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].rule[1].name: id value 'Load Paper SVC ID' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].rule[2].name: id value 'Load Signature' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].rule[3].name: id value 'Process Composition Entry' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].rule[3].dependent[0].name: id value 'Decode_QR_Composition' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[4].name: id value 'Decode_QR_Composition' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[4].input[1].name: id value ',' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[4].rule[0].name: id value 'Set Composition Meta' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[4].rule[1].name: id value 'Load Digital SVC ID' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].name: id value 'Decode_QR_Provenance' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].name: id value 'Set provenance' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].source[1].variable: id value 'e_digital' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[3].context: id value 'e_digital' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[4].context: id value 'e_digital' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[5].context: id value 'e_digital' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[6].context: id value 'e_paper' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[7].context: id value 'e_paper' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[8].context: id value 'e_paper' is not valid
-ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].rule[0].target[1].variable: id value '"Set who"' is not valid

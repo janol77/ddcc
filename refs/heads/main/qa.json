@@ -1,11 +1,11 @@
 {
-  "url": "http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc-vs",
+  "url": "http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc",
   "name": "ddccvs",
-  "package-id": "fhir.who.ddcc-vs",
+  "package-id": "fhir.who.ddcc",
   "ig-ver": "1.0.0",
-  "date": "Wed, 23 Mar, 2022 21:03:35 +0000",
-  "errs": 388,
-  "warnings": 99,
+  "date": "Thu, 24 Mar, 2022 19:03:35 +0000",
+  "errs": 357,
+  "warnings": 97,
   "hints": 30,
   "version": "4.0.1",
   "tool": "5.0.0-snapshot1 (3)"

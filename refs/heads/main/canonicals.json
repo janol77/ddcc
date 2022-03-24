@@ -35,13 +35,6 @@
     "name": "PatientUvIps"
   },
   {
-    "id": "svc-map-qr-uvci-bundle",
-    "type": "StructureMap",
-    "url": "http://who-int.github.io/svc/StructureMap/svc-map-qr-uvci-bundle",
-    "version": "1.0.0",
-    "name": "svc-map-qr-uvci-bundle"
-  },
-  {
     "id": "WHO.DDCC.Generator",
     "type": "CapabilityStatement",
     "url": "http://worldhealthorganization.github.io/ddcc/CapabilityStatement/WHO.DDCC.Generator",
@@ -154,9 +147,9 @@
     "name": "DDCCVSCoreDataSetQuestionnaire"
   },
   {
-    "id": "fhir.who.ddcc-vs",
+    "id": "fhir.who.ddcc",
     "type": "ImplementationGuide",
-    "url": "http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc-vs",
+    "url": "http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc",
     "version": "1.0.0",
     "name": "ddccvs"
   },
