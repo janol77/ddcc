@@ -10,11 +10,11 @@
   fhir:Resource.id [ fhir:value "fhir.who.ddcc"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ddccvs</h2><p>The official URL for this implementation guide is: </p><pre>http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc</pre><div><p>This WHO Digital Documentation of COVID-19 Certificates (DDCC) Implementation Guide details how to use Health Level 7 (HL7) Fast Healthcare Interoperability Resources (FHIR) for consistent digital representation of COVID-19 certificates and interoperability.</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ddcc</h2><p>The official URL for this implementation guide is: </p><pre>http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc</pre><div><p>This WHO Digital Documentation of COVID-19 Certificates (DDCC) Implementation Guide details how to use Health Level 7 (HL7) Fast Healthcare Interoperability Resources (FHIR) for consistent digital representation of COVID-19 certificates and interoperability.</p>\n</div></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc"];
   fhir:ImplementationGuide.version [ fhir:value "1.0.0"];
-  fhir:ImplementationGuide.name [ fhir:value "ddccvs"];
+  fhir:ImplementationGuide.name [ fhir:value "ddcc"];
   fhir:ImplementationGuide.title [ fhir:value "WHO Digital Documentation of COVID-19 Certificates (DDCC)"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.date [ fhir:value "2022-03-22"^^xsd:date];
