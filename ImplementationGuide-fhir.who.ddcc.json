@@ -2260,11 +2260,6 @@
           "generation": "html"
         },
         {
-          "nameUrl": "personas.html",
-          "title": "Personas",
-          "generation": "html"
-        },
-        {
           "nameUrl": "references.html",
           "title": "References",
           "generation": "html"

@@ -1728,11 +1728,6 @@
         <generation value="html"/>
       </page>
       <page>
-        <nameUrl value="personas.html"/>
-        <title value="Personas"/>
-        <generation value="html"/>
-      </page>
-      <page>
         <nameUrl value="references.html"/>
         <title value="References"/>
         <generation value="html"/>
