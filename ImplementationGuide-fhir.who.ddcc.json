@@ -2245,11 +2245,6 @@
           "generation": "html"
         },
         {
-          "nameUrl": "expected_actions.html",
-          "title": "Expected Actions",
-          "generation": "html"
-        },
-        {
           "nameUrl": "functional.html",
           "title": "Functional",
           "generation": "html"

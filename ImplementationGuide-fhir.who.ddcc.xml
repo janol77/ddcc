@@ -1713,11 +1713,6 @@
         <generation value="html"/>
       </page>
       <page>
-        <nameUrl value="expected_actions.html"/>
-        <title value="Expected Actions"/>
-        <generation value="html"/>
-      </page>
-      <page>
         <nameUrl value="functional.html"/>
         <title value="Functional"/>
         <generation value="html"/>
