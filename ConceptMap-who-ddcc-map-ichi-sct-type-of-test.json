@@ -3,9 +3,9 @@
   "id": "who-ddcc-map-ichi-sct-type-of-test",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ICHI_SNOMED_CT_COVID19_Type_of_Test (http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_LOINC_to_SCT_Type_of_Test)</h2><p>Mapping from http://id.who.int/icd/entity to <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html\">http://snomed.info/sct</a></p><p>DRAFT (not intended for production usage). Published on 2022-03-22 by WHO (WHO: <a href=\"http://who.int\">http://who.int</a>). </p><div><p>Rule-based mappings between ICHI and SNOMED CT for COVID-19 Type of Test</p>\n</div><br/><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Destination Code</b></td></tr><tr><td colspan=\"3\">Mapping from <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html\">Logical Observation Identifiers, Names and Codes (LOINC)</a> to <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html\">SNOMED CT International Edition</a></td></tr><tr><td>LP6464-4</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>117244003 (Nucleic acid probe method with amplification)</td></tr><tr><td>LP217198-3</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>414464004 (Immunoassay method (procedure))</td></tr></table><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Destination Code</b></td></tr><tr><td colspan=\"3\">Mapping from <code>http://id.who.int/icd/entity</code> to <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html\">Logical Observation Identifiers, Names and Codes (LOINC)</a></td></tr><tr><td>1334426561</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>LP6464-4</td></tr><tr><td>2056159157</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>LP217198-3</td></tr></table><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Destination Code</b></td></tr><tr><td colspan=\"3\">Mapping from <code>http://id.who.int/icd/entity</code> to <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html\">SNOMED CT International Edition</a></td></tr><tr><td>1334426561</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>2056159157</td></tr><tr><td>LP217198-3</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>414464004 (Immunoassay method (procedure))</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ICHI_SNOMED_CT_COVID19_Type_of_Test (http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICHI_to_SCT_Type_of_Test)</h2><p>Mapping from http://id.who.int/icd/entity to <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html\">http://snomed.info/sct</a></p><p>DRAFT (not intended for production usage). Published on 2022-03-22 by WHO (WHO: <a href=\"http://who.int\">http://who.int</a>). </p><div><p>Rule-based mappings between ICHI and SNOMED CT for COVID-19 Type of Test</p>\n</div><br/><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Destination Code</b></td></tr><tr><td colspan=\"3\">Mapping from <code>http://id.who.int/icd/entity</code> to <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html\">SNOMED CT International Edition</a></td></tr><tr><td>1334426561</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>2056159157</td></tr><tr><td>LP217198-3</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>414464004 (Immunoassay method (procedure))</td></tr></table></div>"
   },
-  "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_LOINC_to_SCT_Type_of_Test",
+  "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICHI_to_SCT_Type_of_Test",
   "version": "1.0.0",
   "name": "ICHI_SNOMED_CT_COVID19_Type_of_Test",
   "title": "ConceptMap from ICHI to SNOMED CT for Type of Test",
@@ -38,54 +38,6 @@
   "sourceCanonical": "http://id.who.int/icd/entity",
   "targetCanonical": "http://snomed.info/sct",
   "group": [
-    {
-      "source": "http://loinc.org",
-      "target": "http://snomed.info/sct",
-      "element": [
-        {
-          "code": "LP6464-4",
-          "target": [
-            {
-              "code": "117244003",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "LP217198-3",
-          "target": [
-            {
-              "code": "414464004",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://id.who.int/icd/entity",
-      "target": "http://loinc.org",
-      "element": [
-        {
-          "code": "1334426561",
-          "target": [
-            {
-              "code": "LP6464-4",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "2056159157",
-          "target": [
-            {
-              "code": "LP217198-3",
-              "equivalence": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
     {
       "source": "http://id.who.int/icd/entity",
       "target": "http://snomed.info/sct",

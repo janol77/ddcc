@@ -112,11 +112,11 @@
     "name": "ICD_11_SNOMED_CT_COVID19_Disease"
   },
   {
-    "id": "who-ddcc-map-sct-ichi-specimen-origin",
+    "id": "who-ddcc-map-icd11-sct-test-result",
     "type": "ConceptMap",
     "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_SCT_Test_Result",
     "version": "1.0.0",
-    "name": "SNOMED_CT_ICHI_COVID19_Specimen_Origin"
+    "name": "ICD11_SNOMED_CT_COVID19_Test_Result"
   },
   {
     "id": "who-ddcc-map-icd11-sct-vaccines",
@@ -126,11 +126,39 @@
     "name": "ICD11_SNOMED_CT_COVID19_vaccines"
   },
   {
+    "id": "who-ddcc-map-ichi-loinc-type-of-test",
+    "type": "ConceptMap",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICHI_to_LOINC_Type_of_Test",
+    "version": "1.0.0",
+    "name": "ICHI_LOINC_COVID19_Type_of_Test"
+  },
+  {
+    "id": "who-ddcc-map-ichi-sct-specimen-origin",
+    "type": "ConceptMap",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICHI_to_SCT_Specimen_Origin",
+    "version": "1.0.0",
+    "name": "ICHI_SNOMED_CT_COVID19_Specimen_Origin"
+  },
+  {
     "id": "who-ddcc-map-ichi-sct-type-of-test",
+    "type": "ConceptMap",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICHI_to_SCT_Type_of_Test",
+    "version": "1.0.0",
+    "name": "ICHI_SNOMED_CT_COVID19_Type_of_Test"
+  },
+  {
+    "id": "who-ddcc-map-loinc-sct-type-of-test",
     "type": "ConceptMap",
     "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_LOINC_to_SCT_Type_of_Test",
     "version": "1.0.0",
-    "name": "ICHI_SNOMED_CT_COVID19_Type_of_Test"
+    "name": "LOINC_SNOMED_CT_COVID19_Type_of_Test"
+  },
+  {
+    "id": "who-ddcc-map-sct-ichi-specimen-origin",
+    "type": "ConceptMap",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_SCT_to_ICHI_Specimen_Origin",
+    "version": "1.0.0",
+    "name": "SNOMED_CT_ICHI_COVID19_Specimen_Origin"
   },
   {
     "id": "DDCCTRCoreDataSetQuestionnaire",
