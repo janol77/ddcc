@@ -2301,11 +2301,6 @@
           "generation": "html"
         },
         {
-          "nameUrl": "functional.html",
-          "title": "Functional",
-          "generation": "html"
-        },
-        {
           "nameUrl": "functional_requirements.html",
           "title": "Functional Requirements",
           "generation": "markdown"

@@ -20,7 +20,7 @@
   fhir:StructureMap.version [ fhir:value "1.0.0"];
   fhir:StructureMap.name [ fhir:value "DDCCtoEUdcc"];
   fhir:StructureMap.status [ fhir:value "draft"];
-  fhir:StructureMap.date [ fhir:value "2022-03-28T23:45:02+00:00"^^xsd:dateTime];
+  fhir:StructureMap.date [ fhir:value "2022-03-28T23:47:33+00:00"^^xsd:dateTime];
   fhir:StructureMap.publisher [ fhir:value "WHO"];
   fhir:StructureMap.contact [
      fhir:index 0;
