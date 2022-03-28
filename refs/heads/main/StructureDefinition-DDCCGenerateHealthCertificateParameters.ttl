@@ -22,7 +22,7 @@
   fhir:StructureDefinition.name [ fhir:value "DDCCGenerateHealthCertificateParameters"];
   fhir:StructureDefinition.title [ fhir:value "DDCC Generate Health Certificate Parameters"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-03-26T22:00:49+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-28T14:06:51+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "WHO"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

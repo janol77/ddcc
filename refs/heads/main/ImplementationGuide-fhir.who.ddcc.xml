@@ -1728,6 +1728,11 @@
         <generation value="html"/>
       </page>
       <page>
+        <nameUrl value="reference_implementation.html"/>
+        <title value="Reference Implementation"/>
+        <generation value="html"/>
+      </page>
+      <page>
         <nameUrl value="references.html"/>
         <title value="References"/>
         <generation value="html"/>
