@@ -1757,11 +1757,6 @@
         <generation value="html"/>
       </page>
       <page>
-        <nameUrl value="functional.html"/>
-        <title value="Functional"/>
-        <generation value="html"/>
-      </page>
-      <page>
         <nameUrl value="functional_requirements.html"/>
         <title value="Functional Requirements"/>
         <generation value="markdown"/>

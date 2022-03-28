@@ -3,8 +3,8 @@
 
 err = 367, warn = 97, info = 30
 IG Publisher Version: 1.1.113
-Generated Mon Mar 28 23:47:52 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0.0 (canonical = http://worldhealthorganization.github.io/ddcc)
- Build Errors : 884 / 57 / 0
+Generated Mon Mar 28 23:50:47 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0.0 (canonical = http://worldhealthorganization.github.io/ddcc)
+ Build Errors : 883 / 57 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 2 / 0 / 12
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Arabic : 2 / 0 / 12
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Chinese : 2 / 0 / 12
@@ -1074,7 +1074,6 @@ ERROR: /github/workspace/output/dependencies.html#/html/body/div/div/div/p/a at 
 ERROR: /github/workspace/output/deployment.html#/html/body/div/div/div/p/a at Line 232, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/dictionary.html#/html/body/div/div/div/p/a at Line 1940, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/p/a at Line 265, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/functional.html#/html/body/div/div/div/p/a at Line 224, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/functional_requirements.html#/html/body/div/div/div/p/a at Line 1188, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 327, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/maps.html#/html/body/div/div/div/p/a at Line 233, column 135: The link 'license.html' for "License" cannot be resolved
