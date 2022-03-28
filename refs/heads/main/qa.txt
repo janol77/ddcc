@@ -1,10 +1,10 @@
 ﻿ddcc : Validation Results
 =========================================
 
-err = 357, warn = 97, info = 30
+err = 367, warn = 97, info = 30
 IG Publisher Version: 1.1.113
-Generated Mon Mar 28 18:51:21 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0.0 (canonical = http://worldhealthorganization.github.io/ddcc)
- Build Errors : 864 / 57 / 0
+Generated Mon Mar 28 20:11:37 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0.0 (canonical = http://worldhealthorganization.github.io/ddcc)
+ Build Errors : 884 / 57 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 2 / 0 / 12
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Arabic : 2 / 0 / 12
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Chinese : 2 / 0 / 12
@@ -32,8 +32,12 @@ Generated Mon Mar 28 18:51:21 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0
  /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-icd10-disease-targeted : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-agent-targeted : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-disease-targeted : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-test-result : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-vaccines : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-ichi-loinc-type-of-test : 3 / 0 / 1
+ /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-ichi-sct-specimen-origin : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-ichi-sct-type-of-test : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-loinc-sct-type-of-test : 3 / 0 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-sct-ichi-specimen-origin : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/Immunization-DDCC-Immunization-Arabic : 0 / 1 / 5
  /github/workspace/fsh-generated/resources/Immunization-DDCC-Immunization-Chinese : 0 / 1 / 5
@@ -351,21 +355,41 @@ ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-icd11-sct-disease-target
 ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-icd11-sct-disease-targeted.json.html#/html/body/div/div/div/p/a at Line 339, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-icd11-sct-disease-targeted.ttl.html#/html/body/div/div/div/p/a at Line 348, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-icd11-sct-disease-targeted.xml.html#/html/body/div/div/div/p/a at Line 329, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-icd11-sct-test-result.change.history.html#/html/body/div/div/div/p/a at Line 280, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-icd11-sct-test-result.html#/html/body/div/div/div/p/a at Line 316, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-icd11-sct-test-result.json.html#/html/body/div/div/div/p/a at Line 348, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-icd11-sct-test-result.ttl.html#/html/body/div/div/div/p/a at Line 354, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-icd11-sct-test-result.xml.html#/html/body/div/div/div/p/a at Line 335, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-icd11-sct-vaccines.change.history.html#/html/body/div/div/div/p/a at Line 280, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-icd11-sct-vaccines.html#/html/body/div/div/div/p/a at Line 316, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-icd11-sct-vaccines.json.html#/html/body/div/div/div/p/a at Line 366, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-icd11-sct-vaccines.ttl.html#/html/body/div/div/div/p/a at Line 366, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-icd11-sct-vaccines.xml.html#/html/body/div/div/div/p/a at Line 349, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-ichi-loinc-type-of-test.change.history.html#/html/body/div/div/div/p/a at Line 280, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-ichi-loinc-type-of-test.html#/html/body/div/div/div/p/a at Line 316, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-ichi-loinc-type-of-test.json.html#/html/body/div/div/div/p/a at Line 348, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-ichi-loinc-type-of-test.ttl.html#/html/body/div/div/div/p/a at Line 354, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-ichi-loinc-type-of-test.xml.html#/html/body/div/div/div/p/a at Line 335, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-ichi-sct-specimen-origin.change.history.html#/html/body/div/div/div/p/a at Line 280, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-ichi-sct-specimen-origin.html#/html/body/div/div/div/p/a at Line 316, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-ichi-sct-specimen-origin.json.html#/html/body/div/div/div/p/a at Line 411, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-ichi-sct-specimen-origin.ttl.html#/html/body/div/div/div/p/a at Line 396, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-ichi-sct-specimen-origin.xml.html#/html/body/div/div/div/p/a at Line 384, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-ichi-sct-type-of-test.change.history.html#/html/body/div/div/div/p/a at Line 280, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-ichi-sct-type-of-test.html#/html/body/div/div/div/p/a at Line 316, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-ichi-sct-type-of-test.json.html#/html/body/div/div/div/p/a at Line 396, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-ichi-sct-type-of-test.ttl.html#/html/body/div/div/div/p/a at Line 388, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-ichi-sct-type-of-test.xml.html#/html/body/div/div/div/p/a at Line 371, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-ichi-sct-type-of-test.json.html#/html/body/div/div/div/p/a at Line 348, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-ichi-sct-type-of-test.ttl.html#/html/body/div/div/div/p/a at Line 354, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-ichi-sct-type-of-test.xml.html#/html/body/div/div/div/p/a at Line 335, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-loinc-sct-type-of-test.change.history.html#/html/body/div/div/div/p/a at Line 280, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-loinc-sct-type-of-test.html#/html/body/div/div/div/p/a at Line 316, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-loinc-sct-type-of-test.json.html#/html/body/div/div/div/p/a at Line 348, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-loinc-sct-type-of-test.ttl.html#/html/body/div/div/div/p/a at Line 354, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-loinc-sct-type-of-test.xml.html#/html/body/div/div/div/p/a at Line 335, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-sct-ichi-specimen-origin.change.history.html#/html/body/div/div/div/p/a at Line 280, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-sct-ichi-specimen-origin.html#/html/body/div/div/div/p/a at Line 316, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-sct-ichi-specimen-origin.json.html#/html/body/div/div/div/p/a at Line 522, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-sct-ichi-specimen-origin.ttl.html#/html/body/div/div/div/p/a at Line 472, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-sct-ichi-specimen-origin.xml.html#/html/body/div/div/div/p/a at Line 469, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-sct-ichi-specimen-origin.json.html#/html/body/div/div/div/p/a at Line 411, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-sct-ichi-specimen-origin.ttl.html#/html/body/div/div/div/p/a at Line 396, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-who-ddcc-map-sct-ichi-specimen-origin.xml.html#/html/body/div/div/div/p/a at Line 384, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/Immunization-DDCC-Immunization-Arabic.change.history.html#/html/body/div/div/div/p/a at Line 280, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/Immunization-DDCC-Immunization-Arabic.html#/html/body/div/div/div/p/a at Line 280, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/Immunization-DDCC-Immunization-Arabic.json.html#/html/body/div/div/div/p/a at Line 361, column 135: The link 'license.html' for "License" cannot be resolved
@@ -1040,7 +1064,7 @@ ERROR: /github/workspace/output/ValueSet-who-ddcc-vaccines-covid-19.json.html#/h
 ERROR: /github/workspace/output/ValueSet-who-ddcc-vaccines-covid-19.ttl.html#/html/body/div/div/div/p/a at Line 426, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-who-ddcc-vaccines-covid-19.xml.html#/html/body/div/div/div/p/a at Line 442, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/actors.html#/html/body/div/div/div/p/a at Line 260, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 1509, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 1545, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/background.html#/html/body/div/div/div/p/a at Line 219, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/changes.html#/html/body/div/div/div/p/a at Line 255, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/concepts.html#/html/body/div/div/div/p/a at Line 419, column 135: The link 'license.html' for "License" cannot be resolved
@@ -1134,14 +1158,28 @@ ERROR: ConceptMap/who-ddcc-map-icd11-sct-agent-targeted: ConceptMap.target.ofTyp
 == fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-disease-targeted.json ==
 ERROR: ConceptMap.url: Resource id/url mismatch: who-ddcc-map-icd11-sct-disease-targeted/http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_SCT_Disease_Targeted
 ERROR: ConceptMap/who-ddcc-map-icd11-sct-disease-targeted: ConceptMap.target.ofType(canonical): Canonical URL 'http://snomed.info/sct' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+== fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-test-result.json ==
+ERROR: ConceptMap.url: Resource id/url mismatch: who-ddcc-map-icd11-sct-test-result/http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_SCT_Test_Result
+ERROR: ConceptMap/who-ddcc-map-icd11-sct-test-result: ConceptMap.target.ofType(canonical): Canonical URL 'http://snomed.info/sct' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
 == fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-vaccines.json ==
 ERROR: ConceptMap.url: Resource id/url mismatch: who-ddcc-map-icd11-sct-vaccines/http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_SCT_Vaccines
 ERROR: ConceptMap/who-ddcc-map-icd11-sct-vaccines: ConceptMap.target.ofType(canonical): Canonical URL 'http://snomed.info/sct' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+== fsh-generated/resources/ConceptMap-who-ddcc-map-ichi-loinc-type-of-test.json ==
+ERROR: ConceptMap.url: Resource id/url mismatch: who-ddcc-map-ichi-loinc-type-of-test/http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICHI_to_LOINC_Type_of_Test
+ERROR: ConceptMap/who-ddcc-map-ichi-loinc-type-of-test: ConceptMap.source.ofType(canonical): Canonical URL 'http://loinc.org' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: ConceptMap/who-ddcc-map-ichi-loinc-type-of-test: ConceptMap.target.ofType(canonical): Canonical URL 'http://snomed.info/sct' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+== fsh-generated/resources/ConceptMap-who-ddcc-map-ichi-sct-specimen-origin.json ==
+ERROR: ConceptMap.url: Resource id/url mismatch: who-ddcc-map-ichi-sct-specimen-origin/http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICHI_to_SCT_Specimen_Origin
+ERROR: ConceptMap/who-ddcc-map-ichi-sct-specimen-origin: ConceptMap.target.ofType(canonical): Canonical URL 'http://snomed.info/sct' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
 == fsh-generated/resources/ConceptMap-who-ddcc-map-ichi-sct-type-of-test.json ==
-ERROR: ConceptMap.url: Resource id/url mismatch: who-ddcc-map-ichi-sct-type-of-test/http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_LOINC_to_SCT_Type_of_Test
+ERROR: ConceptMap.url: Resource id/url mismatch: who-ddcc-map-ichi-sct-type-of-test/http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICHI_to_SCT_Type_of_Test
 ERROR: ConceptMap/who-ddcc-map-ichi-sct-type-of-test: ConceptMap.target.ofType(canonical): Canonical URL 'http://snomed.info/sct' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+== fsh-generated/resources/ConceptMap-who-ddcc-map-loinc-sct-type-of-test.json ==
+ERROR: ConceptMap.url: Resource id/url mismatch: who-ddcc-map-loinc-sct-type-of-test/http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_LOINC_to_SCT_Type_of_Test
+ERROR: ConceptMap/who-ddcc-map-loinc-sct-type-of-test: ConceptMap.source.ofType(canonical): Canonical URL 'http://loinc.org' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: ConceptMap/who-ddcc-map-loinc-sct-type-of-test: ConceptMap.target.ofType(canonical): Canonical URL 'http://snomed.info/sct' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
 == fsh-generated/resources/ConceptMap-who-ddcc-map-sct-ichi-specimen-origin.json ==
-ERROR: ConceptMap.url: Resource id/url mismatch: who-ddcc-map-sct-ichi-specimen-origin/http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_SCT_Test_Result
+ERROR: ConceptMap.url: Resource id/url mismatch: who-ddcc-map-sct-ichi-specimen-origin/http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_SCT_to_ICHI_Specimen_Origin
 ERROR: ConceptMap/who-ddcc-map-sct-ichi-specimen-origin: ConceptMap.source.ofType(canonical): Canonical URL 'http://snomed.info/sct' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
 == fsh-generated/resources/Immunization-DDCC-Immunization-Arabic.json ==
 INFORMATION: Immunization/DDCC-Immunization-Arabic: Immunization.vaccineCode: This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization

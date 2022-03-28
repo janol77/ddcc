@@ -2067,11 +2067,11 @@
          fhir:Extension.valueString [ fhir:value "ConceptMap" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-sct-vaccines>;
-         fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-icd11-sct-vaccines" ]
+         fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-sct-test-result>;
+         fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-icd11-sct-test-result" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_ICD11_to_SCT_Vaccines" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from ICD-11 to SNOMED CT for COVID-19 Vaccines" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_ICD11_to_SCT_Test_Result" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from ICD-11 to SNOMED CT for COVID-19 Test Result" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 118;
@@ -2081,11 +2081,11 @@
          fhir:Extension.valueString [ fhir:value "ConceptMap" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-ichi-sct-type-of-test>;
-         fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-ichi-sct-type-of-test" ]
+         fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-sct-vaccines>;
+         fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-icd11-sct-vaccines" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_LOINC_to_SCT_Type_of_Test" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from LOINC to SNOMED CT for COVID-19 Type of Test" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_ICD11_to_SCT_Vaccines" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from ICD-11 to SNOMED CT for COVID-19 Vaccines" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 119;
@@ -2095,14 +2095,70 @@
          fhir:Extension.valueString [ fhir:value "ConceptMap" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-sct-ichi-specimen-origin>;
-         fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-sct-ichi-specimen-origin" ]
+         fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-ichi-loinc-type-of-test>;
+         fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-ichi-loinc-type-of-test" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_ICD11_to_SCT_Test_Result" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from ICD-11 to SNOMED CT for COVID-19 Test Result" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_ICHI_to_LOINC_Type_of_Test" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from ICHI to LOINC for COVID-19 Type of Test" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 120;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-ichi-sct-specimen-origin>;
+         fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-ichi-sct-specimen-origin" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_ICHI_to_SCT_Specimen_Origin" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from ICHI to SNOMED CT for COVID-19 Specimen Origin" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 121;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-ichi-sct-type-of-test>;
+         fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-ichi-sct-type-of-test" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_ICHI_to_SCT_Type_of_Test" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from ICHI to SNOMED CT for COVID-19 Type of Test" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 122;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-loinc-sct-type-of-test>;
+         fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-loinc-sct-type-of-test" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_LOINC_to_SCT_Type_of_Test" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from LOINC to SNOMED CT for COVID-19 Type of Test" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 123;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-sct-ichi-specimen-origin>;
+         fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-sct-ichi-specimen-origin" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_SCT_to_ICHI_Specimen_Origin" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from SNOMED CT to ICHI for COVID-19 Specimen Origin" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 124;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2115,7 +2171,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "IPS-Immunization-Example-Bundle-01" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 121;
+       fhir:index 125;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2129,7 +2185,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "CapabilityStatement for WHO DDCC Generator actor." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 122;
+       fhir:index 126;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2143,7 +2199,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "CapabilityStatement for WHO DDCC Registry Service actor." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 123;
+       fhir:index 127;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2157,7 +2213,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile represents the constraints applied to the Immunization resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of an immunization is represented in the patient summary as an instance of an Immunization resource constrained by this profile.\r\n\r\nIt describes the event of a patient being administered a vaccination or a record of a vaccination as reported by a patient, a clinician or another party." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 124;
+       fhir:index 128;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2171,7 +2227,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile represents the constraints applied to the Patient resource by the International Patient Summary (IPS) FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the IPS composition or in one of the referred resources." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 125;
+       fhir:index 129;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2185,7 +2241,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "EU Digital Covid Certificate" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 126;
+       fhir:index 130;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2199,7 +2255,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Test Group" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 127;
+       fhir:index 131;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2213,7 +2269,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Vaccination Group" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 128;
+       fhir:index 132;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2226,7 +2282,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CoreDataSetLibrary" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 129;
+       fhir:index 133;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2239,7 +2295,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CoreDataSetVSLibrary" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 130;
+       fhir:index 134;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2252,7 +2308,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CoreDataSetVSToAddBundle" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 131;
+       fhir:index 135;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2265,7 +2321,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCCtoCoredataset" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 132;
+       fhir:index 136;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2278,7 +2334,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCCtoEUdcc" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 133;
+       fhir:index 137;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2291,7 +2347,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "QRespToVSCoreDataSet" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 134;
+       fhir:index 138;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2304,7 +2360,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ResourcesToCoreDataSet" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 135;
+       fhir:index 139;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

@@ -1458,6 +1458,17 @@
         <valueString value="ConceptMap"/>
       </extension>
       <reference>
+        <reference value="ConceptMap/who-ddcc-map-icd11-sct-test-result"/>
+      </reference>
+      <name value="WHO_DDCC_Map_ICD11_to_SCT_Test_Result"/>
+      <description value="Mapping from ICD-11 to SNOMED CT for COVID-19 Test Result"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
         <reference value="ConceptMap/who-ddcc-map-icd11-sct-vaccines"/>
       </reference>
       <name value="WHO_DDCC_Map_ICD11_to_SCT_Vaccines"/>
@@ -1469,7 +1480,40 @@
         <valueString value="ConceptMap"/>
       </extension>
       <reference>
+        <reference value="ConceptMap/who-ddcc-map-ichi-loinc-type-of-test"/>
+      </reference>
+      <name value="WHO_DDCC_Map_ICHI_to_LOINC_Type_of_Test"/>
+      <description value="Mapping from ICHI to LOINC for COVID-19 Type of Test"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/who-ddcc-map-ichi-sct-specimen-origin"/>
+      </reference>
+      <name value="WHO_DDCC_Map_ICHI_to_SCT_Specimen_Origin"/>
+      <description value="Mapping from ICHI to SNOMED CT for COVID-19 Specimen Origin"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
         <reference value="ConceptMap/who-ddcc-map-ichi-sct-type-of-test"/>
+      </reference>
+      <name value="WHO_DDCC_Map_ICHI_to_SCT_Type_of_Test"/>
+      <description value="Mapping from ICHI to SNOMED CT for COVID-19 Type of Test"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/who-ddcc-map-loinc-sct-type-of-test"/>
       </reference>
       <name value="WHO_DDCC_Map_LOINC_to_SCT_Type_of_Test"/>
       <description value="Mapping from LOINC to SNOMED CT for COVID-19 Type of Test"/>
@@ -1482,8 +1526,8 @@
       <reference>
         <reference value="ConceptMap/who-ddcc-map-sct-ichi-specimen-origin"/>
       </reference>
-      <name value="WHO_DDCC_Map_ICD11_to_SCT_Test_Result"/>
-      <description value="Mapping from ICD-11 to SNOMED CT for COVID-19 Test Result"/>
+      <name value="WHO_DDCC_Map_SCT_to_ICHI_Specimen_Origin"/>
+      <description value="Mapping from SNOMED CT to ICHI for COVID-19 Specimen Origin"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
