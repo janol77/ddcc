@@ -3,7 +3,7 @@
 
 err = 367, warn = 97, info = 30
 IG Publisher Version: 1.1.113
-Generated Wed Mar 30 05:10:19 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0.0 (canonical = http://worldhealthorganization.github.io/ddcc)
+Generated Wed Mar 30 05:26:57 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0.0 (canonical = http://worldhealthorganization.github.io/ddcc)
  Build Errors : 883 / 57 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 2 / 0 / 12
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Arabic : 2 / 0 / 12
@@ -1080,7 +1080,7 @@ ERROR: /github/workspace/output/maps.html#/html/body/div/div/div/p/a at Line 233
 ERROR: /github/workspace/output/reference_implementation.html#/html/body/div/div/div/p/a at Line 263, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/references.html#/html/body/div/div/div/p/a at Line 243, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/requirements.html#/html/body/div/div/div/p/a at Line 231, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/security_privacy.html#/html/body/div/div/div/p/a at Line 227, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/security_privacy.html#/html/body/div/div/div/p/a at Line 233, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/testing.html#/html/body/div/div/div/p/a at Line 244, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/a at Line 218, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/transactions.html#/html/body/div/div/div/div/div/div/p/a at Line 412, column 51: The link 'OperationDefinition-DDCC-QuestionnaireResponse-revpleHealthCertificate.html' for "Revoke Health Certificate Operation" cannot be resolved
