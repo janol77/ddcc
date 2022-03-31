@@ -1720,11 +1720,6 @@
         <generation value="html"/>
       </page>
       <page>
-        <nameUrl value="background.html"/>
-        <title value="Background"/>
-        <generation value="html"/>
-      </page>
-      <page>
         <nameUrl value="changes.html"/>
         <title value="Changes"/>
         <generation value="html"/>
