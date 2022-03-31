@@ -2269,11 +2269,6 @@
           "generation": "html"
         },
         {
-          "nameUrl": "background.html",
-          "title": "Background",
-          "generation": "html"
-        },
-        {
           "nameUrl": "changes.html",
           "title": "Changes",
           "generation": "html"
