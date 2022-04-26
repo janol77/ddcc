@@ -1,9 +1,9 @@
 ﻿ddcc : Validation Results
 =========================================
 
-err = 367, warn = 97, info = 30
-IG Publisher Version: 1.1.114
-Generated Thu Mar 31 06:45:07 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0.0 (canonical = http://worldhealthorganization.github.io/ddcc)
+err = 367, warn = 97, info = 33
+IG Publisher Version: 1.1.115
+Generated Tue Apr 26 17:10:37 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0.0 (canonical = http://worldhealthorganization.github.io/ddcc)
  Build Errors : 886 / 57 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 2 / 0 / 12
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Arabic : 2 / 0 / 12
@@ -94,7 +94,7 @@ Generated Thu Mar 31 06:45:07 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCGenerateHealthFolderParameters : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCImmunization : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCImmunizationRecommendation : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-DDCCObservation : 3 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DDCCObservation : 3 / 1 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCOrganization : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCPatient : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCPractitioner : 0 / 1 / 1
@@ -109,12 +109,12 @@ Generated Thu Mar 31 06:45:07 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCSubmissionSet : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCSubmitHealthEventRequest : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCSubmitHealthEventResponse : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-DDCCTRComposition : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DDCCTRComposition : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCTRDocument : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCTRDocumentSigned : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCTest : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCVSAddBundle : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-DDCCVSComposition : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DDCCVSComposition : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCVSDocument : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCVSDocumentSigned : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCVaccineMarketAuthorization : 0 / 0 / 1
@@ -1306,6 +1306,7 @@ WARNING: StructureDefinition/DDCCCoreDataSet: StructureDefinition: Unable to fin
 == fsh-generated/resources/StructureDefinition-DDCCObservation.json ==
 ERROR: http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCObservation#Observation.specimen: The profile http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips has type Specimen which is not consistent with the stated type CodeableConcept
 ERROR: StructureDefinition/DDCCObservation: StructureDefinition.differential.element.where(path = 'Observation.specimen'): The profile http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips has type Specimen which is not consistent with the stated type CodeableConcept
+INFORMATION: StructureDefinition/DDCCObservation: StructureDefinition.snapshot.element[13].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
 ERROR: StructureDefinition/DDCCObservation: StructureDefinition.snapshot.element[44].type[0].profile[0]: Profile http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/Specimen], but the Observation.specimen element has type CodeableConcept
 == fsh-generated/resources/StructureDefinition-DDCCOrganization.json ==
 == fsh-generated/resources/StructureDefinition-DDCCPatient.json ==
@@ -1322,11 +1323,13 @@ ERROR: StructureDefinition/DDCCObservation: StructureDefinition.snapshot.element
 == fsh-generated/resources/StructureDefinition-DDCCSubmitHealthEventRequest.json ==
 == fsh-generated/resources/StructureDefinition-DDCCSubmitHealthEventResponse.json ==
 == fsh-generated/resources/StructureDefinition-DDCCTRComposition.json ==
+INFORMATION: StructureDefinition/DDCCTRComposition: StructureDefinition.snapshot.element[20].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
 == fsh-generated/resources/StructureDefinition-DDCCTRDocument.json ==
 == fsh-generated/resources/StructureDefinition-DDCCTRDocumentSigned.json ==
 == fsh-generated/resources/StructureDefinition-DDCCTest.json ==
 == fsh-generated/resources/StructureDefinition-DDCCVSAddBundle.json ==
 == fsh-generated/resources/StructureDefinition-DDCCVSComposition.json ==
+INFORMATION: StructureDefinition/DDCCVSComposition: StructureDefinition.snapshot.element[20].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
 == fsh-generated/resources/StructureDefinition-DDCCVSDocument.json ==
 == fsh-generated/resources/StructureDefinition-DDCCVSDocumentSigned.json ==
 == fsh-generated/resources/StructureDefinition-DDCCVaccineMarketAuthorization.json ==
