@@ -243,6 +243,16 @@
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
     ],
+    "http://hl7.org/fhir/tools/StructureDefinition/original-item-type": [
+      "StructureMap.group.rule.dependent.variable",
+      "StructureMap.group.rule.rule.dependent.variable",
+      "StructureMap.group.rule.rule.rule.dependent.variable",
+      "StructureMap.group.rule.rule.rule.rule.dependent.variable",
+      "StructureMap.group.rule.rule.rule.rule.rule.dependent.variable",
+      "StructureMap.group.rule.rule.rule.rule.rule.rule.dependent.variable",
+      "StructureMap.group.rule.rule.rule.rule.rule.rule.rule.rule.dependent.variable",
+      "StructureMap.group.rule.rule.rule.rule.rule.rule.rule.rule.rule.dependent.variable"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],

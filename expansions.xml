@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="d406c44b-8aa5-4cc7-846a-20f75690a55a"/>
+  <id value="ecc97577-910b-4246-ba6e-11b64432e2dd"/>
   <meta>
-    <lastUpdated value="2022-04-26T17:07:52.650+00:00"/>
+    <lastUpdated value="2022-05-27T14:27:29.330+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -54,7 +54,7 @@
         <name value="DDCC_Composition_Category_ValueSet"/>
         <title value="DDCC Composition Category Codes"/>
         <status value="active"/>
-        <date value="2022-04-26T17:07:52+00:00"/>
+        <date value="2022-05-27T14:27:29+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -71,8 +71,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3aec9236-ebc5-46cf-81d3-1faf7fe69093"/>
-          <timestamp value="2022-04-26T17:09:14+00:00"/>
+          <identifier value="urn:uuid:962d62dd-e711-452f-a8d0-0581bcfbf4ee"/>
+          <timestamp value="2022-05-27T14:28:50+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -144,7 +144,7 @@
         <name value="DDCC_Device_Property_ValueSet"/>
         <title value="DDCC Device Property Codes"/>
         <status value="active"/>
-        <date value="2022-04-26T17:07:52+00:00"/>
+        <date value="2022-05-27T14:27:29+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -161,8 +161,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d4937ad5-453e-4e38-9cb1-28775257612f"/>
-          <timestamp value="2022-04-26T17:09:14+00:00"/>
+          <identifier value="urn:uuid:ad586f14-2ecf-4058-8f21-bda1e476ea45"/>
+          <timestamp value="2022-05-27T14:28:50+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -227,7 +227,7 @@
         <name value="DDCC_Folder_DesignationType_ValueSet"/>
         <title value="DDCC DesignationTypes for Folder"/>
         <status value="active"/>
-        <date value="2022-04-26T17:07:52+00:00"/>
+        <date value="2022-05-27T14:27:29+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -244,8 +244,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a9bc2197-b80f-4280-b6ca-0c61f83e1c08"/>
-          <timestamp value="2022-04-26T17:09:14+00:00"/>
+          <identifier value="urn:uuid:02fc8bc5-a576-455f-9c38-af02faf07f86"/>
+          <timestamp value="2022-05-27T14:28:50+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -319,7 +319,7 @@
         <name value="DDCC_QR_Format_ValueSet"/>
         <title value="DDCC QR Format Codes"/>
         <status value="active"/>
-        <date value="2022-04-26T17:07:52+00:00"/>
+        <date value="2022-05-27T14:27:29+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -336,8 +336,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:622cc043-622a-4cc0-8143-aaa12d0b2de9"/>
-          <timestamp value="2022-04-26T17:09:14+00:00"/>
+          <identifier value="urn:uuid:43e71498-affb-403d-81b5-07c6d7142858"/>
+          <timestamp value="2022-05-27T14:28:50+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -442,7 +442,7 @@
         <name value="DDCC_QR_Type_ValueSet"/>
         <title value="DDCC QR Type Codes"/>
         <status value="active"/>
-        <date value="2022-04-26T17:07:52+00:00"/>
+        <date value="2022-05-27T14:27:29+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -459,8 +459,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5969b53b-0044-496d-9ccf-bf598c09c7c6"/>
-          <timestamp value="2022-04-26T17:09:14+00:00"/>
+          <identifier value="urn:uuid:3af9ade7-6576-471e-9246-dde7f85e2741"/>
+          <timestamp value="2022-05-27T14:28:50+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -499,6 +499,1656 @@
             <system value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem"/>
             <code value="divoc"/>
             <display value="DIVOC"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-agent-targeted-covid-19"/>
+    <resource>
+      <ValueSet>
+        <id value="who-ddcc-agent-targeted-covid-19"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 14 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-DDCC-ICD11-CodeSystem.html">DDCC Codes for ICD11 v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-DDCC-ICD11-CodeSystem.html">
+                <code>http://id.who.int/icd11/mms</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XN109"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN109">XN109</a>
+                </td>
+                <td>SARS-CoV-2</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XN0HL"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN0HL">XN0HL</a>
+                </td>
+                <td>SARS-CoV-2 Alpha</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XN4Q7"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN4Q7">XN4Q7</a>
+                </td>
+                <td>SARS-CoV-2 Beta</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XN5BQ"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN5BQ">XN5BQ</a>
+                </td>
+                <td>SARS-CoV-2 Gamma</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XN8V6"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN8V6">XN8V6</a>
+                </td>
+                <td>SARS-CoV-2 Delta</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XN1GK"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN1GK">XN1GK</a>
+                </td>
+                <td>SARS-CoV-2 Epsilon</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XN3ZE"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN3ZE">XN3ZE</a>
+                </td>
+                <td>SARS-CoV-2 Zeta</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XN2V4"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN2V4">XN2V4</a>
+                </td>
+                <td>SARS-CoV-2 Eta</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XN4Q1"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN4Q1">XN4Q1</a>
+                </td>
+                <td>SARS-CoV-2 Theta</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XN3UD"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN3UD">XN3UD</a>
+                </td>
+                <td>SARS-CoV-2 Iota</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XN9L8"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN9L8">XN9L8</a>
+                </td>
+                <td>SARS-CoV-2 Kappa</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XN6AM"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN6AM">XN6AM</a>
+                </td>
+                <td>SARS-CoV-2 Lambda</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XN39J"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN39J">XN39J</a>
+                </td>
+                <td>SARS-CoV-2 Mu</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XN161"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN161">XN161</a>
+                </td>
+                <td>SARS-CoV-2 Omicron</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-agent-targeted-covid-19"/>
+        <version value="1.0.0"/>
+        <name value="WHO_DDCC_Agent_Targeted_COVID_19"/>
+        <title value="WHO Agent Targeted (COVID-19)"/>
+        <status value="draft"/>
+        <date value="2022-05-27T14:27:29+00:00"/>
+        <publisher value="WHO"/>
+        <contact>
+          <name value="WHO"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://who.int"/>
+          </telecom>
+        </contact>
+        <description value="WHO Agent Targeted List (COVID-19) from [ICD 11](https://icd.who.int/browse11)"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:2e66b0ae-d52b-43c4-9b3a-43006d0d32f5"/>
+          <timestamp value="2022-05-27T14:28:50+00:00"/>
+          <total value="14"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://id.who.int/icd11/mms|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XN109"/>
+            <display value="SARS-CoV-2"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XN0HL"/>
+            <display value="SARS-CoV-2 Alpha"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XN4Q7"/>
+            <display value="SARS-CoV-2 Beta"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XN5BQ"/>
+            <display value="SARS-CoV-2 Gamma"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XN8V6"/>
+            <display value="SARS-CoV-2 Delta"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XN1GK"/>
+            <display value="SARS-CoV-2 Epsilon"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XN3ZE"/>
+            <display value="SARS-CoV-2 Zeta"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XN2V4"/>
+            <display value="SARS-CoV-2 Eta"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XN4Q1"/>
+            <display value="SARS-CoV-2 Theta"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XN3UD"/>
+            <display value="SARS-CoV-2 Iota"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XN9L8"/>
+            <display value="SARS-CoV-2 Kappa"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XN6AM"/>
+            <display value="SARS-CoV-2 Lambda"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XN39J"/>
+            <display value="SARS-CoV-2 Mu"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XN161"/>
+            <display value="SARS-CoV-2 Omicron"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-allowed-vaccines-covid-19"/>
+    <resource>
+      <ValueSet>
+        <id value="who-ddcc-allowed-vaccines-covid-19"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 32 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html">DDCC Codes for ICD11 v1.0.0 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="ValueSet-who-ddcc-vaccines-covid-19.html">WHO Vaccine List (COVID-19) v1.0.0 (ValueSet)</a>
+                </li>
+                <li>http://hl7.org/fhir/sid/cvx version 20210406</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM68M6"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM68M6">XM68M6</a>
+                </td>
+                <td>http://id.who.int/icd11/mms</td>
+                <td>COVID-19 vaccine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM1NL1"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM1NL1">XM1NL1</a>
+                </td>
+                <td>http://id.who.int/icd11/mms</td>
+                <td>COVID-19 vaccine, inactivated virus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM7HT3"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM7HT3">XM7HT3</a>
+                </td>
+                <td>http://id.who.int/icd11/mms</td>
+                <td>CoronaVac®</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM8866"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM8866">XM8866</a>
+                </td>
+                <td>http://id.who.int/icd11/mms</td>
+                <td>BBIBP-CorV</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM9TQ1"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM9TQ1">XM9TQ1</a>
+                </td>
+                <td>http://id.who.int/icd11/mms</td>
+                <td>KCONVAC</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM1G90"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM1G90">XM1G90</a>
+                </td>
+                <td>http://id.who.int/icd11/mms</td>
+                <td>Covaxin</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM85P5"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM85P5">XM85P5</a>
+                </td>
+                <td>http://id.who.int/icd11/mms</td>
+                <td>Covi-Vac</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM9FQ7"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM9FQ7">XM9FQ7</a>
+                </td>
+                <td>http://id.who.int/icd11/mms</td>
+                <td>Hayat-Vax</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM97N6"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM97N6">XM97N6</a>
+                </td>
+                <td>http://id.who.int/icd11/mms</td>
+                <td>QazVac</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM2YG8"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM2YG8">XM2YG8</a>
+                </td>
+                <td>http://id.who.int/icd11/mms</td>
+                <td>COVIran Barakat</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM3U61"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM3U61">XM3U61</a>
+                </td>
+                <td>http://id.who.int/icd11/mms</td>
+                <td>Inactivated SARS-CoV-2 vaccine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM5DF6"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM5DF6">XM5DF6</a>
+                </td>
+                <td>http://id.who.int/icd11/mms</td>
+                <td>COVID-19 vaccine, live attenuated virus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM9QW8"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM9QW8">XM9QW8</a>
+                </td>
+                <td>http://id.who.int/icd11/mms</td>
+                <td>COVID-19 vaccine, non-replicating viral vector</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM4YL8"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM4YL8">XM4YL8</a>
+                </td>
+                <td>http://id.who.int/icd11/mms</td>
+                <td>COVID-19 Vaccine AstraZeneca</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM97T2"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM97T2">XM97T2</a>
+                </td>
+                <td>http://id.who.int/icd11/mms</td>
+                <td>Covishield®</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM6QV1"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM6QV1">XM6QV1</a>
+                </td>
+                <td>http://id.who.int/icd11/mms</td>
+                <td>COVID-19 Vaccine Janssen</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM1AG7"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM1AG7">XM1AG7</a>
+                </td>
+                <td>http://id.who.int/icd11/mms</td>
+                <td>Convidecia</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM5ZJ4"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM5ZJ4">XM5ZJ4</a>
+                </td>
+                <td>http://id.who.int/icd11/mms</td>
+                <td>Gam-Covid-Vac</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM5QM6"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM5QM6">XM5QM6</a>
+                </td>
+                <td>http://id.who.int/icd11/mms</td>
+                <td>Sputnik-Light</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM0CX4"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM0CX4">XM0CX4</a>
+                </td>
+                <td>http://id.who.int/icd11/mms</td>
+                <td>COVID-19 vaccine, replicating viral vector</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM5JC5"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM5JC5">XM5JC5</a>
+                </td>
+                <td>http://id.who.int/icd11/mms</td>
+                <td>COVID-19 vaccine, virus protein subunit</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM3CT4"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM3CT4">XM3CT4</a>
+                </td>
+                <td>http://id.who.int/icd11/mms</td>
+                <td>Recombinant SARS-CoV-2 vaccine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM3PG0"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM3PG0">XM3PG0</a>
+                </td>
+                <td>http://id.who.int/icd11/mms</td>
+                <td>Soberana-02</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM4EC8"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM4EC8">XM4EC8</a>
+                </td>
+                <td>http://id.who.int/icd11/mms</td>
+                <td>MVC-COV1901</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM6SZ8"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM6SZ8">XM6SZ8</a>
+                </td>
+                <td>http://id.who.int/icd11/mms</td>
+                <td>EpiVacCorona</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM1J92"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM1J92">XM1J92</a>
+                </td>
+                <td>http://id.who.int/icd11/mms</td>
+                <td>COVID-19 vaccine, virus like particle (VLP)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM6AT1"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM6AT1">XM6AT1</a>
+                </td>
+                <td>http://id.who.int/icd11/mms</td>
+                <td>COVID-19 vaccine, DNA based</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM52P3"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM52P3">XM52P3</a>
+                </td>
+                <td>http://id.who.int/icd11/mms</td>
+                <td>ZyCov-D</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM0GQ8"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM0GQ8">XM0GQ8</a>
+                </td>
+                <td>http://id.who.int/icd11/mms</td>
+                <td>COVID-19 vaccine, RNA based</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM8NQ0"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM8NQ0">XM8NQ0</a>
+                </td>
+                <td>http://id.who.int/icd11/mms</td>
+                <td>Comirnaty®</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM3DT5"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM3DT5">XM3DT5</a>
+                </td>
+                <td>http://id.who.int/icd11/mms</td>
+                <td>COVID-19 Vaccine Moderna</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-sid-cvx-208"> </a>  208
+                </td>
+                <td>http://hl7.org/fhir/sid/cvx</td>
+                <td>SARS-COV-2 (COVID-19) vaccine, mRNA, spike protein, LNP, preservative free, 30 mcg/0.3mL dose</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-allowed-vaccines-covid-19"/>
+        <version value="1.0.0"/>
+        <name value="WHO_DDCC_Allowed_Vaccines_COVID_19"/>
+        <title value="WHO DDCC Allowed Vaccine List (COVID-19)"/>
+        <status value="draft"/>
+        <date value="2022-05-27T14:27:29+00:00"/>
+        <publisher value="WHO"/>
+        <contact>
+          <name value="WHO"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://who.int"/>
+          </telecom>
+        </contact>
+        <description value="WHO DDCC Allowed Vaccine List (COVID-19) for importing from other valuesets.  Any not&#xA;in who-ddcc-vaccines-covid-19 should be included in the ConceptMap so it can be&#xA;translated into an ICD-11 code."/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:ca04e497-b8c6-4706-af3a-c34ff27b79d6"/>
+          <timestamp value="2022-05-27T14:28:50+00:00"/>
+          <total value="32"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-vaccines-covid-19|1.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://id.who.int/icd11/mms|1.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://hl7.org/fhir/sid/cvx|20210406"/>
+          </parameter>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM68M6"/>
+            <display value="COVID-19 vaccine"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM1NL1"/>
+            <display value="COVID-19 vaccine, inactivated virus"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM7HT3"/>
+            <display value="CoronaVac®"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM8866"/>
+            <display value="BBIBP-CorV"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM9TQ1"/>
+            <display value="KCONVAC"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM1G90"/>
+            <display value="Covaxin"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM85P5"/>
+            <display value="Covi-Vac"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM9FQ7"/>
+            <display value="Hayat-Vax"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM97N6"/>
+            <display value="QazVac"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM2YG8"/>
+            <display value="COVIran Barakat"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM3U61"/>
+            <display value="Inactivated SARS-CoV-2 vaccine"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM5DF6"/>
+            <display value="COVID-19 vaccine, live attenuated virus"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM9QW8"/>
+            <display value="COVID-19 vaccine, non-replicating viral vector"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM4YL8"/>
+            <display value="COVID-19 Vaccine AstraZeneca"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM97T2"/>
+            <display value="Covishield®"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM6QV1"/>
+            <display value="COVID-19 Vaccine Janssen"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM1AG7"/>
+            <display value="Convidecia"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM5ZJ4"/>
+            <display value="Gam-Covid-Vac"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM5QM6"/>
+            <display value="Sputnik-Light"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM0CX4"/>
+            <display value="COVID-19 vaccine, replicating viral vector"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM5JC5"/>
+            <display value="COVID-19 vaccine, virus protein subunit"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM3CT4"/>
+            <display value="Recombinant SARS-CoV-2 vaccine"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM3PG0"/>
+            <display value="Soberana-02"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM4EC8"/>
+            <display value="MVC-COV1901"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM6SZ8"/>
+            <display value="EpiVacCorona"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM1J92"/>
+            <display value="COVID-19 vaccine, virus like particle (VLP)"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM6AT1"/>
+            <display value="COVID-19 vaccine, DNA based"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM52P3"/>
+            <display value="ZyCov-D"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM0GQ8"/>
+            <display value="COVID-19 vaccine, RNA based"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM8NQ0"/>
+            <display value="Comirnaty®"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM3DT5"/>
+            <display value="COVID-19 Vaccine Moderna"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/cvx"/>
+            <code value="208"/>
+            <display value="SARS-COV-2 (COVID-19) vaccine, mRNA, spike protein, LNP, preservative free, 30 mcg/0.3mL dose"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-brands-covid-19"/>
+    <resource>
+      <ValueSet>
+        <id value="who-ddcc-brands-covid-19"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 20 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-DDCC-ICD11-CodeSystem.html">DDCC Codes for ICD11 v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-DDCC-ICD11-CodeSystem.html">
+                <code>http://id.who.int/icd11/mms</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM7HT3"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM7HT3">XM7HT3</a>
+                </td>
+                <td>CoronaVac®</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM8866"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM8866">XM8866</a>
+                </td>
+                <td>BBIBP-CorV</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM9TQ1"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM9TQ1">XM9TQ1</a>
+                </td>
+                <td>KCONVAC</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM1G90"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM1G90">XM1G90</a>
+                </td>
+                <td>Covaxin</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM85P5"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM85P5">XM85P5</a>
+                </td>
+                <td>Covi-Vac</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM9FQ7"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM9FQ7">XM9FQ7</a>
+                </td>
+                <td>Hayat-Vax</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM97N6"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM97N6">XM97N6</a>
+                </td>
+                <td>QazVac</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM2YG8"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM2YG8">XM2YG8</a>
+                </td>
+                <td>COVIran Barakat</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM4YL8"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM4YL8">XM4YL8</a>
+                </td>
+                <td>AstraZeneca</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM97T2"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM97T2">XM97T2</a>
+                </td>
+                <td>Covishield®</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM6QV1"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM6QV1">XM6QV1</a>
+                </td>
+                <td>Janssen</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM1AG7"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM1AG7">XM1AG7</a>
+                </td>
+                <td>Convidecia</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM5ZJ4"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM5ZJ4">XM5ZJ4</a>
+                </td>
+                <td>Gam-Covid-Vac</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM5QM6"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM5QM6">XM5QM6</a>
+                </td>
+                <td>Sputnik-Light</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM3PG0"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM3PG0">XM3PG0</a>
+                </td>
+                <td>Soberana-02</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM4EC8"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM4EC8">XM4EC8</a>
+                </td>
+                <td>MVC-COV1901</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM6SZ8"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM6SZ8">XM6SZ8</a>
+                </td>
+                <td>EpiVacCorona</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM52P3"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM52P3">XM52P3</a>
+                </td>
+                <td>ZyCov-D</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM8NQ0"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM8NQ0">XM8NQ0</a>
+                </td>
+                <td>Comirnaty®</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM3DT5"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM3DT5">XM3DT5</a>
+                </td>
+                <td>Moderna</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-brands-covid-19"/>
+        <version value="1.0.0"/>
+        <name value="WHO_DDCC_Brands_COVID_19"/>
+        <title value="WHO DDCC Brand List (COVID-19)"/>
+        <status value="draft"/>
+        <date value="2022-05-27T14:27:29+00:00"/>
+        <publisher value="WHO"/>
+        <contact>
+          <name value="WHO"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://who.int"/>
+          </telecom>
+        </contact>
+        <description value="WHO DDCC Brand List (COVID-19) from [ICD 11](https://icd.who.int/browse11)"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:0e61e780-8e17-4b5c-b8f4-120cc366ad93"/>
+          <timestamp value="2022-05-27T14:28:50+00:00"/>
+          <total value="20"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://id.who.int/icd11/mms|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM7HT3"/>
+            <display value="CoronaVac®"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM8866"/>
+            <display value="BBIBP-CorV"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM9TQ1"/>
+            <display value="KCONVAC"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM1G90"/>
+            <display value="Covaxin"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM85P5"/>
+            <display value="Covi-Vac"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM9FQ7"/>
+            <display value="Hayat-Vax"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM97N6"/>
+            <display value="QazVac"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM2YG8"/>
+            <display value="COVIran Barakat"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM4YL8"/>
+            <display value="AstraZeneca"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM97T2"/>
+            <display value="Covishield®"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM6QV1"/>
+            <display value="Janssen"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM1AG7"/>
+            <display value="Convidecia"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM5ZJ4"/>
+            <display value="Gam-Covid-Vac"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM5QM6"/>
+            <display value="Sputnik-Light"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM3PG0"/>
+            <display value="Soberana-02"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM4EC8"/>
+            <display value="MVC-COV1901"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM6SZ8"/>
+            <display value="EpiVacCorona"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM52P3"/>
+            <display value="ZyCov-D"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM8NQ0"/>
+            <display value="Comirnaty®"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM3DT5"/>
+            <display value="Moderna"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19"/>
+    <resource>
+      <ValueSet>
+        <id value="who-ddcc-disease-targeted-covid-19"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-DDCC-ICD11-CodeSystem.html">DDCC Codes for ICD11 v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-DDCC-ICD11-CodeSystem.html">
+                <code>http://id.who.int/icd11/mms</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-RA01"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-RA01">RA01</a>
+                </td>
+                <td>COVID-19</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19"/>
+        <version value="1.0.0"/>
+        <name value="WHO_DDCC_Disease_Targeted_COVID_19"/>
+        <title value="WHO Disease or Agent Targeted (COVID-19)"/>
+        <status value="draft"/>
+        <date value="2022-05-27T14:27:29+00:00"/>
+        <publisher value="WHO"/>
+        <contact>
+          <name value="WHO"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://who.int"/>
+          </telecom>
+        </contact>
+        <description value="WHO Disease or Agent Targeted List (COVID-19) from [ICD 11](https://icd.who.int/browse11)"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:2923ba63-0309-4a69-8898-a16d59e4c54d"/>
+          <timestamp value="2022-05-27T14:28:50+00:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://id.who.int/icd11/mms|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="RA01"/>
+            <display value="COVID-19"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-test-result-covid-19"/>
+    <resource>
+      <ValueSet>
+        <id value="who-ddcc-test-result-covid-19"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-DDCC-ICD11-CodeSystem.html">DDCC Codes for ICD11 v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-DDCC-ICD11-CodeSystem.html">
+                <code>http://id.who.int/icd11/mms</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-RA01.0"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-RA01.460">RA01.0</a>
+                </td>
+                <td>Detected</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-QA02"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-QA02">QA02</a>
+                </td>
+                <td>Not Detected</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-test-result-covid-19"/>
+        <version value="1.0.0"/>
+        <name value="WHO_DDCC_Test_Result_COVID_19"/>
+        <title value="WHO Test Result (COVID-19)"/>
+        <status value="draft"/>
+        <date value="2022-05-27T14:27:29+00:00"/>
+        <publisher value="WHO"/>
+        <contact>
+          <name value="WHO"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://who.int"/>
+          </telecom>
+        </contact>
+        <description value="WHO COVID-19 Test Result from [ICD 11](https://icd.who.int/browse11)"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:a34a191b-f074-4755-8f17-89473cd28177"/>
+          <timestamp value="2022-05-27T14:28:51+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://id.who.int/icd11/mms|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="RA01.0"/>
+            <display value="Detected"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="QA02"/>
+            <display value="Not Detected"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-vaccines-covid-19"/>
+    <resource>
+      <ValueSet>
+        <id value="who-ddcc-vaccines-covid-19"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 31 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-DDCC-ICD11-CodeSystem.html">DDCC Codes for ICD11 v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-DDCC-ICD11-CodeSystem.html">
+                <code>http://id.who.int/icd11/mms</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM68M6"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM68M6">XM68M6</a>
+                </td>
+                <td>COVID-19 vaccine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM1NL1"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM1NL1">XM1NL1</a>
+                </td>
+                <td>COVID-19 vaccine, inactivated virus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM7HT3"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM7HT3">XM7HT3</a>
+                </td>
+                <td>CoronaVac®</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM8866"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM8866">XM8866</a>
+                </td>
+                <td>BBIBP-CorV</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM9TQ1"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM9TQ1">XM9TQ1</a>
+                </td>
+                <td>KCONVAC</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM1G90"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM1G90">XM1G90</a>
+                </td>
+                <td>Covaxin</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM85P5"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM85P5">XM85P5</a>
+                </td>
+                <td>Covi-Vac</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM9FQ7"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM9FQ7">XM9FQ7</a>
+                </td>
+                <td>Hayat-Vax</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM97N6"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM97N6">XM97N6</a>
+                </td>
+                <td>QazVac</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM2YG8"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM2YG8">XM2YG8</a>
+                </td>
+                <td>COVIran Barakat</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM3U61"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM3U61">XM3U61</a>
+                </td>
+                <td>Inactivated SARS-CoV-2 vaccine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM5DF6"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM5DF6">XM5DF6</a>
+                </td>
+                <td>COVID-19 vaccine, live attenuated virus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM9QW8"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM9QW8">XM9QW8</a>
+                </td>
+                <td>COVID-19 vaccine, non-replicating viral vector</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM4YL8"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM4YL8">XM4YL8</a>
+                </td>
+                <td>COVID-19 Vaccine AstraZeneca</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM97T2"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM97T2">XM97T2</a>
+                </td>
+                <td>Covishield®</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM6QV1"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM6QV1">XM6QV1</a>
+                </td>
+                <td>COVID-19 Vaccine Janssen</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM1AG7"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM1AG7">XM1AG7</a>
+                </td>
+                <td>Convidecia</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM5ZJ4"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM5ZJ4">XM5ZJ4</a>
+                </td>
+                <td>Gam-Covid-Vac</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM5QM6"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM5QM6">XM5QM6</a>
+                </td>
+                <td>Sputnik-Light</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM0CX4"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM0CX4">XM0CX4</a>
+                </td>
+                <td>COVID-19 vaccine, replicating viral vector</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM5JC5"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM5JC5">XM5JC5</a>
+                </td>
+                <td>COVID-19 vaccine, virus protein subunit</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM3CT4"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM3CT4">XM3CT4</a>
+                </td>
+                <td>Recombinant SARS-CoV-2 vaccine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM3PG0"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM3PG0">XM3PG0</a>
+                </td>
+                <td>Soberana-02</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM4EC8"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM4EC8">XM4EC8</a>
+                </td>
+                <td>MVC-COV1901</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM6SZ8"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM6SZ8">XM6SZ8</a>
+                </td>
+                <td>EpiVacCorona</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM1J92"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM1J92">XM1J92</a>
+                </td>
+                <td>COVID-19 vaccine, virus like particle (VLP)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM6AT1"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM6AT1">XM6AT1</a>
+                </td>
+                <td>COVID-19 vaccine, DNA based</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM52P3"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM52P3">XM52P3</a>
+                </td>
+                <td>ZyCov-D</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM0GQ8"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM0GQ8">XM0GQ8</a>
+                </td>
+                <td>COVID-19 vaccine, RNA based</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM8NQ0"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM8NQ0">XM8NQ0</a>
+                </td>
+                <td>Comirnaty®</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---id.who.int-icd11-mms-XM3DT5"> </a>  
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM3DT5">XM3DT5</a>
+                </td>
+                <td>COVID-19 Vaccine Moderna</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-vaccines-covid-19"/>
+        <version value="1.0.0"/>
+        <name value="WHO_DDCC_Vaccines_COVID_19"/>
+        <title value="WHO Vaccine List (COVID-19)"/>
+        <status value="draft"/>
+        <date value="2022-05-27T14:27:29+00:00"/>
+        <publisher value="WHO"/>
+        <contact>
+          <name value="WHO"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://who.int"/>
+          </telecom>
+        </contact>
+        <description value="WHO Vaccine List (COVID-19) from [ICD 11](https://icd.who.int/browse11)"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:bfa6ce71-3928-40e6-83f6-d5ad79ceaa2c"/>
+          <timestamp value="2022-05-27T14:28:51+00:00"/>
+          <total value="31"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://id.who.int/icd11/mms|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM68M6"/>
+            <display value="COVID-19 vaccine"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM1NL1"/>
+            <display value="COVID-19 vaccine, inactivated virus"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM7HT3"/>
+            <display value="CoronaVac®"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM8866"/>
+            <display value="BBIBP-CorV"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM9TQ1"/>
+            <display value="KCONVAC"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM1G90"/>
+            <display value="Covaxin"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM85P5"/>
+            <display value="Covi-Vac"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM9FQ7"/>
+            <display value="Hayat-Vax"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM97N6"/>
+            <display value="QazVac"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM2YG8"/>
+            <display value="COVIran Barakat"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM3U61"/>
+            <display value="Inactivated SARS-CoV-2 vaccine"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM5DF6"/>
+            <display value="COVID-19 vaccine, live attenuated virus"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM9QW8"/>
+            <display value="COVID-19 vaccine, non-replicating viral vector"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM4YL8"/>
+            <display value="COVID-19 Vaccine AstraZeneca"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM97T2"/>
+            <display value="Covishield®"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM6QV1"/>
+            <display value="COVID-19 Vaccine Janssen"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM1AG7"/>
+            <display value="Convidecia"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM5ZJ4"/>
+            <display value="Gam-Covid-Vac"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM5QM6"/>
+            <display value="Sputnik-Light"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM0CX4"/>
+            <display value="COVID-19 vaccine, replicating viral vector"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM5JC5"/>
+            <display value="COVID-19 vaccine, virus protein subunit"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM3CT4"/>
+            <display value="Recombinant SARS-CoV-2 vaccine"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM3PG0"/>
+            <display value="Soberana-02"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM4EC8"/>
+            <display value="MVC-COV1901"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM6SZ8"/>
+            <display value="EpiVacCorona"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM1J92"/>
+            <display value="COVID-19 vaccine, virus like particle (VLP)"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM6AT1"/>
+            <display value="COVID-19 vaccine, DNA based"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM52P3"/>
+            <display value="ZyCov-D"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM0GQ8"/>
+            <display value="COVID-19 vaccine, RNA based"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM8NQ0"/>
+            <display value="Comirnaty®"/>
+          </contains>
+          <contains>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM3DT5"/>
+            <display value="COVID-19 Vaccine Moderna"/>
           </contains>
         </expansion>
       </ValueSet>

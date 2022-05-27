@@ -35,6 +35,13 @@
     "name": "PatientUvIps"
   },
   {
+    "id": "DDCC-ICD11-CodeSystem",
+    "type": "CodeSystem",
+    "url": "http://id.who.int/icd11/mms",
+    "version": "1.0.0",
+    "name": "DDCC_ICD11_CodeSystem"
+  },
+  {
     "id": "WHO.DDCC.Generator",
     "type": "CapabilityStatement",
     "url": "http://worldhealthorganization.github.io/ddcc/CapabilityStatement/WHO.DDCC.Generator",
@@ -89,6 +96,20 @@
     "url": "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem",
     "version": "1.0.0",
     "name": "DDCC_QR_Type_CodeSystem"
+  },
+  {
+    "id": "who-ddcc-map-cvx-icd11-brands",
+    "type": "ConceptMap",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_CVX_To_ICD11_Brands",
+    "version": "1.0.0",
+    "name": "ICD11_SNOMED_CT_COVID19_brands"
+  },
+  {
+    "id": "who-ddcc-map-cvx-icd11-vaccines",
+    "type": "ConceptMap",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_CVX_To_ICD11_Vaccines",
+    "version": "1.0.0",
+    "name": "ICD11_SNOMED_CT_COVID19_vaccines"
   },
   {
     "id": "who-ddcc-map-icd11-icd10-disease-targeted",
@@ -518,6 +539,13 @@
     "name": "CoreDataSetLibrary"
   },
   {
+    "id": "coredataset-to-addbundle",
+    "type": "StructureMap",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetToAddBundle",
+    "version": "1.0.0",
+    "name": "CoreDataSetToAddBundle"
+  },
+  {
     "id": "CoreDataSetVSLibrary",
     "type": "StructureMap",
     "url": "http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSLibrary",
@@ -530,6 +558,13 @@
     "url": "http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSToAddBundle",
     "version": "1.0.0",
     "name": "CoreDataSetVSToAddBundle"
+  },
+  {
+    "id": "CoreDataSetVSToSHC",
+    "type": "StructureMap",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSToSHC",
+    "version": "1.0.0",
+    "name": "CoreDataSetVSToSHC"
   },
   {
     "id": "DDCCtoCoredataset",
@@ -546,6 +581,27 @@
     "name": "DDCCtoEUdcc"
   },
   {
+    "id": "ddcc-to-shc",
+    "type": "StructureMap",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureMap/DDCCtoSHC",
+    "version": "1.0.0",
+    "name": "DDCCtoSHC"
+  },
+  {
+    "id": "IPSToCoreDataSetVS",
+    "type": "StructureMap",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureMap/IPSToCoreDataSetVS",
+    "version": "1.0.0",
+    "name": "IPSToCoreDataSetVS"
+  },
+  {
+    "id": "ddcc-qresp-to-coredataset",
+    "type": "StructureMap",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureMap/QRespToCoreDataSet",
+    "version": "1.0.0",
+    "name": "QRespToCoreDataSet"
+  },
+  {
     "id": "QRespToVSCoreDataSet",
     "type": "StructureMap",
     "url": "http://worldhealthorganization.github.io/ddcc/StructureMap/QRespToVSCoreDataSet",
@@ -560,11 +616,32 @@
     "name": "ResourcesToCoreDataSet"
   },
   {
+    "id": "ddcc-resources-to-coredataset",
+    "type": "StructureMap",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureMap/ResourcesToCoreDataSet",
+    "version": "1.0.0",
+    "name": "ResourcesToCoreDataSet"
+  },
+  {
     "id": "ResourcesToVSCoreDataSet",
     "type": "StructureMap",
     "url": "http://worldhealthorganization.github.io/ddcc/StructureMap/ResourcesToVSCoreDataSet",
     "version": "1.0.0",
     "name": "ResourcesToVSCoreDataSet"
+  },
+  {
+    "id": "SHCToCoreDataSetVS",
+    "type": "StructureMap",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureMap/SHCToCoreDataSetVS",
+    "version": "1.0.0",
+    "name": "SHCToCoreDataSetVS"
+  },
+  {
+    "id": "shc-to-ddcc",
+    "type": "StructureMap",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureMap/SHCtoDDCC",
+    "version": "1.0.0",
+    "name": "SHCtoDDCC"
   },
   {
     "id": "DDCC-Composition-Category-ValueSet",
@@ -607,6 +684,20 @@
     "url": "http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-agent-targeted-covid-19",
     "version": "1.0.0",
     "name": "WHO_DDCC_Agent_Targeted_COVID_19"
+  },
+  {
+    "id": "who-ddcc-allowed-vaccines-covid-19",
+    "type": "ValueSet",
+    "url": "http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-allowed-vaccines-covid-19",
+    "version": "1.0.0",
+    "name": "WHO_DDCC_Allowed_Vaccines_COVID_19"
+  },
+  {
+    "id": "who-ddcc-brands-covid-19",
+    "type": "ValueSet",
+    "url": "http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-brands-covid-19",
+    "version": "1.0.0",
+    "name": "WHO_DDCC_Brands_COVID_19"
   },
   {
     "id": "who-ddcc-disease-targeted-covid-19",

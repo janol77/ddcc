@@ -45,6 +45,15 @@
   ];
   fhir:ImplementationGuide.dependsOn [
      fhir:index 0;
+     fhir:Element.id [ fhir:value "hl7tx" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://terminology.hl7.org/ImplementationGuide/hl7.terminology";
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "3.1.0" ]
+  ], [
+     fhir:index 1;
      fhir:Element.id [ fhir:value "hl7_fhir_uv_ips" ];
      fhir:ImplementationGuide.dependsOn.uri [
        fhir:value "http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips";
@@ -53,7 +62,7 @@
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.ips" ];
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.0.0" ]
   ], [
-     fhir:index 1;
+     fhir:index 2;
      fhir:Element.id [ fhir:value "hl7_fhir_uv_sdc" ];
      fhir:ImplementationGuide.dependsOn.uri [
        fhir:value "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc";
@@ -62,7 +71,7 @@
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.sdc" ];
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "current" ]
   ], [
-     fhir:index 2;
+     fhir:index 3;
      fhir:Element.id [ fhir:value "ihe_mhd_fhir" ];
      fhir:ImplementationGuide.dependsOn.uri [
        fhir:value "http://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.mhd.fhir";
@@ -1031,6 +1040,34 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-allowed-vaccines-covid-19>;
+         fhir:Reference.reference [ fhir:value "ValueSet/who-ddcc-allowed-vaccines-covid-19" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO DDCC Allowed Vaccine List (COVID-19)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "WHO DDCC Allowed Vaccine List (COVID-19) for importing from other valuesets.  Any not\nin who-ddcc-vaccines-covid-19 should be included in the ConceptMap so it can be\ntranslated into an ICD-11 code." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 50;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-brands-covid-19>;
+         fhir:Reference.reference [ fhir:value "ValueSet/who-ddcc-brands-covid-19" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO DDCC Brand List (COVID-19)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "WHO DDCC Brand List (COVID-19) from [ICD 11](https://icd.who.int/browse11)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 51;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19>;
          fhir:Reference.reference [ fhir:value "ValueSet/who-ddcc-disease-targeted-covid-19" ]
        ];
@@ -1038,7 +1075,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "WHO Disease or Agent Targeted List (COVID-19) from [ICD 11](https://icd.who.int/browse11)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 50;
+       fhir:index 52;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1052,7 +1089,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "WHO Speciman Sample Origin List (COVID-19)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 51;
+       fhir:index 53;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1066,7 +1103,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "WHO COVID-19 Test Result from [ICD 11](https://icd.who.int/browse11)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 52;
+       fhir:index 54;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1080,7 +1117,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "WHO Type of COVID-19 Test" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 53;
+       fhir:index 55;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1094,7 +1131,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "WHO Vaccine List (COVID-19) from [ICD 11](https://icd.who.int/browse11)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 54;
+       fhir:index 56;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1108,7 +1145,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Possible categories available for composition." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 55;
+       fhir:index 57;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1122,7 +1159,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Possible properties available for devices." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 56;
+       fhir:index 58;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1136,7 +1173,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example codes for example resources." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 57;
+       fhir:index 59;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1150,7 +1187,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "DDCC Designation Types to use for DDCC Folders." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 58;
+       fhir:index 60;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-ICD11-CodeSystem>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/DDCC-ICD11-CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Codes for ICD11" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ICD11 codes for DDCC so the FHIR server can perform expansions." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 61;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1164,7 +1215,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Possible formats available for QR data." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 59;
+       fhir:index 62;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1178,7 +1229,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Possible formats available for QR usage." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 60;
+       fhir:index 63;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1194,7 +1245,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition>
        ]
      ], [
-       fhir:index 61;
+       fhir:index 64;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1210,7 +1261,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition>
        ]
      ], [
-       fhir:index 62;
+       fhir:index 65;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1226,7 +1277,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition>
        ]
      ], [
-       fhir:index 63;
+       fhir:index 66;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1242,7 +1293,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition>
        ]
      ], [
-       fhir:index 64;
+       fhir:index 67;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1258,7 +1309,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition>
        ]
      ], [
-       fhir:index 65;
+       fhir:index 68;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1274,7 +1325,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition>
        ]
      ], [
-       fhir:index 66;
+       fhir:index 69;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1290,7 +1341,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
        ]
      ], [
-       fhir:index 67;
+       fhir:index 70;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1306,7 +1357,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
        ]
      ], [
-       fhir:index 68;
+       fhir:index 71;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1322,7 +1373,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
        ]
      ], [
-       fhir:index 69;
+       fhir:index 72;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1338,7 +1389,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
        ]
      ], [
-       fhir:index 70;
+       fhir:index 73;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1354,7 +1405,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
        ]
      ], [
-       fhir:index 71;
+       fhir:index 74;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1370,7 +1421,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
        ]
      ], [
-       fhir:index 72;
+       fhir:index 75;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1386,7 +1437,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation>
        ]
      ], [
-       fhir:index 73;
+       fhir:index 76;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1402,7 +1453,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation>
        ]
      ], [
-       fhir:index 74;
+       fhir:index 77;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1418,7 +1469,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation>
        ]
      ], [
-       fhir:index 75;
+       fhir:index 78;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1434,7 +1485,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation>
        ]
      ], [
-       fhir:index 76;
+       fhir:index 79;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1450,7 +1501,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation>
        ]
      ], [
-       fhir:index 77;
+       fhir:index 80;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1466,7 +1517,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation>
        ]
      ], [
-       fhir:index 78;
+       fhir:index 81;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1482,7 +1533,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
        ]
      ], [
-       fhir:index 79;
+       fhir:index 82;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1498,7 +1549,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
        ]
      ], [
-       fhir:index 80;
+       fhir:index 83;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1514,7 +1565,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
        ]
      ], [
-       fhir:index 81;
+       fhir:index 84;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1530,7 +1581,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
        ]
      ], [
-       fhir:index 82;
+       fhir:index 85;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1546,7 +1597,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
        ]
      ], [
-       fhir:index 83;
+       fhir:index 86;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1562,7 +1613,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
        ]
      ], [
-       fhir:index 84;
+       fhir:index 87;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1578,7 +1629,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>
        ]
      ], [
-       fhir:index 85;
+       fhir:index 88;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1594,7 +1645,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>
        ]
      ], [
-       fhir:index 86;
+       fhir:index 89;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1610,7 +1661,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>
        ]
      ], [
-       fhir:index 87;
+       fhir:index 90;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1626,7 +1677,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>
        ]
      ], [
-       fhir:index 88;
+       fhir:index 91;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1642,7 +1693,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>
        ]
      ], [
-       fhir:index 89;
+       fhir:index 92;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1658,7 +1709,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>
        ]
      ], [
-       fhir:index 90;
+       fhir:index 93;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1672,7 +1723,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Generate one or more signed DDCC Documents based on a [DDCC QuestionnaireResponse](StructureDefinition-DDCCQuestionnaireResponse.html)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 91;
+       fhir:index 94;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1686,7 +1737,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Generate a DDCC Folder from an IPS Bundle." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 92;
+       fhir:index 95;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1700,7 +1751,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Revoke a DDCC Document." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 93;
+       fhir:index 96;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1716,7 +1767,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventRequest>
        ]
      ], [
-       fhir:index 94;
+       fhir:index 97;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1732,7 +1783,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventRequest>
        ]
      ], [
-       fhir:index 95;
+       fhir:index 98;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1748,7 +1799,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventRequest>
        ]
      ], [
-       fhir:index 96;
+       fhir:index 99;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1764,7 +1815,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventRequest>
        ]
      ], [
-       fhir:index 97;
+       fhir:index 100;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1780,7 +1831,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventRequest>
        ]
      ], [
-       fhir:index 98;
+       fhir:index 101;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1796,7 +1847,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventRequest>
        ]
      ], [
-       fhir:index 99;
+       fhir:index 102;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1812,7 +1863,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse>
        ]
      ], [
-       fhir:index 100;
+       fhir:index 103;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1828,7 +1879,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse>
        ]
      ], [
-       fhir:index 101;
+       fhir:index 104;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1844,7 +1895,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse>
        ]
      ], [
-       fhir:index 102;
+       fhir:index 105;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1860,7 +1911,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse>
        ]
      ], [
-       fhir:index 103;
+       fhir:index 106;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1876,7 +1927,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse>
        ]
      ], [
-       fhir:index 104;
+       fhir:index 107;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1892,7 +1943,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse>
        ]
      ], [
-       fhir:index 105;
+       fhir:index 108;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1906,7 +1957,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "DDCC HCID Registration Questionnaire" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 106;
+       fhir:index 109;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1920,7 +1971,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "DDCC Questionnaire for a Test event." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 107;
+       fhir:index 110;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1934,7 +1985,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "DDCC Questionnaire for an Immunization event." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 108;
+       fhir:index 111;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1950,7 +2001,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocument>
        ]
      ], [
-       fhir:index 109;
+       fhir:index 112;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1966,7 +2017,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocument>
        ]
      ], [
-       fhir:index 110;
+       fhir:index 113;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1982,7 +2033,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocument>
        ]
      ], [
-       fhir:index 111;
+       fhir:index 114;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1998,7 +2049,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocument>
        ]
      ], [
-       fhir:index 112;
+       fhir:index 115;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2014,7 +2065,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocument>
        ]
      ], [
-       fhir:index 113;
+       fhir:index 116;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2030,7 +2081,35 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocument>
        ]
      ], [
-       fhir:index 114;
+       fhir:index 117;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-cvx-icd11-brands>;
+         fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-cvx-icd11-brands" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_CVX_To_ICD11_Brands" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from CVX to ICD-11 for COVID-19 Brands" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 118;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-cvx-icd11-vaccines>;
+         fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-cvx-icd11-vaccines" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_CVX_To_ICD11_Vaccines" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from CVX to ICD-11 for COVID-19 Vaccines" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 119;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2044,7 +2123,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from ICD-11 to ICD-10 for COVID-19 disease." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 115;
+       fhir:index 120;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2058,7 +2137,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from ICD-11 to SNOMED CT for COVID-19 Agent Targeted" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 116;
+       fhir:index 121;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2072,7 +2151,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from ICD-11 to SNOMED CT for COVID-19 disease." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 117;
+       fhir:index 122;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2086,7 +2165,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from ICD-11 to SNOMED CT for COVID-19 Test Result" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 118;
+       fhir:index 123;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2100,7 +2179,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from ICD-11 to SNOMED CT for COVID-19 Vaccines" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 119;
+       fhir:index 124;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2114,7 +2193,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from ICHI to LOINC for COVID-19 Type of Test" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 120;
+       fhir:index 125;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2128,7 +2207,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from ICHI to SNOMED CT for COVID-19 Specimen Origin" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 121;
+       fhir:index 126;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2142,7 +2221,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from ICHI to SNOMED CT for COVID-19 Type of Test" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 122;
+       fhir:index 127;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2156,7 +2235,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from LOINC to SNOMED CT for COVID-19 Type of Test" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 123;
+       fhir:index 128;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2170,7 +2249,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from SNOMED CT to ICHI for COVID-19 Specimen Origin" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 124;
+       fhir:index 129;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2183,7 +2262,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "IPS-Immunization-Example-Bundle-01" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 125;
+       fhir:index 130;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2197,7 +2276,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "CapabilityStatement for WHO DDCC Generator actor." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 126;
+       fhir:index 131;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2211,7 +2290,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "CapabilityStatement for WHO DDCC Registry Service actor." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 127;
+       fhir:index 132;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2225,7 +2304,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile represents the constraints applied to the Immunization resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of an immunization is represented in the patient summary as an instance of an Immunization resource constrained by this profile.\r\n\r\nIt describes the event of a patient being administered a vaccination or a record of a vaccination as reported by a patient, a clinician or another party." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 128;
+       fhir:index 133;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2239,7 +2318,20 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile represents the constraints applied to the Patient resource by the International Patient Summary (IPS) FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the IPS composition or in one of the referred resources." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 129;
+       fhir:index 134;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://worldhealthorganization.github.io/ddcc/Bundle/SHCVaccinationBundleDM-Example-English-From-ddcc-to-shc>;
+         fhir:Reference.reference [ fhir:value "Bundle/SHCVaccinationBundleDM-Example-English-From-ddcc-to-shc" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHCVaccinationBundleDM-Example-English-From-ddcc-to-shc" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 135;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2253,7 +2345,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "EU Digital Covid Certificate" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 130;
+       fhir:index 136;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2267,7 +2359,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Test Group" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 131;
+       fhir:index 137;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2281,7 +2373,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Vaccination Group" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 132;
+       fhir:index 138;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2294,7 +2386,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CoreDataSetLibrary" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 133;
+       fhir:index 139;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2307,7 +2399,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CoreDataSetVSLibrary" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 134;
+       fhir:index 140;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2320,7 +2412,20 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CoreDataSetVSToAddBundle" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 135;
+       fhir:index 141;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureMap" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSToSHC>;
+         fhir:Reference.reference [ fhir:value "StructureMap/CoreDataSetVSToSHC" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CoreDataSetVSToSHC" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 142;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2333,7 +2438,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCCtoCoredataset" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 136;
+       fhir:index 143;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2346,7 +2451,20 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCCtoEUdcc" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 137;
+       fhir:index 144;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureMap" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureMap/IPSToCoreDataSetVS>;
+         fhir:Reference.reference [ fhir:value "StructureMap/IPSToCoreDataSetVS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "IPSToCoreDataSetVS" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 145;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2359,7 +2477,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "QRespToVSCoreDataSet" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 138;
+       fhir:index 146;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2372,7 +2490,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ResourcesToCoreDataSet" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 139;
+       fhir:index 147;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2383,6 +2501,84 @@
          fhir:Reference.reference [ fhir:value "StructureMap/ResourcesToVSCoreDataSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ResourcesToVSCoreDataSet" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 148;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureMap" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureMap/SHCToCoreDataSetVS>;
+         fhir:Reference.reference [ fhir:value "StructureMap/SHCToCoreDataSetVS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHCToCoreDataSetVS" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 149;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureMap" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureMap/coredataset-to-addbundle>;
+         fhir:Reference.reference [ fhir:value "StructureMap/coredataset-to-addbundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CoreDataSetToAddBundle" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 150;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureMap" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-qresp-to-coredataset>;
+         fhir:Reference.reference [ fhir:value "StructureMap/ddcc-qresp-to-coredataset" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "QRespToCoreDataSet" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 151;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureMap" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-resources-to-coredataset>;
+         fhir:Reference.reference [ fhir:value "StructureMap/ddcc-resources-to-coredataset" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ResourcesToCoreDataSet" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 152;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureMap" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-shc>;
+         fhir:Reference.reference [ fhir:value "StructureMap/ddcc-to-shc" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCCtoSHC" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 153;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureMap" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureMap/shc-to-ddcc>;
+         fhir:Reference.reference [ fhir:value "StructureMap/shc-to-ddcc" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHCtoDDCC" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [
@@ -2446,46 +2642,51 @@
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 11;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "interoperability.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Interoperability" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+       ], [
+         fhir:index 12;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "maps.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Maps" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
-         fhir:index 12;
+         fhir:index 13;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "reference_implementation.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Reference Implementation" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
-         fhir:index 13;
+         fhir:index 14;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "references.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "References" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
-         fhir:index 14;
+         fhir:index 15;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "requirements.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Requirements" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
-         fhir:index 15;
+         fhir:index 16;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "security_privacy.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Security Privacy" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
-         fhir:index 16;
+         fhir:index 17;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "testing.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Testing" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
-         fhir:index 17;
+         fhir:index 18;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "transactions.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Transactions" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
-         fhir:index 18;
+         fhir:index 19;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "use_cases.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Use Cases" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
-         fhir:index 19;
+         fhir:index 20;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "workflows.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Workflows" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]

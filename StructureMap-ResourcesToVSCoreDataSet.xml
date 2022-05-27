@@ -128,7 +128,7 @@ group ImmRecToDDCCVS(source immRec : DDCCImmunizationRecommendation, target vacc
   <version value="1.0.0"/>
   <name value="ResourcesToVSCoreDataSet"/>
   <status value="draft"/>
-  <date value="2022-04-26T17:07:52+00:00"/>
+  <date value="2022-05-27T14:27:29+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -282,8 +282,16 @@ group ImmRecToDDCCVS(source immRec : DDCCImmunizationRecommendation, target vacc
           </source>
           <dependent>
             <name value="PatientToDDCCVS"/>
-            <variable value="patient"/>
-            <variable value="ddcc"/>
+            <variable value="patient">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
+            <variable value="ddcc">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
           </dependent>
         </rule>
         <rule>
@@ -297,9 +305,21 @@ group ImmRecToDDCCVS(source immRec : DDCCImmunizationRecommendation, target vacc
           </source>
           <dependent>
             <name value="ImmunizationToDDCCVS"/>
-            <variable value="immunization"/>
-            <variable value="vaccination"/>
-            <variable value="certificate"/>
+            <variable value="immunization">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
+            <variable value="vaccination">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
+            <variable value="certificate">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
           </dependent>
         </rule>
         <rule>
@@ -313,8 +333,16 @@ group ImmRecToDDCCVS(source immRec : DDCCImmunizationRecommendation, target vacc
           </source>
           <dependent>
             <name value="ImmRecToDDCCVS"/>
-            <variable value="immRec"/>
-            <variable value="vaccination"/>
+            <variable value="immRec">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
+            <variable value="vaccination">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
           </dependent>
         </rule>
         <rule>
@@ -328,8 +356,16 @@ group ImmRecToDDCCVS(source immRec : DDCCImmunizationRecommendation, target vacc
           </source>
           <dependent>
             <name value="CompositionToDDCCVS"/>
-            <variable value="composition"/>
-            <variable value="certificate"/>
+            <variable value="composition">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
+            <variable value="certificate">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
           </dependent>
         </rule>
       </rule>
@@ -442,8 +478,16 @@ group ImmRecToDDCCVS(source immRec : DDCCImmunizationRecommendation, target vacc
       </source>
       <dependent>
         <name value="NameToText"/>
-        <variable value="name"/>
-        <variable value="ddcc"/>
+        <variable value="name">
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+            <valueUrl value="id"/>
+          </extension>
+        </variable>
+        <variable value="ddcc">
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+            <valueUrl value="id"/>
+          </extension>
+        </variable>
       </dependent>
     </rule>
     <rule>

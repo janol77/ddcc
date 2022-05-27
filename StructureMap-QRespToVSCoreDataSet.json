@@ -13,7 +13,7 @@
   "version": "1.0.0",
   "name": "QRespToVSCoreDataSet",
   "status": "draft",
-  "date": "2022-04-26T17:07:52+00:00",
+  "date": "2022-05-27T14:27:29+00:00",
   "publisher": "WHO",
   "contact": [
     {
@@ -79,6 +79,24 @@
               "variable": [
                 "src",
                 "ddcc"
+              ],
+              "_variable": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/tools/StructureDefinition/original-item-type",
+                      "valueUrl": "id"
+                    }
+                  ]
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/tools/StructureDefinition/original-item-type",
+                      "valueUrl": "id"
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -105,6 +123,24 @@
               "variable": [
                 "src",
                 "vaccination"
+              ],
+              "_variable": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/tools/StructureDefinition/original-item-type",
+                      "valueUrl": "id"
+                    }
+                  ]
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/tools/StructureDefinition/original-item-type",
+                      "valueUrl": "id"
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -131,6 +167,24 @@
               "variable": [
                 "src",
                 "certificate"
+              ],
+              "_variable": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/tools/StructureDefinition/original-item-type",
+                      "valueUrl": "id"
+                    }
+                  ]
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/tools/StructureDefinition/original-item-type",
+                      "valueUrl": "id"
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -1157,6 +1211,24 @@
               "variable": [
                 "src",
                 "period"
+              ],
+              "_variable": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/tools/StructureDefinition/original-item-type",
+                      "valueUrl": "id"
+                    }
+                  ]
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/tools/StructureDefinition/original-item-type",
+                      "valueUrl": "id"
+                    }
+                  ]
+                }
               ]
             }
           ]

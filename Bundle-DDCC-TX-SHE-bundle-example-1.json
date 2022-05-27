@@ -77,7 +77,7 @@
                     {
                       "valueCoding": {
                         "system": "http://id.who.int/icd11/mms",
-                        "code": "XM1NL1"
+                        "code": "XM0GQ8"
                       }
                     }
                   ]
@@ -87,8 +87,8 @@
                   "answer": [
                     {
                       "valueCoding": {
-                        "system": "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Example-Test-CodeSystem",
-                        "code": "TEST"
+                        "system": "http://id.who.int/icd11/mms",
+                        "code": "XM3DT5"
                       }
                     }
                   ]

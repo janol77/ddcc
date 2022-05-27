@@ -96,7 +96,7 @@
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueCoding [
              fhir:Coding.system [ fhir:value "http://id.who.int/icd11/mms" ];
-             fhir:Coding.code [ fhir:value "XM1NL1" ]
+             fhir:Coding.code [ fhir:value "XM0GQ8" ]
            ]
          ]
        ], [
@@ -105,8 +105,8 @@
          fhir:QuestionnaireResponse.item.answer [
            fhir:index 0;
            fhir:QuestionnaireResponse.item.answer.valueCoding [
-             fhir:Coding.system [ fhir:value "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Example-Test-CodeSystem" ];
-             fhir:Coding.code [ fhir:value "TEST" ]
+             fhir:Coding.system [ fhir:value "http://id.who.int/icd11/mms" ];
+             fhir:Coding.code [ fhir:value "XM3DT5" ]
            ]
          ]
        ], [

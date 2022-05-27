@@ -20,7 +20,7 @@
   fhir:StructureMap.version [ fhir:value "1.0.0"];
   fhir:StructureMap.name [ fhir:value "ResourcesToCoreDataSet"];
   fhir:StructureMap.status [ fhir:value "draft"];
-  fhir:StructureMap.date [ fhir:value "2022-04-26T17:07:52+00:00"^^xsd:dateTime];
+  fhir:StructureMap.date [ fhir:value "2022-05-27T14:27:29+00:00"^^xsd:dateTime];
   fhir:StructureMap.publisher [ fhir:value "WHO"];
   fhir:StructureMap.contact [
      fhir:index 0;
@@ -221,10 +221,20 @@
              fhir:StructureMap.group.rule.dependent.name [ fhir:value "PatientToDDCCVS" ];
              fhir:StructureMap.group.rule.dependent.variable [
                fhir:value "patient";
-               fhir:index 0
+               fhir:index 0;
+               fhir:Element.extension [
+                 fhir:index 0;
+                 fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/original-item-type" ];
+                 fhir:Extension.valueUrl [ fhir:value "id" ]
+               ]
              ], [
                fhir:value "ddcc";
-               fhir:index 1
+               fhir:index 1;
+               fhir:Element.extension [
+                 fhir:index 0;
+                 fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/original-item-type" ];
+                 fhir:Extension.valueUrl [ fhir:value "id" ]
+               ]
              ]
            ]
          ], [
@@ -243,13 +253,28 @@
              fhir:StructureMap.group.rule.dependent.name [ fhir:value "ImmunizationToDDCCVS" ];
              fhir:StructureMap.group.rule.dependent.variable [
                fhir:value "immunization";
-               fhir:index 0
+               fhir:index 0;
+               fhir:Element.extension [
+                 fhir:index 0;
+                 fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/original-item-type" ];
+                 fhir:Extension.valueUrl [ fhir:value "id" ]
+               ]
              ], [
                fhir:value "vaccination";
-               fhir:index 1
+               fhir:index 1;
+               fhir:Element.extension [
+                 fhir:index 0;
+                 fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/original-item-type" ];
+                 fhir:Extension.valueUrl [ fhir:value "id" ]
+               ]
              ], [
                fhir:value "certificate";
-               fhir:index 2
+               fhir:index 2;
+               fhir:Element.extension [
+                 fhir:index 0;
+                 fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/original-item-type" ];
+                 fhir:Extension.valueUrl [ fhir:value "id" ]
+               ]
              ]
            ]
          ], [
@@ -268,10 +293,20 @@
              fhir:StructureMap.group.rule.dependent.name [ fhir:value "ImmRecToDDCCVS" ];
              fhir:StructureMap.group.rule.dependent.variable [
                fhir:value "immRec";
-               fhir:index 0
+               fhir:index 0;
+               fhir:Element.extension [
+                 fhir:index 0;
+                 fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/original-item-type" ];
+                 fhir:Extension.valueUrl [ fhir:value "id" ]
+               ]
              ], [
                fhir:value "vaccination";
-               fhir:index 1
+               fhir:index 1;
+               fhir:Element.extension [
+                 fhir:index 0;
+                 fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/original-item-type" ];
+                 fhir:Extension.valueUrl [ fhir:value "id" ]
+               ]
              ]
            ]
          ], [
@@ -290,10 +325,20 @@
              fhir:StructureMap.group.rule.dependent.name [ fhir:value "CompositionToDDCCVS" ];
              fhir:StructureMap.group.rule.dependent.variable [
                fhir:value "composition";
-               fhir:index 0
+               fhir:index 0;
+               fhir:Element.extension [
+                 fhir:index 0;
+                 fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/original-item-type" ];
+                 fhir:Extension.valueUrl [ fhir:value "id" ]
+               ]
              ], [
                fhir:value "certificate";
-               fhir:index 1
+               fhir:index 1;
+               fhir:Element.extension [
+                 fhir:index 0;
+                 fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/original-item-type" ];
+                 fhir:Extension.valueUrl [ fhir:value "id" ]
+               ]
              ]
            ]
          ]
@@ -429,10 +474,20 @@
          fhir:StructureMap.group.rule.dependent.name [ fhir:value "NameToText" ];
          fhir:StructureMap.group.rule.dependent.variable [
            fhir:value "name";
-           fhir:index 0
+           fhir:index 0;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/original-item-type" ];
+             fhir:Extension.valueUrl [ fhir:value "id" ]
+           ]
          ], [
            fhir:value "ddcc";
-           fhir:index 1
+           fhir:index 1;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/original-item-type" ];
+             fhir:Extension.valueUrl [ fhir:value "id" ]
+           ]
          ]
        ]
      ], [

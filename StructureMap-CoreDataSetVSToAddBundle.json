@@ -13,7 +13,7 @@
   "version": "1.0.0",
   "name": "CoreDataSetVSToAddBundle",
   "status": "draft",
-  "date": "2022-04-26T17:07:52+00:00",
+  "date": "2022-05-27T14:27:29+00:00",
   "publisher": "WHO",
   "contact": [
     {
@@ -92,6 +92,24 @@
               "variable": [
                 "ddcc",
                 "bundle"
+              ],
+              "_variable": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/tools/StructureDefinition/original-item-type",
+                      "valueUrl": "id"
+                    }
+                  ]
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/tools/StructureDefinition/original-item-type",
+                      "valueUrl": "id"
+                    }
+                  ]
+                }
               ]
             }
           ]
