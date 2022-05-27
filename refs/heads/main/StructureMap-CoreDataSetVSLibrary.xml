@@ -2,10 +2,6 @@
 
 <StructureMap xmlns="http://hl7.org/fhir">
   <id value="CoreDataSetVSLibrary"/>
-  <meta>
-    <versionId value="1"/>
-    <lastUpdated value="2022-03-01T19:17:54.783+00:00"/>
-  </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><pre>map &quot;http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSLibrary&quot; = &quot;CoreDataSetVSLibrary&quot;
 
@@ -34,13 +30,15 @@ group VSToAddBundle(source ddcc : DDCCVS, target bundle : AddBundle) {
       ddcc -&gt; comp.title = 'International Certificate of Vaccination or Prophylaxis' &quot;set title&quot;;
       ddcc -&gt; comp.section as section then {
         ddcc -&gt;  section.code as code,  code.coding as coding,  coding.system = 'http://loinc.org',  coding.code = '11369-6' &quot;set code&quot;;
-        ddcc.certificate as certificate -&gt; section.author as author then {
-          certificate.issuer as issuer -&gt; author.type = 'Organization' then {
-            issuer.identifier as pha -&gt; author.identifier as identifier then {
-              pha.value as value -&gt; identifier.value = value &quot;set pha&quot;;
-            } &quot;set author identifier&quot;;
-          } &quot;set author ref&quot;;
-        } &quot;set author&quot;;
+        ddcc.certificate as certificate, certificate.issuer as issuer -&gt; section.author = issuer &quot;set author&quot;;
+        // ddcc.certificate as certificate -&gt; section.author as author then {
+        //             certificate.issuer as issuer then {
+        //               issuer.identifier as pha -&gt; author.identifier as identifier, author.type = &quot;Organization&quot; then {
+        //                 pha.value as value -&gt; identifier.value = value &quot;set pha&quot;;
+        //               } &quot;set author identifier&quot;;
+        //             } &quot;set author ref&quot;;
+        //             
+        //           } &quot;set author&quot;;
         ddcc -&gt;  section.focus as focus,  focus.reference = append('Immunization/', iid) &quot;set focus&quot;;
         ddcc -&gt;  section.entry as entry,  entry.reference = append('Immunization/', iid) &quot;add Immunization entry&quot;;
         ddcc -&gt;  section.entry as entry,  entry.reference = append('ImmunizationRecommendation/', irid) &quot;add ImmunizationRecommendation entry&quot;;
@@ -158,7 +156,7 @@ group DDCCToImmRec(source src, target immrec : DDCCImmunizationRecommendation, s
   <version value="1.0.0"/>
   <name value="CoreDataSetVSLibrary"/>
   <status value="draft"/>
-  <date value="2022-04-26T17:07:52+00:00"/>
+  <date value="2022-05-27T14:27:29+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -342,9 +340,21 @@ group DDCCToImmRec(source src, target immrec : DDCCImmunizationRecommendation, s
           </source>
           <dependent>
             <name value="DDCCToPatient"/>
-            <variable value="ddcc"/>
-            <variable value="patient"/>
-            <variable value="pid"/>
+            <variable value="ddcc">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
+            <variable value="patient">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
+            <variable value="pid">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
           </dependent>
         </rule>
         <rule>
@@ -428,10 +438,26 @@ group DDCCToImmRec(source src, target immrec : DDCCImmunizationRecommendation, s
           </source>
           <dependent>
             <name value="DDCCToComposition"/>
-            <variable value="ddcc"/>
-            <variable value="comp"/>
-            <variable value="compid"/>
-            <variable value="pid"/>
+            <variable value="ddcc">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
+            <variable value="comp">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
+            <variable value="compid">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
+            <variable value="pid">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
           </dependent>
         </rule>
         <rule>
@@ -539,60 +565,20 @@ group DDCCToImmRec(source src, target immrec : DDCCImmunizationRecommendation, s
               <element value="certificate"/>
               <variable value="certificate"/>
             </source>
+            <source>
+              <context value="certificate"/>
+              <element value="issuer"/>
+              <variable value="issuer"/>
+            </source>
             <target>
               <context value="section"/>
               <contextType value="variable"/>
               <element value="author"/>
-              <variable value="author"/>
+              <transform value="copy"/>
+              <parameter>
+                <valueId value="issuer"/>
+              </parameter>
             </target>
-            <rule>
-              <name value="set author ref"/>
-              <source>
-                <context value="certificate"/>
-                <element value="issuer"/>
-                <variable value="issuer"/>
-              </source>
-              <target>
-                <context value="author"/>
-                <contextType value="variable"/>
-                <element value="type"/>
-                <transform value="copy"/>
-                <parameter>
-                  <valueString value="Organization"/>
-                </parameter>
-              </target>
-              <rule>
-                <name value="set author identifier"/>
-                <source>
-                  <context value="issuer"/>
-                  <element value="identifier"/>
-                  <variable value="pha"/>
-                </source>
-                <target>
-                  <context value="author"/>
-                  <contextType value="variable"/>
-                  <element value="identifier"/>
-                  <variable value="identifier"/>
-                </target>
-                <rule>
-                  <name value="set pha"/>
-                  <source>
-                    <context value="pha"/>
-                    <element value="value"/>
-                    <variable value="value"/>
-                  </source>
-                  <target>
-                    <context value="identifier"/>
-                    <contextType value="variable"/>
-                    <element value="value"/>
-                    <transform value="copy"/>
-                    <parameter>
-                      <valueId value="value"/>
-                    </parameter>
-                  </target>
-                </rule>
-              </rule>
-            </rule>
           </rule>
           <rule>
             <name value="set focus"/>
@@ -617,6 +603,7 @@ group DDCCToImmRec(source src, target immrec : DDCCImmunizationRecommendation, s
                 <valueId value="iid"/>
               </parameter>
             </target>
+            <documentation value="ddcc.certificate as certificate -&gt; section.author as author then {&#xA;            certificate.issuer as issuer then {&#xA;              issuer.identifier as pha -&gt; author.identifier as identifier, author.type = &quot;Organization&quot; then {&#xA;                pha.value as value -&gt; identifier.value = value &quot;set pha&quot;;&#xA;              } &quot;set author identifier&quot;;&#xA;            } &quot;set author ref&quot;;&#xA;            &#xA;          } &quot;set author&quot;;"/>
           </rule>
           <rule>
             <name value="add Immunization entry"/>
@@ -796,10 +783,26 @@ group DDCCToImmRec(source src, target immrec : DDCCImmunizationRecommendation, s
           </source>
           <dependent>
             <name value="DDCCToDocumentReference"/>
-            <variable value="ddcc"/>
-            <variable value="qr"/>
-            <variable value="qrwhoid"/>
-            <variable value="pid"/>
+            <variable value="ddcc">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
+            <variable value="qr">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
+            <variable value="qrwhoid">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
+            <variable value="pid">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
           </dependent>
         </rule>
         <rule>
@@ -934,10 +937,26 @@ group DDCCToImmRec(source src, target immrec : DDCCImmunizationRecommendation, s
           </source>
           <dependent>
             <name value="DDCCToDocumentReference"/>
-            <variable value="ddcc"/>
-            <variable value="qr"/>
-            <variable value="qrdccid"/>
-            <variable value="pid"/>
+            <variable value="ddcc">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
+            <variable value="qr">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
+            <variable value="qrdccid">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
+            <variable value="pid">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
           </dependent>
         </rule>
         <rule>
@@ -1077,11 +1096,31 @@ group DDCCToImmRec(source src, target immrec : DDCCImmunizationRecommendation, s
           </source>
           <dependent>
             <name value="DDCCToImmunization"/>
-            <variable value="vaccination"/>
-            <variable value="immunization"/>
-            <variable value="certificate"/>
-            <variable value="iid"/>
-            <variable value="pid"/>
+            <variable value="vaccination">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
+            <variable value="immunization">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
+            <variable value="certificate">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
+            <variable value="iid">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
+            <variable value="pid">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
           </dependent>
         </rule>
         <rule>
@@ -1168,11 +1207,31 @@ group DDCCToImmRec(source src, target immrec : DDCCImmunizationRecommendation, s
           </source>
           <dependent>
             <name value="DDCCToImmRec"/>
-            <variable value="vaccination"/>
-            <variable value="immrec"/>
-            <variable value="irid"/>
-            <variable value="iid"/>
-            <variable value="pid"/>
+            <variable value="vaccination">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
+            <variable value="immrec">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
+            <variable value="irid">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
+            <variable value="iid">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
+            <variable value="pid">
+              <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+                <valueUrl value="id"/>
+              </extension>
+            </variable>
           </dependent>
         </rule>
         <rule>

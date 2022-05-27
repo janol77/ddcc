@@ -79,7 +79,7 @@ group DecodeImmunizationToQR(source ddcc : DDCCDocument, source immunization : D
   <version value="1.0.0"/>
   <name value="DDCCtoCoredataset"/>
   <status value="draft"/>
-  <date value="2022-04-26T17:07:52+00:00"/>
+  <date value="2022-05-27T14:27:29+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -169,8 +169,16 @@ group DecodeImmunizationToQR(source ddcc : DDCCDocument, source immunization : D
         </source>
         <dependent>
           <name value="DecodePatientToQR"/>
-          <variable value="patient"/>
-          <variable value="qr"/>
+          <variable value="patient">
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+              <valueUrl value="id"/>
+            </extension>
+          </variable>
+          <variable value="qr">
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+              <valueUrl value="id"/>
+            </extension>
+          </variable>
         </dependent>
         <documentation value="entry.resource : DDCCPatient as patient"/>
       </rule>
@@ -193,9 +201,21 @@ group DecodeImmunizationToQR(source ddcc : DDCCDocument, source immunization : D
         </source>
         <dependent>
           <name value="DecodeImmunizationToQR"/>
-          <variable value="ddcc"/>
-          <variable value="immunization"/>
-          <variable value="qr"/>
+          <variable value="ddcc">
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+              <valueUrl value="id"/>
+            </extension>
+          </variable>
+          <variable value="immunization">
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+              <valueUrl value="id"/>
+            </extension>
+          </variable>
+          <variable value="qr">
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+              <valueUrl value="id"/>
+            </extension>
+          </variable>
         </dependent>
       </rule>
     </rule>

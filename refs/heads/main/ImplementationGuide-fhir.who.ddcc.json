@@ -41,6 +41,12 @@
   ],
   "dependsOn": [
     {
+      "id": "hl7tx",
+      "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+      "packageId": "hl7.terminology.r4",
+      "version": "3.1.0"
+    },
+    {
       "id": "hl7_fhir_uv_ips",
       "uri": "http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips",
       "packageId": "hl7.fhir.uv.ips",
@@ -1043,6 +1049,34 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/who-ddcc-allowed-vaccines-covid-19"
+        },
+        "name": "WHO DDCC Allowed Vaccine List (COVID-19)",
+        "description": "WHO DDCC Allowed Vaccine List (COVID-19) for importing from other valuesets.  Any not\nin who-ddcc-vaccines-covid-19 should be included in the ConceptMap so it can be\ntranslated into an ICD-11 code.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/who-ddcc-brands-covid-19"
+        },
+        "name": "WHO DDCC Brand List (COVID-19)",
+        "description": "WHO DDCC Brand List (COVID-19) from [ICD 11](https://icd.who.int/browse11)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/who-ddcc-disease-targeted-covid-19"
         },
         "name": "WHO Disease or Agent Targeted (COVID-19)",
@@ -1159,6 +1193,20 @@
         },
         "name": "DDCC Designation Types for Folder",
         "description": "DDCC Designation Types to use for DDCC Folders.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/DDCC-ICD11-CodeSystem"
+        },
+        "name": "DDCC Codes for ICD11",
+        "description": "ICD11 codes for DDCC so the FHIR server can perform expansions.",
         "exampleBoolean": false
       },
       {
@@ -1905,6 +1953,34 @@
           }
         ],
         "reference": {
+          "reference": "ConceptMap/who-ddcc-map-cvx-icd11-brands"
+        },
+        "name": "WHO_DDCC_Map_CVX_To_ICD11_Brands",
+        "description": "Mapping from CVX to ICD-11 for COVID-19 Brands",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ConceptMap"
+          }
+        ],
+        "reference": {
+          "reference": "ConceptMap/who-ddcc-map-cvx-icd11-vaccines"
+        },
+        "name": "WHO_DDCC_Map_CVX_To_ICD11_Vaccines",
+        "description": "Mapping from CVX to ICD-11 for COVID-19 Vaccines",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ConceptMap"
+          }
+        ],
+        "reference": {
           "reference": "ConceptMap/who-ddcc-map-icd11-icd10-disease-targeted"
         },
         "name": "WHO_DDCC_Map_ICD11_to_ICD10_Disease_Targeted",
@@ -2110,6 +2186,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/SHCVaccinationBundleDM-Example-English-From-ddcc-to-shc"
+        },
+        "name": "SHCVaccinationBundleDM-Example-English-From-ddcc-to-shc",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:logical:abstract"
           }
         ],
@@ -2195,6 +2284,19 @@
           }
         ],
         "reference": {
+          "reference": "StructureMap/CoreDataSetVSToSHC"
+        },
+        "name": "CoreDataSetVSToSHC",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureMap"
+          }
+        ],
+        "reference": {
           "reference": "StructureMap/DDCCtoCoredataset"
         },
         "name": "DDCCtoCoredataset",
@@ -2211,6 +2313,19 @@
           "reference": "StructureMap/DDCCtoEUdcc"
         },
         "name": "DDCCtoEUdcc",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureMap"
+          }
+        ],
+        "reference": {
+          "reference": "StructureMap/IPSToCoreDataSetVS"
+        },
+        "name": "IPSToCoreDataSetVS",
         "exampleBoolean": false
       },
       {
@@ -2250,6 +2365,84 @@
           "reference": "StructureMap/ResourcesToVSCoreDataSet"
         },
         "name": "ResourcesToVSCoreDataSet",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureMap"
+          }
+        ],
+        "reference": {
+          "reference": "StructureMap/SHCToCoreDataSetVS"
+        },
+        "name": "SHCToCoreDataSetVS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureMap"
+          }
+        ],
+        "reference": {
+          "reference": "StructureMap/coredataset-to-addbundle"
+        },
+        "name": "CoreDataSetToAddBundle",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureMap"
+          }
+        ],
+        "reference": {
+          "reference": "StructureMap/ddcc-qresp-to-coredataset"
+        },
+        "name": "QRespToCoreDataSet",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureMap"
+          }
+        ],
+        "reference": {
+          "reference": "StructureMap/ddcc-resources-to-coredataset"
+        },
+        "name": "ResourcesToCoreDataSet",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureMap"
+          }
+        ],
+        "reference": {
+          "reference": "StructureMap/ddcc-to-shc"
+        },
+        "name": "DDCCtoSHC",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureMap"
+          }
+        ],
+        "reference": {
+          "reference": "StructureMap/shc-to-ddcc"
+        },
+        "name": "SHCtoDDCC",
         "exampleBoolean": false
       }
     ],
@@ -2312,6 +2505,11 @@
           "nameUrl": "functional_requirements.html",
           "title": "Functional Requirements",
           "generation": "markdown"
+        },
+        {
+          "nameUrl": "interoperability.html",
+          "title": "Interoperability",
+          "generation": "html"
         },
         {
           "nameUrl": "maps.html",

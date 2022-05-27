@@ -30,6 +30,11 @@
   <packageId value="fhir.who.ddcc"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="3.1.0"/>
+  </dependsOn>
   <dependsOn id="hl7_fhir_uv_ips">
     <uri value="http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips"/>
     <packageId value="hl7.fhir.uv.ips"/>
@@ -766,6 +771,28 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/who-ddcc-allowed-vaccines-covid-19"/>
+      </reference>
+      <name value="WHO DDCC Allowed Vaccine List (COVID-19)"/>
+      <description value="WHO DDCC Allowed Vaccine List (COVID-19) for importing from other valuesets.  Any not&#xA;in who-ddcc-vaccines-covid-19 should be included in the ConceptMap so it can be&#xA;translated into an ICD-11 code."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/who-ddcc-brands-covid-19"/>
+      </reference>
+      <name value="WHO DDCC Brand List (COVID-19)"/>
+      <description value="WHO DDCC Brand List (COVID-19) from [ICD 11](https://icd.who.int/browse11)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/who-ddcc-disease-targeted-covid-19"/>
       </reference>
       <name value="WHO Disease or Agent Targeted (COVID-19)"/>
@@ -858,6 +885,17 @@
       </reference>
       <name value="DDCC Designation Types for Folder"/>
       <description value="DDCC Designation Types to use for DDCC Folders."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/DDCC-ICD11-CodeSystem"/>
+      </reference>
+      <name value="DDCC Codes for ICD11"/>
+      <description value="ICD11 codes for DDCC so the FHIR server can perform expansions."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1433,6 +1471,28 @@
         <valueString value="ConceptMap"/>
       </extension>
       <reference>
+        <reference value="ConceptMap/who-ddcc-map-cvx-icd11-brands"/>
+      </reference>
+      <name value="WHO_DDCC_Map_CVX_To_ICD11_Brands"/>
+      <description value="Mapping from CVX to ICD-11 for COVID-19 Brands"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/who-ddcc-map-cvx-icd11-vaccines"/>
+      </reference>
+      <name value="WHO_DDCC_Map_CVX_To_ICD11_Vaccines"/>
+      <description value="Mapping from CVX to ICD-11 for COVID-19 Vaccines"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
         <reference value="ConceptMap/who-ddcc-map-icd11-icd10-disease-targeted"/>
       </reference>
       <name value="WHO_DDCC_Map_ICD11_to_ICD10_Disease_Targeted"/>
@@ -1594,6 +1654,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/SHCVaccinationBundleDM-Example-English-From-ddcc-to-shc"/>
+      </reference>
+      <name value="SHCVaccinationBundleDM-Example-English-From-ddcc-to-shc"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:logical:abstract"/>
       </extension>
       <reference>
@@ -1660,6 +1730,16 @@
         <valueString value="StructureMap"/>
       </extension>
       <reference>
+        <reference value="StructureMap/CoreDataSetVSToSHC"/>
+      </reference>
+      <name value="CoreDataSetVSToSHC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureMap"/>
+      </extension>
+      <reference>
         <reference value="StructureMap/DDCCtoCoredataset"/>
       </reference>
       <name value="DDCCtoCoredataset"/>
@@ -1673,6 +1753,16 @@
         <reference value="StructureMap/DDCCtoEUdcc"/>
       </reference>
       <name value="DDCCtoEUdcc"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureMap"/>
+      </extension>
+      <reference>
+        <reference value="StructureMap/IPSToCoreDataSetVS"/>
+      </reference>
+      <name value="IPSToCoreDataSetVS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1703,6 +1793,66 @@
         <reference value="StructureMap/ResourcesToVSCoreDataSet"/>
       </reference>
       <name value="ResourcesToVSCoreDataSet"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureMap"/>
+      </extension>
+      <reference>
+        <reference value="StructureMap/SHCToCoreDataSetVS"/>
+      </reference>
+      <name value="SHCToCoreDataSetVS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureMap"/>
+      </extension>
+      <reference>
+        <reference value="StructureMap/coredataset-to-addbundle"/>
+      </reference>
+      <name value="CoreDataSetToAddBundle"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureMap"/>
+      </extension>
+      <reference>
+        <reference value="StructureMap/ddcc-qresp-to-coredataset"/>
+      </reference>
+      <name value="QRespToCoreDataSet"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureMap"/>
+      </extension>
+      <reference>
+        <reference value="StructureMap/ddcc-resources-to-coredataset"/>
+      </reference>
+      <name value="ResourcesToCoreDataSet"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureMap"/>
+      </extension>
+      <reference>
+        <reference value="StructureMap/ddcc-to-shc"/>
+      </reference>
+      <name value="DDCCtoSHC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureMap"/>
+      </extension>
+      <reference>
+        <reference value="StructureMap/shc-to-ddcc"/>
+      </reference>
+      <name value="SHCtoDDCC"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>
@@ -1763,6 +1913,11 @@
         <nameUrl value="functional_requirements.html"/>
         <title value="Functional Requirements"/>
         <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="interoperability.html"/>
+        <title value="Interoperability"/>
+        <generation value="html"/>
       </page>
       <page>
         <nameUrl value="maps.html"/>

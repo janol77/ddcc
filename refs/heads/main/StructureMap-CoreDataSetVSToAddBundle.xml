@@ -25,7 +25,7 @@ group CoreDataSetToAddBundle(source ddcc : DDCCVS, target bundle : AddBundle) {
   <version value="1.0.0"/>
   <name value="CoreDataSetVSToAddBundle"/>
   <status value="draft"/>
-  <date value="2022-04-26T17:07:52+00:00"/>
+  <date value="2022-05-27T14:27:29+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -78,8 +78,16 @@ group CoreDataSetToAddBundle(source ddcc : DDCCVS, target bundle : AddBundle) {
       </target>
       <dependent>
         <name value="VSToAddBundle"/>
-        <variable value="ddcc"/>
-        <variable value="bundle"/>
+        <variable value="ddcc">
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+            <valueUrl value="id"/>
+          </extension>
+        </variable>
+        <variable value="bundle">
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+            <valueUrl value="id"/>
+          </extension>
+        </variable>
       </dependent>
     </rule>
   </group>
