@@ -532,6 +532,13 @@
     "name": "DDCCVaccineValidFrom"
   },
   {
+    "id": "BundleVSToAddBundle",
+    "type": "StructureMap",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureMap/BundleVSToAddBundle",
+    "version": "1.0.0",
+    "name": "BundleVSToAddBundle"
+  },
+  {
     "id": "CoreDataSetLibrary",
     "type": "StructureMap",
     "url": "http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetLibrary",

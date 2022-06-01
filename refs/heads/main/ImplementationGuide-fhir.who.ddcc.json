@@ -2245,6 +2245,19 @@
           }
         ],
         "reference": {
+          "reference": "StructureMap/BundleVSToAddBundle"
+        },
+        "name": "BundleVSToAddBundle",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureMap"
+          }
+        ],
+        "reference": {
           "reference": "StructureMap/CoreDataSetLibrary"
         },
         "name": "CoreDataSetLibrary",

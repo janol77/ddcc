@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"22.79"}
-    h3,h4,h5,h6{--heading-prefix:"22.79"}</style>
+    <style type="text/css">h2{--heading-prefix:"22.80"}
+    h3,h4,h5,h6{--heading-prefix:"22.80"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -224,7 +224,7 @@
         
           Draft
           
-            as of 2022-05-27
+            as of 2022-06-01
           
         
       </td>
@@ -245,18 +245,18 @@
   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap">resourceType</a>" : "StructureMap",
   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.id">id</a>" : "CoreDataSetVSToAddBundle",
   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.meta">meta</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.versionId">versionId</a>" : "1",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2022-03-01T19:17:55.942+00:00"
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.versionId">versionId</a>" : "2",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2022-06-01T12:54:53.172+00:00"
   },
   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;pre&gt;map &amp;quot;http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSToAddBundle&amp;quot; = &amp;quot;CoreDataSetVSToAddBundle&amp;quot;\r\n\r\n\r\nuses &amp;quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSet.VS&amp;quot; alias DDCCVS as source\r\nuses &amp;quot;http://hl7.org/fhir/StructureDefinition/Bundle&amp;quot; alias AddBundle as target\r\n\r\nimports &amp;quot;http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSLibrary&amp;quot;\r\n\r\ngroup CoreDataSetToAddBundle(source ddcc : DDCCVS, target bundle : AddBundle) {\r\n  ddcc -&amp;gt; bundle then VSToAddBundle(ddcc, bundle) &amp;quot;setup add bundle&amp;quot;;\r\n}\r\n\r\n&lt;/pre&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;pre&gt;map &amp;quot;http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSToAddBundle&amp;quot; = &amp;quot;CoreDataSetVSToAddBundle&amp;quot;\r\n\r\n\r\nuses &amp;quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSet.VS&amp;quot; alias DDCCVS as source\r\nuses &amp;quot;http://hl7.org/fhir/StructureDefinition/Bundle&amp;quot; alias AddBundle as target\r\n\r\nimports &amp;quot;http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSLibrary&amp;quot;\r\n\r\ngroup CoreDataSetVSToAddBundle(source ddcc : DDCCVS, target bundle : AddBundle) {\r\n  ddcc -&amp;gt; bundle then VSToAddBundle(ddcc, bundle) &amp;quot;setup add bundle&amp;quot;;\r\n}\r\n\r\n&lt;/pre&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.url">url</a>" : "http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSToAddBundle",
   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.version">version</a>" : "1.0.0",
   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.name">name</a>" : "CoreDataSetVSToAddBundle",
   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.status">status</a>" : "draft",
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.date">date</a>" : "2022-05-27T14:27:29+00:00",
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.date">date</a>" : "2022-06-01T13:01:08+00:00",
   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.publisher">publisher</a>" : "WHO",
   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.contact">contact</a>" : [
     {
@@ -296,7 +296,7 @@
   ],
   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group">group</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.name">name</a>" : "CoreDataSetToAddBundle",
+      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.name">name</a>" : "CoreDataSetVSToAddBundle",
       "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.typeMode">typeMode</a>" : "none",
       "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input">input</a>" : [
         {
@@ -390,7 +390,7 @@
 
       <div class="inner-wrapper">
         <p><a name="l618">​</a>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 27, 2022 14:27+0000">2022-05-27</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 1, 2022 13:01+0000">2022-06-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

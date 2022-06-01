@@ -1,10 +1,10 @@
 ﻿ddcc : Validation Results
 =========================================
 
-err = 613, warn = 90, info = 34
-IG Publisher Version: 1.1.120
-Generated Fri May 27 14:30:11 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0.0 (canonical = http://worldhealthorganization.github.io/ddcc)
- Build Errors : 969 / 66 / 0
+err = 615, warn = 91, info = 34
+IG Publisher Version: 1.1.121
+Generated Wed Jun 01 13:04:03 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0.0 (canonical = http://worldhealthorganization.github.io/ddcc)
+ Build Errors : 974 / 67 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 0 / 0 / 10
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Arabic : 0 / 0 / 10
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Chinese : 0 / 0 / 10
@@ -144,8 +144,9 @@ Generated Fri May 27 14:30:11 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0
  /github/workspace/input/resources/StructureDefinition-HC1 : 0 / 1 / 1
  /github/workspace/input/resources/StructureDefinition-t : 15 / 1 / 1
  /github/workspace/input/resources/StructureDefinition-v : 0 / 1 / 1
+ /github/workspace/input/resources/StructureMap-BundleVSToAddBundle : 1 / 0 / 1
  /github/workspace/input/resources/StructureMap-CoreDataSetLibrary : 26 / 0 / 1
- /github/workspace/input/resources/StructureMap-CoreDataSetVSLibrary : 89 / 0 / 1
+ /github/workspace/input/resources/StructureMap-CoreDataSetVSLibrary : 90 / 0 / 1
  /github/workspace/input/resources/StructureMap-CoreDataSetVSToAddBundle : 1 / 0 / 1
  /github/workspace/input/resources/StructureMap-CoreDataSetVSToSHC : 30 / 0 / 1
  /github/workspace/input/resources/StructureMap-DDCCtoCoredataset : 0 / 0 / 1
@@ -212,6 +213,7 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/Example-Spanish.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/IPS-Immunization-Example-Bundle-01.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/SHCVaccinationBundleDM-Example-English-From-ddcc-to-shc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/BundleVSToAddBundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/CoreDataSetLibrary.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/CoreDataSetVSLibrary.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/CoreDataSetVSToAddBundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -1027,16 +1029,21 @@ ERROR: /github/workspace/output/StructureDefinition-v.profile.history.html#/html
 ERROR: /github/workspace/output/StructureDefinition-v.profile.json.html#/html/body/div/div/div/p/a at Line 843, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-v.profile.ttl.html#/html/body/div/div/div/p/a at Line 761, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-v.profile.xml.html#/html/body/div/div/div/p/a at Line 760, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-BundleVSToAddBundle.change.history.html#/html/body/div/div/div/p/a at Line 282, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-BundleVSToAddBundle.html#/html/body/div/div/div/p/a at Line 324, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-BundleVSToAddBundle.json.html#/html/body/div/div/div/p/a at Line 407, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-BundleVSToAddBundle.ttl.html#/html/body/div/div/div/p/a at Line 397, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-BundleVSToAddBundle.xml.html#/html/body/div/div/div/p/a at Line 385, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-CoreDataSetLibrary.change.history.html#/html/body/div/div/div/p/a at Line 282, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-CoreDataSetLibrary.html#/html/body/div/div/div/p/a at Line 364, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-CoreDataSetLibrary.json.html#/html/body/div/div/div/p/a at Line 1079, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-CoreDataSetLibrary.ttl.html#/html/body/div/div/div/p/a at Line 878, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-CoreDataSetLibrary.xml.html#/html/body/div/div/div/p/a at Line 949, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-CoreDataSetVSLibrary.change.history.html#/html/body/div/div/div/p/a at Line 282, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureMap-CoreDataSetVSLibrary.html#/html/body/div/div/div/p/a at Line 459, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureMap-CoreDataSetVSLibrary.json.html#/html/body/div/div/div/p/a at Line 3017, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureMap-CoreDataSetVSLibrary.ttl.html#/html/body/div/div/div/p/a at Line 2219, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureMap-CoreDataSetVSLibrary.xml.html#/html/body/div/div/div/p/a at Line 2498, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-CoreDataSetVSLibrary.html#/html/body/div/div/div/p/a at Line 461, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-CoreDataSetVSLibrary.json.html#/html/body/div/div/div/p/a at Line 3028, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-CoreDataSetVSLibrary.ttl.html#/html/body/div/div/div/p/a at Line 2227, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-CoreDataSetVSLibrary.xml.html#/html/body/div/div/div/p/a at Line 2507, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-CoreDataSetVSToAddBundle.change.history.html#/html/body/div/div/div/p/a at Line 282, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-CoreDataSetVSToAddBundle.html#/html/body/div/div/div/p/a at Line 324, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureMap-CoreDataSetVSToAddBundle.json.html#/html/body/div/div/div/p/a at Line 404, column 135: The link 'license.html' for "License" cannot be resolved
@@ -1173,7 +1180,7 @@ ERROR: /github/workspace/output/ValueSet-who-ddcc-vaccines-covid-19.json.html#/h
 ERROR: /github/workspace/output/ValueSet-who-ddcc-vaccines-covid-19.ttl.html#/html/body/div/div/div/p/a at Line 428, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-who-ddcc-vaccines-covid-19.xml.html#/html/body/div/div/div/p/a at Line 444, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/actors.html#/html/body/div/div/div/p/a at Line 260, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 1644, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 1650, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/changes.html#/html/body/div/div/div/p/a at Line 264, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/concepts.html#/html/body/div/div/div/p/a at Line 418, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/content_profiles.html#/html/body/div/div/div/p/a at Line 339, column 135: The link 'license.html' for "License" cannot be resolved
@@ -1185,7 +1192,7 @@ ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/p/a at Lin
 ERROR: /github/workspace/output/functional_requirements.html#/html/body/div/div/div/p/a at Line 1188, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 327, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/interoperability.html#/html/body/div/div/div/p/a at Line 305, column 135: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/maps.html#/html/body/div/div/div/p/a at Line 241, column 135: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/maps.html#/html/body/div/div/div/p/a at Line 242, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/reference_implementation.html#/html/body/div/div/div/p/a at Line 263, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/references.html#/html/body/div/div/div/p/a at Line 243, column 135: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/requirements.html#/html/body/div/div/div/p/a at Line 231, column 135: The link 'license.html' for "License" cannot be resolved
@@ -1463,6 +1470,8 @@ ERROR: StructureDefinition/t: StructureDefinition.differential.element[9]: Dupli
 ERROR: StructureDefinition/t: StructureDefinition.differential.element[10]: Duplicate id value 't.ci'
 == input/resources/StructureDefinition-v.json ==
 WARNING: StructureDefinition/v: StructureDefinition: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== input/resources/StructureMap-BundleVSToAddBundle.json ==
+ERROR: StructureMap/BundleVSToAddBundle: StructureMap.group[0].rule[0].name: id value 'get first entry from bundle' is not valid
 == input/resources/StructureMap-CoreDataSetLibrary.json ==
 ERROR: StructureMap/CoreDataSetLibrary: StructureMap.group[0].rule[0].name: id value 'set id' is not valid
 ERROR: StructureMap/CoreDataSetLibrary: StructureMap.group[0].rule[1].name: id value 'set full name' is not valid
@@ -1502,7 +1511,8 @@ ERROR: StructureMap/CoreDataSetVSLibrary: StructureMap.group[0].rule[1].rule[1].
 ERROR: StructureMap/CoreDataSetVSLibrary: StructureMap.group[0].rule[1].rule[1].rule[2].name: id value 'set title' is not valid
 ERROR: StructureMap/CoreDataSetVSLibrary: StructureMap.group[0].rule[1].rule[1].rule[3].name: id value 'set section' is not valid
 ERROR: StructureMap/CoreDataSetVSLibrary: StructureMap.group[0].rule[1].rule[1].rule[3].rule[0].name: id value 'set code' is not valid
-ERROR: StructureMap/CoreDataSetVSLibrary: StructureMap.group[0].rule[1].rule[1].rule[3].rule[1].name: id value 'set author' is not valid
+ERROR: StructureMap/CoreDataSetVSLibrary: StructureMap.group[0].rule[1].rule[1].rule[3].rule[1].name: id value 'set certificate' is not valid
+ERROR: StructureMap/CoreDataSetVSLibrary: StructureMap.group[0].rule[1].rule[1].rule[3].rule[1].rule[0].name: id value 'set author' is not valid
 ERROR: StructureMap/CoreDataSetVSLibrary: StructureMap.group[0].rule[1].rule[1].rule[3].rule[2].name: id value 'set focus' is not valid
 ERROR: StructureMap/CoreDataSetVSLibrary: StructureMap.group[0].rule[1].rule[1].rule[3].rule[3].name: id value 'add Immunization entry' is not valid
 ERROR: StructureMap/CoreDataSetVSLibrary: StructureMap.group[0].rule[1].rule[1].rule[3].rule[4].name: id value 'add ImmunizationRecommendation entry' is not valid
