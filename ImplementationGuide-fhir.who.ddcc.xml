@@ -1700,6 +1700,16 @@
         <valueString value="StructureMap"/>
       </extension>
       <reference>
+        <reference value="StructureMap/BundleVSToAddBundle"/>
+      </reference>
+      <name value="BundleVSToAddBundle"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureMap"/>
+      </extension>
+      <reference>
         <reference value="StructureMap/CoreDataSetLibrary"/>
       </reference>
       <name value="CoreDataSetLibrary"/>

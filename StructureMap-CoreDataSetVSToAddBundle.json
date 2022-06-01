@@ -2,18 +2,18 @@
   "resourceType": "StructureMap",
   "id": "CoreDataSetVSToAddBundle",
   "meta": {
-    "versionId": "1",
-    "lastUpdated": "2022-03-01T19:17:55.942+00:00"
+    "versionId": "2",
+    "lastUpdated": "2022-06-01T12:54:53.172+00:00"
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><pre>map &quot;http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSToAddBundle&quot; = &quot;CoreDataSetVSToAddBundle&quot;\r\n\r\n\r\nuses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSet.VS&quot; alias DDCCVS as source\r\nuses &quot;http://hl7.org/fhir/StructureDefinition/Bundle&quot; alias AddBundle as target\r\n\r\nimports &quot;http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSLibrary&quot;\r\n\r\ngroup CoreDataSetToAddBundle(source ddcc : DDCCVS, target bundle : AddBundle) {\r\n  ddcc -&gt; bundle then VSToAddBundle(ddcc, bundle) &quot;setup add bundle&quot;;\r\n}\r\n\r\n</pre></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><pre>map &quot;http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSToAddBundle&quot; = &quot;CoreDataSetVSToAddBundle&quot;\r\n\r\n\r\nuses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSet.VS&quot; alias DDCCVS as source\r\nuses &quot;http://hl7.org/fhir/StructureDefinition/Bundle&quot; alias AddBundle as target\r\n\r\nimports &quot;http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSLibrary&quot;\r\n\r\ngroup CoreDataSetVSToAddBundle(source ddcc : DDCCVS, target bundle : AddBundle) {\r\n  ddcc -&gt; bundle then VSToAddBundle(ddcc, bundle) &quot;setup add bundle&quot;;\r\n}\r\n\r\n</pre></div>"
   },
   "url": "http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSToAddBundle",
   "version": "1.0.0",
   "name": "CoreDataSetVSToAddBundle",
   "status": "draft",
-  "date": "2022-05-27T14:27:29+00:00",
+  "date": "2022-06-01T13:01:08+00:00",
   "publisher": "WHO",
   "contact": [
     {
@@ -53,7 +53,7 @@
   ],
   "group": [
     {
-      "name": "CoreDataSetToAddBundle",
+      "name": "CoreDataSetVSToAddBundle",
       "typeMode": "none",
       "input": [
         {

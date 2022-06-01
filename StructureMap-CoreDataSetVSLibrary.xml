@@ -2,6 +2,10 @@
 
 <StructureMap xmlns="http://hl7.org/fhir">
   <id value="CoreDataSetVSLibrary"/>
+  <meta>
+    <versionId value="2"/>
+    <lastUpdated value="2022-06-01T12:53:30.965+00:00"/>
+  </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><pre>map &quot;http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSLibrary&quot; = &quot;CoreDataSetVSLibrary&quot;
 
@@ -30,7 +34,9 @@ group VSToAddBundle(source ddcc : DDCCVS, target bundle : AddBundle) {
       ddcc -&gt; comp.title = 'International Certificate of Vaccination or Prophylaxis' &quot;set title&quot;;
       ddcc -&gt; comp.section as section then {
         ddcc -&gt;  section.code as code,  code.coding as coding,  coding.system = 'http://loinc.org',  coding.code = '11369-6' &quot;set code&quot;;
-        ddcc.certificate as certificate, certificate.issuer as issuer -&gt; section.author = issuer &quot;set author&quot;;
+        ddcc.certificate as certificate then {
+          certificate.issuer as issuer -&gt; section.author = issuer &quot;set author&quot;;
+        } &quot;set certificate&quot;;
         // ddcc.certificate as certificate -&gt; section.author as author then {
         //             certificate.issuer as issuer then {
         //               issuer.identifier as pha -&gt; author.identifier as identifier, author.type = &quot;Organization&quot; then {
@@ -156,7 +162,7 @@ group DDCCToImmRec(source src, target immrec : DDCCImmunizationRecommendation, s
   <version value="1.0.0"/>
   <name value="CoreDataSetVSLibrary"/>
   <status value="draft"/>
-  <date value="2022-05-27T14:27:29+00:00"/>
+  <date value="2022-06-01T13:01:08+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -559,26 +565,29 @@ group DDCCToImmRec(source src, target immrec : DDCCImmunizationRecommendation, s
             </target>
           </rule>
           <rule>
-            <name value="set author"/>
+            <name value="set certificate"/>
             <source>
               <context value="ddcc"/>
               <element value="certificate"/>
               <variable value="certificate"/>
             </source>
-            <source>
-              <context value="certificate"/>
-              <element value="issuer"/>
-              <variable value="issuer"/>
-            </source>
-            <target>
-              <context value="section"/>
-              <contextType value="variable"/>
-              <element value="author"/>
-              <transform value="copy"/>
-              <parameter>
-                <valueId value="issuer"/>
-              </parameter>
-            </target>
+            <rule>
+              <name value="set author"/>
+              <source>
+                <context value="certificate"/>
+                <element value="issuer"/>
+                <variable value="issuer"/>
+              </source>
+              <target>
+                <context value="section"/>
+                <contextType value="variable"/>
+                <element value="author"/>
+                <transform value="copy"/>
+                <parameter>
+                  <valueId value="issuer"/>
+                </parameter>
+              </target>
+            </rule>
           </rule>
           <rule>
             <name value="set focus"/>
