@@ -196,34 +196,31 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#3">Structures: Logical Models</a>
       </li>
       <li>
-         <a href="#4">Structures: Questionnaires</a>
+         <a href="#4">Structures: Abstract Profiles</a>
       </li>
       <li>
-         <a href="#5">Structures: Abstract Profiles</a>
+         <a href="#5">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#6">Structures: Resource Profiles</a>
+         <a href="#6">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#7">Structures: Extension Definitions</a>
+         <a href="#7">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#8">Terminology: Value Sets</a>
+         <a href="#8">Terminology: Code Systems</a>
       </li>
       <li>
-         <a href="#9">Terminology: Code Systems</a>
+         <a href="#9">Terminology: Structure Maps</a>
       </li>
       <li>
-         <a href="#10">Terminology: Structure Maps</a>
+         <a href="#10">Terminology: Concept Maps</a>
       </li>
       <li>
-         <a href="#11">Terminology: Concept Maps</a>
+         <a href="#11">Example: Example Instances</a>
       </li>
       <li>
-         <a href="#12">Example: Example Instances</a>
-      </li>
-      <li>
-         <a href="#13">Other</a>
+         <a href="#12">Other</a>
       </li>
    </ul>
 </div>
@@ -370,42 +367,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </table>
    </p>
    <a name="4"> </a>
-   <h3>Structures: Questionnaires </h3>
-   <p>
-    <p>These define forms used by systems conforming to this implementation guide to capture or expose data to end users</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Questionnaire-DDCCHCIDRegistrationQuestionnaire.html" title="Questionnaire/DDCCHCIDRegistrationQuestionnaire">DDCCHCIDRegistrationQuestionnaire</a>
-               </td>
-               <td>
-<p>DDCC HCID Registration Questionnaire</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Questionnaire-DDCCTRCoreDataSetQuestionnaire.html" title="Questionnaire/DDCCTRCoreDataSetQuestionnaire">DDCCTRCoreDataSetQuestionnaire</a>
-               </td>
-               <td>
-<p>DDCC Questionnaire for a Test event.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Questionnaire-DDCCVSCoreDataSetQuestionnaire.html" title="Questionnaire/DDCCVSCoreDataSetQuestionnaire">DDCCVSCoreDataSetQuestionnaire</a>
-               </td>
-               <td>
-<p>DDCC Questionnaire for an Immunization event.</p>
-</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="5"> </a>
    <h3>Structures: Abstract Profiles </h3>
    <p>
     <p>These are profiles on resources or data types that describe patterns used by other profiles, but cannot be instantiated directly.  I.e. instances can conform to profiles <em>based</em> on these abstract profiles, but do not declare conformance to the abstract profiles themselves.</p>
@@ -433,7 +394,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
-   <a name="6"> </a>
+   <a name="5"> </a>
    <h3>Structures: Resource Profiles </h3>
    <p>
     <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
@@ -757,7 +718,7 @@ It describes the event of a patient being administered a vaccination or a record
          </tbody>
       </table>
    </p>
-   <a name="7"> </a>
+   <a name="6"> </a>
    <h3>Structures: Extension Definitions </h3>
    <p>
     <p>These define constraints on FHIR data types for systems conforming to this implementation guide</p>
@@ -801,7 +762,7 @@ It describes the event of a patient being administered a vaccination or a record
          </tbody>
       </table>
    </p>
-   <a name="8"> </a>
+   <a name="7"> </a>
    <h3>Terminology: Value Sets </h3>
    <p>
     <p>These define sets of codes used by systems conforming to this implementation guide</p>
@@ -919,7 +880,7 @@ translated into an ICD-11 code.</p>
          </tbody>
       </table>
    </p>
-   <a name="9"> </a>
+   <a name="8"> </a>
    <h3>Terminology: Code Systems </h3>
    <p>
     <p>These define new code systems used by systems conforming to this implementation guide</p>
@@ -987,7 +948,7 @@ translated into an ICD-11 code.</p>
          </tbody>
       </table>
    </p>
-   <a name="10"> </a>
+   <a name="9"> </a>
    <h3>Terminology: Structure Maps </h3>
    <p>
     <p>These define transformations to convert between data structures used by systems conforming to this implementation guide</p>
@@ -1084,7 +1045,7 @@ translated into an ICD-11 code.</p>
          </tbody>
       </table>
    </p>
-   <a name="11"> </a>
+   <a name="10"> </a>
    <h3>Terminology: Concept Maps </h3>
    <p>
     <p>These define transformations to convert between codes by systems conforming with this implementation guide</p>
@@ -1192,7 +1153,7 @@ translated into an ICD-11 code.</p>
          </tbody>
       </table>
    </p>
-   <a name="12"> </a>
+   <a name="11"> </a>
    <h3>Example: Example Instances </h3>
    <p>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
@@ -1205,246 +1166,414 @@ translated into an ICD-11 code.</p>
                <td style="column-width:30%">
                   <a href="Composition-DDCC-Composition-Example-Arabic.html" title="Composition/DDCC-Composition-Example-Arabic">DDCC-Composition-Example-Arabic</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Composition-DDCC-Composition-Example-Chinese.html" title="Composition/DDCC-Composition-Example-Chinese">DDCC-Composition-Example-Chinese</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Composition-DDCC-Composition-Example-English.html" title="Composition/DDCC-Composition-Example-English">DDCC-Composition-Example-English</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Composition-DDCC-Composition-Example-French.html" title="Composition/DDCC-Composition-Example-French">DDCC-Composition-Example-French</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Composition-DDCC-Composition-Example-Russian.html" title="Composition/DDCC-Composition-Example-Russian">DDCC-Composition-Example-Russian</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Composition-DDCC-Composition-Example-Spanish.html" title="Composition/DDCC-Composition-Example-Spanish">DDCC-Composition-Example-Spanish</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Immunization-DDCC-Immunization-Arabic.html" title="Immunization/DDCC-Immunization-Arabic">DDCC-Immunization-Arabic</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Immunization-DDCC-Immunization-Chinese.html" title="Immunization/DDCC-Immunization-Chinese">DDCC-Immunization-Chinese</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Immunization-DDCC-Immunization-English.html" title="Immunization/DDCC-Immunization-English">DDCC-Immunization-English</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Immunization-DDCC-Immunization-French.html" title="Immunization/DDCC-Immunization-French">DDCC-Immunization-French</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Immunization-DDCC-Immunization-Russian.html" title="Immunization/DDCC-Immunization-Russian">DDCC-Immunization-Russian</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Immunization-DDCC-Immunization-Spanish.html" title="Immunization/DDCC-Immunization-Spanish">DDCC-Immunization-Spanish</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Arabic.html" title="ImmunizationRecommendation/DDCC-ImmunizationRecommendation-Arabic">DDCC-ImmunizationRecommendation-Arabic</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Chinese.html" title="ImmunizationRecommendation/DDCC-ImmunizationRecommendation-Chinese">DDCC-ImmunizationRecommendation-Chinese</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ImmunizationRecommendation-DDCC-ImmunizationRecommendation-English.html" title="ImmunizationRecommendation/DDCC-ImmunizationRecommendation-English">DDCC-ImmunizationRecommendation-English</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ImmunizationRecommendation-DDCC-ImmunizationRecommendation-French.html" title="ImmunizationRecommendation/DDCC-ImmunizationRecommendation-French">DDCC-ImmunizationRecommendation-French</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Russian.html" title="ImmunizationRecommendation/DDCC-ImmunizationRecommendation-Russian">DDCC-ImmunizationRecommendation-Russian</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Spanish.html" title="ImmunizationRecommendation/DDCC-ImmunizationRecommendation-Spanish">DDCC-ImmunizationRecommendation-Spanish</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Organization-DDCC-Organization-Arabic.html" title="Organization/DDCC-Organization-Arabic">DDCC-Organization-Arabic</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Organization-DDCC-Organization-Chinese.html" title="Organization/DDCC-Organization-Chinese">DDCC-Organization-Chinese</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Organization-DDCC-Organization-English.html" title="Organization/DDCC-Organization-English">DDCC-Organization-English</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Organization-DDCC-Organization-French.html" title="Organization/DDCC-Organization-French">DDCC-Organization-French</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Organization-DDCC-Organization-Russian.html" title="Organization/DDCC-Organization-Russian">DDCC-Organization-Russian</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Organization-DDCC-Organization-Spanish.html" title="Organization/DDCC-Organization-Spanish">DDCC-Organization-Spanish</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Patient-DDCC-Patient-Arabic.html" title="Patient/DDCC-Patient-Arabic">DDCC-Patient-Arabic</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Patient-DDCC-Patient-Chinese.html" title="Patient/DDCC-Patient-Chinese">DDCC-Patient-Chinese</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Patient-DDCC-Patient-English.html" title="Patient/DDCC-Patient-English">DDCC-Patient-English</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Patient-DDCC-Patient-French.html" title="Patient/DDCC-Patient-French">DDCC-Patient-French</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Patient-DDCC-Patient-Russian.html" title="Patient/DDCC-Patient-Russian">DDCC-Patient-Russian</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Patient-DDCC-Patient-Spanish.html" title="Patient/DDCC-Patient-Spanish">DDCC-Patient-Spanish</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Bundle-DDCC-TX-SHE-bundle-example-1.html" title="Bundle/DDCC-TX-SHE-bundle-example-1">DDCC-TX-SHE-bundle-example-1</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Bundle-DDCC-TX-SHE-bundle-example-Arabic.html" title="Bundle/DDCC-TX-SHE-bundle-example-Arabic">DDCC-TX-SHE-bundle-example-Arabic</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Bundle-DDCC-TX-SHE-bundle-example-Chinese.html" title="Bundle/DDCC-TX-SHE-bundle-example-Chinese">DDCC-TX-SHE-bundle-example-Chinese</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Bundle-DDCC-TX-SHE-bundle-example-French.html" title="Bundle/DDCC-TX-SHE-bundle-example-French">DDCC-TX-SHE-bundle-example-French</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Bundle-DDCC-TX-SHE-bundle-example-Russian.html" title="Bundle/DDCC-TX-SHE-bundle-example-Russian">DDCC-TX-SHE-bundle-example-Russian</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Bundle-DDCC-TX-SHE-bundle-example-Spanish.html" title="Bundle/DDCC-TX-SHE-bundle-example-Spanish">DDCC-TX-SHE-bundle-example-Spanish</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Arabic.html" title="QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Arabic">DDCC-VS-QuestionnaireResponse-Arabic</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Chinese.html" title="QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Chinese">DDCC-VS-QuestionnaireResponse-Chinese</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Example.html" title="QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Example">DDCC-VS-QuestionnaireResponse-Example</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-French.html" title="QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-French">DDCC-VS-QuestionnaireResponse-French</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Russian.html" title="QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Russian">DDCC-VS-QuestionnaireResponse-Russian</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Spanish.html" title="QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Spanish">DDCC-VS-QuestionnaireResponse-Spanish</a>
                </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Questionnaire-DDCCHCIDRegistrationQuestionnaire.html" title="Questionnaire/DDCCHCIDRegistrationQuestionnaire">DDCCHCIDRegistrationQuestionnaire</a>
+               </td>
+               <td>
+<p>DDCC HCID Registration Questionnaire</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Questionnaire-DDCCTRCoreDataSetQuestionnaire.html" title="Questionnaire/DDCCTRCoreDataSetQuestionnaire">DDCCTRCoreDataSetQuestionnaire</a>
+               </td>
+               <td>
+<p>DDCC Questionnaire for a Test event.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Questionnaire-DDCCVSCoreDataSetQuestionnaire.html" title="Questionnaire/DDCCVSCoreDataSetQuestionnaire">DDCCVSCoreDataSetQuestionnaire</a>
+               </td>
+               <td>
+<p>DDCC Questionnaire for an Immunization event.</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Bundle-Example-Arabic.html" title="Bundle/Example-Arabic">Example-Arabic</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Bundle-Example-Chinese.html" title="Bundle/Example-Chinese">Example-Chinese</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Bundle-Example-English.html" title="Bundle/Example-English">Example-English</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Bundle-Example-French.html" title="Bundle/Example-French">Example-French</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Bundle-Example-Russian.html" title="Bundle/Example-Russian">Example-Russian</a>
                </td>
+               <td>
+
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Bundle-Example-Spanish.html" title="Bundle/Example-Spanish">Example-Spanish</a>
                </td>
+               <td>
+
+</td>
             </tr>
          </tbody>
       </table>
    </p>
-   <a name="13"> </a>
+   <a name="12"> </a>
    <h3>Other </h3>
    <p>
     <p>These are resources that are used within this implementation guide that do not fit into one of the other categories</p>
@@ -1489,8 +1618,8 @@ translated into an ICD-11 code.</p>
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l2787">​</a>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 1, 2022 13:01+0000">2022-06-01</span>
+        <p><a name="l2902">​</a>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 27, 2022 20:02+0000">2022-09-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

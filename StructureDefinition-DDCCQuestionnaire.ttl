@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "DDCCQuestionnaire"];
   fhir:StructureDefinition.title [ fhir:value "DDCC Questionniare"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-06-01T13:01:08+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-09-27T20:02:38+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "WHO"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -222,7 +222,7 @@
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type" ];
-           fhir:Extension.valueUrl [ fhir:value "string" ]
+           fhir:Extension.valueUrl [ fhir:value "id" ]
          ];
          fhir:ElementDefinition.type.code [ fhir:value "http://hl7.org/fhirpath/System.String" ]
        ];
@@ -2724,8 +2724,8 @@
          fhir:ElementDefinition.constraint.expression [ fhir:value "operator = 'exists' implies (answer is Boolean)" ];
          fhir:ElementDefinition.constraint.xpath [ fhir:value "f:operator/@value != 'exists' or exists(f:answerBoolean)" ];
          fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extr-smap";
-           fhir:link <http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extr-smap>
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Questionnaire";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Questionnaire>
          ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ];
