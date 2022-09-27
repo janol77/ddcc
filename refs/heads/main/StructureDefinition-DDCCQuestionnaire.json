@@ -10,7 +10,7 @@
   "name": "DDCCQuestionnaire",
   "title": "DDCC Questionniare",
   "status": "active",
-  "date": "2022-06-01T13:01:08+00:00",
+  "date": "2022-09-27T20:02:38+00:00",
   "publisher": "WHO",
   "contact": [
     {
@@ -194,7 +194,7 @@
             "extension": [
               {
                 "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-                "valueUrl": "string"
+                "valueUrl": "id"
               }
             ],
             "code": "http://hl7.org/fhirpath/System.String"
@@ -2537,7 +2537,7 @@
             "human": "If the operator is 'exists', the value must be a boolean",
             "expression": "operator = 'exists' implies (answer is Boolean)",
             "xpath": "f:operator/@value != 'exists' or exists(f:answerBoolean)",
-            "source": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extr-smap"
+            "source": "http://hl7.org/fhir/StructureDefinition/Questionnaire"
           }
         ],
         "isModifier": true,

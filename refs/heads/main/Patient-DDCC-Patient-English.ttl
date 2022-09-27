@@ -17,7 +17,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Aulus Agerius(OFFICIAL)</b> (no stated gender), DoB: 2003-03-03</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Aulus Agerius(OFFICIAL)</b> (no stated gender), DoB: 2003-03-03</p><hr/></div>"
   ];
   fhir:Patient.name [
      fhir:index 0;

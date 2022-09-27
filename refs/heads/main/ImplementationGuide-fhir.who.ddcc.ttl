@@ -45,15 +45,24 @@
   ];
   fhir:ImplementationGuide.dependsOn [
      fhir:index 0;
+     fhir:Element.id [ fhir:value "higtools" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools";
+       fhir:link <http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.tools" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "current" ]
+  ], [
+     fhir:index 1;
      fhir:Element.id [ fhir:value "hl7tx" ];
      fhir:ImplementationGuide.dependsOn.uri [
        fhir:value "http://terminology.hl7.org/ImplementationGuide/hl7.terminology";
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ];
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "3.1.0" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "4.0.0" ]
   ], [
-     fhir:index 1;
+     fhir:index 2;
      fhir:Element.id [ fhir:value "hl7_fhir_uv_ips" ];
      fhir:ImplementationGuide.dependsOn.uri [
        fhir:value "http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips";
@@ -62,7 +71,7 @@
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.ips" ];
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.0.0" ]
   ], [
-     fhir:index 2;
+     fhir:index 3;
      fhir:Element.id [ fhir:value "hl7_fhir_uv_sdc" ];
      fhir:ImplementationGuide.dependsOn.uri [
        fhir:value "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc";
@@ -71,7 +80,7 @@
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.sdc" ];
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "current" ]
   ], [
-     fhir:index 3;
+     fhir:index 4;
      fhir:Element.id [ fhir:value "ihe_mhd_fhir" ];
      fhir:ImplementationGuide.dependsOn.uri [
        fhir:value "http://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.mhd.fhir";
@@ -1955,7 +1964,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCCHCIDRegistrationQuestionnaire" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "DDCC HCID Registration Questionnaire" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireSDC";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireSDC>
+       ]
      ], [
        fhir:index 109;
        fhir:Element.extension [
@@ -1969,7 +1981,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCCTRCoreDataSetQuestionnaire" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "DDCC Questionnaire for a Test event." ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaire";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaire>
+       ]
      ], [
        fhir:index 110;
        fhir:Element.extension [
@@ -1983,7 +1998,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCCVSCoreDataSetQuestionnaire" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "DDCC Questionnaire for an Immunization event." ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaire";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaire>
+       ]
      ], [
        fhir:index 111;
        fhir:Element.extension [
@@ -2595,111 +2613,221 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+         fhir:Extension.valueUrl [ fhir:value "toc.html" ]
+       ];
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
        fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ];
        fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
        fhir:ImplementationGuide.definition.page.page [
          fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "index.html" ]
+         ];
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
          fhir:index 1;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "actors.html" ]
+         ];
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "actors.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Actors" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
          fhir:index 2;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "changes.html" ]
+         ];
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "changes.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Changes" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
          fhir:index 3;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "concepts.html" ]
+         ];
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "concepts.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Concepts" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
          fhir:index 4;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "content_profiles.html" ]
+         ];
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "content_profiles.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Content Profiles" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
          fhir:index 5;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "data_exchange.html" ]
+         ];
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "data_exchange.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Data Exchange" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
          fhir:index 6;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "dependencies.html" ]
+         ];
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "dependencies.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Dependencies" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
          fhir:index 7;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "deployment.html" ]
+         ];
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "deployment.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Deployment" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
          fhir:index 8;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "dictionary.html" ]
+         ];
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "dictionary.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Dictionary" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
          fhir:index 9;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "downloads.html" ]
+         ];
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "downloads.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Downloads" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
          fhir:index 10;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "functional_requirements.html" ]
+         ];
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "functional_requirements.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Functional Requirements" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 11;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "interoperability.html" ]
+         ];
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "interoperability.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Interoperability" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
          fhir:index 12;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "maps.html" ]
+         ];
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "maps.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Maps" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
          fhir:index 13;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "reference_implementation.html" ]
+         ];
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "reference_implementation.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Reference Implementation" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
          fhir:index 14;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "references.html" ]
+         ];
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "references.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "References" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
          fhir:index 15;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "requirements.html" ]
+         ];
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "requirements.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Requirements" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
          fhir:index 16;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "security_privacy.html" ]
+         ];
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "security_privacy.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Security Privacy" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
          fhir:index 17;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "testing.html" ]
+         ];
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "testing.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Testing" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
          fhir:index 18;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "transactions.html" ]
+         ];
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "transactions.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Transactions" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
          fhir:index 19;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "use_cases.html" ]
+         ];
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "use_cases.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Use Cases" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
        ], [
          fhir:index 20;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "workflows.html" ]
+         ];
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "workflows.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Workflows" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]

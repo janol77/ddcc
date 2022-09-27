@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "DDCC-Device-Property-CodeSystem"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Device-Property-CodeSystem defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">pathogen<a name=\"DDCC-Device-Property-CodeSystem-pathogen\"> </a></td><td>Pathogen Targeted</td></tr><tr><td style=\"white-space:nowrap\">brand<a name=\"DDCC-Device-Property-CodeSystem-brand\"> </a></td><td>Test Brand</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Device-Property-CodeSystem</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">pathogen<a name=\"DDCC-Device-Property-CodeSystem-pathogen\"> </a></td><td>Pathogen Targeted</td></tr><tr><td style=\"white-space:nowrap\">brand<a name=\"DDCC-Device-Property-CodeSystem-brand\"> </a></td><td>Test Brand</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Device-Property-CodeSystem"];
   fhir:CodeSystem.version [ fhir:value "1.0.0"];
   fhir:CodeSystem.name [ fhir:value "DDCC_Device_Property_CodeSystem"];
   fhir:CodeSystem.title [ fhir:value "DDCC Device Property Codes"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-06-01T13:01:08+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-09-27T20:02:38+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "WHO"];
   fhir:CodeSystem.contact [
      fhir:index 0;

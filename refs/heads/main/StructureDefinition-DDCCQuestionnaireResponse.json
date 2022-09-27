@@ -10,7 +10,7 @@
   "name": "DDCCQuestionnaireResponse",
   "title": "DDCC Questionnaire Response",
   "status": "active",
-  "date": "2022-06-01T13:01:08+00:00",
+  "date": "2022-09-27T20:02:38+00:00",
   "publisher": "WHO",
   "contact": [
     {
@@ -193,7 +193,7 @@
             "extension": [
               {
                 "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-                "valueUrl": "string"
+                "valueUrl": "id"
               }
             ],
             "code": "http://hl7.org/fhirpath/System.String"

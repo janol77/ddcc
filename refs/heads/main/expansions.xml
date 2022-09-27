@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="2de89c3e-dad7-4bbe-b49e-a100d6c509b1"/>
+  <id value="469f66c6-5f60-4bf0-b57f-4c1bd19867f5"/>
   <meta>
-    <lastUpdated value="2022-06-01T13:01:08.025+00:00"/>
+    <lastUpdated value="2022-09-27T20:02:38.182+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -18,15 +18,13 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-DDCC-Composition-Category-CodeSystem.html">DDCC Composition Category Codes v1.0.0 (CodeSystem)</a>
             </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-DDCC-Composition-Category-CodeSystem.html">
-                <code>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem</code>
-              </a>
-            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -37,6 +35,7 @@
                   <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Composition-Category-CodeSystem-ddcc-vs"> </a>  
                   <a href="CodeSystem-DDCC-Composition-Category-CodeSystem.html#DDCC-Composition-Category-CodeSystem-ddcc-vs">ddcc-vs</a>
                 </td>
+                <td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem</td>
                 <td>DDCC:VS</td>
               </tr>
               <tr>
@@ -44,6 +43,7 @@
                   <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Composition-Category-CodeSystem-ddcc-tr"> </a>  
                   <a href="CodeSystem-DDCC-Composition-Category-CodeSystem.html#DDCC-Composition-Category-CodeSystem-ddcc-tr">ddcc-tr</a>
                 </td>
+                <td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem</td>
                 <td>DDCC:TR</td>
               </tr>
             </table>
@@ -54,7 +54,7 @@
         <name value="DDCC_Composition_Category_ValueSet"/>
         <title value="DDCC Composition Category Codes"/>
         <status value="active"/>
-        <date value="2022-06-01T13:01:08+00:00"/>
+        <date value="2022-09-27T20:02:38+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -71,8 +71,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c0ccd218-3ce6-484b-9b2f-1f1e6ffbb221"/>
-          <timestamp value="2022-06-01T13:02:37+00:00"/>
+          <identifier value="urn:uuid:49b7cefb-60de-464e-a5c6-88c609cccb54"/>
+          <timestamp value="2022-09-27T20:04:18+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -108,15 +108,13 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-DDCC-Device-Property-CodeSystem.html">DDCC Device Property Codes v1.0.0 (CodeSystem)</a>
             </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-DDCC-Device-Property-CodeSystem.html">
-                <code>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Device-Property-CodeSystem</code>
-              </a>
-            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -127,6 +125,7 @@
                   <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Device-Property-CodeSystem-pathogen"> </a>  
                   <a href="CodeSystem-DDCC-Device-Property-CodeSystem.html#DDCC-Device-Property-CodeSystem-pathogen">pathogen</a>
                 </td>
+                <td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Device-Property-CodeSystem</td>
                 <td>Pathogen Targeted</td>
               </tr>
               <tr>
@@ -134,6 +133,7 @@
                   <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Device-Property-CodeSystem-brand"> </a>  
                   <a href="CodeSystem-DDCC-Device-Property-CodeSystem.html#DDCC-Device-Property-CodeSystem-brand">brand</a>
                 </td>
+                <td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Device-Property-CodeSystem</td>
                 <td>Test Brand</td>
               </tr>
             </table>
@@ -144,7 +144,7 @@
         <name value="DDCC_Device_Property_ValueSet"/>
         <title value="DDCC Device Property Codes"/>
         <status value="active"/>
-        <date value="2022-06-01T13:01:08+00:00"/>
+        <date value="2022-09-27T20:02:38+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -161,8 +161,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:67d7bc0e-c13d-4bcb-824e-6dc11ffc6c6d"/>
-          <timestamp value="2022-06-01T13:02:37+00:00"/>
+          <identifier value="urn:uuid:d4f38b40-dda3-438b-8973-36c6d8eb4edc"/>
+          <timestamp value="2022-09-27T20:04:18+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -198,15 +198,13 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-DDCC-Folder-DesignationType.html">DDCC Designation Types for Folder v1.0.0 (CodeSystem)</a>
             </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-DDCC-Folder-DesignationType.html">
-                <code>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Folder-DesignationType</code>
-              </a>
-            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -217,6 +215,7 @@
                   <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Folder-DesignationType-ddcc"> </a>  
                   <a href="CodeSystem-DDCC-Folder-DesignationType.html#DDCC-Folder-DesignationType-ddcc">ddcc</a>
                 </td>
+                <td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Folder-DesignationType</td>
                 <td>DDCC</td>
               </tr>
             </table>
@@ -227,7 +226,7 @@
         <name value="DDCC_Folder_DesignationType_ValueSet"/>
         <title value="DDCC DesignationTypes for Folder"/>
         <status value="active"/>
-        <date value="2022-06-01T13:01:08+00:00"/>
+        <date value="2022-09-27T20:02:38+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -244,8 +243,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3772cf12-bf1b-4dc8-9275-ac2c22408678"/>
-          <timestamp value="2022-06-01T13:02:37+00:00"/>
+          <identifier value="urn:uuid:4abfa6c1-729c-4ff9-9c1e-adfc10b53aef"/>
+          <timestamp value="2022-09-27T20:04:18+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -276,15 +275,13 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-DDCC-QR-Format-CodeSystem.html">DDCC QR Format Codes v1.0.0 (CodeSystem)</a>
             </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-DDCC-QR-Format-CodeSystem.html">
-                <code>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem</code>
-              </a>
-            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -295,6 +292,7 @@
                   <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Format-CodeSystem-image"> </a>  
                   <a href="CodeSystem-DDCC-QR-Format-CodeSystem.html#DDCC-QR-Format-CodeSystem-image">image</a>
                 </td>
+                <td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem</td>
                 <td>Image</td>
               </tr>
               <tr>
@@ -302,6 +300,7 @@
                   <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Format-CodeSystem-serialized"> </a>  
                   <a href="CodeSystem-DDCC-QR-Format-CodeSystem.html#DDCC-QR-Format-CodeSystem-serialized">serialized</a>
                 </td>
+                <td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem</td>
                 <td>Serialized QR Content</td>
               </tr>
               <tr>
@@ -309,6 +308,7 @@
                   <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Format-CodeSystem-pdf"> </a>  
                   <a href="CodeSystem-DDCC-QR-Format-CodeSystem.html#DDCC-QR-Format-CodeSystem-pdf">pdf</a>
                 </td>
+                <td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem</td>
                 <td>PDF version of the QR image</td>
               </tr>
             </table>
@@ -319,7 +319,7 @@
         <name value="DDCC_QR_Format_ValueSet"/>
         <title value="DDCC QR Format Codes"/>
         <status value="active"/>
-        <date value="2022-06-01T13:01:08+00:00"/>
+        <date value="2022-09-27T20:02:38+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -336,8 +336,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b1840f15-e8d1-4fcc-8acc-b8942c1fefea"/>
-          <timestamp value="2022-06-01T13:02:37+00:00"/>
+          <identifier value="urn:uuid:401df90c-1dd7-42ae-a69e-95ffb8c7b45a"/>
+          <timestamp value="2022-09-27T20:04:18+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -378,15 +378,13 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-DDCC-QR-Type-CodeSystem.html">DDCC QR Category Usage Codes v1.0.0 (CodeSystem)</a>
             </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-DDCC-QR-Type-CodeSystem.html">
-                <code>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem</code>
-              </a>
-            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -397,6 +395,7 @@
                   <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-who"> </a>  
                   <a href="CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-who">who</a>
                 </td>
+                <td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem</td>
                 <td>WHO DDCC</td>
               </tr>
               <tr>
@@ -404,6 +403,7 @@
                   <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-dcc"> </a>  
                   <a href="CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-dcc">dcc</a>
                 </td>
+                <td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem</td>
                 <td>EU DCC</td>
               </tr>
               <tr>
@@ -411,6 +411,7 @@
                   <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-icao"> </a>  
                   <a href="CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-icao">icao</a>
                 </td>
+                <td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem</td>
                 <td>ICAO</td>
               </tr>
               <tr>
@@ -418,6 +419,7 @@
                   <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-au"> </a>  
                   <a href="CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-au">au</a>
                 </td>
+                <td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem</td>
                 <td>AU</td>
               </tr>
               <tr>
@@ -425,6 +427,7 @@
                   <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-shc"> </a>  
                   <a href="CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-shc">shc</a>
                 </td>
+                <td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem</td>
                 <td>SMART Health Card</td>
               </tr>
               <tr>
@@ -432,6 +435,7 @@
                   <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-divoc"> </a>  
                   <a href="CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-divoc">divoc</a>
                 </td>
+                <td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem</td>
                 <td>DIVOC</td>
               </tr>
             </table>
@@ -442,7 +446,7 @@
         <name value="DDCC_QR_Type_ValueSet"/>
         <title value="DDCC QR Type Codes"/>
         <status value="active"/>
-        <date value="2022-06-01T13:01:08+00:00"/>
+        <date value="2022-09-27T20:02:38+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -459,8 +463,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8f38b961-e6b5-4de0-9faf-c346da62d42e"/>
-          <timestamp value="2022-06-01T13:02:37+00:00"/>
+          <identifier value="urn:uuid:994b937f-26ae-467b-9dd6-565c392b8b94"/>
+          <timestamp value="2022-09-27T20:04:18+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -516,15 +520,13 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-DDCC-ICD11-CodeSystem.html">DDCC Codes for ICD11 v1.0.0 (CodeSystem)</a>
             </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-DDCC-ICD11-CodeSystem.html">
-                <code>http://id.who.int/icd11/mms</code>
-              </a>
-            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -535,6 +537,7 @@
                   <a name="http---id.who.int-icd11-mms-XN109"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN109">XN109</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>SARS-CoV-2</td>
               </tr>
               <tr>
@@ -542,6 +545,7 @@
                   <a name="http---id.who.int-icd11-mms-XN0HL"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN0HL">XN0HL</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>SARS-CoV-2 Alpha</td>
               </tr>
               <tr>
@@ -549,6 +553,7 @@
                   <a name="http---id.who.int-icd11-mms-XN4Q7"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN4Q7">XN4Q7</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>SARS-CoV-2 Beta</td>
               </tr>
               <tr>
@@ -556,6 +561,7 @@
                   <a name="http---id.who.int-icd11-mms-XN5BQ"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN5BQ">XN5BQ</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>SARS-CoV-2 Gamma</td>
               </tr>
               <tr>
@@ -563,6 +569,7 @@
                   <a name="http---id.who.int-icd11-mms-XN8V6"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN8V6">XN8V6</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>SARS-CoV-2 Delta</td>
               </tr>
               <tr>
@@ -570,6 +577,7 @@
                   <a name="http---id.who.int-icd11-mms-XN1GK"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN1GK">XN1GK</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>SARS-CoV-2 Epsilon</td>
               </tr>
               <tr>
@@ -577,6 +585,7 @@
                   <a name="http---id.who.int-icd11-mms-XN3ZE"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN3ZE">XN3ZE</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>SARS-CoV-2 Zeta</td>
               </tr>
               <tr>
@@ -584,6 +593,7 @@
                   <a name="http---id.who.int-icd11-mms-XN2V4"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN2V4">XN2V4</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>SARS-CoV-2 Eta</td>
               </tr>
               <tr>
@@ -591,6 +601,7 @@
                   <a name="http---id.who.int-icd11-mms-XN4Q1"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN4Q1">XN4Q1</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>SARS-CoV-2 Theta</td>
               </tr>
               <tr>
@@ -598,6 +609,7 @@
                   <a name="http---id.who.int-icd11-mms-XN3UD"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN3UD">XN3UD</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>SARS-CoV-2 Iota</td>
               </tr>
               <tr>
@@ -605,6 +617,7 @@
                   <a name="http---id.who.int-icd11-mms-XN9L8"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN9L8">XN9L8</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>SARS-CoV-2 Kappa</td>
               </tr>
               <tr>
@@ -612,6 +625,7 @@
                   <a name="http---id.who.int-icd11-mms-XN6AM"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN6AM">XN6AM</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>SARS-CoV-2 Lambda</td>
               </tr>
               <tr>
@@ -619,6 +633,7 @@
                   <a name="http---id.who.int-icd11-mms-XN39J"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN39J">XN39J</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>SARS-CoV-2 Mu</td>
               </tr>
               <tr>
@@ -626,6 +641,7 @@
                   <a name="http---id.who.int-icd11-mms-XN161"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XN161">XN161</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>SARS-CoV-2 Omicron</td>
               </tr>
             </table>
@@ -636,7 +652,7 @@
         <name value="WHO_DDCC_Agent_Targeted_COVID_19"/>
         <title value="WHO Agent Targeted (COVID-19)"/>
         <status value="draft"/>
-        <date value="2022-06-01T13:01:08+00:00"/>
+        <date value="2022-09-27T20:02:38+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -653,8 +669,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:448ce8ec-6e8a-444c-ab6a-b4a5d9ef961f"/>
-          <timestamp value="2022-06-01T13:02:37+00:00"/>
+          <identifier value="urn:uuid:85a61092-bdb0-4e90-8378-bea086c548f5"/>
+          <timestamp value="2022-09-27T20:04:18+00:00"/>
           <total value="14"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1034,7 +1050,7 @@
         <name value="WHO_DDCC_Allowed_Vaccines_COVID_19"/>
         <title value="WHO DDCC Allowed Vaccine List (COVID-19)"/>
         <status value="draft"/>
-        <date value="2022-06-01T13:01:08+00:00"/>
+        <date value="2022-09-27T20:02:38+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -1051,8 +1067,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fe9c2357-524d-4af5-be69-92f151703018"/>
-          <timestamp value="2022-06-01T13:02:37+00:00"/>
+          <identifier value="urn:uuid:eed680d3-0556-4b16-a92a-4b1bc26530f5"/>
+          <timestamp value="2022-09-27T20:04:18+00:00"/>
           <total value="32"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1254,15 +1270,13 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-DDCC-ICD11-CodeSystem.html">DDCC Codes for ICD11 v1.0.0 (CodeSystem)</a>
             </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-DDCC-ICD11-CodeSystem.html">
-                <code>http://id.who.int/icd11/mms</code>
-              </a>
-            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -1273,6 +1287,7 @@
                   <a name="http---id.who.int-icd11-mms-XM7HT3"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM7HT3">XM7HT3</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>CoronaVac®</td>
               </tr>
               <tr>
@@ -1280,6 +1295,7 @@
                   <a name="http---id.who.int-icd11-mms-XM8866"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM8866">XM8866</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>BBIBP-CorV</td>
               </tr>
               <tr>
@@ -1287,6 +1303,7 @@
                   <a name="http---id.who.int-icd11-mms-XM9TQ1"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM9TQ1">XM9TQ1</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>KCONVAC</td>
               </tr>
               <tr>
@@ -1294,6 +1311,7 @@
                   <a name="http---id.who.int-icd11-mms-XM1G90"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM1G90">XM1G90</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>Covaxin</td>
               </tr>
               <tr>
@@ -1301,6 +1319,7 @@
                   <a name="http---id.who.int-icd11-mms-XM85P5"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM85P5">XM85P5</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>Covi-Vac</td>
               </tr>
               <tr>
@@ -1308,6 +1327,7 @@
                   <a name="http---id.who.int-icd11-mms-XM9FQ7"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM9FQ7">XM9FQ7</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>Hayat-Vax</td>
               </tr>
               <tr>
@@ -1315,6 +1335,7 @@
                   <a name="http---id.who.int-icd11-mms-XM97N6"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM97N6">XM97N6</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>QazVac</td>
               </tr>
               <tr>
@@ -1322,6 +1343,7 @@
                   <a name="http---id.who.int-icd11-mms-XM2YG8"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM2YG8">XM2YG8</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>COVIran Barakat</td>
               </tr>
               <tr>
@@ -1329,6 +1351,7 @@
                   <a name="http---id.who.int-icd11-mms-XM4YL8"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM4YL8">XM4YL8</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>AstraZeneca</td>
               </tr>
               <tr>
@@ -1336,6 +1359,7 @@
                   <a name="http---id.who.int-icd11-mms-XM97T2"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM97T2">XM97T2</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>Covishield®</td>
               </tr>
               <tr>
@@ -1343,6 +1367,7 @@
                   <a name="http---id.who.int-icd11-mms-XM6QV1"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM6QV1">XM6QV1</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>Janssen</td>
               </tr>
               <tr>
@@ -1350,6 +1375,7 @@
                   <a name="http---id.who.int-icd11-mms-XM1AG7"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM1AG7">XM1AG7</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>Convidecia</td>
               </tr>
               <tr>
@@ -1357,6 +1383,7 @@
                   <a name="http---id.who.int-icd11-mms-XM5ZJ4"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM5ZJ4">XM5ZJ4</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>Gam-Covid-Vac</td>
               </tr>
               <tr>
@@ -1364,6 +1391,7 @@
                   <a name="http---id.who.int-icd11-mms-XM5QM6"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM5QM6">XM5QM6</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>Sputnik-Light</td>
               </tr>
               <tr>
@@ -1371,6 +1399,7 @@
                   <a name="http---id.who.int-icd11-mms-XM3PG0"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM3PG0">XM3PG0</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>Soberana-02</td>
               </tr>
               <tr>
@@ -1378,6 +1407,7 @@
                   <a name="http---id.who.int-icd11-mms-XM4EC8"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM4EC8">XM4EC8</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>MVC-COV1901</td>
               </tr>
               <tr>
@@ -1385,6 +1415,7 @@
                   <a name="http---id.who.int-icd11-mms-XM6SZ8"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM6SZ8">XM6SZ8</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>EpiVacCorona</td>
               </tr>
               <tr>
@@ -1392,6 +1423,7 @@
                   <a name="http---id.who.int-icd11-mms-XM52P3"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM52P3">XM52P3</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>ZyCov-D</td>
               </tr>
               <tr>
@@ -1399,6 +1431,7 @@
                   <a name="http---id.who.int-icd11-mms-XM8NQ0"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM8NQ0">XM8NQ0</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>Comirnaty®</td>
               </tr>
               <tr>
@@ -1406,6 +1439,7 @@
                   <a name="http---id.who.int-icd11-mms-XM3DT5"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM3DT5">XM3DT5</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>Moderna</td>
               </tr>
             </table>
@@ -1416,7 +1450,7 @@
         <name value="WHO_DDCC_Brands_COVID_19"/>
         <title value="WHO DDCC Brand List (COVID-19)"/>
         <status value="draft"/>
-        <date value="2022-06-01T13:01:08+00:00"/>
+        <date value="2022-09-27T20:02:38+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -1433,8 +1467,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:cbe02312-845f-4575-85af-3af1a3cdb87c"/>
-          <timestamp value="2022-06-01T13:02:37+00:00"/>
+          <identifier value="urn:uuid:917febd7-57eb-4f78-9bad-584349c5b6e2"/>
+          <timestamp value="2022-09-27T20:04:18+00:00"/>
           <total value="20"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1560,15 +1594,13 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-DDCC-ICD11-CodeSystem.html">DDCC Codes for ICD11 v1.0.0 (CodeSystem)</a>
             </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-DDCC-ICD11-CodeSystem.html">
-                <code>http://id.who.int/icd11/mms</code>
-              </a>
-            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -1579,6 +1611,7 @@
                   <a name="http---id.who.int-icd11-mms-RA01"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-RA01">RA01</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>COVID-19</td>
               </tr>
             </table>
@@ -1589,7 +1622,7 @@
         <name value="WHO_DDCC_Disease_Targeted_COVID_19"/>
         <title value="WHO Disease or Agent Targeted (COVID-19)"/>
         <status value="draft"/>
-        <date value="2022-06-01T13:01:08+00:00"/>
+        <date value="2022-09-27T20:02:38+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -1606,8 +1639,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:213b9f6a-b474-40f6-b876-dfabde528118"/>
-          <timestamp value="2022-06-01T13:02:37+00:00"/>
+          <identifier value="urn:uuid:a8089be8-1138-4472-ac01-21a7604483e1"/>
+          <timestamp value="2022-09-27T20:04:18+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1638,15 +1671,13 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-DDCC-ICD11-CodeSystem.html">DDCC Codes for ICD11 v1.0.0 (CodeSystem)</a>
             </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-DDCC-ICD11-CodeSystem.html">
-                <code>http://id.who.int/icd11/mms</code>
-              </a>
-            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -1657,6 +1688,7 @@
                   <a name="http---id.who.int-icd11-mms-RA01.0"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-RA01.460">RA01.0</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>Detected</td>
               </tr>
               <tr>
@@ -1664,6 +1696,7 @@
                   <a name="http---id.who.int-icd11-mms-QA02"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-QA02">QA02</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>Not Detected</td>
               </tr>
             </table>
@@ -1674,7 +1707,7 @@
         <name value="WHO_DDCC_Test_Result_COVID_19"/>
         <title value="WHO Test Result (COVID-19)"/>
         <status value="draft"/>
-        <date value="2022-06-01T13:01:08+00:00"/>
+        <date value="2022-09-27T20:02:38+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -1691,8 +1724,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d9586f1c-71c9-4c65-9588-f7076473c1a0"/>
-          <timestamp value="2022-06-01T13:02:38+00:00"/>
+          <identifier value="urn:uuid:85adf6f8-61b2-4d6e-8a8d-03964a134817"/>
+          <timestamp value="2022-09-27T20:04:20+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1728,15 +1761,13 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-DDCC-ICD11-CodeSystem.html">DDCC Codes for ICD11 v1.0.0 (CodeSystem)</a>
             </p>
-            <p>All codes in this table are from the system 
-              <a href="CodeSystem-DDCC-ICD11-CodeSystem.html">
-                <code>http://id.who.int/icd11/mms</code>
-              </a>
-            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
                 </td>
                 <td>
                   <b>Display</b>
@@ -1747,6 +1778,7 @@
                   <a name="http---id.who.int-icd11-mms-XM68M6"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM68M6">XM68M6</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>COVID-19 vaccine</td>
               </tr>
               <tr>
@@ -1754,6 +1786,7 @@
                   <a name="http---id.who.int-icd11-mms-XM1NL1"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM1NL1">XM1NL1</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>COVID-19 vaccine, inactivated virus</td>
               </tr>
               <tr>
@@ -1761,6 +1794,7 @@
                   <a name="http---id.who.int-icd11-mms-XM7HT3"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM7HT3">XM7HT3</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>CoronaVac®</td>
               </tr>
               <tr>
@@ -1768,6 +1802,7 @@
                   <a name="http---id.who.int-icd11-mms-XM8866"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM8866">XM8866</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>BBIBP-CorV</td>
               </tr>
               <tr>
@@ -1775,6 +1810,7 @@
                   <a name="http---id.who.int-icd11-mms-XM9TQ1"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM9TQ1">XM9TQ1</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>KCONVAC</td>
               </tr>
               <tr>
@@ -1782,6 +1818,7 @@
                   <a name="http---id.who.int-icd11-mms-XM1G90"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM1G90">XM1G90</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>Covaxin</td>
               </tr>
               <tr>
@@ -1789,6 +1826,7 @@
                   <a name="http---id.who.int-icd11-mms-XM85P5"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM85P5">XM85P5</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>Covi-Vac</td>
               </tr>
               <tr>
@@ -1796,6 +1834,7 @@
                   <a name="http---id.who.int-icd11-mms-XM9FQ7"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM9FQ7">XM9FQ7</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>Hayat-Vax</td>
               </tr>
               <tr>
@@ -1803,6 +1842,7 @@
                   <a name="http---id.who.int-icd11-mms-XM97N6"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM97N6">XM97N6</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>QazVac</td>
               </tr>
               <tr>
@@ -1810,6 +1850,7 @@
                   <a name="http---id.who.int-icd11-mms-XM2YG8"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM2YG8">XM2YG8</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>COVIran Barakat</td>
               </tr>
               <tr>
@@ -1817,6 +1858,7 @@
                   <a name="http---id.who.int-icd11-mms-XM3U61"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM3U61">XM3U61</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>Inactivated SARS-CoV-2 vaccine</td>
               </tr>
               <tr>
@@ -1824,6 +1866,7 @@
                   <a name="http---id.who.int-icd11-mms-XM5DF6"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM5DF6">XM5DF6</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>COVID-19 vaccine, live attenuated virus</td>
               </tr>
               <tr>
@@ -1831,6 +1874,7 @@
                   <a name="http---id.who.int-icd11-mms-XM9QW8"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM9QW8">XM9QW8</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>COVID-19 vaccine, non-replicating viral vector</td>
               </tr>
               <tr>
@@ -1838,6 +1882,7 @@
                   <a name="http---id.who.int-icd11-mms-XM4YL8"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM4YL8">XM4YL8</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>COVID-19 Vaccine AstraZeneca</td>
               </tr>
               <tr>
@@ -1845,6 +1890,7 @@
                   <a name="http---id.who.int-icd11-mms-XM97T2"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM97T2">XM97T2</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>Covishield®</td>
               </tr>
               <tr>
@@ -1852,6 +1898,7 @@
                   <a name="http---id.who.int-icd11-mms-XM6QV1"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM6QV1">XM6QV1</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>COVID-19 Vaccine Janssen</td>
               </tr>
               <tr>
@@ -1859,6 +1906,7 @@
                   <a name="http---id.who.int-icd11-mms-XM1AG7"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM1AG7">XM1AG7</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>Convidecia</td>
               </tr>
               <tr>
@@ -1866,6 +1914,7 @@
                   <a name="http---id.who.int-icd11-mms-XM5ZJ4"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM5ZJ4">XM5ZJ4</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>Gam-Covid-Vac</td>
               </tr>
               <tr>
@@ -1873,6 +1922,7 @@
                   <a name="http---id.who.int-icd11-mms-XM5QM6"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM5QM6">XM5QM6</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>Sputnik-Light</td>
               </tr>
               <tr>
@@ -1880,6 +1930,7 @@
                   <a name="http---id.who.int-icd11-mms-XM0CX4"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM0CX4">XM0CX4</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>COVID-19 vaccine, replicating viral vector</td>
               </tr>
               <tr>
@@ -1887,6 +1938,7 @@
                   <a name="http---id.who.int-icd11-mms-XM5JC5"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM5JC5">XM5JC5</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>COVID-19 vaccine, virus protein subunit</td>
               </tr>
               <tr>
@@ -1894,6 +1946,7 @@
                   <a name="http---id.who.int-icd11-mms-XM3CT4"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM3CT4">XM3CT4</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>Recombinant SARS-CoV-2 vaccine</td>
               </tr>
               <tr>
@@ -1901,6 +1954,7 @@
                   <a name="http---id.who.int-icd11-mms-XM3PG0"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM3PG0">XM3PG0</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>Soberana-02</td>
               </tr>
               <tr>
@@ -1908,6 +1962,7 @@
                   <a name="http---id.who.int-icd11-mms-XM4EC8"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM4EC8">XM4EC8</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>MVC-COV1901</td>
               </tr>
               <tr>
@@ -1915,6 +1970,7 @@
                   <a name="http---id.who.int-icd11-mms-XM6SZ8"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM6SZ8">XM6SZ8</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>EpiVacCorona</td>
               </tr>
               <tr>
@@ -1922,6 +1978,7 @@
                   <a name="http---id.who.int-icd11-mms-XM1J92"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM1J92">XM1J92</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>COVID-19 vaccine, virus like particle (VLP)</td>
               </tr>
               <tr>
@@ -1929,6 +1986,7 @@
                   <a name="http---id.who.int-icd11-mms-XM6AT1"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM6AT1">XM6AT1</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>COVID-19 vaccine, DNA based</td>
               </tr>
               <tr>
@@ -1936,6 +1994,7 @@
                   <a name="http---id.who.int-icd11-mms-XM52P3"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM52P3">XM52P3</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>ZyCov-D</td>
               </tr>
               <tr>
@@ -1943,6 +2002,7 @@
                   <a name="http---id.who.int-icd11-mms-XM0GQ8"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM0GQ8">XM0GQ8</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>COVID-19 vaccine, RNA based</td>
               </tr>
               <tr>
@@ -1950,6 +2010,7 @@
                   <a name="http---id.who.int-icd11-mms-XM8NQ0"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM8NQ0">XM8NQ0</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>Comirnaty®</td>
               </tr>
               <tr>
@@ -1957,6 +2018,7 @@
                   <a name="http---id.who.int-icd11-mms-XM3DT5"> </a>  
                   <a href="CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM3DT5">XM3DT5</a>
                 </td>
+                <td>http://id.who.int/icd11/mms</td>
                 <td>COVID-19 Vaccine Moderna</td>
               </tr>
             </table>
@@ -1967,7 +2029,7 @@
         <name value="WHO_DDCC_Vaccines_COVID_19"/>
         <title value="WHO Vaccine List (COVID-19)"/>
         <status value="draft"/>
-        <date value="2022-06-01T13:01:08+00:00"/>
+        <date value="2022-09-27T20:02:38+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -1984,8 +2046,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:96f9ce08-dd21-4e8e-ada2-e58d0cb12fd3"/>
-          <timestamp value="2022-06-01T13:02:39+00:00"/>
+          <identifier value="urn:uuid:2dac9e4a-7bdc-4f5b-aee6-7e03f940b69b"/>
+          <timestamp value="2022-09-27T20:04:22+00:00"/>
           <total value="31"/>
           <parameter>
             <name value="excludeNested"/>

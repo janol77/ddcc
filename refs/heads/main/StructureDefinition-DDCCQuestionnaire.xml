@@ -13,7 +13,7 @@
   <name value="DDCCQuestionnaire"/>
   <title value="DDCC Questionniare"/>
   <status value="active"/>
-  <date value="2022-06-01T13:01:08+00:00"/>
+  <date value="2022-09-27T20:02:38+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -171,7 +171,7 @@
       </base>
       <type>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
-          <valueUrl value="string"/>
+          <valueUrl value="id"/>
         </extension>
         <code value="http://hl7.org/fhirpath/System.String"/>
       </type>
@@ -2113,7 +2113,7 @@
         <human value="If the operator is 'exists', the value must be a boolean"/>
         <expression value="operator = 'exists' implies (answer is Boolean)"/>
         <xpath value="f:operator/@value != 'exists' or exists(f:answerBoolean)"/>
-        <source value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extr-smap"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Questionnaire"/>
       </constraint>
       <isModifier value="true"/>
       <isModifierReason value="If enableWhen is present and the condition evaluates to false, then the Questionnaire behaves as though the elements weren't actually present"/>
