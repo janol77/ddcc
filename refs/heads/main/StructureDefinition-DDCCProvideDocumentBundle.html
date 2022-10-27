@@ -1,40 +1,51 @@
-﻿<!-- get modelType --><?xml version="1.0" encoding="UTF-8"?>
+<!-- get modelType -->
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
     <title>FHIR.WHO.DDCC\DDCC Provide Document Bundle - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link rel="stylesheet" href="fhir.css"/>
+    <link href="fhir.css" rel="stylesheet"/>
 
-      <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
-      <!-- Project extras -->
-    <link rel="stylesheet" href="assets/css/project.css"/>
-    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
-    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
-  	<link rel="stylesheet" href="assets/css/prism.css"/>
-      <!-- Placeholder for child template CSS declarations -->
-    <link rel="stylesheet" href="assets/css/cqf.css"/>
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/cqf.css" rel="stylesheet"/>
 
-    <link rel="stylesheet" href="assets/css/who.css"/>
+    <link href="assets/css/who.css" rel="stylesheet"/>
 
-    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+<!--
+  Questionnaire:
+-->
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
 
-      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- [if lt IE 9]>
+
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif] -->
+    <![endif]-->
 
-      <!-- Favicons -->
-    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
@@ -42,51 +53,42 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"22.33"}
-    h3,h4,h5,h6{--heading-prefix:"22.33"}</style>
-    <div id="segment-header" class="segment">    <!-- segment-header -->
-      <div class="container">    <!-- container -->
-          <!-- Placeholder for child template header declarations -->
+    <style type="text/css">h2{--heading-prefix:"22.37"}
+    h3,h4,h5,h6{--heading-prefix:"22.37"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
 
 <div id="family-nav">
-  <a no-external="true" id="family-logo" href="https://github.com/cqframework"><img src="assets/images/cqf.png" alt="Visit the CQF github organization website" height="50"/> </a>
+  <a id="family-logo" no-external="true" href="https://github.com/cqframework"><img height="50" alt="Visit the CQF github organization website" src="assets/images/cqf.png"/> </a>
 </div>
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">WHO Digital Documentation of COVID-19 Certificates (DDCC)</span>
-            <br/>
-            <span style="display:inline-block;">1.0.0 - CI Build
-
-
-
-  <img src="assets/images/001.svg" alt="International flag" title="International" height="16"/>
-
-
-            </span>
-          </p>
+          <p><span style="font-size:12pt;font-weight:bold">WHO Digital Documentation of COVID-19 Certificates (DDCC)</span><br/>1.0.0 - CI Build</p>
         </div>
-      </div>   <!-- /container -->
-    </div>    <!-- /segment-header -->
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">    <!-- container -->
-          <!-- HEADER CONTENT -->
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
 
         <nav class="navbar navbar-inverse">
-            <!-- status-bar -->
+          <!--status-bar-->
           <div class="container">
-            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <ul class="nav navbar-nav">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
 	
-  <!-- <li class="dropdown">
+<!--
+	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
 		</a>
 
@@ -95,7 +97,8 @@
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
 		</a>
 
-	</li> -->
+	</li>
+-->
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="index.html" class="dropdown-toggle">Home<b class="caret"></b>
 		</a>
@@ -147,33 +150,32 @@
 	</li>
 </ul>      
 
-            </div>    <!-- /.nav-collapse -->
-          </div>    <!-- /.container -->
-        </nav>    <!-- /.navbar -->
-        <!-- /HEADER CONTENT -->
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-navbar -->
-      <!-- status-bar -->
-
-    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
-      <div class="container">    <!-- container -->
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+    
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>DDCC Provide Document Bundle</b></li>
-
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>DDCC Provide Document Bundle</b></li>
+          
         </ul>
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-breadcrumb -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">    <!-- segment-content -->
-      <div class="container">    <!-- container -->
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">This is the continuous build for version 1.0.0. This version is based on the current content of <a href="https://github.com/WorldHealthOrganization/ddcc">https://github.com/WorldHealthOrganization/ddcc</a> and changes regularly.</p>  <!-- EndReleaseHeader -->
+  <!--ReleaseHeader--><p id="publish-box">This is the continuous build for version 1.0.0. This version is based on the current content of <a href="https://github.com/WorldHealthOrganization/ddcc">https://github.com/WorldHealthOrganization/ddcc</a> and changes regularly.</p><!--EndReleaseHeader-->
   
-
 
 
 
@@ -234,72 +236,33 @@
 
 
   <a name="root"> </a>
-  <h2 id="root">Resource Profile:
+  <h2 id="root">Resource Profile: DDCC Provide Document Bundle</h2>
 
-    DDCC Provide Document Bundle
-
-
-
-
-
-  </h2>
-
-  <table class="colsi">
-
-    <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCProvideDocumentBundle<button data-clipboard-text="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCProvideDocumentBundle" title="Click to copy URL" class="btn-copy"></button></span>
-      </td>
-      <td><i>Version</i>:
-      <span class="copy-text">1.0.0<button data-clipboard-text="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCProvideDocumentBundle|1.0.0" title="Click to copy versioned URL" class="btn-copy"></button></span>
-      </td>
-    </tr>
-
-    <tr>
+<table class="grid">
+<tbody>
+<tr><td>Defining URL:</td><td>http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCProvideDocumentBundle</td></tr>
+ <tr><td>Version:</td><td>1.0.0</td></tr>
+ <tr><td>Name:</td><td>DDCCProvideDocumentBundle</td></tr>
+ <tr><td>Title:</td><td>DDCC Provide Document Bundle</td></tr>
+ <tr><td>Status:</td><td>Active as of 2022-10-27 10:56:05+0000</td></tr>
+ <tr><td>Definition:</td><td><p>DDCC Provide Document Bundle for ITI-65</p>
+</td></tr>
+ <tr><td>Publisher:</td><td>WHO</td></tr>
+ <tr><td>Source Resource:</td><td><a href="StructureDefinition-DDCCProvideDocumentBundle.profile.xml.html">XML</a> / <a href="StructureDefinition-DDCCProvideDocumentBundle.profile.json.html">JSON</a> / <a href="StructureDefinition-DDCCProvideDocumentBundle.profile.ttl.html">Turtle</a></td></tr>
+</tbody></table>
 
 
+  <p>
+  The official URL for this profile is:
+  </p>
+  <pre>http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCProvideDocumentBundle</pre>
 
+<!-- insert intro if present -->
 
 
 
 
-      <td colspan="4">
-        
-          Active
-          
-            as of 2022-09-27
-          
-        
-      </td>
-
-
-
-      <td><i>Computable Name</i>: <span style="font-family: monospace;">DDCCProvideDocumentBundle</span></td>
-    </tr>
-
-
-
-
-  </table>
-
-<p>
-<p>DDCC Provide Document Bundle for ITI-65</p>
-
-</p>
-
-
-
-  <!-- insert intro if present -->
-
-
-
-
-<p><b>Usage:</b></p>
-<ul>
- <li>This Resource Profile is not used by any profiles in this Implementation Guide</li>
-</ul>
-
-
-    <!-- no uri -->
+  <!-- no uri -->
   <a name="profile"> </a>
   <h3 id="profile">Formal Views of Profile Content</h3>
   <p>
@@ -320,19 +283,19 @@
         <a href="#tabs-snapms">Snapshot Table (Must Support)</a>
       </li>
 
-  <!-- <li>
+<!--      <li>
         <a href="#tabs-xml">Pseudo-XML</a>
-      </li> -->
+      </li>-->
 
 
-  <!-- <li>
+<!--      <li>
         <a href="#tabs-json">Pseudo-JSON</a>
-      </li> -->
+      </li>-->
 
 
-        <!-- <li>
+      <!--<li>
         <a href="#tabs-ttl">Pseudo-TTL</a>
-      </li> -->
+      </li>-->
 
       <li>
         <a href="#tabs-all">All</a>
@@ -670,7 +633,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       </div>
     </div>
 
-  <!-- <a name="tabs-xml"> </a>
+<!--    <a name="tabs-xml"> </a>
     <div id="tabs-xml">
       <div id="xml">
         <div id="xml-inner">
@@ -678,10 +641,10 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
         </div>
       </div>
-    </div> -->
+    </div>-->
 
 
-  <!-- <a name="tabs-json"> </a>
+<!--    <a name="tabs-json"> </a>
     <div id="tabs-json">
       <div id="json">
         <div id="json-inner">
@@ -853,7 +816,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
           "<a href="StructureDefinition-DDCCProvideDocumentBundle.html#Bundle.entry.response.outcome" title="An OperationOutcome containing hints and warnings produced as part of processing this entry in a batch or transaction" class="dict"><span style="text-decoration: underline">outcome</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/resource.html#Resource">Resource</a></span>}, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">OperationOutcome with hints and warnings (for batch/transaction)</span>
         },
       },
-      { // <span style="color: navy; opacity: 0.8">the Patient</span> <span style="color: brown" title="bdl-5: must be a resource unless there's a request or response; bdl-8: fullUrl cannot be a version specific reference; ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is an array in the base standard, but the profile only allows on element"><b>Only One!</b></span> 
+      { // <span style="color: navy; opacity: 0.8">the Patient</span> <span style="color: brown" title="This element is an array in the base standard, but the profile only allows on element"><b>Only One!</b></span> 
         "<a href="StructureDefinition-DDCCProvideDocumentBundle.html#Bundle.entry.modifierExtension" title="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
 
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself) (this element modifies the meaning of other elements)" class="dict"><span style="text-decoration: underline">modifierExtension</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children; ext-1: Must have either extensions or value[x], not both"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Extensions that cannot be ignored even if unrecognized</span>
@@ -894,10 +857,10 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
         </div>
       </div>
-    </div> -->
+    </div>-->
 
 
-      <!-- <a name="tabs-ttl"> </a>
+    <!--<a name="tabs-ttl"> </a>
     <div id="tabs-ttl">
       <div id="ttl">
         <div id="ttl-inner">
@@ -905,7 +868,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
         </div>
       </div>
-    </div> -->
+    </div>-->
 
     <a name="tabs-snapms"> </a>
     <div id="tabs-snapms">
@@ -1251,7 +1214,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         </div>
       </div>
 
-        <!-- <div id="all-xml">
+      <!--<div id="all-xml">
         <p>
           <b>XML Template</b>
         </p>
@@ -1259,10 +1222,10 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
           <p><span style="color: maroon; font-weight: bold">yet to be done: Xml template</span></p>
 
         </div>
-      </div> -->
+      </div>-->
 
 
-        <!-- <div id="all-json">
+      <!--<div id="all-json">
         <p>
           <b>JSON Template</b>
         </p>
@@ -1435,7 +1398,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
           "<a href="StructureDefinition-DDCCProvideDocumentBundle.html#Bundle.entry.response.outcome" title="An OperationOutcome containing hints and warnings produced as part of processing this entry in a batch or transaction" class="dict"><span style="text-decoration: underline">outcome</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/resource.html#Resource">Resource</a></span>}, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">OperationOutcome with hints and warnings (for batch/transaction)</span>
         },
       },
-      { // <span style="color: navy; opacity: 0.8">the Patient</span> <span style="color: brown" title="bdl-5: must be a resource unless there's a request or response; bdl-8: fullUrl cannot be a version specific reference; ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is an array in the base standard, but the profile only allows on element"><b>Only One!</b></span> 
+      { // <span style="color: navy; opacity: 0.8">the Patient</span> <span style="color: brown" title="This element is an array in the base standard, but the profile only allows on element"><b>Only One!</b></span> 
         "<a href="StructureDefinition-DDCCProvideDocumentBundle.html#Bundle.entry.modifierExtension" title="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
 
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself) (this element modifies the meaning of other elements)" class="dict"><span style="text-decoration: underline">modifierExtension</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children; ext-1: Must have either extensions or value[x], not both"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Extensions that cannot be ignored even if unrecognized</span>
@@ -1475,10 +1438,10 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
   }
 
         </div>
-      </div> -->
+      </div>-->
 
 
-        <!-- <div id="all-ttl">
+      <!--<div id="all-ttl">
         <p>
           <b>TTL Template</b>
         </p>
@@ -1486,22 +1449,38 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
           <p><span style="color: maroon; font-weight: bold">yet to be done: Turtle template</span></p>
 
         </div>
-      </div> -->
+      </div>-->
 
     </div>
   </div>
-  <p>&nbsp;</p>
+  <p>&#160;</p>
   <p>Other representations of profile: <a href="StructureDefinition-DDCCProvideDocumentBundle.csv">CSV</a>, <a href="StructureDefinition-DDCCProvideDocumentBundle.xlsx">Excel</a>, <a href="StructureDefinition-DDCCProvideDocumentBundle.sch">Schematron</a>
  
   </p>
   <a name="tx"> </a>
-    <!-- Terminology Bindings heading in the fragment -->
+  <!--Terminology Bindings heading in the fragment -->
   <h4>Terminology Bindings</h4>
 <table class="list">
 <tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet / Code</b></td></tr>
 <tr><td>Bundle.meta.security</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Security Labels from the Healthcare Privacy and Security Classification System."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-security-labels.html">All Security Labels</a></td></tr>
 <tr><td>Bundle.meta.tag</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes that represent various types of tags, commonly workflow-related; e.g. &quot;Needs review by Dr. Jones&quot;."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-common-tags.html">CommonTags</a></td></tr>
-<tr><td>Bundle.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="A human language."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a><br/><a style="font-weight:bold" href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="Max Value Set Extension">Max Binding</a>: <a href="http://hl7.org/fhir/R4/valueset-all-languages.html">AllLanguages</a></td></tr>
+<tr><td>Bundle.language</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="A human language."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a><table class="grid">
+  <tr>
+    <td style="font-size: 11px">
+      <b>Additional Bindings</b>
+    </td>
+    <td style="font-size: 11px">Purpose</td>
+  </tr>
+  <tr>
+    <td style="font-size: 11px">
+      <a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a>
+    </td>
+    <td style="font-size: 11px">
+      <a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="A required binding, for use when the binding strength is 'extensible' or 'preferred'">Max Binding</a>
+    </td>
+  </tr>
+</table>
+</td></tr>
 <tr><td>Bundle.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Indicates the purpose of a bundle - how it is intended to be used.">Pattern: transaction</td></tr>
 <tr><td>Bundle.entry.search.mode</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-search-entry-mode.html">SearchEntryMode</a></td></tr>
 <tr><td>Bundle.entry.request.method</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-http-verb.html">HTTPVerb</a></td></tr>
@@ -1519,307 +1498,43 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
 
   
-    <!-- 218 is size of empty table -->
+  <!-- 218 is size of empty table -->
   
     <a name="inv"> </a>
-      <!-- Constraints  heading in the fragment -->
+    <!--Constraints  heading in the fragment -->
     <h4>Constraints</h4>
 <table class="list">
-<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
-<tr><td>bdl-1</td><td>error</td><td>Bundle</td><td>total only when a search or history<br/>: total.empty() or (type = 'searchset') or (type = 'history')</td><td></td></tr>
-<tr><td>bdl-2</td><td>error</td><td>Bundle</td><td>entry.search only when a search<br/>: entry.search.empty() or (type = 'searchset')</td><td></td></tr>
-<tr><td>bdl-3</td><td>error</td><td>Bundle</td><td>entry.request mandatory for batch/transaction/history, otherwise prohibited<br/>: entry.all(request.exists() = (%resource.type = 'batch' or %resource.type = 'transaction' or %resource.type = 'history'))</td><td></td></tr>
-<tr><td>bdl-4</td><td>error</td><td>Bundle</td><td>entry.response mandatory for batch-response/transaction-response/history, otherwise prohibited<br/>: entry.all(response.exists() = (%resource.type = 'batch-response' or %resource.type = 'transaction-response' or %resource.type = 'history'))</td><td></td></tr>
-<tr><td>bdl-7</td><td>error</td><td>Bundle</td><td>FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)<br/>: (type = 'history') or entry.where(fullUrl.exists()).select(fullUrl&amp;resource.meta.versionId).isDistinct()</td><td></td></tr>
-<tr><td>bdl-9</td><td>error</td><td>Bundle</td><td>A document must have an identifier with a system and a value<br/>: type = 'document' implies (identifier.system.exists() and identifier.value.exists())</td><td></td></tr>
-<tr><td>bdl-10</td><td>error</td><td>Bundle</td><td>A document must have a date<br/>: type = 'document' implies (timestamp.hasValue())</td><td></td></tr>
-<tr><td>bdl-11</td><td>error</td><td>Bundle</td><td>A document must have a Composition as the first resource<br/>: type = 'document' implies entry.first().resource.is(Composition)</td><td></td></tr>
-<tr><td>bdl-12</td><td>error</td><td>Bundle</td><td>A message must have a MessageHeader as the first resource<br/>: type = 'message' implies entry.first().resource.is(MessageHeader)</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.meta</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.meta.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.meta.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.meta.versionId</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.meta.lastUpdated</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.meta.source</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.meta.profile</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.meta.security</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.meta.tag</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.implicitRules</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.language</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.identifier</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.type</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.timestamp</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.total</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.link</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.link.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.link.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.link.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.link.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.link.relation</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.link.url</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>bdl-5</td><td>error</td><td>Bundle.entry</td><td>must be a resource unless there's a request or response<br/>: resource.exists() or request.exists() or response.exists()</td><td></td></tr>
-<tr><td>bdl-8</td><td>error</td><td>Bundle.entry</td><td>fullUrl cannot be a version specific reference<br/>: fullUrl.contains('/_history/').not()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry.link</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry.fullUrl</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry.search</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry.search.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry.search.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry.search.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry.search.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry.search.mode</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry.search.score</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry.request</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry.request.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry.request.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry.request.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry.request.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry.request.method</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry.request.url</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry.request.ifNoneMatch</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry.request.ifModifiedSince</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry.request.ifMatch</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry.request.ifNoneExist</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry.response</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry.response.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry.response.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry.response.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry.response.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry.response.status</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry.response.location</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry.response.etag</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry.response.lastModified</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>bdl-5</td><td>error</td><td>Bundle.entry:SubmissionSet</td><td>must be a resource unless there's a request or response<br/>: resource.exists() or request.exists() or response.exists()</td><td></td></tr>
-<tr><td>bdl-8</td><td>error</td><td>Bundle.entry:SubmissionSet</td><td>fullUrl cannot be a version specific reference<br/>: fullUrl.contains('/_history/').not()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:SubmissionSet</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:SubmissionSet.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:SubmissionSet.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:SubmissionSet.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:SubmissionSet.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:SubmissionSet.link</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:SubmissionSet.fullUrl</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Bundle.entry:SubmissionSet.resource</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Bundle.entry:SubmissionSet.resource</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Bundle.entry:SubmissionSet.resource</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Bundle.entry:SubmissionSet.resource</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>Best Practice</td><td>Bundle.entry:SubmissionSet.resource</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>lst-1</td><td>error</td><td>Bundle.entry:SubmissionSet.resource</td><td>A list can only have an emptyReason if it is empty<br/>: emptyReason.empty() or entry.empty()</td><td></td></tr>
-<tr><td>lst-2</td><td>error</td><td>Bundle.entry:SubmissionSet.resource</td><td>The deleted flag can only be used if the mode of the list is "changes"<br/>: mode = 'changes' or entry.deleted.empty()</td><td></td></tr>
-<tr><td>lst-3</td><td>error</td><td>Bundle.entry:SubmissionSet.resource</td><td>An entry date can only be used if the mode of the list is "working"<br/>: mode = 'working' or entry.date.empty()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:SubmissionSet.search</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:SubmissionSet.search.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:SubmissionSet.search.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:SubmissionSet.search.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:SubmissionSet.search.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:SubmissionSet.search.mode</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:SubmissionSet.search.score</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:SubmissionSet.request</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:SubmissionSet.request.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:SubmissionSet.request.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:SubmissionSet.request.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:SubmissionSet.request.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:SubmissionSet.request.method</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:SubmissionSet.request.url</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:SubmissionSet.request.ifNoneMatch</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:SubmissionSet.request.ifModifiedSince</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:SubmissionSet.request.ifMatch</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:SubmissionSet.request.ifNoneExist</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:SubmissionSet.response</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:SubmissionSet.response.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:SubmissionSet.response.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:SubmissionSet.response.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:SubmissionSet.response.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:SubmissionSet.response.status</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:SubmissionSet.response.location</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:SubmissionSet.response.etag</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:SubmissionSet.response.lastModified</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>bdl-5</td><td>error</td><td>Bundle.entry:DocumentRefs</td><td>must be a resource unless there's a request or response<br/>: resource.exists() or request.exists() or response.exists()</td><td></td></tr>
-<tr><td>bdl-8</td><td>error</td><td>Bundle.entry:DocumentRefs</td><td>fullUrl cannot be a version specific reference<br/>: fullUrl.contains('/_history/').not()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:DocumentRefs</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:DocumentRefs.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:DocumentRefs.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:DocumentRefs.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:DocumentRefs.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:DocumentRefs.link</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:DocumentRefs.fullUrl</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Bundle.entry:DocumentRefs.resource</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Bundle.entry:DocumentRefs.resource</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Bundle.entry:DocumentRefs.resource</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Bundle.entry:DocumentRefs.resource</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>Best Practice</td><td>Bundle.entry:DocumentRefs.resource</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:DocumentRefs.search</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:DocumentRefs.search.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:DocumentRefs.search.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:DocumentRefs.search.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:DocumentRefs.search.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:DocumentRefs.search.mode</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:DocumentRefs.search.score</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:DocumentRefs.request</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:DocumentRefs.request.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:DocumentRefs.request.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:DocumentRefs.request.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:DocumentRefs.request.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:DocumentRefs.request.method</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:DocumentRefs.request.url</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:DocumentRefs.request.ifNoneMatch</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:DocumentRefs.request.ifModifiedSince</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:DocumentRefs.request.ifMatch</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:DocumentRefs.request.ifNoneExist</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:DocumentRefs.response</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:DocumentRefs.response.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:DocumentRefs.response.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:DocumentRefs.response.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:DocumentRefs.response.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:DocumentRefs.response.status</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:DocumentRefs.response.location</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:DocumentRefs.response.etag</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:DocumentRefs.response.lastModified</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>bdl-5</td><td>error</td><td>Bundle.entry:Documents</td><td>must be a resource unless there's a request or response<br/>: resource.exists() or request.exists() or response.exists()</td><td></td></tr>
-<tr><td>bdl-8</td><td>error</td><td>Bundle.entry:Documents</td><td>fullUrl cannot be a version specific reference<br/>: fullUrl.contains('/_history/').not()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Documents</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Documents.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:Documents.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Documents.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:Documents.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Documents.link</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Documents.fullUrl</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Documents.search</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Documents.search.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:Documents.search.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Documents.search.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:Documents.search.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Documents.search.mode</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Documents.search.score</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Documents.request</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Documents.request.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:Documents.request.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Documents.request.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:Documents.request.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Documents.request.method</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Documents.request.url</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Documents.request.ifNoneMatch</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Documents.request.ifModifiedSince</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Documents.request.ifMatch</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Documents.request.ifNoneExist</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Documents.response</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Documents.response.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:Documents.response.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Documents.response.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:Documents.response.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Documents.response.status</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Documents.response.location</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Documents.response.etag</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Documents.response.lastModified</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>bdl-5</td><td>error</td><td>Bundle.entry:Folders</td><td>must be a resource unless there's a request or response<br/>: resource.exists() or request.exists() or response.exists()</td><td></td></tr>
-<tr><td>bdl-8</td><td>error</td><td>Bundle.entry:Folders</td><td>fullUrl cannot be a version specific reference<br/>: fullUrl.contains('/_history/').not()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Folders</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Folders.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:Folders.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Folders.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:Folders.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Folders.link</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Folders.fullUrl</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Bundle.entry:Folders.resource</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Bundle.entry:Folders.resource</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Bundle.entry:Folders.resource</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Bundle.entry:Folders.resource</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>Best Practice</td><td>Bundle.entry:Folders.resource</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>lst-1</td><td>error</td><td>Bundle.entry:Folders.resource</td><td>A list can only have an emptyReason if it is empty<br/>: emptyReason.empty() or entry.empty()</td><td></td></tr>
-<tr><td>lst-2</td><td>error</td><td>Bundle.entry:Folders.resource</td><td>The deleted flag can only be used if the mode of the list is "changes"<br/>: mode = 'changes' or entry.deleted.empty()</td><td></td></tr>
-<tr><td>lst-3</td><td>error</td><td>Bundle.entry:Folders.resource</td><td>An entry date can only be used if the mode of the list is "working"<br/>: mode = 'working' or entry.date.empty()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Folders.search</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Folders.search.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:Folders.search.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Folders.search.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:Folders.search.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Folders.search.mode</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Folders.search.score</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Folders.request</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Folders.request.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:Folders.request.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Folders.request.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:Folders.request.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Folders.request.method</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Folders.request.url</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Folders.request.ifNoneMatch</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Folders.request.ifModifiedSince</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Folders.request.ifMatch</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Folders.request.ifNoneExist</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Folders.response</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Folders.response.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:Folders.response.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Folders.response.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:Folders.response.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Folders.response.status</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Folders.response.location</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Folders.response.etag</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Folders.response.lastModified</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>bdl-5</td><td>error</td><td>Bundle.entry:Patient</td><td>must be a resource unless there's a request or response<br/>: resource.exists() or request.exists() or response.exists()</td><td></td></tr>
-<tr><td>bdl-8</td><td>error</td><td>Bundle.entry:Patient</td><td>fullUrl cannot be a version specific reference<br/>: fullUrl.contains('/_history/').not()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Patient</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Patient.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:Patient.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Patient.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:Patient.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Patient.link</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Patient.fullUrl</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>dom-2</td><td>error</td><td>Bundle.entry:Patient.resource</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
-<tr><td>dom-3</td><td>error</td><td>Bundle.entry:Patient.resource</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
-<tr><td>dom-4</td><td>error</td><td>Bundle.entry:Patient.resource</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
-<tr><td>dom-5</td><td>error</td><td>Bundle.entry:Patient.resource</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
-<tr><td>dom-6</td><td>Best Practice</td><td>Bundle.entry:Patient.resource</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Patient.search</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Patient.search.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:Patient.search.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Patient.search.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:Patient.search.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Patient.search.mode</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Patient.search.score</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Patient.request</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Patient.request.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:Patient.request.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Patient.request.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:Patient.request.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Patient.request.method</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Patient.request.url</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Patient.request.ifNoneMatch</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Patient.request.ifModifiedSince</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Patient.request.ifMatch</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Patient.request.ifNoneExist</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Patient.response</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Patient.response.extension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:Patient.response.extension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Patient.response.modifierExtension</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ext-1</td><td>error</td><td>Bundle.entry:Patient.response.modifierExtension</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Patient.response.status</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Patient.response.location</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Patient.response.etag</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.entry:Patient.response.lastModified</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
-<tr><td>ele-1</td><td>error</td><td>Bundle.signature</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
+<tr><td>bdl-5</td><td>error</td><td>Bundle.entry, Bundle.entry:SubmissionSet, Bundle.entry:DocumentRefs, Bundle.entry:Documents, Bundle.entry:Folders</td><td>must be a resource unless there's a request or response<br/>: resource.exists() or request.exists() or response.exists()</td><td></td></tr>
+<tr><td>bdl-8</td><td>error</td><td>Bundle.entry, Bundle.entry:SubmissionSet, Bundle.entry:DocumentRefs, Bundle.entry:Documents, Bundle.entry:Folders</td><td>fullUrl cannot be a version specific reference<br/>: fullUrl.contains('/_history/').not()</td><td></td></tr>
+<tr><td>dom-2</td><td>error</td><td>Bundle.entry:SubmissionSet.resource, Bundle.entry:DocumentRefs.resource, Bundle.entry:Folders.resource, Bundle.entry:Patient.resource</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
+<tr><td>dom-3</td><td>error</td><td>Bundle.entry:SubmissionSet.resource, Bundle.entry:DocumentRefs.resource, Bundle.entry:Folders.resource, Bundle.entry:Patient.resource</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
+<tr><td>dom-4</td><td>error</td><td>Bundle.entry:SubmissionSet.resource, Bundle.entry:DocumentRefs.resource, Bundle.entry:Folders.resource, Bundle.entry:Patient.resource</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
+<tr><td>dom-5</td><td>error</td><td>Bundle.entry:SubmissionSet.resource, Bundle.entry:DocumentRefs.resource, Bundle.entry:Folders.resource, Bundle.entry:Patient.resource</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
+<tr><td>dom-6</td><td>best practice</td><td>Bundle.entry:SubmissionSet.resource, Bundle.entry:DocumentRefs.resource, Bundle.entry:Folders.resource, Bundle.entry:Patient.resource</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
+<tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
+<tr><td>ext-1</td><td>error</td><td>**ALL** extensions</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
+<tr><td>lst-1</td><td>error</td><td>Bundle.entry:SubmissionSet.resource, Bundle.entry:Folders.resource</td><td>A list can only have an emptyReason if it is empty<br/>: emptyReason.empty() or entry.empty()</td><td></td></tr>
+<tr><td>lst-2</td><td>error</td><td>Bundle.entry:SubmissionSet.resource, Bundle.entry:Folders.resource</td><td>The deleted flag can only be used if the mode of the list is &quot;changes&quot;<br/>: mode = 'changes' or entry.deleted.empty()</td><td></td></tr>
+<tr><td>lst-3</td><td>error</td><td>Bundle.entry:SubmissionSet.resource, Bundle.entry:Folders.resource</td><td>An entry date can only be used if the mode of the list is &quot;working&quot;<br/>: mode = 'working' or entry.date.empty()</td><td></td></tr>
 </table>
 
   
 
-  
-
-  <!-- insert notes if present -->
+<!-- insert notes if present -->
 
 
 
 
 </div>
 
-        </div>    <!-- /inner-wrapper -->
-      </div>    <!-- /row -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-content -->
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
 
-  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
   <script type="text/javascript">
     try {
@@ -1852,51 +1567,49 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
     });
   </script>
   <a name="bottom"> </a>
-  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
-    <div class="container">    <!-- container -->
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l16031">​</a>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 27, 2022 23:08+0000">2022-09-27</span>
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 27, 2022 10:56+0000">2022-10-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-                  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/worldhealthorganization/ddcc/projects/1" target="_blank">Issues</a>
+                  | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/worldhealthorganization/ddcc/projects/1">Issues</a>
                 
-| <a style="color: #81BEF7" href="http://worldhealthorganization.github.io/ddcc/history.html" target="_blank">Version History</a> | <a rel="license" style="color: #81BEF7" href="license.html">License</a>
-  <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | -->
-          
+                 | <a style="color: #81BEF7" target="_blank" href="http://worldhealthorganization.github.io/ddcc/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+          </span>
         </p>
-      </div>    <!-- /inner-wrapper -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-footer -->
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
-    <div class="container">    <!-- container -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
   
-    <!-- JS and analytics only. -->
-    <!-- Bootstrap core JavaScript
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
   ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
-  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
-  <!-- feedback form - Google forms -->
-  <!-- v0.1, 2021-01-09 -->
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
 
 
   
     
     <script type="text/javascript">
-     /*   <!-- [CDATA[ */
+     /* <![CDATA[ */
         $(':header[id]').each(function() { // apply this to each heading
           var id = $(this).attr('id');
           var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
@@ -1930,7 +1643,7 @@ anchors.add()</script>
 /* <![CDATA[ */
               feedbackurl = feedbackurl + '&';
               feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
-/* ]] --> */
+/* ]]> */
             
               var parameterFieldId = '';
               var parameterVariableName = '';
@@ -1952,15 +1665,15 @@ anchors.add()</script>
                     parameterValue = document.getElementById(id).textContent;
                     break;
               }
-/*   <!-- [CDATA[ */
+/* <![CDATA[ */
               feedbackurl = feedbackurl + '&';
               feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
-/* ]] --> */
+/* ]]> */
             
             
           if (id) { //To make sure the element has an id
             $(this).append(function () {
-              return $('<a></a>', {
+              return $('<a/>', {
                 id,
                 href: feedbackurl,
                 text: feedbacklabel+' ' ,
@@ -1972,16 +1685,17 @@ anchors.add()</script>
             });
           }
         }) 
-/* ]]&gt; */
+/* ]]> */
       </script>  
     
   
 
 
 
-  <!-- / feedback form -->
+<!-- / feedback form  -->
 
-    <!-- Analytics Below
+  <!-- Analytics Below
   ================================================== -->
   </body>
 </html>
+

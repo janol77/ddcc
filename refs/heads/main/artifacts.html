@@ -1,40 +1,47 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
     <title>FHIR.WHO.DDCC\Artifacts Summary - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link rel="stylesheet" href="fhir.css"/>
+    <link href="fhir.css" rel="stylesheet"/>
 
-      <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
-      <!-- Project extras -->
-    <link rel="stylesheet" href="assets/css/project.css"/>
-    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
-    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
-  	<link rel="stylesheet" href="assets/css/prism.css"/>
-      <!-- Placeholder for child template CSS declarations -->
-    <link rel="stylesheet" href="assets/css/cqf.css"/>
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/cqf.css" rel="stylesheet"/>
 
-    <link rel="stylesheet" href="assets/css/who.css"/>
+    <link href="assets/css/who.css" rel="stylesheet"/>
 
-    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+<!--
+  Questionnaire:
+-->
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
 
-      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- [if lt IE 9]>
+
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif] -->
+    <![endif]-->
 
-      <!-- Favicons -->
-    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
@@ -44,49 +51,40 @@
 
     <style type="text/css">h2{--heading-prefix:"22"}
     h3,h4,h5,h6{--heading-prefix:"22.0"}</style>
-    <div id="segment-header" class="segment">    <!-- segment-header -->
-      <div class="container">    <!-- container -->
-          <!-- Placeholder for child template header declarations -->
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
 
 <div id="family-nav">
-  <a no-external="true" id="family-logo" href="https://github.com/cqframework"><img src="assets/images/cqf.png" alt="Visit the CQF github organization website" height="50"/> </a>
+  <a id="family-logo" no-external="true" href="https://github.com/cqframework"><img height="50" alt="Visit the CQF github organization website" src="assets/images/cqf.png"/> </a>
 </div>
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">WHO Digital Documentation of COVID-19 Certificates (DDCC)</span>
-            <br/>
-            <span style="display:inline-block;">1.0.0 - CI Build
-
-
-
-  <img src="assets/images/001.svg" alt="International flag" title="International" height="16"/>
-
-
-            </span>
-          </p>
+          <p><span style="font-size:12pt;font-weight:bold">WHO Digital Documentation of COVID-19 Certificates (DDCC)</span><br/>1.0.0 - CI Build</p>
         </div>
-      </div>   <!-- /container -->
-    </div>    <!-- /segment-header -->
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">    <!-- container -->
-          <!-- HEADER CONTENT -->
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
 
         <nav class="navbar navbar-inverse">
-            <!-- status-bar -->
+          <!--status-bar-->
           <div class="container">
-            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <ul class="nav navbar-nav">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
 	
-  <!-- <li class="dropdown">
+<!--
+	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
 		</a>
 
@@ -95,7 +93,8 @@
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
 		</a>
 
-	</li> -->
+	</li>
+-->
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="index.html" class="dropdown-toggle">Home<b class="caret"></b>
 		</a>
@@ -147,26 +146,26 @@
 	</li>
 </ul>      
 
-            </div>    <!-- /.nav-collapse -->
-          </div>    <!-- /.container -->
-        </nav>    <!-- /.navbar -->
-        <!-- /HEADER CONTENT -->
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-navbar -->
-      <!-- status-bar -->
-
-    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
-      <div class="container">    <!-- container -->
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+    
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
-
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+          
         </ul>
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-breadcrumb -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">    <!-- segment-content -->
-      <div class="container">    <!-- container -->
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
@@ -178,12 +177,13 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">This is the continuous build for version 1.0.0. This version is based on the current content of <a href="https://github.com/WorldHealthOrganization/ddcc">https://github.com/WorldHealthOrganization/ddcc</a> and changes regularly.</p>  <!-- EndReleaseHeader -->
+  <!--ReleaseHeader--><p id="publish-box">This is the continuous build for version 1.0.0. This version is based on the current content of <a href="https://github.com/WorldHealthOrganization/ddcc">https://github.com/WorldHealthOrganization/ddcc</a> and changes regularly.</p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
-  
-  
-    <!-- DO NOT EDIT THIS FILE - It is generated and any changes made will be overwritten --><div class="markdown-toc">
+  <!--DO NOT EDIT THIS FILE - It is generated and any changes made will be overwritten--><div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     class="markdown-toc">
    <p>Contents:</p>
    <ul>
       <li>
@@ -224,7 +224,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </li>
    </ul>
 </div>
-<div>
+<div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
    <h3>Behavior: Capability Statements </h3>
@@ -237,7 +239,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="CapabilityStatement-WHO.DDCC.Generator.html" title="CapabilityStatement/WHO.DDCC.Generator">WHO DDCC Generator</a>
+                  <a href="CapabilityStatement-WHO.DDCC.Generator.html"
+                     title="CapabilityStatement/WHO.DDCC.Generator">WHO DDCC Generator</a>
                </td>
                <td>
 <p>CapabilityStatement for WHO DDCC Generator actor.</p>
@@ -245,7 +248,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="CapabilityStatement-WHO.DDCC.RegistryService.html" title="CapabilityStatement/WHO.DDCC.RegistryService">WHO DDCC Registry Service</a>
+                  <a href="CapabilityStatement-WHO.DDCC.RegistryService.html"
+                     title="CapabilityStatement/WHO.DDCC.RegistryService">WHO DDCC Registry Service</a>
                </td>
                <td>
 <p>CapabilityStatement for WHO DDCC Registry Service actor.</p>
@@ -265,7 +269,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.html" title="OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate">DDCCGenerateHealthCertificate</a>
+                  <a href="OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.html"
+                     title="OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate">DDCCGenerateHealthCertificate</a>
                </td>
                <td>
 <p>Generate one or more signed DDCC Documents based on a <a href="StructureDefinition-DDCCQuestionnaireResponse.html">DDCC QuestionnaireResponse</a></p>
@@ -273,7 +278,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="OperationDefinition-DDCC-QuestionnaireResponse-generateHealthFolder.html" title="OperationDefinition/DDCC-QuestionnaireResponse-generateHealthFolder">DDCCGenerateHealthFolder</a>
+                  <a href="OperationDefinition-DDCC-QuestionnaireResponse-generateHealthFolder.html"
+                     title="OperationDefinition/DDCC-QuestionnaireResponse-generateHealthFolder">DDCCGenerateHealthFolder</a>
                </td>
                <td>
 <p>Generate a DDCC Folder from an IPS Bundle.</p>
@@ -281,7 +287,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="OperationDefinition-DDCC-QuestionnaireResponse-revokeHealthCertificate.html" title="OperationDefinition/DDCC-QuestionnaireResponse-revokeHealthCertificate">DDCCRevokeHealthCertificate</a>
+                  <a href="OperationDefinition-DDCC-QuestionnaireResponse-revokeHealthCertificate.html"
+                     title="OperationDefinition/DDCC-QuestionnaireResponse-revokeHealthCertificate">DDCCRevokeHealthCertificate</a>
                </td>
                <td>
 <p>Revoke a DDCC Document.</p>
@@ -301,7 +308,44 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCCoreDataSet.html" title="StructureDefinition/DDCCCoreDataSet">DDCC Core Data Set Logical Model</a>
+                  <a href="StructureDefinition-CertDCC.html"
+                     title="StructureDefinition/CertDCC">Certificate - EU DCC CBOR Web Token Logical Model</a>
+               </td>
+               <td>
+<p>Data elements for the EU Digital COVID Certificate Core Data Set.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-CertDIVOC.html"
+                     title="StructureDefinition/CertDIVOC">Certificate - DIVOC Verifiable Credential Logical Model</a>
+               </td>
+               <td>
+<p>Data elements for the DIVOC Core Data Set.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-CertICAO.html"
+                     title="StructureDefinition/CertICAO">Certificate - ICAO Visible Digital Seal Logical Model</a>
+               </td>
+               <td>
+<p>Data elements for the ICAO Visible Digital Seal Core Data Set.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-CertSHC.html"
+                     title="StructureDefinition/CertSHC">Certificate - Smart Health Card's JSon Web Token Logical Model</a>
+               </td>
+               <td>
+<p>Data elements for the Smart Health Cards Core Data Set.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DDCCCoreDataSet.html"
+                     title="StructureDefinition/DDCCCoreDataSet">DDCC Core Data Set Logical Model</a>
                </td>
                <td>
 <p>Data elements for the DDCC Core Data Set.</p>
@@ -309,7 +353,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCCoreDataSet.TR.html" title="StructureDefinition/DDCCCoreDataSet.TR">DDCC Core Data Set Logical Model for Test Result</a>
+                  <a href="StructureDefinition-DDCCCoreDataSet.TR.html"
+                     title="StructureDefinition/DDCCCoreDataSet.TR">DDCC Core Data Set Logical Model for Test Result</a>
                </td>
                <td>
 <p>Data elements for the DDCC Core Data Set for Test Result.</p>
@@ -317,7 +362,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCCoreDataSet.VS.html" title="StructureDefinition/DDCCCoreDataSet.VS">DDCC Core Data Set Logical Model for Vaccination Status</a>
+                  <a href="StructureDefinition-DDCCCoreDataSet.VS.html"
+                     title="StructureDefinition/DDCCCoreDataSet.VS">DDCC Core Data Set Logical Model for Vaccination Status</a>
                </td>
                <td>
 <p>Data elements for the DDCC Core Data Set for Vaccination Status.</p>
@@ -325,7 +371,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCCoreDataSet.VS.CoC.html" title="StructureDefinition/DDCCCoreDataSet.VS.CoC">DDCC Core Data Set Logical Model - Vaccination Status - Continuity of Care</a>
+                  <a href="StructureDefinition-DDCCCoreDataSet.VS.CoC.html"
+                     title="StructureDefinition/DDCCCoreDataSet.VS.CoC">DDCC Core Data Set Logical Model - Vaccination Status - Continuity of Care</a>
                </td>
                <td>
 <p>Data elements for the DDCC Core Data Set - Vaccination Status - Continuity of Care.</p>
@@ -333,7 +380,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCCoreDataSet.VS.PoV.html" title="StructureDefinition/DDCCCoreDataSet.VS.PoV">DDCC Core Data Set Logical Model - Vaccination Status - Proof of Vaccination</a>
+                  <a href="StructureDefinition-DDCCCoreDataSet.VS.PoV.html"
+                     title="StructureDefinition/DDCCCoreDataSet.VS.PoV">DDCC Core Data Set Logical Model - Vaccination Status - Proof of Vaccination</a>
                </td>
                <td>
 <p>Data elements for the DDCC Core Data Set - Vaccination Status - Proof of Vaccination.</p>
@@ -377,7 +425,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCQuestionnaire.html" title="StructureDefinition/DDCCQuestionnaire">DDCC Questionniare</a>
+                  <a href="StructureDefinition-DDCCQuestionnaire.html"
+                     title="StructureDefinition/DDCCQuestionnaire">DDCC Questionniare</a>
                </td>
                <td>
 <p>Describes the logical structure for a questionnaire associacted to a DDCC which includes a Structure Map to generate the relevant DDCC from a given <a href="StructureDefinition-DDCCQuestionnaireResponse.html">DDCC QuestionnaireResponse</a> which responds to the DDCC Questionnaire.</p>
@@ -385,7 +434,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCQuestionnaireResponse.html" title="StructureDefinition/DDCCQuestionnaireResponse">DDCC Questionnaire Response</a>
+                  <a href="StructureDefinition-DDCCQuestionnaireResponse.html"
+                     title="StructureDefinition/DDCCQuestionnaireResponse">DDCC Questionnaire Response</a>
                </td>
                <td>
 <p>Describes the logical structure for a questionnaire response associacted to a <a href="StructureDefinition-DDCCQuestionnaire.html">DDCC Questionaire</a>.</p>
@@ -405,7 +455,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCComposition.html" title="StructureDefinition/DDCCComposition">DDCC Composition</a>
+                  <a href="StructureDefinition-DDCCComposition.html"
+                     title="StructureDefinition/DDCCComposition">DDCC Composition</a>
                </td>
                <td>
 <p>Describes the logical structure for a Digital Documentation of COVID-19 Certificates 
@@ -414,7 +465,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCDiagnosticReport.html" title="StructureDefinition/DDCCDiagnosticReport">DDCC Diagnostic Report</a>
+                  <a href="StructureDefinition-DDCCDiagnosticReport.html"
+                     title="StructureDefinition/DDCCDiagnosticReport">DDCC Diagnostic Report</a>
                </td>
                <td>
 <p>A DDCC Diagnostic Report contains the content corresponding to a row in the Test 
@@ -425,7 +477,8 @@ DiagnosticReport resource.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCDocument.html" title="StructureDefinition/DDCCDocument">DDCC Document</a>
+                  <a href="StructureDefinition-DDCCDocument.html"
+                     title="StructureDefinition/DDCCDocument">DDCC Document</a>
                </td>
                <td>
 <p>A <a href="StructureDefinition-DDCCDocument.html">DDCC Document</a> is a document bundle containing the DDCC.</p>
@@ -433,7 +486,8 @@ DiagnosticReport resource.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCDocumentReference.html" title="StructureDefinition/DDCCDocumentReference">DDCC Document Reference</a>
+                  <a href="StructureDefinition-DDCCDocumentReference.html"
+                     title="StructureDefinition/DDCCDocumentReference">DDCC Document Reference</a>
                </td>
                <td>
 <p>A <a href="StructureDefinition-DDCCDocumentReference.html">DDCC Document Reference</a> is a 
@@ -444,7 +498,8 @@ The content attachment url will point to a DDCC Document.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCDocumentReferenceQR.html" title="StructureDefinition/DDCCDocumentReferenceQR">DDCC DocumentReference return for QR</a>
+                  <a href="StructureDefinition-DDCCDocumentReferenceQR.html"
+                     title="StructureDefinition/DDCCDocumentReferenceQR">DDCC DocumentReference return for QR</a>
                </td>
                <td>
 <p>DDCC DocumentReference for QR codes including the QR image and the serialized content.</p>
@@ -452,7 +507,8 @@ The content attachment url will point to a DDCC Document.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCDocumentSigned.html" title="StructureDefinition/DDCCDocumentSigned">DDCC DocumentSigned</a>
+                  <a href="StructureDefinition-DDCCDocumentSigned.html"
+                     title="StructureDefinition/DDCCDocumentSigned">DDCC DocumentSigned</a>
                </td>
                <td>
 <p>A <a href="StructureDefinition-DDCCDocumentSigned.html">DDCC Document Signed</a> is a document bundle containing the DDCC
@@ -461,7 +517,8 @@ that has a digital signature.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCFolder.html" title="StructureDefinition/DDCCFolder">DDCC Folder</a>
+                  <a href="StructureDefinition-DDCCFolder.html"
+                     title="StructureDefinition/DDCCFolder">DDCC Folder</a>
                </td>
                <td>
 <p>DDCC Folder of the Paper Certificate</p>
@@ -469,7 +526,8 @@ that has a digital signature.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCGenerateHealthCertificateParameters.html" title="StructureDefinition/DDCCGenerateHealthCertificateParameters">DDCC Generate Health Certificate Parameters</a>
+                  <a href="StructureDefinition-DDCCGenerateHealthCertificateParameters.html"
+                     title="StructureDefinition/DDCCGenerateHealthCertificateParameters">DDCC Generate Health Certificate Parameters</a>
                </td>
                <td>
 <p>Parameters for the <a href="OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.html">DDCC Generate Health Certificate Operation</a>.</p>
@@ -477,7 +535,8 @@ that has a digital signature.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCGenerateHealthFolderParameters.html" title="StructureDefinition/DDCCGenerateHealthFolderParameters">DDCC Generate Health Folder Parameters</a>
+                  <a href="StructureDefinition-DDCCGenerateHealthFolderParameters.html"
+                     title="StructureDefinition/DDCCGenerateHealthFolderParameters">DDCC Generate Health Folder Parameters</a>
                </td>
                <td>
 <p>Parameters for the <a href="OperationDefinition-DDCC-QuestionnaireResponse-generateHealthFolder.html">DDCC Generate Health Folder Operation</a>.</p>
@@ -485,7 +544,8 @@ that has a digital signature.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCImmunization.html" title="StructureDefinition/DDCCImmunization">DDCC Immunization</a>
+                  <a href="StructureDefinition-DDCCImmunization.html"
+                     title="StructureDefinition/DDCCImmunization">DDCC Immunization</a>
                </td>
                <td>
 <p>A DDCC Immunization contains the content corresponding to a row in the Vaccination 
@@ -496,7 +556,8 @@ Immunization resource.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCImmunizationRecommendation.html" title="StructureDefinition/DDCCImmunizationRecommendation">DDCC Immunization Recommendation</a>
+                  <a href="StructureDefinition-DDCCImmunizationRecommendation.html"
+                     title="StructureDefinition/DDCCImmunizationRecommendation">DDCC Immunization Recommendation</a>
                </td>
                <td>
 <p>A DDCC Immunization Recommendation contains the content corresponding to when
@@ -505,7 +566,8 @@ a patient should return for a booster shot.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCObservation.html" title="StructureDefinition/DDCCObservation">DDCC Observation</a>
+                  <a href="StructureDefinition-DDCCObservation.html"
+                     title="StructureDefinition/DDCCObservation">DDCC Observation</a>
                </td>
                <td>
 <p>A DDCC Observation contains the content corresponding to a row in the Test 
@@ -516,7 +578,8 @@ Observation resource.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCOrganization.html" title="StructureDefinition/DDCCOrganization">DDCC Organization</a>
+                  <a href="StructureDefinition-DDCCOrganization.html"
+                     title="StructureDefinition/DDCCOrganization">DDCC Organization</a>
                </td>
                <td>
 <p>Abstraction for a DDCC Organization. There should be a DDCC Organization associated 
@@ -525,7 +588,8 @@ to each public health authortiy (PHA)</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCPatient.html" title="StructureDefinition/DDCCPatient">DDCC Patient</a>
+                  <a href="StructureDefinition-DDCCPatient.html"
+                     title="StructureDefinition/DDCCPatient">DDCC Patient</a>
                </td>
                <td>
 <p>A DDCCPatient should:</p>
@@ -537,7 +601,8 @@ to each public health authortiy (PHA)</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCPractitioner.html" title="StructureDefinition/DDCCPractitioner">DDCC Practitioner</a>
+                  <a href="StructureDefinition-DDCCPractitioner.html"
+                     title="StructureDefinition/DDCCPractitioner">DDCC Practitioner</a>
                </td>
                <td>
 <p>Container for an DDCC Practitioner, which is a Practitioner authorized by the PHA to 
@@ -546,7 +611,8 @@ vaccinate an <a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>.</p
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCPractitionerRole.html" title="StructureDefinition/DDCCPractitionerRole">DDCC Practitioner Role</a>
+                  <a href="StructureDefinition-DDCCPractitionerRole.html"
+                     title="StructureDefinition/DDCCPractitionerRole">DDCC Practitioner Role</a>
                </td>
                <td>
 <p>Association of an <a href="StructureDefinition-DDCCPractitioner.html">DDCC Practitioner</a> to a 
@@ -557,7 +623,8 @@ vaccinate an <a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>.</p
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCProcedure.html" title="StructureDefinition/DDCCProcedure">DDCC Procedure</a>
+                  <a href="StructureDefinition-DDCCProcedure.html"
+                     title="StructureDefinition/DDCCProcedure">DDCC Procedure</a>
                </td>
                <td>
 <p>A DDCC Procedure contains the content corresponding to a row in the Test 
@@ -568,7 +635,8 @@ Procedure resource.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCProvideDocumentBundle.html" title="StructureDefinition/DDCCProvideDocumentBundle">DDCC Provide Document Bundle</a>
+                  <a href="StructureDefinition-DDCCProvideDocumentBundle.html"
+                     title="StructureDefinition/DDCCProvideDocumentBundle">DDCC Provide Document Bundle</a>
                </td>
                <td>
 <p>DDCC Provide Document Bundle for ITI-65</p>
@@ -576,7 +644,8 @@ Procedure resource.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCQuestionnaireSDC.html" title="StructureDefinition/DDCCQuestionnaireSDC">DDCC Questionnaire based on SDC</a>
+                  <a href="StructureDefinition-DDCCQuestionnaireSDC.html"
+                     title="StructureDefinition/DDCCQuestionnaireSDC">DDCC Questionnaire based on SDC</a>
                </td>
                <td>
 <p>DDCC Questionniare based on SDC Populatable Questionnaire with additional extension</p>
@@ -584,7 +653,8 @@ Procedure resource.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCRevokeHealthCertificateParameters.html" title="StructureDefinition/DDCCRevokeHealthCertificateParameters">DDCC Revoke Health Certificate Parameters</a>
+                  <a href="StructureDefinition-DDCCRevokeHealthCertificateParameters.html"
+                     title="StructureDefinition/DDCCRevokeHealthCertificateParameters">DDCC Revoke Health Certificate Parameters</a>
                </td>
                <td>
 <p>Parameters for the <a href="OperationDefinition-DDCC-QuestionnaireResponse-revokeHealthCertificate.html">DDCC Revoke Health Certificate Operation</a>.</p>
@@ -592,7 +662,8 @@ Procedure resource.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCSpecimen.html" title="StructureDefinition/DDCCSpecimen">DDCC Specimen</a>
+                  <a href="StructureDefinition-DDCCSpecimen.html"
+                     title="StructureDefinition/DDCCSpecimen">DDCC Specimen</a>
                </td>
                <td>
 <p>A DDCC Specimen contains the content corresponding to a row in the Test 
@@ -603,7 +674,8 @@ Specimen resource.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCSubmissionSet.html" title="StructureDefinition/DDCCSubmissionSet">DDCC Submission Set</a>
+                  <a href="StructureDefinition-DDCCSubmissionSet.html"
+                     title="StructureDefinition/DDCCSubmissionSet">DDCC Submission Set</a>
                </td>
                <td>
 <p>DDCC Submission Set for ITI-65</p>
@@ -611,7 +683,8 @@ Specimen resource.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCSubmitHealthEventRequest.html" title="StructureDefinition/DDCCSubmitHealthEventRequest">DDCC Submit Health Event Request</a>
+                  <a href="StructureDefinition-DDCCSubmitHealthEventRequest.html"
+                     title="StructureDefinition/DDCCSubmitHealthEventRequest">DDCC Submit Health Event Request</a>
                </td>
                <td>
 <p>An <a href="StructureDefinition-DDCCSubmitHealthEventRequest.html">DDCC Submit Health Event Request</a> is a transaction bundle containing the content of health events which are being submitted under the <a href="transactions.html#submit-health-event">Submit Health Event</a> transaction.</p>
@@ -619,7 +692,8 @@ Specimen resource.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCSubmitHealthEventResponse.html" title="StructureDefinition/DDCCSubmitHealthEventResponse">DDCC Submit Health Event Response</a>
+                  <a href="StructureDefinition-DDCCSubmitHealthEventResponse.html"
+                     title="StructureDefinition/DDCCSubmitHealthEventResponse">DDCC Submit Health Event Response</a>
                </td>
                <td>
 <p>A DDCC Submit Health Event Response](StructureDefinition-DDCCSubmitHealthEventRespose.html) is a transaction reponse bundle containing the operation outcomes for the submission of one or more health certificates under the <a href="transactions.html#submit-health-event">Submit Health Event</a> transaction.</p>
@@ -627,7 +701,8 @@ Specimen resource.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCTRComposition.html" title="StructureDefinition/DDCCTRComposition">DDCC:TR Composition</a>
+                  <a href="StructureDefinition-DDCCTRComposition.html"
+                     title="StructureDefinition/DDCCTRComposition">DDCC:TR Composition</a>
                </td>
                <td>
 <p>Describes the logical structure for a Digital Documentation of COVID-19 Certificates - Test Result
@@ -636,7 +711,8 @@ Specimen resource.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCTRDocument.html" title="StructureDefinition/DDCCTRDocument">DDCC:VS Document</a>
+                  <a href="StructureDefinition-DDCCTRDocument.html"
+                     title="StructureDefinition/DDCCTRDocument">DDCC:VS Document</a>
                </td>
                <td>
 <p>A <a href="StructureDefinition-DDCCVSDocument.html">DDCC:VS Document</a> is a document bundle containing the DDCC:VS.</p>
@@ -644,7 +720,8 @@ Specimen resource.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCTRDocumentSigned.html" title="StructureDefinition/DDCCTRDocumentSigned">DDCC:TR DocumentSigned</a>
+                  <a href="StructureDefinition-DDCCTRDocumentSigned.html"
+                     title="StructureDefinition/DDCCTRDocumentSigned">DDCC:TR DocumentSigned</a>
                </td>
                <td>
 <p>A <a href="StructureDefinition-DDCCTRDocumentSigned.html">DDCC:TR Document Signed</a> is a document bundle containing the DDCC:TR
@@ -653,7 +730,8 @@ that has a digital signature.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCTest.html" title="StructureDefinition/DDCCTest">DDCC Test</a>
+                  <a href="StructureDefinition-DDCCTest.html"
+                     title="StructureDefinition/DDCCTest">DDCC Test</a>
                </td>
                <td>
 <p>A DDCC Test contains the content corresponding to a row in the Test 
@@ -664,7 +742,8 @@ Device resource.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCVSAddBundle.html" title="StructureDefinition/DDCCVSAddBundle">DDCC:VS Add Bundle</a>
+                  <a href="StructureDefinition-DDCCVSAddBundle.html"
+                     title="StructureDefinition/DDCCVSAddBundle">DDCC:VS Add Bundle</a>
                </td>
                <td>
 <p>Bundle to be transformed to from the DDCC:VS QuestionnaireResponse
@@ -673,7 +752,8 @@ to add on the DDCC generator.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCVSComposition.html" title="StructureDefinition/DDCCVSComposition">DDCC:VS Composition</a>
+                  <a href="StructureDefinition-DDCCVSComposition.html"
+                     title="StructureDefinition/DDCCVSComposition">DDCC:VS Composition</a>
                </td>
                <td>
 <p>Describes the logical structure for a Digital Documentation of COVID-19 Certificates - Vaccination Status
@@ -682,7 +762,8 @@ to add on the DDCC generator.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCVSDocument.html" title="StructureDefinition/DDCCVSDocument">DDCC:VS Document</a>
+                  <a href="StructureDefinition-DDCCVSDocument.html"
+                     title="StructureDefinition/DDCCVSDocument">DDCC:VS Document</a>
                </td>
                <td>
 <p>A <a href="StructureDefinition-DDCCVSDocument.html">DDCC:VS Document</a> is a document bundle containing the DDCC:VS.</p>
@@ -690,7 +771,8 @@ to add on the DDCC generator.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCVSDocumentSigned.html" title="StructureDefinition/DDCCVSDocumentSigned">DDCC:VS DocumentSigned</a>
+                  <a href="StructureDefinition-DDCCVSDocumentSigned.html"
+                     title="StructureDefinition/DDCCVSDocumentSigned">DDCC:VS DocumentSigned</a>
                </td>
                <td>
 <p>A <a href="StructureDefinition-DDCCVSDocumentSigned.html">DDCC:VS Document Signed</a> is a document bundle containing the DDCC:VS
@@ -699,7 +781,8 @@ that has a digital signature.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-Immunization-pre-uv-ips.html" title="StructureDefinition/Immunization-pre-uv-ips">Immunization (IPS)</a>
+                  <a href="StructureDefinition-Immunization-pre-uv-ips.html"
+                     title="StructureDefinition/Immunization-pre-uv-ips">Immunization (IPS)</a>
                </td>
                <td>
 <p>This profile represents the constraints applied to the Immunization resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of an immunization is represented in the patient summary as an instance of an Immunization resource constrained by this profile.
@@ -709,7 +792,8 @@ It describes the event of a patient being administered a vaccination or a record
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-Patient-pre-uv-ips.html" title="StructureDefinition/Patient-pre-uv-ips">Patient (IPS)</a>
+                  <a href="StructureDefinition-Patient-pre-uv-ips.html"
+                     title="StructureDefinition/Patient-pre-uv-ips">Patient (IPS)</a>
                </td>
                <td>
 <p>This profile represents the constraints applied to the Patient resource by the International Patient Summary (IPS) FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the IPS composition or in one of the referred resources.</p>
@@ -729,7 +813,8 @@ It describes the event of a patient being administered a vaccination or a record
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCCountryOfEvent.html" title="StructureDefinition/DDCCCountryOfEvent">DDCC Country Of Event for Immunization</a>
+                  <a href="StructureDefinition-DDCCCountryOfEvent.html"
+                     title="StructureDefinition/DDCCCountryOfEvent">DDCC Country Of Event for Immunization</a>
                </td>
                <td>
 <p>DDCC Country Of Event for Immunization</p>
@@ -737,7 +822,8 @@ It describes the event of a patient being administered a vaccination or a record
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCEventBrand.html" title="StructureDefinition/DDCCEventBrand">DDCC Event Brand for Immunization</a>
+                  <a href="StructureDefinition-DDCCEventBrand.html"
+                     title="StructureDefinition/DDCCEventBrand">DDCC Event Brand for Immunization</a>
                </td>
                <td>
 <p>DDCC Event Brand for Immunization</p>
@@ -745,7 +831,8 @@ It describes the event of a patient being administered a vaccination or a record
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCVaccineMarketAuthorization.html" title="StructureDefinition/DDCCVaccineMarketAuthorization">DDCC Vaccine Market Authorization for Immunization</a>
+                  <a href="StructureDefinition-DDCCVaccineMarketAuthorization.html"
+                     title="StructureDefinition/DDCCVaccineMarketAuthorization">DDCC Vaccine Market Authorization for Immunization</a>
                </td>
                <td>
 <p>DDCC Vaccine Market Authorization for Immunization</p>
@@ -753,7 +840,8 @@ It describes the event of a patient being administered a vaccination or a record
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCVaccineValidFrom.html" title="StructureDefinition/DDCCVaccineValidFrom">DDCC Vaccine Valid From</a>
+                  <a href="StructureDefinition-DDCCVaccineValidFrom.html"
+                     title="StructureDefinition/DDCCVaccineValidFrom">DDCC Vaccine Valid From</a>
                </td>
                <td>
 <p>Date upon which provided vaccination is considered valid</p>
@@ -773,7 +861,8 @@ It describes the event of a patient being administered a vaccination or a record
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-DDCC-Composition-Category-ValueSet.html" title="ValueSet/DDCC-Composition-Category-ValueSet">DDCC Composition Category Codes</a>
+                  <a href="ValueSet-DDCC-Composition-Category-ValueSet.html"
+                     title="ValueSet/DDCC-Composition-Category-ValueSet">DDCC Composition Category Codes</a>
                </td>
                <td>
 <p>Categorization of DDCC Composition</p>
@@ -781,7 +870,8 @@ It describes the event of a patient being administered a vaccination or a record
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-DDCC-Device-Property-ValueSet.html" title="ValueSet/DDCC-Device-Property-ValueSet">DDCC Device Property Codes</a>
+                  <a href="ValueSet-DDCC-Device-Property-ValueSet.html"
+                     title="ValueSet/DDCC-Device-Property-ValueSet">DDCC Device Property Codes</a>
                </td>
                <td>
 <p>Properties of DDCC devices</p>
@@ -789,7 +879,8 @@ It describes the event of a patient being administered a vaccination or a record
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-DDCC-Folder-DesignationType.html" title="ValueSet/DDCC-Folder-DesignationType">DDCC DesignationTypes for Folder</a>
+                  <a href="ValueSet-DDCC-Folder-DesignationType.html"
+                     title="ValueSet/DDCC-Folder-DesignationType">DDCC DesignationTypes for Folder</a>
                </td>
                <td>
 <p>DDCC Designation Types ValueSet for DDCC Folders.</p>
@@ -797,7 +888,8 @@ It describes the event of a patient being administered a vaccination or a record
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-DDCC-QR-Format-ValueSet.html" title="ValueSet/DDCC-QR-Format-ValueSet">DDCC QR Format Codes</a>
+                  <a href="ValueSet-DDCC-QR-Format-ValueSet.html"
+                     title="ValueSet/DDCC-QR-Format-ValueSet">DDCC QR Format Codes</a>
                </td>
                <td>
 <p>Format of the representation of QR code</p>
@@ -805,7 +897,8 @@ It describes the event of a patient being administered a vaccination or a record
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-DDCC-QR-Type-ValueSet.html" title="ValueSet/DDCC-QR-Type-ValueSet">DDCC QR Type Codes</a>
+                  <a href="ValueSet-DDCC-QR-Type-ValueSet.html"
+                     title="ValueSet/DDCC-QR-Type-ValueSet">DDCC QR Type Codes</a>
                </td>
                <td>
 <p>Type of QR codes by their business usage</p>
@@ -813,7 +906,8 @@ It describes the event of a patient being administered a vaccination or a record
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-who-ddcc-agent-targeted-covid-19.html" title="ValueSet/who-ddcc-agent-targeted-covid-19">WHO Agent Targeted (COVID-19)</a>
+                  <a href="ValueSet-who-ddcc-agent-targeted-covid-19.html"
+                     title="ValueSet/who-ddcc-agent-targeted-covid-19">WHO Agent Targeted (COVID-19)</a>
                </td>
                <td>
 <p>WHO Agent Targeted List (COVID-19) from <a href="https://icd.who.int/browse11">ICD 11</a></p>
@@ -821,7 +915,8 @@ It describes the event of a patient being administered a vaccination or a record
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-who-ddcc-allowed-vaccines-covid-19.html" title="ValueSet/who-ddcc-allowed-vaccines-covid-19">WHO DDCC Allowed Vaccine List (COVID-19)</a>
+                  <a href="ValueSet-who-ddcc-allowed-vaccines-covid-19.html"
+                     title="ValueSet/who-ddcc-allowed-vaccines-covid-19">WHO DDCC Allowed Vaccine List (COVID-19)</a>
                </td>
                <td>
 <p>WHO DDCC Allowed Vaccine List (COVID-19) for importing from other valuesets.  Any not
@@ -831,7 +926,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-who-ddcc-brands-covid-19.html" title="ValueSet/who-ddcc-brands-covid-19">WHO DDCC Brand List (COVID-19)</a>
+                  <a href="ValueSet-who-ddcc-brands-covid-19.html"
+                     title="ValueSet/who-ddcc-brands-covid-19">WHO DDCC Brand List (COVID-19)</a>
                </td>
                <td>
 <p>WHO DDCC Brand List (COVID-19) from <a href="https://icd.who.int/browse11">ICD 11</a></p>
@@ -839,7 +935,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-who-ddcc-disease-targeted-covid-19.html" title="ValueSet/who-ddcc-disease-targeted-covid-19">WHO Disease or Agent Targeted (COVID-19)</a>
+                  <a href="ValueSet-who-ddcc-disease-targeted-covid-19.html"
+                     title="ValueSet/who-ddcc-disease-targeted-covid-19">WHO Disease or Agent Targeted (COVID-19)</a>
                </td>
                <td>
 <p>WHO Disease or Agent Targeted List (COVID-19) from <a href="https://icd.who.int/browse11">ICD 11</a></p>
@@ -847,7 +944,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-who-ddcc-sample-origin-covid-19.html" title="ValueSet/who-ddcc-sample-origin-covid-19">WHO Speciman Sample Origin (COVID-19)</a>
+                  <a href="ValueSet-who-ddcc-sample-origin-covid-19.html"
+                     title="ValueSet/who-ddcc-sample-origin-covid-19">WHO Speciman Sample Origin (COVID-19)</a>
                </td>
                <td>
 <p>WHO Speciman Sample Origin List (COVID-19)</p>
@@ -855,7 +953,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-who-ddcc-test-result-covid-19.html" title="ValueSet/who-ddcc-test-result-covid-19">WHO Test Result (COVID-19)</a>
+                  <a href="ValueSet-who-ddcc-test-result-covid-19.html"
+                     title="ValueSet/who-ddcc-test-result-covid-19">WHO Test Result (COVID-19)</a>
                </td>
                <td>
 <p>WHO COVID-19 Test Result from <a href="https://icd.who.int/browse11">ICD 11</a></p>
@@ -863,7 +962,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-who-ddcc-type-of-test-covid-19.html" title="ValueSet/who-ddcc-type-of-test-covid-19">WHO Type of Covid-19 Test</a>
+                  <a href="ValueSet-who-ddcc-type-of-test-covid-19.html"
+                     title="ValueSet/who-ddcc-type-of-test-covid-19">WHO Type of Covid-19 Test</a>
                </td>
                <td>
 <p>WHO Type of COVID-19 Test</p>
@@ -871,7 +971,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-who-ddcc-vaccines-covid-19.html" title="ValueSet/who-ddcc-vaccines-covid-19">WHO Vaccine List (COVID-19)</a>
+                  <a href="ValueSet-who-ddcc-vaccines-covid-19.html"
+                     title="ValueSet/who-ddcc-vaccines-covid-19">WHO Vaccine List (COVID-19)</a>
                </td>
                <td>
 <p>WHO Vaccine List (COVID-19) from <a href="https://icd.who.int/browse11">ICD 11</a></p>
@@ -891,7 +992,8 @@ translated into an ICD-11 code.</p>
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="CodeSystem-DDCC-Composition-Category-CodeSystem.html" title="CodeSystem/DDCC-Composition-Category-CodeSystem">DDCC Composition Category Codes</a>
+                  <a href="CodeSystem-DDCC-Composition-Category-CodeSystem.html"
+                     title="CodeSystem/DDCC-Composition-Category-CodeSystem">DDCC Composition Category Codes</a>
                </td>
                <td>
 <p>Possible categories available for composition.</p>
@@ -899,7 +1001,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="CodeSystem-DDCC-Device-Property-CodeSystem.html" title="CodeSystem/DDCC-Device-Property-CodeSystem">DDCC Device Property Codes</a>
+                  <a href="CodeSystem-DDCC-Device-Property-CodeSystem.html"
+                     title="CodeSystem/DDCC-Device-Property-CodeSystem">DDCC Device Property Codes</a>
                </td>
                <td>
 <p>Possible properties available for devices.</p>
@@ -907,7 +1010,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="CodeSystem-DDCC-Example-Test-CodeSystem.html" title="CodeSystem/DDCC-Example-Test-CodeSystem">DDCC Codes for examples</a>
+                  <a href="CodeSystem-DDCC-Example-Test-CodeSystem.html"
+                     title="CodeSystem/DDCC-Example-Test-CodeSystem">DDCC Codes for examples</a>
                </td>
                <td>
 <p>Example codes for example resources.</p>
@@ -915,7 +1019,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="CodeSystem-DDCC-Folder-DesignationType.html" title="CodeSystem/DDCC-Folder-DesignationType">DDCC Designation Types for Folder</a>
+                  <a href="CodeSystem-DDCC-Folder-DesignationType.html"
+                     title="CodeSystem/DDCC-Folder-DesignationType">DDCC Designation Types for Folder</a>
                </td>
                <td>
 <p>DDCC Designation Types to use for DDCC Folders.</p>
@@ -923,7 +1028,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html" title="CodeSystem/DDCC-ICD11-CodeSystem">DDCC Codes for ICD11</a>
+                  <a href="CodeSystem-DDCC-ICD11-CodeSystem.html"
+                     title="CodeSystem/DDCC-ICD11-CodeSystem">DDCC Codes for ICD11</a>
                </td>
                <td>
 <p>ICD11 codes for DDCC so the FHIR server can perform expansions.</p>
@@ -931,7 +1037,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="CodeSystem-DDCC-QR-Format-CodeSystem.html" title="CodeSystem/DDCC-QR-Format-CodeSystem">DDCC QR Format Codes</a>
+                  <a href="CodeSystem-DDCC-QR-Format-CodeSystem.html"
+                     title="CodeSystem/DDCC-QR-Format-CodeSystem">DDCC QR Format Codes</a>
                </td>
                <td>
 <p>Possible formats available for QR data.</p>
@@ -939,7 +1046,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="CodeSystem-DDCC-QR-Type-CodeSystem.html" title="CodeSystem/DDCC-QR-Type-CodeSystem">DDCC QR Category Usage Codes</a>
+                  <a href="CodeSystem-DDCC-QR-Type-CodeSystem.html"
+                     title="CodeSystem/DDCC-QR-Type-CodeSystem">DDCC QR Category Usage Codes</a>
                </td>
                <td>
 <p>Possible formats available for QR usage.</p>
@@ -959,32 +1067,38 @@ translated into an ICD-11 code.</p>
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureMap-BundleVSToAddBundle.html" title="StructureMap/BundleVSToAddBundle">BundleVSToAddBundle</a>
+                  <a href="StructureMap-BundleVSToAddBundle.html"
+                     title="StructureMap/BundleVSToAddBundle">BundleVSToAddBundle</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureMap-CoreDataSetLibrary.html" title="StructureMap/CoreDataSetLibrary">CoreDataSetLibrary</a>
+                  <a href="StructureMap-CoreDataSetLibrary.html"
+                     title="StructureMap/CoreDataSetLibrary">CoreDataSetLibrary</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureMap-CoreDataSetVSLibrary.html" title="StructureMap/CoreDataSetVSLibrary">CoreDataSetVSLibrary</a>
+                  <a href="StructureMap-CoreDataSetVSLibrary.html"
+                     title="StructureMap/CoreDataSetVSLibrary">CoreDataSetVSLibrary</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureMap-CoreDataSetVSToAddBundle.html" title="StructureMap/CoreDataSetVSToAddBundle">CoreDataSetVSToAddBundle</a>
+                  <a href="StructureMap-CoreDataSetVSToAddBundle.html"
+                     title="StructureMap/CoreDataSetVSToAddBundle">CoreDataSetVSToAddBundle</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureMap-CoreDataSetVSToSHC.html" title="StructureMap/CoreDataSetVSToSHC">CoreDataSetVSToSHC</a>
+                  <a href="StructureMap-CoreDataSetVSToSHC.html"
+                     title="StructureMap/CoreDataSetVSToSHC">CoreDataSetVSToSHC</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureMap-DDCCtoCoredataset.html" title="StructureMap/DDCCtoCoredataset">DDCCtoCoredataset</a>
+                  <a href="StructureMap-DDCCtoCoredataset.html"
+                     title="StructureMap/DDCCtoCoredataset">DDCCtoCoredataset</a>
                </td>
             </tr>
             <tr>
@@ -994,42 +1108,50 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureMap-IPSToCoreDataSetVS.html" title="StructureMap/IPSToCoreDataSetVS">IPSToCoreDataSetVS</a>
+                  <a href="StructureMap-IPSToCoreDataSetVS.html"
+                     title="StructureMap/IPSToCoreDataSetVS">IPSToCoreDataSetVS</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureMap-QRespToVSCoreDataSet.html" title="StructureMap/QRespToVSCoreDataSet">QRespToVSCoreDataSet</a>
+                  <a href="StructureMap-QRespToVSCoreDataSet.html"
+                     title="StructureMap/QRespToVSCoreDataSet">QRespToVSCoreDataSet</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureMap-ResourcesToCoreDataSet.html" title="StructureMap/ResourcesToCoreDataSet">ResourcesToCoreDataSet</a>
+                  <a href="StructureMap-ResourcesToCoreDataSet.html"
+                     title="StructureMap/ResourcesToCoreDataSet">ResourcesToCoreDataSet</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureMap-ResourcesToVSCoreDataSet.html" title="StructureMap/ResourcesToVSCoreDataSet">ResourcesToVSCoreDataSet</a>
+                  <a href="StructureMap-ResourcesToVSCoreDataSet.html"
+                     title="StructureMap/ResourcesToVSCoreDataSet">ResourcesToVSCoreDataSet</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureMap-SHCToCoreDataSetVS.html" title="StructureMap/SHCToCoreDataSetVS">SHCToCoreDataSetVS</a>
+                  <a href="StructureMap-SHCToCoreDataSetVS.html"
+                     title="StructureMap/SHCToCoreDataSetVS">SHCToCoreDataSetVS</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureMap-coredataset-to-addbundle.html" title="StructureMap/coredataset-to-addbundle">CoreDataSetToAddBundle</a>
+                  <a href="StructureMap-coredataset-to-addbundle.html"
+                     title="StructureMap/coredataset-to-addbundle">CoreDataSetToAddBundle</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureMap-ddcc-qresp-to-coredataset.html" title="StructureMap/ddcc-qresp-to-coredataset">QRespToCoreDataSet</a>
+                  <a href="StructureMap-ddcc-qresp-to-coredataset.html"
+                     title="StructureMap/ddcc-qresp-to-coredataset">QRespToCoreDataSet</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureMap-ddcc-resources-to-coredataset.html" title="StructureMap/ddcc-resources-to-coredataset">ResourcesToCoreDataSet</a>
+                  <a href="StructureMap-ddcc-resources-to-coredataset.html"
+                     title="StructureMap/ddcc-resources-to-coredataset">ResourcesToCoreDataSet</a>
                </td>
             </tr>
             <tr>
@@ -1056,7 +1178,8 @@ translated into an ICD-11 code.</p>
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="ConceptMap-who-ddcc-map-cvx-icd11-brands.html" title="ConceptMap/who-ddcc-map-cvx-icd11-brands">WHO_DDCC_Map_CVX_To_ICD11_Brands</a>
+                  <a href="ConceptMap-who-ddcc-map-cvx-icd11-brands.html"
+                     title="ConceptMap/who-ddcc-map-cvx-icd11-brands">WHO_DDCC_Map_CVX_To_ICD11_Brands</a>
                </td>
                <td>
 <p>Mapping from CVX to ICD-11 for COVID-19 Brands</p>
@@ -1064,7 +1187,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ConceptMap-who-ddcc-map-cvx-icd11-vaccines.html" title="ConceptMap/who-ddcc-map-cvx-icd11-vaccines">WHO_DDCC_Map_CVX_To_ICD11_Vaccines</a>
+                  <a href="ConceptMap-who-ddcc-map-cvx-icd11-vaccines.html"
+                     title="ConceptMap/who-ddcc-map-cvx-icd11-vaccines">WHO_DDCC_Map_CVX_To_ICD11_Vaccines</a>
                </td>
                <td>
 <p>Mapping from CVX to ICD-11 for COVID-19 Vaccines</p>
@@ -1072,7 +1196,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ConceptMap-who-ddcc-map-icd11-icd10-disease-targeted.html" title="ConceptMap/who-ddcc-map-icd11-icd10-disease-targeted">WHO_DDCC_Map_ICD11_to_ICD10_Disease_Targeted</a>
+                  <a href="ConceptMap-who-ddcc-map-icd11-icd10-disease-targeted.html"
+                     title="ConceptMap/who-ddcc-map-icd11-icd10-disease-targeted">WHO_DDCC_Map_ICD11_to_ICD10_Disease_Targeted</a>
                </td>
                <td>
 <p>Mapping from ICD-11 to ICD-10 for COVID-19 disease.</p>
@@ -1080,7 +1205,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ConceptMap-who-ddcc-map-icd11-sct-agent-targeted.html" title="ConceptMap/who-ddcc-map-icd11-sct-agent-targeted">WHO_DDCC_Map_ICD11_to_SCT_Agent_Targeted</a>
+                  <a href="ConceptMap-who-ddcc-map-icd11-sct-agent-targeted.html"
+                     title="ConceptMap/who-ddcc-map-icd11-sct-agent-targeted">WHO_DDCC_Map_ICD11_to_SCT_Agent_Targeted</a>
                </td>
                <td>
 <p>Mapping from ICD-11 to SNOMED CT for COVID-19 Agent Targeted</p>
@@ -1088,7 +1214,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ConceptMap-who-ddcc-map-icd11-sct-disease-targeted.html" title="ConceptMap/who-ddcc-map-icd11-sct-disease-targeted">WHO_DDCC_Map_ICD11_to_SCT_Disease_Targeted</a>
+                  <a href="ConceptMap-who-ddcc-map-icd11-sct-disease-targeted.html"
+                     title="ConceptMap/who-ddcc-map-icd11-sct-disease-targeted">WHO_DDCC_Map_ICD11_to_SCT_Disease_Targeted</a>
                </td>
                <td>
 <p>Mapping from ICD-11 to SNOMED CT for COVID-19 disease.</p>
@@ -1096,7 +1223,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ConceptMap-who-ddcc-map-icd11-sct-test-result.html" title="ConceptMap/who-ddcc-map-icd11-sct-test-result">WHO_DDCC_Map_ICD11_to_SCT_Test_Result</a>
+                  <a href="ConceptMap-who-ddcc-map-icd11-sct-test-result.html"
+                     title="ConceptMap/who-ddcc-map-icd11-sct-test-result">WHO_DDCC_Map_ICD11_to_SCT_Test_Result</a>
                </td>
                <td>
 <p>Mapping from ICD-11 to SNOMED CT for COVID-19 Test Result</p>
@@ -1104,7 +1232,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ConceptMap-who-ddcc-map-icd11-sct-vaccines.html" title="ConceptMap/who-ddcc-map-icd11-sct-vaccines">WHO_DDCC_Map_ICD11_to_SCT_Vaccines</a>
+                  <a href="ConceptMap-who-ddcc-map-icd11-sct-vaccines.html"
+                     title="ConceptMap/who-ddcc-map-icd11-sct-vaccines">WHO_DDCC_Map_ICD11_to_SCT_Vaccines</a>
                </td>
                <td>
 <p>Mapping from ICD-11 to SNOMED CT for COVID-19 Vaccines</p>
@@ -1112,7 +1241,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ConceptMap-who-ddcc-map-ichi-loinc-type-of-test.html" title="ConceptMap/who-ddcc-map-ichi-loinc-type-of-test">WHO_DDCC_Map_ICHI_to_LOINC_Type_of_Test</a>
+                  <a href="ConceptMap-who-ddcc-map-ichi-loinc-type-of-test.html"
+                     title="ConceptMap/who-ddcc-map-ichi-loinc-type-of-test">WHO_DDCC_Map_ICHI_to_LOINC_Type_of_Test</a>
                </td>
                <td>
 <p>Mapping from ICHI to LOINC for COVID-19 Type of Test</p>
@@ -1120,7 +1250,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ConceptMap-who-ddcc-map-ichi-sct-specimen-origin.html" title="ConceptMap/who-ddcc-map-ichi-sct-specimen-origin">WHO_DDCC_Map_ICHI_to_SCT_Specimen_Origin</a>
+                  <a href="ConceptMap-who-ddcc-map-ichi-sct-specimen-origin.html"
+                     title="ConceptMap/who-ddcc-map-ichi-sct-specimen-origin">WHO_DDCC_Map_ICHI_to_SCT_Specimen_Origin</a>
                </td>
                <td>
 <p>Mapping from ICHI to SNOMED CT for COVID-19 Specimen Origin</p>
@@ -1128,7 +1259,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ConceptMap-who-ddcc-map-ichi-sct-type-of-test.html" title="ConceptMap/who-ddcc-map-ichi-sct-type-of-test">WHO_DDCC_Map_ICHI_to_SCT_Type_of_Test</a>
+                  <a href="ConceptMap-who-ddcc-map-ichi-sct-type-of-test.html"
+                     title="ConceptMap/who-ddcc-map-ichi-sct-type-of-test">WHO_DDCC_Map_ICHI_to_SCT_Type_of_Test</a>
                </td>
                <td>
 <p>Mapping from ICHI to SNOMED CT for COVID-19 Type of Test</p>
@@ -1136,7 +1268,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ConceptMap-who-ddcc-map-loinc-sct-type-of-test.html" title="ConceptMap/who-ddcc-map-loinc-sct-type-of-test">WHO_DDCC_Map_LOINC_to_SCT_Type_of_Test</a>
+                  <a href="ConceptMap-who-ddcc-map-loinc-sct-type-of-test.html"
+                     title="ConceptMap/who-ddcc-map-loinc-sct-type-of-test">WHO_DDCC_Map_LOINC_to_SCT_Type_of_Test</a>
                </td>
                <td>
 <p>Mapping from LOINC to SNOMED CT for COVID-19 Type of Test</p>
@@ -1144,7 +1277,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ConceptMap-who-ddcc-map-sct-ichi-specimen-origin.html" title="ConceptMap/who-ddcc-map-sct-ichi-specimen-origin">WHO_DDCC_Map_SCT_to_ICHI_Specimen_Origin</a>
+                  <a href="ConceptMap-who-ddcc-map-sct-ichi-specimen-origin.html"
+                     title="ConceptMap/who-ddcc-map-sct-ichi-specimen-origin">WHO_DDCC_Map_SCT_to_ICHI_Specimen_Origin</a>
                </td>
                <td>
 <p>Mapping from SNOMED CT to ICHI for COVID-19 Specimen Origin</p>
@@ -1164,7 +1298,8 @@ translated into an ICD-11 code.</p>
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="Composition-DDCC-Composition-Example-Arabic.html" title="Composition/DDCC-Composition-Example-Arabic">DDCC-Composition-Example-Arabic</a>
+                  <a href="Composition-DDCC-Composition-Example-Arabic.html"
+                     title="Composition/DDCC-Composition-Example-Arabic">DDCC-Composition-Example-Arabic</a>
                </td>
                <td>
 
@@ -1172,7 +1307,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Composition-DDCC-Composition-Example-Chinese.html" title="Composition/DDCC-Composition-Example-Chinese">DDCC-Composition-Example-Chinese</a>
+                  <a href="Composition-DDCC-Composition-Example-Chinese.html"
+                     title="Composition/DDCC-Composition-Example-Chinese">DDCC-Composition-Example-Chinese</a>
                </td>
                <td>
 
@@ -1180,7 +1316,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Composition-DDCC-Composition-Example-English.html" title="Composition/DDCC-Composition-Example-English">DDCC-Composition-Example-English</a>
+                  <a href="Composition-DDCC-Composition-Example-English.html"
+                     title="Composition/DDCC-Composition-Example-English">DDCC-Composition-Example-English</a>
                </td>
                <td>
 
@@ -1188,7 +1325,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Composition-DDCC-Composition-Example-French.html" title="Composition/DDCC-Composition-Example-French">DDCC-Composition-Example-French</a>
+                  <a href="Composition-DDCC-Composition-Example-French.html"
+                     title="Composition/DDCC-Composition-Example-French">DDCC-Composition-Example-French</a>
                </td>
                <td>
 
@@ -1196,7 +1334,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Composition-DDCC-Composition-Example-Russian.html" title="Composition/DDCC-Composition-Example-Russian">DDCC-Composition-Example-Russian</a>
+                  <a href="Composition-DDCC-Composition-Example-Russian.html"
+                     title="Composition/DDCC-Composition-Example-Russian">DDCC-Composition-Example-Russian</a>
                </td>
                <td>
 
@@ -1204,7 +1343,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Composition-DDCC-Composition-Example-Spanish.html" title="Composition/DDCC-Composition-Example-Spanish">DDCC-Composition-Example-Spanish</a>
+                  <a href="Composition-DDCC-Composition-Example-Spanish.html"
+                     title="Composition/DDCC-Composition-Example-Spanish">DDCC-Composition-Example-Spanish</a>
                </td>
                <td>
 
@@ -1212,7 +1352,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Immunization-DDCC-Immunization-Arabic.html" title="Immunization/DDCC-Immunization-Arabic">DDCC-Immunization-Arabic</a>
+                  <a href="Immunization-DDCC-Immunization-Arabic.html"
+                     title="Immunization/DDCC-Immunization-Arabic">DDCC-Immunization-Arabic</a>
                </td>
                <td>
 
@@ -1220,7 +1361,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Immunization-DDCC-Immunization-Chinese.html" title="Immunization/DDCC-Immunization-Chinese">DDCC-Immunization-Chinese</a>
+                  <a href="Immunization-DDCC-Immunization-Chinese.html"
+                     title="Immunization/DDCC-Immunization-Chinese">DDCC-Immunization-Chinese</a>
                </td>
                <td>
 
@@ -1228,7 +1370,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Immunization-DDCC-Immunization-English.html" title="Immunization/DDCC-Immunization-English">DDCC-Immunization-English</a>
+                  <a href="Immunization-DDCC-Immunization-English.html"
+                     title="Immunization/DDCC-Immunization-English">DDCC-Immunization-English</a>
                </td>
                <td>
 
@@ -1236,7 +1379,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Immunization-DDCC-Immunization-French.html" title="Immunization/DDCC-Immunization-French">DDCC-Immunization-French</a>
+                  <a href="Immunization-DDCC-Immunization-French.html"
+                     title="Immunization/DDCC-Immunization-French">DDCC-Immunization-French</a>
                </td>
                <td>
 
@@ -1244,7 +1388,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Immunization-DDCC-Immunization-Russian.html" title="Immunization/DDCC-Immunization-Russian">DDCC-Immunization-Russian</a>
+                  <a href="Immunization-DDCC-Immunization-Russian.html"
+                     title="Immunization/DDCC-Immunization-Russian">DDCC-Immunization-Russian</a>
                </td>
                <td>
 
@@ -1252,7 +1397,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Immunization-DDCC-Immunization-Spanish.html" title="Immunization/DDCC-Immunization-Spanish">DDCC-Immunization-Spanish</a>
+                  <a href="Immunization-DDCC-Immunization-Spanish.html"
+                     title="Immunization/DDCC-Immunization-Spanish">DDCC-Immunization-Spanish</a>
                </td>
                <td>
 
@@ -1260,7 +1406,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Arabic.html" title="ImmunizationRecommendation/DDCC-ImmunizationRecommendation-Arabic">DDCC-ImmunizationRecommendation-Arabic</a>
+                  <a href="ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Arabic.html"
+                     title="ImmunizationRecommendation/DDCC-ImmunizationRecommendation-Arabic">DDCC-ImmunizationRecommendation-Arabic</a>
                </td>
                <td>
 
@@ -1268,7 +1415,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Chinese.html" title="ImmunizationRecommendation/DDCC-ImmunizationRecommendation-Chinese">DDCC-ImmunizationRecommendation-Chinese</a>
+                  <a href="ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Chinese.html"
+                     title="ImmunizationRecommendation/DDCC-ImmunizationRecommendation-Chinese">DDCC-ImmunizationRecommendation-Chinese</a>
                </td>
                <td>
 
@@ -1276,7 +1424,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ImmunizationRecommendation-DDCC-ImmunizationRecommendation-English.html" title="ImmunizationRecommendation/DDCC-ImmunizationRecommendation-English">DDCC-ImmunizationRecommendation-English</a>
+                  <a href="ImmunizationRecommendation-DDCC-ImmunizationRecommendation-English.html"
+                     title="ImmunizationRecommendation/DDCC-ImmunizationRecommendation-English">DDCC-ImmunizationRecommendation-English</a>
                </td>
                <td>
 
@@ -1284,7 +1433,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ImmunizationRecommendation-DDCC-ImmunizationRecommendation-French.html" title="ImmunizationRecommendation/DDCC-ImmunizationRecommendation-French">DDCC-ImmunizationRecommendation-French</a>
+                  <a href="ImmunizationRecommendation-DDCC-ImmunizationRecommendation-French.html"
+                     title="ImmunizationRecommendation/DDCC-ImmunizationRecommendation-French">DDCC-ImmunizationRecommendation-French</a>
                </td>
                <td>
 
@@ -1292,7 +1442,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Russian.html" title="ImmunizationRecommendation/DDCC-ImmunizationRecommendation-Russian">DDCC-ImmunizationRecommendation-Russian</a>
+                  <a href="ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Russian.html"
+                     title="ImmunizationRecommendation/DDCC-ImmunizationRecommendation-Russian">DDCC-ImmunizationRecommendation-Russian</a>
                </td>
                <td>
 
@@ -1300,7 +1451,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Spanish.html" title="ImmunizationRecommendation/DDCC-ImmunizationRecommendation-Spanish">DDCC-ImmunizationRecommendation-Spanish</a>
+                  <a href="ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Spanish.html"
+                     title="ImmunizationRecommendation/DDCC-ImmunizationRecommendation-Spanish">DDCC-ImmunizationRecommendation-Spanish</a>
                </td>
                <td>
 
@@ -1308,7 +1460,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Organization-DDCC-Organization-Arabic.html" title="Organization/DDCC-Organization-Arabic">DDCC-Organization-Arabic</a>
+                  <a href="Organization-DDCC-Organization-Arabic.html"
+                     title="Organization/DDCC-Organization-Arabic">DDCC-Organization-Arabic</a>
                </td>
                <td>
 
@@ -1316,7 +1469,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Organization-DDCC-Organization-Chinese.html" title="Organization/DDCC-Organization-Chinese">DDCC-Organization-Chinese</a>
+                  <a href="Organization-DDCC-Organization-Chinese.html"
+                     title="Organization/DDCC-Organization-Chinese">DDCC-Organization-Chinese</a>
                </td>
                <td>
 
@@ -1324,7 +1478,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Organization-DDCC-Organization-English.html" title="Organization/DDCC-Organization-English">DDCC-Organization-English</a>
+                  <a href="Organization-DDCC-Organization-English.html"
+                     title="Organization/DDCC-Organization-English">DDCC-Organization-English</a>
                </td>
                <td>
 
@@ -1332,7 +1487,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Organization-DDCC-Organization-French.html" title="Organization/DDCC-Organization-French">DDCC-Organization-French</a>
+                  <a href="Organization-DDCC-Organization-French.html"
+                     title="Organization/DDCC-Organization-French">DDCC-Organization-French</a>
                </td>
                <td>
 
@@ -1340,7 +1496,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Organization-DDCC-Organization-Russian.html" title="Organization/DDCC-Organization-Russian">DDCC-Organization-Russian</a>
+                  <a href="Organization-DDCC-Organization-Russian.html"
+                     title="Organization/DDCC-Organization-Russian">DDCC-Organization-Russian</a>
                </td>
                <td>
 
@@ -1348,7 +1505,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Organization-DDCC-Organization-Spanish.html" title="Organization/DDCC-Organization-Spanish">DDCC-Organization-Spanish</a>
+                  <a href="Organization-DDCC-Organization-Spanish.html"
+                     title="Organization/DDCC-Organization-Spanish">DDCC-Organization-Spanish</a>
                </td>
                <td>
 
@@ -1356,7 +1514,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Patient-DDCC-Patient-Arabic.html" title="Patient/DDCC-Patient-Arabic">DDCC-Patient-Arabic</a>
+                  <a href="Patient-DDCC-Patient-Arabic.html"
+                     title="Patient/DDCC-Patient-Arabic">DDCC-Patient-Arabic</a>
                </td>
                <td>
 
@@ -1364,7 +1523,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Patient-DDCC-Patient-Chinese.html" title="Patient/DDCC-Patient-Chinese">DDCC-Patient-Chinese</a>
+                  <a href="Patient-DDCC-Patient-Chinese.html"
+                     title="Patient/DDCC-Patient-Chinese">DDCC-Patient-Chinese</a>
                </td>
                <td>
 
@@ -1372,7 +1532,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Patient-DDCC-Patient-English.html" title="Patient/DDCC-Patient-English">DDCC-Patient-English</a>
+                  <a href="Patient-DDCC-Patient-English.html"
+                     title="Patient/DDCC-Patient-English">DDCC-Patient-English</a>
                </td>
                <td>
 
@@ -1380,7 +1541,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Patient-DDCC-Patient-French.html" title="Patient/DDCC-Patient-French">DDCC-Patient-French</a>
+                  <a href="Patient-DDCC-Patient-French.html"
+                     title="Patient/DDCC-Patient-French">DDCC-Patient-French</a>
                </td>
                <td>
 
@@ -1388,7 +1550,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Patient-DDCC-Patient-Russian.html" title="Patient/DDCC-Patient-Russian">DDCC-Patient-Russian</a>
+                  <a href="Patient-DDCC-Patient-Russian.html"
+                     title="Patient/DDCC-Patient-Russian">DDCC-Patient-Russian</a>
                </td>
                <td>
 
@@ -1396,7 +1559,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Patient-DDCC-Patient-Spanish.html" title="Patient/DDCC-Patient-Spanish">DDCC-Patient-Spanish</a>
+                  <a href="Patient-DDCC-Patient-Spanish.html"
+                     title="Patient/DDCC-Patient-Spanish">DDCC-Patient-Spanish</a>
                </td>
                <td>
 
@@ -1404,7 +1568,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Bundle-DDCC-TX-SHE-bundle-example-1.html" title="Bundle/DDCC-TX-SHE-bundle-example-1">DDCC-TX-SHE-bundle-example-1</a>
+                  <a href="Bundle-DDCC-TX-SHE-bundle-example-1.html"
+                     title="Bundle/DDCC-TX-SHE-bundle-example-1">DDCC-TX-SHE-bundle-example-1</a>
                </td>
                <td>
 
@@ -1412,7 +1577,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Bundle-DDCC-TX-SHE-bundle-example-Arabic.html" title="Bundle/DDCC-TX-SHE-bundle-example-Arabic">DDCC-TX-SHE-bundle-example-Arabic</a>
+                  <a href="Bundle-DDCC-TX-SHE-bundle-example-Arabic.html"
+                     title="Bundle/DDCC-TX-SHE-bundle-example-Arabic">DDCC-TX-SHE-bundle-example-Arabic</a>
                </td>
                <td>
 
@@ -1420,7 +1586,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Bundle-DDCC-TX-SHE-bundle-example-Chinese.html" title="Bundle/DDCC-TX-SHE-bundle-example-Chinese">DDCC-TX-SHE-bundle-example-Chinese</a>
+                  <a href="Bundle-DDCC-TX-SHE-bundle-example-Chinese.html"
+                     title="Bundle/DDCC-TX-SHE-bundle-example-Chinese">DDCC-TX-SHE-bundle-example-Chinese</a>
                </td>
                <td>
 
@@ -1428,7 +1595,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Bundle-DDCC-TX-SHE-bundle-example-French.html" title="Bundle/DDCC-TX-SHE-bundle-example-French">DDCC-TX-SHE-bundle-example-French</a>
+                  <a href="Bundle-DDCC-TX-SHE-bundle-example-French.html"
+                     title="Bundle/DDCC-TX-SHE-bundle-example-French">DDCC-TX-SHE-bundle-example-French</a>
                </td>
                <td>
 
@@ -1436,7 +1604,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Bundle-DDCC-TX-SHE-bundle-example-Russian.html" title="Bundle/DDCC-TX-SHE-bundle-example-Russian">DDCC-TX-SHE-bundle-example-Russian</a>
+                  <a href="Bundle-DDCC-TX-SHE-bundle-example-Russian.html"
+                     title="Bundle/DDCC-TX-SHE-bundle-example-Russian">DDCC-TX-SHE-bundle-example-Russian</a>
                </td>
                <td>
 
@@ -1444,7 +1613,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Bundle-DDCC-TX-SHE-bundle-example-Spanish.html" title="Bundle/DDCC-TX-SHE-bundle-example-Spanish">DDCC-TX-SHE-bundle-example-Spanish</a>
+                  <a href="Bundle-DDCC-TX-SHE-bundle-example-Spanish.html"
+                     title="Bundle/DDCC-TX-SHE-bundle-example-Spanish">DDCC-TX-SHE-bundle-example-Spanish</a>
                </td>
                <td>
 
@@ -1452,7 +1622,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Arabic.html" title="QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Arabic">DDCC-VS-QuestionnaireResponse-Arabic</a>
+                  <a href="QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Arabic.html"
+                     title="QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Arabic">DDCC-VS-QuestionnaireResponse-Arabic</a>
                </td>
                <td>
 
@@ -1460,7 +1631,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Chinese.html" title="QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Chinese">DDCC-VS-QuestionnaireResponse-Chinese</a>
+                  <a href="QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Chinese.html"
+                     title="QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Chinese">DDCC-VS-QuestionnaireResponse-Chinese</a>
                </td>
                <td>
 
@@ -1468,7 +1640,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Example.html" title="QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Example">DDCC-VS-QuestionnaireResponse-Example</a>
+                  <a href="QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Example.html"
+                     title="QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Example">DDCC-VS-QuestionnaireResponse-Example</a>
                </td>
                <td>
 
@@ -1476,7 +1649,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-French.html" title="QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-French">DDCC-VS-QuestionnaireResponse-French</a>
+                  <a href="QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-French.html"
+                     title="QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-French">DDCC-VS-QuestionnaireResponse-French</a>
                </td>
                <td>
 
@@ -1484,7 +1658,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Russian.html" title="QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Russian">DDCC-VS-QuestionnaireResponse-Russian</a>
+                  <a href="QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Russian.html"
+                     title="QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Russian">DDCC-VS-QuestionnaireResponse-Russian</a>
                </td>
                <td>
 
@@ -1492,7 +1667,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Spanish.html" title="QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Spanish">DDCC-VS-QuestionnaireResponse-Spanish</a>
+                  <a href="QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Spanish.html"
+                     title="QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Spanish">DDCC-VS-QuestionnaireResponse-Spanish</a>
                </td>
                <td>
 
@@ -1500,7 +1676,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Questionnaire-DDCCHCIDRegistrationQuestionnaire.html" title="Questionnaire/DDCCHCIDRegistrationQuestionnaire">DDCCHCIDRegistrationQuestionnaire</a>
+                  <a href="Questionnaire-DDCCHCIDRegistrationQuestionnaire.html"
+                     title="Questionnaire/DDCCHCIDRegistrationQuestionnaire">DDCCHCIDRegistrationQuestionnaire</a>
                </td>
                <td>
 <p>DDCC HCID Registration Questionnaire</p>
@@ -1508,7 +1685,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Questionnaire-DDCCTRCoreDataSetQuestionnaire.html" title="Questionnaire/DDCCTRCoreDataSetQuestionnaire">DDCCTRCoreDataSetQuestionnaire</a>
+                  <a href="Questionnaire-DDCCTRCoreDataSetQuestionnaire.html"
+                     title="Questionnaire/DDCCTRCoreDataSetQuestionnaire">DDCCTRCoreDataSetQuestionnaire</a>
                </td>
                <td>
 <p>DDCC Questionnaire for a Test event.</p>
@@ -1516,7 +1694,8 @@ translated into an ICD-11 code.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Questionnaire-DDCCVSCoreDataSetQuestionnaire.html" title="Questionnaire/DDCCVSCoreDataSetQuestionnaire">DDCCVSCoreDataSetQuestionnaire</a>
+                  <a href="Questionnaire-DDCCVSCoreDataSetQuestionnaire.html"
+                     title="Questionnaire/DDCCVSCoreDataSetQuestionnaire">DDCCVSCoreDataSetQuestionnaire</a>
                </td>
                <td>
 <p>DDCC Questionnaire for an Immunization event.</p>
@@ -1584,12 +1763,14 @@ translated into an ICD-11 code.</p>
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="Bundle-IPS-Immunization-Example-Bundle-01.html" title="Bundle/IPS-Immunization-Example-Bundle-01">IPS-Immunization-Example-Bundle-01</a>
+                  <a href="Bundle-IPS-Immunization-Example-Bundle-01.html"
+                     title="Bundle/IPS-Immunization-Example-Bundle-01">IPS-Immunization-Example-Bundle-01</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Bundle-SHCVaccinationBundleDM-Example-English-From-ddcc-to-shc.html" title="Bundle/SHCVaccinationBundleDM-Example-English-From-ddcc-to-shc">SHCVaccinationBundleDM-Example-English-From-ddcc-to-shc</a>
+                  <a href="Bundle-SHCVaccinationBundleDM-Example-English-From-ddcc-to-shc.html"
+                     title="Bundle/SHCVaccinationBundleDM-Example-English-From-ddcc-to-shc">SHCVaccinationBundleDM-Example-English-From-ddcc-to-shc</a>
                </td>
             </tr>
          </tbody>
@@ -1598,13 +1779,13 @@ translated into an ICD-11 code.</p>
 </div>
 
 </div>
-        </div>    <!-- /inner-wrapper -->
-      </div>    <!-- /row -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-content -->
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
 
-  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
@@ -1614,51 +1795,49 @@ translated into an ICD-11 code.</p>
     });
   </script>
   <a name="bottom"> </a>
-  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
-    <div class="container">    <!-- container -->
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l2902">​</a>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 27, 2022 23:08+0000">2022-09-27</span>
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 27, 2022 10:56+0000">2022-10-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-                  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/worldhealthorganization/ddcc/projects/1" target="_blank">Issues</a>
+                  | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/worldhealthorganization/ddcc/projects/1">Issues</a>
                 
-| <a style="color: #81BEF7" href="http://worldhealthorganization.github.io/ddcc/history.html" target="_blank">Version History</a> | <a rel="license" style="color: #81BEF7" href="license.html">License</a>
-  <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | -->
-          
+                 | <a style="color: #81BEF7" target="_blank" href="http://worldhealthorganization.github.io/ddcc/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+          </span>
         </p>
-      </div>    <!-- /inner-wrapper -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-footer -->
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
-    <div class="container">    <!-- container -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
   
-    <!-- JS and analytics only. -->
-    <!-- Bootstrap core JavaScript
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
   ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
-  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
-  <!-- feedback form - Google forms -->
-  <!-- v0.1, 2021-01-09 -->
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
 
 
   
     
     <script type="text/javascript">
-     /*   <!-- [CDATA[ */
+     /* <![CDATA[ */
         $(':header[id]').each(function() { // apply this to each heading
           var id = $(this).attr('id');
           var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
@@ -1692,7 +1871,7 @@ anchors.add()</script>
 /* <![CDATA[ */
               feedbackurl = feedbackurl + '&';
               feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
-/* ]] --> */
+/* ]]> */
             
               var parameterFieldId = '';
               var parameterVariableName = '';
@@ -1714,15 +1893,15 @@ anchors.add()</script>
                     parameterValue = document.getElementById(id).textContent;
                     break;
               }
-/*   <!-- [CDATA[ */
+/* <![CDATA[ */
               feedbackurl = feedbackurl + '&';
               feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
-/* ]] --> */
+/* ]]> */
             
             
           if (id) { //To make sure the element has an id
             $(this).append(function () {
-              return $('<a></a>', {
+              return $('<a/>', {
                 id,
                 href: feedbackurl,
                 text: feedbacklabel+' ' ,
@@ -1734,16 +1913,17 @@ anchors.add()</script>
             });
           }
         }) 
-/* ]]&gt; */
+/* ]]> */
       </script>  
     
   
 
 
 
-  <!-- / feedback form -->
+<!-- / feedback form  -->
 
-    <!-- Analytics Below
+  <!-- Analytics Below
   ================================================== -->
   </body>
 </html>
+

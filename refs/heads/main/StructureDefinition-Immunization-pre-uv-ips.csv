@@ -242,8 +242,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Indicates self-reported reaction","Self-reported indicator.","","","","","","","","","",,,,,"",,,,"Immunization.reaction.reported",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","(HL7 v2 doesn't seem to provide for this)",".participation[typeCode=INF].role[classCode=PAT] (this syntax for self-reported=true)"
 "Immunization.protocolApplied","Immunization.protocolApplied","","","",0,*,"","","","BackboneElement {[]} {[]}
-","Protocol followed by the provider","The protocol (set of recommendations) being followed by the provider who administered the dose.","","","","","","","","","",,,,,"",,,,"Immunization.protocolApplied",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","N/A"
+","Protocol followed by the provider","The protocol (set of recommendations) being followed by the provider who administered the dose.","","","","","","","","","",,,,,"",,,,"Immunization.protocolApplied",0,*,"","","N/A"
 "Immunization.protocolApplied.id","Immunization.protocolApplied.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Immunization.protocolApplied.extension","Immunization.protocolApplied.extension","","extensions

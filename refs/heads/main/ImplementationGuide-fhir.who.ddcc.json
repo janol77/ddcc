@@ -41,12 +41,6 @@
   ],
   "dependsOn": [
     {
-      "id": "higtools",
-      "uri": "http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools",
-      "packageId": "hl7.fhir.uv.tools",
-      "version": "current"
-    },
-    {
       "id": "hl7tx",
       "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId": "hl7.terminology.r4",
@@ -312,45 +306,6 @@
           {
             "url": "code",
             "valueString": "active-tables"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "fmm-definition"
-          },
-          {
-            "url": "value",
-            "valueString": "http://hl7.org/fhir/versions.html#maturity"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "propagate-status"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "excludelogbinaryformat"
           },
           {
             "url": "value",
@@ -891,6 +846,62 @@
         },
         "name": "DDCC Vaccine Valid From",
         "description": "Date upon which provided vaccination is considered valid",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical:abstract"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/CertDCC"
+        },
+        "name": "Certificate - EU DCC CBOR Web Token Logical Model",
+        "description": "Data elements for the EU Digital COVID Certificate Core Data Set.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical:abstract"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/CertDIVOC"
+        },
+        "name": "Certificate - DIVOC Verifiable Credential Logical Model",
+        "description": "Data elements for the DIVOC Core Data Set.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical:abstract"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/CertICAO"
+        },
+        "name": "Certificate - ICAO Visible Digital Seal Logical Model",
+        "description": "Data elements for the ICAO Visible Digital Seal Core Data Set.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical:abstract"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/CertSHC"
+        },
+        "name": "Certificate - Smart Health Card's JSon Web Token Logical Model",
+        "description": "Data elements for the Smart Health Cards Core Data Set.",
         "exampleBoolean": false
       },
       {

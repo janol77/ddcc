@@ -231,6 +231,34 @@
     "name": "DDCCHCIDRegistrationQuestionnaire"
   },
   {
+    "id": "CertDCC",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/CertDCC",
+    "version": "1.0.0",
+    "name": "CertDCC"
+  },
+  {
+    "id": "CertDIVOC",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/CertDIVOC",
+    "version": "1.0.0",
+    "name": "CertDIVOC"
+  },
+  {
+    "id": "CertICAO",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/CertICAOVDS",
+    "version": "1.0.0",
+    "name": "CertICAO"
+  },
+  {
+    "id": "CertSHC",
+    "type": "StructureDefinition",
+    "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/CertSHC",
+    "version": "1.0.0",
+    "name": "CertSHC"
+  },
+  {
     "id": "DDCCComposition",
     "type": "StructureDefinition",
     "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition",
