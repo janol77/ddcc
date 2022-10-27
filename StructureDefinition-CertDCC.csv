@@ -1,0 +1,92 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"CertDCC","CertDCC","","","",0,*,"","","","","Certificate - EU DCC CBOR Web Token Logical Model","Data elements for the EU Digital COVID Certificate Core Data Set.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"CertDCC.iss","CertDCC.iss","","","",0,1,"","","","string {[]} {[]}
+","Issuer","Issuer","","","","","","","","","",,,,,"",,,,"CertDCC.iss",0,1,"",""
+"CertDCC.sub","CertDCC.sub","","","",0,1,"","","","string {[]} {[]}
+","Subject","Subject","","","","","","","","","",,,,,"",,,,"CertDCC.sub",0,1,"",""
+"CertDCC.aud","CertDCC.aud","","","",0,1,"","","","string {[]} {[]}
+","Audience","Audience","","","","","","","","","",,,,,"",,,,"CertDCC.aud",0,1,"",""
+"CertDCC.exp","CertDCC.exp","","","",0,1,"","","","dateTime {[]} {[]}
+","Expiration Date","Expiration Date","","","","","","","","","",,,,,"",,,,"CertDCC.exp",0,1,"",""
+"CertDCC.nbf","CertDCC.nbf","","","",0,1,"","","","dateTime {[]} {[]}
+","Not before Date","Not before Date","","","","","","","","","",,,,,"",,,,"CertDCC.nbf",0,1,"",""
+"CertDCC.iat","CertDCC.iat","","","",0,1,"","","","dateTime {[]} {[]}
+","Issued at Date","Issued at Date","","","","","","","","","",,,,,"",,,,"CertDCC.iat",0,1,"",""
+"CertDCC.id","CertDCC.id","","","",0,1,"","","","string {[]} {[]}
+","Identifier","Identifier","","","","","","","","","",,,,,"",,,,"CertDCC.id",0,1,"",""
+"CertDCC.cert","CertDCC.cert","","","",0,1,"","","","BackboneElement {[]} {[]}
+","HC1","HC1","","","","","","","","","",,,,,"",,,,"CertDCC.cert",0,1,"",""
+"CertDCC.cert.ver","CertDCC.cert.ver","","","",0,1,"","","","string {[]} {[]}
+","Schema version","Schema version","","","","","","","","","",,,,,"",,,,"CertDCC.cert.ver",0,1,"",""
+"CertDCC.cert.nam","CertDCC.cert.nam","","","",0,1,"","","","BackboneElement {[]} {[]}
+","PersonName","PersonName","","","","","","","","","",,,,,"",,,,"CertDCC.cert.nam",0,1,"",""
+"CertDCC.cert.nam.fn","CertDCC.cert.nam.fn","","","",0,1,"","","","string {[]} {[]}
+","Surname","Surname","","","","","","","","","",,,,,"",,,,"CertDCC.cert.nam.fn",0,1,"",""
+"CertDCC.cert.nam.fnt","CertDCC.cert.nam.fnt","","","",0,1,"","","","string {[]} {[]}
+","Standardised surname","Standardised surname","","","","","","","","","",,,,,"",,,,"CertDCC.cert.nam.fnt",0,1,"",""
+"CertDCC.cert.nam.gn","CertDCC.cert.nam.gn","","","",0,1,"","","","string {[]} {[]}
+","Forename","Forename","","","","","","","","","",,,,,"",,,,"CertDCC.cert.nam.gn",0,1,"",""
+"CertDCC.cert.nam.gnt","CertDCC.cert.nam.gnt","","","",0,1,"","","","string {[]} {[]}
+","Standardised forename","Standardised forename","","","","","","","","","",,,,,"",,,,"CertDCC.cert.nam.gnt",0,1,"",""
+"CertDCC.cert.dob","CertDCC.cert.dob","","","",0,1,"","","","date {[]} {[]}
+","date of birth","date of birth","","","","","","","","","",,,,,"",,,,"CertDCC.cert.dob",0,1,"",""
+"CertDCC.cert.v","CertDCC.cert.v","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Vaccination Group","Vaccination Group","","","","","","","","","",,,,,"",,,,"CertDCC.cert.v",0,*,"",""
+"CertDCC.cert.v.tg","CertDCC.cert.v.tg","","","",0,1,"","","","string {[]} {[]}
+","disease or agent targeted","disease or agent targeted","","","","","","","","","",,,,,"",,,,"CertDCC.cert.v.tg",0,1,"",""
+"CertDCC.cert.v.vp","CertDCC.cert.v.vp","","","",0,1,"","","","string {[]} {[]}
+","vaccine or prophylaxis","vaccine or prophylaxis","","","","","","","","","",,,,,"",,,,"CertDCC.cert.v.vp",0,1,"",""
+"CertDCC.cert.v.mp","CertDCC.cert.v.mp","","","",0,1,"","","","string {[]} {[]}
+","vaccine medicinal product","vaccine medicinal product","","","","","","","","","",,,,,"",,,,"CertDCC.cert.v.mp",0,1,"",""
+"CertDCC.cert.v.ma","CertDCC.cert.v.ma","","","",0,1,"","","","string {[]} {[]}
+","Marketing Authorization Holder - if no MAH present then manufacturer","Marketing Authorization Holder - if no MAH present then manufacturer","","","","","","","","","",,,,,"",,,,"CertDCC.cert.v.ma",0,1,"",""
+"CertDCC.cert.v.dn","CertDCC.cert.v.dn","","","",0,1,"","","","positiveInt {[]} {[]}
+","Dose Number","Dose Number","","","","","","","","","",,,,,"",,,,"CertDCC.cert.v.dn",0,1,"",""
+"CertDCC.cert.v.sd","CertDCC.cert.v.sd","","","",0,1,"","","","positiveInt {[]} {[]}
+","Total Series of Doses","Total Series of Doses","","","","","","","","","",,,,,"",,,,"CertDCC.cert.v.sd",0,1,"",""
+"CertDCC.cert.v.dt","CertDCC.cert.v.dt","","","",0,1,"","","","dateTime {[]} {[]}
+","ISO8601 complete date Date of Vaccination","ISO8601 complete date Date of Vaccination","","","","","","","","","",,,,,"",,,,"CertDCC.cert.v.dt",0,1,"",""
+"CertDCC.cert.v.co","CertDCC.cert.v.co","","","",0,1,"","","","string {[]} {[]}
+","Country of Vaccination","Country of Vaccination","","","","","","","","","",,,,,"",,,,"CertDCC.cert.v.co",0,1,"",""
+"CertDCC.cert.v.is","CertDCC.cert.v.is","","","",0,1,"","","","string {[]} {[]}
+","Certificate Issuer","Certificate Issuer","","","","","","","","","",,,,,"",,,,"CertDCC.cert.v.is",0,1,"",""
+"CertDCC.cert.v.ci","CertDCC.cert.v.ci","","","",0,1,"","","","string {[]} {[]}
+","Unique Certificate Identifier UVCI","Unique Certificate Identifier UVCI","","","","","","","","","",,,,,"",,,,"CertDCC.cert.v.ci",0,1,"",""
+"CertDCC.cert.t","CertDCC.cert.t","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Test Group","Test Group","","","","","","","","","",,,,,"",,,,"CertDCC.cert.t",0,*,"",""
+"CertDCC.cert.t.tg","CertDCC.cert.t.tg","","","",0,1,"","","","string {[]} {[]}
+","disease or agent targeted","disease or agent targeted","","","","","","","","","",,,,,"",,,,"CertDCC.cert.t.tg",0,1,"",""
+"CertDCC.cert.t.tt","CertDCC.cert.t.tt","","","",0,1,"","","","string {[]} {[]}
+","Type of Test","Type of Test","","","","","","","","","",,,,,"",,,,"CertDCC.cert.t.tt",0,1,"",""
+"CertDCC.cert.t.nm","CertDCC.cert.t.nm","","","",0,1,"","","","string {[]} {[]}
+","NAA Test Name","NAA Test Name","","","","","","","","","",,,,,"",,,,"CertDCC.cert.t.nm",0,1,"",""
+"CertDCC.cert.t.ma","CertDCC.cert.t.ma","","","",0,1,"","","","string {[]} {[]}
+","RAT Test name and manufacturer","RAT Test name and manufacturer","","","","","","","","","",,,,,"",,,,"CertDCC.cert.t.ma",0,1,"",""
+"CertDCC.cert.t.sc","CertDCC.cert.t.sc","","","",0,1,"","","","dateTime {[]} {[]}
+","Date/Time of Collection","Date/Time of Collection","","","","","","","","","",,,,,"",,,,"CertDCC.cert.t.sc",0,1,"",""
+"CertDCC.cert.t.tr","CertDCC.cert.t.tr","","","",0,1,"","","","string {[]} {[]}
+","Test Result","Test Result","","","","","","","","","",,,,,"",,,,"CertDCC.cert.t.tr",0,1,"",""
+"CertDCC.cert.t.tc","CertDCC.cert.t.tc","","","",0,1,"","","","string {[]} {[]}
+","Testing Centre","Testing Centre","","","","","","","","","",,,,,"",,,,"CertDCC.cert.t.tc",0,1,"",""
+"CertDCC.cert.t.co","CertDCC.cert.t.co","","","",0,1,"","","","string {[]} {[]}
+","Country of Test","Country of Test","","","","","","","","","",,,,,"",,,,"CertDCC.cert.t.co",0,1,"",""
+"CertDCC.cert.t.is","CertDCC.cert.t.is","","","",0,1,"","","","string {[]} {[]}
+","Certificate Issuer","Certificate Issuer","","","","","","","","","",,,,,"",,,,"CertDCC.cert.t.is",0,1,"",""
+"CertDCC.cert.t.ci","CertDCC.cert.t.ci","","","",0,1,"","","","string {[]} {[]}
+","Unique Certificate Identifier UVCI","Unique Certificate Identifier UVCI","","","","","","","","","",,,,,"",,,,"CertDCC.cert.t.ci",0,1,"",""
+"CertDCC.cert.r","CertDCC.cert.r","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Recovery Group","Recovery Group","","","","","","","","","",,,,,"",,,,"CertDCC.cert.r",0,*,"",""
+"CertDCC.cert.r.tg","CertDCC.cert.r.tg","","","",0,1,"","","","string {[]} {[]}
+","disease or agent targeted","disease or agent targeted","","","","","","","","","",,,,,"",,,,"CertDCC.cert.r.tg",0,1,"",""
+"CertDCC.cert.r.fr","CertDCC.cert.r.fr","","","",0,1,"","","","date {[]} {[]}
+","ISO 8601 complete date of first positive NAA test result","ISO 8601 complete date of first positive NAA test result","","","","","","","","","",,,,,"",,,,"CertDCC.cert.r.fr",0,1,"",""
+"CertDCC.cert.r.df","CertDCC.cert.r.df","","","",0,1,"","","","date {[]} {[]}
+","ISO 8601 complete date Certificate Valid From","ISO 8601 complete date Certificate Valid From","","","","","","","","","",,,,,"",,,,"CertDCC.cert.r.df",0,1,"",""
+"CertDCC.cert.r.du","CertDCC.cert.r.du","","","",0,1,"","","","date {[]} {[]}
+","ISO 8601 complete date Certificate Valid Until","ISO 8601 complete date Certificate Valid Until","","","","","","","","","",,,,,"",,,,"CertDCC.cert.r.du",0,1,"",""
+"CertDCC.cert.r.co","CertDCC.cert.r.co","","","",0,1,"","","","string {[]} {[]}
+","Country of Test","Country of Test","","","","","","","","","",,,,,"",,,,"CertDCC.cert.r.co",0,1,"",""
+"CertDCC.cert.r.is","CertDCC.cert.r.is","","","",0,1,"","","","string {[]} {[]}
+","Certificate Issuer","Certificate Issuer","","","","","","","","","",,,,,"",,,,"CertDCC.cert.r.is",0,1,"",""
+"CertDCC.cert.r.ci","CertDCC.cert.r.ci","","","",0,1,"","","","string {[]} {[]}
+","Unique Certificate Identifier UVCI","Unique Certificate Identifier UVCI","","","","","","","","","",,,,,"",,,,"CertDCC.cert.r.ci",0,1,"",""

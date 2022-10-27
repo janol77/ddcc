@@ -371,12 +371,6 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>Immunization.protocolApplied</sch:title>
-    <sch:rule context="f:Immunization/f:protocolApplied">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
     <sch:title>Immunization.protocolApplied.extension</sch:title>
     <sch:rule context="f:Immunization/f:protocolApplied/f:extension">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>

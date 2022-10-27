@@ -10,7 +10,7 @@
   "name": "DDCCQuestionnaireSDC",
   "title": "DDCC Questionnaire based on SDC",
   "status": "active",
-  "date": "2022-09-27T23:08:58+00:00",
+  "date": "2022-10-27T10:56:05+00:00",
   "publisher": "WHO",
   "contact": [
     {
@@ -1963,6 +1963,14 @@
             "human": "Can only have multiple initial values for repeating items",
             "expression": "repeats=true or initial.count() <= 1",
             "xpath": "f:repeats/@value='true' or count(f:initial)<=1",
+            "source": "http://hl7.org/fhir/StructureDefinition/Questionnaire"
+          },
+          {
+            "key": "que-14",
+            "severity": "error",
+            "human": "Can only have answerConstraint if answerOption, answerValueset, or answerExpression are present.",
+            "expression": "answerConstraint.exists() implies answerOption.exists() or answerValueset.exists() or extension('http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-answerExpression').exists()",
+            "xpath": "not(exists(f:answerConstraint)) or exists(f:answerOption) or exists(f:answerValueSet) or exists(f:extension[@url='http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-answerExpression'])",
             "source": "http://hl7.org/fhir/StructureDefinition/Questionnaire"
           },
           {

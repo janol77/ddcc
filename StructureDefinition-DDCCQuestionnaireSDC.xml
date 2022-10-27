@@ -18,7 +18,7 @@
   <name value="DDCCQuestionnaireSDC"/>
   <title value="DDCC Questionnaire based on SDC"/>
   <status value="active"/>
-  <date value="2022-09-27T23:08:58+00:00"/>
+  <date value="2022-10-27T10:56:05+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -1651,6 +1651,14 @@
         <human value="Can only have multiple initial values for repeating items"/>
         <expression value="repeats=true or initial.count() &lt;= 1"/>
         <xpath value="f:repeats/@value='true' or count(f:initial)&lt;=1"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Questionnaire"/>
+      </constraint>
+      <constraint>
+        <key value="que-14"/>
+        <severity value="error"/>
+        <human value="Can only have answerConstraint if answerOption, answerValueset, or answerExpression are present."/>
+        <expression value="answerConstraint.exists() implies answerOption.exists() or answerValueset.exists() or extension('http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-answerExpression').exists()"/>
+        <xpath value="not(exists(f:answerConstraint)) or exists(f:answerOption) or exists(f:answerValueSet) or exists(f:extension[@url='http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-answerExpression'])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Questionnaire"/>
       </constraint>
       <constraint>
