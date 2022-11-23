@@ -1058,6 +1058,20 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/DIVOC-ValueSet"
+        },
+        "name": "COVID-19 Vaccine Codes for DIVOC",
+        "description": "COVID-19 Vaccine codes for DIVOC so the FHIR server can perform expansions.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/vaccines-covid-19-names"
         },
         "name": "EU DCC Allowed Vaccine List (COVID-19)",
@@ -1286,6 +1300,20 @@
         },
         "name": "DDCC QR Category Usage Codes",
         "description": "Possible formats available for QR usage.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/DIVOC-CodeSystem"
+        },
+        "name": "COVID-19 Vaccine Codes for DIVOC",
+        "description": "COVID-19 Vaccine codes for DIVOC so the FHIR server can perform expansions.",
         "exampleBoolean": false
       },
       {
@@ -2060,6 +2088,20 @@
           }
         ],
         "reference": {
+          "reference": "ConceptMap/who-ddcc-map-divoc-icd11-vaccines"
+        },
+        "name": "WHO_DDCC_Map_DIVOC_to_ICD11_Vaccines",
+        "description": "Mapping from DIVOC to ICD-11 for COVID-19 Vaccines",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ConceptMap"
+          }
+        ],
+        "reference": {
           "reference": "ConceptMap/who-ddcc-map-eudcc-icd11-vaccines"
         },
         "name": "WHO_DDCC_Map_EUDCC_to_ICD11_Vaccines",
@@ -2078,6 +2120,20 @@
         },
         "name": "WHO_DDCC_Map_ICAO_to_ICD11_Vaccines",
         "description": "Mapping from ICAO to ICD11 for COVID-19 Vaccines",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ConceptMap"
+          }
+        ],
+        "reference": {
+          "reference": "ConceptMap/who-ddcc-map-icd11-divoc-vaccines"
+        },
+        "name": "WHO_DDCC_Map_ICD11_to_DIVOC_Vaccines",
+        "description": "Mapping from ICD-11 to DIVOC for COVID-19 Vaccines",
         "exampleBoolean": false
       },
       {

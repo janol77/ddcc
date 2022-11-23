@@ -112,6 +112,13 @@
     "name": "ICD11_SNOMED_CT_COVID19_vaccines"
   },
   {
+    "id": "who-ddcc-map-divoc-icd11-vaccines",
+    "type": "ConceptMap",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_DIVOC_to_ICD11_Vaccines",
+    "version": "1.0.0",
+    "name": "DIVOC_ICD11_COVID19_vaccines"
+  },
+  {
     "id": "who-ddcc-map-eudcc-icd11-vaccines",
     "type": "ConceptMap",
     "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_EUDCC_to_ICD11_Vaccines",
@@ -124,6 +131,13 @@
     "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICAO_to_ICD11_Vaccines",
     "version": "1.0.0",
     "name": "ICAO_ICD11_COVID19_vaccines"
+  },
+  {
+    "id": "who-ddcc-map-icd11-divoc-vaccines",
+    "type": "ConceptMap",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_DIVOC_Vaccines",
+    "version": "1.0.0",
+    "name": "ICD11_DIVOC_COVID19_vaccines"
   },
   {
     "id": "who-ddcc-map-icd11-eudcc-vaccines",
@@ -222,6 +236,13 @@
     "url": "http://worldhealthorganization.github.io/ddcc/DDCCVSCoreDataSetQuestionnaire",
     "version": "1.0.0",
     "name": "DDCCVSCoreDataSetQuestionnaire"
+  },
+  {
+    "id": "DIVOC-CodeSystem",
+    "type": "CodeSystem",
+    "url": "http://worldhealthorganization.github.io/ddcc/DIVOC",
+    "version": "1.0.0",
+    "name": "DIVOC_CodeSystem"
   },
   {
     "id": "ICAOVaccineListV1",
@@ -747,6 +768,13 @@
     "url": "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Type-ValueSet",
     "version": "1.0.0",
     "name": "DDCC_QR_Type_ValueSet"
+  },
+  {
+    "id": "DIVOC-ValueSet",
+    "type": "ValueSet",
+    "url": "http://worldhealthorganization.github.io/ddcc/ValueSet/DIVOC-ValueSet",
+    "version": "1.0.0",
+    "name": "DIVOC_ValueSet"
   },
   {
     "id": "ICAOVaccineListV1",

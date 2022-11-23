@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "who-ddcc-map-icao-icd11-vaccines"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ICAO_ICD11_COVID19_vaccines (http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICAO_to_ICD11_Vaccines)</h2><p>Mapping from <a href=\"CodeSystem-ICAOVaccineListV1.html\">http://worldhealthorganization.github.io/ddcc/ICAOV1</a> to <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html\">http://id.who.int/icd11/mms</a></p><p>DRAFT (not intended for production usage). Published on 2022-11-23 by WHO (WHO: <a href=\"http://who.int\">http://who.int</a>). </p><div><p>Rule-based mappings between ICAO and ICD-11 for COVID-19 Vaccines</p>\n</div><br/><p><b>Group 1</b>Mapping from <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html\">DDCC Codes for ICD11</a> to <a href=\"CodeSystem-ICAOVaccineListV1.html\">DDCC Codes for ICAO Vaccines</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>ICAO001</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM68M6</td></tr><tr><td>ICAO002</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM68M6</td></tr><tr><td>ICAO003</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM68M6</td></tr><tr><td>ICAO004</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM68M6</td></tr><tr><td>ICAO005</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM68M6</td></tr><tr><td>ICAO006</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM68M6</td></tr><tr><td>ICAO007</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM68M6</td></tr><tr><td>ICAO008</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM68M6</td></tr><tr><td>ICAO009</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM3DT5</td></tr><tr><td>ICAO010</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM3DT5</td></tr><tr><td>ICAO011</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM3DT5</td></tr><tr><td>ICAO012</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM3DT5</td></tr><tr><td>ICAO013</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM52P3</td></tr><tr><td>ICAO014</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM52P3</td></tr><tr><td>ICAO015</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM3CT4</td></tr><tr><td>ICAO016</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM3CT4</td></tr><tr><td>ICAO017</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM3CT4</td></tr><tr><td>ICAO018</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM3CT4</td></tr><tr><td>ICAO019</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM3CT4</td></tr><tr><td>ICAO020</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM3PG0</td></tr><tr><td>ICAO021</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM3PG0</td></tr><tr><td>ICAO022</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM3PG0</td></tr><tr><td>ICAO023</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM3PG0</td></tr><tr><td>ICAO024</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM3PG0</td></tr><tr><td>ICAO025</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM4EC8</td></tr><tr><td>ICAO026</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM4EC8</td></tr><tr><td>ICAO027</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM4EC8</td></tr><tr><td>ICAO028</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM6SZ8</td></tr><tr><td>ICAO029</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM6SZ8</td></tr><tr><td>ICAO030</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM0RV9</td></tr><tr><td>ICAO031</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM0RV9</td></tr><tr><td>ICAO032</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM3SK8</td></tr><tr><td>ICAO033</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM3SK8</td></tr><tr><td>ICAO034</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM9P21</td></tr><tr><td>ICAO035</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM9P21</td></tr><tr><td>ICAO036</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM9P21</td></tr><tr><td>ICAO037</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM9T65</td></tr><tr><td>ICAO038</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM9T65</td></tr><tr><td>ICAO039</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM9T65</td></tr><tr><td>ICAO040</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM9T65</td></tr><tr><td>ICAO041</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM9T65</td></tr><tr><td>ICAO042</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM9N08</td></tr><tr><td>ICAO043</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM4YL8</td></tr><tr><td>ICAO044</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM4YL8</td></tr><tr><td>ICAO045</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM4YL8</td></tr><tr><td>ICAO046</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM4YL8</td></tr><tr><td>ICAO047</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM4YL8</td></tr><tr><td>ICAO048</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM4YL8</td></tr><tr><td>ICAO049</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM4YL8</td></tr><tr><td>ICAO050</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM97T2</td></tr><tr><td>ICAO051</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM97T2</td></tr><tr><td>ICAO052</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM97T2</td></tr><tr><td>ICAO053</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM97T2</td></tr><tr><td>ICAO054</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM97T2</td></tr><tr><td>ICAO055</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM6QV1</td></tr><tr><td>ICAO056</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM6QV1</td></tr><tr><td>ICAO057</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM6QV1</td></tr><tr><td>ICAO058</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM6QV1</td></tr><tr><td>ICAO059</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM1AG7</td></tr><tr><td>ICAO060</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM1AG7</td></tr><tr><td>ICAO061</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM1AG7</td></tr><tr><td>ICAO062</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM5ZJ4</td></tr><tr><td>ICAO063</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM5ZJ4</td></tr><tr><td>ICAO064</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM5ZJ4</td></tr><tr><td>ICAO065</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM5ZJ4</td></tr><tr><td>ICAO066</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM5QM6</td></tr><tr><td>ICAO067</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM5QM6</td></tr><tr><td>ICAO068</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM7HT3</td></tr><tr><td>ICAO069</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM7HT3</td></tr><tr><td>ICAO070</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM7HT3</td></tr><tr><td>ICAO071</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM8866</td></tr><tr><td>ICAO072</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM8866</td></tr><tr><td>ICAO073</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM8866</td></tr><tr><td>ICAO074</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM8866</td></tr><tr><td>ICAO075</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM8866</td></tr><tr><td>ICAO076</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM9TQ1</td></tr><tr><td>ICAO077</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM9TQ1</td></tr><tr><td>ICAO078</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM9TQ1</td></tr><tr><td>ICAO079</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM1G90</td></tr><tr><td>ICAO080</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM1G90</td></tr><tr><td>ICAO081</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM1G90</td></tr><tr><td>ICAO082</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM85P5</td></tr><tr><td>ICAO083</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM85P5</td></tr><tr><td>ICAO084</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM85P5</td></tr><tr><td>ICAO085</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM9FQ7</td></tr><tr><td>ICAO086</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM9FQ7</td></tr><tr><td>ICAO087</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM97N6</td></tr><tr><td>ICAO088</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM97N6</td></tr><tr><td>ICAO089</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM97N6</td></tr><tr><td>ICAO090</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM2YG8</td></tr><tr><td>ICAO091</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM2YG8</td></tr><tr><td>ICAO092</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM0K39</td></tr><tr><td>ICAO093</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM0K39</td></tr><tr><td>ICAO094</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM0K39</td></tr><tr><td>ICAO095</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM1AU2</td></tr><tr><td>ICAO096</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM1AU2</td></tr><tr><td>ICAO097</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>XM1AU2</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ICAO_ICD11_COVID19_vaccines (http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICAO_to_ICD11_Vaccines)</h2><p>Mapping from <a href=\"CodeSystem-ICAOVaccineListV1.html\">http://worldhealthorganization.github.io/ddcc/ICAOV1</a> to <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html\">http://id.who.int/icd11/mms</a></p><p>DRAFT (not intended for production usage). Published on 2022-11-23 by WHO (WHO: <a href=\"http://who.int\">http://who.int</a>). </p><div><p>Rule-based mappings between ICAO and ICD-11 for COVID-19 Vaccines</p>\n</div><br/><p><b>Group 1</b>Mapping from <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html\">DDCC Codes for ICD11</a> to <a href=\"CodeSystem-ICAOVaccineListV1.html\">DDCC Codes for ICAO Vaccines</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>ICAO001</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM68M6</td></tr><tr><td>ICAO002</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM68M6</td></tr><tr><td>ICAO003</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM68M6</td></tr><tr><td>ICAO004</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM68M6</td></tr><tr><td>ICAO005</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM68M6</td></tr><tr><td>ICAO006</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM68M6</td></tr><tr><td>ICAO007</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM68M6</td></tr><tr><td>ICAO008</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM68M6</td></tr><tr><td>ICAO009</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM3DT5</td></tr><tr><td>ICAO010</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM3DT5</td></tr><tr><td>ICAO011</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM3DT5</td></tr><tr><td>ICAO012</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM3DT5</td></tr><tr><td>ICAO013</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM52P3</td></tr><tr><td>ICAO014</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM52P3</td></tr><tr><td>ICAO015</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM3CT4</td></tr><tr><td>ICAO016</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM3CT4</td></tr><tr><td>ICAO017</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM3CT4</td></tr><tr><td>ICAO018</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM3CT4</td></tr><tr><td>ICAO019</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM3CT4</td></tr><tr><td>ICAO020</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM3PG0</td></tr><tr><td>ICAO021</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM3PG0</td></tr><tr><td>ICAO022</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM3PG0</td></tr><tr><td>ICAO023</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM3PG0</td></tr><tr><td>ICAO024</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM3PG0</td></tr><tr><td>ICAO025</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM4EC8</td></tr><tr><td>ICAO026</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM4EC8</td></tr><tr><td>ICAO027</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM4EC8</td></tr><tr><td>ICAO028</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM6SZ8</td></tr><tr><td>ICAO029</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM6SZ8</td></tr><tr><td>ICAO030</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM0RV9</td></tr><tr><td>ICAO031</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM0RV9</td></tr><tr><td>ICAO032</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM3SK8</td></tr><tr><td>ICAO033</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM3SK8</td></tr><tr><td>ICAO034</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM9P21</td></tr><tr><td>ICAO035</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM9P21</td></tr><tr><td>ICAO036</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM9P21</td></tr><tr><td>ICAO037</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM9T65</td></tr><tr><td>ICAO038</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM9T65</td></tr><tr><td>ICAO039</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM9T65</td></tr><tr><td>ICAO040</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM9T65</td></tr><tr><td>ICAO041</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM9T65</td></tr><tr><td>ICAO042</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM9N08</td></tr><tr><td>ICAO043</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM4YL8</td></tr><tr><td>ICAO044</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM4YL8</td></tr><tr><td>ICAO045</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM4YL8</td></tr><tr><td>ICAO046</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM4YL8</td></tr><tr><td>ICAO047</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM4YL8</td></tr><tr><td>ICAO048</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM4YL8</td></tr><tr><td>ICAO049</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM4YL8</td></tr><tr><td>ICAO050</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM97T2</td></tr><tr><td>ICAO051</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM97T2</td></tr><tr><td>ICAO052</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM97T2</td></tr><tr><td>ICAO053</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM97T2</td></tr><tr><td>ICAO054</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM97T2</td></tr><tr><td>ICAO055</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM6QV1</td></tr><tr><td>ICAO056</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM6QV1</td></tr><tr><td>ICAO057</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM6QV1</td></tr><tr><td>ICAO058</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM6QV1</td></tr><tr><td>ICAO059</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM1AG7</td></tr><tr><td>ICAO060</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM1AG7</td></tr><tr><td>ICAO061</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM1AG7</td></tr><tr><td>ICAO062</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM5ZJ4</td></tr><tr><td>ICAO063</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM5ZJ4</td></tr><tr><td>ICAO064</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM5ZJ4</td></tr><tr><td>ICAO065</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM5ZJ4</td></tr><tr><td>ICAO066</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM5QM6</td></tr><tr><td>ICAO067</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM5QM6</td></tr><tr><td>ICAO068</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM7HT3</td></tr><tr><td>ICAO069</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM7HT3</td></tr><tr><td>ICAO070</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM7HT3</td></tr><tr><td>ICAO071</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM8866</td></tr><tr><td>ICAO072</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM8866</td></tr><tr><td>ICAO073</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM8866</td></tr><tr><td>ICAO074</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM8866</td></tr><tr><td>ICAO075</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM8866</td></tr><tr><td>ICAO076</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM9TQ1</td></tr><tr><td>ICAO077</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM9TQ1</td></tr><tr><td>ICAO078</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM9TQ1</td></tr><tr><td>ICAO079</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM1G90</td></tr><tr><td>ICAO080</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM1G90</td></tr><tr><td>ICAO081</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM1G90</td></tr><tr><td>ICAO082</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM85P5</td></tr><tr><td>ICAO083</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM85P5</td></tr><tr><td>ICAO084</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM85P5</td></tr><tr><td>ICAO085</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM9FQ7</td></tr><tr><td>ICAO086</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM9FQ7</td></tr><tr><td>ICAO087</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM97N6</td></tr><tr><td>ICAO088</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM97N6</td></tr><tr><td>ICAO089</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM97N6</td></tr><tr><td>ICAO090</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM2YG8</td></tr><tr><td>ICAO091</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM2YG8</td></tr><tr><td>ICAO092</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM0K39</td></tr><tr><td>ICAO093</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM0K39</td></tr><tr><td>ICAO094</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM0K39</td></tr><tr><td>ICAO095</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM1AU2</td></tr><tr><td>ICAO096</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM1AU2</td></tr><tr><td>ICAO097</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>XM1AU2</td></tr></table></div>"
   ];
   fhir:ConceptMap.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICAO_to_ICD11_Vaccines"];
   fhir:ConceptMap.version [ fhir:value "1.0.0"];
@@ -56,7 +56,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM68M6" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 1;
@@ -64,7 +64,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM68M6" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 2;
@@ -72,7 +72,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM68M6" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 3;
@@ -80,7 +80,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM68M6" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 4;
@@ -88,7 +88,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM68M6" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 5;
@@ -96,7 +96,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM68M6" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 6;
@@ -104,7 +104,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM68M6" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 7;
@@ -112,7 +112,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM68M6" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 8;
@@ -120,7 +120,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM3DT5" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 9;
@@ -128,7 +128,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM3DT5" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 10;
@@ -136,7 +136,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM3DT5" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 11;
@@ -144,7 +144,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM3DT5" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 12;
@@ -152,7 +152,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM52P3" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 13;
@@ -160,7 +160,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM52P3" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 14;
@@ -168,7 +168,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM3CT4" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 15;
@@ -176,7 +176,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM3CT4" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 16;
@@ -184,7 +184,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM3CT4" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 17;
@@ -192,7 +192,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM3CT4" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 18;
@@ -200,7 +200,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM3CT4" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 19;
@@ -208,7 +208,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM3PG0" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 20;
@@ -216,7 +216,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM3PG0" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 21;
@@ -224,7 +224,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM3PG0" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 22;
@@ -232,7 +232,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM3PG0" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 23;
@@ -240,7 +240,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM3PG0" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 24;
@@ -248,7 +248,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM4EC8" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 25;
@@ -256,7 +256,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM4EC8" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 26;
@@ -264,7 +264,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM4EC8" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 27;
@@ -272,7 +272,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM6SZ8" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 28;
@@ -280,7 +280,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM6SZ8" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 29;
@@ -288,7 +288,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM0RV9" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 30;
@@ -296,7 +296,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM0RV9" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 31;
@@ -304,7 +304,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM3SK8" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 32;
@@ -312,7 +312,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM3SK8" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 33;
@@ -320,7 +320,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM9P21" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 34;
@@ -328,7 +328,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM9P21" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 35;
@@ -336,7 +336,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM9P21" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 36;
@@ -344,7 +344,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM9T65" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 37;
@@ -352,7 +352,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM9T65" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 38;
@@ -360,7 +360,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM9T65" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 39;
@@ -368,7 +368,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM9T65" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 40;
@@ -376,7 +376,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM9T65" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 41;
@@ -384,7 +384,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM9N08" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 42;
@@ -392,7 +392,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM4YL8" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 43;
@@ -400,7 +400,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM4YL8" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 44;
@@ -408,7 +408,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM4YL8" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 45;
@@ -416,7 +416,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM4YL8" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 46;
@@ -424,7 +424,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM4YL8" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 47;
@@ -432,7 +432,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM4YL8" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 48;
@@ -440,7 +440,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM4YL8" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 49;
@@ -448,7 +448,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM97T2" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 50;
@@ -456,7 +456,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM97T2" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 51;
@@ -464,7 +464,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM97T2" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 52;
@@ -472,7 +472,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM97T2" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 53;
@@ -480,7 +480,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM97T2" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 54;
@@ -488,7 +488,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM6QV1" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 55;
@@ -496,7 +496,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM6QV1" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 56;
@@ -504,7 +504,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM6QV1" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 57;
@@ -512,7 +512,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM6QV1" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 58;
@@ -520,7 +520,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM1AG7" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 59;
@@ -528,7 +528,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM1AG7" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 60;
@@ -536,7 +536,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM1AG7" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 61;
@@ -544,7 +544,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM5ZJ4" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 62;
@@ -552,7 +552,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM5ZJ4" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 63;
@@ -560,7 +560,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM5ZJ4" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 64;
@@ -568,7 +568,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM5ZJ4" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 65;
@@ -576,7 +576,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM5QM6" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 66;
@@ -584,7 +584,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM5QM6" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 67;
@@ -592,7 +592,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM7HT3" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 68;
@@ -600,7 +600,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM7HT3" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 69;
@@ -608,7 +608,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM7HT3" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 70;
@@ -616,7 +616,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM8866" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 71;
@@ -624,7 +624,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM8866" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 72;
@@ -632,7 +632,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM8866" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 73;
@@ -640,7 +640,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM8866" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 74;
@@ -648,7 +648,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM8866" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 75;
@@ -656,7 +656,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM9TQ1" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 76;
@@ -664,7 +664,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM9TQ1" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 77;
@@ -672,7 +672,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM9TQ1" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 78;
@@ -680,7 +680,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM1G90" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 79;
@@ -688,7 +688,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM1G90" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 80;
@@ -696,7 +696,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM1G90" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 81;
@@ -704,7 +704,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM85P5" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 82;
@@ -712,7 +712,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM85P5" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 83;
@@ -720,7 +720,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM85P5" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 84;
@@ -728,7 +728,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM9FQ7" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 85;
@@ -736,7 +736,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM9FQ7" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 86;
@@ -744,7 +744,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM97N6" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 87;
@@ -752,7 +752,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM97N6" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 88;
@@ -760,7 +760,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM97N6" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 89;
@@ -768,7 +768,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM2YG8" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 90;
@@ -776,7 +776,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM2YG8" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 91;
@@ -784,7 +784,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM0K39" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 92;
@@ -792,7 +792,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM0K39" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 93;
@@ -800,7 +800,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM0K39" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 94;
@@ -808,7 +808,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM1AU2" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 95;
@@ -816,7 +816,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM1AU2" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ], [
        fhir:index 96;
@@ -824,7 +824,7 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "XM1AU2" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
        ]
      ]
   ] .
