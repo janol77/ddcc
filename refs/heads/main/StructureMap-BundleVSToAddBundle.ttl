@@ -20,7 +20,7 @@
   fhir:StructureMap.version [ fhir:value "1.0.0"];
   fhir:StructureMap.name [ fhir:value "BundleVSToAddBundle"];
   fhir:StructureMap.status [ fhir:value "draft"];
-  fhir:StructureMap.date [ fhir:value "2022-10-27T10:56:05+00:00"^^xsd:dateTime];
+  fhir:StructureMap.date [ fhir:value "2022-11-23T04:23:36+00:00"^^xsd:dateTime];
   fhir:StructureMap.publisher [ fhir:value "WHO"];
   fhir:StructureMap.contact [
      fhir:index 0;
