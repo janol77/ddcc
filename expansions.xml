@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="27bcdcf3-0762-45a4-9a4e-726b5190c38f"/>
+  <id value="79b1ee98-7a57-4990-a558-14f607882dbc"/>
   <meta>
-    <lastUpdated value="2022-11-23T11:18:03.050+00:00"/>
+    <lastUpdated value="2022-11-23T11:20:15.602+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -54,7 +54,7 @@
         <name value="DDCC_Composition_Category_ValueSet"/>
         <title value="DDCC Composition Category Codes"/>
         <status value="active"/>
-        <date value="2022-11-23T11:18:03+00:00"/>
+        <date value="2022-11-23T11:20:15+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -71,8 +71,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4d2401d5-36d3-4769-bdc5-b53df43721f0"/>
-          <timestamp value="2022-11-23T11:20:17+00:00"/>
+          <identifier value="urn:uuid:10a2fcaa-521d-4e1c-a5df-4987cac1f72b"/>
+          <timestamp value="2022-11-23T11:22:24+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -144,7 +144,7 @@
         <name value="DDCC_Device_Property_ValueSet"/>
         <title value="DDCC Device Property Codes"/>
         <status value="active"/>
-        <date value="2022-11-23T11:18:03+00:00"/>
+        <date value="2022-11-23T11:20:15+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -161,8 +161,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:11a8ea24-e232-44c6-b049-229c5d396af5"/>
-          <timestamp value="2022-11-23T11:20:18+00:00"/>
+          <identifier value="urn:uuid:0fcc64cc-3734-4441-8205-6362022c3b86"/>
+          <timestamp value="2022-11-23T11:22:24+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -226,7 +226,7 @@
         <name value="DDCC_Folder_DesignationType_ValueSet"/>
         <title value="DDCC DesignationTypes for Folder"/>
         <status value="active"/>
-        <date value="2022-11-23T11:18:03+00:00"/>
+        <date value="2022-11-23T11:20:15+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -243,8 +243,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:95f7ec2c-fc25-4bc8-9228-fb06c576dc0c"/>
-          <timestamp value="2022-11-23T11:20:18+00:00"/>
+          <identifier value="urn:uuid:55bd391d-2deb-4220-9eee-99a841631a90"/>
+          <timestamp value="2022-11-23T11:22:24+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -319,7 +319,7 @@
         <name value="DDCC_QR_Format_ValueSet"/>
         <title value="DDCC QR Format Codes"/>
         <status value="active"/>
-        <date value="2022-11-23T11:18:03+00:00"/>
+        <date value="2022-11-23T11:20:15+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -336,8 +336,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4ef3c348-f15f-4462-a288-a978d408ab20"/>
-          <timestamp value="2022-11-23T11:20:18+00:00"/>
+          <identifier value="urn:uuid:fdb5b9ef-2dda-4459-9fc4-2c2277a1ebe3"/>
+          <timestamp value="2022-11-23T11:22:24+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -446,7 +446,7 @@
         <name value="DDCC_QR_Type_ValueSet"/>
         <title value="DDCC QR Type Codes"/>
         <status value="active"/>
-        <date value="2022-11-23T11:18:03+00:00"/>
+        <date value="2022-11-23T11:20:15+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -463,8 +463,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:431ef3eb-362b-4b97-9bd1-11d710b344f6"/>
-          <timestamp value="2022-11-23T11:20:18+00:00"/>
+          <identifier value="urn:uuid:6701c54a-4471-4b40-b418-a46cf9825103"/>
+          <timestamp value="2022-11-23T11:22:24+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -503,6 +503,551 @@
             <system value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem"/>
             <code value="divoc"/>
             <display value="DIVOC"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://worldhealthorganization.github.io/ddcc/ValueSet/vaccines-covid-19-names"/>
+    <resource>
+      <ValueSet>
+        <id value="vaccines-covid-19-names"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 37 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-vaccines-covid-19-names.html">Covid-19 Vaccine Codes for EU DCC v1.0.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--EU-1-20-1528"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-EU.471.4720.471528">EU/1/20/1528</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>Comirnaty</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--EU-1-20-1507"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-EU.471.4720.471507">EU/1/20/1507</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>Spikevax</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--EU-1-21-1529"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-EU.471.4721.471529">EU/1/21/1529</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>Vaxzevria</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--EU-1-20-1525"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-EU.471.4720.471525">EU/1/20/1525</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>Jcovden</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--CVnCoV"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-CVnCoV">CVnCoV</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>CVnCoV</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--NVX-CoV2373"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-NVX-CoV2373">NVX-CoV2373</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>NVX-CoV2373 (deprecated)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--Sputnik-V"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-Sputnik-V">Sputnik-V</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>Sputnik-V</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--Convidecia"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-Convidecia">Convidecia</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>Convidecia</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--EpiVacCorona"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-EpiVacCorona">EpiVacCorona</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>EpiVacCorona</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--BBIBP-CorV"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-BBIBP-CorV">BBIBP-CorV</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>BBIBP-CorV</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--Inactivated-SARS-CoV-2-Vero-Cell"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-Inactivated-SARS-CoV-2-Vero-Cell">Inactivated-SARS-CoV-2-Vero-Cell</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>Inactivated SARS-CoV-2 (Vero Cell) (deprecated)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--CoronaVac"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-CoronaVac">CoronaVac</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>CoronaVac</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--Covaxin"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-Covaxin">Covaxin</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>Covaxin</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--Covishield"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-Covishield">Covishield</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>Covishield</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--Covid-19-recombinant"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-Covid-19-recombinant">Covid-19-recombinant</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>Covid-19 (recombinant)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--R-COVI"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-R-COVI">R-COVI</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>R-COVI</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--CoviVac"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-CoviVac">CoviVac</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>CoviVac</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--Sputnik-Light"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-Sputnik-Light">Sputnik-Light</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>Sputnik Light</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--Hayat-Vax"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-Hayat-Vax">Hayat-Vax</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>Hayat-Vax</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--Abdala"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-Abdala">Abdala</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>Abdala</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--WIBP-CorV"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-WIBP-CorV">WIBP-CorV</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>WIBP-CorV</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--MVC-COV1901"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-MVC-COV1901">MVC-COV1901</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>MVC COVID-19 vaccine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--EU-1-21-1618"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-EU.471.4721.471618">EU/1/21/1618</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>Nuvaxovid</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--Covovax"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-Covovax">Covovax</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>Covovax</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--Vidprevtyn"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-Vidprevtyn">Vidprevtyn</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>Vidprevtyn</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--VLA2001"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-VLA2001">VLA2001</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>VLA2001 (deprecated)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--EpiVacCorona-N"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-EpiVacCorona-N">EpiVacCorona-N</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>EpiVacCorona-N</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--Sputnik-M"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-Sputnik-M">Sputnik-M</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>Sputnik M</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--Covid-19-adsorvida-inativada"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-Covid-19-adsorvida-inativada">Covid-19-adsorvida-inativada</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>Vacina adsorvida covid-19 (inativada)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--NVSI-06-08"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-NVSI-06-08">NVSI-06-08</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>NVSI-06-08</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--YS-SC2-010"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-YS-SC2-010">YS-SC2-010</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>YS-SC2-010</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--SCTV01C"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-SCTV01C">SCTV01C</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>SCTV01C</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--Covifenz"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-Covifenz">Covifenz</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>Covifenz</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--AZD2816"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-AZD2816">AZD2816</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>AZD2816</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--Soberana-02"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-Soberana-02">Soberana-02</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>Soberana 02</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--Soberana-Plus"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-Soberana-Plus">Soberana-Plus</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>Soberana Plus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---ec.europa.eu-health-documents-community-register-html--EU-1-21-1624"> </a>  
+                  <a href="CodeSystem-vaccines-covid-19-names.html#vaccines-covid-19-names-EU.471.4721.471624">EU/1/21/1624</a>
+                </td>
+                <td>https://ec.europa.eu/health/documents/community-register/html/</td>
+                <td>COVID-19 Vaccine Valneva</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://worldhealthorganization.github.io/ddcc/ValueSet/vaccines-covid-19-names"/>
+        <version value="1.0.0"/>
+        <name value="EU_DCC_ValueSet"/>
+        <title value="EU DCC Allowed Vaccine List (COVID-19)"/>
+        <status value="draft"/>
+        <date value="2022-09-13"/>
+        <publisher value="WHO"/>
+        <contact>
+          <name value="WHO"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://who.int"/>
+          </telecom>
+        </contact>
+        <description value="EU DCC Allowed Vaccine List (COVID-19)."/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:d09d7ce8-87e4-4df0-b211-db2d695a841e"/>
+          <timestamp value="2022-11-23T11:22:24+00:00"/>
+          <total value="37"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://ec.europa.eu/health/documents/community-register/html/|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="EU/1/20/1528"/>
+            <display value="Comirnaty"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="EU/1/20/1507"/>
+            <display value="Spikevax"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="EU/1/21/1529"/>
+            <display value="Vaxzevria"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="EU/1/20/1525"/>
+            <display value="Jcovden"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="CVnCoV"/>
+            <display value="CVnCoV"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="NVX-CoV2373"/>
+            <display value="NVX-CoV2373 (deprecated)"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="Sputnik-V"/>
+            <display value="Sputnik-V"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="Convidecia"/>
+            <display value="Convidecia"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="EpiVacCorona"/>
+            <display value="EpiVacCorona"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="BBIBP-CorV"/>
+            <display value="BBIBP-CorV"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="Inactivated-SARS-CoV-2-Vero-Cell"/>
+            <display value="Inactivated SARS-CoV-2 (Vero Cell) (deprecated)"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="CoronaVac"/>
+            <display value="CoronaVac"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="Covaxin"/>
+            <display value="Covaxin"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="Covishield"/>
+            <display value="Covishield"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="Covid-19-recombinant"/>
+            <display value="Covid-19 (recombinant)"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="R-COVI"/>
+            <display value="R-COVI"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="CoviVac"/>
+            <display value="CoviVac"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="Sputnik-Light"/>
+            <display value="Sputnik Light"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="Hayat-Vax"/>
+            <display value="Hayat-Vax"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="Abdala"/>
+            <display value="Abdala"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="WIBP-CorV"/>
+            <display value="WIBP-CorV"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="MVC-COV1901"/>
+            <display value="MVC COVID-19 vaccine"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="EU/1/21/1618"/>
+            <display value="Nuvaxovid"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="Covovax"/>
+            <display value="Covovax"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="Vidprevtyn"/>
+            <display value="Vidprevtyn"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="VLA2001"/>
+            <display value="VLA2001 (deprecated)"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="EpiVacCorona-N"/>
+            <display value="EpiVacCorona-N"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="Sputnik-M"/>
+            <display value="Sputnik M"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="Covid-19-adsorvida-inativada"/>
+            <display value="Vacina adsorvida covid-19 (inativada)"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="NVSI-06-08"/>
+            <display value="NVSI-06-08"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="YS-SC2-010"/>
+            <display value="YS-SC2-010"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="SCTV01C"/>
+            <display value="SCTV01C"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="Covifenz"/>
+            <display value="Covifenz"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="AZD2816"/>
+            <display value="AZD2816"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="Soberana-02"/>
+            <display value="Soberana 02"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="Soberana-Plus"/>
+            <display value="Soberana Plus"/>
+          </contains>
+          <contains>
+            <system value="https://ec.europa.eu/health/documents/community-register/html/"/>
+            <code value="EU/1/21/1624"/>
+            <display value="COVID-19 Vaccine Valneva"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -1316,7 +1861,7 @@
         <name value="ICAOV1_ValueSet"/>
         <title value="DDCC Codes for ICAO Vaccines"/>
         <status value="draft"/>
-        <date value="2022-11-23T11:18:03+00:00"/>
+        <date value="2022-11-23T11:20:15+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -1333,8 +1878,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e93226b9-5467-435c-bf81-27f5fbcde54c"/>
-          <timestamp value="2022-11-23T11:20:18+00:00"/>
+          <identifier value="urn:uuid:a7180c1b-0731-43c1-96c1-a905d35594b3"/>
+          <timestamp value="2022-11-23T11:22:24+00:00"/>
           <total value="97"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1977,7 +2522,7 @@
         <name value="WHO_DDCC_Agent_Targeted_COVID_19"/>
         <title value="WHO Agent Targeted (COVID-19)"/>
         <status value="draft"/>
-        <date value="2022-11-23T11:18:03+00:00"/>
+        <date value="2022-11-23T11:20:15+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -1994,8 +2539,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:34da66d2-eef2-4d62-8052-effb40f3252d"/>
-          <timestamp value="2022-11-23T11:20:18+00:00"/>
+          <identifier value="urn:uuid:4a53cd7b-e4f6-4481-ae35-e3a535191c0c"/>
+          <timestamp value="2022-11-23T11:22:24+00:00"/>
           <total value="14"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2375,7 +2920,7 @@
         <name value="WHO_DDCC_Allowed_Vaccines_COVID_19"/>
         <title value="WHO DDCC Allowed Vaccine List (COVID-19)"/>
         <status value="draft"/>
-        <date value="2022-11-23T11:18:03+00:00"/>
+        <date value="2022-11-23T11:20:15+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -2392,8 +2937,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:440767f4-2544-45ee-b721-e7c1c54f51fb"/>
-          <timestamp value="2022-11-23T11:20:18+00:00"/>
+          <identifier value="urn:uuid:6f961399-ae92-49c5-855e-ebb7fb926252"/>
+          <timestamp value="2022-11-23T11:22:24+00:00"/>
           <total value="32"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2775,7 +3320,7 @@
         <name value="WHO_DDCC_Brands_COVID_19"/>
         <title value="WHO DDCC Brand List (COVID-19)"/>
         <status value="draft"/>
-        <date value="2022-11-23T11:18:03+00:00"/>
+        <date value="2022-11-23T11:20:15+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -2792,8 +3337,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:51e88594-afbd-4b9e-bf46-d1f887a0fc99"/>
-          <timestamp value="2022-11-23T11:20:18+00:00"/>
+          <identifier value="urn:uuid:0a2a0c42-3c91-42d4-9048-d22313f93ac9"/>
+          <timestamp value="2022-11-23T11:22:24+00:00"/>
           <total value="20"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2947,7 +3492,7 @@
         <name value="WHO_DDCC_Disease_Targeted_COVID_19"/>
         <title value="WHO Disease or Agent Targeted (COVID-19)"/>
         <status value="draft"/>
-        <date value="2022-11-23T11:18:03+00:00"/>
+        <date value="2022-11-23T11:20:15+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -2964,8 +3509,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4d030235-b2bd-4620-b993-21fde20761c4"/>
-          <timestamp value="2022-11-23T11:20:18+00:00"/>
+          <identifier value="urn:uuid:9b2cf43e-c2ab-4955-bd45-30b3318d833b"/>
+          <timestamp value="2022-11-23T11:22:24+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3032,7 +3577,7 @@
         <name value="WHO_DDCC_Test_Result_COVID_19"/>
         <title value="WHO Test Result (COVID-19)"/>
         <status value="draft"/>
-        <date value="2022-11-23T11:18:03+00:00"/>
+        <date value="2022-11-23T11:20:15+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -3049,8 +3594,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:de4c2022-be85-4c1f-846d-f2f63ccd1092"/>
-          <timestamp value="2022-11-23T11:20:19+00:00"/>
+          <identifier value="urn:uuid:e928848e-b547-41b7-852d-68fff246b4fd"/>
+          <timestamp value="2022-11-23T11:22:25+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3354,7 +3899,7 @@
         <name value="WHO_DDCC_Vaccines_COVID_19"/>
         <title value="WHO Vaccine List (COVID-19)"/>
         <status value="draft"/>
-        <date value="2022-11-23T11:18:03+00:00"/>
+        <date value="2022-11-23T11:20:15+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -3371,8 +3916,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4f59c2d9-55c1-4600-82e4-363712c88819"/>
-          <timestamp value="2022-11-23T11:20:21+00:00"/>
+          <identifier value="urn:uuid:f9eeb71d-b502-4a38-8241-90b3cf3125cc"/>
+          <timestamp value="2022-11-23T11:22:26+00:00"/>
           <total value="31"/>
           <parameter>
             <name value="excludeNested"/>
