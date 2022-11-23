@@ -783,6 +783,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/vaccines-covid-19-names"/>
+      </reference>
+      <name value="EU DCC Allowed Vaccine List (COVID-19)"/>
+      <description value="EU DCC Allowed Vaccine List (COVID-19)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/ICAOVaccineListV1"/>
       </reference>
       <name value="DDCC Codes for ICAO Vaccines"/>
@@ -952,6 +963,17 @@
       </reference>
       <name value="DDCC QR Category Usage Codes"/>
       <description value="Possible formats available for QR usage."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/vaccines-covid-19-names"/>
+      </reference>
+      <name value="Covid-19 Vaccine Codes for EU DCC"/>
+      <description value="EU DCC codes for Covid-19 vaccines so the FHIR server can perform expansions."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1538,10 +1560,32 @@
         <valueString value="ConceptMap"/>
       </extension>
       <reference>
+        <reference value="ConceptMap/who-ddcc-map-eudcc-icd11-vaccines"/>
+      </reference>
+      <name value="WHO_DDCC_Map_EUDCC_to_ICD11_Vaccines"/>
+      <description value="Mapping from EU DCC to ICD-11 for COVID-19 Vaccines"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
         <reference value="ConceptMap/who-ddcc-map-icao-icd11-vaccines"/>
       </reference>
       <name value="WHO_DDCC_Map_ICAO_to_ICD11_Vaccines"/>
       <description value="Mapping from ICAO to ICD11 for COVID-19 Vaccines"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/who-ddcc-map-icd11-eudcc-vaccines"/>
+      </reference>
+      <name value="WHO_DDCC_Map_ICD11_to_EUDCC_Vaccines"/>
+      <description value="Mapping from ICD-11 to EU DCC for COVID-19 Vaccines"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
