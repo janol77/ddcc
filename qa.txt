@@ -1,9 +1,9 @@
 ﻿ddcc : Validation Results
 =========================================
 
-err = 732, warn = 121, info = 34
+err = 844, warn = 124, info = 35
 IG Publisher Version: 1.2.19
-Generated Wed Nov 23 04:26:55 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0.0 (canonical = http://worldhealthorganization.github.io/ddcc)
+Generated Wed Nov 23 11:22:21 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0.0 (canonical = http://worldhealthorganization.github.io/ddcc)
  Build Errors : 9 / 71 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 0 / 0 / 10
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Arabic : 0 / 0 / 10
@@ -24,6 +24,7 @@ Generated Wed Nov 23 04:26:55 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0
  /github/workspace/fsh-generated/resources/CodeSystem-DDCC-ICD11-CodeSystem : 2 / 2 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-DDCC-QR-Format-CodeSystem : 0 / 2 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-DDCC-QR-Type-CodeSystem : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-ICAOVaccineListV1 : 3 / 2 / 2
  /github/workspace/fsh-generated/resources/Composition-DDCC-Composition-Example-Arabic : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Composition-DDCC-Composition-Example-Chinese : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Composition-DDCC-Composition-Example-English : 0 / 0 / 1
@@ -32,6 +33,8 @@ Generated Wed Nov 23 04:26:55 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0
  /github/workspace/fsh-generated/resources/Composition-DDCC-Composition-Example-Spanish : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-cvx-icd11-brands : 6 / 0 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-cvx-icd11-vaccines : 6 / 0 / 1
+ /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icao-icd11-vaccines : 6 / 0 / 1
+ /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-icao-vaccines : 103 / 0 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-icd10-disease-targeted : 6 / 0 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-agent-targeted : 6 / 0 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-disease-targeted : 6 / 0 / 1
@@ -131,6 +134,7 @@ Generated Wed Nov 23 04:26:55 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0
  /github/workspace/fsh-generated/resources/ValueSet-DDCC-Folder-DesignationType : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-DDCC-QR-Format-ValueSet : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-DDCC-QR-Type-ValueSet : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-ICAOVaccineListV1 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-who-ddcc-agent-targeted-covid-19 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-who-ddcc-allowed-vaccines-covid-19 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-who-ddcc-brands-covid-19 : 0 / 1 / 1
@@ -301,6 +305,13 @@ WARNING: CodeSystem/DDCC-QR-Format-CodeSystem: CodeSystem: The ShareableCodeSyst
 INFORMATION: CodeSystem/DDCC-QR-Type-CodeSystem: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/DDCC-QR-Type-CodeSystem: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 WARNING: CodeSystem/DDCC-QR-Type-CodeSystem: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+== fsh-generated/resources/CodeSystem-ICAOVaccineListV1.json ==
+ERROR: CodeSystem.where(url = 'http://worldhealthorganization.github.io/ddcc/ICAOV1'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-ICAOVaccineListV1.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/CodeSystem/ICAOVaccineListV1) does not match the URL (http://worldhealthorganization.github.io/ddcc/ICAOV1)
+ERROR: CodeSystem.url: Resource id/url mismatch: ICAOVaccineListV1/http://worldhealthorganization.github.io/ddcc/ICAOV1
+INFORMATION: CodeSystem/ICAOVaccineListV1: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/ICAOVaccineListV1: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/ICAOVaccineListV1: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-ICAOVaccineListV1: URL Mismatch http://worldhealthorganization.github.io/ddcc/CodeSystem/ICAOVaccineListV1 vs http://worldhealthorganization.github.io/ddcc/ICAOV1
 == fsh-generated/resources/Composition-DDCC-Composition-Example-Arabic.json ==
 == fsh-generated/resources/Composition-DDCC-Composition-Example-Chinese.json ==
 == fsh-generated/resources/Composition-DDCC-Composition-Example-English.json ==
@@ -321,6 +332,117 @@ ERROR: ConceptMap.where(url = 'http://worldhealthorganization.github.io/ddcc/Con
 ERROR: ConceptMap/who-ddcc-map-cvx-icd11-vaccines: ConceptMap.source.ofType(canonical): Canonical URL 'http://hl7.org/fhir/sid/cvx' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
 ERROR: ConceptMap/who-ddcc-map-cvx-icd11-vaccines: ConceptMap.target.ofType(canonical): Canonical URL 'http://id.who.int/icd11/mms' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
 ERROR: /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-cvx-icd11-vaccines: URL Mismatch http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-cvx-icd11-vaccines vs http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_CVX_To_ICD11_Vaccines
+== fsh-generated/resources/ConceptMap-who-ddcc-map-icao-icd11-vaccines.json ==
+ERROR: ConceptMap.where(url = 'http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICAO_to_ICD11_Vaccines'): Conformance resource /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icao-icd11-vaccines.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icao-icd11-vaccines) does not match the URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICAO_to_ICD11_Vaccines)
+ERROR: ConceptMap.url: Resource id/url mismatch: who-ddcc-map-icao-icd11-vaccines/http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICAO_to_ICD11_Vaccines
+ERROR: ConceptMap.where(url = 'http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICAO_to_ICD11_Vaccines'): Conformance resource /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icao-icd11-vaccines.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icao-icd11-vaccines) does not match the URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICAO_to_ICD11_Vaccines)
+ERROR: ConceptMap/who-ddcc-map-icao-icd11-vaccines: ConceptMap.source.ofType(canonical): Canonical URL 'http://worldhealthorganization.github.io/ddcc/ICAOV1' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: ConceptMap/who-ddcc-map-icao-icd11-vaccines: ConceptMap.target.ofType(canonical): Canonical URL 'http://id.who.int/icd11/mms' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icao-icd11-vaccines: URL Mismatch http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icao-icd11-vaccines vs http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICAO_to_ICD11_Vaccines
+== fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-icao-vaccines.json ==
+ERROR: ConceptMap.where(url = 'http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_ICAO_Vaccines'): Conformance resource /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-icao-vaccines.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-icao-vaccines) does not match the URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_ICAO_Vaccines)
+ERROR: ConceptMap.url: Resource id/url mismatch: who-ddcc-map-icd11-icao-vaccines/http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_ICAO_Vaccines
+ERROR: ConceptMap.where(url = 'http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_ICAO_Vaccines'): Conformance resource /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-icao-vaccines.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-icao-vaccines) does not match the URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_ICAO_Vaccines)
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.source.ofType(canonical): Canonical URL 'http://id.who.int/icd11/mms' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.target.ofType(canonical): Canonical URL 'http://worldhealthorganization.github.io/ddcc/ICAOV1' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[0].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[0].target[1]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[0].target[2]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[0].target[3]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[0].target[4]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[0].target[5]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[0].target[6]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[0].target[7]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[1].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[1].target[1]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[1].target[2]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[1].target[3]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[2].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[2].target[1]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[3].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[3].target[1]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[3].target[2]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[3].target[3]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[3].target[4]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[4].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[4].target[1]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[4].target[2]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[4].target[3]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[4].target[4]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[5].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[5].target[1]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[5].target[2]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[6].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[6].target[1]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[7].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[7].target[1]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[8].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[8].target[1]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[9].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[9].target[1]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[9].target[2]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[10].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[10].target[1]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[10].target[2]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[10].target[3]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[10].target[4]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[11].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[12].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[12].target[1]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[12].target[2]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[12].target[3]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[12].target[4]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[12].target[5]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[12].target[6]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[13].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[13].target[1]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[13].target[2]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[13].target[3]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[13].target[4]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[14].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[14].target[1]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[14].target[2]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[14].target[3]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[15].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[15].target[1]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[15].target[2]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[16].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[16].target[1]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[16].target[2]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[16].target[3]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[17].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[17].target[1]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[18].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[18].target[1]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[18].target[2]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[19].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[19].target[1]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[19].target[2]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[19].target[3]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[19].target[4]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[20].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[20].target[1]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[20].target[2]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[21].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[21].target[1]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[21].target[2]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[22].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[22].target[1]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[22].target[2]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[23].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[23].target[1]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[24].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[24].target[1]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[24].target[2]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[25].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[25].target[1]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[26].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[26].target[1]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[26].target[2]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[27].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[27].target[1]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-icao-vaccines: ConceptMap.group[0].element[27].target[2]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-icao-vaccines: URL Mismatch http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-icao-vaccines vs http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_ICAO_Vaccines
 == fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-icd10-disease-targeted.json ==
 ERROR: ConceptMap.where(url = 'http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_ICD10_Disease_Targeted'): Conformance resource /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-icd10-disease-targeted.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-icd10-disease-targeted) does not match the URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_ICD10_Disease_Targeted)
 ERROR: ConceptMap.url: Resource id/url mismatch: who-ddcc-map-icd11-icd10-disease-targeted/http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_ICD10_Disease_Targeted
@@ -590,6 +712,8 @@ WARNING: ValueSet/DDCC-Folder-DesignationType: ValueSet: The ShareableValueSet p
 WARNING: ValueSet/DDCC-QR-Format-ValueSet: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-DDCC-QR-Type-ValueSet.json ==
 WARNING: ValueSet/DDCC-QR-Type-ValueSet: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-ICAOVaccineListV1.json ==
+WARNING: ValueSet/ICAOVaccineListV1: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-who-ddcc-agent-targeted-covid-19.json ==
 WARNING: ValueSet/who-ddcc-agent-targeted-covid-19: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-who-ddcc-allowed-vaccines-covid-19.json ==

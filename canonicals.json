@@ -112,6 +112,20 @@
     "name": "ICD11_SNOMED_CT_COVID19_vaccines"
   },
   {
+    "id": "who-ddcc-map-icao-icd11-vaccines",
+    "type": "ConceptMap",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICAO_to_ICD11_Vaccines",
+    "version": "1.0.0",
+    "name": "ICAO_ICD11_COVID19_vaccines"
+  },
+  {
+    "id": "who-ddcc-map-icd11-icao-vaccines",
+    "type": "ConceptMap",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_ICAO_Vaccines",
+    "version": "1.0.0",
+    "name": "ICD11_ICAO_COVID19_vaccines"
+  },
+  {
     "id": "who-ddcc-map-icd11-icd10-disease-targeted",
     "type": "ConceptMap",
     "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_ICD10_Disease_Targeted",
@@ -194,6 +208,13 @@
     "url": "http://worldhealthorganization.github.io/ddcc/DDCCVSCoreDataSetQuestionnaire",
     "version": "1.0.0",
     "name": "DDCCVSCoreDataSetQuestionnaire"
+  },
+  {
+    "id": "ICAOVaccineListV1",
+    "type": "CodeSystem",
+    "url": "http://worldhealthorganization.github.io/ddcc/ICAOV1",
+    "version": "1.0.0",
+    "name": "ICAOV1_CodeSystem"
   },
   {
     "id": "fhir.who.ddcc",
@@ -712,6 +733,13 @@
     "url": "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Type-ValueSet",
     "version": "1.0.0",
     "name": "DDCC_QR_Type_ValueSet"
+  },
+  {
+    "id": "ICAOVaccineListV1",
+    "type": "ValueSet",
+    "url": "http://worldhealthorganization.github.io/ddcc/ValueSet/ICAOVaccineListV1",
+    "version": "1.0.0",
+    "name": "ICAOV1_ValueSet"
   },
   {
     "id": "who-ddcc-agent-targeted-covid-19",
