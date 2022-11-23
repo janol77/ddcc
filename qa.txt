@@ -1,9 +1,9 @@
 ﻿ddcc : Validation Results
 =========================================
 
-err = 867, warn = 127, info = 36
+err = 893, warn = 130, info = 37
 IG Publisher Version: 1.2.19
-Generated Wed Nov 23 11:24:30 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0.0 (canonical = http://worldhealthorganization.github.io/ddcc)
+Generated Wed Nov 23 15:20:30 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0.0 (canonical = http://worldhealthorganization.github.io/ddcc)
  Build Errors : 9 / 71 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 0 / 0 / 10
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Arabic : 0 / 0 / 10
@@ -24,6 +24,7 @@ Generated Wed Nov 23 11:24:30 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0
  /github/workspace/fsh-generated/resources/CodeSystem-DDCC-ICD11-CodeSystem : 2 / 2 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-DDCC-QR-Format-CodeSystem : 0 / 2 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-DDCC-QR-Type-CodeSystem : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-DIVOC-CodeSystem : 3 / 2 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-ICAOVaccineListV1 : 3 / 2 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-vaccines-covid-19-names : 2 / 2 / 2
  /github/workspace/fsh-generated/resources/Composition-DDCC-Composition-Example-Arabic : 0 / 0 / 1
@@ -34,8 +35,10 @@ Generated Wed Nov 23 11:24:30 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0
  /github/workspace/fsh-generated/resources/Composition-DDCC-Composition-Example-Spanish : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-cvx-icd11-brands : 6 / 0 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-cvx-icd11-vaccines : 6 / 0 / 1
+ /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-divoc-icd11-vaccines : 6 / 0 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-eudcc-icd11-vaccines : 6 / 0 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icao-icd11-vaccines : 6 / 0 / 1
+ /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-divoc-vaccines : 17 / 0 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-eudcc-vaccines : 15 / 0 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-icao-vaccines : 103 / 0 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-icd10-disease-targeted : 6 / 0 / 1
@@ -137,6 +140,7 @@ Generated Wed Nov 23 11:24:30 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0
  /github/workspace/fsh-generated/resources/ValueSet-DDCC-Folder-DesignationType : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-DDCC-QR-Format-ValueSet : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-DDCC-QR-Type-ValueSet : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-DIVOC-ValueSet : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-ICAOVaccineListV1 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vaccines-covid-19-names : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-who-ddcc-agent-targeted-covid-19 : 0 / 1 / 1
@@ -243,8 +247,8 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/ddcc-to-shc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/shc-to-ddcc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/Questionnaire-DDCCTRCoreDataSetQuestionnaire-form.html: unexpected non-end of element null::div  at line 243 column 253
-ERROR: /github/workspace/output/Questionnaire-DDCCVSCoreDataSetQuestionnaire-form.html: unexpected non-end of element null::div  at line 243 column 253
 ERROR: /github/workspace/output/Questionnaire-DDCCHCIDRegistrationQuestionnaire-form.html: unexpected non-end of element null::div  at line 243 column 259
+ERROR: /github/workspace/output/Questionnaire-DDCCVSCoreDataSetQuestionnaire-form.html: unexpected non-end of element null::div  at line 243 column 253
 ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaire-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 357, column 238: The link 'OperationDefinition-Questionnaire-assemble.html' for "$assemble" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaire-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 357, column 580: The link 'StructureDefinition-sdc-questionnaire-subQuestionnaire.html' for "sub-questionnaire" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaireSDC-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 357, column 238: The link 'OperationDefinition-Questionnaire-assemble.html' for "$assemble" cannot be resolved
@@ -309,6 +313,13 @@ WARNING: CodeSystem/DDCC-QR-Format-CodeSystem: CodeSystem: The ShareableCodeSyst
 INFORMATION: CodeSystem/DDCC-QR-Type-CodeSystem: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/DDCC-QR-Type-CodeSystem: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 WARNING: CodeSystem/DDCC-QR-Type-CodeSystem: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+== fsh-generated/resources/CodeSystem-DIVOC-CodeSystem.json ==
+ERROR: CodeSystem.where(url = 'http://worldhealthorganization.github.io/ddcc/DIVOC'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-DIVOC-CodeSystem.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/CodeSystem/DIVOC-CodeSystem) does not match the URL (http://worldhealthorganization.github.io/ddcc/DIVOC)
+ERROR: CodeSystem.url: Resource id/url mismatch: DIVOC-CodeSystem/http://worldhealthorganization.github.io/ddcc/DIVOC
+INFORMATION: CodeSystem/DIVOC-CodeSystem: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/DIVOC-CodeSystem: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/DIVOC-CodeSystem: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-DIVOC-CodeSystem: URL Mismatch http://worldhealthorganization.github.io/ddcc/CodeSystem/DIVOC-CodeSystem vs http://worldhealthorganization.github.io/ddcc/DIVOC
 == fsh-generated/resources/CodeSystem-ICAOVaccineListV1.json ==
 ERROR: CodeSystem.where(url = 'http://worldhealthorganization.github.io/ddcc/ICAOV1'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-ICAOVaccineListV1.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/CodeSystem/ICAOVaccineListV1) does not match the URL (http://worldhealthorganization.github.io/ddcc/ICAOV1)
 ERROR: CodeSystem.url: Resource id/url mismatch: ICAOVaccineListV1/http://worldhealthorganization.github.io/ddcc/ICAOV1
@@ -342,6 +353,13 @@ ERROR: ConceptMap.where(url = 'http://worldhealthorganization.github.io/ddcc/Con
 ERROR: ConceptMap/who-ddcc-map-cvx-icd11-vaccines: ConceptMap.source.ofType(canonical): Canonical URL 'http://hl7.org/fhir/sid/cvx' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
 ERROR: ConceptMap/who-ddcc-map-cvx-icd11-vaccines: ConceptMap.target.ofType(canonical): Canonical URL 'http://id.who.int/icd11/mms' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
 ERROR: /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-cvx-icd11-vaccines: URL Mismatch http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-cvx-icd11-vaccines vs http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_CVX_To_ICD11_Vaccines
+== fsh-generated/resources/ConceptMap-who-ddcc-map-divoc-icd11-vaccines.json ==
+ERROR: ConceptMap.where(url = 'http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_DIVOC_to_ICD11_Vaccines'): Conformance resource /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-divoc-icd11-vaccines.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-divoc-icd11-vaccines) does not match the URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_DIVOC_to_ICD11_Vaccines)
+ERROR: ConceptMap.url: Resource id/url mismatch: who-ddcc-map-divoc-icd11-vaccines/http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_DIVOC_to_ICD11_Vaccines
+ERROR: ConceptMap.where(url = 'http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_DIVOC_to_ICD11_Vaccines'): Conformance resource /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-divoc-icd11-vaccines.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-divoc-icd11-vaccines) does not match the URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_DIVOC_to_ICD11_Vaccines)
+ERROR: ConceptMap/who-ddcc-map-divoc-icd11-vaccines: ConceptMap.source.ofType(canonical): Canonical URL 'http://worldhealthorganization.github.io/ddcc/DIVOC' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: ConceptMap/who-ddcc-map-divoc-icd11-vaccines: ConceptMap.target.ofType(canonical): Canonical URL 'http://id.who.int/icd11/mms' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-divoc-icd11-vaccines: URL Mismatch http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-divoc-icd11-vaccines vs http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_DIVOC_to_ICD11_Vaccines
 == fsh-generated/resources/ConceptMap-who-ddcc-map-eudcc-icd11-vaccines.json ==
 ERROR: ConceptMap.where(url = 'http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_EUDCC_to_ICD11_Vaccines'): Conformance resource /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-eudcc-icd11-vaccines.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-eudcc-icd11-vaccines) does not match the URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_EUDCC_to_ICD11_Vaccines)
 ERROR: ConceptMap.url: Resource id/url mismatch: who-ddcc-map-eudcc-icd11-vaccines/http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_EUDCC_to_ICD11_Vaccines
@@ -356,6 +374,24 @@ ERROR: ConceptMap.where(url = 'http://worldhealthorganization.github.io/ddcc/Con
 ERROR: ConceptMap/who-ddcc-map-icao-icd11-vaccines: ConceptMap.source.ofType(canonical): Canonical URL 'http://worldhealthorganization.github.io/ddcc/ICAOV1' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
 ERROR: ConceptMap/who-ddcc-map-icao-icd11-vaccines: ConceptMap.target.ofType(canonical): Canonical URL 'http://id.who.int/icd11/mms' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
 ERROR: /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icao-icd11-vaccines: URL Mismatch http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icao-icd11-vaccines vs http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICAO_to_ICD11_Vaccines
+== fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-divoc-vaccines.json ==
+ERROR: ConceptMap.where(url = 'http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_DIVOC_Vaccines'): Conformance resource /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-divoc-vaccines.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-divoc-vaccines) does not match the URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_DIVOC_Vaccines)
+ERROR: ConceptMap.url: Resource id/url mismatch: who-ddcc-map-icd11-divoc-vaccines/http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_DIVOC_Vaccines
+ERROR: ConceptMap.where(url = 'http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_DIVOC_Vaccines'): Conformance resource /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-divoc-vaccines.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-divoc-vaccines) does not match the URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_DIVOC_Vaccines)
+ERROR: ConceptMap/who-ddcc-map-icd11-divoc-vaccines: ConceptMap.source.ofType(canonical): Canonical URL 'http://id.who.int/icd11/mms' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: ConceptMap/who-ddcc-map-icd11-divoc-vaccines: ConceptMap.target.ofType(canonical): Canonical URL 'http://worldhealthorganization.github.io/ddcc/DIVOC' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: ConceptMap/who-ddcc-map-icd11-divoc-vaccines: ConceptMap.group[0].element[1].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-divoc-vaccines: ConceptMap.group[0].element[1].target[1]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-divoc-vaccines: ConceptMap.group[0].element[1].target[2]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-divoc-vaccines: ConceptMap.group[0].element[2].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-divoc-vaccines: ConceptMap.group[0].element[2].target[1]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-divoc-vaccines: ConceptMap.group[0].element[2].target[2]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-divoc-vaccines: ConceptMap.group[0].element[2].target[3]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-divoc-vaccines: ConceptMap.group[0].element[3].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-divoc-vaccines: ConceptMap.group[0].element[3].target[1]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-divoc-vaccines: ConceptMap.group[0].element[5].target[0]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: ConceptMap/who-ddcc-map-icd11-divoc-vaccines: ConceptMap.group[0].element[5].target[1]: Rule cmd-1: 'If the map is narrower or inexact, there SHALL be some comments' Failed
+ERROR: /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-divoc-vaccines: URL Mismatch http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-divoc-vaccines vs http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_DIVOC_Vaccines
 == fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-eudcc-vaccines.json ==
 ERROR: ConceptMap.where(url = 'http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_EUDCC_Vaccines'): Conformance resource /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-eudcc-vaccines.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-eudcc-vaccines) does not match the URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_EUDCC_Vaccines)
 ERROR: ConceptMap.url: Resource id/url mismatch: who-ddcc-map-icd11-eudcc-vaccines/http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_EUDCC_Vaccines
@@ -745,6 +781,8 @@ WARNING: ValueSet/DDCC-Folder-DesignationType: ValueSet: The ShareableValueSet p
 WARNING: ValueSet/DDCC-QR-Format-ValueSet: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-DDCC-QR-Type-ValueSet.json ==
 WARNING: ValueSet/DDCC-QR-Type-ValueSet: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-DIVOC-ValueSet.json ==
+WARNING: ValueSet/DIVOC-ValueSet: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-ICAOVaccineListV1.json ==
 WARNING: ValueSet/ICAOVaccineListV1: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-vaccines-covid-19-names.json ==

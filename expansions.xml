@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="79b1ee98-7a57-4990-a558-14f607882dbc"/>
+  <id value="ff1f1efc-a215-4d4d-8930-4100ef2a3f08"/>
   <meta>
-    <lastUpdated value="2022-11-23T11:20:15.602+00:00"/>
+    <lastUpdated value="2022-11-23T15:17:18.791+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -54,7 +54,7 @@
         <name value="DDCC_Composition_Category_ValueSet"/>
         <title value="DDCC Composition Category Codes"/>
         <status value="active"/>
-        <date value="2022-11-23T11:20:15+00:00"/>
+        <date value="2022-11-23T15:17:18+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -71,8 +71,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:10a2fcaa-521d-4e1c-a5df-4987cac1f72b"/>
-          <timestamp value="2022-11-23T11:22:24+00:00"/>
+          <identifier value="urn:uuid:a1f1cd60-a7f8-4ccc-b403-5936792d9add"/>
+          <timestamp value="2022-11-23T15:18:56+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -144,7 +144,7 @@
         <name value="DDCC_Device_Property_ValueSet"/>
         <title value="DDCC Device Property Codes"/>
         <status value="active"/>
-        <date value="2022-11-23T11:20:15+00:00"/>
+        <date value="2022-11-23T15:17:18+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -161,8 +161,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0fcc64cc-3734-4441-8205-6362022c3b86"/>
-          <timestamp value="2022-11-23T11:22:24+00:00"/>
+          <identifier value="urn:uuid:05c84638-2a87-4996-b52c-0e684af80673"/>
+          <timestamp value="2022-11-23T15:18:56+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -226,7 +226,7 @@
         <name value="DDCC_Folder_DesignationType_ValueSet"/>
         <title value="DDCC DesignationTypes for Folder"/>
         <status value="active"/>
-        <date value="2022-11-23T11:20:15+00:00"/>
+        <date value="2022-11-23T15:17:18+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -243,8 +243,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:55bd391d-2deb-4220-9eee-99a841631a90"/>
-          <timestamp value="2022-11-23T11:22:24+00:00"/>
+          <identifier value="urn:uuid:3c350ae3-cb88-400d-83ac-f82db550034f"/>
+          <timestamp value="2022-11-23T15:18:56+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -319,7 +319,7 @@
         <name value="DDCC_QR_Format_ValueSet"/>
         <title value="DDCC QR Format Codes"/>
         <status value="active"/>
-        <date value="2022-11-23T11:20:15+00:00"/>
+        <date value="2022-11-23T15:17:18+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -336,8 +336,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fdb5b9ef-2dda-4459-9fc4-2c2277a1ebe3"/>
-          <timestamp value="2022-11-23T11:22:24+00:00"/>
+          <identifier value="urn:uuid:7ef66c6b-34f2-4173-b7fa-16b2d2299e21"/>
+          <timestamp value="2022-11-23T15:18:56+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -446,7 +446,7 @@
         <name value="DDCC_QR_Type_ValueSet"/>
         <title value="DDCC QR Type Codes"/>
         <status value="active"/>
-        <date value="2022-11-23T11:20:15+00:00"/>
+        <date value="2022-11-23T15:17:18+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -463,8 +463,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6701c54a-4471-4b40-b418-a46cf9825103"/>
-          <timestamp value="2022-11-23T11:22:24+00:00"/>
+          <identifier value="urn:uuid:2dcda28a-7160-4e91-925f-af9c1623452b"/>
+          <timestamp value="2022-11-23T15:18:56+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -503,6 +503,239 @@
             <system value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem"/>
             <code value="divoc"/>
             <display value="DIVOC"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://worldhealthorganization.github.io/ddcc/ValueSet/DIVOC-ValueSet"/>
+    <resource>
+      <ValueSet>
+        <id value="DIVOC-ValueSet"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 13 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-DIVOC-CodeSystem.html">COVID-19 Vaccine Codes for DIVOC v1.0.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC001"> </a>  
+                  <a href="CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC001">DIVOC001</a>
+                </td>
+                <td>http://worldhealthorganization.github.io/ddcc/DIVOC</td>
+                <td>Zycov-D</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC002"> </a>  
+                  <a href="CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC002">DIVOC002</a>
+                </td>
+                <td>http://worldhealthorganization.github.io/ddcc/DIVOC</td>
+                <td>Covaxin</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC003"> </a>  
+                  <a href="CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC003">DIVOC003</a>
+                </td>
+                <td>http://worldhealthorganization.github.io/ddcc/DIVOC</td>
+                <td>Covishield</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC004"> </a>  
+                  <a href="CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC004">DIVOC004</a>
+                </td>
+                <td>http://worldhealthorganization.github.io/ddcc/DIVOC</td>
+                <td>Sputnik V</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC005"> </a>  
+                  <a href="CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC005">DIVOC005</a>
+                </td>
+                <td>http://worldhealthorganization.github.io/ddcc/DIVOC</td>
+                <td>Pfizer-BioNTech or Comirnaty</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC006"> </a>  
+                  <a href="CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC006">DIVOC006</a>
+                </td>
+                <td>http://worldhealthorganization.github.io/ddcc/DIVOC</td>
+                <td>Janssen</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC007"> </a>  
+                  <a href="CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC007">DIVOC007</a>
+                </td>
+                <td>http://worldhealthorganization.github.io/ddcc/DIVOC</td>
+                <td>Moderna or Modema or Spikevax</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC008"> </a>  
+                  <a href="CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC008">DIVOC008</a>
+                </td>
+                <td>http://worldhealthorganization.github.io/ddcc/DIVOC</td>
+                <td>AstraZeneca or Vaxzevria</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC009"> </a>  
+                  <a href="CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC009">DIVOC009</a>
+                </td>
+                <td>http://worldhealthorganization.github.io/ddcc/DIVOC</td>
+                <td>Sinovac or Coronavac</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC010"> </a>  
+                  <a href="CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC010">DIVOC010</a>
+                </td>
+                <td>http://worldhealthorganization.github.io/ddcc/DIVOC</td>
+                <td>BBIBP- CorV or Sinopharm</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC011"> </a>  
+                  <a href="CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC011">DIVOC011</a>
+                </td>
+                <td>http://worldhealthorganization.github.io/ddcc/DIVOC</td>
+                <td>Convidecia</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC012"> </a>  
+                  <a href="CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC012">DIVOC012</a>
+                </td>
+                <td>http://worldhealthorganization.github.io/ddcc/DIVOC</td>
+                <td>Corbevax</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC013"> </a>  
+                  <a href="CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC013">DIVOC013</a>
+                </td>
+                <td>http://worldhealthorganization.github.io/ddcc/DIVOC</td>
+                <td>Novavax/Covovax NVX - CoV2373</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://worldhealthorganization.github.io/ddcc/ValueSet/DIVOC-ValueSet"/>
+        <version value="1.0.0"/>
+        <name value="DIVOC_ValueSet"/>
+        <title value="COVID-19 Vaccine Codes for DIVOC"/>
+        <status value="draft"/>
+        <date value="2022-11-23T15:17:18+00:00"/>
+        <publisher value="WHO"/>
+        <contact>
+          <name value="WHO"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://who.int"/>
+          </telecom>
+        </contact>
+        <description value="COVID-19 Vaccine codes for DIVOC so the FHIR server can perform expansions."/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:de6e638c-1fc2-4dc1-b330-5166d76812eb"/>
+          <timestamp value="2022-11-23T15:18:56+00:00"/>
+          <total value="13"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://worldhealthorganization.github.io/ddcc/DIVOC|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://worldhealthorganization.github.io/ddcc/DIVOC"/>
+            <code value="DIVOC001"/>
+            <display value="Zycov-D"/>
+          </contains>
+          <contains>
+            <system value="http://worldhealthorganization.github.io/ddcc/DIVOC"/>
+            <code value="DIVOC002"/>
+            <display value="Covaxin"/>
+          </contains>
+          <contains>
+            <system value="http://worldhealthorganization.github.io/ddcc/DIVOC"/>
+            <code value="DIVOC003"/>
+            <display value="Covishield"/>
+          </contains>
+          <contains>
+            <system value="http://worldhealthorganization.github.io/ddcc/DIVOC"/>
+            <code value="DIVOC004"/>
+            <display value="Sputnik V"/>
+          </contains>
+          <contains>
+            <system value="http://worldhealthorganization.github.io/ddcc/DIVOC"/>
+            <code value="DIVOC005"/>
+            <display value="Pfizer-BioNTech or Comirnaty"/>
+          </contains>
+          <contains>
+            <system value="http://worldhealthorganization.github.io/ddcc/DIVOC"/>
+            <code value="DIVOC006"/>
+            <display value="Janssen"/>
+          </contains>
+          <contains>
+            <system value="http://worldhealthorganization.github.io/ddcc/DIVOC"/>
+            <code value="DIVOC007"/>
+            <display value="Moderna or Modema or Spikevax"/>
+          </contains>
+          <contains>
+            <system value="http://worldhealthorganization.github.io/ddcc/DIVOC"/>
+            <code value="DIVOC008"/>
+            <display value="AstraZeneca or Vaxzevria"/>
+          </contains>
+          <contains>
+            <system value="http://worldhealthorganization.github.io/ddcc/DIVOC"/>
+            <code value="DIVOC009"/>
+            <display value="Sinovac or Coronavac"/>
+          </contains>
+          <contains>
+            <system value="http://worldhealthorganization.github.io/ddcc/DIVOC"/>
+            <code value="DIVOC010"/>
+            <display value="BBIBP- CorV or Sinopharm"/>
+          </contains>
+          <contains>
+            <system value="http://worldhealthorganization.github.io/ddcc/DIVOC"/>
+            <code value="DIVOC011"/>
+            <display value="Convidecia"/>
+          </contains>
+          <contains>
+            <system value="http://worldhealthorganization.github.io/ddcc/DIVOC"/>
+            <code value="DIVOC012"/>
+            <display value="Corbevax"/>
+          </contains>
+          <contains>
+            <system value="http://worldhealthorganization.github.io/ddcc/DIVOC"/>
+            <code value="DIVOC013"/>
+            <display value="Novavax/Covovax NVX - CoV2373"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -853,8 +1086,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d09d7ce8-87e4-4df0-b211-db2d695a841e"/>
-          <timestamp value="2022-11-23T11:22:24+00:00"/>
+          <identifier value="urn:uuid:7621c498-7c8e-46e7-ad0a-a4c607bb325a"/>
+          <timestamp value="2022-11-23T15:18:56+00:00"/>
           <total value="37"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1861,7 +2094,7 @@
         <name value="ICAOV1_ValueSet"/>
         <title value="DDCC Codes for ICAO Vaccines"/>
         <status value="draft"/>
-        <date value="2022-11-23T11:20:15+00:00"/>
+        <date value="2022-11-23T15:17:18+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -1878,8 +2111,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a7180c1b-0731-43c1-96c1-a905d35594b3"/>
-          <timestamp value="2022-11-23T11:22:24+00:00"/>
+          <identifier value="urn:uuid:d9472c0b-6084-4aa1-bd8e-3e882c9ade52"/>
+          <timestamp value="2022-11-23T15:18:57+00:00"/>
           <total value="97"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2522,7 +2755,7 @@
         <name value="WHO_DDCC_Agent_Targeted_COVID_19"/>
         <title value="WHO Agent Targeted (COVID-19)"/>
         <status value="draft"/>
-        <date value="2022-11-23T11:20:15+00:00"/>
+        <date value="2022-11-23T15:17:18+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -2539,8 +2772,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4a53cd7b-e4f6-4481-ae35-e3a535191c0c"/>
-          <timestamp value="2022-11-23T11:22:24+00:00"/>
+          <identifier value="urn:uuid:82cb917a-342c-464d-8afe-3e79fe413249"/>
+          <timestamp value="2022-11-23T15:18:57+00:00"/>
           <total value="14"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2920,7 +3153,7 @@
         <name value="WHO_DDCC_Allowed_Vaccines_COVID_19"/>
         <title value="WHO DDCC Allowed Vaccine List (COVID-19)"/>
         <status value="draft"/>
-        <date value="2022-11-23T11:20:15+00:00"/>
+        <date value="2022-11-23T15:17:18+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -2937,8 +3170,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6f961399-ae92-49c5-855e-ebb7fb926252"/>
-          <timestamp value="2022-11-23T11:22:24+00:00"/>
+          <identifier value="urn:uuid:5fef50be-dc88-4c40-8435-1e90f191d1a4"/>
+          <timestamp value="2022-11-23T15:18:57+00:00"/>
           <total value="32"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3320,7 +3553,7 @@
         <name value="WHO_DDCC_Brands_COVID_19"/>
         <title value="WHO DDCC Brand List (COVID-19)"/>
         <status value="draft"/>
-        <date value="2022-11-23T11:20:15+00:00"/>
+        <date value="2022-11-23T15:17:18+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -3337,8 +3570,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0a2a0c42-3c91-42d4-9048-d22313f93ac9"/>
-          <timestamp value="2022-11-23T11:22:24+00:00"/>
+          <identifier value="urn:uuid:742d86fa-3799-405b-a105-81f5dee870ed"/>
+          <timestamp value="2022-11-23T15:18:57+00:00"/>
           <total value="20"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3492,7 +3725,7 @@
         <name value="WHO_DDCC_Disease_Targeted_COVID_19"/>
         <title value="WHO Disease or Agent Targeted (COVID-19)"/>
         <status value="draft"/>
-        <date value="2022-11-23T11:20:15+00:00"/>
+        <date value="2022-11-23T15:17:18+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -3509,8 +3742,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9b2cf43e-c2ab-4955-bd45-30b3318d833b"/>
-          <timestamp value="2022-11-23T11:22:24+00:00"/>
+          <identifier value="urn:uuid:5770a96f-7931-482f-86d2-6bd7bd0adb44"/>
+          <timestamp value="2022-11-23T15:18:57+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3577,7 +3810,7 @@
         <name value="WHO_DDCC_Test_Result_COVID_19"/>
         <title value="WHO Test Result (COVID-19)"/>
         <status value="draft"/>
-        <date value="2022-11-23T11:20:15+00:00"/>
+        <date value="2022-11-23T15:17:18+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -3594,8 +3827,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e928848e-b547-41b7-852d-68fff246b4fd"/>
-          <timestamp value="2022-11-23T11:22:25+00:00"/>
+          <identifier value="urn:uuid:766466be-adf8-4db5-9a11-6ad4cd411705"/>
+          <timestamp value="2022-11-23T15:18:58+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3899,7 +4132,7 @@
         <name value="WHO_DDCC_Vaccines_COVID_19"/>
         <title value="WHO Vaccine List (COVID-19)"/>
         <status value="draft"/>
-        <date value="2022-11-23T11:20:15+00:00"/>
+        <date value="2022-11-23T15:17:18+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -3916,8 +4149,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f9eeb71d-b502-4a38-8241-90b3cf3125cc"/>
-          <timestamp value="2022-11-23T11:22:26+00:00"/>
+          <identifier value="urn:uuid:8982ee1b-c92f-4d44-a8b8-71e4a2fbe763"/>
+          <timestamp value="2022-11-23T15:18:59+00:00"/>
           <total value="31"/>
           <parameter>
             <name value="excludeNested"/>
