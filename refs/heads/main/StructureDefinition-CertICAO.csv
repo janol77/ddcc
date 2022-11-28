@@ -128,7 +128,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Administering Center","Administering Center","","","","","","","","","",,,,,"",,,,"CertICAOVDS.data.msg.ve.vd.adm",0,1,"",""
 "CertICAOVDS.data.msg.ve.vd.ctr","CertICAOVDS.data.msg.ve.vd.ctr","","","",0,1,"","","","string {[]} {[]}
 ","Country AUS","Country AUS","","","","","","","","","",,,,,"",,,,"CertICAOVDS.data.msg.ve.vd.ctr",0,1,"",""
-"CertICAOVDS.data.msg.ve.vd.dvc","CertICAOVDS.data.msg.ve.vd.dvc","","","",0,1,"","","","string {[]} {[]}
+"CertICAOVDS.data.msg.ve.vd.dvc","CertICAOVDS.data.msg.ve.vd.dvc","","","",0,1,"","","","dateTime {[]} {[]}
 ","Date of Vaccination","Date of Vaccination","","","","","","","","","",,,,,"",,,,"CertICAOVDS.data.msg.ve.vd.dvc",0,1,"",""
 "CertICAOVDS.data.msg.ve.vd.lot","CertICAOVDS.data.msg.ve.vd.lot","","","",0,1,"","","","string {[]} {[]}
 ","Lot #","Lot #","","","","","","","","","",,,,,"",,,,"CertICAOVDS.data.msg.ve.vd.lot",0,1,"",""
