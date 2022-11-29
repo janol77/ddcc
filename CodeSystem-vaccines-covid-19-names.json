@@ -10,6 +10,7 @@
   "name": "EU_DCC_CodeSystem",
   "title": "Covid-19 Vaccine Codes for EU DCC",
   "status": "active",
+  "experimental": false,
   "date": "2022-09-13",
   "publisher": "WHO",
   "contact": [
@@ -34,6 +35,7 @@
       ]
     }
   ],
+  "caseSensitive": true,
   "content": "complete",
   "count": 37,
   "concept": [
