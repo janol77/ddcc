@@ -10,6 +10,7 @@
   <name value="EU_DCC_CodeSystem"/>
   <title value="Covid-19 Vaccine Codes for EU DCC"/>
   <status value="active"/>
+  <experimental value="false"/>
   <date value="2022-09-13"/>
   <publisher value="WHO"/>
   <contact>
@@ -26,6 +27,7 @@
       <code value="001"/>
     </coding>
   </jurisdiction>
+  <caseSensitive value="true"/>
   <content value="complete"/>
   <count value="37"/>
   <concept>

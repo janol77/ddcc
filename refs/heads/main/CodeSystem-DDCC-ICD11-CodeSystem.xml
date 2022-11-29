@@ -10,7 +10,8 @@
   <name value="DDCC_ICD11_CodeSystem"/>
   <title value="DDCC Codes for ICD11"/>
   <status value="active"/>
-  <date value="2022-11-28T15:39:12+00:00"/>
+  <experimental value="false"/>
+  <date value="2022-11-28T23:56:31+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -26,6 +27,7 @@
       <code value="001"/>
     </coding>
   </jurisdiction>
+  <caseSensitive value="true"/>
   <content value="complete"/>
   <count value="48"/>
   <concept>

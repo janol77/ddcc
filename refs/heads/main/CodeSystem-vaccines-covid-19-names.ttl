@@ -17,6 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "EU_DCC_CodeSystem"];
   fhir:CodeSystem.title [ fhir:value "Covid-19 Vaccine Codes for EU DCC"];
   fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
   fhir:CodeSystem.date [ fhir:value "2022-09-13"^^xsd:date];
   fhir:CodeSystem.publisher [ fhir:value "WHO"];
   fhir:CodeSystem.contact [
@@ -37,6 +38,7 @@
        fhir:Coding.code [ fhir:value "001" ]
      ]
   ];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
   fhir:CodeSystem.content [ fhir:value "complete"];
   fhir:CodeSystem.count [ fhir:value "37"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [

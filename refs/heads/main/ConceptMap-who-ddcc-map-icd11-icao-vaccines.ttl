@@ -10,9 +10,9 @@
   fhir:Resource.id [ fhir:value "who-ddcc-map-icd11-icao-vaccines"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ICD11_ICAO_COVID19_vaccines (http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_ICAO_Vaccines)</h2><p>Mapping from <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html\">http://id.who.int/icd11/mms</a> to <a href=\"CodeSystem-ICAOVaccineListV1.html\">http://worldhealthorganization.github.io/ddcc/ICAOV1</a></p><p>DRAFT (not intended for production usage). Published on 2022-11-23 by WHO (WHO: <a href=\"http://who.int\">http://who.int</a>). </p><div><p>Rule-based mappings between ICD-11 and ICAO for COVID-19 Vaccines</p>\n</div><br/><p><b>Group 1</b>Mapping from <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html\">DDCC Codes for ICD11</a> to <a href=\"CodeSystem-ICAOVaccineListV1.html\">DDCC Codes for ICAO Vaccines</a></p><table class=\"grid\"><tr><td colspan=\"2\"><b>Source Concept Details</b></td><td><b>Relationship</b></td><td colspan=\"2\"><b>Target Concept Details</b></td></tr><tr><td colspan=\"2\"><b>Codes</b> from <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html\" title=\"http://id.who.int/icd11/mms\">DDCC Codes for ICD11</a></td><td/><td colspan=\"2\"><b>Codes</b> from <a href=\"CodeSystem-ICAOVaccineListV1.html\" title=\"http://worldhealthorganization.github.io/ddcc/ICAOV1\">DDCC Codes for ICAO Vaccines</a></td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM68M6</td><td style=\"border-left-width: 0px; border-bottom-style: none\">COVID-19 vaccine</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO001</td><td style=\"border-left-width: 0px\">Comirnaty</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO002</td><td style=\"border-left-width: 0px\">Tozinameran</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO003</td><td style=\"border-left-width: 0px\">Pfizer-BioNTech COVID-19 vaccine BNT162b2</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO004</td><td style=\"border-left-width: 0px\">3 LNP-mRNAS</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO005</td><td style=\"border-left-width: 0px\">Tozinameran (INN)</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO006</td><td style=\"border-left-width: 0px\">BNT162b2/COMIRNATY</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO007</td><td style=\"border-left-width: 0px\">Pfizer BioNTech-Comirnaty</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO008</td><td style=\"border-left-width: 0px\">BNT162</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM3DT5</td><td style=\"border-left-width: 0px; border-bottom-style: none\">COVID-19 Vaccine Moderna</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO009</td><td style=\"border-left-width: 0px\">COVID-19 Vaccine Moderna</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO010</td><td style=\"border-left-width: 0px\">COVID-19 mRNA Vaccine Moderna mRNA-1273</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO011</td><td style=\"border-left-width: 0px\">Spikevax</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO012</td><td style=\"border-left-width: 0px\">Moderna-Spikevax</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM52P3</td><td style=\"border-left-width: 0px; border-bottom-style: none\">ZyCov-D</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO013</td><td style=\"border-left-width: 0px\">ZyCov-D</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO014</td><td style=\"border-left-width: 0px\">Zydus-ZyCov-D</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM3CT4</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Recombinant SARS-CoV-2 vaccine</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO015</td><td style=\"border-left-width: 0px\">Recombinant SARS-CoV-2 vaccine</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO016</td><td style=\"border-left-width: 0px\">Anhui ZL - Recombinant</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO017</td><td style=\"border-left-width: 0px\">Adjuvanted recombinant protein (RBD-DIMER)</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO018</td><td style=\"border-left-width: 0px\">ZF2001</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO019</td><td style=\"border-left-width: 0px\">ZF-UZ-VAC 2001</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM3PG0</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Soberana-02</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO020</td><td style=\"border-left-width: 0px\">Soberana-02</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO021</td><td style=\"border-left-width: 0px\">Finlay - Soberana-02</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO022</td><td style=\"border-left-width: 0px\">RRBD produced in CHO-cell chemically conjugated to tetanus toxoid</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO023</td><td style=\"border-left-width: 0px\">FINLAY-FR2</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO024</td><td style=\"border-left-width: 0px\">PASTUCOVAC</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM4EC8</td><td style=\"border-left-width: 0px; border-bottom-style: none\">MVC-COV1901</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO025</td><td style=\"border-left-width: 0px\">MVC-COV1901</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO026</td><td style=\"border-left-width: 0px\">Medigen-MVC-COV1901</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO027</td><td style=\"border-left-width: 0px\">MVC COVID-19 vaccine</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM6SZ8</td><td style=\"border-left-width: 0px; border-bottom-style: none\">EpiVacCorona</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO028</td><td style=\"border-left-width: 0px\">EpiVacCorona</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO029</td><td style=\"border-left-width: 0px\">SRCVB-EpiVacCorona</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM0RV9</td><td style=\"border-left-width: 0px; border-bottom-style: none\"></td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO030</td><td style=\"border-left-width: 0px\">Soberana Plus</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO031</td><td style=\"border-left-width: 0px\">Finlay-Soberana Plus</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM3SK8</td><td style=\"border-left-width: 0px; border-bottom-style: none\"></td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO032</td><td style=\"border-left-width: 0px\">EpiVacCorona-N</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO033</td><td style=\"border-left-width: 0px\">SRCVB-EpiVacCorona-N</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM9P21</td><td style=\"border-left-width: 0px; border-bottom-style: none\"></td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO034</td><td style=\"border-left-width: 0px\">SpikoGen</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO035</td><td style=\"border-left-width: 0px\">Vaxine-SpikoGen</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO036</td><td style=\"border-left-width: 0px\">COVAX-19</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM9T65</td><td style=\"border-left-width: 0px; border-bottom-style: none\"></td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO037</td><td style=\"border-left-width: 0px\">Novavax COVID-19 vaccine</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO038</td><td style=\"border-left-width: 0px\">Novavax-Covovax</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO039</td><td style=\"border-left-width: 0px\">Nuvaxovid</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO040</td><td style=\"border-left-width: 0px\">NVX-CoV2373</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO041</td><td style=\"border-left-width: 0px\">Covovax</td></tr><tr><td style=\"border-right-width: 0px\">XM9N08</td><td style=\"border-left-width: 0px\"></td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO042</td><td style=\"border-left-width: 0px\">Razi COV PARS</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM4YL8</td><td style=\"border-left-width: 0px; border-bottom-style: none\">COVID-19 Vaccine AstraZeneca</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO043</td><td style=\"border-left-width: 0px\">COVID-19 Vaccine AstraZeneca</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO044</td><td style=\"border-left-width: 0px\">Vaxzevria</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO045</td><td style=\"border-left-width: 0px\">COVID-19 Vaccine AstraZeneca AZD1222</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO046</td><td style=\"border-left-width: 0px\">COVID-19 Vaccine AstraZeneca ChAdOx1 nCoV-19</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO047</td><td style=\"border-left-width: 0px\">COVID-19 Vaccine AstraZeneca ChAdOx1-S</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO048</td><td style=\"border-left-width: 0px\">AstraZeneca-Vaxzevria</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO049</td><td style=\"border-left-width: 0px\">R-Covi</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM97T2</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Covishield®</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO050</td><td style=\"border-left-width: 0px\">Covishield</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO051</td><td style=\"border-left-width: 0px\">Covishield AZD1222</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO052</td><td style=\"border-left-width: 0px\">Covishield ChAdOx1 nCoV-19</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO053</td><td style=\"border-left-width: 0px\">Covishield ChAdOx1-S</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO054</td><td style=\"border-left-width: 0px\">SII-Covishield</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM6QV1</td><td style=\"border-left-width: 0px; border-bottom-style: none\">COVID-19 Vaccine Janssen</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO055</td><td style=\"border-left-width: 0px\">COVID-19 Vaccine Janssen</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO056</td><td style=\"border-left-width: 0px\">Ad26.COV 2.S</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO057</td><td style=\"border-left-width: 0px\">Johnson &amp; Johnson COVID-19 vaccine</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO058</td><td style=\"border-left-width: 0px\">Janssen - Ad26.COV 2-S</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM1AG7</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Convidecia</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO059</td><td style=\"border-left-width: 0px\">Convidecia</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO060</td><td style=\"border-left-width: 0px\">CanSino-Convidecia</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO061</td><td style=\"border-left-width: 0px\">Ad5-nCOV</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM5ZJ4</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Gam-Covid-Vac</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO062</td><td style=\"border-left-width: 0px\">Gam-Covid-Vac</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO063</td><td style=\"border-left-width: 0px\">Gamaleya-Gam-Covid-Vac</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO064</td><td style=\"border-left-width: 0px\">Sputnik-V</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO065</td><td style=\"border-left-width: 0px\">Gam-KOVID-Vak</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM5QM6</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Sputnik-Light</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO066</td><td style=\"border-left-width: 0px\">Sputnik-Light</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO067</td><td style=\"border-left-width: 0px\">Gamaleya-Sputnik-Light</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM7HT3</td><td style=\"border-left-width: 0px; border-bottom-style: none\">CoronaVac®</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO068</td><td style=\"border-left-width: 0px\">CoronaVac</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO069</td><td style=\"border-left-width: 0px\">Sinovac COVID-19 Vaccine</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO070</td><td style=\"border-left-width: 0px\">PICOVACC</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM8866</td><td style=\"border-left-width: 0px; border-bottom-style: none\">BBIBP-CorV</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO071</td><td style=\"border-left-width: 0px\">BBIBP-CorV</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO072</td><td style=\"border-left-width: 0px\">Sinopharm BBIBP-CorV</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO073</td><td style=\"border-left-width: 0px\">Sinopharm COVID-19 vaccine</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO074</td><td style=\"border-left-width: 0px\">Beijing CNBG - BBIBP-CorV</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO075</td><td style=\"border-left-width: 0px\">COVID-19 Vaccine BIBP</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM9TQ1</td><td style=\"border-left-width: 0px; border-bottom-style: none\">KCONVAC</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO076</td><td style=\"border-left-width: 0px\">KCONVAC</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO077</td><td style=\"border-left-width: 0px\">Beijing Minhai-KCONVAC</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO078</td><td style=\"border-left-width: 0px\">Inactivated SARS-COV-2 vaccine, Vero cell</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM1G90</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Covaxin</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO079</td><td style=\"border-left-width: 0px\">Covaxin</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO080</td><td style=\"border-left-width: 0px\">Bharat-Covaxin</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO081</td><td style=\"border-left-width: 0px\">BBV152</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM85P5</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Covi-Vac</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO082</td><td style=\"border-left-width: 0px\">Covi-Vac</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO083</td><td style=\"border-left-width: 0px\">Chumakov-Covi-Vac</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO084</td><td style=\"border-left-width: 0px\">CoviVac</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM9FQ7</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Hayat-Vax</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO085</td><td style=\"border-left-width: 0px\">Hayat-Vax</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO086</td><td style=\"border-left-width: 0px\">Julphar-Hayat-Vax</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM97N6</td><td style=\"border-left-width: 0px; border-bottom-style: none\">QazVac</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO087</td><td style=\"border-left-width: 0px\">QazVac</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO088</td><td style=\"border-left-width: 0px\">RIBSP-QazVac</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO089</td><td style=\"border-left-width: 0px\">QazCovid-in</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM2YG8</td><td style=\"border-left-width: 0px; border-bottom-style: none\">COVIran Barakat</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO090</td><td style=\"border-left-width: 0px\">COVIran Barakat</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO091</td><td style=\"border-left-width: 0px\">Shifa-COVIran Barakat</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM0K39</td><td style=\"border-left-width: 0px; border-bottom-style: none\"></td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO092</td><td style=\"border-left-width: 0px\">Covidful</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO093</td><td style=\"border-left-width: 0px\">IMB-inactivated</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO094</td><td style=\"border-left-width: 0px\">IMB-Covidful</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM1AU2</td><td style=\"border-left-width: 0px; border-bottom-style: none\"></td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO095</td><td style=\"border-left-width: 0px\">Sinopharm WIBP-CorV</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO096</td><td style=\"border-left-width: 0px\">WIBP-CorV</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO097</td><td style=\"border-left-width: 0px\">Wuhan CNBG-Inactivated</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ICD11_ICAO_COVID19_vaccines (http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-icao-vaccines)</h2><p>Mapping from (not specified) to (not specified)</p><p>DRAFT (not intended for production usage). Published on 2022-11-23 by WHO (WHO: <a href=\"http://who.int\">http://who.int</a>). </p><div><p>Rule-based mappings between ICD-11 and ICAO for COVID-19 Vaccines</p>\n</div><br/><p><b>Group 1</b>Mapping from <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html\">DDCC Codes for ICD11</a> to <a href=\"CodeSystem-ICAOVaccineListV1.html\">DDCC Codes for ICAO Vaccines</a></p><table class=\"grid\"><tr><td colspan=\"2\"><b>Source Concept Details</b></td><td><b>Relationship</b></td><td colspan=\"2\"><b>Target Concept Details</b></td><td><b>Comment</b></td></tr><tr><td colspan=\"2\"><b>Codes</b> from <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html\" title=\"http://id.who.int/icd11/mms\">DDCC Codes for ICD11</a></td><td/><td colspan=\"2\"><b>Codes</b> from <a href=\"CodeSystem-ICAOVaccineListV1.html\" title=\"http://worldhealthorganization.github.io/ddcc/ICAOV1\">DDCC Codes for ICAO Vaccines</a></td><td/></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM68M6</td><td style=\"border-left-width: 0px; border-bottom-style: none\">COVID-19 vaccine</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO001</td><td style=\"border-left-width: 0px\">Comirnaty</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO002</td><td style=\"border-left-width: 0px\">Tozinameran</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO003</td><td style=\"border-left-width: 0px\">Pfizer-BioNTech COVID-19 vaccine BNT162b2</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO004</td><td style=\"border-left-width: 0px\">3 LNP-mRNAS</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO005</td><td style=\"border-left-width: 0px\">Tozinameran (INN)</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO006</td><td style=\"border-left-width: 0px\">BNT162b2/COMIRNATY</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO007</td><td style=\"border-left-width: 0px\">Pfizer BioNTech-Comirnaty</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO008</td><td style=\"border-left-width: 0px\">BNT162</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM3DT5</td><td style=\"border-left-width: 0px; border-bottom-style: none\">COVID-19 Vaccine Moderna</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO009</td><td style=\"border-left-width: 0px\">COVID-19 Vaccine Moderna</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO010</td><td style=\"border-left-width: 0px\">COVID-19 mRNA Vaccine Moderna mRNA-1273</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO011</td><td style=\"border-left-width: 0px\">Spikevax</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO012</td><td style=\"border-left-width: 0px\">Moderna-Spikevax</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM52P3</td><td style=\"border-left-width: 0px; border-bottom-style: none\">ZyCov-D</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO013</td><td style=\"border-left-width: 0px\">ZyCov-D</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO014</td><td style=\"border-left-width: 0px\">Zydus-ZyCov-D</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM3CT4</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Recombinant SARS-CoV-2 vaccine</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO015</td><td style=\"border-left-width: 0px\">Recombinant SARS-CoV-2 vaccine</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO016</td><td style=\"border-left-width: 0px\">Anhui ZL - Recombinant</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO017</td><td style=\"border-left-width: 0px\">Adjuvanted recombinant protein (RBD-DIMER)</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO018</td><td style=\"border-left-width: 0px\">ZF2001</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO019</td><td style=\"border-left-width: 0px\">ZF-UZ-VAC 2001</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM3PG0</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Soberana-02</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO020</td><td style=\"border-left-width: 0px\">Soberana-02</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO021</td><td style=\"border-left-width: 0px\">Finlay - Soberana-02</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO022</td><td style=\"border-left-width: 0px\">RRBD produced in CHO-cell chemically conjugated to tetanus toxoid</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO023</td><td style=\"border-left-width: 0px\">FINLAY-FR2</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO024</td><td style=\"border-left-width: 0px\">PASTUCOVAC</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM4EC8</td><td style=\"border-left-width: 0px; border-bottom-style: none\">MVC-COV1901</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO025</td><td style=\"border-left-width: 0px\">MVC-COV1901</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO026</td><td style=\"border-left-width: 0px\">Medigen-MVC-COV1901</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO027</td><td style=\"border-left-width: 0px\">MVC COVID-19 vaccine</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM6SZ8</td><td style=\"border-left-width: 0px; border-bottom-style: none\">EpiVacCorona</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO028</td><td style=\"border-left-width: 0px\">EpiVacCorona</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO029</td><td style=\"border-left-width: 0px\">SRCVB-EpiVacCorona</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM0RV9</td><td style=\"border-left-width: 0px; border-bottom-style: none\"></td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO030</td><td style=\"border-left-width: 0px\">Soberana Plus</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO031</td><td style=\"border-left-width: 0px\">Finlay-Soberana Plus</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM3SK8</td><td style=\"border-left-width: 0px; border-bottom-style: none\"></td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO032</td><td style=\"border-left-width: 0px\">EpiVacCorona-N</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO033</td><td style=\"border-left-width: 0px\">SRCVB-EpiVacCorona-N</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM9P21</td><td style=\"border-left-width: 0px; border-bottom-style: none\"></td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO034</td><td style=\"border-left-width: 0px\">SpikoGen</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO035</td><td style=\"border-left-width: 0px\">Vaxine-SpikoGen</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO036</td><td style=\"border-left-width: 0px\">COVAX-19</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM9T65</td><td style=\"border-left-width: 0px; border-bottom-style: none\"></td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO037</td><td style=\"border-left-width: 0px\">Novavax COVID-19 vaccine</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO038</td><td style=\"border-left-width: 0px\">Novavax-Covovax</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO039</td><td style=\"border-left-width: 0px\">Nuvaxovid</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO040</td><td style=\"border-left-width: 0px\">NVX-CoV2373</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO041</td><td style=\"border-left-width: 0px\">Covovax</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px\">XM9N08</td><td style=\"border-left-width: 0px\"></td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO042</td><td style=\"border-left-width: 0px\">Razi COV PARS</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM4YL8</td><td style=\"border-left-width: 0px; border-bottom-style: none\">COVID-19 Vaccine AstraZeneca</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO043</td><td style=\"border-left-width: 0px\">COVID-19 Vaccine AstraZeneca</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO044</td><td style=\"border-left-width: 0px\">Vaxzevria</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO045</td><td style=\"border-left-width: 0px\">COVID-19 Vaccine AstraZeneca AZD1222</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO046</td><td style=\"border-left-width: 0px\">COVID-19 Vaccine AstraZeneca ChAdOx1 nCoV-19</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO047</td><td style=\"border-left-width: 0px\">COVID-19 Vaccine AstraZeneca ChAdOx1-S</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO048</td><td style=\"border-left-width: 0px\">AstraZeneca-Vaxzevria</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO049</td><td style=\"border-left-width: 0px\">R-Covi</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM97T2</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Covishield®</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO050</td><td style=\"border-left-width: 0px\">Covishield</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO051</td><td style=\"border-left-width: 0px\">Covishield AZD1222</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO052</td><td style=\"border-left-width: 0px\">Covishield ChAdOx1 nCoV-19</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO053</td><td style=\"border-left-width: 0px\">Covishield ChAdOx1-S</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO054</td><td style=\"border-left-width: 0px\">SII-Covishield</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM6QV1</td><td style=\"border-left-width: 0px; border-bottom-style: none\">COVID-19 Vaccine Janssen</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO055</td><td style=\"border-left-width: 0px\">COVID-19 Vaccine Janssen</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO056</td><td style=\"border-left-width: 0px\">Ad26.COV 2.S</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO057</td><td style=\"border-left-width: 0px\">Johnson &amp; Johnson COVID-19 vaccine</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO058</td><td style=\"border-left-width: 0px\">Janssen - Ad26.COV 2-S</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM1AG7</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Convidecia</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO059</td><td style=\"border-left-width: 0px\">Convidecia</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO060</td><td style=\"border-left-width: 0px\">CanSino-Convidecia</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO061</td><td style=\"border-left-width: 0px\">Ad5-nCOV</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM5ZJ4</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Gam-Covid-Vac</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO062</td><td style=\"border-left-width: 0px\">Gam-Covid-Vac</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO063</td><td style=\"border-left-width: 0px\">Gamaleya-Gam-Covid-Vac</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO064</td><td style=\"border-left-width: 0px\">Sputnik-V</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO065</td><td style=\"border-left-width: 0px\">Gam-KOVID-Vak</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM5QM6</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Sputnik-Light</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO066</td><td style=\"border-left-width: 0px\">Sputnik-Light</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO067</td><td style=\"border-left-width: 0px\">Gamaleya-Sputnik-Light</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM7HT3</td><td style=\"border-left-width: 0px; border-bottom-style: none\">CoronaVac®</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO068</td><td style=\"border-left-width: 0px\">CoronaVac</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO069</td><td style=\"border-left-width: 0px\">Sinovac COVID-19 Vaccine</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO070</td><td style=\"border-left-width: 0px\">PICOVACC</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM8866</td><td style=\"border-left-width: 0px; border-bottom-style: none\">BBIBP-CorV</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO071</td><td style=\"border-left-width: 0px\">BBIBP-CorV</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO072</td><td style=\"border-left-width: 0px\">Sinopharm BBIBP-CorV</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO073</td><td style=\"border-left-width: 0px\">Sinopharm COVID-19 vaccine</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO074</td><td style=\"border-left-width: 0px\">Beijing CNBG - BBIBP-CorV</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO075</td><td style=\"border-left-width: 0px\">COVID-19 Vaccine BIBP</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM9TQ1</td><td style=\"border-left-width: 0px; border-bottom-style: none\">KCONVAC</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO076</td><td style=\"border-left-width: 0px\">KCONVAC</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO077</td><td style=\"border-left-width: 0px\">Beijing Minhai-KCONVAC</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO078</td><td style=\"border-left-width: 0px\">Inactivated SARS-COV-2 vaccine, Vero cell</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM1G90</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Covaxin</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO079</td><td style=\"border-left-width: 0px\">Covaxin</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO080</td><td style=\"border-left-width: 0px\">Bharat-Covaxin</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO081</td><td style=\"border-left-width: 0px\">BBV152</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM85P5</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Covi-Vac</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO082</td><td style=\"border-left-width: 0px\">Covi-Vac</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO083</td><td style=\"border-left-width: 0px\">Chumakov-Covi-Vac</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO084</td><td style=\"border-left-width: 0px\">CoviVac</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM9FQ7</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Hayat-Vax</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO085</td><td style=\"border-left-width: 0px\">Hayat-Vax</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO086</td><td style=\"border-left-width: 0px\">Julphar-Hayat-Vax</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM97N6</td><td style=\"border-left-width: 0px; border-bottom-style: none\">QazVac</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO087</td><td style=\"border-left-width: 0px\">QazVac</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO088</td><td style=\"border-left-width: 0px\">RIBSP-QazVac</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO089</td><td style=\"border-left-width: 0px\">QazCovid-in</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM2YG8</td><td style=\"border-left-width: 0px; border-bottom-style: none\">COVIran Barakat</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO090</td><td style=\"border-left-width: 0px\">COVIran Barakat</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO091</td><td style=\"border-left-width: 0px\">Shifa-COVIran Barakat</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM0K39</td><td style=\"border-left-width: 0px; border-bottom-style: none\"></td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO092</td><td style=\"border-left-width: 0px\">Covidful</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO093</td><td style=\"border-left-width: 0px\">IMB-inactivated</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO094</td><td style=\"border-left-width: 0px\">IMB-Covidful</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">XM1AU2</td><td style=\"border-left-width: 0px; border-bottom-style: none\"></td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO095</td><td style=\"border-left-width: 0px\">Sinopharm WIBP-CorV</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none; border-bottom-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none; border-bottom-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO096</td><td style=\"border-left-width: 0px\">WIBP-CorV</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">ICAO097</td><td style=\"border-left-width: 0px\">Wuhan CNBG-Inactivated</td><td>ICAO codes are brands and ICD11 is the generic type.</td></tr></table></div>"
   ];
-  fhir:ConceptMap.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_ICAO_Vaccines"];
+  fhir:ConceptMap.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-icao-vaccines"];
   fhir:ConceptMap.version [ fhir:value "1.0.0"];
   fhir:ConceptMap.name [ fhir:value "ICD11_ICAO_COVID19_vaccines"];
   fhir:ConceptMap.title [ fhir:value "ConceptMap from ICD-11 to ICAO for Vaccines"];
@@ -38,14 +38,6 @@
        fhir:Coding.code [ fhir:value "001" ]
      ]
   ];
-  fhir:ConceptMap.sourceCanonical [
-     fhir:value "http://id.who.int/icd11/mms";
-     fhir:link <http://id.who.int/icd11/mms>
-  ];
-  fhir:ConceptMap.targetCanonical [
-     fhir:value "http://worldhealthorganization.github.io/ddcc/ICAOV1";
-     fhir:link <http://worldhealthorganization.github.io/ddcc/ICAOV1>
-  ];
   fhir:ConceptMap.group [
      fhir:index 0;
      fhir:ConceptMap.group.source [ fhir:value "http://id.who.int/icd11/mms" ];
@@ -56,35 +48,43 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO001" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 1;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO002" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 2;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO003" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 3;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO004" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 4;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO005" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 5;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO006" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 6;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO007" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 7;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO008" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ]
      ], [
        fhir:index 1;
@@ -92,19 +92,23 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO009" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 1;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO010" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 2;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO011" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 3;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO012" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ]
      ], [
        fhir:index 2;
@@ -112,11 +116,13 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO013" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 1;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO014" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ]
      ], [
        fhir:index 3;
@@ -124,23 +130,28 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO015" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 1;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO016" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 2;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO017" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 3;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO018" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 4;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO019" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ]
      ], [
        fhir:index 4;
@@ -148,23 +159,28 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO020" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 1;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO021" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 2;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO022" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 3;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO023" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 4;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO024" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ]
      ], [
        fhir:index 5;
@@ -172,15 +188,18 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO025" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 1;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO026" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 2;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO027" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ]
      ], [
        fhir:index 6;
@@ -188,11 +207,13 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO028" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 1;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO029" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ]
      ], [
        fhir:index 7;
@@ -200,11 +221,13 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO030" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 1;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO031" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ]
      ], [
        fhir:index 8;
@@ -212,11 +235,13 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO032" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 1;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO033" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ]
      ], [
        fhir:index 9;
@@ -224,15 +249,18 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO034" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 1;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO035" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 2;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO036" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ]
      ], [
        fhir:index 10;
@@ -240,23 +268,28 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO037" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 1;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO038" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 2;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO039" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 3;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO040" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 4;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO041" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ]
      ], [
        fhir:index 11;
@@ -264,7 +297,8 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO042" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ]
      ], [
        fhir:index 12;
@@ -272,31 +306,38 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO043" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 1;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO044" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 2;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO045" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 3;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO046" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 4;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO047" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 5;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO048" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 6;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO049" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ]
      ], [
        fhir:index 13;
@@ -304,23 +345,28 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO050" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 1;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO051" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 2;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO052" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 3;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO053" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 4;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO054" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ]
      ], [
        fhir:index 14;
@@ -328,19 +374,23 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO055" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 1;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO056" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 2;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO057" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 3;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO058" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ]
      ], [
        fhir:index 15;
@@ -348,15 +398,18 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO059" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 1;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO060" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 2;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO061" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ]
      ], [
        fhir:index 16;
@@ -364,19 +417,23 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO062" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 1;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO063" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 2;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO064" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 3;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO065" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ]
      ], [
        fhir:index 17;
@@ -384,11 +441,13 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO066" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 1;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO067" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ]
      ], [
        fhir:index 18;
@@ -396,15 +455,18 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO068" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 1;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO069" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 2;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO070" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ]
      ], [
        fhir:index 19;
@@ -412,23 +474,28 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO071" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 1;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO072" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 2;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO073" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 3;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO074" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 4;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO075" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ]
      ], [
        fhir:index 20;
@@ -436,15 +503,18 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO076" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 1;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO077" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 2;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO078" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ]
      ], [
        fhir:index 21;
@@ -452,15 +522,18 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO079" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 1;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO080" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 2;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO081" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ]
      ], [
        fhir:index 22;
@@ -468,15 +541,18 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO082" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 1;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO083" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 2;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO084" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ]
      ], [
        fhir:index 23;
@@ -484,11 +560,13 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO085" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 1;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO086" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ]
      ], [
        fhir:index 24;
@@ -496,15 +574,18 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO087" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 1;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO088" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 2;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO089" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ]
      ], [
        fhir:index 25;
@@ -512,11 +593,13 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO090" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 1;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO091" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ]
      ], [
        fhir:index 26;
@@ -524,15 +607,18 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO092" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 1;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO093" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 2;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO094" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ]
      ], [
        fhir:index 27;
@@ -540,15 +626,18 @@
        fhir:ConceptMap.group.element.target [
          fhir:index 0;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO095" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 1;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO096" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ], [
          fhir:index 2;
          fhir:ConceptMap.group.element.target.code [ fhir:value "ICAO097" ];
-         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ]
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ];
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ICAO codes are brands and ICD11 is the generic type." ]
        ]
      ]
   ] .

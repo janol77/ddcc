@@ -100,126 +100,126 @@
   {
     "id": "who-ddcc-map-cvx-icd11-brands",
     "type": "ConceptMap",
-    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_CVX_To_ICD11_Brands",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-cvx-icd11-brands",
     "version": "1.0.0",
     "name": "ICD11_SNOMED_CT_COVID19_brands"
   },
   {
     "id": "who-ddcc-map-cvx-icd11-vaccines",
     "type": "ConceptMap",
-    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_CVX_To_ICD11_Vaccines",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-cvx-icd11-vaccines",
     "version": "1.0.0",
     "name": "ICD11_SNOMED_CT_COVID19_vaccines"
   },
   {
     "id": "who-ddcc-map-divoc-icd11-vaccines",
     "type": "ConceptMap",
-    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_DIVOC_to_ICD11_Vaccines",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-divoc-icd11-vaccines",
     "version": "1.0.0",
     "name": "DIVOC_ICD11_COVID19_vaccines"
   },
   {
     "id": "who-ddcc-map-eudcc-icd11-vaccines",
     "type": "ConceptMap",
-    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_EUDCC_to_ICD11_Vaccines",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-eudcc-icd11-vaccines",
     "version": "1.0.0",
     "name": "EU_DCC_ICD11_COVID19_vaccines"
   },
   {
     "id": "who-ddcc-map-icao-icd11-vaccines",
     "type": "ConceptMap",
-    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICAO_to_ICD11_Vaccines",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icao-icd11-vaccines",
     "version": "1.0.0",
     "name": "ICAO_ICD11_COVID19_vaccines"
   },
   {
     "id": "who-ddcc-map-icd11-divoc-vaccines",
     "type": "ConceptMap",
-    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_DIVOC_Vaccines",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-divoc-vaccines",
     "version": "1.0.0",
     "name": "ICD11_DIVOC_COVID19_vaccines"
   },
   {
     "id": "who-ddcc-map-icd11-eudcc-vaccines",
     "type": "ConceptMap",
-    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_EUDCC_Vaccines",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-eudcc-vaccines",
     "version": "1.0.0",
     "name": "ICD11_EU_DCC_COVID19_vaccines"
   },
   {
     "id": "who-ddcc-map-icd11-icao-vaccines",
     "type": "ConceptMap",
-    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_ICAO_Vaccines",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-icao-vaccines",
     "version": "1.0.0",
     "name": "ICD11_ICAO_COVID19_vaccines"
   },
   {
     "id": "who-ddcc-map-icd11-icd10-disease-targeted",
     "type": "ConceptMap",
-    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_ICD10_Disease_Targeted",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-icd10-disease-targeted",
     "version": "1.0.0",
     "name": "ICD_11_ICD_10_COVID19_Disease"
   },
   {
     "id": "who-ddcc-map-icd11-sct-agent-targeted",
     "type": "ConceptMap",
-    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_SCT_Agent_Targeted",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-sct-agent-targeted",
     "version": "1.0.0",
     "name": "ICD11_SNOMED_CT_COVID19_Agent_Targeted"
   },
   {
     "id": "who-ddcc-map-icd11-sct-disease-targeted",
     "type": "ConceptMap",
-    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_SCT_Disease_Targeted",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-sct-disease-targeted",
     "version": "1.0.0",
     "name": "ICD_11_SNOMED_CT_COVID19_Disease"
   },
   {
     "id": "who-ddcc-map-icd11-sct-test-result",
     "type": "ConceptMap",
-    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_SCT_Test_Result",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-sct-test-result",
     "version": "1.0.0",
     "name": "ICD11_SNOMED_CT_COVID19_Test_Result"
   },
   {
     "id": "who-ddcc-map-icd11-sct-vaccines",
     "type": "ConceptMap",
-    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_SCT_Vaccines",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-sct-vaccines",
     "version": "1.0.0",
     "name": "ICD11_SNOMED_CT_COVID19_vaccines"
   },
   {
     "id": "who-ddcc-map-ichi-loinc-type-of-test",
     "type": "ConceptMap",
-    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICHI_to_LOINC_Type_of_Test",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-ichi-loinc-type-of-test",
     "version": "1.0.0",
     "name": "ICHI_LOINC_COVID19_Type_of_Test"
   },
   {
     "id": "who-ddcc-map-ichi-sct-specimen-origin",
     "type": "ConceptMap",
-    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICHI_to_SCT_Specimen_Origin",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-ichi-sct-specimen-origin",
     "version": "1.0.0",
     "name": "ICHI_SNOMED_CT_COVID19_Specimen_Origin"
   },
   {
     "id": "who-ddcc-map-ichi-sct-type-of-test",
     "type": "ConceptMap",
-    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICHI_to_SCT_Type_of_Test",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-ichi-sct-type-of-test",
     "version": "1.0.0",
     "name": "ICHI_SNOMED_CT_COVID19_Type_of_Test"
   },
   {
     "id": "who-ddcc-map-loinc-sct-type-of-test",
     "type": "ConceptMap",
-    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_LOINC_to_SCT_Type_of_Test",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-loinc-sct-type-of-test",
     "version": "1.0.0",
     "name": "LOINC_SNOMED_CT_COVID19_Type_of_Test"
   },
   {
     "id": "who-ddcc-map-sct-ichi-specimen-origin",
     "type": "ConceptMap",
-    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_SCT_to_ICHI_Specimen_Origin",
+    "url": "http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-sct-ichi-specimen-origin",
     "version": "1.0.0",
     "name": "SNOMED_CT_ICHI_COVID19_Specimen_Origin"
   },

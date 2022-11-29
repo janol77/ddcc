@@ -72,6 +72,38 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://worldhealthorganization.github.io/ddcc/DIVOC"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://ec.europa.eu/health/documents/community-register/html/"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://worldhealthorganization.github.io/ddcc/ICAOV1"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://id.who.int/icd11/mms"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
         <valueString value="path-liquid"/>
       </extension>
       <extension url="value">
@@ -1562,7 +1594,7 @@
       <reference>
         <reference value="ConceptMap/who-ddcc-map-cvx-icd11-brands"/>
       </reference>
-      <name value="WHO_DDCC_Map_CVX_To_ICD11_Brands"/>
+      <name value="who-ddcc-map-cvx-icd11-brands"/>
       <description value="Mapping from CVX to ICD-11 for COVID-19 Brands"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1573,7 +1605,7 @@
       <reference>
         <reference value="ConceptMap/who-ddcc-map-cvx-icd11-vaccines"/>
       </reference>
-      <name value="WHO_DDCC_Map_CVX_To_ICD11_Vaccines"/>
+      <name value="who-ddcc-map-cvx-icd11-vaccines"/>
       <description value="Mapping from CVX to ICD-11 for COVID-19 Vaccines"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1584,7 +1616,7 @@
       <reference>
         <reference value="ConceptMap/who-ddcc-map-divoc-icd11-vaccines"/>
       </reference>
-      <name value="WHO_DDCC_Map_DIVOC_to_ICD11_Vaccines"/>
+      <name value="who-ddcc-map-divoc-icd11-vaccines"/>
       <description value="Mapping from DIVOC to ICD-11 for COVID-19 Vaccines"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1595,7 +1627,7 @@
       <reference>
         <reference value="ConceptMap/who-ddcc-map-eudcc-icd11-vaccines"/>
       </reference>
-      <name value="WHO_DDCC_Map_EUDCC_to_ICD11_Vaccines"/>
+      <name value="who-ddcc-map-eudcc-icd11-vaccines"/>
       <description value="Mapping from EU DCC to ICD-11 for COVID-19 Vaccines"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1606,7 +1638,7 @@
       <reference>
         <reference value="ConceptMap/who-ddcc-map-icao-icd11-vaccines"/>
       </reference>
-      <name value="WHO_DDCC_Map_ICAO_to_ICD11_Vaccines"/>
+      <name value="who-ddcc-map-icao-icd11-vaccines"/>
       <description value="Mapping from ICAO to ICD11 for COVID-19 Vaccines"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1617,7 +1649,7 @@
       <reference>
         <reference value="ConceptMap/who-ddcc-map-icd11-divoc-vaccines"/>
       </reference>
-      <name value="WHO_DDCC_Map_ICD11_to_DIVOC_Vaccines"/>
+      <name value="who-ddcc-map-icd11-divoc-vaccines"/>
       <description value="Mapping from ICD-11 to DIVOC for COVID-19 Vaccines"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1628,7 +1660,7 @@
       <reference>
         <reference value="ConceptMap/who-ddcc-map-icd11-eudcc-vaccines"/>
       </reference>
-      <name value="WHO_DDCC_Map_ICD11_to_EUDCC_Vaccines"/>
+      <name value="who-ddcc-map-icd11-eudcc-vaccines"/>
       <description value="Mapping from ICD-11 to EU DCC for COVID-19 Vaccines"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1639,7 +1671,7 @@
       <reference>
         <reference value="ConceptMap/who-ddcc-map-icd11-icao-vaccines"/>
       </reference>
-      <name value="WHO_DDCC_Map_ICD11_to_ICAO_Vaccines"/>
+      <name value="who-ddcc-map-icd11-icao-vaccines"/>
       <description value="Mapping from ICD-11 to ICAO for COVID-19 Vaccines"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1650,7 +1682,7 @@
       <reference>
         <reference value="ConceptMap/who-ddcc-map-icd11-icd10-disease-targeted"/>
       </reference>
-      <name value="WHO_DDCC_Map_ICD11_to_ICD10_Disease_Targeted"/>
+      <name value="who-ddcc-map-icd11-icd10-disease-targeted"/>
       <description value="Mapping from ICD-11 to ICD-10 for COVID-19 disease."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1661,7 +1693,7 @@
       <reference>
         <reference value="ConceptMap/who-ddcc-map-icd11-sct-agent-targeted"/>
       </reference>
-      <name value="WHO_DDCC_Map_ICD11_to_SCT_Agent_Targeted"/>
+      <name value="who-ddcc-map-icd11-sct-agent-targeted"/>
       <description value="Mapping from ICD-11 to SNOMED CT for COVID-19 Agent Targeted"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1672,7 +1704,7 @@
       <reference>
         <reference value="ConceptMap/who-ddcc-map-icd11-sct-disease-targeted"/>
       </reference>
-      <name value="WHO_DDCC_Map_ICD11_to_SCT_Disease_Targeted"/>
+      <name value="who-ddcc-map-icd11-sct-disease-targeted"/>
       <description value="Mapping from ICD-11 to SNOMED CT for COVID-19 disease."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1683,7 +1715,7 @@
       <reference>
         <reference value="ConceptMap/who-ddcc-map-icd11-sct-test-result"/>
       </reference>
-      <name value="WHO_DDCC_Map_ICD11_to_SCT_Test_Result"/>
+      <name value="who-ddcc-map-icd11-sct-test-result"/>
       <description value="Mapping from ICD-11 to SNOMED CT for COVID-19 Test Result"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1694,7 +1726,7 @@
       <reference>
         <reference value="ConceptMap/who-ddcc-map-icd11-sct-vaccines"/>
       </reference>
-      <name value="WHO_DDCC_Map_ICD11_to_SCT_Vaccines"/>
+      <name value="who-ddcc-map-icd11-sct-vaccines"/>
       <description value="Mapping from ICD-11 to SNOMED CT for COVID-19 Vaccines"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1705,7 +1737,7 @@
       <reference>
         <reference value="ConceptMap/who-ddcc-map-ichi-loinc-type-of-test"/>
       </reference>
-      <name value="WHO_DDCC_Map_ICHI_to_LOINC_Type_of_Test"/>
+      <name value="who-ddcc-map-ichi-loinc-type-of-test"/>
       <description value="Mapping from ICHI to LOINC for COVID-19 Type of Test"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1716,7 +1748,7 @@
       <reference>
         <reference value="ConceptMap/who-ddcc-map-ichi-sct-specimen-origin"/>
       </reference>
-      <name value="WHO_DDCC_Map_ICHI_to_SCT_Specimen_Origin"/>
+      <name value="who-ddcc-map-ichi-sct-specimen-origin"/>
       <description value="Mapping from ICHI to SNOMED CT for COVID-19 Specimen Origin"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1727,7 +1759,7 @@
       <reference>
         <reference value="ConceptMap/who-ddcc-map-ichi-sct-type-of-test"/>
       </reference>
-      <name value="WHO_DDCC_Map_ICHI_to_SCT_Type_of_Test"/>
+      <name value="who-ddcc-map-ichi-sct-type-of-test"/>
       <description value="Mapping from ICHI to SNOMED CT for COVID-19 Type of Test"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1738,7 +1770,7 @@
       <reference>
         <reference value="ConceptMap/who-ddcc-map-loinc-sct-type-of-test"/>
       </reference>
-      <name value="WHO_DDCC_Map_LOINC_to_SCT_Type_of_Test"/>
+      <name value="who-ddcc-map-loinc-sct-type-of-test"/>
       <description value="Mapping from LOINC to SNOMED CT for COVID-19 Type of Test"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1749,7 +1781,7 @@
       <reference>
         <reference value="ConceptMap/who-ddcc-map-sct-ichi-specimen-origin"/>
       </reference>
-      <name value="WHO_DDCC_Map_SCT_to_ICHI_Specimen_Origin"/>
+      <name value="who-ddcc-map-sct-ichi-specimen-origin"/>
       <description value="Mapping from SNOMED CT to ICHI for COVID-19 Specimen Origin"/>
       <exampleBoolean value="false"/>
     </resource>

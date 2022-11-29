@@ -115,6 +115,54 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://worldhealthorganization.github.io/ddcc/DIVOC" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://ec.europa.eu/health/documents/community-register/html/" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://worldhealthorganization.github.io/ddcc/ICAOV1" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://id.who.int/icd11/mms" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
          fhir:Extension.valueString [ fhir:value "path-liquid" ]
        ], [
          fhir:index 1;
@@ -123,7 +171,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 3;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -135,7 +183,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 4;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -147,7 +195,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 5;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -159,7 +207,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 6;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -171,7 +219,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 7;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -183,7 +231,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 8;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -195,7 +243,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 9;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -207,7 +255,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 10;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -219,7 +267,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 11;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -231,7 +279,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 12;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -243,7 +291,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 13;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -255,7 +303,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 14;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -267,7 +315,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 15;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -279,7 +327,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 16;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -291,7 +339,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 17;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -303,7 +351,7 @@
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 18;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
@@ -2209,7 +2257,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-cvx-icd11-brands>;
          fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-cvx-icd11-brands" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_CVX_To_ICD11_Brands" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "who-ddcc-map-cvx-icd11-brands" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from CVX to ICD-11 for COVID-19 Brands" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -2223,7 +2271,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-cvx-icd11-vaccines>;
          fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-cvx-icd11-vaccines" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_CVX_To_ICD11_Vaccines" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "who-ddcc-map-cvx-icd11-vaccines" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from CVX to ICD-11 for COVID-19 Vaccines" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -2237,7 +2285,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-divoc-icd11-vaccines>;
          fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-divoc-icd11-vaccines" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_DIVOC_to_ICD11_Vaccines" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "who-ddcc-map-divoc-icd11-vaccines" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from DIVOC to ICD-11 for COVID-19 Vaccines" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -2251,7 +2299,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-eudcc-icd11-vaccines>;
          fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-eudcc-icd11-vaccines" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_EUDCC_to_ICD11_Vaccines" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "who-ddcc-map-eudcc-icd11-vaccines" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from EU DCC to ICD-11 for COVID-19 Vaccines" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -2265,7 +2313,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icao-icd11-vaccines>;
          fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-icao-icd11-vaccines" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_ICAO_to_ICD11_Vaccines" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "who-ddcc-map-icao-icd11-vaccines" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from ICAO to ICD11 for COVID-19 Vaccines" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -2279,7 +2327,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-divoc-vaccines>;
          fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-icd11-divoc-vaccines" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_ICD11_to_DIVOC_Vaccines" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "who-ddcc-map-icd11-divoc-vaccines" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from ICD-11 to DIVOC for COVID-19 Vaccines" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -2293,7 +2341,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-eudcc-vaccines>;
          fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-icd11-eudcc-vaccines" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_ICD11_to_EUDCC_Vaccines" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "who-ddcc-map-icd11-eudcc-vaccines" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from ICD-11 to EU DCC for COVID-19 Vaccines" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -2307,7 +2355,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-icao-vaccines>;
          fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-icd11-icao-vaccines" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_ICD11_to_ICAO_Vaccines" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "who-ddcc-map-icd11-icao-vaccines" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from ICD-11 to ICAO for COVID-19 Vaccines" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -2321,7 +2369,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-icd10-disease-targeted>;
          fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-icd11-icd10-disease-targeted" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_ICD11_to_ICD10_Disease_Targeted" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "who-ddcc-map-icd11-icd10-disease-targeted" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from ICD-11 to ICD-10 for COVID-19 disease." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -2335,7 +2383,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-sct-agent-targeted>;
          fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-icd11-sct-agent-targeted" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_ICD11_to_SCT_Agent_Targeted" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "who-ddcc-map-icd11-sct-agent-targeted" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from ICD-11 to SNOMED CT for COVID-19 Agent Targeted" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -2349,7 +2397,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-sct-disease-targeted>;
          fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-icd11-sct-disease-targeted" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_ICD11_to_SCT_Disease_Targeted" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "who-ddcc-map-icd11-sct-disease-targeted" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from ICD-11 to SNOMED CT for COVID-19 disease." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -2363,7 +2411,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-sct-test-result>;
          fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-icd11-sct-test-result" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_ICD11_to_SCT_Test_Result" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "who-ddcc-map-icd11-sct-test-result" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from ICD-11 to SNOMED CT for COVID-19 Test Result" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -2377,7 +2425,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-sct-vaccines>;
          fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-icd11-sct-vaccines" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_ICD11_to_SCT_Vaccines" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "who-ddcc-map-icd11-sct-vaccines" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from ICD-11 to SNOMED CT for COVID-19 Vaccines" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -2391,7 +2439,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-ichi-loinc-type-of-test>;
          fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-ichi-loinc-type-of-test" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_ICHI_to_LOINC_Type_of_Test" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "who-ddcc-map-ichi-loinc-type-of-test" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from ICHI to LOINC for COVID-19 Type of Test" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -2405,7 +2453,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-ichi-sct-specimen-origin>;
          fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-ichi-sct-specimen-origin" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_ICHI_to_SCT_Specimen_Origin" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "who-ddcc-map-ichi-sct-specimen-origin" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from ICHI to SNOMED CT for COVID-19 Specimen Origin" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -2419,7 +2467,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-ichi-sct-type-of-test>;
          fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-ichi-sct-type-of-test" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_ICHI_to_SCT_Type_of_Test" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "who-ddcc-map-ichi-sct-type-of-test" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from ICHI to SNOMED CT for COVID-19 Type of Test" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -2433,7 +2481,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-loinc-sct-type-of-test>;
          fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-loinc-sct-type-of-test" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_LOINC_to_SCT_Type_of_Test" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "who-ddcc-map-loinc-sct-type-of-test" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from LOINC to SNOMED CT for COVID-19 Type of Test" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -2447,7 +2495,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-sct-ichi-specimen-origin>;
          fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-sct-ichi-specimen-origin" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO_DDCC_Map_SCT_to_ICHI_Specimen_Origin" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "who-ddcc-map-sct-ichi-specimen-origin" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping from SNOMED CT to ICHI for COVID-19 Specimen Origin" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
