@@ -42,6 +42,27 @@
     "name": "DDCC_ICD11_CodeSystem"
   },
   {
+    "id": "AnyDosePass-1.0.0",
+    "type": "Library",
+    "url": "http://localhost/Library/AnyDosePass|1.0.0",
+    "version": "1.0.0",
+    "name": "Any Dose Pass"
+  },
+  {
+    "id": "DDCCPass-1.0.0",
+    "type": "Library",
+    "url": "http://localhost/Library/DDCCPass|1.0.0",
+    "version": "1.0.0",
+    "name": "DDCC Pass"
+  },
+  {
+    "id": "ModernaOrPfizerPass-1.0.0",
+    "type": "Library",
+    "url": "http://localhost/Library/ModernaOrPfizerPass|1.0.0",
+    "version": "1.0.0",
+    "name": "Moderna Or Pfizer Pass"
+  },
+  {
     "id": "WHO.DDCC.Generator",
     "type": "CapabilityStatement",
     "url": "http://worldhealthorganization.github.io/ddcc/CapabilityStatement/WHO.DDCC.Generator",

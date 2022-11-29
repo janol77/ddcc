@@ -2415,6 +2415,48 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Library"
+          }
+        ],
+        "reference": {
+          "reference": "Library/AnyDosePass-1.0.0"
+        },
+        "name": "AnyDosePass",
+        "description": "DDCC-compliant rule to evaluate if patients have a completed immunization schedule or just a single dose",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Library"
+          }
+        ],
+        "reference": {
+          "reference": "Library/DDCCPass-1.0.0"
+        },
+        "name": "DDCCPass",
+        "description": "DDCC-compliant rule to evaluate if patients have a completed immunization schedule",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Library"
+          }
+        ],
+        "reference": {
+          "reference": "Library/ModernaOrPfizerPass-1.0.0"
+        },
+        "name": "ModernaOrPfizerPass",
+        "description": "DDCC-compliant rule to evaluate if patients have an immunization from Moderna or Pfizer",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
