@@ -1830,6 +1830,39 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Library"/>
+      </extension>
+      <reference>
+        <reference value="Library/AnyDosePass-1.0.0"/>
+      </reference>
+      <name value="AnyDosePass"/>
+      <description value="DDCC-compliant rule to evaluate if patients have a completed immunization schedule or just a single dose"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Library"/>
+      </extension>
+      <reference>
+        <reference value="Library/DDCCPass-1.0.0"/>
+      </reference>
+      <name value="DDCCPass"/>
+      <description value="DDCC-compliant rule to evaluate if patients have a completed immunization schedule"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Library"/>
+      </extension>
+      <reference>
+        <reference value="Library/ModernaOrPfizerPass-1.0.0"/>
+      </reference>
+      <name value="ModernaOrPfizerPass"/>
+      <description value="DDCC-compliant rule to evaluate if patients have an immunization from Moderna or Pfizer"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>

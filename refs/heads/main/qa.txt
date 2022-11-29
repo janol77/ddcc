@@ -1,9 +1,9 @@
 ﻿ddcc : Validation Results
 =========================================
 
-err = 661, warn = 110, info = 27
+err = 667, warn = 113, info = 27
 IG Publisher Version: 1.2.19
-Generated Mon Nov 28 23:59:54 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0.0 (canonical = http://worldhealthorganization.github.io/ddcc)
+Generated Tue Nov 29 12:01:23 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0.0 (canonical = http://worldhealthorganization.github.io/ddcc)
  Build Errors : 9 / 71 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 0 / 0 / 10
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Arabic : 0 / 0 / 10
@@ -155,6 +155,9 @@ Generated Mon Nov 28 23:59:54 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0
  /github/workspace/input/resources/CapabilityStatement-WHO.DDCC.Generator : 0 / 0 / 1
  /github/workspace/input/resources/CapabilityStatement-WHO.DDCC.RegistryService : 0 / 0 / 1
  /github/workspace/input/resources/Immunization-pre-uv-ips.StructureDefinition : 2 / 1 / 1
+ /github/workspace/input/resources/Library-AnyDosePass-1.0.0 : 2 / 1 / 1
+ /github/workspace/input/resources/Library-DDCCPass-1.0.0 : 2 / 1 / 1
+ /github/workspace/input/resources/Library-ModernaOrPfizerPass-1.0.0 : 2 / 1 / 1
  /github/workspace/input/resources/Patient-pre-uv-ips.StructureDefinition : 2 / 1 / 1
  /github/workspace/input/resources/SHCVaccinationBundleDM-Example-English-From-ddcc-to-shc : 0 / 0 / 3
  /github/workspace/input/resources/StructureDefinition-HC1 : 3 / 1 / 1
@@ -551,6 +554,18 @@ WARNING: ValueSet/who-ddcc-vaccines-covid-19: ValueSet: The ShareableValueSet pr
 == input/resources/Immunization-pre-uv-ips.StructureDefinition.xml ==
 ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-pre-uv-ips'): Conformance resource /github/workspace/input/resources/Immunization-pre-uv-ips.StructureDefinition.xml - the canonical URL (http://worldhealthorganization.github.io/ddcc/StructureDefinition/Immunization-pre-uv-ips) does not match the URL (http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-pre-uv-ips)
 ERROR: /github/workspace/input/resources/Immunization-pre-uv-ips.StructureDefinition: URL Mismatch http://worldhealthorganization.github.io/ddcc/StructureDefinition/Immunization-pre-uv-ips vs http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-pre-uv-ips
+== input/resources/Library-AnyDosePass-1.0.0.json ==
+ERROR: Library.where(url = 'http://localhost/Library/AnyDosePass|1.0.0'): Conformance resource /github/workspace/input/resources/Library-AnyDosePass-1.0.0.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/Library/AnyDosePass-1.0.0) does not match the URL (http://localhost/Library/AnyDosePass|1.0.0)
+WARNING: Library/AnyDosePass-1.0.0: Library: Rule lib-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: /github/workspace/input/resources/Library-AnyDosePass-1.0.0: URL Mismatch http://worldhealthorganization.github.io/ddcc/Library/AnyDosePass-1.0.0 vs http://localhost/Library/AnyDosePass|1.0.0
+== input/resources/Library-DDCCPass-1.0.0.json ==
+ERROR: Library.where(url = 'http://localhost/Library/DDCCPass|1.0.0'): Conformance resource /github/workspace/input/resources/Library-DDCCPass-1.0.0.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/Library/DDCCPass-1.0.0) does not match the URL (http://localhost/Library/DDCCPass|1.0.0)
+WARNING: Library/DDCCPass-1.0.0: Library: Rule lib-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: /github/workspace/input/resources/Library-DDCCPass-1.0.0: URL Mismatch http://worldhealthorganization.github.io/ddcc/Library/DDCCPass-1.0.0 vs http://localhost/Library/DDCCPass|1.0.0
+== input/resources/Library-ModernaOrPfizerPass-1.0.0.json ==
+ERROR: Library.where(url = 'http://localhost/Library/ModernaOrPfizerPass|1.0.0'): Conformance resource /github/workspace/input/resources/Library-ModernaOrPfizerPass-1.0.0.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/Library/ModernaOrPfizerPass-1.0.0) does not match the URL (http://localhost/Library/ModernaOrPfizerPass|1.0.0)
+WARNING: Library/ModernaOrPfizerPass-1.0.0: Library: Rule lib-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: /github/workspace/input/resources/Library-ModernaOrPfizerPass-1.0.0: URL Mismatch http://worldhealthorganization.github.io/ddcc/Library/ModernaOrPfizerPass-1.0.0 vs http://localhost/Library/ModernaOrPfizerPass|1.0.0
 == input/resources/Patient-pre-uv-ips.StructureDefinition.xml ==
 ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-pre-uv-ips'): Conformance resource /github/workspace/input/resources/Patient-pre-uv-ips.StructureDefinition.xml - the canonical URL (http://worldhealthorganization.github.io/ddcc/StructureDefinition/Patient-pre-uv-ips) does not match the URL (http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-pre-uv-ips)
 ERROR: /github/workspace/input/resources/Patient-pre-uv-ips.StructureDefinition: URL Mismatch http://worldhealthorganization.github.io/ddcc/StructureDefinition/Patient-pre-uv-ips vs http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-pre-uv-ips
