@@ -20,7 +20,7 @@
   "name": "DDCCTRDocumentSigned",
   "title": "DDCC:TR DocumentSigned",
   "status": "active",
-  "date": "2022-11-30T13:59:42+00:00",
+  "date": "2022-11-30T15:11:20+00:00",
   "publisher": "WHO",
   "contact": [
     {
@@ -33,7 +33,7 @@
       ]
     }
   ],
-  "description": "A [DDCC:TR Document Signed](StructureDefinition-DDCCTRDocumentSigned.html) is a document bundle containing the DDCC:TR\nthat has a digital signature.\n",
+  "description": "A [DDCC:TR Document Signed](StructureDefinition-DDCCTRDocumentSigned.html) is a document bundle containing the DDCC:TR\nthat has a digital signature.",
   "jurisdiction": [
     {
       "coding": [

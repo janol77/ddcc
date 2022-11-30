@@ -10,11 +10,11 @@
   fhir:Resource.id [ fhir:value "fhir.who.ddcc"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ddcc</h2><p>The official URL for this implementation guide is: </p><pre>http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc</pre><div><p>This WHO Digital Documentation of COVID-19 Certificates (DDCC) Implementation Guide details how to use Health Level 7 (HL7) Fast Healthcare Interoperability Resources (FHIR) for consistent digital representation of COVID-19 certificates and interoperability.</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>DDCC</h2><p>The official URL for this implementation guide is: </p><pre>http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc</pre><div><p>This WHO Digital Documentation of COVID-19 Certificates (DDCC) Implementation Guide details how to use Health Level 7 (HL7) Fast Healthcare Interoperability Resources (FHIR) for consistent digital representation of COVID-19 certificates and interoperability.</p>\n</div></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc"];
   fhir:ImplementationGuide.version [ fhir:value "1.0.0"];
-  fhir:ImplementationGuide.name [ fhir:value "ddcc"];
+  fhir:ImplementationGuide.name [ fhir:value "DDCC"];
   fhir:ImplementationGuide.title [ fhir:value "WHO Digital Documentation of COVID-19 Certificates (DDCC)"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.date [ fhir:value "2022-03-22"^^xsd:date];
@@ -375,7 +375,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCComposition" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Composition" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Describes the logical structure for a Digital Documentation of COVID-19 Certificates \n(DDCC).  " ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Describes the logical structure for a Digital Documentation of COVID-19 \nCertificates (DDCC)." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 1;
@@ -403,7 +403,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCDocument" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Document" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A [DDCC Document](StructureDefinition-DDCCDocument.html) is a document bundle containing the DDCC.\n" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A [DDCC Document](StructureDefinition-DDCCDocument.html) is a document bundle containing the DDCC." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 3;
@@ -445,7 +445,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCDocumentSigned" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC DocumentSigned" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A [DDCC Document Signed](StructureDefinition-DDCCDocumentSigned.html) is a document bundle containing the DDCC\nthat has a digital signature.\n" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A [DDCC Document Signed](StructureDefinition-DDCCDocumentSigned.html) is a document bundle containing the DDCC\nthat has a digital signature." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 6;
@@ -557,7 +557,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCPatient" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Patient" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A DDCCPatient should:\n* if the [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier] is set then the value of [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner) should be set to reference the [DDCC Organization](StructureDefinition-DDCCOrganization.html) resource associated to the PHA.\n* obeys who-ddcc-patient-1\n" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A DDCCPatient should:\n* if the [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier] is set then the value of [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner) should be set to reference the [DDCC Organization](StructureDefinition-DDCCOrganization.html) resource associated to the PHA.\n* obeys who-ddcc-patient-1" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 14;
@@ -571,7 +571,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCPractitioner" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Practitioner" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Container for an DDCC Practitioner, which is a Practitioner authorized by the PHA to \nvaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html).\n" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Container for an DDCC Practitioner, which is a Practitioner authorized by the PHA to \nvaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html)." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 15;
@@ -585,7 +585,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCPractitionerRole" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Practitioner Role" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Association of an [DDCC Practitioner](StructureDefinition-DDCCPractitioner.html) to a \nmanaging [DDCC Organization](StructureDefinition-DDCCOrganization.html), indicating \nthat an DDCC Practitioner is authorized by the public health authority (PHA) to \nvaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html).\n" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Association of an [DDCC Practitioner](StructureDefinition-DDCCPractitioner.html) to a \nmanaging [DDCC Organization](StructureDefinition-DDCCOrganization.html), indicating \nthat an DDCC Practitioner is authorized by the public health authority (PHA) to \nvaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html)." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 16;
@@ -641,7 +641,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCQuestionnaireResponse" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Questionnaire Response" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Describes the logical structure for a questionnaire response associacted to a [DDCC Questionaire](StructureDefinition-DDCCQuestionnaire.html). " ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Describes the logical structure for a questionnaire response associacted to a [DDCC Questionaire](StructureDefinition-DDCCQuestionnaire.html)." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 20;
@@ -725,7 +725,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCSubmitHealthEventResponse" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Submit Health Event Response" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A DDCC Submit Health Event Response](StructureDefinition-DDCCSubmitHealthEventRespose.html) is a transaction reponse bundle containing the operation outcomes for the submission of one or more health certificates under the [Submit Health Event](transactions.html#submit-health-event) transaction.\n" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A DDCC Submit Health Event Response](StructureDefinition-DDCCSubmitHealthEventRespose.html) is a transaction reponse bundle containing the operation outcomes for the submission of one or more health certificates under the [Submit Health Event](transactions.html#submit-health-event) transaction." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 26;
@@ -739,7 +739,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCTRComposition" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC:TR Composition" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Describes the logical structure for a Digital Documentation of COVID-19 Certificates - Test Result\n(DDCC:TR).  " ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Describes the logical structure for a Digital Documentation of COVID-19 Certificates - Test Result (DDCC:TR)." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 27;
@@ -753,7 +753,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCTRDocument" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC:VS Document" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A [DDCC:VS Document](StructureDefinition-DDCCVSDocument.html) is a document bundle containing the DDCC:VS.\n" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A [DDCC:VS Document](StructureDefinition-DDCCVSDocument.html) is a document bundle containing the DDCC:VS." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 28;
@@ -767,7 +767,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCTRDocumentSigned" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC:TR DocumentSigned" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A [DDCC:TR Document Signed](StructureDefinition-DDCCTRDocumentSigned.html) is a document bundle containing the DDCC:TR\nthat has a digital signature.\n" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A [DDCC:TR Document Signed](StructureDefinition-DDCCTRDocumentSigned.html) is a document bundle containing the DDCC:TR\nthat has a digital signature." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 29;
@@ -809,7 +809,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCVSComposition" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC:VS Composition" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Describes the logical structure for a Digital Documentation of COVID-19 Certificates - Vaccination Status\n(DDCC:VS).  " ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Describes the logical structure for a Digital Documentation of COVID-19 Certificates - Vaccination Status (DDCC:VS)." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 32;
@@ -823,7 +823,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCVSDocument" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC:VS Document" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A [DDCC:VS Document](StructureDefinition-DDCCVSDocument.html) is a document bundle containing the DDCC:VS.\n" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A [DDCC:VS Document](StructureDefinition-DDCCVSDocument.html) is a document bundle containing the DDCC:VS." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 33;
@@ -837,7 +837,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCVSDocumentSigned" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC:VS DocumentSigned" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A [DDCC:VS Document Signed](StructureDefinition-DDCCVSDocumentSigned.html) is a document bundle containing the DDCC:VS\nthat has a digital signature.\n" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A [DDCC:VS Document Signed](StructureDefinition-DDCCVSDocumentSigned.html) is a document bundle containing the DDCC:VS\nthat has a digital signature." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 34;

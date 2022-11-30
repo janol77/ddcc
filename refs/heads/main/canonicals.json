@@ -277,7 +277,7 @@
     "type": "ImplementationGuide",
     "url": "http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc",
     "version": "1.0.0",
-    "name": "ddcc"
+    "name": "DDCC"
   },
   {
     "id": "DDCC-QuestionnaireResponse-generateHealthCertificate",

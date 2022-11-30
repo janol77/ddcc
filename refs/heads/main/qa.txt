@@ -1,9 +1,9 @@
-﻿ddcc : Validation Results
+﻿DDCC : Validation Results
 =========================================
 
-err = 667, warn = 113, info = 27
+err = 667, warn = 98, info = 27
 IG Publisher Version: 1.2.19
-Generated Wed Nov 30 14:04:20 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0.0 (canonical = http://worldhealthorganization.github.io/ddcc)
+Generated Wed Nov 30 15:14:52 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0.0 (canonical = http://worldhealthorganization.github.io/ddcc)
  Build Errors : 9 / 71 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 0 / 0 / 10
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Arabic : 0 / 0 / 10
@@ -63,7 +63,7 @@ Generated Wed Nov 30 14:04:20 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0
  /github/workspace/fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-French : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Russian : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Spanish : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.who.ddcc : 0 / 15 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.who.ddcc : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate : 3 / 0 / 1
  /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthFolder : 3 / 0 / 1
  /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-revokeHealthCertificate : 3 / 0 / 1
@@ -345,31 +345,6 @@ INFORMATION: Immunization/DDCC-Immunization-Spanish: Immunization.protocolApplie
 == fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Russian.json ==
 == fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Spanish.json ==
 == fsh-generated/resources/ImplementationGuide-fhir.who.ddcc.json ==
-WARNING: ImplementationGuide/fhir.who.ddcc: ImplementationGuide: Rule ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-WARNING: ImplementationGuide/fhir.who.ddcc: ImplementationGuide.definition.resource[0].description: value should not start or finish with whitespace 'Describes...(DDCC).  '
-WARNING: ImplementationGuide/fhir.who.ddcc: ImplementationGuide.definition.resource[2].description: value should not start or finish with whitespace 'A...DDCC.
-'
-WARNING: ImplementationGuide/fhir.who.ddcc: ImplementationGuide.definition.resource[5].description: value should not start or finish with whitespace 'A...signature.
-'
-WARNING: ImplementationGuide/fhir.who.ddcc: ImplementationGuide.definition.resource[13].description: value should not start or finish with whitespace 'A...who-ddcc-patient-1
-'
-WARNING: ImplementationGuide/fhir.who.ddcc: ImplementationGuide.definition.resource[14].description: value should not start or finish with whitespace 'Container...Patient](StructureDefinition-DDCCPatient.html).
-'
-WARNING: ImplementationGuide/fhir.who.ddcc: ImplementationGuide.definition.resource[15].description: value should not start or finish with whitespace 'Association...Patient](StructureDefinition-DDCCPatient.html).
-'
-WARNING: ImplementationGuide/fhir.who.ddcc: ImplementationGuide.definition.resource[19].description: value should not start or finish with whitespace 'Describes...Questionaire](StructureDefinition-DDCCQuestionnaire.html). '
-WARNING: ImplementationGuide/fhir.who.ddcc: ImplementationGuide.definition.resource[25].description: value should not start or finish with whitespace 'A...transaction.
-'
-WARNING: ImplementationGuide/fhir.who.ddcc: ImplementationGuide.definition.resource[26].description: value should not start or finish with whitespace 'Describes...(DDCC:TR).  '
-WARNING: ImplementationGuide/fhir.who.ddcc: ImplementationGuide.definition.resource[27].description: value should not start or finish with whitespace 'A...DDCC:VS.
-'
-WARNING: ImplementationGuide/fhir.who.ddcc: ImplementationGuide.definition.resource[28].description: value should not start or finish with whitespace 'A...signature.
-'
-WARNING: ImplementationGuide/fhir.who.ddcc: ImplementationGuide.definition.resource[31].description: value should not start or finish with whitespace 'Describes...(DDCC:VS).  '
-WARNING: ImplementationGuide/fhir.who.ddcc: ImplementationGuide.definition.resource[32].description: value should not start or finish with whitespace 'A...DDCC:VS.
-'
-WARNING: ImplementationGuide/fhir.who.ddcc: ImplementationGuide.definition.resource[33].description: value should not start or finish with whitespace 'A...signature.
-'
 == fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.json ==
 ERROR: OperationDefinition.where(url = 'http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCGenerateHealthCertificate'): Conformance resource /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate) does not match the URL (http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCGenerateHealthCertificate)
 ERROR: OperationDefinition.url: Resource id/url mismatch: DDCC-QuestionnaireResponse-generateHealthCertificate/http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCGenerateHealthCertificate

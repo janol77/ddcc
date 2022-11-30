@@ -23,7 +23,7 @@
   <name value="DDCCSubmitHealthEventResponse"/>
   <title value="DDCC Submit Health Event Response"/>
   <status value="active"/>
-  <date value="2022-11-30T13:59:42+00:00"/>
+  <date value="2022-11-30T15:11:20+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -32,7 +32,7 @@
       <value value="http://who.int"/>
     </telecom>
   </contact>
-  <description value="A DDCC Submit Health Event Response](StructureDefinition-DDCCSubmitHealthEventRespose.html) is a transaction reponse bundle containing the operation outcomes for the submission of one or more health certificates under the [Submit Health Event](transactions.html#submit-health-event) transaction.&#xA;"/>
+  <description value="A DDCC Submit Health Event Response](StructureDefinition-DDCCSubmitHealthEventRespose.html) is a transaction reponse bundle containing the operation outcomes for the submission of one or more health certificates under the [Submit Health Event](transactions.html#submit-health-event) transaction."/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>

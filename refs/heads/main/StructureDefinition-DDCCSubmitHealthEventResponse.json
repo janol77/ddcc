@@ -20,7 +20,7 @@
   "name": "DDCCSubmitHealthEventResponse",
   "title": "DDCC Submit Health Event Response",
   "status": "active",
-  "date": "2022-11-30T13:59:42+00:00",
+  "date": "2022-11-30T15:11:20+00:00",
   "publisher": "WHO",
   "contact": [
     {
@@ -33,7 +33,7 @@
       ]
     }
   ],
-  "description": "A DDCC Submit Health Event Response](StructureDefinition-DDCCSubmitHealthEventRespose.html) is a transaction reponse bundle containing the operation outcomes for the submission of one or more health certificates under the [Submit Health Event](transactions.html#submit-health-event) transaction.\n",
+  "description": "A DDCC Submit Health Event Response](StructureDefinition-DDCCSubmitHealthEventRespose.html) is a transaction reponse bundle containing the operation outcomes for the submission of one or more health certificates under the [Submit Health Event](transactions.html#submit-health-event) transaction.",
   "jurisdiction": [
     {
       "coding": [

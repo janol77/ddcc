@@ -3,12 +3,12 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="fhir.who.ddcc"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ddcc</h2><p>The official URL for this implementation guide is: </p><pre>http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc</pre><div><p>This WHO Digital Documentation of COVID-19 Certificates (DDCC) Implementation Guide details how to use Health Level 7 (HL7) Fast Healthcare Interoperability Resources (FHIR) for consistent digital representation of COVID-19 certificates and interoperability.</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>DDCC</h2><p>The official URL for this implementation guide is: </p><pre>http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc</pre><div><p>This WHO Digital Documentation of COVID-19 Certificates (DDCC) Implementation Guide details how to use Health Level 7 (HL7) Fast Healthcare Interoperability Resources (FHIR) for consistent digital representation of COVID-19 certificates and interoperability.</p>
 </div></div>
   </text>
   <url value="http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc"/>
   <version value="1.0.0"/>
-  <name value="ddcc"/>
+  <name value="DDCC"/>
   <title value="WHO Digital Documentation of COVID-19 Certificates (DDCC)"/>
   <status value="draft"/>
   <date value="2022-03-22"/>
@@ -246,7 +246,7 @@
         <reference value="StructureDefinition/DDCCComposition"/>
       </reference>
       <name value="DDCC Composition"/>
-      <description value="Describes the logical structure for a Digital Documentation of COVID-19 Certificates &#xA;(DDCC).  "/>
+      <description value="Describes the logical structure for a Digital Documentation of COVID-19 &#xA;Certificates (DDCC)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -268,7 +268,7 @@
         <reference value="StructureDefinition/DDCCDocument"/>
       </reference>
       <name value="DDCC Document"/>
-      <description value="A [DDCC Document](StructureDefinition-DDCCDocument.html) is a document bundle containing the DDCC.&#xA;"/>
+      <description value="A [DDCC Document](StructureDefinition-DDCCDocument.html) is a document bundle containing the DDCC."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -301,7 +301,7 @@
         <reference value="StructureDefinition/DDCCDocumentSigned"/>
       </reference>
       <name value="DDCC DocumentSigned"/>
-      <description value="A [DDCC Document Signed](StructureDefinition-DDCCDocumentSigned.html) is a document bundle containing the DDCC&#xA;that has a digital signature.&#xA;"/>
+      <description value="A [DDCC Document Signed](StructureDefinition-DDCCDocumentSigned.html) is a document bundle containing the DDCC&#xA;that has a digital signature."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -389,7 +389,7 @@
         <reference value="StructureDefinition/DDCCPatient"/>
       </reference>
       <name value="DDCC Patient"/>
-      <description value="A DDCCPatient should:&#xA;* if the [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier] is set then the value of [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner) should be set to reference the [DDCC Organization](StructureDefinition-DDCCOrganization.html) resource associated to the PHA.&#xA;* obeys who-ddcc-patient-1&#xA;"/>
+      <description value="A DDCCPatient should:&#xA;* if the [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier] is set then the value of [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner) should be set to reference the [DDCC Organization](StructureDefinition-DDCCOrganization.html) resource associated to the PHA.&#xA;* obeys who-ddcc-patient-1"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -400,7 +400,7 @@
         <reference value="StructureDefinition/DDCCPractitioner"/>
       </reference>
       <name value="DDCC Practitioner"/>
-      <description value="Container for an DDCC Practitioner, which is a Practitioner authorized by the PHA to &#xA;vaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html).&#xA;"/>
+      <description value="Container for an DDCC Practitioner, which is a Practitioner authorized by the PHA to &#xA;vaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -411,7 +411,7 @@
         <reference value="StructureDefinition/DDCCPractitionerRole"/>
       </reference>
       <name value="DDCC Practitioner Role"/>
-      <description value="Association of an [DDCC Practitioner](StructureDefinition-DDCCPractitioner.html) to a &#xA;managing [DDCC Organization](StructureDefinition-DDCCOrganization.html), indicating &#xA;that an DDCC Practitioner is authorized by the public health authority (PHA) to &#xA;vaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html).&#xA;"/>
+      <description value="Association of an [DDCC Practitioner](StructureDefinition-DDCCPractitioner.html) to a &#xA;managing [DDCC Organization](StructureDefinition-DDCCOrganization.html), indicating &#xA;that an DDCC Practitioner is authorized by the public health authority (PHA) to &#xA;vaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -455,7 +455,7 @@
         <reference value="StructureDefinition/DDCCQuestionnaireResponse"/>
       </reference>
       <name value="DDCC Questionnaire Response"/>
-      <description value="Describes the logical structure for a questionnaire response associacted to a [DDCC Questionaire](StructureDefinition-DDCCQuestionnaire.html). "/>
+      <description value="Describes the logical structure for a questionnaire response associacted to a [DDCC Questionaire](StructureDefinition-DDCCQuestionnaire.html)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -521,7 +521,7 @@
         <reference value="StructureDefinition/DDCCSubmitHealthEventResponse"/>
       </reference>
       <name value="DDCC Submit Health Event Response"/>
-      <description value="A DDCC Submit Health Event Response](StructureDefinition-DDCCSubmitHealthEventRespose.html) is a transaction reponse bundle containing the operation outcomes for the submission of one or more health certificates under the [Submit Health Event](transactions.html#submit-health-event) transaction.&#xA;"/>
+      <description value="A DDCC Submit Health Event Response](StructureDefinition-DDCCSubmitHealthEventRespose.html) is a transaction reponse bundle containing the operation outcomes for the submission of one or more health certificates under the [Submit Health Event](transactions.html#submit-health-event) transaction."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -532,7 +532,7 @@
         <reference value="StructureDefinition/DDCCTRComposition"/>
       </reference>
       <name value="DDCC:TR Composition"/>
-      <description value="Describes the logical structure for a Digital Documentation of COVID-19 Certificates - Test Result&#xA;(DDCC:TR).  "/>
+      <description value="Describes the logical structure for a Digital Documentation of COVID-19 Certificates - Test Result (DDCC:TR)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -543,7 +543,7 @@
         <reference value="StructureDefinition/DDCCTRDocument"/>
       </reference>
       <name value="DDCC:VS Document"/>
-      <description value="A [DDCC:VS Document](StructureDefinition-DDCCVSDocument.html) is a document bundle containing the DDCC:VS.&#xA;"/>
+      <description value="A [DDCC:VS Document](StructureDefinition-DDCCVSDocument.html) is a document bundle containing the DDCC:VS."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -554,7 +554,7 @@
         <reference value="StructureDefinition/DDCCTRDocumentSigned"/>
       </reference>
       <name value="DDCC:TR DocumentSigned"/>
-      <description value="A [DDCC:TR Document Signed](StructureDefinition-DDCCTRDocumentSigned.html) is a document bundle containing the DDCC:TR&#xA;that has a digital signature.&#xA;"/>
+      <description value="A [DDCC:TR Document Signed](StructureDefinition-DDCCTRDocumentSigned.html) is a document bundle containing the DDCC:TR&#xA;that has a digital signature."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -587,7 +587,7 @@
         <reference value="StructureDefinition/DDCCVSComposition"/>
       </reference>
       <name value="DDCC:VS Composition"/>
-      <description value="Describes the logical structure for a Digital Documentation of COVID-19 Certificates - Vaccination Status&#xA;(DDCC:VS).  "/>
+      <description value="Describes the logical structure for a Digital Documentation of COVID-19 Certificates - Vaccination Status (DDCC:VS)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -598,7 +598,7 @@
         <reference value="StructureDefinition/DDCCVSDocument"/>
       </reference>
       <name value="DDCC:VS Document"/>
-      <description value="A [DDCC:VS Document](StructureDefinition-DDCCVSDocument.html) is a document bundle containing the DDCC:VS.&#xA;"/>
+      <description value="A [DDCC:VS Document](StructureDefinition-DDCCVSDocument.html) is a document bundle containing the DDCC:VS."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -609,7 +609,7 @@
         <reference value="StructureDefinition/DDCCVSDocumentSigned"/>
       </reference>
       <name value="DDCC:VS DocumentSigned"/>
-      <description value="A [DDCC:VS Document Signed](StructureDefinition-DDCCVSDocumentSigned.html) is a document bundle containing the DDCC:VS&#xA;that has a digital signature.&#xA;"/>
+      <description value="A [DDCC:VS Document Signed](StructureDefinition-DDCCVSDocumentSigned.html) is a document bundle containing the DDCC:VS&#xA;that has a digital signature."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

@@ -18,7 +18,7 @@
   <name value="DDCCTRDocumentSigned"/>
   <title value="DDCC:TR DocumentSigned"/>
   <status value="active"/>
-  <date value="2022-11-30T13:59:42+00:00"/>
+  <date value="2022-11-30T15:11:20+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -27,7 +27,7 @@
       <value value="http://who.int"/>
     </telecom>
   </contact>
-  <description value="A [DDCC:TR Document Signed](StructureDefinition-DDCCTRDocumentSigned.html) is a document bundle containing the DDCC:TR&#xA;that has a digital signature.&#xA;"/>
+  <description value="A [DDCC:TR Document Signed](StructureDefinition-DDCCTRDocumentSigned.html) is a document bundle containing the DDCC:TR&#xA;that has a digital signature."/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
