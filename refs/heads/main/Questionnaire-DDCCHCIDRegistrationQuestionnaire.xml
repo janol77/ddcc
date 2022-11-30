@@ -21,7 +21,7 @@
       </valueCoding>
     </extension>
     <extension url="type">
-      <valueCode value="patient"/>
+      <valueCode value="Patient"/>
     </extension>
     <extension url="description">
       <valueString value="Patient used in form pre-population"/>

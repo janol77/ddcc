@@ -1796,7 +1796,7 @@
         "reference": {
           "reference": "OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate"
         },
-        "name": "DDCCGenerateHealthCertificate",
+        "name": "DDCC-QuestionnaireResponse-generateHealthCertificate",
         "description": "Generate one or more signed DDCC Documents based on a [DDCC QuestionnaireResponse](StructureDefinition-DDCCQuestionnaireResponse.html)",
         "exampleBoolean": false
       },
@@ -1810,7 +1810,7 @@
         "reference": {
           "reference": "OperationDefinition/DDCC-QuestionnaireResponse-generateHealthFolder"
         },
-        "name": "DDCCGenerateHealthFolder",
+        "name": "DDCC-QuestionnaireResponse-generateHealthFolder",
         "description": "Generate a DDCC Folder from an IPS Bundle.",
         "exampleBoolean": false
       },
@@ -1824,7 +1824,7 @@
         "reference": {
           "reference": "OperationDefinition/DDCC-QuestionnaireResponse-revokeHealthCertificate"
         },
-        "name": "DDCCRevokeHealthCertificate",
+        "name": "DDCC-QuestionnaireResponse-revokeHealthCertificate",
         "description": "Revoke a DDCC Document.",
         "exampleBoolean": false
       },
