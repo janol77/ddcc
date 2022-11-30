@@ -282,21 +282,21 @@
   {
     "id": "DDCC-QuestionnaireResponse-generateHealthCertificate",
     "type": "OperationDefinition",
-    "url": "http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCGenerateHealthCertificate",
+    "url": "http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate",
     "version": "1.0.0",
     "name": "QuestionnaireResponse_Generate_Health_Certificate"
   },
   {
     "id": "DDCC-QuestionnaireResponse-generateHealthFolder",
     "type": "OperationDefinition",
-    "url": "http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCGenerateHealthFolder",
+    "url": "http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCC-QuestionnaireResponse-generateHealthFolder",
     "version": "1.0.0",
     "name": "QuestionnaireResponse_Generate_Health_Folder"
   },
   {
     "id": "DDCC-QuestionnaireResponse-revokeHealthCertificate",
     "type": "OperationDefinition",
-    "url": "http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCRevokeHealthCertificate",
+    "url": "http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCC-QuestionnaireResponse-revokeHealthCertificate",
     "version": "1.0.0",
     "name": "QuestionnaireResponse_Revoke_Health_Certificate"
   },

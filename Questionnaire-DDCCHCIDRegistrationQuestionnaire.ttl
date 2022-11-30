@@ -31,7 +31,7 @@
      ], [
        fhir:index 1;
        fhir:Extension.url [ fhir:value "type" ];
-       fhir:Extension.valueCode [ fhir:value "patient" ]
+       fhir:Extension.valueCode [ fhir:value "Patient" ]
      ], [
        fhir:index 2;
        fhir:Extension.url [ fhir:value "description" ];

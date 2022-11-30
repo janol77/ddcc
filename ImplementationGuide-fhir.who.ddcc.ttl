@@ -1876,7 +1876,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate>;
          fhir:Reference.reference [ fhir:value "OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCCGenerateHealthCertificate" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC-QuestionnaireResponse-generateHealthCertificate" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Generate one or more signed DDCC Documents based on a [DDCC QuestionnaireResponse](StructureDefinition-DDCCQuestionnaireResponse.html)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -1890,7 +1890,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCC-QuestionnaireResponse-generateHealthFolder>;
          fhir:Reference.reference [ fhir:value "OperationDefinition/DDCC-QuestionnaireResponse-generateHealthFolder" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCCGenerateHealthFolder" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC-QuestionnaireResponse-generateHealthFolder" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Generate a DDCC Folder from an IPS Bundle." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -1904,7 +1904,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCC-QuestionnaireResponse-revokeHealthCertificate>;
          fhir:Reference.reference [ fhir:value "OperationDefinition/DDCC-QuestionnaireResponse-revokeHealthCertificate" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCCRevokeHealthCertificate" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC-QuestionnaireResponse-revokeHealthCertificate" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Revoke a DDCC Document." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [

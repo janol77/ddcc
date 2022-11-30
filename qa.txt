@@ -1,9 +1,9 @@
 ﻿DDCC : Validation Results
 =========================================
 
-err = 667, warn = 98, info = 27
+err = 656, warn = 97, info = 27
 IG Publisher Version: 1.2.19
-Generated Wed Nov 30 15:14:52 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0.0 (canonical = http://worldhealthorganization.github.io/ddcc)
+Generated Wed Nov 30 15:50:22 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0.0 (canonical = http://worldhealthorganization.github.io/ddcc)
  Build Errors : 9 / 71 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 0 / 0 / 10
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Arabic : 0 / 0 / 10
@@ -64,9 +64,9 @@ Generated Wed Nov 30 15:14:52 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0
  /github/workspace/fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Russian : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Spanish : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.who.ddcc : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate : 3 / 0 / 1
- /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthFolder : 3 / 0 / 1
- /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-revokeHealthCertificate : 3 / 0 / 1
+ /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthFolder : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-revokeHealthCertificate : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-DDCC-Organization-Arabic : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-DDCC-Organization-Chinese : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-DDCC-Organization-English : 0 / 0 / 1
@@ -79,8 +79,8 @@ Generated Wed Nov 30 15:14:52 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0
  /github/workspace/fsh-generated/resources/Patient-DDCC-Patient-French : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-DDCC-Patient-Russian : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-DDCC-Patient-Spanish : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Questionnaire-DDCCHCIDRegistrationQuestionnaire : 4 / 0 / 1
- /github/workspace/fsh-generated/resources/Questionnaire-DDCCTRCoreDataSetQuestionnaire : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Questionnaire-DDCCHCIDRegistrationQuestionnaire : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/Questionnaire-DDCCTRCoreDataSetQuestionnaire : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Questionnaire-DDCCVSCoreDataSetQuestionnaire : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Arabic : 0 / 0 / 4
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Chinese : 0 / 0 / 4
@@ -346,17 +346,8 @@ INFORMATION: Immunization/DDCC-Immunization-Spanish: Immunization.protocolApplie
 == fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Spanish.json ==
 == fsh-generated/resources/ImplementationGuide-fhir.who.ddcc.json ==
 == fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.json ==
-ERROR: OperationDefinition.where(url = 'http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCGenerateHealthCertificate'): Conformance resource /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate) does not match the URL (http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCGenerateHealthCertificate)
-ERROR: OperationDefinition.url: Resource id/url mismatch: DDCC-QuestionnaireResponse-generateHealthCertificate/http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCGenerateHealthCertificate
-ERROR: /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate: URL Mismatch http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate vs http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCGenerateHealthCertificate
 == fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthFolder.json ==
-ERROR: OperationDefinition.where(url = 'http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCGenerateHealthFolder'): Conformance resource /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthFolder.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCC-QuestionnaireResponse-generateHealthFolder) does not match the URL (http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCGenerateHealthFolder)
-ERROR: OperationDefinition.url: Resource id/url mismatch: DDCC-QuestionnaireResponse-generateHealthFolder/http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCGenerateHealthFolder
-ERROR: /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthFolder: URL Mismatch http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCC-QuestionnaireResponse-generateHealthFolder vs http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCGenerateHealthFolder
 == fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-revokeHealthCertificate.json ==
-ERROR: OperationDefinition.where(url = 'http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCRevokeHealthCertificate'): Conformance resource /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-revokeHealthCertificate.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCC-QuestionnaireResponse-revokeHealthCertificate) does not match the URL (http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCRevokeHealthCertificate)
-ERROR: OperationDefinition.url: Resource id/url mismatch: DDCC-QuestionnaireResponse-revokeHealthCertificate/http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCRevokeHealthCertificate
-ERROR: /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-revokeHealthCertificate: URL Mismatch http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCC-QuestionnaireResponse-revokeHealthCertificate vs http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCRevokeHealthCertificate
 == fsh-generated/resources/Organization-DDCC-Organization-Arabic.json ==
 == fsh-generated/resources/Organization-DDCC-Organization-Chinese.json ==
 == fsh-generated/resources/Organization-DDCC-Organization-English.json ==
@@ -370,12 +361,9 @@ ERROR: /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-Questi
 == fsh-generated/resources/Patient-DDCC-Patient-Russian.json ==
 == fsh-generated/resources/Patient-DDCC-Patient-Spanish.json ==
 == fsh-generated/resources/Questionnaire-DDCCHCIDRegistrationQuestionnaire.json ==
-ERROR: Questionnaire/DDCCHCIDRegistrationQuestionnaire: Questionnaire.extension[0]: Rule inv-1: 'Types must be from the specified value set of resource types based on name: patient: Patient; user: Patient, Practitioner, PractitionerRole, RelatedPerson (could be a subset of these); encounter: Encounter; location: Location; study: ResearchStudy' Failed
-ERROR: Questionnaire/DDCCHCIDRegistrationQuestionnaire: Questionnaire.extension[0].extension[1].value.ofType(code): The value provided ('patient') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#patient in http://hl7.org/fhir/resource-types)
 ERROR: Questionnaire/DDCCHCIDRegistrationQuestionnaire: Questionnaire.item[2].item[0]: The modifier extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemPopulationContext is not allowed to be used at this point (allowed = e:Questionnaire, e:Questionnaire.item, e:ElementDefinition; this element is [Questionnaire.item.item, BackboneElement.item, BackboneElement])
 ERROR: Questionnaire/DDCCHCIDRegistrationQuestionnaire: Questionnaire.item[2].item[0]: The modifier extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext is not allowed to be used at this point (allowed = e:Questionnaire, e:Questionnaire.item, e:ElementDefinition; this element is [Questionnaire.item.item, BackboneElement.item, BackboneElement])
 == fsh-generated/resources/Questionnaire-DDCCTRCoreDataSetQuestionnaire.json ==
-WARNING: Questionnaire/DDCCTRCoreDataSetQuestionnaire: Questionnaire.item[8].text: value should not start or finish with whitespace 'Date...collection  '
 == fsh-generated/resources/Questionnaire-DDCCVSCoreDataSetQuestionnaire.json ==
 == fsh-generated/resources/QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Arabic.json ==
 == fsh-generated/resources/QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Chinese.json ==

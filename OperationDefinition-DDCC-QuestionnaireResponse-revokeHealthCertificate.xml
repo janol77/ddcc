@@ -7,7 +7,7 @@
 </div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td/><td><div><p>A boolean to determine if the revocation was successful or not.</p>
 </div></td></tr></table></div>
   </text>
-  <url value="http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCRevokeHealthCertificate"/>
+  <url value="http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCC-QuestionnaireResponse-revokeHealthCertificate"/>
   <version value="1.0.0"/>
   <name value="QuestionnaireResponse_Revoke_Health_Certificate"/>
   <title value="OperationDefinition for revoking a health certificate (DDCC)."/>
