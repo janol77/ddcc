@@ -20,7 +20,7 @@
   "name": "DDCCVSComposition",
   "title": "DDCC:VS Composition",
   "status": "active",
-  "date": "2022-11-30T13:59:42+00:00",
+  "date": "2022-11-30T15:11:20+00:00",
   "publisher": "WHO",
   "contact": [
     {
@@ -33,7 +33,7 @@
       ]
     }
   ],
-  "description": "Describes the logical structure for a Digital Documentation of COVID-19 Certificates - Vaccination Status\n(DDCC:VS).  ",
+  "description": "Describes the logical structure for a Digital Documentation of COVID-19 Certificates - Vaccination Status (DDCC:VS).",
   "jurisdiction": [
     {
       "coding": [

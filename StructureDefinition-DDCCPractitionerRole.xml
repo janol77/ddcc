@@ -19,7 +19,7 @@
   <name value="DDCCPractitionerRole"/>
   <title value="DDCC Practitioner Role"/>
   <status value="active"/>
-  <date value="2022-11-30T13:59:42+00:00"/>
+  <date value="2022-11-30T15:11:20+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -28,7 +28,7 @@
       <value value="http://who.int"/>
     </telecom>
   </contact>
-  <description value="Association of an [DDCC Practitioner](StructureDefinition-DDCCPractitioner.html) to a &#xA;managing [DDCC Organization](StructureDefinition-DDCCOrganization.html), indicating &#xA;that an DDCC Practitioner is authorized by the public health authority (PHA) to &#xA;vaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html).&#xA;"/>
+  <description value="Association of an [DDCC Practitioner](StructureDefinition-DDCCPractitioner.html) to a &#xA;managing [DDCC Organization](StructureDefinition-DDCCOrganization.html), indicating &#xA;that an DDCC Practitioner is authorized by the public health authority (PHA) to &#xA;vaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html)."/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>

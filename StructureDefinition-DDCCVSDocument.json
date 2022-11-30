@@ -20,7 +20,7 @@
   "name": "DDCCVSDocument",
   "title": "DDCC:VS Document",
   "status": "active",
-  "date": "2022-11-30T13:59:42+00:00",
+  "date": "2022-11-30T15:11:20+00:00",
   "publisher": "WHO",
   "contact": [
     {
@@ -33,7 +33,7 @@
       ]
     }
   ],
-  "description": "A [DDCC:VS Document](StructureDefinition-DDCCVSDocument.html) is a document bundle containing the DDCC:VS.\n",
+  "description": "A [DDCC:VS Document](StructureDefinition-DDCCVSDocument.html) is a document bundle containing the DDCC:VS.",
   "jurisdiction": [
     {
       "coding": [

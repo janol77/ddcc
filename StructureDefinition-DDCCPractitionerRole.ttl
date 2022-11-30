@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "DDCCPractitionerRole"];
   fhir:StructureDefinition.title [ fhir:value "DDCC Practitioner Role"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-11-30T13:59:42+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-11-30T15:11:20+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "WHO"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -37,7 +37,7 @@
        fhir:ContactPoint.value [ fhir:value "http://who.int" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "Association of an [DDCC Practitioner](StructureDefinition-DDCCPractitioner.html) to a \nmanaging [DDCC Organization](StructureDefinition-DDCCOrganization.html), indicating \nthat an DDCC Practitioner is authorized by the public health authority (PHA) to \nvaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html).\n"];
+  fhir:StructureDefinition.description [ fhir:value "Association of an [DDCC Practitioner](StructureDefinition-DDCCPractitioner.html) to a \nmanaging [DDCC Organization](StructureDefinition-DDCCOrganization.html), indicating \nthat an DDCC Practitioner is authorized by the public health authority (PHA) to \nvaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html)."];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [

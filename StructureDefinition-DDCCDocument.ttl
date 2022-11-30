@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "DDCCDocument"];
   fhir:StructureDefinition.title [ fhir:value "DDCC Document"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-11-30T13:59:42+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-11-30T15:11:20+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "WHO"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -37,7 +37,7 @@
        fhir:ContactPoint.value [ fhir:value "http://who.int" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "A [DDCC Document](StructureDefinition-DDCCDocument.html) is a document bundle containing the DDCC.\n"];
+  fhir:StructureDefinition.description [ fhir:value "A [DDCC Document](StructureDefinition-DDCCDocument.html) is a document bundle containing the DDCC."];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [

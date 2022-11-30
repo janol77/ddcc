@@ -27,7 +27,7 @@
   fhir:StructureDefinition.name [ fhir:value "DDCCVSComposition"];
   fhir:StructureDefinition.title [ fhir:value "DDCC:VS Composition"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-11-30T13:59:42+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-11-30T15:11:20+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "WHO"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -38,7 +38,7 @@
        fhir:ContactPoint.value [ fhir:value "http://who.int" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "Describes the logical structure for a Digital Documentation of COVID-19 Certificates - Vaccination Status\n(DDCC:VS).  "];
+  fhir:StructureDefinition.description [ fhir:value "Describes the logical structure for a Digital Documentation of COVID-19 Certificates - Vaccination Status (DDCC:VS)."];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [

@@ -10,7 +10,7 @@
   "name": "DDCCPatient",
   "title": "DDCC Patient",
   "status": "active",
-  "date": "2022-11-30T13:59:42+00:00",
+  "date": "2022-11-30T15:11:20+00:00",
   "publisher": "WHO",
   "contact": [
     {
@@ -23,7 +23,7 @@
       ]
     }
   ],
-  "description": "A DDCCPatient should:\n* if the [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier] is set then the value of [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner) should be set to reference the [DDCC Organization](StructureDefinition-DDCCOrganization.html) resource associated to the PHA.\n* obeys who-ddcc-patient-1\n",
+  "description": "A DDCCPatient should:\n* if the [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier] is set then the value of [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner) should be set to reference the [DDCC Organization](StructureDefinition-DDCCOrganization.html) resource associated to the PHA.\n* obeys who-ddcc-patient-1",
   "jurisdiction": [
     {
       "coding": [

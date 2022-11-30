@@ -3,11 +3,11 @@
   "id": "fhir.who.ddcc",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ddcc</h2><p>The official URL for this implementation guide is: </p><pre>http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc</pre><div><p>This WHO Digital Documentation of COVID-19 Certificates (DDCC) Implementation Guide details how to use Health Level 7 (HL7) Fast Healthcare Interoperability Resources (FHIR) for consistent digital representation of COVID-19 certificates and interoperability.</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>DDCC</h2><p>The official URL for this implementation guide is: </p><pre>http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc</pre><div><p>This WHO Digital Documentation of COVID-19 Certificates (DDCC) Implementation Guide details how to use Health Level 7 (HL7) Fast Healthcare Interoperability Resources (FHIR) for consistent digital representation of COVID-19 certificates and interoperability.</p>\n</div></div>"
   },
   "url": "http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc",
   "version": "1.0.0",
-  "name": "ddcc",
+  "name": "DDCC",
   "title": "WHO Digital Documentation of COVID-19 Certificates (DDCC)",
   "status": "draft",
   "date": "2022-03-22",
@@ -385,7 +385,7 @@
           "reference": "StructureDefinition/DDCCComposition"
         },
         "name": "DDCC Composition",
-        "description": "Describes the logical structure for a Digital Documentation of COVID-19 Certificates \n(DDCC).  ",
+        "description": "Describes the logical structure for a Digital Documentation of COVID-19 \nCertificates (DDCC).",
         "exampleBoolean": false
       },
       {
@@ -413,7 +413,7 @@
           "reference": "StructureDefinition/DDCCDocument"
         },
         "name": "DDCC Document",
-        "description": "A [DDCC Document](StructureDefinition-DDCCDocument.html) is a document bundle containing the DDCC.\n",
+        "description": "A [DDCC Document](StructureDefinition-DDCCDocument.html) is a document bundle containing the DDCC.",
         "exampleBoolean": false
       },
       {
@@ -455,7 +455,7 @@
           "reference": "StructureDefinition/DDCCDocumentSigned"
         },
         "name": "DDCC DocumentSigned",
-        "description": "A [DDCC Document Signed](StructureDefinition-DDCCDocumentSigned.html) is a document bundle containing the DDCC\nthat has a digital signature.\n",
+        "description": "A [DDCC Document Signed](StructureDefinition-DDCCDocumentSigned.html) is a document bundle containing the DDCC\nthat has a digital signature.",
         "exampleBoolean": false
       },
       {
@@ -567,7 +567,7 @@
           "reference": "StructureDefinition/DDCCPatient"
         },
         "name": "DDCC Patient",
-        "description": "A DDCCPatient should:\n* if the [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier] is set then the value of [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner) should be set to reference the [DDCC Organization](StructureDefinition-DDCCOrganization.html) resource associated to the PHA.\n* obeys who-ddcc-patient-1\n",
+        "description": "A DDCCPatient should:\n* if the [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier] is set then the value of [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner) should be set to reference the [DDCC Organization](StructureDefinition-DDCCOrganization.html) resource associated to the PHA.\n* obeys who-ddcc-patient-1",
         "exampleBoolean": false
       },
       {
@@ -581,7 +581,7 @@
           "reference": "StructureDefinition/DDCCPractitioner"
         },
         "name": "DDCC Practitioner",
-        "description": "Container for an DDCC Practitioner, which is a Practitioner authorized by the PHA to \nvaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html).\n",
+        "description": "Container for an DDCC Practitioner, which is a Practitioner authorized by the PHA to \nvaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html).",
         "exampleBoolean": false
       },
       {
@@ -595,7 +595,7 @@
           "reference": "StructureDefinition/DDCCPractitionerRole"
         },
         "name": "DDCC Practitioner Role",
-        "description": "Association of an [DDCC Practitioner](StructureDefinition-DDCCPractitioner.html) to a \nmanaging [DDCC Organization](StructureDefinition-DDCCOrganization.html), indicating \nthat an DDCC Practitioner is authorized by the public health authority (PHA) to \nvaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html).\n",
+        "description": "Association of an [DDCC Practitioner](StructureDefinition-DDCCPractitioner.html) to a \nmanaging [DDCC Organization](StructureDefinition-DDCCOrganization.html), indicating \nthat an DDCC Practitioner is authorized by the public health authority (PHA) to \nvaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html).",
         "exampleBoolean": false
       },
       {
@@ -651,7 +651,7 @@
           "reference": "StructureDefinition/DDCCQuestionnaireResponse"
         },
         "name": "DDCC Questionnaire Response",
-        "description": "Describes the logical structure for a questionnaire response associacted to a [DDCC Questionaire](StructureDefinition-DDCCQuestionnaire.html). ",
+        "description": "Describes the logical structure for a questionnaire response associacted to a [DDCC Questionaire](StructureDefinition-DDCCQuestionnaire.html).",
         "exampleBoolean": false
       },
       {
@@ -735,7 +735,7 @@
           "reference": "StructureDefinition/DDCCSubmitHealthEventResponse"
         },
         "name": "DDCC Submit Health Event Response",
-        "description": "A DDCC Submit Health Event Response](StructureDefinition-DDCCSubmitHealthEventRespose.html) is a transaction reponse bundle containing the operation outcomes for the submission of one or more health certificates under the [Submit Health Event](transactions.html#submit-health-event) transaction.\n",
+        "description": "A DDCC Submit Health Event Response](StructureDefinition-DDCCSubmitHealthEventRespose.html) is a transaction reponse bundle containing the operation outcomes for the submission of one or more health certificates under the [Submit Health Event](transactions.html#submit-health-event) transaction.",
         "exampleBoolean": false
       },
       {
@@ -749,7 +749,7 @@
           "reference": "StructureDefinition/DDCCTRComposition"
         },
         "name": "DDCC:TR Composition",
-        "description": "Describes the logical structure for a Digital Documentation of COVID-19 Certificates - Test Result\n(DDCC:TR).  ",
+        "description": "Describes the logical structure for a Digital Documentation of COVID-19 Certificates - Test Result (DDCC:TR).",
         "exampleBoolean": false
       },
       {
@@ -763,7 +763,7 @@
           "reference": "StructureDefinition/DDCCTRDocument"
         },
         "name": "DDCC:VS Document",
-        "description": "A [DDCC:VS Document](StructureDefinition-DDCCVSDocument.html) is a document bundle containing the DDCC:VS.\n",
+        "description": "A [DDCC:VS Document](StructureDefinition-DDCCVSDocument.html) is a document bundle containing the DDCC:VS.",
         "exampleBoolean": false
       },
       {
@@ -777,7 +777,7 @@
           "reference": "StructureDefinition/DDCCTRDocumentSigned"
         },
         "name": "DDCC:TR DocumentSigned",
-        "description": "A [DDCC:TR Document Signed](StructureDefinition-DDCCTRDocumentSigned.html) is a document bundle containing the DDCC:TR\nthat has a digital signature.\n",
+        "description": "A [DDCC:TR Document Signed](StructureDefinition-DDCCTRDocumentSigned.html) is a document bundle containing the DDCC:TR\nthat has a digital signature.",
         "exampleBoolean": false
       },
       {
@@ -819,7 +819,7 @@
           "reference": "StructureDefinition/DDCCVSComposition"
         },
         "name": "DDCC:VS Composition",
-        "description": "Describes the logical structure for a Digital Documentation of COVID-19 Certificates - Vaccination Status\n(DDCC:VS).  ",
+        "description": "Describes the logical structure for a Digital Documentation of COVID-19 Certificates - Vaccination Status (DDCC:VS).",
         "exampleBoolean": false
       },
       {
@@ -833,7 +833,7 @@
           "reference": "StructureDefinition/DDCCVSDocument"
         },
         "name": "DDCC:VS Document",
-        "description": "A [DDCC:VS Document](StructureDefinition-DDCCVSDocument.html) is a document bundle containing the DDCC:VS.\n",
+        "description": "A [DDCC:VS Document](StructureDefinition-DDCCVSDocument.html) is a document bundle containing the DDCC:VS.",
         "exampleBoolean": false
       },
       {
@@ -847,7 +847,7 @@
           "reference": "StructureDefinition/DDCCVSDocumentSigned"
         },
         "name": "DDCC:VS DocumentSigned",
-        "description": "A [DDCC:VS Document Signed](StructureDefinition-DDCCVSDocumentSigned.html) is a document bundle containing the DDCC:VS\nthat has a digital signature.\n",
+        "description": "A [DDCC:VS Document Signed](StructureDefinition-DDCCVSDocumentSigned.html) is a document bundle containing the DDCC:VS\nthat has a digital signature.",
         "exampleBoolean": false
       },
       {
