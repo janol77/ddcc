@@ -7,21 +7,21 @@
 
 <http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-shc> a fhir:StructureMap;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "ddcc-to-shc"];
+  fhir:Resource.id [ fhir:value "ddcc-to-shc"]; # 
   fhir:Resource.meta [
      fhir:Meta.versionId [ fhir:value "45" ];
      fhir:Meta.lastUpdated [ fhir:value "2021-12-23T19:25:55.922+00:00"^^xsd:dateTime ]
-  ];
+  ]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><pre>map &quot;http://worldhealthorganization.github.io/ddcc/StructureMap/DDCCtoSHC&quot; = &quot;DDCCtoSHC&quot;\r\n\r\n\r\nuses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument&quot; alias DDCCDocument as source\r\nuses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient&quot; alias DDCCPatient as source\r\nuses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition&quot; alias DDCCComposition as source\r\nuses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization&quot; alias DDCCOrganization as source\r\nuses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination&quot; alias DDCCCountryOfVaccination as source\r\nuses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand&quot; alias DDCCVaccineBrand as source\r\nuses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization&quot; alias DDCCImmunization as source\r\nuses &quot;http://hl7.org/fhir/uv/shc-vaccination/StructureDefinition/shc-vaccination-bundle-dm&quot; alias SHCVaccinationBundleDM as target\r\nuses &quot;http://hl7.org/fhir/uv/shc-vaccination/StructureDefinition/shc-patient-general-dm&quot; alias SHCPatientDM as produced\r\nuses &quot;http://hl7.org/fhir/uv/shc-vaccination/StructureDefinition/shc-vaccination-dm&quot; alias SHCImmunizationDM as produced\r\n\r\ngroup DDCCtoSHC(source ddcc : DDCCDocument, target shc : SHCVaccinationBundleDM) {\r\n  ddcc -&gt; shc.type = 'collection' &quot;set bundle type&quot;;\r\n  ddcc.entry as entry then {\r\n    entry.resource : Patient first as patient then {\r\n      entry -&gt; shc.entry as entrySHC then {\r\n        entry.fullUrl -&gt; entrySHC.fullUrl = 'resource:0' &quot;Full URL&quot;;\r\n        patient -&gt; entrySHC.resource = create('Patient') as patientSHC then DDCCPatienttoSHC(patient, patientSHC) &quot;Patient resource&quot;;\r\n      } &quot;Patient entry&quot;;\r\n    } &quot;Is Patient entry&quot;;\r\n  } &quot;map patients&quot;;\r\n  ddcc.entry as entry then {\r\n    entry.resource : Immunization first as immunization where status = 'completed' then {\r\n      entry -&gt; shc.entry as entrySHC then {\r\n        entry.fullUrl -&gt; entrySHC.fullUrl = 'resource:1' &quot;Full URL&quot;;\r\n        immunization -&gt; entrySHC.resource = create('Immunization') as immunizationSHC then {\r\n          immunization -&gt; immunizationSHC then DDCCImmunizationtoSHC(immunization, immunizationSHC) &quot;Immunization&quot;;\r\n          ddcc.entry as orgEntry then {\r\n            orgEntry.resource : Organization first as organization then DDCCOrganizationtoSHCImmunization(organization, immunizationSHC) &quot;Organization entry&quot;;\r\n          } &quot;map organizations&quot;;\r\n        } &quot;Immunization resource&quot;;\r\n      } &quot;Immunization entry&quot;;\r\n    } &quot;Is Immunization entry&quot;;\r\n  } &quot;map immunizations&quot;;\r\n}\r\n\r\ngroup DDCCPatienttoSHC(source patient : DDCCPatient, target patientSHC : SHCPatientDM) {\r\n  patient.name only_one as name -&gt; patientSHC.name as nameSHC then {\r\n    name.given as givenname -&gt; nameSHC.given = givenname &quot;Given Name&quot;;\r\n    name.family as familyname -&gt; nameSHC.family = familyname &quot;Family Name&quot;;\r\n    name where name.given.exists().not() and name.family.exists().not() then {\r\n      name.text as text -&gt; nameSHC.text = text &quot;Text Name&quot;;\r\n    } &quot;vc-name-invariant&quot;;\r\n  } &quot;Name&quot;;\r\n  patient.birthDate as birthDate -&gt; patientSHC.birthDate = birthDate &quot;Birth Date&quot;;\r\n}\r\n\r\ngroup DDCCImmunizationtoSHC(source immunization : DDCCImmunization, target immunizationSHC : SHCImmunizationDM) {\r\n  immunization.status as status -&gt; immunizationSHC.status = status &quot;Status&quot;;\r\n  immunization.vaccineCode as vaccineCode -&gt; immunizationSHC.vaccineCode as vaccineCodeSHC then {\r\n    vaccineCode.coding first as coding -&gt; vaccineCodeSHC.coding as codingSHC then MinimizeCoding(coding, codingSHC);\r\n  } &quot;VaccineCode&quot;;\r\n  immunization.patient as patient -&gt;  immunizationSHC.patient as patientSHC,  patientSHC.reference = 'resource:0' &quot;Patient&quot;;\r\n  immunization.occurrence as occurrenceDateTime -&gt; immunizationSHC.occurrence = occurrenceDateTime &quot;Occurrence DateTime&quot;;\r\n  immunization.extension as ext then {\r\n    ext first as maholder where ext.url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineMarketAuthorization' then {\r\n      maholder.valueCoding as coding -&gt;  immunizationSHC.manufacturer as tman,  tman.identifier as tident then {\r\n        coding.system as system -&gt; tident.system = system;\r\n        coding.code as code -&gt; tident.value = code &quot;value&quot;;\r\n      } &quot;Manufacturer&quot;;\r\n    } &quot;DDCCVaccineMarketAuthorization&quot;;\r\n  } &quot;Extension&quot;;\r\n  immunization as src where extension.where(url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineMarketAuthorization').first().valueCoding.exists().not() then {\r\n    src.manufacturer as manufacturer then {\r\n      manufacturer.identifier as identifier -&gt;  immunizationSHC.manufacturer as tman,  tman.identifier as tident then {\r\n        identifier.system as system -&gt; tident.system = system;\r\n        identifier.value as value -&gt; tident.value = value;\r\n      };\r\n    } &quot;Manufacturer&quot;;\r\n  } &quot;if maholder code empty&quot;;\r\n  immunization.lotNumber as lotNumber -&gt; immunizationSHC.lotNumber = lotNumber &quot;Lot Number&quot;;\r\n  immunization.isSubpotent as isSubpotent where true -&gt; immunizationSHC.isSubpotent = isSubpotent &quot;Is Subpotent&quot;;\r\n}\r\n\r\ngroup DDCCOrganizationtoSHCImmunization(source organization : DDCCOrganization, target immunizationSHC : SHCImmunizationDM) {\r\n  organization.name as name -&gt;  immunizationSHC.performer as performer,  performer.actor as actor,  actor.display = name &quot;Performer Actor Display&quot;;\r\n}\r\n\r\ngroup MinimizeCoding(source src : Coding, target tgt : Coding) {\r\n  src.system as system -&gt; tgt.system = system;\r\n  src.code as code -&gt; tgt.code = code;\r\n}\r\n\r\n</pre></div>"
-  ];
-  fhir:StructureMap.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/StructureMap/DDCCtoSHC"];
-  fhir:StructureMap.version [ fhir:value "1.0.0"];
-  fhir:StructureMap.name [ fhir:value "DDCCtoSHC"];
-  fhir:StructureMap.status [ fhir:value "draft"];
-  fhir:StructureMap.date [ fhir:value "2022-11-30T15:45:43+00:00"^^xsd:dateTime];
-  fhir:StructureMap.publisher [ fhir:value "WHO"];
+  ]; # 
+  fhir:StructureMap.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/StructureMap/DDCCtoSHC"]; # 
+  fhir:StructureMap.version [ fhir:value "1.0.0"]; # 
+  fhir:StructureMap.name [ fhir:value "DDCCtoSHC"]; # 
+  fhir:StructureMap.status [ fhir:value "draft"]; # 
+  fhir:StructureMap.date [ fhir:value "2023-01-08T23:46:44+00:00"^^xsd:dateTime]; # 
+  fhir:StructureMap.publisher [ fhir:value "WHO"]; # 
   fhir:StructureMap.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "WHO" ];
@@ -30,7 +30,7 @@
        fhir:ContactPoint.system [ fhir:value "url" ];
        fhir:ContactPoint.value [ fhir:value "http://who.int" ]
      ]
-  ];
+  ]; # 
   fhir:StructureMap.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -38,7 +38,7 @@
        fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
        fhir:Coding.code [ fhir:value "001" ]
      ]
-  ];
+  ]; # 
   fhir:StructureMap.structure [
      fhir:index 0;
      fhir:StructureMap.structure.url [
@@ -119,7 +119,7 @@
      ];
      fhir:StructureMap.structure.mode [ fhir:value "produced" ];
      fhir:StructureMap.structure.alias [ fhir:value "SHCImmunizationDM" ]
-  ];
+  ]; # 
   fhir:StructureMap.group [
      fhir:index 0;
      fhir:StructureMap.group.name [ fhir:value "DDCCtoSHC" ];
@@ -978,7 +978,7 @@
          ]
        ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

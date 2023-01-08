@@ -51,8 +51,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"22.86"}
-    h3,h4,h5,h6{--heading-prefix:"22.86"}</style>
+    <style type="text/css">h2{--heading-prefix:"22.89"}
+    h3,h4,h5,h6{--heading-prefix:"22.89"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -180,11 +180,14 @@
 
 
 
+
+
 <ul class="nav nav-tabs">
 
   <li>
     <a href="StructureMap-CoreDataSetVSLibrary.html">Narrative Content</a>
   </li>
+
 
 
   
@@ -216,6 +219,21 @@
 
 
 <h2 id="root">: CoreDataSetVSLibrary - TTL Representation</h2>
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2023-01-08
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
 
 <p><a href="StructureMap-CoreDataSetVSLibrary.ttl" no-download="true">Raw ttl</a> | <a href="StructureMap-CoreDataSetVSLibrary.ttl" download>Download</a></p>
 
@@ -234,21 +252,21 @@
 
  a fhir:StructureMap;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
-  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;CoreDataSetVSLibrary&quot;];
+  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;CoreDataSetVSLibrary&quot;]; # 
   <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.versionId">fhir:Meta.versionId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;2&quot; ];
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">fhir:Meta.lastUpdated</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:value</a> &quot;2022-06-01T12:53:30.965+00:00&quot;^^xsd:dateTime ]
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
      fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;pre&gt;map &amp;quot;http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSLibrary&amp;quot; = &amp;quot;CoreDataSetVSLibrary&amp;quot;\r\n\r\n\r\nuses &amp;quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSet.VS&amp;quot; alias DDCCVS as source\r\nuses &amp;quot;http://hl7.org/fhir/StructureDefinition/Bundle&amp;quot; alias AddBundle as target\r\nuses &amp;quot;http://hl7.org/fhir/StructureDefinition/Patient&amp;quot; alias Patient as target\r\nuses &amp;quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient&amp;quot; alias DDCCPatient as produced\r\nuses &amp;quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReferenceQR&amp;quot; alias DDCCDocRefQR as produced\r\nuses &amp;quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition&amp;quot; alias DDCCVSComposition as produced\r\nuses &amp;quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization&amp;quot; alias DDCCImmunization as produced\r\nuses &amp;quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation&amp;quot; alias DDCCImmRec as produced\r\n\r\nimports &amp;quot;http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetLibrary&amp;quot;\r\n\r\ngroup VSToAddBundle(source ddcc : DDCCVS, target bundle : AddBundle) {\r\n  ddcc -&amp;gt; bundle.type = 'transaction' &amp;quot;set bundle type&amp;quot;;\r\n  ddcc -&amp;gt;  uuid() as pid,  uuid() as compid,  uuid() as iid,  uuid() as irid,  uuid() as qrwhoid,  uuid() as qrdccid then {\r\n    ddcc -&amp;gt;  bundle.entry as entry,  entry.fullUrl = append('urn:uuid:', pid),  entry.request as request,  request.method = 'PUT',  request.url = append('Patient/', pid),  create('http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient') as patient then {\r\n      ddcc then DDCCToPatient(ddcc, patient, pid) &amp;quot;setup patient&amp;quot;;\r\n      ddcc -&amp;gt; entry.resource = patient &amp;quot;set patient resource&amp;quot;;\r\n    } &amp;quot;create patient resource&amp;quot;;\r\n    ddcc -&amp;gt;  bundle.entry as entry,  entry.fullUrl = append('urn:uuid:', compid),  entry.request as request,  request.method = 'PUT',  request.url = append('Composition/', compid),  create('http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition') as comp then {\r\n      ddcc then DDCCToComposition(ddcc, comp, compid, pid) &amp;quot;setup composition&amp;quot;;\r\n      ddcc -&amp;gt;  comp.category as category,  category.coding as coding,  coding.system = 'http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem',  coding.code = 'ddcc-vs' &amp;quot;set category&amp;quot;;\r\n      ddcc -&amp;gt; comp.title = 'International Certificate of Vaccination or Prophylaxis' &amp;quot;set title&amp;quot;;\r\n      ddcc -&amp;gt; comp.section as section then {\r\n        ddcc -&amp;gt;  section.code as code,  code.coding as coding,  coding.system = 'http://loinc.org',  coding.code = '11369-6' &amp;quot;set code&amp;quot;;\r\n        ddcc.certificate as certificate then {\r\n          certificate.issuer as issuer -&amp;gt; section.author = issuer &amp;quot;set author&amp;quot;;\r\n        } &amp;quot;set certificate&amp;quot;;\r\n        // ddcc.certificate as certificate -&amp;gt; section.author as author then {\r\n        //             certificate.issuer as issuer then {\r\n        //               issuer.identifier as pha -&amp;gt; author.identifier as identifier, author.type = &amp;quot;Organization&amp;quot; then {\r\n        //                 pha.value as value -&amp;gt; identifier.value = value &amp;quot;set pha&amp;quot;;\r\n        //               } &amp;quot;set author identifier&amp;quot;;\r\n        //             } &amp;quot;set author ref&amp;quot;;\r\n        //             \r\n        //           } &amp;quot;set author&amp;quot;;\r\n        ddcc -&amp;gt;  section.focus as focus,  focus.reference = append('Immunization/', iid) &amp;quot;set focus&amp;quot;;\r\n        ddcc -&amp;gt;  section.entry as entry,  entry.reference = append('Immunization/', iid) &amp;quot;add Immunization entry&amp;quot;;\r\n        ddcc -&amp;gt;  section.entry as entry,  entry.reference = append('ImmunizationRecommendation/', irid) &amp;quot;add ImmunizationRecommendation entry&amp;quot;;\r\n        ddcc -&amp;gt;  section.entry as entry,  entry.reference = append('DocumentReference/', qrwhoid) &amp;quot;add WHO QR entry&amp;quot;;\r\n        ddcc -&amp;gt;  section.entry as entry,  entry.reference = append('DocumentReference/', qrdccid) &amp;quot;add DCC QR entry&amp;quot;;\r\n      } &amp;quot;set section&amp;quot;;\r\n      ddcc -&amp;gt; entry.resource = comp &amp;quot;set composition resource&amp;quot;;\r\n    } &amp;quot;create composition resource&amp;quot;;\r\n    ddcc -&amp;gt;  bundle.entry as entry,  entry.fullUrl = append('urn:uuid:', qrwhoid),  entry.request as request,  request.method = 'PUT',  request.url = append('DocumentReference/', qrwhoid),  create('http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReferenceQR') as qr then {\r\n      ddcc then DDCCToDocumentReference(ddcc, qr, qrwhoid, pid) &amp;quot;setup WHO DocRef&amp;quot;;\r\n      ddcc -&amp;gt;  qr.category as category,  category.coding as coding,  coding.system = 'http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem',  coding.code = 'who' &amp;quot;set category&amp;quot;;\r\n      ddcc -&amp;gt; qr.description = 'WHO QR code for COVID 19 Vaccine Certificate' &amp;quot;set description&amp;quot;;\r\n      ddcc -&amp;gt; entry.resource = qr &amp;quot;set WHO QR&amp;quot;;\r\n    } &amp;quot;create WHO QR Doc Ref&amp;quot;;\r\n    ddcc -&amp;gt;  bundle.entry as entry,  entry.fullUrl = append('urn:uuid:', qrdccid),  entry.request as request,  request.method = 'PUT',  request.url = append('DocumentReference/', qrdccid),  create('http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReferenceQR') as qr then {\r\n      ddcc then DDCCToDocumentReference(ddcc, qr, qrdccid, pid) &amp;quot;setup DCC DocRef&amp;quot;;\r\n      ddcc -&amp;gt;  qr.category as category,  category.coding as coding,  coding.system = 'http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem',  coding.code = 'dcc' &amp;quot;set category&amp;quot;;\r\n      ddcc -&amp;gt; qr.description = 'DCC QR code for COVID 19 Vaccine Certificate' &amp;quot;set description&amp;quot;;\r\n      ddcc -&amp;gt; entry.resource = qr &amp;quot;set DCC QR&amp;quot;;\r\n    } &amp;quot;create DCC QR Doc Ref&amp;quot;;\r\n    ddcc.vaccination first as vaccination -&amp;gt;  bundle.entry as entry,  entry.fullUrl = append('urn:uuid:', iid),  entry.request as request,  request.method = 'PUT',  request.url = append('Immunization/', iid),  create('http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization') as immunization then {\r\n      ddcc.certificate as certificate then DDCCToImmunization(vaccination, immunization, certificate, iid, pid) &amp;quot;setup immunization&amp;quot;;\r\n      ddcc -&amp;gt; entry.resource = immunization &amp;quot;set immunization resource&amp;quot;;\r\n    } &amp;quot;create immunization resource&amp;quot;;\r\n    ddcc.vaccination first as vaccination -&amp;gt;  bundle.entry as entry,  entry.fullUrl = append('urn:uuid:', irid),  entry.request as request,  request.method = 'PUT',  request.url = append('ImmunizationRecommendation/', irid),  create('http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation') as immrec then {\r\n      vaccination then DDCCToImmRec(vaccination, immrec, irid, iid, pid) &amp;quot;setup immunization recommendation&amp;quot;;\r\n      ddcc -&amp;gt; entry.resource = immrec &amp;quot;set immunization recommendation resource&amp;quot;;\r\n    } &amp;quot;create immunization recommendation resource&amp;quot;;\r\n  } &amp;quot;set uuids&amp;quot;;\r\n}\r\n\r\ngroup DDCCToImmunization(source src, target immunization : DDCCImmunization, source certificate, source iid, source pid) {\r\n  iid -&amp;gt; immunization.id = iid &amp;quot;set id&amp;quot;;\r\n  src.brand as brand -&amp;gt; immunization.extension as ext then {\r\n    brand -&amp;gt;  ext.url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand',  ext.value = brand &amp;quot;set brand extension values&amp;quot;;\r\n  } &amp;quot;set brand extension&amp;quot;;\r\n  src.maholder as maholder -&amp;gt; immunization.extension as ext then {\r\n    maholder -&amp;gt;  ext.url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineMarketAuthorization',  ext.value = maholder &amp;quot;set MA Holder extension values&amp;quot;;\r\n  } &amp;quot;set maholder extension&amp;quot;;\r\n  src.country as country -&amp;gt; immunization.extension as ext then {\r\n    country.code as code -&amp;gt;  ext.url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination',  ext.value = code &amp;quot;set country extension values&amp;quot;;\r\n  } &amp;quot;set country extension&amp;quot;;\r\n  src.validFrom as validFrom -&amp;gt; immunization.extension as ext then {\r\n    validFrom -&amp;gt;  ext.url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineValidFrom',  ext.value = validFrom &amp;quot;set valid from extension values&amp;quot;;\r\n  } &amp;quot;set vaccine valid extension&amp;quot;;\r\n  src -&amp;gt; immunization.status = 'completed' &amp;quot;set status&amp;quot;;\r\n  src.vaccine as vaccine -&amp;gt;  immunization.vaccineCode as vacCode,  vacCode.coding = vaccine &amp;quot;set vaccine&amp;quot;;\r\n  src -&amp;gt;  immunization.patient as patient,  patient.reference = append('Patient/', pid) &amp;quot;set patient&amp;quot;;\r\n  src.manufacturer as manufacturer -&amp;gt;  immunization.manufacturer as tman,  tman.identifier as ident then {\r\n    manufacturer.system as system -&amp;gt; ident.system = system &amp;quot;set system&amp;quot;;\r\n    manufacturer.code as code -&amp;gt; ident.value = code &amp;quot;set value&amp;quot;;\r\n  } &amp;quot;set manufacturer identifier&amp;quot;;\r\n  src.lot as lot -&amp;gt; immunization.lotNumber = lot &amp;quot;set lot number&amp;quot;;\r\n  src.date as date -&amp;gt; immunization.occurrence = date &amp;quot;set occurrence date&amp;quot;;\r\n  src.centre as centre -&amp;gt; immunization.location as location then {\r\n    centre -&amp;gt; location.display = centre &amp;quot;set location display&amp;quot;;\r\n  } &amp;quot;set location&amp;quot;;\r\n  src.practitioner as practitioner -&amp;gt; immunization.performer as performer then {\r\n    practitioner.value as hw -&amp;gt; performer.actor as actor then {\r\n      hw -&amp;gt;  actor.type = 'Practitioner',  actor.identifier as identifier then {\r\n        hw -&amp;gt; identifier.value = hw &amp;quot;set hw identifier&amp;quot;;\r\n      } &amp;quot;set actor&amp;quot;;\r\n    } &amp;quot;set performer&amp;quot;;\r\n  } &amp;quot;set practitioner&amp;quot;;\r\n  src -&amp;gt; immunization.protocolApplied as protocol then {\r\n    src -&amp;gt; protocol.authority as authority then {\r\n      certificate.issuer as issuer -&amp;gt; authority.type = 'Organization' then {\r\n        issuer.identifier as pha -&amp;gt; authority.identifier as identifier then {\r\n          pha.value as value -&amp;gt; identifier.value = value &amp;quot;set pha&amp;quot;;\r\n        } &amp;quot;set issuer identifier&amp;quot;;\r\n      } &amp;quot;set issuer&amp;quot;;\r\n    } &amp;quot;set authority&amp;quot;;\r\n    src.disease as disease -&amp;gt; protocol.targetDisease as tdisease then {\r\n      disease -&amp;gt; tdisease.coding = disease &amp;quot;set target disease code&amp;quot;;\r\n    } &amp;quot;set target disease&amp;quot;;\r\n    src.dose as dose -&amp;gt; protocol.doseNumber = dose &amp;quot;set dose number&amp;quot;;\r\n    src.totalDoses as totalDoses -&amp;gt; protocol.seriesDoses = totalDoses &amp;quot;set total doses&amp;quot;;\r\n  } &amp;quot;set protocolApplied&amp;quot;;\r\n}\r\n\r\ngroup DDCCToImmRec(source src, target immrec : DDCCImmunizationRecommendation, source irid, source iid, source pid) {\r\n  src.date as date -&amp;gt; immrec.date = date &amp;quot;set date&amp;quot;;\r\n  src -&amp;gt;  immrec.patient as patient,  patient.reference = append('Patient/', pid) &amp;quot;set patient&amp;quot;;\r\n  src -&amp;gt; immrec.recommendation as rec then {\r\n    src.vaccine as vaccine -&amp;gt; rec.vaccineCode as vaccineCode then {\r\n      vaccine -&amp;gt; vaccineCode.coding = vaccine &amp;quot;set vaccine code coding&amp;quot;;\r\n    } &amp;quot;set vaccine code&amp;quot;;\r\n    src.disease as disease -&amp;gt; rec.targetDisease as targetDisease then {\r\n      disease -&amp;gt; targetDisease.coding = disease &amp;quot;set target disease coding&amp;quot;;\r\n    } &amp;quot;set target disease&amp;quot;;\r\n    src -&amp;gt; rec.forecastStatus as forecast then {\r\n      src -&amp;gt; forecast.coding as coding then {\r\n        src -&amp;gt; coding.system = 'http://terminology.hl7.org/2.1.0/CodeSystem-immunization-recommendation-status.html' &amp;quot;set forecast system&amp;quot;;\r\n        src -&amp;gt; coding.code = 'due' &amp;quot;set forecast code&amp;quot;;\r\n      } &amp;quot;set forecast status coding&amp;quot;;\r\n    } &amp;quot;set forecast status&amp;quot;;\r\n    src -&amp;gt; rec.dateCriterion as due_date then {\r\n      src -&amp;gt; due_date.code as code then {\r\n        src -&amp;gt; code.coding as coding then {\r\n          src -&amp;gt; coding.system = 'http://loinc.org' &amp;quot;set due date code system&amp;quot;;\r\n          src -&amp;gt; coding.code = '30980-7' &amp;quot;set due date code code&amp;quot;;\r\n        } &amp;quot;set due date code coding&amp;quot;;\r\n      } &amp;quot;set due date code&amp;quot;;\r\n      src.nextDose as nextDose -&amp;gt; due_date.value = nextDose &amp;quot;set due date value&amp;quot;;\r\n    } &amp;quot;set date criterion&amp;quot;;\r\n    src.dose as dose -&amp;gt; rec.doseNumber = (dose.toInteger() + 1) &amp;quot;set dose number&amp;quot;;\r\n    src.totalDoses as totalDoses -&amp;gt; rec.seriesDoses = totalDoses &amp;quot;set total doses&amp;quot;;\r\n    src -&amp;gt;  rec.supportingImmunization as imm,  imm.reference = append('Immunization/', iid) &amp;quot;set supporting immunization&amp;quot;;\r\n  } &amp;quot;set recommendation&amp;quot;;\r\n}\r\n\r\n&lt;/pre&gt;&lt;/div&gt;&quot;
-  ];
-  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.url">fhir:StructureMap.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSLibrary&quot;];
-  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.version">fhir:StructureMap.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;1.0.0&quot;];
-  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.name">fhir:StructureMap.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;CoreDataSetVSLibrary&quot;];
-  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.status">fhir:StructureMap.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;draft&quot;];
-  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.date">fhir:StructureMap.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2022-11-30T15:45:43+00:00&quot;^^xsd:dateTime];
-  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.publisher">fhir:StructureMap.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;WHO&quot;];
+  ]; # 
+  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.url">fhir:StructureMap.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSLibrary&quot;]; # 
+  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.version">fhir:StructureMap.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;1.0.0&quot;]; # 
+  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.name">fhir:StructureMap.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;CoreDataSetVSLibrary&quot;]; # 
+  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.status">fhir:StructureMap.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;draft&quot;]; # 
+  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.date">fhir:StructureMap.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2023-01-08T23:46:44+00:00&quot;^^xsd:dateTime]; # 
+  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.publisher">fhir:StructureMap.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;WHO&quot;]; # 
   <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.contact">fhir:StructureMap.contact</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;WHO&quot; ];
@@ -256,14 +274,14 @@
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
        <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;url&quot; ];
        <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;http://who.int&quot; ]     ]
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.jurisdiction">fhir:StructureMap.jurisdiction</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://unstats.un.org/unsd/methods/m49/m49.htm&quot; ];
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;001&quot; ]     ]
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure">fhir:StructureMap.structure</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.url">fhir:StructureMap.structure.url</a> [
@@ -320,12 +338,12 @@
        <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation&gt;     ];
      <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.mode">fhir:StructureMap.structure.mode</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;produced&quot; ];
      <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.alias">fhir:StructureMap.structure.alias</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;DDCCImmRec&quot; ]
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.import">fhir:StructureMap.import</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetLibrary&quot;;
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetLibrary&gt;
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group">fhir:StructureMap.group</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.name">fhir:StructureMap.group.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;VSToAddBundle&quot; ];
@@ -2159,7 +2177,7 @@
              <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">fhir:StructureMap.group.rule.target.parameter.valueString</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Immunization/&quot; ]           ], [
              <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
              <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">fhir:StructureMap.group.rule.target.parameter.valueId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;iid&quot; ]           ]         ]       ]     ]
-  ].
+  ]. # 
 
 # - ontology header ------------------------------------------------------------
 
@@ -2197,9 +2215,9 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 30, 2022 15:45+0000">2022-11-30</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jan 8, 2023 23:46+0000">2023-01-08</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"></span>
+          <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                   | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/worldhealthorganization/ddcc/projects/1">Issues</a>
@@ -2224,6 +2242,8 @@
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   

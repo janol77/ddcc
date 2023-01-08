@@ -7,21 +7,21 @@
 
 <http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-resources-to-coredataset> a fhir:StructureMap;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "ddcc-resources-to-coredataset"];
+  fhir:Resource.id [ fhir:value "ddcc-resources-to-coredataset"]; # 
   fhir:Resource.meta [
      fhir:Meta.versionId [ fhir:value "1" ];
      fhir:Meta.lastUpdated [ fhir:value "2021-12-14T19:11:43.510+00:00"^^xsd:dateTime ]
-  ];
+  ]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><pre>map &quot;http://worldhealthorganization.github.io/ddcc/StructureMap/ResourcesToCoreDataSet&quot; = &quot;ResourcesToCoreDataSet&quot;\r\n\r\n\r\nuses &quot;http://hl7.org/fhir/StructureDefinition/Bundle&quot; alias Bundle as source\r\nuses &quot;http://hl7.org/fhir/StructureDefinition/HumanName&quot; alias HumanName as produced\r\nuses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient&quot; alias DDCCPatient as source\r\nuses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization&quot; alias DDCCImmunization as source\r\nuses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation&quot; alias DDCCImmunizationRecommendation as source\r\nuses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSetPoV&quot; alias DDCCPoV as target\r\n\r\ngroup ResourcesToCoreDataSet(source bundle : Bundle, target ddcc : DDCCPoV) {\r\n  bundle.entry as entry then {\r\n    entry.resource : Patient as patient then PatientToHeader(patient, ddcc) &quot;set header&quot;;\r\n  } &quot;set header from patient&quot;;\r\n}\r\n\r\ngroup PatientToHeader(source patient : DDCCPatient, target ddcc : DDCCPoV) {\r\n  patient.name as name then {\r\n    name as src -&gt; ddcc as tgt then NameToText(src, tgt) &quot;setting name&quot;;\r\n  } &quot;set name&quot;;\r\n}\r\n\r\ngroup NameToText(source src : HumanName, target tgt) {\r\n  src.given as given -&gt; tgt.name = given &quot;set here&quot;;\r\n}\r\n\r\n</pre></div>"
-  ];
-  fhir:StructureMap.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/StructureMap/ResourcesToCoreDataSet"];
-  fhir:StructureMap.version [ fhir:value "1.0.0"];
-  fhir:StructureMap.name [ fhir:value "ResourcesToCoreDataSet"];
-  fhir:StructureMap.status [ fhir:value "draft"];
-  fhir:StructureMap.date [ fhir:value "2022-11-30T15:45:43+00:00"^^xsd:dateTime];
-  fhir:StructureMap.publisher [ fhir:value "WHO"];
+  ]; # 
+  fhir:StructureMap.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/StructureMap/ResourcesToCoreDataSet"]; # 
+  fhir:StructureMap.version [ fhir:value "1.0.0"]; # 
+  fhir:StructureMap.name [ fhir:value "ResourcesToCoreDataSet"]; # 
+  fhir:StructureMap.status [ fhir:value "draft"]; # 
+  fhir:StructureMap.date [ fhir:value "2023-01-08T23:46:44+00:00"^^xsd:dateTime]; # 
+  fhir:StructureMap.publisher [ fhir:value "WHO"]; # 
   fhir:StructureMap.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "WHO" ];
@@ -30,7 +30,7 @@
        fhir:ContactPoint.system [ fhir:value "url" ];
        fhir:ContactPoint.value [ fhir:value "http://who.int" ]
      ]
-  ];
+  ]; # 
   fhir:StructureMap.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -38,7 +38,7 @@
        fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
        fhir:Coding.code [ fhir:value "001" ]
      ]
-  ];
+  ]; # 
   fhir:StructureMap.structure [
      fhir:index 0;
      fhir:StructureMap.structure.url [
@@ -87,7 +87,7 @@
      ];
      fhir:StructureMap.structure.mode [ fhir:value "target" ];
      fhir:StructureMap.structure.alias [ fhir:value "DDCCPoV" ]
-  ];
+  ]; # 
   fhir:StructureMap.group [
      fhir:index 0;
      fhir:StructureMap.group.name [ fhir:value "ResourcesToCoreDataSet" ];
@@ -245,7 +245,7 @@
          ]
        ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

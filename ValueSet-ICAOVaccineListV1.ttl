@@ -7,18 +7,18 @@
 
 <http://worldhealthorganization.github.io/ddcc/ValueSet/ICAOVaccineListV1> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "ICAOVaccineListV1"];
+  fhir:Resource.id [ fhir:value "ICAOVaccineListV1"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-ICAOVaccineListV1.html\"><code>http://worldhealthorganization.github.io/ddcc/ICAOV1</code></a></li></ul></div>"
-  ];
-  fhir:ValueSet.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/ValueSet/ICAOVaccineListV1"];
-  fhir:ValueSet.version [ fhir:value "1.0.0"];
-  fhir:ValueSet.name [ fhir:value "ICAOV1_ValueSet"];
-  fhir:ValueSet.title [ fhir:value "DDCC Codes for ICAO Vaccines"];
-  fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2022-11-30T15:45:43+00:00"^^xsd:dateTime];
-  fhir:ValueSet.publisher [ fhir:value "WHO"];
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/ValueSet/ICAOVaccineListV1"]; # 
+  fhir:ValueSet.version [ fhir:value "1.0.0"]; # 
+  fhir:ValueSet.name [ fhir:value "ICAOV1_ValueSet"]; # 
+  fhir:ValueSet.title [ fhir:value "DDCC Codes for ICAO Vaccines"]; # 
+  fhir:ValueSet.status [ fhir:value "draft"]; # 
+  fhir:ValueSet.date [ fhir:value "2023-01-08T23:46:44+00:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "WHO"]; # 
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "WHO" ];
@@ -27,8 +27,8 @@
        fhir:ContactPoint.system [ fhir:value "url" ];
        fhir:ContactPoint.value [ fhir:value "http://who.int" ]
      ]
-  ];
-  fhir:ValueSet.description [ fhir:value "ICAO vaccines codes for DDCC so the FHIR server can perform expansions."];
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "ICAO vaccines codes for DDCC so the FHIR server can perform expansions."]; # 
   fhir:ValueSet.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -36,13 +36,13 @@
        fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
        fhir:Coding.code [ fhir:value "001" ]
      ]
-  ];
+  ]; # 
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
        fhir:ValueSet.compose.include.system [ fhir:value "http://worldhealthorganization.github.io/ddcc/ICAOV1" ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

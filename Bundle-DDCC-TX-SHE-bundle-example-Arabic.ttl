@@ -7,15 +7,15 @@
 
 <http://worldhealthorganization.github.io/ddcc/Bundle/DDCC-TX-SHE-bundle-example-Arabic> a fhir:Bundle;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "DDCC-TX-SHE-bundle-example-Arabic"];
+  fhir:Resource.id [ fhir:value "DDCC-TX-SHE-bundle-example-Arabic"]; # 
   fhir:Resource.meta [
      fhir:Meta.profile [
        fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventRequest";
        fhir:index 0;
        fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventRequest>
      ]
-  ];
-  fhir:Bundle.type [ fhir:value "batch"];
+  ]; # 
+  fhir:Bundle.type [ fhir:value "batch"]; # 
   fhir:Bundle.entry [
      fhir:index 0;
      fhir:Bundle.entry.fullUrl [ fhir:value "http://www.example.org/fhir/Parameters/DDCC-VS-TX-SHE-Parameters-Arabic" ];
@@ -24,17 +24,17 @@
        fhir:Bundle.entry.request.method [ fhir:value "POST" ];
        fhir:Bundle.entry.request.url [ fhir:value "QuestionnaireResponse/$generateHealthCertificate" ]
      ]
-  ] .
+  ] . # 
 
 <http://www.example.org/fhir/Parameters/DDCC-VS-TX-SHE-Parameters-Arabic> a fhir:Parameters;
-  fhir:Resource.id [ fhir:value "DDCC-VS-TX-SHE-Parameters-Arabic"];
+  fhir:Resource.id [ fhir:value "DDCC-VS-TX-SHE-Parameters-Arabic"]; # 
   fhir:Resource.meta [
      fhir:Meta.profile [
        fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCGenerateHealthCertificateParameters";
        fhir:index 0;
        fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCGenerateHealthCertificateParameters>
      ]
-  ];
+  ]; # 
   fhir:Parameters.parameter [
      fhir:index 0;
      fhir:Parameters.parameter.name [ fhir:value "response" ];
@@ -235,7 +235,7 @@
          ]
        ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

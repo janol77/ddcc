@@ -1,416 +1,11 @@
 {
   "resourceType" : "Bundle",
-  "id" : "9ad4774c-50d0-4288-8d13-dec176176e56",
+  "id" : "d7cef320-7a6b-4bad-9d3a-da42e5aae44f",
   "meta" : {
-    "lastUpdated" : "2022-11-30T15:45:43.233+00:00"
+    "lastUpdated" : "2023-01-08T23:46:44.580+00:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-Composition-Category-ValueSet",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "DDCC-Composition-Category-ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-DDCC-Composition-Category-CodeSystem.html\">DDCC Composition Category Codes v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Composition-Category-CodeSystem-ddcc-vs\"> </a>  <a href=\"CodeSystem-DDCC-Composition-Category-CodeSystem.html#DDCC-Composition-Category-CodeSystem-ddcc-vs\">ddcc-vs</a></td><td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem</td><td>DDCC:VS</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Composition-Category-CodeSystem-ddcc-tr\"> </a>  <a href=\"CodeSystem-DDCC-Composition-Category-CodeSystem.html#DDCC-Composition-Category-CodeSystem-ddcc-tr\">ddcc-tr</a></td><td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem</td><td>DDCC:TR</td></tr></table></div>"
-      },
-      "url" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-Composition-Category-ValueSet",
-      "version" : "1.0.0",
-      "name" : "DDCC_Composition_Category_ValueSet",
-      "title" : "DDCC Composition Category Codes",
-      "status" : "active",
-      "date" : "2022-11-30T15:45:43+00:00",
-      "publisher" : "WHO",
-      "contact" : [{
-        "name" : "WHO",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://who.int"
-        }]
-      }],
-      "description" : "Categorization of DDCC Composition",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:c8a812de-065e-4ca9-abba-40358ef55367",
-        "timestamp" : "2022-11-30T15:48:19+00:00",
-        "total" : 2,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem|1.0.0"
-        }],
-        "contains" : [{
-          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem",
-          "code" : "ddcc-vs",
-          "display" : "DDCC:VS"
-        },
-        {
-          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem",
-          "code" : "ddcc-tr",
-          "display" : "DDCC:TR"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-Device-Property-ValueSet",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "DDCC-Device-Property-ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-DDCC-Device-Property-CodeSystem.html\">DDCC Device Property Codes v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Device-Property-CodeSystem-pathogen\"> </a>  <a href=\"CodeSystem-DDCC-Device-Property-CodeSystem.html#DDCC-Device-Property-CodeSystem-pathogen\">pathogen</a></td><td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Device-Property-CodeSystem</td><td>Pathogen Targeted</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Device-Property-CodeSystem-brand\"> </a>  <a href=\"CodeSystem-DDCC-Device-Property-CodeSystem.html#DDCC-Device-Property-CodeSystem-brand\">brand</a></td><td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Device-Property-CodeSystem</td><td>Test Brand</td></tr></table></div>"
-      },
-      "url" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-Device-Property-ValueSet",
-      "version" : "1.0.0",
-      "name" : "DDCC_Device_Property_ValueSet",
-      "title" : "DDCC Device Property Codes",
-      "status" : "active",
-      "date" : "2022-11-30T15:45:43+00:00",
-      "publisher" : "WHO",
-      "contact" : [{
-        "name" : "WHO",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://who.int"
-        }]
-      }],
-      "description" : "Properties of DDCC devices",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:dd1f325a-35f5-4313-b77c-43b36a162edb",
-        "timestamp" : "2022-11-30T15:48:19+00:00",
-        "total" : 2,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Device-Property-CodeSystem|1.0.0"
-        }],
-        "contains" : [{
-          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Device-Property-CodeSystem",
-          "code" : "pathogen",
-          "display" : "Pathogen Targeted"
-        },
-        {
-          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Device-Property-CodeSystem",
-          "code" : "brand",
-          "display" : "Test Brand"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-Folder-DesignationType",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "DDCC-Folder-DesignationType",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-DDCC-Folder-DesignationType.html\">DDCC Designation Types for Folder v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Folder-DesignationType-ddcc\"> </a>  <a href=\"CodeSystem-DDCC-Folder-DesignationType.html#DDCC-Folder-DesignationType-ddcc\">ddcc</a></td><td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Folder-DesignationType</td><td>DDCC</td></tr></table></div>"
-      },
-      "url" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-Folder-DesignationType",
-      "version" : "1.0.0",
-      "name" : "DDCC_Folder_DesignationType_ValueSet",
-      "title" : "DDCC DesignationTypes for Folder",
-      "status" : "active",
-      "date" : "2022-11-30T15:45:43+00:00",
-      "publisher" : "WHO",
-      "contact" : [{
-        "name" : "WHO",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://who.int"
-        }]
-      }],
-      "description" : "DDCC Designation Types ValueSet for DDCC Folders.",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:f1fe0668-09d3-4603-9552-bd48e0e54779",
-        "timestamp" : "2022-11-30T15:48:19+00:00",
-        "total" : 1,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Folder-DesignationType|1.0.0"
-        }],
-        "contains" : [{
-          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Folder-DesignationType",
-          "code" : "ddcc",
-          "display" : "DDCC"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Format-ValueSet",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "DDCC-QR-Format-ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-DDCC-QR-Format-CodeSystem.html\">DDCC QR Format Codes v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Format-CodeSystem-image\"> </a>  <a href=\"CodeSystem-DDCC-QR-Format-CodeSystem.html#DDCC-QR-Format-CodeSystem-image\">image</a></td><td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem</td><td>Image</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Format-CodeSystem-serialized\"> </a>  <a href=\"CodeSystem-DDCC-QR-Format-CodeSystem.html#DDCC-QR-Format-CodeSystem-serialized\">serialized</a></td><td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem</td><td>Serialized QR Content</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Format-CodeSystem-pdf\"> </a>  <a href=\"CodeSystem-DDCC-QR-Format-CodeSystem.html#DDCC-QR-Format-CodeSystem-pdf\">pdf</a></td><td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem</td><td>PDF version of the QR image</td></tr></table></div>"
-      },
-      "url" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Format-ValueSet",
-      "version" : "1.0.0",
-      "name" : "DDCC_QR_Format_ValueSet",
-      "title" : "DDCC QR Format Codes",
-      "status" : "active",
-      "date" : "2022-11-30T15:45:43+00:00",
-      "publisher" : "WHO",
-      "contact" : [{
-        "name" : "WHO",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://who.int"
-        }]
-      }],
-      "description" : "Format of the representation of QR code",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:83411f4e-68cf-4e34-87ee-8d16832172d7",
-        "timestamp" : "2022-11-30T15:48:19+00:00",
-        "total" : 3,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem|1.0.0"
-        }],
-        "contains" : [{
-          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem",
-          "code" : "image",
-          "display" : "Image"
-        },
-        {
-          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem",
-          "code" : "serialized",
-          "display" : "Serialized QR Content"
-        },
-        {
-          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem",
-          "code" : "pdf",
-          "display" : "PDF version of the QR image"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Type-ValueSet",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "DDCC-QR-Type-ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-DDCC-QR-Type-CodeSystem.html\">DDCC QR Category Usage Codes v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-who\"> </a>  <a href=\"CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-who\">who</a></td><td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem</td><td>WHO DDCC</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-dcc\"> </a>  <a href=\"CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-dcc\">dcc</a></td><td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem</td><td>EU DCC</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-icao\"> </a>  <a href=\"CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-icao\">icao</a></td><td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem</td><td>ICAO</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-au\"> </a>  <a href=\"CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-au\">au</a></td><td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem</td><td>AU</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-shc\"> </a>  <a href=\"CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-shc\">shc</a></td><td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem</td><td>SMART Health Card</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-divoc\"> </a>  <a href=\"CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-divoc\">divoc</a></td><td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem</td><td>DIVOC</td></tr></table></div>"
-      },
-      "url" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Type-ValueSet",
-      "version" : "1.0.0",
-      "name" : "DDCC_QR_Type_ValueSet",
-      "title" : "DDCC QR Type Codes",
-      "status" : "active",
-      "date" : "2022-11-30T15:45:43+00:00",
-      "publisher" : "WHO",
-      "contact" : [{
-        "name" : "WHO",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://who.int"
-        }]
-      }],
-      "description" : "Type of QR codes by their business usage",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:14c27032-cfa8-4841-93b3-89d6e6b77a9a",
-        "timestamp" : "2022-11-30T15:48:20+00:00",
-        "total" : 6,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem|1.0.0"
-        }],
-        "contains" : [{
-          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem",
-          "code" : "who",
-          "display" : "WHO DDCC"
-        },
-        {
-          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem",
-          "code" : "dcc",
-          "display" : "EU DCC"
-        },
-        {
-          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem",
-          "code" : "icao",
-          "display" : "ICAO"
-        },
-        {
-          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem",
-          "code" : "au",
-          "display" : "AU"
-        },
-        {
-          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem",
-          "code" : "shc",
-          "display" : "SMART Health Card"
-        },
-        {
-          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem",
-          "code" : "divoc",
-          "display" : "DIVOC"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DIVOC-ValueSet",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "DIVOC-ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 13 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-DIVOC-CodeSystem.html\">COVID-19 Vaccine Codes for DIVOC v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC001\"> </a>  <a href=\"CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC001\">DIVOC001</a></td><td>http://worldhealthorganization.github.io/ddcc/DIVOC</td><td>Zycov-D</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC002\"> </a>  <a href=\"CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC002\">DIVOC002</a></td><td>http://worldhealthorganization.github.io/ddcc/DIVOC</td><td>Covaxin</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC003\"> </a>  <a href=\"CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC003\">DIVOC003</a></td><td>http://worldhealthorganization.github.io/ddcc/DIVOC</td><td>Covishield</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC004\"> </a>  <a href=\"CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC004\">DIVOC004</a></td><td>http://worldhealthorganization.github.io/ddcc/DIVOC</td><td>Sputnik V</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC005\"> </a>  <a href=\"CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC005\">DIVOC005</a></td><td>http://worldhealthorganization.github.io/ddcc/DIVOC</td><td>Pfizer-BioNTech or Comirnaty</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC006\"> </a>  <a href=\"CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC006\">DIVOC006</a></td><td>http://worldhealthorganization.github.io/ddcc/DIVOC</td><td>Janssen</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC007\"> </a>  <a href=\"CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC007\">DIVOC007</a></td><td>http://worldhealthorganization.github.io/ddcc/DIVOC</td><td>Moderna or Modema or Spikevax</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC008\"> </a>  <a href=\"CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC008\">DIVOC008</a></td><td>http://worldhealthorganization.github.io/ddcc/DIVOC</td><td>AstraZeneca or Vaxzevria</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC009\"> </a>  <a href=\"CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC009\">DIVOC009</a></td><td>http://worldhealthorganization.github.io/ddcc/DIVOC</td><td>Sinovac or Coronavac</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC010\"> </a>  <a href=\"CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC010\">DIVOC010</a></td><td>http://worldhealthorganization.github.io/ddcc/DIVOC</td><td>BBIBP- CorV or Sinopharm</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC011\"> </a>  <a href=\"CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC011\">DIVOC011</a></td><td>http://worldhealthorganization.github.io/ddcc/DIVOC</td><td>Convidecia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC012\"> </a>  <a href=\"CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC012\">DIVOC012</a></td><td>http://worldhealthorganization.github.io/ddcc/DIVOC</td><td>Corbevax</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC013\"> </a>  <a href=\"CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC013\">DIVOC013</a></td><td>http://worldhealthorganization.github.io/ddcc/DIVOC</td><td>Novavax/Covovax NVX - CoV2373</td></tr></table></div>"
-      },
-      "url" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DIVOC-ValueSet",
-      "version" : "1.0.0",
-      "name" : "DIVOC_ValueSet",
-      "title" : "COVID-19 Vaccine Codes for DIVOC",
-      "status" : "draft",
-      "date" : "2022-11-30T15:45:43+00:00",
-      "publisher" : "WHO",
-      "contact" : [{
-        "name" : "WHO",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://who.int"
-        }]
-      }],
-      "description" : "COVID-19 Vaccine codes for DIVOC so the FHIR server can perform expansions.",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:2f192359-780d-46b1-be6d-1dc73f6d0536",
-        "timestamp" : "2022-11-30T15:48:20+00:00",
-        "total" : 13,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://worldhealthorganization.github.io/ddcc/DIVOC|1.0.0"
-        }],
-        "contains" : [{
-          "system" : "http://worldhealthorganization.github.io/ddcc/DIVOC",
-          "code" : "DIVOC001",
-          "display" : "Zycov-D"
-        },
-        {
-          "system" : "http://worldhealthorganization.github.io/ddcc/DIVOC",
-          "code" : "DIVOC002",
-          "display" : "Covaxin"
-        },
-        {
-          "system" : "http://worldhealthorganization.github.io/ddcc/DIVOC",
-          "code" : "DIVOC003",
-          "display" : "Covishield"
-        },
-        {
-          "system" : "http://worldhealthorganization.github.io/ddcc/DIVOC",
-          "code" : "DIVOC004",
-          "display" : "Sputnik V"
-        },
-        {
-          "system" : "http://worldhealthorganization.github.io/ddcc/DIVOC",
-          "code" : "DIVOC005",
-          "display" : "Pfizer-BioNTech or Comirnaty"
-        },
-        {
-          "system" : "http://worldhealthorganization.github.io/ddcc/DIVOC",
-          "code" : "DIVOC006",
-          "display" : "Janssen"
-        },
-        {
-          "system" : "http://worldhealthorganization.github.io/ddcc/DIVOC",
-          "code" : "DIVOC007",
-          "display" : "Moderna or Modema or Spikevax"
-        },
-        {
-          "system" : "http://worldhealthorganization.github.io/ddcc/DIVOC",
-          "code" : "DIVOC008",
-          "display" : "AstraZeneca or Vaxzevria"
-        },
-        {
-          "system" : "http://worldhealthorganization.github.io/ddcc/DIVOC",
-          "code" : "DIVOC009",
-          "display" : "Sinovac or Coronavac"
-        },
-        {
-          "system" : "http://worldhealthorganization.github.io/ddcc/DIVOC",
-          "code" : "DIVOC010",
-          "display" : "BBIBP- CorV or Sinopharm"
-        },
-        {
-          "system" : "http://worldhealthorganization.github.io/ddcc/DIVOC",
-          "code" : "DIVOC011",
-          "display" : "Convidecia"
-        },
-        {
-          "system" : "http://worldhealthorganization.github.io/ddcc/DIVOC",
-          "code" : "DIVOC012",
-          "display" : "Corbevax"
-        },
-        {
-          "system" : "http://worldhealthorganization.github.io/ddcc/DIVOC",
-          "code" : "DIVOC013",
-          "display" : "Novavax/Covovax NVX - CoV2373"
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/vaccines-covid-19-names",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -441,8 +36,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ca20ce7f-9e39-4e70-8d54-4d656a1336ed",
-        "timestamp" : "2022-11-30T15:48:20+00:00",
+        "identifier" : "urn:uuid:211f1b55-7c2d-42e5-9253-1651c9ba226a",
+        "timestamp" : "2023-01-08T23:48:03+00:00",
         "total" : 37,
         "parameter" : [{
           "name" : "excludeNested",
@@ -641,6 +236,661 @@
     }
   },
   {
+    "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-test-result-covid-19",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "who-ddcc-test-result-covid-19",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html\">DDCC Codes for ICD11 v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-RA01.0\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-RA01.460\">RA01.0</a></td><td>http://id.who.int/icd11/mms</td><td>Detected</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-QA02\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-QA02\">QA02</a></td><td>http://id.who.int/icd11/mms</td><td>Not Detected</td></tr></table></div>"
+      },
+      "url" : "http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-test-result-covid-19",
+      "version" : "1.0.0",
+      "name" : "WHO_DDCC_Test_Result_COVID_19",
+      "title" : "WHO Test Result (COVID-19)",
+      "status" : "draft",
+      "date" : "2023-01-08T23:46:44+00:00",
+      "publisher" : "WHO",
+      "contact" : [{
+        "name" : "WHO",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://who.int"
+        }]
+      }],
+      "description" : "WHO COVID-19 Test Result from [ICD 11](https://icd.who.int/browse11)",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:dc365707-8cbd-4985-98bd-02c4e7b6210a",
+        "timestamp" : "2023-01-08T23:48:11+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://id.who.int/icd11/mms|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://id.who.int/icd11/mms",
+          "code" : "RA01.0",
+          "display" : "Detected"
+        },
+        {
+          "system" : "http://id.who.int/icd11/mms",
+          "code" : "QA02",
+          "display" : "Not Detected"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Type-ValueSet",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "DDCC-QR-Type-ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-DDCC-QR-Type-CodeSystem.html\">DDCC QR Category Usage Codes v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-who\"> </a>  <a href=\"CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-who\">who</a></td><td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem</td><td>WHO DDCC</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-dcc\"> </a>  <a href=\"CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-dcc\">dcc</a></td><td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem</td><td>EU DCC</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-icao\"> </a>  <a href=\"CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-icao\">icao</a></td><td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem</td><td>ICAO</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-au\"> </a>  <a href=\"CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-au\">au</a></td><td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem</td><td>AU</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-shc\"> </a>  <a href=\"CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-shc\">shc</a></td><td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem</td><td>SMART Health Card</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Type-CodeSystem-divoc\"> </a>  <a href=\"CodeSystem-DDCC-QR-Type-CodeSystem.html#DDCC-QR-Type-CodeSystem-divoc\">divoc</a></td><td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem</td><td>DIVOC</td></tr></table></div>"
+      },
+      "url" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Type-ValueSet",
+      "version" : "1.0.0",
+      "name" : "DDCC_QR_Type_ValueSet",
+      "title" : "DDCC QR Type Codes",
+      "status" : "active",
+      "date" : "2023-01-08T23:46:44+00:00",
+      "publisher" : "WHO",
+      "contact" : [{
+        "name" : "WHO",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://who.int"
+        }]
+      }],
+      "description" : "Type of QR codes by their business usage",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:5538881f-df34-4120-9cb6-c9ff73e9a4cd",
+        "timestamp" : "2023-01-08T23:48:18+00:00",
+        "total" : 6,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem",
+          "code" : "who",
+          "display" : "WHO DDCC"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem",
+          "code" : "dcc",
+          "display" : "EU DCC"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem",
+          "code" : "icao",
+          "display" : "ICAO"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem",
+          "code" : "au",
+          "display" : "AU"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem",
+          "code" : "shc",
+          "display" : "SMART Health Card"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Type-CodeSystem",
+          "code" : "divoc",
+          "display" : "DIVOC"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DIVOC-ValueSet",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "DIVOC-ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 13 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-DIVOC-CodeSystem.html\">COVID-19 Vaccine Codes for DIVOC v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC001\"> </a>  <a href=\"CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC001\">DIVOC001</a></td><td>http://worldhealthorganization.github.io/ddcc/DIVOC</td><td>Zycov-D</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC002\"> </a>  <a href=\"CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC002\">DIVOC002</a></td><td>http://worldhealthorganization.github.io/ddcc/DIVOC</td><td>Covaxin</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC003\"> </a>  <a href=\"CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC003\">DIVOC003</a></td><td>http://worldhealthorganization.github.io/ddcc/DIVOC</td><td>Covishield</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC004\"> </a>  <a href=\"CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC004\">DIVOC004</a></td><td>http://worldhealthorganization.github.io/ddcc/DIVOC</td><td>Sputnik V</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC005\"> </a>  <a href=\"CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC005\">DIVOC005</a></td><td>http://worldhealthorganization.github.io/ddcc/DIVOC</td><td>Pfizer-BioNTech or Comirnaty</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC006\"> </a>  <a href=\"CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC006\">DIVOC006</a></td><td>http://worldhealthorganization.github.io/ddcc/DIVOC</td><td>Janssen</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC007\"> </a>  <a href=\"CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC007\">DIVOC007</a></td><td>http://worldhealthorganization.github.io/ddcc/DIVOC</td><td>Moderna or Modema or Spikevax</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC008\"> </a>  <a href=\"CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC008\">DIVOC008</a></td><td>http://worldhealthorganization.github.io/ddcc/DIVOC</td><td>AstraZeneca or Vaxzevria</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC009\"> </a>  <a href=\"CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC009\">DIVOC009</a></td><td>http://worldhealthorganization.github.io/ddcc/DIVOC</td><td>Sinovac or Coronavac</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC010\"> </a>  <a href=\"CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC010\">DIVOC010</a></td><td>http://worldhealthorganization.github.io/ddcc/DIVOC</td><td>BBIBP- CorV or Sinopharm</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC011\"> </a>  <a href=\"CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC011\">DIVOC011</a></td><td>http://worldhealthorganization.github.io/ddcc/DIVOC</td><td>Convidecia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC012\"> </a>  <a href=\"CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC012\">DIVOC012</a></td><td>http://worldhealthorganization.github.io/ddcc/DIVOC</td><td>Corbevax</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-DIVOC-DIVOC013\"> </a>  <a href=\"CodeSystem-DIVOC-CodeSystem.html#DIVOC-CodeSystem-DIVOC013\">DIVOC013</a></td><td>http://worldhealthorganization.github.io/ddcc/DIVOC</td><td>Novavax/Covovax NVX - CoV2373</td></tr></table></div>"
+      },
+      "url" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DIVOC-ValueSet",
+      "version" : "1.0.0",
+      "name" : "DIVOC_ValueSet",
+      "title" : "COVID-19 Vaccine Codes for DIVOC",
+      "status" : "draft",
+      "date" : "2023-01-08T23:46:44+00:00",
+      "publisher" : "WHO",
+      "contact" : [{
+        "name" : "WHO",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://who.int"
+        }]
+      }],
+      "description" : "COVID-19 Vaccine codes for DIVOC so the FHIR server can perform expansions.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:3509ac8b-86a3-4885-aa24-9b61c69aefda",
+        "timestamp" : "2023-01-08T23:48:18+00:00",
+        "total" : 13,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://worldhealthorganization.github.io/ddcc/DIVOC|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://worldhealthorganization.github.io/ddcc/DIVOC",
+          "code" : "DIVOC001",
+          "display" : "Zycov-D"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/DIVOC",
+          "code" : "DIVOC002",
+          "display" : "Covaxin"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/DIVOC",
+          "code" : "DIVOC003",
+          "display" : "Covishield"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/DIVOC",
+          "code" : "DIVOC004",
+          "display" : "Sputnik V"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/DIVOC",
+          "code" : "DIVOC005",
+          "display" : "Pfizer-BioNTech or Comirnaty"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/DIVOC",
+          "code" : "DIVOC006",
+          "display" : "Janssen"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/DIVOC",
+          "code" : "DIVOC007",
+          "display" : "Moderna or Modema or Spikevax"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/DIVOC",
+          "code" : "DIVOC008",
+          "display" : "AstraZeneca or Vaxzevria"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/DIVOC",
+          "code" : "DIVOC009",
+          "display" : "Sinovac or Coronavac"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/DIVOC",
+          "code" : "DIVOC010",
+          "display" : "BBIBP- CorV or Sinopharm"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/DIVOC",
+          "code" : "DIVOC011",
+          "display" : "Convidecia"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/DIVOC",
+          "code" : "DIVOC012",
+          "display" : "Corbevax"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/DIVOC",
+          "code" : "DIVOC013",
+          "display" : "Novavax/Covovax NVX - CoV2373"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Format-ValueSet",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "DDCC-QR-Format-ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-DDCC-QR-Format-CodeSystem.html\">DDCC QR Format Codes v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Format-CodeSystem-image\"> </a>  <a href=\"CodeSystem-DDCC-QR-Format-CodeSystem.html#DDCC-QR-Format-CodeSystem-image\">image</a></td><td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem</td><td>Image</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Format-CodeSystem-serialized\"> </a>  <a href=\"CodeSystem-DDCC-QR-Format-CodeSystem.html#DDCC-QR-Format-CodeSystem-serialized\">serialized</a></td><td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem</td><td>Serialized QR Content</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Format-CodeSystem-pdf\"> </a>  <a href=\"CodeSystem-DDCC-QR-Format-CodeSystem.html#DDCC-QR-Format-CodeSystem-pdf\">pdf</a></td><td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem</td><td>PDF version of the QR image</td></tr></table></div>"
+      },
+      "url" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Format-ValueSet",
+      "version" : "1.0.0",
+      "name" : "DDCC_QR_Format_ValueSet",
+      "title" : "DDCC QR Format Codes",
+      "status" : "active",
+      "date" : "2023-01-08T23:46:44+00:00",
+      "publisher" : "WHO",
+      "contact" : [{
+        "name" : "WHO",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://who.int"
+        }]
+      }],
+      "description" : "Format of the representation of QR code",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:37a1df84-f9d7-4519-a470-9df800dc660c",
+        "timestamp" : "2023-01-08T23:48:20+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem",
+          "code" : "image",
+          "display" : "Image"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem",
+          "code" : "serialized",
+          "display" : "Serialized QR Content"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem",
+          "code" : "pdf",
+          "display" : "PDF version of the QR image"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-Device-Property-ValueSet",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "DDCC-Device-Property-ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-DDCC-Device-Property-CodeSystem.html\">DDCC Device Property Codes v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Device-Property-CodeSystem-pathogen\"> </a>  <a href=\"CodeSystem-DDCC-Device-Property-CodeSystem.html#DDCC-Device-Property-CodeSystem-pathogen\">pathogen</a></td><td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Device-Property-CodeSystem</td><td>Pathogen Targeted</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Device-Property-CodeSystem-brand\"> </a>  <a href=\"CodeSystem-DDCC-Device-Property-CodeSystem.html#DDCC-Device-Property-CodeSystem-brand\">brand</a></td><td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Device-Property-CodeSystem</td><td>Test Brand</td></tr></table></div>"
+      },
+      "url" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-Device-Property-ValueSet",
+      "version" : "1.0.0",
+      "name" : "DDCC_Device_Property_ValueSet",
+      "title" : "DDCC Device Property Codes",
+      "status" : "active",
+      "date" : "2023-01-08T23:46:44+00:00",
+      "publisher" : "WHO",
+      "contact" : [{
+        "name" : "WHO",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://who.int"
+        }]
+      }],
+      "description" : "Properties of DDCC devices",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:827a5c0f-09ee-4ba3-89fa-656c189239df",
+        "timestamp" : "2023-01-08T23:48:25+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Device-Property-CodeSystem|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Device-Property-CodeSystem",
+          "code" : "pathogen",
+          "display" : "Pathogen Targeted"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Device-Property-CodeSystem",
+          "code" : "brand",
+          "display" : "Test Brand"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "who-ddcc-disease-targeted-covid-19",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html\">DDCC Codes for ICD11 v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-RA01\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-RA01\">RA01</a></td><td>http://id.who.int/icd11/mms</td><td>COVID-19</td></tr></table></div>"
+      },
+      "url" : "http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19",
+      "version" : "1.0.0",
+      "name" : "WHO_DDCC_Disease_Targeted_COVID_19",
+      "title" : "WHO Disease or Agent Targeted (COVID-19)",
+      "status" : "draft",
+      "date" : "2023-01-08T23:46:44+00:00",
+      "publisher" : "WHO",
+      "contact" : [{
+        "name" : "WHO",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://who.int"
+        }]
+      }],
+      "description" : "WHO Disease or Agent Targeted List (COVID-19) from [ICD 11](https://icd.who.int/browse11)",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:75f4e829-b4ac-482a-b12a-db6d80507368",
+        "timestamp" : "2023-01-08T23:48:25+00:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://id.who.int/icd11/mms|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://id.who.int/icd11/mms",
+          "code" : "RA01",
+          "display" : "COVID-19"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-Folder-DesignationType",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "DDCC-Folder-DesignationType",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-DDCC-Folder-DesignationType.html\">DDCC Designation Types for Folder v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Folder-DesignationType-ddcc\"> </a>  <a href=\"CodeSystem-DDCC-Folder-DesignationType.html#DDCC-Folder-DesignationType-ddcc\">ddcc</a></td><td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Folder-DesignationType</td><td>DDCC</td></tr></table></div>"
+      },
+      "url" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-Folder-DesignationType",
+      "version" : "1.0.0",
+      "name" : "DDCC_Folder_DesignationType_ValueSet",
+      "title" : "DDCC DesignationTypes for Folder",
+      "status" : "active",
+      "date" : "2023-01-08T23:46:44+00:00",
+      "publisher" : "WHO",
+      "contact" : [{
+        "name" : "WHO",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://who.int"
+        }]
+      }],
+      "description" : "DDCC Designation Types ValueSet for DDCC Folders.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:211e7f01-422b-4410-aa97-b0e5b4bd0dee",
+        "timestamp" : "2023-01-08T23:49:12+00:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Folder-DesignationType|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Folder-DesignationType",
+          "code" : "ddcc",
+          "display" : "DDCC"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-Composition-Category-ValueSet",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "DDCC-Composition-Category-ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-DDCC-Composition-Category-CodeSystem.html\">DDCC Composition Category Codes v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Composition-Category-CodeSystem-ddcc-vs\"> </a>  <a href=\"CodeSystem-DDCC-Composition-Category-CodeSystem.html#DDCC-Composition-Category-CodeSystem-ddcc-vs\">ddcc-vs</a></td><td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem</td><td>DDCC:VS</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Composition-Category-CodeSystem-ddcc-tr\"> </a>  <a href=\"CodeSystem-DDCC-Composition-Category-CodeSystem.html#DDCC-Composition-Category-CodeSystem-ddcc-tr\">ddcc-tr</a></td><td>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem</td><td>DDCC:TR</td></tr></table></div>"
+      },
+      "url" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-Composition-Category-ValueSet",
+      "version" : "1.0.0",
+      "name" : "DDCC_Composition_Category_ValueSet",
+      "title" : "DDCC Composition Category Codes",
+      "status" : "active",
+      "date" : "2023-01-08T23:46:44+00:00",
+      "publisher" : "WHO",
+      "contact" : [{
+        "name" : "WHO",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://who.int"
+        }]
+      }],
+      "description" : "Categorization of DDCC Composition",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:9aa4df32-7aa5-4f2d-b5c2-5e0189c23fa2",
+        "timestamp" : "2023-01-08T23:49:28+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem",
+          "code" : "ddcc-vs",
+          "display" : "DDCC:VS"
+        },
+        {
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Composition-Category-CodeSystem",
+          "code" : "ddcc-tr",
+          "display" : "DDCC:TR"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-brands-covid-19",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "who-ddcc-brands-covid-19",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 20 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html\">DDCC Codes for ICD11 v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM7HT3\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM7HT3\">XM7HT3</a></td><td>http://id.who.int/icd11/mms</td><td>CoronaVac®</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM8866\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM8866\">XM8866</a></td><td>http://id.who.int/icd11/mms</td><td>BBIBP-CorV</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM9TQ1\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM9TQ1\">XM9TQ1</a></td><td>http://id.who.int/icd11/mms</td><td>KCONVAC</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM1G90\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM1G90\">XM1G90</a></td><td>http://id.who.int/icd11/mms</td><td>Covaxin</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM85P5\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM85P5\">XM85P5</a></td><td>http://id.who.int/icd11/mms</td><td>Covi-Vac</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM9FQ7\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM9FQ7\">XM9FQ7</a></td><td>http://id.who.int/icd11/mms</td><td>Hayat-Vax</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM97N6\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM97N6\">XM97N6</a></td><td>http://id.who.int/icd11/mms</td><td>QazVac</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM2YG8\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM2YG8\">XM2YG8</a></td><td>http://id.who.int/icd11/mms</td><td>COVIran Barakat</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM4YL8\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM4YL8\">XM4YL8</a></td><td>http://id.who.int/icd11/mms</td><td>AstraZeneca</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM97T2\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM97T2\">XM97T2</a></td><td>http://id.who.int/icd11/mms</td><td>Covishield®</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM6QV1\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM6QV1\">XM6QV1</a></td><td>http://id.who.int/icd11/mms</td><td>Janssen</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM1AG7\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM1AG7\">XM1AG7</a></td><td>http://id.who.int/icd11/mms</td><td>Convidecia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM5ZJ4\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM5ZJ4\">XM5ZJ4</a></td><td>http://id.who.int/icd11/mms</td><td>Gam-Covid-Vac</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM5QM6\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM5QM6\">XM5QM6</a></td><td>http://id.who.int/icd11/mms</td><td>Sputnik-Light</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM3PG0\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM3PG0\">XM3PG0</a></td><td>http://id.who.int/icd11/mms</td><td>Soberana-02</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM4EC8\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM4EC8\">XM4EC8</a></td><td>http://id.who.int/icd11/mms</td><td>MVC-COV1901</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM6SZ8\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM6SZ8\">XM6SZ8</a></td><td>http://id.who.int/icd11/mms</td><td>EpiVacCorona</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM52P3\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM52P3\">XM52P3</a></td><td>http://id.who.int/icd11/mms</td><td>ZyCov-D</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM8NQ0\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM8NQ0\">XM8NQ0</a></td><td>http://id.who.int/icd11/mms</td><td>Comirnaty®</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM3DT5\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM3DT5\">XM3DT5</a></td><td>http://id.who.int/icd11/mms</td><td>Moderna</td></tr></table></div>"
+      },
+      "url" : "http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-brands-covid-19",
+      "version" : "1.0.0",
+      "name" : "WHO_DDCC_Brands_COVID_19",
+      "title" : "WHO DDCC Brand List (COVID-19)",
+      "status" : "draft",
+      "date" : "2023-01-08T23:46:44+00:00",
+      "publisher" : "WHO",
+      "contact" : [{
+        "name" : "WHO",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://who.int"
+        }]
+      }],
+      "description" : "WHO DDCC Brand List (COVID-19) from [ICD 11](https://icd.who.int/browse11)",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:00c102dc-24fe-4c03-bc60-873a8f1cfa1e",
+        "timestamp" : "2023-01-08T23:50:01+00:00",
+        "total" : 20,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://id.who.int/icd11/mms|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://id.who.int/icd11/mms",
+          "code" : "XM7HT3",
+          "display" : "CoronaVac®"
+        },
+        {
+          "system" : "http://id.who.int/icd11/mms",
+          "code" : "XM8866",
+          "display" : "BBIBP-CorV"
+        },
+        {
+          "system" : "http://id.who.int/icd11/mms",
+          "code" : "XM9TQ1",
+          "display" : "KCONVAC"
+        },
+        {
+          "system" : "http://id.who.int/icd11/mms",
+          "code" : "XM1G90",
+          "display" : "Covaxin"
+        },
+        {
+          "system" : "http://id.who.int/icd11/mms",
+          "code" : "XM85P5",
+          "display" : "Covi-Vac"
+        },
+        {
+          "system" : "http://id.who.int/icd11/mms",
+          "code" : "XM9FQ7",
+          "display" : "Hayat-Vax"
+        },
+        {
+          "system" : "http://id.who.int/icd11/mms",
+          "code" : "XM97N6",
+          "display" : "QazVac"
+        },
+        {
+          "system" : "http://id.who.int/icd11/mms",
+          "code" : "XM2YG8",
+          "display" : "COVIran Barakat"
+        },
+        {
+          "system" : "http://id.who.int/icd11/mms",
+          "code" : "XM4YL8",
+          "display" : "AstraZeneca"
+        },
+        {
+          "system" : "http://id.who.int/icd11/mms",
+          "code" : "XM97T2",
+          "display" : "Covishield®"
+        },
+        {
+          "system" : "http://id.who.int/icd11/mms",
+          "code" : "XM6QV1",
+          "display" : "Janssen"
+        },
+        {
+          "system" : "http://id.who.int/icd11/mms",
+          "code" : "XM1AG7",
+          "display" : "Convidecia"
+        },
+        {
+          "system" : "http://id.who.int/icd11/mms",
+          "code" : "XM5ZJ4",
+          "display" : "Gam-Covid-Vac"
+        },
+        {
+          "system" : "http://id.who.int/icd11/mms",
+          "code" : "XM5QM6",
+          "display" : "Sputnik-Light"
+        },
+        {
+          "system" : "http://id.who.int/icd11/mms",
+          "code" : "XM3PG0",
+          "display" : "Soberana-02"
+        },
+        {
+          "system" : "http://id.who.int/icd11/mms",
+          "code" : "XM4EC8",
+          "display" : "MVC-COV1901"
+        },
+        {
+          "system" : "http://id.who.int/icd11/mms",
+          "code" : "XM6SZ8",
+          "display" : "EpiVacCorona"
+        },
+        {
+          "system" : "http://id.who.int/icd11/mms",
+          "code" : "XM52P3",
+          "display" : "ZyCov-D"
+        },
+        {
+          "system" : "http://id.who.int/icd11/mms",
+          "code" : "XM8NQ0",
+          "display" : "Comirnaty®"
+        },
+        {
+          "system" : "http://id.who.int/icd11/mms",
+          "code" : "XM3DT5",
+          "display" : "Moderna"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/ICAOVaccineListV1",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -654,7 +904,7 @@
       "name" : "ICAOV1_ValueSet",
       "title" : "DDCC Codes for ICAO Vaccines",
       "status" : "draft",
-      "date" : "2022-11-30T15:45:43+00:00",
+      "date" : "2023-01-08T23:46:44+00:00",
       "publisher" : "WHO",
       "contact" : [{
         "name" : "WHO",
@@ -671,8 +921,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d7c2119a-34f1-4d4d-ad73-0754c09a0d7b",
-        "timestamp" : "2022-11-30T15:48:20+00:00",
+        "identifier" : "urn:uuid:2cc76384-ed7f-4e89-88c7-f3c0fb8ab077",
+        "timestamp" : "2023-01-08T23:50:04+00:00",
         "total" : 97,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1184,7 +1434,7 @@
       "name" : "WHO_DDCC_Agent_Targeted_COVID_19",
       "title" : "WHO Agent Targeted (COVID-19)",
       "status" : "draft",
-      "date" : "2022-11-30T15:45:43+00:00",
+      "date" : "2023-01-08T23:46:44+00:00",
       "publisher" : "WHO",
       "contact" : [{
         "name" : "WHO",
@@ -1201,8 +1451,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:1eadd194-e3c0-4fad-bd03-4039880916f8",
-        "timestamp" : "2022-11-30T15:48:20+00:00",
+        "identifier" : "urn:uuid:47f91030-6add-4d7b-8b1c-646cd82a33fd",
+        "timestamp" : "2023-01-08T23:50:05+00:00",
         "total" : 14,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1299,7 +1549,7 @@
       "name" : "WHO_DDCC_Allowed_Vaccines_COVID_19",
       "title" : "WHO DDCC Allowed Vaccine List (COVID-19)",
       "status" : "draft",
-      "date" : "2022-11-30T15:45:43+00:00",
+      "date" : "2023-01-08T23:46:44+00:00",
       "publisher" : "WHO",
       "contact" : [{
         "name" : "WHO",
@@ -1316,8 +1566,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:34e9821c-257f-4734-8590-8d0d048922b7",
-        "timestamp" : "2022-11-30T15:48:20+00:00",
+        "identifier" : "urn:uuid:c068a934-74e2-48e7-8537-91296a1e784e",
+        "timestamp" : "2023-01-08T23:50:45+00:00",
         "total" : 32,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1507,256 +1757,6 @@
     }
   },
   {
-    "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-brands-covid-19",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "who-ddcc-brands-covid-19",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 20 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html\">DDCC Codes for ICD11 v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM7HT3\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM7HT3\">XM7HT3</a></td><td>http://id.who.int/icd11/mms</td><td>CoronaVac®</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM8866\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM8866\">XM8866</a></td><td>http://id.who.int/icd11/mms</td><td>BBIBP-CorV</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM9TQ1\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM9TQ1\">XM9TQ1</a></td><td>http://id.who.int/icd11/mms</td><td>KCONVAC</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM1G90\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM1G90\">XM1G90</a></td><td>http://id.who.int/icd11/mms</td><td>Covaxin</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM85P5\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM85P5\">XM85P5</a></td><td>http://id.who.int/icd11/mms</td><td>Covi-Vac</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM9FQ7\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM9FQ7\">XM9FQ7</a></td><td>http://id.who.int/icd11/mms</td><td>Hayat-Vax</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM97N6\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM97N6\">XM97N6</a></td><td>http://id.who.int/icd11/mms</td><td>QazVac</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM2YG8\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM2YG8\">XM2YG8</a></td><td>http://id.who.int/icd11/mms</td><td>COVIran Barakat</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM4YL8\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM4YL8\">XM4YL8</a></td><td>http://id.who.int/icd11/mms</td><td>AstraZeneca</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM97T2\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM97T2\">XM97T2</a></td><td>http://id.who.int/icd11/mms</td><td>Covishield®</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM6QV1\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM6QV1\">XM6QV1</a></td><td>http://id.who.int/icd11/mms</td><td>Janssen</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM1AG7\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM1AG7\">XM1AG7</a></td><td>http://id.who.int/icd11/mms</td><td>Convidecia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM5ZJ4\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM5ZJ4\">XM5ZJ4</a></td><td>http://id.who.int/icd11/mms</td><td>Gam-Covid-Vac</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM5QM6\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM5QM6\">XM5QM6</a></td><td>http://id.who.int/icd11/mms</td><td>Sputnik-Light</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM3PG0\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM3PG0\">XM3PG0</a></td><td>http://id.who.int/icd11/mms</td><td>Soberana-02</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM4EC8\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM4EC8\">XM4EC8</a></td><td>http://id.who.int/icd11/mms</td><td>MVC-COV1901</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM6SZ8\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM6SZ8\">XM6SZ8</a></td><td>http://id.who.int/icd11/mms</td><td>EpiVacCorona</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM52P3\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM52P3\">XM52P3</a></td><td>http://id.who.int/icd11/mms</td><td>ZyCov-D</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM8NQ0\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM8NQ0\">XM8NQ0</a></td><td>http://id.who.int/icd11/mms</td><td>Comirnaty®</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-XM3DT5\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-XM3DT5\">XM3DT5</a></td><td>http://id.who.int/icd11/mms</td><td>Moderna</td></tr></table></div>"
-      },
-      "url" : "http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-brands-covid-19",
-      "version" : "1.0.0",
-      "name" : "WHO_DDCC_Brands_COVID_19",
-      "title" : "WHO DDCC Brand List (COVID-19)",
-      "status" : "draft",
-      "date" : "2022-11-30T15:45:43+00:00",
-      "publisher" : "WHO",
-      "contact" : [{
-        "name" : "WHO",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://who.int"
-        }]
-      }],
-      "description" : "WHO DDCC Brand List (COVID-19) from [ICD 11](https://icd.who.int/browse11)",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:fa1c5c40-a749-4edc-a6a6-98b6c9748c29",
-        "timestamp" : "2022-11-30T15:48:20+00:00",
-        "total" : 20,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://id.who.int/icd11/mms|1.0.0"
-        }],
-        "contains" : [{
-          "system" : "http://id.who.int/icd11/mms",
-          "code" : "XM7HT3",
-          "display" : "CoronaVac®"
-        },
-        {
-          "system" : "http://id.who.int/icd11/mms",
-          "code" : "XM8866",
-          "display" : "BBIBP-CorV"
-        },
-        {
-          "system" : "http://id.who.int/icd11/mms",
-          "code" : "XM9TQ1",
-          "display" : "KCONVAC"
-        },
-        {
-          "system" : "http://id.who.int/icd11/mms",
-          "code" : "XM1G90",
-          "display" : "Covaxin"
-        },
-        {
-          "system" : "http://id.who.int/icd11/mms",
-          "code" : "XM85P5",
-          "display" : "Covi-Vac"
-        },
-        {
-          "system" : "http://id.who.int/icd11/mms",
-          "code" : "XM9FQ7",
-          "display" : "Hayat-Vax"
-        },
-        {
-          "system" : "http://id.who.int/icd11/mms",
-          "code" : "XM97N6",
-          "display" : "QazVac"
-        },
-        {
-          "system" : "http://id.who.int/icd11/mms",
-          "code" : "XM2YG8",
-          "display" : "COVIran Barakat"
-        },
-        {
-          "system" : "http://id.who.int/icd11/mms",
-          "code" : "XM4YL8",
-          "display" : "AstraZeneca"
-        },
-        {
-          "system" : "http://id.who.int/icd11/mms",
-          "code" : "XM97T2",
-          "display" : "Covishield®"
-        },
-        {
-          "system" : "http://id.who.int/icd11/mms",
-          "code" : "XM6QV1",
-          "display" : "Janssen"
-        },
-        {
-          "system" : "http://id.who.int/icd11/mms",
-          "code" : "XM1AG7",
-          "display" : "Convidecia"
-        },
-        {
-          "system" : "http://id.who.int/icd11/mms",
-          "code" : "XM5ZJ4",
-          "display" : "Gam-Covid-Vac"
-        },
-        {
-          "system" : "http://id.who.int/icd11/mms",
-          "code" : "XM5QM6",
-          "display" : "Sputnik-Light"
-        },
-        {
-          "system" : "http://id.who.int/icd11/mms",
-          "code" : "XM3PG0",
-          "display" : "Soberana-02"
-        },
-        {
-          "system" : "http://id.who.int/icd11/mms",
-          "code" : "XM4EC8",
-          "display" : "MVC-COV1901"
-        },
-        {
-          "system" : "http://id.who.int/icd11/mms",
-          "code" : "XM6SZ8",
-          "display" : "EpiVacCorona"
-        },
-        {
-          "system" : "http://id.who.int/icd11/mms",
-          "code" : "XM52P3",
-          "display" : "ZyCov-D"
-        },
-        {
-          "system" : "http://id.who.int/icd11/mms",
-          "code" : "XM8NQ0",
-          "display" : "Comirnaty®"
-        },
-        {
-          "system" : "http://id.who.int/icd11/mms",
-          "code" : "XM3DT5",
-          "display" : "Moderna"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "who-ddcc-disease-targeted-covid-19",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html\">DDCC Codes for ICD11 v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-RA01\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-RA01\">RA01</a></td><td>http://id.who.int/icd11/mms</td><td>COVID-19</td></tr></table></div>"
-      },
-      "url" : "http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19",
-      "version" : "1.0.0",
-      "name" : "WHO_DDCC_Disease_Targeted_COVID_19",
-      "title" : "WHO Disease or Agent Targeted (COVID-19)",
-      "status" : "draft",
-      "date" : "2022-11-30T15:45:43+00:00",
-      "publisher" : "WHO",
-      "contact" : [{
-        "name" : "WHO",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://who.int"
-        }]
-      }],
-      "description" : "WHO Disease or Agent Targeted List (COVID-19) from [ICD 11](https://icd.who.int/browse11)",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:1c7cf252-5a8f-424a-8cdf-e7e8b3ee01d1",
-        "timestamp" : "2022-11-30T15:48:20+00:00",
-        "total" : 1,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://id.who.int/icd11/mms|1.0.0"
-        }],
-        "contains" : [{
-          "system" : "http://id.who.int/icd11/mms",
-          "code" : "RA01",
-          "display" : "COVID-19"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-test-result-covid-19",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "who-ddcc-test-result-covid-19",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html\">DDCC Codes for ICD11 v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-RA01.0\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-RA01.460\">RA01.0</a></td><td>http://id.who.int/icd11/mms</td><td>Detected</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---id.who.int-icd11-mms-QA02\"> </a>  <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html#DDCC-ICD11-CodeSystem-QA02\">QA02</a></td><td>http://id.who.int/icd11/mms</td><td>Not Detected</td></tr></table></div>"
-      },
-      "url" : "http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-test-result-covid-19",
-      "version" : "1.0.0",
-      "name" : "WHO_DDCC_Test_Result_COVID_19",
-      "title" : "WHO Test Result (COVID-19)",
-      "status" : "draft",
-      "date" : "2022-11-30T15:45:43+00:00",
-      "publisher" : "WHO",
-      "contact" : [{
-        "name" : "WHO",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://who.int"
-        }]
-      }],
-      "description" : "WHO COVID-19 Test Result from [ICD 11](https://icd.who.int/browse11)",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:702e82d6-98a7-459f-9bfc-8493bfcdcbc7",
-        "timestamp" : "2022-11-30T15:48:21+00:00",
-        "total" : 2,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://id.who.int/icd11/mms|1.0.0"
-        }],
-        "contains" : [{
-          "system" : "http://id.who.int/icd11/mms",
-          "code" : "RA01.0",
-          "display" : "Detected"
-        },
-        {
-          "system" : "http://id.who.int/icd11/mms",
-          "code" : "QA02",
-          "display" : "Not Detected"
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-vaccines-covid-19",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -1770,7 +1770,7 @@
       "name" : "WHO_DDCC_Vaccines_COVID_19",
       "title" : "WHO Vaccine List (COVID-19)",
       "status" : "draft",
-      "date" : "2022-11-30T15:45:43+00:00",
+      "date" : "2023-01-08T23:46:44+00:00",
       "publisher" : "WHO",
       "contact" : [{
         "name" : "WHO",
@@ -1787,8 +1787,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:05a148df-73a6-43d2-aa3c-f1386ff6b0ed",
-        "timestamp" : "2022-11-30T15:48:22+00:00",
+        "identifier" : "urn:uuid:8d77f3b7-ce9e-4fb1-85a3-30b9cebbe304",
+        "timestamp" : "2023-01-08T23:50:45+00:00",
         "total" : 31,
         "parameter" : [{
           "name" : "excludeNested",

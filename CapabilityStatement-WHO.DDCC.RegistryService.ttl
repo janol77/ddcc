@@ -7,19 +7,19 @@
 
 <http://worldhealthorganization.github.io/ddcc/CapabilityStatement/WHO.DDCC.RegistryService> a fhir:CapabilityStatement;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "WHO.DDCC.RegistryService"];
+  fhir:Resource.id [ fhir:value "WHO.DDCC.RegistryService"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>Capability Statement for a DDCC RegistryService</p>\n         \n    </div>"
-  ];
-  fhir:CapabilityStatement.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/CapabilityStatement/WHO.DDCC.RegistryService"];
-  fhir:CapabilityStatement.version [ fhir:value "1.0.0"];
-  fhir:CapabilityStatement.name [ fhir:value "WHO_DDCC_RegistryService"];
-  fhir:CapabilityStatement.title [ fhir:value "WHO DDCC Registry Service"];
-  fhir:CapabilityStatement.status [ fhir:value "draft"];
-  fhir:CapabilityStatement.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:CapabilityStatement.date [ fhir:value "2021-05-06"^^xsd:date];
-  fhir:CapabilityStatement.publisher [ fhir:value "WHO"];
+  ]; # 
+  fhir:CapabilityStatement.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/CapabilityStatement/WHO.DDCC.RegistryService"]; # 
+  fhir:CapabilityStatement.version [ fhir:value "1.0.0"]; # 
+  fhir:CapabilityStatement.name [ fhir:value "WHO_DDCC_RegistryService"]; # 
+  fhir:CapabilityStatement.title [ fhir:value "WHO DDCC Registry Service"]; # 
+  fhir:CapabilityStatement.status [ fhir:value "draft"]; # 
+  fhir:CapabilityStatement.experimental [ fhir:value "true"^^xsd:boolean]; # 
+  fhir:CapabilityStatement.date [ fhir:value "2021-05-06"^^xsd:date]; # 
+  fhir:CapabilityStatement.publisher [ fhir:value "WHO"]; # 
   fhir:CapabilityStatement.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "WHO" ];
@@ -28,8 +28,8 @@
        fhir:ContactPoint.system [ fhir:value "url" ];
        fhir:ContactPoint.value [ fhir:value "http://who.int" ]
      ]
-  ];
-  fhir:CapabilityStatement.description [ fhir:value "CapabilityStatement for WHO DDCC Registry Service actor."];
+  ]; # 
+  fhir:CapabilityStatement.description [ fhir:value "CapabilityStatement for WHO DDCC Registry Service actor."]; # 
   fhir:CapabilityStatement.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -37,16 +37,16 @@
        fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
        fhir:Coding.code [ fhir:value "001" ]
      ]
-  ];
-  fhir:CapabilityStatement.kind [ fhir:value "requirements"];
-  fhir:CapabilityStatement.fhirVersion [ fhir:value "4.0.1"];
+  ]; # 
+  fhir:CapabilityStatement.kind [ fhir:value "requirements"]; # 
+  fhir:CapabilityStatement.fhirVersion [ fhir:value "4.0.1"]; # 
   fhir:CapabilityStatement.format [
      fhir:value "application/fhir+xml";
      fhir:index 0
   ], [
      fhir:value "application/fhir+json";
      fhir:index 1
-  ];
+  ]; # 
   fhir:CapabilityStatement.rest [
      fhir:index 0;
      fhir:CapabilityStatement.rest.mode [ fhir:value "server" ];
@@ -234,7 +234,7 @@
        fhir:CapabilityStatement.rest.interaction.code [ fhir:value "batch" ];
        fhir:CapabilityStatement.rest.interaction.documentation [ fhir:value "DDCC Registry Service Actor for accepting a Registry Health Certificate" ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

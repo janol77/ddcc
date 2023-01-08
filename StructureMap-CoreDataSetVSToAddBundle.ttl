@@ -7,21 +7,21 @@
 
 <http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSToAddBundle> a fhir:StructureMap;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "CoreDataSetVSToAddBundle"];
+  fhir:Resource.id [ fhir:value "CoreDataSetVSToAddBundle"]; # 
   fhir:Resource.meta [
      fhir:Meta.versionId [ fhir:value "2" ];
      fhir:Meta.lastUpdated [ fhir:value "2022-06-01T12:54:53.172+00:00"^^xsd:dateTime ]
-  ];
+  ]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><pre>map &quot;http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSToAddBundle&quot; = &quot;CoreDataSetVSToAddBundle&quot;\r\n\r\n\r\nuses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSet.VS&quot; alias DDCCVS as source\r\nuses &quot;http://hl7.org/fhir/StructureDefinition/Bundle&quot; alias AddBundle as target\r\n\r\nimports &quot;http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSLibrary&quot;\r\n\r\ngroup CoreDataSetVSToAddBundle(source ddcc : DDCCVS, target bundle : AddBundle) {\r\n  ddcc -&gt; bundle then VSToAddBundle(ddcc, bundle) &quot;setup add bundle&quot;;\r\n}\r\n\r\n</pre></div>"
-  ];
-  fhir:StructureMap.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSToAddBundle"];
-  fhir:StructureMap.version [ fhir:value "1.0.0"];
-  fhir:StructureMap.name [ fhir:value "CoreDataSetVSToAddBundle"];
-  fhir:StructureMap.status [ fhir:value "draft"];
-  fhir:StructureMap.date [ fhir:value "2022-11-30T15:45:43+00:00"^^xsd:dateTime];
-  fhir:StructureMap.publisher [ fhir:value "WHO"];
+  ]; # 
+  fhir:StructureMap.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSToAddBundle"]; # 
+  fhir:StructureMap.version [ fhir:value "1.0.0"]; # 
+  fhir:StructureMap.name [ fhir:value "CoreDataSetVSToAddBundle"]; # 
+  fhir:StructureMap.status [ fhir:value "draft"]; # 
+  fhir:StructureMap.date [ fhir:value "2023-01-08T23:46:44+00:00"^^xsd:dateTime]; # 
+  fhir:StructureMap.publisher [ fhir:value "WHO"]; # 
   fhir:StructureMap.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "WHO" ];
@@ -30,7 +30,7 @@
        fhir:ContactPoint.system [ fhir:value "url" ];
        fhir:ContactPoint.value [ fhir:value "http://who.int" ]
      ]
-  ];
+  ]; # 
   fhir:StructureMap.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -38,7 +38,7 @@
        fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
        fhir:Coding.code [ fhir:value "001" ]
      ]
-  ];
+  ]; # 
   fhir:StructureMap.structure [
      fhir:index 0;
      fhir:StructureMap.structure.url [
@@ -55,12 +55,12 @@
      ];
      fhir:StructureMap.structure.mode [ fhir:value "target" ];
      fhir:StructureMap.structure.alias [ fhir:value "AddBundle" ]
-  ];
+  ]; # 
   fhir:StructureMap.import [
      fhir:value "http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSLibrary";
      fhir:index 0;
      fhir:link <http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetVSLibrary>
-  ];
+  ]; # 
   fhir:StructureMap.group [
      fhir:index 0;
      fhir:StructureMap.group.name [ fhir:value "CoreDataSetVSToAddBundle" ];
@@ -114,7 +114,7 @@
          ]
        ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

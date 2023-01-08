@@ -180,47 +180,49 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <!--ReleaseHeader--><p id="publish-box">This is the continuous build for version 1.0.0. This version is based on the current content of <a href="https://github.com/WorldHealthOrganization/ddcc">https://github.com/WorldHealthOrganization/ddcc</a> and changes regularly.</p><!--EndReleaseHeader-->
   <h2>Actors</h2>
   
+  
+  
   <div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Data Entry Personnel</a></li><li><a href="#2">DDCC Generation Service</a></li><li><a href="#3">DDCC Holder</a></li><li><a href="#4">DDCC Registry Service</a></li><li><a href="#5">DDCC Repository Service</a></li><li><a href="#6">Digital Health Solution</a></li><li><a href="#7">Public Health Authority (PHA)</a></li><li><a href="#8">Subject of Care</a></li><li><a href="#9">Tested Person</a></li><li><a href="#10">Vaccinator</a></li><li><a href="#11">Verifier</a></li></ul></div>
   
  There are multiple actors defined in this implementation guide.
   
-  <a name="1"/><h3 id="data-entry-personnel">Data Entry Personnel</h3>
-  <p>The person who enters the information about the Subject of Care, the Vaccinated Person, or the Tested Person (as outlined in the core data set) 
+  <a name="1"/><ns0:h3 xmlns:ns0="http://www.w3.org/1999/xhtml" id="data-entry-personnel">Data Entry Personnel</ns0:h3>
+  <ns1:p xmlns:ns1="http://www.w3.org/1999/xhtml">The person who enters the information about the Subject of Care, the Vaccinated Person, or the Tested Person (as outlined in the core data set) 
     that was manually recorded at care sites or a sample collection site into a digital system. 
-    Health workers can also be the Data Entry Personnel if a point-of-care system is in place that allows health workers to digitally document a vaccination event right away. If a Digital Health Solution, such as a laboratory information system (LIS) is in place, lab technicians can also be considered Data Entry Personnel as they would be able to digitally document a lab result through the LIS right away.</p>
+    Health workers can also be the Data Entry Personnel if a point-of-care system is in place that allows health workers to digitally document a vaccination event right away. If a Digital Health Solution, such as a laboratory information system (LIS) is in place, lab technicians can also be considered Data Entry Personnel as they would be able to digitally document a lab result through the LIS right away.</ns1:p>
 
-  <a name="2"/><h3 id="ddcc-generator">DDCC Generation Service</h3>
-  <p>The service that is responsible for generating a digitally signed representation, the DDCC, of the information concerning a SARS-CoV-2 vaccination or test. 
-    This service can be used for the generation of both vaccination status and test result certificates.</p>
+  <a name="2"/><ns2:h3 xmlns:ns2="http://www.w3.org/1999/xhtml" id="ddcc-generator">DDCC Generation Service</ns2:h3>
+  <ns3:p xmlns:ns3="http://www.w3.org/1999/xhtml">The service that is responsible for generating a digitally signed representation, the DDCC, of the information concerning a SARS-CoV-2 vaccination or test. 
+    This service can be used for the generation of both vaccination status and test result certificates.</ns3:p>
 
-  <a name="3"/><h3 id="ddcc-holder">DDCC Holder</h3>
-  <p>The person who has the Vaccinated Person's vaccination certificate or the Tested Person's test result certificate. The person is usually the Vaccinated or Tested Person but does not have to be. For example, a caregiver may hold the DDCC for a child or other dependant.</p>
+  <a name="3"/><ns4:h3 xmlns:ns4="http://www.w3.org/1999/xhtml" id="ddcc-holder">DDCC Holder</ns4:h3>
+  <ns5:p xmlns:ns5="http://www.w3.org/1999/xhtml">The person who has the Vaccinated Person's vaccination certificate or the Tested Person's test result certificate. The person is usually the Vaccinated or Tested Person but does not have to be. For example, a caregiver may hold the DDCC for a child or other dependant.</ns5:p>
 
-  <a name="4"/><h3 id="ddcc-registry">DDCC Registry Service</h3>
-  <p>The service that can be used to request and receive metadata associated with a DDCC. This service can be used for both vaccination status and test result certificates</p>
+  <a name="4"/><ns6:h3 xmlns:ns6="http://www.w3.org/1999/xhtml" id="ddcc-registry">DDCC Registry Service</ns6:h3>
+  <ns7:p xmlns:ns7="http://www.w3.org/1999/xhtml">The service that can be used to request and receive metadata associated with a DDCC. This service can be used for both vaccination status and test result certificates</ns7:p>
 
-  <a name="5"/><h3 id="ddcc-repository">DDCC Repository Service</h3>
-  <p>A, potentially federated, service that serves as a repository, or database, of the health content associated to DDCC. 
-    This service can be used as a repository for both vaccination status and test result certificates.</p>
+  <a name="5"/><ns8:h3 xmlns:ns8="http://www.w3.org/1999/xhtml" id="ddcc-repository">DDCC Repository Service</ns8:h3>
+  <ns9:p xmlns:ns9="http://www.w3.org/1999/xhtml">A, potentially federated, service that serves as a repository, or database, of the health content associated to DDCC. 
+    This service can be used as a repository for both vaccination status and test result certificates.</ns9:p>
 
-  <a name="6"/><h3 id="digital-health-solution">Digital Health Solution</h3>
-  <p>A secure system that is used to capture and/or manage a digital record of the DDCC core data elements, such as an electronic immunization registry (EIR), 
-    an electronic medical record, a Laboratory Information System (LIS), or a shared health record (SHR).</p>
+  <a name="6"/><ns10:h3 xmlns:ns10="http://www.w3.org/1999/xhtml" id="digital-health-solution">Digital Health Solution</ns10:h3>
+  <ns11:p xmlns:ns11="http://www.w3.org/1999/xhtml">A secure system that is used to capture and/or manage a digital record of the DDCC core data elements, such as an electronic immunization registry (EIR), 
+    an electronic medical record, a Laboratory Information System (LIS), or a shared health record (SHR).</ns11:p>
 
-  <a name="7"/><h3 id="public-health-authority">Public Health Authority (PHA)</h3>
-  <p>An entity or organization under whose auspices the vaccination or test is performed and the DDCC is issued.</p>
+  <a name="7"/><ns12:h3 xmlns:ns12="http://www.w3.org/1999/xhtml" id="public-health-authority">Public Health Authority (PHA)</ns12:h3>
+  <ns13:p xmlns:ns13="http://www.w3.org/1999/xhtml">An entity or organization under whose auspices the vaccination or test is performed and the DDCC is issued.</ns13:p>
 
-  <a name="8"/><h3 id="subject-of-care">Subject of Care</h3>
-  <p>The person who receives the vaccination.</p>
+  <a name="8"/><ns14:h3 xmlns:ns14="http://www.w3.org/1999/xhtml" id="subject-of-care">Subject of Care</ns14:h3>
+  <ns15:p xmlns:ns15="http://www.w3.org/1999/xhtml">The person who receives the vaccination.</ns15:p>
 
-    <a name="9"/><h3 id="tested-person">Tested Person</h3>
-  <p>The person who is tested for SARS-CoV-2 infection.</p>
+    <a name="9"/><ns16:h3 xmlns:ns16="http://www.w3.org/1999/xhtml" id="tested-person">Tested Person</ns16:h3>
+  <ns17:p xmlns:ns17="http://www.w3.org/1999/xhtml">The person who is tested for SARS-CoV-2 infection.</ns17:p>
   
-  <a name="10"/><h3 id="vaccinator">Vaccinator</h3>
-  <p>The person who administers the vaccine. Depending on national policies, the person who administers the vaccine might not be a formal health-care provider. Examples include physicians, nurse practitioners, community health workers or volunteer vaccinators.</p>
+  <a name="10"/><ns18:h3 xmlns:ns18="http://www.w3.org/1999/xhtml" id="vaccinator">Vaccinator</ns18:h3>
+  <ns19:p xmlns:ns19="http://www.w3.org/1999/xhtml">The person who administers the vaccine. Depending on national policies, the person who administers the vaccine might not be a formal health-care provider. Examples include physicians, nurse practitioners, community health workers or volunteer vaccinators.</ns19:p>
 
-  <a name="11"/><h3 id="verifier">Verifier</h3>
-  <p>A natural person or legal person, either private or public, formally authorized (under national law, decree, regulation or other official act or order) to verify and validate the SARS-CoV-2 vaccination status or diagnostic test result presented on the DDCC.</p>
+  <a name="11"/><ns20:h3 xmlns:ns20="http://www.w3.org/1999/xhtml" id="verifier">Verifier</ns20:h3>
+  <ns21:p xmlns:ns21="http://www.w3.org/1999/xhtml">A natural person or legal person, either private or public, formally authorized (under national law, decree, regulation or other official act or order) to verify and validate the SARS-CoV-2 vaccination status or diagnostic test result presented on the DDCC.</ns21:p>
 
 </div>
 </div>
@@ -245,9 +247,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 30, 2022 15:45+0000">2022-11-30</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jan 8, 2023 23:46+0000">2023-01-08</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"></span>
+          <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                   | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/worldhealthorganization/ddcc/projects/1">Issues</a>
@@ -272,6 +274,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   

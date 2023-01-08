@@ -1,10 +1,10 @@
 ﻿DDCC : Validation Results
 =========================================
 
-err = 656, warn = 97, info = 27
-IG Publisher Version: 1.2.19
-Generated Wed Nov 30 15:50:22 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0.0 (canonical = http://worldhealthorganization.github.io/ddcc)
- Build Errors : 9 / 71 / 0
+err = 696, warn = 106, info = 27
+IG Publisher Version: 1.2.26
+Generated Sun Jan 08 23:53:41 UTC 2023. FHIR version 4.0.1 for fhir.who.ddcc#1.0.0 (canonical = http://worldhealthorganization.github.io/ddcc)
+ Build Errors : 76 / 72 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 0 / 0 / 10
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Arabic : 0 / 0 / 10
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Chinese : 0 / 0 / 10
@@ -108,9 +108,9 @@ Generated Wed Nov 30 15:50:22 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCFolder : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCGenerateHealthCertificateParameters : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCGenerateHealthFolderParameters : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-DDCCImmunization : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DDCCImmunization : 3 / 3 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCImmunizationRecommendation : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-DDCCObservation : 3 / 1 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-DDCCObservation : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCOrganization : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCPatient : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCPractitioner : 0 / 1 / 1
@@ -154,7 +154,7 @@ Generated Wed Nov 30 15:50:22 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0
  /github/workspace/input/resources/Bundle-IPS-Immunization-Example-Bundle-01 : 0 / 0 / 3
  /github/workspace/input/resources/CapabilityStatement-WHO.DDCC.Generator : 0 / 0 / 1
  /github/workspace/input/resources/CapabilityStatement-WHO.DDCC.RegistryService : 0 / 0 / 1
- /github/workspace/input/resources/Immunization-pre-uv-ips.StructureDefinition : 2 / 1 / 1
+ /github/workspace/input/resources/Immunization-pre-uv-ips.StructureDefinition : 6 / 5 / 1
  /github/workspace/input/resources/Library-AnyDosePass-1.0.0 : 2 / 1 / 1
  /github/workspace/input/resources/Library-DDCCPass-1.0.0 : 2 / 1 / 1
  /github/workspace/input/resources/Library-ModernaOrPfizerPass-1.0.0 : 2 / 1 / 1
@@ -172,14 +172,15 @@ Generated Wed Nov 30 15:50:22 UTC 2022. FHIR version 4.0.1 for fhir.who.ddcc#1.0
  /github/workspace/input/resources/StructureMap-DDCCtoEUdcc : 0 / 0 / 1
  /github/workspace/input/resources/StructureMap-IPSToCoreDataSetVS : 34 / 0 / 1
  /github/workspace/input/resources/StructureMap-QRespToVSCoreDataSet : 54 / 0 / 1
- /github/workspace/input/resources/StructureMap-ResourcesToCoreDataSet : 61 / 0 / 1
+ /github/workspace/input/resources/StructureMap-ResourcesToCoreDataSet : 62 / 0 / 1
  /github/workspace/input/resources/StructureMap-ResourcesToVSCoreDataSet : 61 / 0 / 1
  /github/workspace/input/resources/StructureMap-SHCToCoreDataSetVS : 18 / 0 / 1
  /github/workspace/input/resources/StructureMap-coredataset-to-addbundle : 75 / 0 / 1
  /github/workspace/input/resources/StructureMap-ddcc-qresp-to-coredataset : 57 / 0 / 1
- /github/workspace/input/resources/StructureMap-ddcc-resources-to-coredataset : 8 / 0 / 1
+ /github/workspace/input/resources/StructureMap-ddcc-resources-to-coredataset : 9 / 0 / 1
  /github/workspace/input/resources/StructureMap-ddcc-to-shc : 28 / 0 / 1
  /github/workspace/input/resources/StructureMap-shc-to-ddcc : 22 / 0 / 1
+ /github/workspace/input/resources/svc-map-qr-uvci-bundle.xml : 33 / 1 / 1
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Composition/DDCC-Composition-Example-Arabic.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -249,15 +250,83 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/ddcc-resources-to-coredataset.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/ddcc-to-shc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/shc-to-ddcc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/Questionnaire-DDCCTRCoreDataSetQuestionnaire-form.html: unexpected non-end of element null::div  at line 243 column 253
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/svc-map-qr-uvci-bundle.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/svc-map-qr-uvci-bundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/Questionnaire-DDCCHCIDRegistrationQuestionnaire-form.html: unexpected non-end of element null::div  at line 243 column 259
+ERROR: /github/workspace/output/Questionnaire-DDCCTRCoreDataSetQuestionnaire-form.html: unexpected non-end of element null::div  at line 243 column 253
 ERROR: /github/workspace/output/Questionnaire-DDCCVSCoreDataSetQuestionnaire-form.html: unexpected non-end of element null::div  at line 243 column 253
-ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaire-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 357, column 238: The link 'OperationDefinition-Questionnaire-assemble.html' for "$assemble" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaire-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 357, column 580: The link 'StructureDefinition-sdc-questionnaire-subQuestionnaire.html' for "sub-questionnaire" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaireSDC-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 357, column 238: The link 'OperationDefinition-Questionnaire-assemble.html' for "$assemble" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaireSDC-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 357, column 580: The link 'StructureDefinition-sdc-questionnaire-subQuestionnaire.html' for "sub-questionnaire" cannot be resolved
-ERROR: /github/workspace/output/transactions.html#/html/body/div/div/div/div/div/div/p/a at Line 407, column 51: The link 'OperationDefinition-DDCC-QuestionnaireResponse-revpleHealthCertificate.html' for "Revoke Health Certificate Operation" cannot be resolved
-ERROR: /github/workspace/output/workflows.html#/html/body/div/div/div/div/div/div/p/a at Line 186, column 48: The link 'usecases.html' for "Use Cases" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 573, column 115: The link 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 784, column 115: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 850, column 115: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 1235, column 115: The link 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 1903, column 115: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 2005, column 115: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 463, column 2062: The link 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 487, column 2226: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 497, column 2243: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 507, column 162: The link 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 512, column 186: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 514, column 211: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 596, column 2060: The link 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 675, column 2210: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 691, column 2227: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 719, column 162: The link 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 733, column 186: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 735, column 211: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1064, column 2062: The link 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1088, column 2226: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1098, column 2243: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1108, column 162: The link 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1113, column 186: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1115, column 211: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1197, column 2060: The link 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1276, column 2210: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1292, column 2227: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1320, column 162: The link 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1334, column 186: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1336, column 211: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaire-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/p/a at Line 368, column 238: The link 'OperationDefinition-Questionnaire-assemble.html' for "$assemble" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaire-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/p/a at Line 368, column 580: The link 'StructureDefinition-sdc-questionnaire-subQuestionnaire.html' for "sub-questionnaire" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaire-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/p/a at Line 934, column 238: The link 'OperationDefinition-Questionnaire-assemble.html' for "$assemble" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaire-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/p/a at Line 934, column 580: The link 'StructureDefinition-sdc-questionnaire-subQuestionnaire.html' for "sub-questionnaire" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaireSDC-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/p/a at Line 373, column 238: The link 'OperationDefinition-Questionnaire-assemble.html' for "$assemble" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaireSDC-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/p/a at Line 373, column 580: The link 'StructureDefinition-sdc-questionnaire-subQuestionnaire.html' for "sub-questionnaire" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaireSDC-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/p/a at Line 1364, column 238: The link 'OperationDefinition-Questionnaire-assemble.html' for "$assemble" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaireSDC-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/p/a at Line 1364, column 580: The link 'StructureDefinition-sdc-questionnaire-subQuestionnaire.html' for "sub-questionnaire" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Immunization-pre-uv-ips-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 316, column 115: The link 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Immunization-pre-uv-ips-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 368, column 115: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Immunization-pre-uv-ips-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 461, column 115: The link 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Immunization-pre-uv-ips-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 644, column 115: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Immunization-pre-uv-ips-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 832, column 115: The link 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Immunization-pre-uv-ips-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 1426, column 115: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Immunization-pre-uv-ips.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 401, column 1965: The link 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Immunization-pre-uv-ips.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 414, column 2139: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Immunization-pre-uv-ips.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 422, column 162: The link 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Immunization-pre-uv-ips.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 428, column 186: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Immunization-pre-uv-ips.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 467, column 2069: The link 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Immunization-pre-uv-ips.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 490, column 2117: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Immunization-pre-uv-ips.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 501, column 162: The link 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Immunization-pre-uv-ips.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 507, column 186: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Immunization-pre-uv-ips.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 569, column 2067: The link 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Immunization-pre-uv-ips.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 642, column 2115: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Immunization-pre-uv-ips.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 674, column 162: The link 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Immunization-pre-uv-ips.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 687, column 186: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Immunization-pre-uv-ips.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 936, column 1965: The link 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Immunization-pre-uv-ips.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 949, column 2139: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Immunization-pre-uv-ips.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 956, column 162: The link 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Immunization-pre-uv-ips.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 962, column 186: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Immunization-pre-uv-ips.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1001, column 2069: The link 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Immunization-pre-uv-ips.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1024, column 2117: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Immunization-pre-uv-ips.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1035, column 162: The link 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Immunization-pre-uv-ips.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1041, column 186: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Immunization-pre-uv-ips.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1103, column 2067: The link 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Immunization-pre-uv-ips.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1176, column 2115: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Immunization-pre-uv-ips.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1208, column 162: The link 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Immunization-pre-uv-ips.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1221, column 186: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
+ERROR: /github/workspace/output/transactions.html#/html/body/div/div/div/div/div/div/p/a at Line 329, column 97: The link 'http://build.fhir.org/ig/HL7/fhir-ipa/index.html' for "International Patient Access" cannot be resolved
+ERROR: /github/workspace/output/transactions.html#/html/body/div/div/div/div/div/div/p/a at Line 337, column 78: The link 'http://build.fhir.org/ig/HL7/fhir-ipa/OperationDefinition-docref.html' for "$docref Operation" cannot be resolved
+ERROR: /github/workspace/output/transactions.html#/html/body/div/div/div/div/div/div/p/a at Line 417, column 51: The link 'OperationDefinition-DDCC-QuestionnaireResponse-revpleHealthCertificate.html' for "Revoke Health Certificate Operation" cannot be resolved
+ERROR: /github/workspace/output/workflows.html#/html/body/div/div/div/div/div/div/p/a at Line 188, column 48: The link 'usecases.html' for "Use Cases" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
@@ -443,12 +512,15 @@ ERROR: StructureDefinition/DDCCCoreDataSet.VS.PoV: StructureDefinition: The type
 == fsh-generated/resources/StructureDefinition-DDCCGenerateHealthCertificateParameters.json ==
 == fsh-generated/resources/StructureDefinition-DDCCGenerateHealthFolderParameters.json ==
 == fsh-generated/resources/StructureDefinition-DDCCImmunization.json ==
+ERROR: StructureDefinition/DDCCImmunization: StructureDefinition.snapshot.element[32].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips' does not resolve
+ERROR: StructureDefinition/DDCCImmunization: StructureDefinition.snapshot.element[98].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' does not resolve
+ERROR: StructureDefinition/DDCCImmunization: StructureDefinition.snapshot.element[108].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' does not resolve
+WARNING: StructureDefinition/DDCCImmunization: StructureDefinition.snapshot.element[32].binding: The valueSet reference http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips on element Immunization.vaccineCode could not be resolved
+WARNING: StructureDefinition/DDCCImmunization: StructureDefinition.snapshot.element[98].binding: The valueSet reference http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips on element Immunization.protocolApplied.targetDisease could not be resolved
+WARNING: StructureDefinition/DDCCImmunization: StructureDefinition.snapshot.element[108].binding: The valueSet reference http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips on element Immunization.protocolApplied.targetDisease could not be resolved
 == fsh-generated/resources/StructureDefinition-DDCCImmunizationRecommendation.json ==
 == fsh-generated/resources/StructureDefinition-DDCCObservation.json ==
-ERROR: http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCObservation#Observation.specimen: The profile http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips has type Specimen which is not consistent with the stated type CodeableConcept
-ERROR: StructureDefinition/DDCCObservation: StructureDefinition.differential.element.where(path = 'Observation.specimen'): The profile http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips has type Specimen which is not consistent with the stated type CodeableConcept
 INFORMATION: StructureDefinition/DDCCObservation: StructureDefinition.snapshot.element[13].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
-ERROR: StructureDefinition/DDCCObservation: StructureDefinition.snapshot.element[44].type[0].profile[0]: Profile http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/Specimen], but the Observation.specimen element has type CodeableConcept
 == fsh-generated/resources/StructureDefinition-DDCCOrganization.json ==
 == fsh-generated/resources/StructureDefinition-DDCCPatient.json ==
 == fsh-generated/resources/StructureDefinition-DDCCPractitioner.json ==
@@ -516,6 +588,14 @@ WARNING: ValueSet/who-ddcc-vaccines-covid-19: ValueSet: The ShareableValueSet pr
 == input/resources/CapabilityStatement-WHO.DDCC.RegistryService.xml ==
 == input/resources/Immunization-pre-uv-ips.StructureDefinition.xml ==
 ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-pre-uv-ips'): Conformance resource /github/workspace/input/resources/Immunization-pre-uv-ips.StructureDefinition.xml - the canonical URL (http://worldhealthorganization.github.io/ddcc/StructureDefinition/Immunization-pre-uv-ips) does not match the URL (http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-pre-uv-ips)
+ERROR: StructureDefinition/Immunization-pre-uv-ips: StructureDefinition.snapshot.element[13].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips' does not resolve
+ERROR: StructureDefinition/Immunization-pre-uv-ips: StructureDefinition.snapshot.element[73].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' does not resolve
+ERROR: StructureDefinition/Immunization-pre-uv-ips: StructureDefinition.differential.element[3].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips' does not resolve
+ERROR: StructureDefinition/Immunization-pre-uv-ips: StructureDefinition.differential.element[16].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' does not resolve
+WARNING: StructureDefinition/Immunization-pre-uv-ips: StructureDefinition.differential.element[3].binding: The valueSet reference http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips on element Immunization.vaccineCode could not be resolved
+WARNING: StructureDefinition/Immunization-pre-uv-ips: StructureDefinition.differential.element[16].binding: The valueSet reference http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips on element Immunization.protocolApplied.targetDisease could not be resolved
+WARNING: StructureDefinition/Immunization-pre-uv-ips: StructureDefinition.snapshot.element[13].binding: The valueSet reference http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips on element Immunization.vaccineCode could not be resolved
+WARNING: StructureDefinition/Immunization-pre-uv-ips: StructureDefinition.snapshot.element[73].binding: The valueSet reference http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips on element Immunization.protocolApplied.targetDisease could not be resolved
 ERROR: /github/workspace/input/resources/Immunization-pre-uv-ips.StructureDefinition: URL Mismatch http://worldhealthorganization.github.io/ddcc/StructureDefinition/Immunization-pre-uv-ips vs http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-pre-uv-ips
 == input/resources/Library-AnyDosePass-1.0.0.json ==
 ERROR: Library.where(url = 'http://localhost/Library/AnyDosePass|1.0.0'): Conformance resource /github/workspace/input/resources/Library-AnyDosePass-1.0.0.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/Library/AnyDosePass-1.0.0) does not match the URL (http://localhost/Library/AnyDosePass|1.0.0)
@@ -870,6 +950,7 @@ ERROR: StructureMap/ResourcesToCoreDataSet: StructureMap.group[5].rule[0].rule[0
 ERROR: StructureMap/ResourcesToCoreDataSet: StructureMap.group[5].rule[0].rule[0].source[0].variable: id value 'due_date' is not valid
 ERROR: StructureMap/ResourcesToCoreDataSet: StructureMap.group[5].rule[0].rule[0].rule[0].name: id value 'set due date' is not valid
 ERROR: StructureMap/ResourcesToCoreDataSet: StructureMap.group[5].rule[0].rule[0].rule[0].source[0].context: id value 'due_date' is not valid
+ERROR: Resource: The URL 'http://worldhealthorganization.github.io/ddcc/StructureMap/ResourcesToCoreDataSet' is also used by ddcc-resources-to-coredataset in /github/workspace/input/resources/StructureMap-ddcc-resources-to-coredataset
 == input/resources/StructureMap-ResourcesToVSCoreDataSet.json ==
 ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[0].rule[0].name: id value 'setup ddcc' is not valid
 ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[0].rule[0].rule[0].name: id value 'set hcid' is not valid
@@ -1093,6 +1174,7 @@ ERROR: StructureMap/ddcc-resources-to-coredataset: StructureMap.group[0].rule[0]
 ERROR: StructureMap/ddcc-resources-to-coredataset: StructureMap.group[1].rule[0].name: id value 'set name' is not valid
 ERROR: StructureMap/ddcc-resources-to-coredataset: StructureMap.group[1].rule[0].rule[0].name: id value 'setting name' is not valid
 ERROR: StructureMap/ddcc-resources-to-coredataset: StructureMap.group[2].rule[0].name: id value 'set here' is not valid
+ERROR: Resource: The URL 'http://worldhealthorganization.github.io/ddcc/StructureMap/ResourcesToCoreDataSet' has already been used by ResourcesToCoreDataSet in /github/workspace/input/resources/StructureMap-ResourcesToCoreDataSet
 ERROR: /github/workspace/input/resources/StructureMap-ddcc-resources-to-coredataset: URL Mismatch http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-resources-to-coredataset vs http://worldhealthorganization.github.io/ddcc/StructureMap/ResourcesToCoreDataSet
 == input/resources/StructureMap-ddcc-to-shc.json ==
 ERROR: StructureMap.where(url = 'http://worldhealthorganization.github.io/ddcc/StructureMap/DDCCtoSHC'): Conformance resource /github/workspace/input/resources/StructureMap-ddcc-to-shc.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-shc) does not match the URL (http://worldhealthorganization.github.io/ddcc/StructureMap/DDCCtoSHC)
@@ -1146,3 +1228,38 @@ ERROR: StructureMap/shc-to-ddcc: StructureMap.group[1].rule[4].name: id value 'L
 ERROR: StructureMap/shc-to-ddcc: StructureMap.group[2].rule[2].name: id value 'Occurrence DateTime' is not valid
 ERROR: StructureMap/shc-to-ddcc: StructureMap.group[2].rule[4].name: id value 'Lot Number' is not valid
 ERROR: /github/workspace/input/resources/StructureMap-shc-to-ddcc: URL Mismatch http://worldhealthorganization.github.io/ddcc/StructureMap/shc-to-ddcc vs http://worldhealthorganization.github.io/ddcc/StructureMap/SHCtoDDCC
+== input/resources/svc-map-qr-uvci-bundle.xml.old ==
+ERROR: StructureMap.where(url = 'http://who-int.github.io/svc/StructureMap/svc-map-qr-uvci-bundle'): Conformance resource /github/workspace/input/resources/svc-map-qr-uvci-bundle.xml.old - the canonical URL (http://worldhealthorganization.github.io/ddcc/StructureMap/svc-map-qr-uvci-bundle) does not match the URL (http://who-int.github.io/svc/StructureMap/svc-map-qr-uvci-bundle)
+WARNING: StructureMap/svc-map-qr-uvci-bundle: StructureMap: Rule smp-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[0].name: id value 'Decode_QR' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[0].rule[0].name: id value 'Create resources and process bundle' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[0].rule[0].dependent[0].name: id value 'Decode_QR_Patient' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[0].rule[0].dependent[1].name: id value 'Decode_QR_Organization' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[0].rule[0].dependent[2].name: id value 'Decode_QR_Bundle' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[1].name: id value 'Decode_QR_Patient' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[1].rule[0].name: id value 'Load Name' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[1].rule[1].name: id value 'Load Patient Identifer' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[1].rule[2].name: id value 'Load Birth Date' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[2].name: id value 'Decode_QR_Organization' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[2].rule[0].name: id value 'Load PHA ID' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].name: id value 'Decode_QR_Bundle' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].rule[0].name: id value 'Set Bundle Metadata' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].rule[1].name: id value 'Load Paper SVC ID' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].rule[2].name: id value 'Load Signature' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].rule[3].name: id value 'Process Composition Entry' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].rule[3].dependent[0].name: id value 'Decode_QR_Composition' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[4].name: id value 'Decode_QR_Composition' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[4].input[1].name: id value ',' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[4].rule[0].name: id value 'Set Composition Meta' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[4].rule[1].name: id value 'Load Digital SVC ID' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].name: id value 'Decode_QR_Provenance' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].name: id value 'Set provenance' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].source[1].variable: id value 'e_digital' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[3].context: id value 'e_digital' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[4].context: id value 'e_digital' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[5].context: id value 'e_digital' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[6].context: id value 'e_paper' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[7].context: id value 'e_paper' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[8].context: id value 'e_paper' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].rule[0].target[1].variable: id value '"Set who"' is not valid
+ERROR: /github/workspace/input/resources/svc-map-qr-uvci-bundle.xml: URL Mismatch http://worldhealthorganization.github.io/ddcc/StructureMap/svc-map-qr-uvci-bundle vs http://who-int.github.io/svc/StructureMap/svc-map-qr-uvci-bundle

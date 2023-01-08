@@ -180,75 +180,106 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <!--ReleaseHeader--><p id="publish-box">This is the continuous build for version 1.0.0. This version is based on the current content of <a href="https://github.com/WorldHealthOrganization/ddcc">https://github.com/WorldHealthOrganization/ddcc</a> and changes regularly.</p><!--EndReleaseHeader-->
   <h2>Home</h2>
   
+  
+
+  <table class="">
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;"></span></td>
+    </tr>
+
+
+
+
+  </table>
+  
+  
+  
   <div xmlns="http://www.w3.org/1999/xhtml" lang="en"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Summary</a></li><li><a href="#2">About this implementation guide</a></li><li><a href="#3">Disclaimer</a></li></ul></div>
   <a name="scope">   </a>
 
       
   
-  <p>
+  <ns0:p xmlns:ns0="http://www.w3.org/1999/xhtml">
     This WHO Digital Documentation of COVID-19 Certificates (DDCC) Implementation Guide details how to use Health Level 7 (HL7) Fast Healthcare Interoperability Resources (FHIR) for consistent digital representation of COVID-19 certificates and interoperability.
-  </p>
+  </ns0:p>
 
-  <blockquote class="stu-note">
-    <ul>
-      <li>This version of the implementation guide is based on the current content at <a href="https://github.com/WorldHealthOrganization/ddcc">https://github.com/WorldHealthOrganization/ddcc</a></li>
-      <li><strong>This implementation guide and set of artifacts are still undergoing development.</strong></li>
-      <li>Content is for demonstration purposes only. </li>
-    </ul>
-  </blockquote>
+  <ns1:blockquote xmlns:ns1="http://www.w3.org/1999/xhtml" class="stu-note">
+    <ns2:ul xmlns:ns2="http://www.w3.org/1999/xhtml">
+      <ns3:li xmlns:ns3="http://www.w3.org/1999/xhtml">This version of the implementation guide is based on the current content at <ns4:a xmlns:ns4="http://www.w3.org/1999/xhtml" href="https://github.com/WorldHealthOrganization/ddcc">https://github.com/WorldHealthOrganization/ddcc</ns4:a></ns3:li>
+      <ns5:li xmlns:ns5="http://www.w3.org/1999/xhtml"><ns6:strong xmlns:ns6="http://www.w3.org/1999/xhtml">This implementation guide and set of artifacts are still undergoing development.</ns6:strong></ns5:li>
+      <ns7:li xmlns:ns7="http://www.w3.org/1999/xhtml">Content is for demonstration purposes only. </ns7:li>
+    </ns2:ul>
+  </ns1:blockquote>
   
 
-  <a name="1"/><h3>Summary</h3> <a name="summary">  </a>
+  <a name="1"/><ns8:h3 xmlns:ns8="http://www.w3.org/1999/xhtml">Summary</ns8:h3> <a name="summary">  </a>
 
-  <p>
+  <ns9:p xmlns:ns9="http://www.w3.org/1999/xhtml">
     This implementation guide contains a standards-compliant specifications for the DDCC: Vaccination Status and Test Result technical specifications and guidance documents. It explicitly encodes computer-interoperable logic, including data models, terminologies, and logic expressions, in a computable language to support implementation of vaccination and test result use cases by Member States.
-  </p>
+  </ns9:p>
   
-  <p>
+  <ns10:p xmlns:ns10="http://www.w3.org/1999/xhtml">
     To facilitate implementation of effective and interoperable digital solutions:
-    <ul>
-      <li>The <a href="https://www.who.int/publications/i/item/WHO-2019-nCoV-Digital_certificates-vaccination-2021.1">DDCC: Vaccination Status (DDCC:VS) technical specifications and implementation guidance </a>was issued for vaccination certificates for the purposes of continuity of care and proof of vaccination.</li>
-      <li>The <a href="https://www.who.int/publications/i/item/WHO-2019-nCoV-Digital_certificates_diagnostic_test_results-2022.1">DDCC: Test Result (DDCC:TR) technical specifications and implementation guidance</a> is being issued for test result certificates that attests to: (a) the fact that an individual has been tested for SARS-CoV-2, and (b) the result of that SARS-CoV-2 diagnostic test.</li>
-    </ul>
-  </p>
+    <ns11:ul xmlns:ns11="http://www.w3.org/1999/xhtml">
+      <ns12:li xmlns:ns12="http://www.w3.org/1999/xhtml">The <ns13:a xmlns:ns13="http://www.w3.org/1999/xhtml" href="https://www.who.int/publications/i/item/WHO-2019-nCoV-Digital_certificates-vaccination-2021.1">DDCC: Vaccination Status (DDCC:VS) technical specifications and implementation guidance </ns13:a>was issued for vaccination certificates for the purposes of continuity of care and proof of vaccination.</ns12:li>
+      <ns14:li xmlns:ns14="http://www.w3.org/1999/xhtml">The <ns15:a xmlns:ns15="http://www.w3.org/1999/xhtml" href="https://www.who.int/publications/i/item/WHO-2019-nCoV-Digital_certificates_diagnostic_test_results-2022.1">DDCC: Test Result (DDCC:TR) technical specifications and implementation guidance</ns15:a> is being issued for test result certificates that attests to: (a) the fact that an individual has been tested for SARS-CoV-2, and (b) the result of that SARS-CoV-2 diagnostic test.</ns14:li>
+    </ns11:ul>
+  </ns10:p>
   
-  <p>
+  <ns16:p xmlns:ns16="http://www.w3.org/1999/xhtml">
     The DDCC documents contain overviews of high-level use cases for digital COVID-19 certificates, including: 
-        <ul>
-          <li>workflows;</li>
-          <li>core data elements mapped to standard code systems;</li>
-          <li>functional and non-functional requirements;</li>
-          <li>an overview of digitally signing and verifying a certificate with public key infrastructure (PKI) technology;</li>
-          <li>implementation guidance regarding ethical considerations, privacy and data protection principles;</li>
-          <li>national governance considerations;</li>
-          <li>and this linked FHIR Implementation Guide for the DDCC scope. </li>
-        </ul>
-  </p>
+        <ns17:ul xmlns:ns17="http://www.w3.org/1999/xhtml">
+          <ns18:li xmlns:ns18="http://www.w3.org/1999/xhtml">workflows;</ns18:li>
+          <ns19:li xmlns:ns19="http://www.w3.org/1999/xhtml">core data elements mapped to standard code systems;</ns19:li>
+          <ns20:li xmlns:ns20="http://www.w3.org/1999/xhtml">functional and non-functional requirements;</ns20:li>
+          <ns21:li xmlns:ns21="http://www.w3.org/1999/xhtml">an overview of digitally signing and verifying a certificate with public key infrastructure (PKI) technology;</ns21:li>
+          <ns22:li xmlns:ns22="http://www.w3.org/1999/xhtml">implementation guidance regarding ethical considerations, privacy and data protection principles;</ns22:li>
+          <ns23:li xmlns:ns23="http://www.w3.org/1999/xhtml">national governance considerations;</ns23:li>
+          <ns24:li xmlns:ns24="http://www.w3.org/1999/xhtml">and this linked FHIR Implementation Guide for the DDCC scope. </ns24:li>
+        </ns17:ul>
+  </ns16:p>
   
-  <p>
-    Supporting guidance, recommendations, resources, and standards are included in the <a href="references.html">References</a> and <a href="dependencies.html">Dependencies</a>.
-   </p>
+  <ns25:p xmlns:ns25="http://www.w3.org/1999/xhtml">
+    Supporting guidance, recommendations, resources, and standards are included in the <ns26:a xmlns:ns26="http://www.w3.org/1999/xhtml" href="references.html">References</ns26:a> and <ns27:a xmlns:ns27="http://www.w3.org/1999/xhtml" href="dependencies.html">Dependencies</ns27:a>.
+   </ns25:p>
 
-  <a name="2"/><h3>About this implementation guide</h3> <a name="about">  </a>
+  <a name="2"/><ns28:h3 xmlns:ns28="http://www.w3.org/1999/xhtml">About this implementation guide</ns28:h3> <a name="about">  </a>
   
-  <p>
-    This implementation guide is broken into the following levels of <a href="http://hl7.org/fhir/uv/cpg/2019Sep/documentation-approach.html">knowledge representation</a>:
-    <ul>
-      <li><a href="index.html">Home</a> Contains references to the guidance, guidelines, policies and recommendations underpinning this implementation guide.</li>
-      <li><a href="requirements.html">Business Requirements</a> Contains the requirements for this implementation guide including the definition of key concepts, use cases, and a data dictionary.
-      </li>
-      <li><a href="data_exchange.html">Data Models and Exchange</a> Contains the data models and data exchange protocols with actors and transactions defined.</li>
-      <li><a href="deployment.html">Deployment Guidance </a>
-      Contains relevant technical specifications and guidance, testing resources, reference implementation materials, and supporting guidance for adaptation to local contexts.</li>
-    </ul>
-  </p>  
+  <ns29:p xmlns:ns29="http://www.w3.org/1999/xhtml">
+    This implementation guide is broken into the following levels of <ns30:a xmlns:ns30="http://www.w3.org/1999/xhtml" href="http://hl7.org/fhir/uv/cpg/2019Sep/documentation-approach.html">knowledge representation</ns30:a>:
+    <ns31:ul xmlns:ns31="http://www.w3.org/1999/xhtml">
+      <ns32:li xmlns:ns32="http://www.w3.org/1999/xhtml"><ns33:a xmlns:ns33="http://www.w3.org/1999/xhtml" href="index.html">Home</ns33:a> Contains references to the guidance, guidelines, policies and recommendations underpinning this implementation guide.</ns32:li>
+      <ns34:li xmlns:ns34="http://www.w3.org/1999/xhtml"><ns35:a xmlns:ns35="http://www.w3.org/1999/xhtml" href="requirements.html">Business Requirements</ns35:a> Contains the requirements for this implementation guide including the definition of key concepts, use cases, and a data dictionary.
+      </ns34:li>
+      <ns36:li xmlns:ns36="http://www.w3.org/1999/xhtml"><ns37:a xmlns:ns37="http://www.w3.org/1999/xhtml" href="data_exchange.html">Data Models and Exchange</ns37:a> Contains the data models and data exchange protocols with actors and transactions defined.</ns36:li>
+      <ns38:li xmlns:ns38="http://www.w3.org/1999/xhtml"><ns39:a xmlns:ns39="http://www.w3.org/1999/xhtml" href="deployment.html">Deployment Guidance </ns39:a>
+      Contains relevant technical specifications and guidance, testing resources, reference implementation materials, and supporting guidance for adaptation to local contexts.</ns38:li>
+    </ns31:ul>
+  </ns29:p>  
 
-  <a name="3"/><h3>Disclaimer</h3>  <a name="disclaimer">  </a>
-  <p>
+  <a name="3"/><ns40:h3 xmlns:ns40="http://www.w3.org/1999/xhtml">Disclaimer</ns40:h3>  <a name="disclaimer">  </a>
+  <ns41:p xmlns:ns41="http://www.w3.org/1999/xhtml">
     The specification herewith documented is a demo working specification and may not be used for any implementation purposes. 
     This draft is provided without warranty of completeness or consistency and the official publication supersedes this draft.
     No liability can be inferred from the use or misuse of this specification or its consequences.
-  </p>
+  </ns41:p>
   
 </div>
 </div>
@@ -273,9 +304,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 30, 2022 15:45+0000">2022-11-30</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jan 8, 2023 23:46+0000">2023-01-08</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"></span>
+          <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                   | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/worldhealthorganization/ddcc/projects/1">Issues</a>
@@ -300,6 +331,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
