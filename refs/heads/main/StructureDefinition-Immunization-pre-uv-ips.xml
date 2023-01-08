@@ -171,7 +171,7 @@
       </base>
       <type>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
-          <valueUrl value="string"/>
+          <valueUrl value="id"/>
         </extension>
         <code value="http://hl7.org/fhirpath/System.String"/>
       </type>
@@ -1511,7 +1511,6 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mustSupport value="true"/>
       <isModifier value="false"/>
       <binding>
         <strength value="preferred"/>
@@ -2063,6 +2062,7 @@
         <human value="One of documentType or reference SHALL be present"/>
         <expression value="documentType.exists() or reference.exists()"/>
         <xpath value="exists(f:documentType) or exists(f:reference)"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Immunization"/>
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>

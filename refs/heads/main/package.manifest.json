@@ -1,8 +1,6 @@
 {
-  "version": "1.0.0",
-  "fhirVersion": [
-    "4.0.1"
-  ],
-  "date": "20221130154410",
-  "name": "fhir.who.ddcc"
+  "version" : "1.0.0",
+  "fhirVersion" : ["4.0.1"],
+  "date" : "20230108234511",
+  "name" : "fhir.who.ddcc"
 }

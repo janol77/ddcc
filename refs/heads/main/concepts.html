@@ -180,202 +180,204 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <!--ReleaseHeader--><p id="publish-box">This is the continuous build for version 1.0.0. This version is based on the current content of <a href="https://github.com/WorldHealthOrganization/ddcc">https://github.com/WorldHealthOrganization/ddcc</a> and changes regularly.</p><!--EndReleaseHeader-->
   <h2>Concepts</h2>
   
+  
+  
   <div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#certificate-concept">Certificate</a></li><li><a href="#certificate-authority">Certificate Authority (CA)</a></li><li><a href="#data-entry-personnel">Data Entry Personnel</a></li><li><a href="#ddcc-generator">DDCC Generation Service</a></li><li><a href="#ddcc-holder">DDCC Holder</a></li><li><a href="#ddcc-registry-service">DDCC Registry Service</a></li><li><a href="#ddcc-repository-service">DDCC Repository Service</a></li><li><a href="#digital-documentation-certificate">Digital Documentation of COVID-19 Certificate(s) (DDCC)</a></li><li><a href="#digital-documentation-of-tr">Digital Documentation of COVID-19 Certificate(s):Test Result (DDCC:TR)</a></li><li><a href="#digital-documentation-of-vs">Digital Documentation of COVID-19 Certificate(s):Vaccination Status (DDCC:VS)</a></li><li><a href="#digital-health-solution">Digital Health Solution</a></li><li><a href="#digital-representation">Digital representation</a></li><li><a href="#digital-signature">Digital signature</a></li><li><a href="#digitally-signed">Digitally signed</a></li><li><a href="#encryption">Encryption</a></li><li><a href="#health-certificate-identifier">Health certificate identifier (HCID)</a></li><li><a href="#identification-document">Identification document</a></li><li><a href="#identifier-concept">Identifier</a></li><li><a href="#laboratory-information-system">Laboratory Information System (LIS)</a></li><li><a href="#may-concept">MAY</a></li><li><a href="#paper-certificate">Paper Certificate</a></li><li><a href="#personal-data">Personal data</a></li><li><a href="#public-health-authority">Public Health Authority (PHA)</a></li><li><a href="#public-key">Public key</a></li><li><a href="#public-key-infrastructure">Public Key Infrastructure (PKI)</a></li><li><a href="#private-key">Private key</a></li><li><a href="#shall-concept">SHALL</a></li><li><a href="#should-concept">SHOULD</a></li><li><a href="#status-checking-application">Status Checking Application</a></li><li><a href="#subject-of-care">Subject of Care</a></li><li><a href="#test-report">Test Report</a></li><li><a href="#two-dimensional-barcode">Two-dimensional (2D) barcode</a></li><li><a href="#vaccinator">Vaccinator</a></li><li><a href="#validation">Validation</a></li><li><a href="#verification">Verification</a></li><li><a href="#verifier">Verifier</a></li><li><a href="#verifier-application">Verifier Application</a></li></ul></div>
 
-  <p>
-    Key concepts are described here. Definitions come from the Glossary and "Key settings, personas and digital services" sections of the <a href="https://www.who.int/publications/i/item/WHO-2019-nCoV-Digital_certificates-vaccination-2021.1">Digital Documentation of COVID-19 Certificates: Vaccination Status (DDCC:VS) — Technical Specifications and Implementation Guidance</a> and the <a href="https://www.who.int/publications/i/item/WHO-2019-nCoV-Digital_certificates_diagnostic_test_results-2022.1">DDCC: Test Result (DDCC:TR) — Technical Specifications and Implementation Guidance</a>.
-  </p>
+  <ns0:p xmlns:ns0="http://www.w3.org/1999/xhtml">
+    Key concepts are described here. Definitions come from the Glossary and "Key settings, personas and digital services" sections of the <ns1:a xmlns:ns1="http://www.w3.org/1999/xhtml" href="https://www.who.int/publications/i/item/WHO-2019-nCoV-Digital_certificates-vaccination-2021.1">Digital Documentation of COVID-19 Certificates: Vaccination Status (DDCC:VS) — Technical Specifications and Implementation Guidance</ns1:a> and the <ns2:a xmlns:ns2="http://www.w3.org/1999/xhtml" href="https://www.who.int/publications/i/item/WHO-2019-nCoV-Digital_certificates_diagnostic_test_results-2022.1">DDCC: Test Result (DDCC:TR) — Technical Specifications and Implementation Guidance</ns2:a>.
+  </ns0:p>
 
-  <p style="background-color: #ffefef; border:1px solid maroon; padding: 5px;max-width: 790px;">
+  <ns3:p xmlns:ns3="http://www.w3.org/1999/xhtml" style="background-color: #ffefef; border:1px solid maroon; padding: 5px;max-width: 790px;">
     For the latest published definitions, refer to the Digital Documentation of COVID-19 Certificates guidance.
-  </p>
+  </ns3:p>
   
   <a name="certificate-concept"> </a>
-  <h3 id="certificate-concept">Certificate</h3>
-  <p>A document attesting a fact. 
+  <ns4:h3 xmlns:ns4="http://www.w3.org/1999/xhtml" id="certificate-concept">Certificate</ns4:h3>
+  <ns5:p xmlns:ns5="http://www.w3.org/1999/xhtml">A document attesting a fact. 
     In the context of the vaccination certificate, it attests to the fact that a vaccine has been administered to an individual. 
     In the context of the test result certificate, it attests to the fact that a SARS-CoV-2 diagnostic test 
-    has been conducted and the test result has been provided to an individual. </p>
+    has been conducted and the test result has been provided to an individual. </ns5:p>
 
   <a name="certificate-authority"> </a>
-  <h3 id="certificate-authority">Certificate Authority (CA)</h3>
-  <p>Also known as a "certification authority" in the context of a public key infrastructure, is an entity or organization that
-    issues digital certificates.</p>
+  <ns6:h3 xmlns:ns6="http://www.w3.org/1999/xhtml" id="certificate-authority">Certificate Authority (CA)</ns6:h3>
+  <ns7:p xmlns:ns7="http://www.w3.org/1999/xhtml">Also known as a "certification authority" in the context of a public key infrastructure, is an entity or organization that
+    issues digital certificates.</ns7:p>
 
   <a name="data-entry-personnel"> </a>
-  <h3 id="data-entry-personnel">Data Entry Personnel</h3>
-  <p>The person who enters the information about the Subject of Care (as outlined in the core data set) that has been manually
+  <ns8:h3 xmlns:ns8="http://www.w3.org/1999/xhtml" id="data-entry-personnel">Data Entry Personnel</ns8:h3>
+  <ns9:p xmlns:ns9="http://www.w3.org/1999/xhtml">The person who enters the information about the Subject of Care (as outlined in the core data set) that has been manually
     recorded at care sites into a digital system. Health workers can also be the Data Entry Personnel if a point-of-care
-    system is in place that allows health workers to digitally document a vaccination event right away.</p>
+    system is in place that allows health workers to digitally document a vaccination event right away.</ns9:p>
 
   <a name="ddcc-generator"> </a>
-  <h3 id="ddcc-generator">DDCC Generation Service</h3>
-  <p>The service that is responsible for generating a digitally signed representation, the DDCC, of the information concerning a SARS-CoV-2 vaccination or test. 
-    This service can be used for the generation of both vaccination status and test result certificates.</p>
+  <ns10:h3 xmlns:ns10="http://www.w3.org/1999/xhtml" id="ddcc-generator">DDCC Generation Service</ns10:h3>
+  <ns11:p xmlns:ns11="http://www.w3.org/1999/xhtml">The service that is responsible for generating a digitally signed representation, the DDCC, of the information concerning a SARS-CoV-2 vaccination or test. 
+    This service can be used for the generation of both vaccination status and test result certificates.</ns11:p>
 
   <a name="ddcc-holder"> </a>
-  <h3 id="ddcc-holder">DDCC Holder</h3>
-  <p>The person who has the Vaccinated Person's vaccination certificate or the Tested Person's test result certificate. 
+  <ns12:h3 xmlns:ns12="http://www.w3.org/1999/xhtml" id="ddcc-holder">DDCC Holder</ns12:h3>
+  <ns13:p xmlns:ns13="http://www.w3.org/1999/xhtml">The person who has the Vaccinated Person's vaccination certificate or the Tested Person's test result certificate. 
     The person is usually the Vaccinated or Tested Person, but does not have to be. 
-    For example, a caregiver may hold the DDCC for a child or other dependant.</p>
+    For example, a caregiver may hold the DDCC for a child or other dependant.</ns13:p>
 
   <a name="ddcc-registry-service"> </a>
-  <h3 id="ddcc-registry-service">DDCC Registry Service</h3>
-  <p>The service that can be used to request and receive metadata associated with a DDCC. 
-     This service can be used for both vaccination status and test result certificates.</p>
+  <ns14:h3 xmlns:ns14="http://www.w3.org/1999/xhtml" id="ddcc-registry-service">DDCC Registry Service</ns14:h3>
+  <ns15:p xmlns:ns15="http://www.w3.org/1999/xhtml">The service that can be used to request and receive metadata associated with a DDCC. 
+     This service can be used for both vaccination status and test result certificates.</ns15:p>
 
   <a name="ddcc-repository-service"> </a>
-  <h3 id="ddcc-repository-service">DDCC Repository Service</h3>
-  <p>A, potentially federated, service that serves as a repository, or database, of the health content associated to DDCC. 
-    This service can be used as a repository for both vaccination status and test result certificates.</p>
+  <ns16:h3 xmlns:ns16="http://www.w3.org/1999/xhtml" id="ddcc-repository-service">DDCC Repository Service</ns16:h3>
+  <ns17:p xmlns:ns17="http://www.w3.org/1999/xhtml">A, potentially federated, service that serves as a repository, or database, of the health content associated to DDCC. 
+    This service can be used as a repository for both vaccination status and test result certificates.</ns17:p>
 
   <a name="digital-documentation-certificate"> </a>
-  <h3 id="digital-documentation-certificate">Digital Documentation of COVID-19 Certificate(s) (DDCC)</h3>
-  <p>A digitally signed HL7 FHIR document that represents the core data set for the relevant COVID-19 certificate.</p>
+  <ns18:h3 xmlns:ns18="http://www.w3.org/1999/xhtml" id="digital-documentation-certificate">Digital Documentation of COVID-19 Certificate(s) (DDCC)</ns18:h3>
+  <ns19:p xmlns:ns19="http://www.w3.org/1999/xhtml">A digitally signed HL7 FHIR document that represents the core data set for the relevant COVID-19 certificate.</ns19:p>
 
   <a name="digital-documentation-of-tr"> </a>
-  <h3 id="digital-documentation-of-tr">Digital Documentation of COVID-19 Certificate(s):Test Result (DDCC:TR)</h3>
-  <p>A type of DDCC that is used to represent the SARS-CoV-2 diagnostic test result(s) of an individual. Specifically, 
+  <ns20:h3 xmlns:ns20="http://www.w3.org/1999/xhtml" id="digital-documentation-of-tr">Digital Documentation of COVID-19 Certificate(s):Test Result (DDCC:TR)</ns20:h3>
+  <ns21:p xmlns:ns21="http://www.w3.org/1999/xhtml">A type of DDCC that is used to represent the SARS-CoV-2 diagnostic test result(s) of an individual. Specifically, 
     the DDCC:TR is a digitally signed Health Level Seven (HL7) Fast Healthcare Interoperability Resources (FHIR) Document 
-    containing the data elements included in the DDCC:TR core data set.</p>
+    containing the data elements included in the DDCC:TR core data set.</ns21:p>
   
   <a name="digital-documentation-of-vs"> </a>
-  <h3 id="digital-documentation-of-vs">Digital Documentation of COVID-19 Certificate(s):Vaccination Status (DDCC:VS)</h3>
-  <p>A type of DDCC that is used to represent the COVID-19 vaccination status of an individual. Specifically, the DDCC:VS is
+  <ns22:h3 xmlns:ns22="http://www.w3.org/1999/xhtml" id="digital-documentation-of-vs">Digital Documentation of COVID-19 Certificate(s):Vaccination Status (DDCC:VS)</ns22:h3>
+  <ns23:p xmlns:ns23="http://www.w3.org/1999/xhtml">A type of DDCC that is used to represent the COVID-19 vaccination status of an individual. Specifically, the DDCC:VS is
     a digitally signed Health Level Seven (HL7) Fast Healthcare Interoperability Resources (FHIR) Document containing the
-    data elements included in the DDCC:VS core data set.</p>
+    data elements included in the DDCC:VS core data set.</ns23:p>
   
   <a name="digital-health-solution"> </a>
-  <h3 id="digital-health-solution">Digital Health Solution</h3>
-  <p>A secure system that is used to capture and/or manage a digital record of the DDCC core data elements, such as an electronic immunization registry (EIR), an electronic medical record, a Laboratory Information System (LIS), or a shared health record (SHR).</p>
+  <ns24:h3 xmlns:ns24="http://www.w3.org/1999/xhtml" id="digital-health-solution">Digital Health Solution</ns24:h3>
+  <ns25:p xmlns:ns25="http://www.w3.org/1999/xhtml">A secure system that is used to capture and/or manage a digital record of the DDCC core data elements, such as an electronic immunization registry (EIR), an electronic medical record, a Laboratory Information System (LIS), or a shared health record (SHR).</ns25:p>
 
   <a name="digital-representation"> </a>
-  <h3 id="digital-representation">Digital representation</h3>
-  <p>A virtual representation of a physical object or system. In this context, the digital representation must be a digitally
-    signed FHIR document or a digitally signed two-dimensional (2D) barcode (e.g. a QR code).</p>
+  <ns26:h3 xmlns:ns26="http://www.w3.org/1999/xhtml" id="digital-representation">Digital representation</ns26:h3>
+  <ns27:p xmlns:ns27="http://www.w3.org/1999/xhtml">A virtual representation of a physical object or system. In this context, the digital representation must be a digitally
+    signed FHIR document or a digitally signed two-dimensional (2D) barcode (e.g. a QR code).</ns27:p>
 
   <a name="digital-signature"> </a>
-  <h3 id="digital-signature">Digital signature</h3>
-  <p>In the context of this guidance document, it is a hash generated from the HL7 FHIR data concerning a vaccination or a test, signed with a private key from a public–private key pair using standard encryption techniques.</p>
+  <ns28:h3 xmlns:ns28="http://www.w3.org/1999/xhtml" id="digital-signature">Digital signature</ns28:h3>
+  <ns29:p xmlns:ns29="http://www.w3.org/1999/xhtml">In the context of this guidance document, it is a hash generated from the HL7 FHIR data concerning a vaccination or a test, signed with a private key from a public–private key pair using standard encryption techniques.</ns29:p>
 
   <a name="digitally-signed"> </a>
-  <h3 id="digitally-signed">Digitally signed</h3>
-  <p>A digital document is digitally signed when plain-text health content is "hashed" with an algorithm, and that hash is encrypted,
-    or "signed", with a private key.</p>
+  <ns30:h3 xmlns:ns30="http://www.w3.org/1999/xhtml" id="digitally-signed">Digitally signed</ns30:h3>
+  <ns31:p xmlns:ns31="http://www.w3.org/1999/xhtml">A digital document is digitally signed when plain-text health content is "hashed" with an algorithm, and that hash is encrypted,
+    or "signed", with a private key.</ns31:p>
 
   <a name="encryption"> </a>
-  <h3 id="encryption">Encryption</h3>
-  <p>A security procedure that translates electronic data in plain text into a cipher code, by means of either a code or a cryptographic
-    system, to render it incomprehensible without the aid of the original code or cryptographic system.</p>
+  <ns32:h3 xmlns:ns32="http://www.w3.org/1999/xhtml" id="encryption">Encryption</ns32:h3>
+  <ns33:p xmlns:ns33="http://www.w3.org/1999/xhtml">A security procedure that translates electronic data in plain text into a cipher code, by means of either a code or a cryptographic
+    system, to render it incomprehensible without the aid of the original code or cryptographic system.</ns33:p>
 
   <a name="health-certificate-identifier"> </a>
-  <h3 id="health-certificate-identifier">Health certificate identifier (HCID)</h3>
-  <p>An alphanumeric identifier (ID) for a physical and/or digital health folder which contains one or more test or vaccination events and associated certificates of a Person. Each test event corresponds to a DDCC:TR. Each vaccination event corresponds to a DDCC:VS. It is up to the Member State to determine whether the HCID will be associated with a single event or multiple events. A Member State may determine, as per its policy, that there may be only one DDCC per HCID.</p>
+  <ns34:h3 xmlns:ns34="http://www.w3.org/1999/xhtml" id="health-certificate-identifier">Health certificate identifier (HCID)</ns34:h3>
+  <ns35:p xmlns:ns35="http://www.w3.org/1999/xhtml">An alphanumeric identifier (ID) for a physical and/or digital health folder which contains one or more test or vaccination events and associated certificates of a Person. Each test event corresponds to a DDCC:TR. Each vaccination event corresponds to a DDCC:VS. It is up to the Member State to determine whether the HCID will be associated with a single event or multiple events. A Member State may determine, as per its policy, that there may be only one DDCC per HCID.</ns35:p>
 
   <a name="identification-document"> </a>
-  <h3 id="identification-document">Identification document</h3>
-  <p>A document that attests the identity of or a linkage to someone, for example a passport or a national identity card.</p>
+  <ns36:h3 xmlns:ns36="http://www.w3.org/1999/xhtml" id="identification-document">Identification document</ns36:h3>
+  <ns37:p xmlns:ns37="http://www.w3.org/1999/xhtml">A document that attests the identity of or a linkage to someone, for example a passport or a national identity card.</ns37:p>
 
   <a name="identifier-concept"> </a>
-  <h3 id="identifier-concept">Identifier</h3>
-  <p>A name that labels the identity of an object or individual. For example, it can be a unique alphanumeric string that is associated with an individual, such as a passport number or medical record ID. Other types of identifiers include a document identifier, a facility identifier, and a health worker identifier.</p>
+  <ns38:h3 xmlns:ns38="http://www.w3.org/1999/xhtml" id="identifier-concept">Identifier</ns38:h3>
+  <ns39:p xmlns:ns39="http://www.w3.org/1999/xhtml">A name that labels the identity of an object or individual. For example, it can be a unique alphanumeric string that is associated with an individual, such as a passport number or medical record ID. Other types of identifiers include a document identifier, a facility identifier, and a health worker identifier.</ns39:p>
 
   <a name="laboratory-information-system"> </a>
-  <h3 id="laboratory-information-system">Laboratory Information System (LIS)</h3>
-  <p>Sometimes also referred to as a laboratory information management system, is a software system that supports the laboratory activities. Key functionality includes receiving and storing requests for tests and test results. Test results can be made available via paper reports and/or electronic formats, both to human users and to other health information systems (e.g. electronic medical record systems, billing systems, etc.).</p>
+  <ns40:h3 xmlns:ns40="http://www.w3.org/1999/xhtml" id="laboratory-information-system">Laboratory Information System (LIS)</ns40:h3>
+  <ns41:p xmlns:ns41="http://www.w3.org/1999/xhtml">Sometimes also referred to as a laboratory information management system, is a software system that supports the laboratory activities. Key functionality includes receiving and storing requests for tests and test results. Test results can be made available via paper reports and/or electronic formats, both to human users and to other health information systems (e.g. electronic medical record systems, billing systems, etc.).</ns41:p>
 
   <a name="may-concept"> </a>
-  <h3 id="may-concept">MAY</h3>
-  <p>MAY is used to describe technical features and functions that are optional, and it is the implementer’s decision on whether
+  <ns42:h3 xmlns:ns42="http://www.w3.org/1999/xhtml" id="may-concept">MAY</ns42:h3>
+  <ns43:p xmlns:ns43="http://www.w3.org/1999/xhtml">MAY is used to describe technical features and functions that are optional, and it is the implementer’s decision on whether
     to include that feature or function based on the implementation context. This definition is based on the definition published
-    by the Internet Engineering Task Force (IETF) (https://www.ietf.org/rfc/rfc2119.txt, accessed 30 June 2021).</p>
+    by the Internet Engineering Task Force (IETF) (https://www.ietf.org/rfc/rfc2119.txt, accessed 30 June 2021).</ns43:p>
   
   <a name="paper-certificate"> </a>
-  <h3 id="paper-certificate">Paper Certificate</h3>
-  <p>A SARS-CoV-2 vaccination status or test result certificate that is either handwritten or printed on paper, with a barcode. 
-    This barcode can be generated in real time or it can be pre-printed directly onto the certificate or on a barcode sticker.</p>
+  <ns44:h3 xmlns:ns44="http://www.w3.org/1999/xhtml" id="paper-certificate">Paper Certificate</ns44:h3>
+  <ns45:p xmlns:ns45="http://www.w3.org/1999/xhtml">A SARS-CoV-2 vaccination status or test result certificate that is either handwritten or printed on paper, with a barcode. 
+    This barcode can be generated in real time or it can be pre-printed directly onto the certificate or on a barcode sticker.</ns45:p>
 
   <a name="personal-data"> </a>
-  <h3 id="personal-data">Personal data</h3>
-  <p>Any information relating to an individual who is or can be identified, directly or indirectly, from that information. Personal
+  <ns46:h3 xmlns:ns46="http://www.w3.org/1999/xhtml" id="personal-data">Personal data</ns46:h3>
+  <ns47:p xmlns:ns47="http://www.w3.org/1999/xhtml">Any information relating to an individual who is or can be identified, directly or indirectly, from that information. Personal
     data include: biographical data (biodata), such as name, sex, civil status, date and place of birth, country of origin,
     country of residence, individual registration number, occupation, religion and ethnicity; biometric data, such as a photograph,
     fingerprint, facial or iris image; health data; as well as any expression of opinion about the individual, such as assessments
-    of his or her health status and/or specific needs.</p>
+    of his or her health status and/or specific needs.</ns47:p>
 
   <a name="public-health-authority"> </a>
-  <h3 id="public-health-authority">Public Health Authority (PHA)</h3>
-  <p>An entity or organization under whose auspices a SARS-CoV-2 vaccination or diagnostic test is performed and the DDCC is issued. The National PHA is also responsible for the DDCC Generation Service and the DDCC Registry Service.</p>
+  <ns48:h3 xmlns:ns48="http://www.w3.org/1999/xhtml" id="public-health-authority">Public Health Authority (PHA)</ns48:h3>
+  <ns49:p xmlns:ns49="http://www.w3.org/1999/xhtml">An entity or organization under whose auspices a SARS-CoV-2 vaccination or diagnostic test is performed and the DDCC is issued. The National PHA is also responsible for the DDCC Generation Service and the DDCC Registry Service.</ns49:p>
 
   <a name="public-key"> </a>
-  <h3 id="public-key">Public key</h3>
-  <p>The part of a private–public key pair used for digital encryption that is designed to be freely distributed.</p>
+  <ns50:h3 xmlns:ns50="http://www.w3.org/1999/xhtml" id="public-key">Public key</ns50:h3>
+  <ns51:p xmlns:ns51="http://www.w3.org/1999/xhtml">The part of a private–public key pair used for digital encryption that is designed to be freely distributed.</ns51:p>
 
   <a name="public-key-infrastructure"> </a>
-  <h3 id="public-key-infrastructure">Public Key Infrastructure (PKI)</h3>
-  <p>The policies, roles, software and hardware components and their governance that facilitate digital signing of documents and issuance, 
-    distribution, and exchange of keys.</p>
+  <ns52:h3 xmlns:ns52="http://www.w3.org/1999/xhtml" id="public-key-infrastructure">Public Key Infrastructure (PKI)</ns52:h3>
+  <ns53:p xmlns:ns53="http://www.w3.org/1999/xhtml">The policies, roles, software and hardware components and their governance that facilitate digital signing of documents and issuance, 
+    distribution, and exchange of keys.</ns53:p>
 
   <a name="private-key"> </a>
-  <h3 id="private-key">Private key</h3>
-  <p>The part of a private–public key pair used for digital encryption that is kept secret and held by the individual/organization
-    signing a digital document.</p>
+  <ns54:h3 xmlns:ns54="http://www.w3.org/1999/xhtml" id="private-key">Private key</ns54:h3>
+  <ns55:p xmlns:ns55="http://www.w3.org/1999/xhtml">The part of a private–public key pair used for digital encryption that is kept secret and held by the individual/organization
+    signing a digital document.</ns55:p>
 
   <a name="shall-concept"> </a>
-  <h3 id="shall-concept">SHALL</h3>
-  <p>SHALL is used to describe technical features and functions that are mandatory for this specification.</p>
+  <ns56:h3 xmlns:ns56="http://www.w3.org/1999/xhtml" id="shall-concept">SHALL</ns56:h3>
+  <ns57:p xmlns:ns57="http://www.w3.org/1999/xhtml">SHALL is used to describe technical features and functions that are mandatory for this specification.</ns57:p>
 
   <a name="should-concept"> </a>
-  <h3 id="should-concept">SHOULD</h3>
-  <p>SHOULD is used to describe technical features and functions that are recommended, but they are not mandatory. It is the
+  <ns58:h3 xmlns:ns58="http://www.w3.org/1999/xhtml" id="should-concept">SHOULD</ns58:h3>
+  <ns59:p xmlns:ns59="http://www.w3.org/1999/xhtml">SHOULD is used to describe technical features and functions that are recommended, but they are not mandatory. It is the
     implementer’s decision on whether to include that feature or function based on the implementation context. However, the
     implementer is highly recommended to review the reasons for not following the recommendations before deviating from the
-    technical specifications outlined.</p>
+    technical specifications outlined.</ns59:p>
 
   <a name="status-checking-application"> </a>
-  <h3 id="status-checking-application">Status Checking Application</h3>
-  <p>See definition for Verifier Application.</p>
+  <ns60:h3 xmlns:ns60="http://www.w3.org/1999/xhtml" id="status-checking-application">Status Checking Application</ns60:h3>
+  <ns61:p xmlns:ns61="http://www.w3.org/1999/xhtml">See definition for Verifier Application.</ns61:p>
 
   <a name="subject-of-care"> </a>
-  <h3 id="subject-of-care">Subject of Care</h3>
-  <p>The vaccinated person.</p>
+  <ns62:h3 xmlns:ns62="http://www.w3.org/1999/xhtml" id="subject-of-care">Subject of Care</ns62:h3>
+  <ns63:p xmlns:ns63="http://www.w3.org/1999/xhtml">The vaccinated person.</ns63:p>
   
    <a name="test-report"> </a>
-  <h3 id="test-report">Test Report</h3>
-  <p>The record, or report, of a SARS-CoV-2 diagnostic test result. A test report contains key demographic information about the tested person, 
+  <ns64:h3 xmlns:ns64="http://www.w3.org/1999/xhtml" id="test-report">Test Report</ns64:h3>
+  <ns65:p xmlns:ns65="http://www.w3.org/1999/xhtml">The record, or report, of a SARS-CoV-2 diagnostic test result. A test report contains key demographic information about the tested person, 
     the laboratory or testing centre that conducted the test, the test results, and other details information needed for clinical use. 
-    Test reports differ from a “test certificate” in that test reports do not contain means of cryptographically verifying the contents of the report.</p>
+    Test reports differ from a “test certificate” in that test reports do not contain means of cryptographically verifying the contents of the report.</ns65:p>
 
   <a name="two-dimensional-barcode"> </a>
-  <h3 id="two-dimensional-barcode">Two-dimensional (2D) barcode</h3>
-  <p>Also called a matrix code. A 2D way to represent information using individual black dots within a square or rectangle.
+  <ns66:h3 xmlns:ns66="http://www.w3.org/1999/xhtml" id="two-dimensional-barcode">Two-dimensional (2D) barcode</ns66:h3>
+  <ns67:p xmlns:ns67="http://www.w3.org/1999/xhtml">Also called a matrix code. A 2D way to represent information using individual black dots within a square or rectangle.
     For example, a QR code is a type of 2D barcode. It is similar to a linear (1D) barcode, but it can represent more data
-    per unit area. There are different types, defined by standards such as ISO/IEC 16022, 24778, 18004, etc.</p>
+    per unit area. There are different types, defined by standards such as ISO/IEC 16022, 24778, 18004, etc.</ns67:p>
 
   <a name="vaccinator"> </a>
-  <h3 id="vaccinator">Vaccinator</h3>
-  <p>The person who administers the vaccine. Depending on national policies, the person who administers the vaccine might not
+  <ns68:h3 xmlns:ns68="http://www.w3.org/1999/xhtml" id="vaccinator">Vaccinator</ns68:h3>
+  <ns69:p xmlns:ns69="http://www.w3.org/1999/xhtml">The person who administers the vaccine. Depending on national policies, the person who administers the vaccine might not
     be a formal health-care provider. Examples include physicians, nurse practitioners, community health workers or volunteer
-    vaccinators.</p>
+    vaccinators.</ns69:p>
   
   <a name="validation"> </a>
-  <h3 id="validation">Validation</h3>
-  <p>A process that relies on the Verifier validating and accepting the certificate based on the acceptance criteria and associated validity period, as determined by the policies of the Member States in which the certificate will be used – i.e. validation answers the question, "With the data I am provided with, do I accept this certificate based on existing policies?"</p>
+  <ns70:h3 xmlns:ns70="http://www.w3.org/1999/xhtml" id="validation">Validation</ns70:h3>
+  <ns71:p xmlns:ns71="http://www.w3.org/1999/xhtml">A process that relies on the Verifier validating and accepting the certificate based on the acceptance criteria and associated validity period, as determined by the policies of the Member States in which the certificate will be used – i.e. validation answers the question, "With the data I am provided with, do I accept this certificate based on existing policies?"</ns71:p>
 
   <a name="verification"> </a>
-  <h3 id="verification">Verification</h3>
-  <p>A process that relies on the Verifier confirming the status of a test result certificate and ensuring that it is a true and unaltered certificate which has been signed and issued under the authority of a public health authority of a Member State – i.e. verification answers the question, "Is this from a trusted source?"</p>
+  <ns72:h3 xmlns:ns72="http://www.w3.org/1999/xhtml" id="verification">Verification</ns72:h3>
+  <ns73:p xmlns:ns73="http://www.w3.org/1999/xhtml">A process that relies on the Verifier confirming the status of a test result certificate and ensuring that it is a true and unaltered certificate which has been signed and issued under the authority of a public health authority of a Member State – i.e. verification answers the question, "Is this from a trusted source?"</ns73:p>
  
   <a name="verifier"> </a>
-  <h3 id="verifier">Verifier</h3>
-  <p>A natural person or legal person, either private or public, formally authorized (under national law, decree, regulation
-    or other official act or order) to verify and validate the SARS-CoV-2 vaccination status or diagnostic test result status presented on the DDCC.</p>
+  <ns74:h3 xmlns:ns74="http://www.w3.org/1999/xhtml" id="verifier">Verifier</ns74:h3>
+  <ns75:p xmlns:ns75="http://www.w3.org/1999/xhtml">A natural person or legal person, either private or public, formally authorized (under national law, decree, regulation
+    or other official act or order) to verify and validate the SARS-CoV-2 vaccination status or diagnostic test result status presented on the DDCC.</ns75:p>
 
    <a name="verifier-application"> </a>
-  <h3 id="verifier-application">Verifier Application</h3>
-  <p>A secure application used to verify and validate the SARS-CoV-2 vaccination status or diagnostic test result presented on the DDCC. 
+  <ns76:h3 xmlns:ns76="http://www.w3.org/1999/xhtml" id="verifier-application">Verifier Application</ns76:h3>
+  <ns77:p xmlns:ns77="http://www.w3.org/1999/xhtml">A secure application used to verify and validate the SARS-CoV-2 vaccination status or diagnostic test result presented on the DDCC. 
     A Verifier can use the Verifier Application to scan the barcode, display the data held within the DDCC and validate the DDCC 
-    using a predefined set of acceptance criteria or business rules.</p>
+    using a predefined set of acceptance criteria or business rules.</ns77:p>
   
 </div>
 </div>
@@ -400,9 +402,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 30, 2022 15:45+0000">2022-11-30</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jan 8, 2023 23:46+0000">2023-01-08</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"></span>
+          <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                   | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/worldhealthorganization/ddcc/projects/1">Issues</a>
@@ -427,6 +429,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   

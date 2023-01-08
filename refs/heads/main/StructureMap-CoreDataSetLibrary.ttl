@@ -7,21 +7,21 @@
 
 <http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetLibrary> a fhir:StructureMap;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "CoreDataSetLibrary"];
+  fhir:Resource.id [ fhir:value "CoreDataSetLibrary"]; # 
   fhir:Resource.meta [
      fhir:Meta.versionId [ fhir:value "1" ];
      fhir:Meta.lastUpdated [ fhir:value "2022-03-01T19:17:52.081+00:00"^^xsd:dateTime ]
-  ];
+  ]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><pre>map &quot;http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetLibrary&quot; = &quot;CoreDataSetLibrary&quot;\r\n\r\n\r\nuses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSet.VS&quot; alias DDCCVS as source\r\nuses &quot;http://hl7.org/fhir/StructureDefinition/Patient&quot; alias Patient as target\r\nuses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient&quot; alias DDCCPatient as produced\r\nuses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReferenceQR&quot; alias DDCCDocRefQR as produced\r\nuses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition&quot; alias DDCCComposition as produced\r\n\r\ngroup DDCCToPatient(source src : DDCCVS, target patient : DDCCPatient, source pid) {\r\n  pid -&gt; patient.id = pid &quot;set id&quot;;\r\n  src.name as name -&gt; patient.name as tName then {\r\n    name -&gt; tName.text = name &quot;set name&quot;;\r\n  } &quot;set full name&quot;;\r\n  src.birthDate as birthDate -&gt; patient.birthDate = birthDate &quot;set birthDate&quot;;\r\n  src.identifier as identifier -&gt; patient.identifier = identifier &quot;set identifier&quot;;\r\n}\r\n\r\ngroup DDCCToDocumentReference(source src : DDCCVS, target ref : DDCCDocRefQR, source id, source pid) {\r\n  id -&gt; ref.id = id &quot;set id&quot;;\r\n  src -&gt; ref.status = 'current' &quot;set status&quot;;\r\n  src -&gt;  ref.subject as patient,  patient.reference = append('Patient/', pid) &quot;set patient&quot;;\r\n  src -&gt; ref.content as content then {\r\n    src -&gt;  content.attachment as attachment,  attachment.contentType = 'application/json' &quot;set contentType&quot;;\r\n    src -&gt;  content.format as format,  format.system = 'http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem',  format.code = 'serialized' &quot;set format code&quot;;\r\n  } &quot;set serialized content&quot;;\r\n  src -&gt; ref.content as content then {\r\n    src -&gt;  content.attachment as attachment,  attachment.contentType = 'image/png' &quot;set contentType&quot;;\r\n    src -&gt;  content.format as format,  format.system = 'http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem',  format.code = 'image' &quot;set format code&quot;;\r\n  } &quot;set image content&quot;;\r\n  src -&gt; ref.content as content then {\r\n    src -&gt;  content.attachment as attachment,  attachment.contentType = 'application/pdf' &quot;set contentType&quot;;\r\n    src -&gt;  content.format as format,  format.system = 'http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem',  format.code = 'pdf' &quot;set format code&quot;;\r\n  } &quot;set pdf content&quot;;\r\n}\r\n\r\ngroup DDCCToComposition(source src : DDCCVS, target comp : DDCCComposition, source id, source pid) {\r\n  id -&gt; comp.id = id &quot;set id&quot;;\r\n  src -&gt;  comp.subject as patient,  patient.reference = append('Patient/', pid) &quot;set patient&quot;;\r\n  src -&gt;  comp.type as type,  type.coding as coding then {\r\n    src -&gt;  coding.system = 'http://loinc.org',  coding.code = '82593-5' &quot;set type coding&quot;;\r\n  } &quot;set type&quot;;\r\n  src.certificate as certificate -&gt;  comp.author as author,  comp.event as event then {\r\n    certificate.period as period -&gt; event.period = period &quot;set event period&quot;;\r\n    certificate.issuer as issuer -&gt; author.type = 'Organization' then {\r\n      issuer.identifier as pha -&gt; author.identifier as identifier then {\r\n        pha.value as value -&gt; identifier.value = value &quot;set pha&quot;;\r\n      } &quot;set author identifier&quot;;\r\n    } &quot;set author ref&quot;;\r\n  } &quot;set certificate&quot;;\r\n}\r\n\r\n</pre></div>"
-  ];
-  fhir:StructureMap.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetLibrary"];
-  fhir:StructureMap.version [ fhir:value "1.0.0"];
-  fhir:StructureMap.name [ fhir:value "CoreDataSetLibrary"];
-  fhir:StructureMap.status [ fhir:value "draft"];
-  fhir:StructureMap.date [ fhir:value "2022-11-30T15:45:43+00:00"^^xsd:dateTime];
-  fhir:StructureMap.publisher [ fhir:value "WHO"];
+  ]; # 
+  fhir:StructureMap.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/StructureMap/CoreDataSetLibrary"]; # 
+  fhir:StructureMap.version [ fhir:value "1.0.0"]; # 
+  fhir:StructureMap.name [ fhir:value "CoreDataSetLibrary"]; # 
+  fhir:StructureMap.status [ fhir:value "draft"]; # 
+  fhir:StructureMap.date [ fhir:value "2023-01-08T23:46:44+00:00"^^xsd:dateTime]; # 
+  fhir:StructureMap.publisher [ fhir:value "WHO"]; # 
   fhir:StructureMap.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "WHO" ];
@@ -30,7 +30,7 @@
        fhir:ContactPoint.system [ fhir:value "url" ];
        fhir:ContactPoint.value [ fhir:value "http://who.int" ]
      ]
-  ];
+  ]; # 
   fhir:StructureMap.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -38,7 +38,7 @@
        fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
        fhir:Coding.code [ fhir:value "001" ]
      ]
-  ];
+  ]; # 
   fhir:StructureMap.structure [
      fhir:index 0;
      fhir:StructureMap.structure.url [
@@ -79,7 +79,7 @@
      ];
      fhir:StructureMap.structure.mode [ fhir:value "produced" ];
      fhir:StructureMap.structure.alias [ fhir:value "DDCCComposition" ]
-  ];
+  ]; # 
   fhir:StructureMap.group [
      fhir:index 0;
      fhir:StructureMap.group.name [ fhir:value "DDCCToPatient" ];
@@ -718,7 +718,7 @@
          ]
        ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

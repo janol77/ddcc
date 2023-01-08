@@ -52,7 +52,7 @@ group Decode_QR_Provenance(source qr : QR, target bundle : SVC_Bundle, target pa
   <version value="1.0.0"/>
   <name value="svc-map-qr-uvci-bundle"/>
   <status value="draft"/>
-  <date value="2022-03-23T21:03:35+00:00"/>
+  <date value="2023-01-08T23:46:44+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -132,20 +132,52 @@ group Decode_QR_Provenance(source qr : QR, target bundle : SVC_Bundle, target pa
       </target>
       <dependent>
         <name value="Decode_QR_Patient"/>
-        <variable value="qr"/>
-        <variable value="patient"/>
+        <variable value="qr">
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+            <valueUrl value="id"/>
+          </extension>
+        </variable>
+        <variable value="patient">
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+            <valueUrl value="id"/>
+          </extension>
+        </variable>
       </dependent>
       <dependent>
         <name value="Decode_QR_Organization"/>
-        <variable value="qr"/>
-        <variable value="organization"/>
+        <variable value="qr">
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+            <valueUrl value="id"/>
+          </extension>
+        </variable>
+        <variable value="organization">
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+            <valueUrl value="id"/>
+          </extension>
+        </variable>
       </dependent>
       <dependent>
         <name value="Decode_QR_Bundle"/>
-        <variable value="qr"/>
-        <variable value="patient"/>
-        <variable value="organzation"/>
-        <variable value="bundle"/>
+        <variable value="qr">
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+            <valueUrl value="id"/>
+          </extension>
+        </variable>
+        <variable value="patient">
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+            <valueUrl value="id"/>
+          </extension>
+        </variable>
+        <variable value="organzation">
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+            <valueUrl value="id"/>
+          </extension>
+        </variable>
+        <variable value="bundle">
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+            <valueUrl value="id"/>
+          </extension>
+        </variable>
       </dependent>
     </rule>
   </group>
@@ -399,9 +431,21 @@ group Decode_QR_Provenance(source qr : QR, target bundle : SVC_Bundle, target pa
       </target>
       <dependent>
         <name value="Decode_QR_Composition"/>
-        <variable value="qr"/>
-        <variable value="bundle"/>
-        <variable value="composition"/>
+        <variable value="qr">
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+            <valueUrl value="id"/>
+          </extension>
+        </variable>
+        <variable value="bundle">
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+            <valueUrl value="id"/>
+          </extension>
+        </variable>
+        <variable value="composition">
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/original-item-type">
+            <valueUrl value="id"/>
+          </extension>
+        </variable>
       </dependent>
     </rule>
   </group>

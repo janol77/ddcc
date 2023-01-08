@@ -51,8 +51,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"22.168"}
-    h3,h4,h5,h6{--heading-prefix:"22.168"}</style>
+    <style type="text/css">h2{--heading-prefix:"22.169"}
+    h3,h4,h5,h6{--heading-prefix:"22.169"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -180,11 +180,14 @@
 
 
 
+
+
 <ul class="nav nav-tabs">
 
   <li>
     <a href="Bundle-Example-Chinese.html">Narrative Content</a>
   </li>
+
 
 
   
@@ -216,6 +219,19 @@
 
 
 <h2 id="root">: Example-Chinese - TTL Representation</h2>
+  <table class="">
+    <tr>
+
+      <td colspan="2">
+        
+          
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
 
 <p><a href="Bundle-Example-Chinese.ttl" no-download="true">Raw ttl</a> | <a href="Bundle-Example-Chinese.ttl" download>Download</a></p>
 
@@ -235,24 +251,24 @@
 
  a fhir:Bundle;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
-  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;Example-Chinese&quot;];
+  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;Example-Chinese&quot;]; # 
   <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocument&quot;;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
        <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSDocument&gt;     ]
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.identifier">fhir:Bundle.identifier</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;urn:EXAMPLE-who-:ddcc:bundle:ids&quot; ];
      <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;9990123012301230123&quot; ]
-  ];
-  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">fhir:Bundle.type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;document&quot;];
-  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.timestamp">fhir:Bundle.timestamp</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:value</a> &quot;2021-06-03T13:28:17-05:00&quot;^^xsd:dateTime];
+  ]; # 
+  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">fhir:Bundle.type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;document&quot;]; # 
+  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.timestamp">fhir:Bundle.timestamp</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:value</a> &quot;2021-06-03T13:28:17-05:00&quot;^^xsd:dateTime]; # 
   <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.link">fhir:Bundle.link</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.link.relation">fhir:Bundle.link.relation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;publication&quot; ];
      <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.link.url">fhir:Bundle.link.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;urn:HCID:1234567890&quot; ]
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">fhir:Bundle.entry</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:Bundle.entry.fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://www.example.org/fhir/Composition/DDCC-Composition-Example-Chinese&quot; ];
@@ -273,48 +289,48 @@
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 4;
      <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:Bundle.entry.fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://www.example.org/fhir/ImmunizationRecommendation/DDCC-ImmunizationRecommendation-Chinese&quot; ];
      <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation">fhir:Bundle.entry.resource</a> &lt;http://www.example.org/fhir/ImmunizationRecommendation/DDCC-ImmunizationRecommendation-Chinese&gt;
-  ].
+  ]. # 
 
 &lt;http://www.example.org/fhir/Composition/DDCC-Composition-Example-Chinese&gt; <a href="http://hl7.org/fhir/R4/composition.html">a</a> fhir:Composition;
-  <a href="http://hl7.org/fhir/R4/composition.html#Composition.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;DDCC-Composition-Example-Chinese&quot;];
+  <a href="http://hl7.org/fhir/R4/composition.html#Composition.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;DDCC-Composition-Example-Chinese&quot;]; # 
   <a href="http://hl7.org/fhir/R4/composition.html#Composition.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition&quot;;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
        <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVSComposition&gt;     ]
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/composition.html#Composition.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
      fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Composition&lt;/b&gt;&lt;a name=\&quot;DDCC-Composition-Example-Chinese\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Composition &amp;quot;DDCC-Composition-Example-Chinese&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-DDCCVSComposition.html\&quot;&gt;DDCC:VS Composition&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 999123456123456123456 (use: OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Immunization summary report &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#82593-5)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2020-05-06&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;a href=\&quot;#Organization_DDCC-Organization-Chinese\&quot;&gt;See above (Organization/DDCC-Organization-Chinese)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Digital Documentation of COVID-19 Certificate (DDCC)&lt;/p&gt;&lt;h3&gt;Attesters&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Mode&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Party&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;official&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Organization_DDCC-Organization-Chinese\&quot;&gt;See above (Organization/DDCC-Organization-Chinese)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/composition.html#Composition.identifier">fhir:Composition.identifier</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">fhir:Identifier.use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;official&quot; ];
      <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;urn:EXAMPLE-who-:ddcc:composition:ids&quot; ];
      <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;999123456123456123456&quot; ]
-  ];
-  <a href="http://hl7.org/fhir/R4/composition.html#Composition.status">fhir:Composition.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;final&quot;];
+  ]; # 
+  <a href="http://hl7.org/fhir/R4/composition.html#Composition.status">fhir:Composition.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;final&quot;]; # 
   <a href="http://hl7.org/fhir/R4/composition.html#Composition.type">fhir:Composition.type</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
        a loinc:82593-5;
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://loinc.org&quot; ];
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;82593-5&quot; ]     ]
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/composition.html#Composition.subject">fhir:Composition.subject</a> [
      <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient/DDCC-Patient-Chinese&quot; ]
-  ];
-  <a href="http://hl7.org/fhir/R4/composition.html#Composition.date">fhir:Composition.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2020-05-06&quot;^^xsd:date];
+  ]; # 
+  <a href="http://hl7.org/fhir/R4/composition.html#Composition.date">fhir:Composition.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2020-05-06&quot;^^xsd:date]; # 
   <a href="http://hl7.org/fhir/R4/composition.html#Composition.author">fhir:Composition.author</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Organization/DDCC-Organization-Chinese&quot; ]
-  ];
-  <a href="http://hl7.org/fhir/R4/composition.html#Composition.title">fhir:Composition.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Digital Documentation of COVID-19 Certificate (DDCC)&quot;];
+  ]; # 
+  <a href="http://hl7.org/fhir/R4/composition.html#Composition.title">fhir:Composition.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Digital Documentation of COVID-19 Certificate (DDCC)&quot;]; # 
   <a href="http://hl7.org/fhir/R4/composition.html#Composition.attester">fhir:Composition.attester</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/composition.html#Composition.attester.mode">fhir:Composition.attester.mode</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;official&quot; ];
      <a href="http://hl7.org/fhir/R4/composition.html#Composition.attester.party">fhir:Composition.attester.party</a> [
        <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Organization/DDCC-Organization-Chinese&quot; ]     ]
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/composition.html#Composition.section">fhir:Composition.section</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/composition.html#Composition.section.code">fhir:Composition.section.code</a> [
@@ -330,53 +346,53 @@
        <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Immunization/DDCC-Immunization-Chinese&quot; ]     ], [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
        <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;ImmunizationRecommendation/DDCC-ImmunizationRecommendation-Chinese&quot; ]     ]
-  ].
+  ]. # 
 
 &lt;http://www.example.org/fhir/Patient/DDCC-Patient-Chinese&gt; <a href="http://hl7.org/fhir/R4/patient.html">a</a> fhir:Patient;
-  <a href="http://hl7.org/fhir/R4/patient.html#Patient.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;DDCC-Patient-Chinese&quot;];
+  <a href="http://hl7.org/fhir/R4/patient.html#Patient.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;DDCC-Patient-Chinese&quot;]; # 
   <a href="http://hl7.org/fhir/R4/patient.html#Patient.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient&quot;;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
        <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient&gt;     ]
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/patient.html#Patient.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
      fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Patient&lt;/b&gt;&lt;a name=\&quot;DDCC-Patient-Chinese\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Patient &amp;quot;DDCC-Patient-Chinese&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-DDCCPatient.html\&quot;&gt;DDCC Patient&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: 奥卢斯·阿杰里乌斯(OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;birthDate&lt;/b&gt;: 2003-03-03&lt;/p&gt;&lt;/div&gt;&quot;
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/patient.html#Patient.name">fhir:Patient.name</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.use">fhir:HumanName.use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;official&quot; ];
      <a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.text">fhir:HumanName.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;奥卢斯·阿杰里乌斯&quot; ]
-  ];
-  <a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">fhir:Patient.birthDate</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#date">fhir:value</a> &quot;2003-03-03&quot;^^xsd:date].
+  ]; # 
+  <a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">fhir:Patient.birthDate</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#date">fhir:value</a> &quot;2003-03-03&quot;^^xsd:date]. # 
 
 &lt;http://www.example.org/fhir/Organization/DDCC-Organization-Chinese&gt; <a href="http://hl7.org/fhir/R4/organization.html">a</a> fhir:Organization;
-  <a href="http://hl7.org/fhir/R4/organization.html#Organization.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;DDCC-Organization-Chinese&quot;];
+  <a href="http://hl7.org/fhir/R4/organization.html#Organization.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;DDCC-Organization-Chinese&quot;]; # 
   <a href="http://hl7.org/fhir/R4/organization.html#Organization.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization&quot;;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
        <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization&gt;     ]
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/organization.html#Organization.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
      fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Organization&lt;/b&gt;&lt;a name=\&quot;DDCC-Organization-Chinese\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Organization &amp;quot;DDCC-Organization-Chinese&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-DDCCOrganization.html\&quot;&gt;DDCC Organization&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: 政府医院&lt;/p&gt;&lt;/div&gt;&quot;
-  ];
-  <a href="http://hl7.org/fhir/R4/organization.html#Organization.name">fhir:Organization.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;政府医院&quot;].
+  ]; # 
+  <a href="http://hl7.org/fhir/R4/organization.html#Organization.name">fhir:Organization.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;政府医院&quot;]. # 
 
 &lt;http://www.example.org/fhir/Immunization/DDCC-Immunization-Chinese&gt; <a href="http://hl7.org/fhir/R4/immunization.html">a</a> fhir:Immunization;
-  <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;DDCC-Immunization-Chinese&quot;];
+  <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;DDCC-Immunization-Chinese&quot;]; # 
   <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization&quot;;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
        <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization&gt;     ]
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;extensions&quot; ];
      fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Immunization&lt;/b&gt;&lt;a name=\&quot;DDCC-Immunization-Chinese\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Immunization &amp;quot;DDCC-Immunization-Chinese&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-DDCCImmunization.html\&quot;&gt;DDCC Immunization&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;DDCC Event Brand for Immunization&lt;/b&gt;: EpiVacCorona (Details: http://id.who.int/icd11/mms code XM6SZ8 = 'EpiVacCorona', stated as 'null')&lt;/p&gt;&lt;p&gt;&lt;b&gt;DDCC Country Of Event for Immunization&lt;/b&gt;: CHN&lt;/p&gt;&lt;p&gt;&lt;b&gt;DDCC Vaccine Market Authorization for Immunization&lt;/b&gt;: Test (Details: http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Example-Test-CodeSystem code TEST = 'Test', stated as 'null')&lt;/p&gt;&lt;p&gt;&lt;b&gt;DDCC Vaccine Valid From&lt;/b&gt;: 2021-05-30&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;vaccineCode&lt;/b&gt;: COVID-19 vaccine, virus protein subunit &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-DDCC-ICD11-CodeSystem.html\&quot;&gt;DDCC Codes for ICD11&lt;/a&gt;#XM5JC5)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=\&quot;#Patient_DDCC-Patient-Chinese\&quot;&gt;See above (Patient/DDCC-Patient-Chinese)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;occurrence&lt;/b&gt;: 2021-05-06&lt;/p&gt;&lt;p&gt;&lt;b&gt;location&lt;/b&gt;: &lt;span&gt;: 疫苗接种现场&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;lotNumber&lt;/b&gt;: 123&lt;/p&gt;&lt;p&gt;&lt;b&gt;expirationDate&lt;/b&gt;: 2021-06-30&lt;/p&gt;&lt;h3&gt;Performers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Actor&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Organization_DDCC-Organization-Chinese\&quot;&gt;See above (Organization/DDCC-Organization-Chinese)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;ProtocolApplieds&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Authority&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;TargetDisease&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;DoseNumber[x]&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;SeriesDoses[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Organization_DDCC-Organization-Chinese\&quot;&gt;See above (Organization/DDCC-Organization-Chinese)&lt;/a&gt;&lt;/td&gt;&lt;td&gt;COVID-19 Disease &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-DDCC-ICD11-CodeSystem.html\&quot;&gt;DDCC Codes for ICD11&lt;/a&gt;#RA01)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.extension">fhir:DomainResource.extension</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCEventBrand&quot; ];
@@ -397,28 +413,28 @@
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 3;
      <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineValidFrom&quot; ];
      <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueDate</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#date">fhir:value</a> &quot;2021-05-30&quot;^^xsd:date ]
-  ];
-  <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.status">fhir:Immunization.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;completed&quot;];
+  ]; # 
+  <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.status">fhir:Immunization.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;completed&quot;]; # 
   <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.vaccineCode">fhir:Immunization.vaccineCode</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://id.who.int/icd11/mms&quot; ];
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;XM5JC5&quot; ]     ]
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.patient">fhir:Immunization.patient</a> [
      <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient/DDCC-Patient-Chinese&quot; ]
-  ];
-  <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.occurrence[x]">fhir:Immunization.occurrenceDateTime</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2021-05-06&quot;^^xsd:date];
+  ]; # 
+  <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.occurrence[x]">fhir:Immunization.occurrenceDateTime</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2021-05-06&quot;^^xsd:date]; # 
   <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.location">fhir:Immunization.location</a> [
      <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;疫苗接种现场&quot; ]
-  ];
-  <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.lotNumber">fhir:Immunization.lotNumber</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;123&quot;];
-  <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.expirationDate">fhir:Immunization.expirationDate</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#date">fhir:value</a> &quot;2021-06-30&quot;^^xsd:date];
+  ]; # 
+  <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.lotNumber">fhir:Immunization.lotNumber</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;123&quot;]; # 
+  <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.expirationDate">fhir:Immunization.expirationDate</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#date">fhir:value</a> &quot;2021-06-30&quot;^^xsd:date]; # 
   <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.performer">fhir:Immunization.performer</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.performer.actor">fhir:Immunization.performer.actor</a> [
        <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Organization/DDCC-Organization-Chinese&quot; ]     ]
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.protocolApplied">fhir:Immunization.protocolApplied</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.protocolApplied.authority">fhir:Immunization.protocolApplied.authority</a> [
@@ -431,24 +447,24 @@
          <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;RA01&quot; ]       ]     ];
      <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.protocolApplied.doseNumber[x]">fhir:Immunization.protocolApplied.doseNumberPositiveInt</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">fhir:value</a> &quot;1&quot;^^xsd:positiveInteger ];
      <a href="http://hl7.org/fhir/R4/immunization.html#Immunization.protocolApplied.seriesDoses[x]">fhir:Immunization.protocolApplied.seriesDosesPositiveInt</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">fhir:value</a> &quot;2&quot;^^xsd:positiveInteger ]
-  ].
+  ]. # 
 
 &lt;http://www.example.org/fhir/ImmunizationRecommendation/DDCC-ImmunizationRecommendation-Chinese&gt; <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">a</a> fhir:ImmunizationRecommendation;
-  <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;DDCC-ImmunizationRecommendation-Chinese&quot;];
+  <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;DDCC-ImmunizationRecommendation-Chinese&quot;]; # 
   <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation&quot;;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
        <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation&gt;     ]
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
      fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: ImmunizationRecommendation&lt;/b&gt;&lt;a name=\&quot;DDCC-ImmunizationRecommendation-Chinese\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource ImmunizationRecommendation &amp;quot;DDCC-ImmunizationRecommendation-Chinese&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-DDCCImmunizationRecommendation.html\&quot;&gt;DDCC Immunization Recommendation&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=\&quot;#Patient_DDCC-Patient-Chinese\&quot;&gt;See above (Patient/DDCC-Patient-Chinese)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2021-05-06&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;recommendation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;vaccineCode&lt;/b&gt;: COVID-19 vaccine, virus protein subunit &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-DDCC-ICD11-CodeSystem.html\&quot;&gt;DDCC Codes for ICD11&lt;/a&gt;#XM5JC5)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;forecastStatus&lt;/b&gt;: Due &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/4.0.0/CodeSystem-immunization-recommendation-status.html\&quot;&gt;Immunization Recommendation Status Codes&lt;/a&gt;#due)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;DateCriterions&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Date vaccine due &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#30980-7)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;2021-05-20&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;supportingImmunization&lt;/b&gt;: &lt;a href=\&quot;#Immunization_DDCC-Immunization-Chinese\&quot;&gt;See above (Immunization/DDCC-Immunization-Chinese)&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.patient">fhir:ImmunizationRecommendation.patient</a> [
      <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient/DDCC-Patient-Chinese&quot; ]
-  ];
-  <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.date">fhir:ImmunizationRecommendation.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2021-05-06&quot;^^xsd:date];
+  ]; # 
+  <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.date">fhir:ImmunizationRecommendation.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2021-05-06&quot;^^xsd:date]; # 
   <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.recommendation">fhir:ImmunizationRecommendation.recommendation</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.recommendation.vaccineCode">fhir:ImmunizationRecommendation.recommendation.vaccineCode</a> [
@@ -474,7 +490,7 @@
      <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html#ImmunizationRecommendation.recommendation.supportingImmunization">fhir:ImmunizationRecommendation.recommendation.supportingImmunization</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
        <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Immunization/DDCC-Immunization-Chinese&quot; ]     ]
-  ].
+  ]. # 
 
 # - ontology header ------------------------------------------------------------
 
@@ -512,9 +528,9 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 30, 2022 15:45+0000">2022-11-30</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jan 8, 2023 23:46+0000">2023-01-08</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"></span>
+          <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                   | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/worldhealthorganization/ddcc/projects/1">Issues</a>
@@ -539,6 +555,8 @@
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   

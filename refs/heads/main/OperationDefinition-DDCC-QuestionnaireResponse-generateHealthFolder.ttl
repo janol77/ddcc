@@ -7,20 +7,20 @@
 
 <http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCC-QuestionnaireResponse-generateHealthFolder> a fhir:OperationDefinition;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "DDCC-QuestionnaireResponse-generateHealthFolder"];
+  fhir:Resource.id [ fhir:value "DDCC-QuestionnaireResponse-generateHealthFolder"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>URL: [base]/Bundle/$generateHealthFolder</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>bundle</td><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/bundle.html\">Bundle</a></td><td/><td><div><p>The bundle resource used to generate the DDCC Folder.</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/list.html\">List</a></td><td/><td><div><p>The DDCC Folder that was created.</p>\n</div></td></tr></table></div>"
-  ];
-  fhir:OperationDefinition.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCC-QuestionnaireResponse-generateHealthFolder"];
-  fhir:OperationDefinition.version [ fhir:value "1.0.0"];
-  fhir:OperationDefinition.name [ fhir:value "QuestionnaireResponse_Generate_Health_Folder"];
-  fhir:OperationDefinition.title [ fhir:value "OperationDefinition for generating a health folder (DDCCFolder)."];
-  fhir:OperationDefinition.status [ fhir:value "draft"];
-  fhir:OperationDefinition.kind [ fhir:value "operation"];
-  fhir:OperationDefinition.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:OperationDefinition.date [ fhir:value "2022-01-24"^^xsd:date];
-  fhir:OperationDefinition.publisher [ fhir:value "WHO"];
+  ]; # 
+  fhir:OperationDefinition.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCC-QuestionnaireResponse-generateHealthFolder"]; # 
+  fhir:OperationDefinition.version [ fhir:value "1.0.0"]; # 
+  fhir:OperationDefinition.name [ fhir:value "QuestionnaireResponse_Generate_Health_Folder"]; # 
+  fhir:OperationDefinition.title [ fhir:value "OperationDefinition for generating a health folder (DDCCFolder)."]; # 
+  fhir:OperationDefinition.status [ fhir:value "draft"]; # 
+  fhir:OperationDefinition.kind [ fhir:value "operation"]; # 
+  fhir:OperationDefinition.experimental [ fhir:value "true"^^xsd:boolean]; # 
+  fhir:OperationDefinition.date [ fhir:value "2022-01-24"^^xsd:date]; # 
+  fhir:OperationDefinition.publisher [ fhir:value "WHO"]; # 
   fhir:OperationDefinition.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "WHO" ];
@@ -29,8 +29,8 @@
        fhir:ContactPoint.system [ fhir:value "url" ];
        fhir:ContactPoint.value [ fhir:value "http://who.int" ]
      ]
-  ];
-  fhir:OperationDefinition.description [ fhir:value "Generate a DDCC Folder from an IPS Bundle."];
+  ]; # 
+  fhir:OperationDefinition.description [ fhir:value "Generate a DDCC Folder from an IPS Bundle."]; # 
   fhir:OperationDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -38,15 +38,15 @@
        fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
        fhir:Coding.code [ fhir:value "001" ]
      ]
-  ];
-  fhir:OperationDefinition.code [ fhir:value "generateHealthFolder"];
+  ]; # 
+  fhir:OperationDefinition.code [ fhir:value "generateHealthFolder"]; # 
   fhir:OperationDefinition.resource [
      fhir:value "Bundle";
      fhir:index 0
-  ];
-  fhir:OperationDefinition.system [ fhir:value "false"^^xsd:boolean];
-  fhir:OperationDefinition.type [ fhir:value "true"^^xsd:boolean];
-  fhir:OperationDefinition.instance [ fhir:value "false"^^xsd:boolean];
+  ]; # 
+  fhir:OperationDefinition.system [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:OperationDefinition.type [ fhir:value "true"^^xsd:boolean]; # 
+  fhir:OperationDefinition.instance [ fhir:value "false"^^xsd:boolean]; # 
   fhir:OperationDefinition.parameter [
      fhir:index 0;
      fhir:OperationDefinition.parameter.name [ fhir:value "bundle" ];
@@ -63,7 +63,7 @@
      fhir:OperationDefinition.parameter.max [ fhir:value "1" ];
      fhir:OperationDefinition.parameter.documentation [ fhir:value "The DDCC Folder that was created." ];
      fhir:OperationDefinition.parameter.type [ fhir:value "List" ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

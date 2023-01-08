@@ -7,19 +7,19 @@
 
 <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-icd10-disease-targeted> a fhir:ConceptMap;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "who-ddcc-map-icd11-icd10-disease-targeted"];
+  fhir:Resource.id [ fhir:value "who-ddcc-map-icd11-icd10-disease-targeted"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ICD_11_ICD_10_COVID19_Disease (http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-icd10-disease-targeted)</h2><p>Mapping from (not specified) to (not specified)</p><p>DRAFT (not intended for production usage). Published on 2021-04-23 by WHO (WHO: <a href=\"http://who.int\">http://who.int</a>). </p><div><p>Rule-based mappings between ICD-11 and ICD-10 for COVID-19 Disease or Agent Targeted</p>\n</div><br/><p><b>Group 1</b>Mapping from <a href=\"CodeSystem-DDCC-ICD11-CodeSystem.html\">DDCC Codes for ICD11</a> to <a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-icd10.html\">ICD-10</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>RA01 (COVID-19 Disease)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>U07.1 (COVID-19, virus identified)</td></tr></table></div>"
-  ];
-  fhir:ConceptMap.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-icd10-disease-targeted"];
-  fhir:ConceptMap.version [ fhir:value "1.0.0"];
-  fhir:ConceptMap.name [ fhir:value "ICD_11_ICD_10_COVID19_Disease"];
-  fhir:ConceptMap.title [ fhir:value "ConceptMap from ICD-10 to SNOMED CT for Disease or Agent Targeted"];
-  fhir:ConceptMap.status [ fhir:value "draft"];
-  fhir:ConceptMap.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:ConceptMap.date [ fhir:value "2021-04-23"^^xsd:date];
-  fhir:ConceptMap.publisher [ fhir:value "WHO"];
+  ]; # 
+  fhir:ConceptMap.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-icd10-disease-targeted"]; # 
+  fhir:ConceptMap.version [ fhir:value "1.0.0"]; # 
+  fhir:ConceptMap.name [ fhir:value "ICD_11_ICD_10_COVID19_Disease"]; # 
+  fhir:ConceptMap.title [ fhir:value "ConceptMap from ICD-10 to SNOMED CT for Disease or Agent Targeted"]; # 
+  fhir:ConceptMap.status [ fhir:value "draft"]; # 
+  fhir:ConceptMap.experimental [ fhir:value "true"^^xsd:boolean]; # 
+  fhir:ConceptMap.date [ fhir:value "2021-04-23"^^xsd:date]; # 
+  fhir:ConceptMap.publisher [ fhir:value "WHO"]; # 
   fhir:ConceptMap.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "WHO" ];
@@ -28,8 +28,8 @@
        fhir:ContactPoint.system [ fhir:value "url" ];
        fhir:ContactPoint.value [ fhir:value "http://who.int" ]
      ]
-  ];
-  fhir:ConceptMap.description [ fhir:value "Rule-based mappings between ICD-11 and ICD-10 for COVID-19 Disease or Agent Targeted"];
+  ]; # 
+  fhir:ConceptMap.description [ fhir:value "Rule-based mappings between ICD-11 and ICD-10 for COVID-19 Disease or Agent Targeted"]; # 
   fhir:ConceptMap.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -37,7 +37,7 @@
        fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
        fhir:Coding.code [ fhir:value "001" ]
      ]
-  ];
+  ]; # 
   fhir:ConceptMap.group [
      fhir:index 0;
      fhir:ConceptMap.group.source [ fhir:value "http://id.who.int/icd11/mms" ];
@@ -51,7 +51,7 @@
          fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
        ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

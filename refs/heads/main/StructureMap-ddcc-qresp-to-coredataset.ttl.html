@@ -51,8 +51,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"22.97"}
-    h3,h4,h5,h6{--heading-prefix:"22.97"}</style>
+    <style type="text/css">h2{--heading-prefix:"22.100"}
+    h3,h4,h5,h6{--heading-prefix:"22.100"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -180,11 +180,14 @@
 
 
 
+
+
 <ul class="nav nav-tabs">
 
   <li>
     <a href="StructureMap-ddcc-qresp-to-coredataset.html">Narrative Content</a>
   </li>
+
 
 
   
@@ -216,6 +219,21 @@
 
 
 <h2 id="root">: QRespToCoreDataSet - TTL Representation</h2>
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2023-01-08
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
 
 <p><a href="StructureMap-ddcc-qresp-to-coredataset.ttl" no-download="true">Raw ttl</a> | <a href="StructureMap-ddcc-qresp-to-coredataset.ttl" download>Download</a></p>
 
@@ -234,21 +252,21 @@
 
  a fhir:StructureMap;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
-  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;ddcc-qresp-to-coredataset&quot;];
+  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;ddcc-qresp-to-coredataset&quot;]; # 
   <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.versionId">fhir:Meta.versionId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;1&quot; ];
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">fhir:Meta.lastUpdated</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:value</a> &quot;2021-12-14T19:11:42.812+00:00&quot;^^xsd:dateTime ]
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
      fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;pre&gt;map &amp;quot;http://worldhealthorganization.github.io/ddcc/StructureMap/QRespToCoreDataSet&amp;quot; = &amp;quot;QRespToCoreDataSet&amp;quot;\r\n\r\n\r\nuses &amp;quot;http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse&amp;quot; alias QResp as source\r\nuses &amp;quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSetPoV&amp;quot; alias DDCCPoV as target\r\n\r\ngroup QRespToCoreDataSet(source qr : QResp, target ddcc : DDCCPoV) {\r\n  // qr.item as item where item.linkId = 'name' -&amp;gt; ddcc.name as name then {\r\n  //     log 'got answer';\r\n  //     item.answer first as answer -&amp;gt; name = answer.valueString;\r\n  //   };\r\n  qr as src then QRespToHeader(src, ddcc) &amp;quot;set header content&amp;quot;;\r\n  qr as src -&amp;gt; ddcc.vaccination as vaccination then QRespToVaccination(src, vaccination) &amp;quot;set vaccination content&amp;quot;;\r\n  qr as src -&amp;gt; ddcc.certificate as certificate then QRespToCertificate(src, certificate) &amp;quot;set certificate content&amp;quot;;\r\n}\r\n\r\ngroup QRespToHeader(source qr, target ddcc) {\r\n  qr.item as item then {\r\n    item.answer first as answer where item.linkId = 'name' then {\r\n      answer.valueString as content -&amp;gt; ddcc.name = content &amp;quot;set name&amp;quot;;\r\n    } &amp;quot;first answser for name&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'birthDate' then {\r\n      answer.valueDate as content -&amp;gt; ddcc.birthDate = content &amp;quot;set birthDate&amp;quot;;\r\n    } &amp;quot;first answer for birthDate&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'identifier' -&amp;gt; ddcc.identifier as identifier then {\r\n      answer.valueString as content -&amp;gt; identifier.value = content &amp;quot;set identifier&amp;quot;;\r\n    } &amp;quot;first answer for identifier&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'sex' then {\r\n      answer.valueCoding as coding then {\r\n        coding.code as content -&amp;gt; ddcc.sex = content &amp;quot;set sex&amp;quot;;\r\n      } &amp;quot;process coding&amp;quot;;\r\n    } &amp;quot;first answer for sex&amp;quot;;\r\n  } &amp;quot;header items&amp;quot;;\r\n}\r\n\r\ngroup QRespToVaccination(source qr, target vaccination) {\r\n  qr.item as item then {\r\n    item.answer first as answer where item.linkId = 'vaccine' then {\r\n      answer.valueCoding as content -&amp;gt; vaccination.vaccine = content &amp;quot;set vaccine&amp;quot;;\r\n    } &amp;quot;first answer for vaccine&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'brand' then {\r\n      answer.valueCoding as content -&amp;gt; vaccination.brand = content &amp;quot;set brand&amp;quot;;\r\n    } &amp;quot;first answer for brand&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'manufacturer' then {\r\n      answer.valueCoding as content -&amp;gt; vaccination.manufacturer = content &amp;quot;set manufacturer&amp;quot;;\r\n    } &amp;quot;first answer for manufacturer&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'ma_holder' then {\r\n      answer.valueCoding as content -&amp;gt; vaccination.maholder = content &amp;quot;set maholder&amp;quot;;\r\n    } &amp;quot;first answer for maholder&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'lot' then {\r\n      answer.valueString as content -&amp;gt; vaccination.lot = content &amp;quot;set lot&amp;quot;;\r\n    } &amp;quot;first answser for lot&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'date' then {\r\n      answer.valueDate as content -&amp;gt; vaccination.date = content &amp;quot;set date&amp;quot;;\r\n    } &amp;quot;first answer for date&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'vaccine_valid' then {\r\n      answer.valueDate as content -&amp;gt; vaccination.validFrom = content &amp;quot;set validFrom&amp;quot;;\r\n    } &amp;quot;first answer for validFrom&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'dose' then {\r\n      answer.valueInteger as content -&amp;gt; vaccination.dose = content &amp;quot;set dose&amp;quot;;\r\n    } &amp;quot;first answer for dose&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'total_doses' then {\r\n      answer.valueInteger as content -&amp;gt; vaccination.totalDoses = content &amp;quot;set totalDoses&amp;quot;;\r\n    } &amp;quot;first answer for totalDoses&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'country' then {\r\n      answer.valueCoding as content -&amp;gt; vaccination.country = content &amp;quot;set country&amp;quot;;\r\n    } &amp;quot;first answer for country&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'centre' then {\r\n      answer.valueString as content -&amp;gt; vaccination.centre = content &amp;quot;set centre&amp;quot;;\r\n    } &amp;quot;first answser for centre&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'hw' -&amp;gt; vaccination.practitioner as identifier then {\r\n      answer.valueString as content -&amp;gt; identifier.value = content &amp;quot;set practitioner&amp;quot;;\r\n    } &amp;quot;first answser for practitioner&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'disease' then {\r\n      answer.valueCoding as content -&amp;gt; vaccination.disease = content &amp;quot;set disease&amp;quot;;\r\n    } &amp;quot;first answer for disease&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'due_date' then {\r\n      answer.valueDate as content -&amp;gt; vaccination.nextDose = content &amp;quot;set nextDose&amp;quot;;\r\n    } &amp;quot;first answer for nextDose&amp;quot;;\r\n  } &amp;quot;vaccination items&amp;quot;;\r\n  qr as src -&amp;gt; vaccination.period as period then QRespToVaccinePeriod(src, period) &amp;quot;set vaccination period&amp;quot;;\r\n}\r\n\r\ngroup QRespToVaccinePeriod(source qr, target period) {\r\n  qr.item as item then {\r\n    item.answer first as answer where item.linkId = 'valid_from' then {\r\n      answer.valueDate as content -&amp;gt; period.start = content &amp;quot;set valid_from&amp;quot;;\r\n    } &amp;quot;first answer for valid_from&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'valid_until' then {\r\n      answer.valueDate as content -&amp;gt; period.end = content &amp;quot;set valid_until&amp;quot;;\r\n    } &amp;quot;first answer for valid_until&amp;quot;;\r\n  } &amp;quot;vaccination validity items&amp;quot;;\r\n}\r\n\r\ngroup QRespToCertificate(source qr, target certificate) {\r\n  qr.item as item then {\r\n    item.answer first as answer where item.linkId = 'pha' -&amp;gt; certificate.issuer as issuer then {\r\n      answer.valueString as content -&amp;gt; issuer.identifier as identifier then {\r\n        content as value -&amp;gt; identifier.value = value &amp;quot;set issuer identifier&amp;quot;;\r\n      } &amp;quot;set issuer&amp;quot;;\r\n    } &amp;quot;first answser for hcid&amp;quot;;\r\n    item.answer first as answer where item.linkId = 'hcid' -&amp;gt; certificate.hcid as hcid then {\r\n      answer.valueString as content -&amp;gt;  hcid.value = content,  certificate.version = 'RC2' &amp;quot;set hcid and version&amp;quot;;\r\n    } &amp;quot;first answser for hcid&amp;quot;;\r\n  } &amp;quot;certificate items&amp;quot;;\r\n}\r\n\r\n&lt;/pre&gt;&lt;/div&gt;&quot;
-  ];
-  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.url">fhir:StructureMap.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://worldhealthorganization.github.io/ddcc/StructureMap/QRespToCoreDataSet&quot;];
-  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.version">fhir:StructureMap.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;1.0.0&quot;];
-  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.name">fhir:StructureMap.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;QRespToCoreDataSet&quot;];
-  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.status">fhir:StructureMap.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;draft&quot;];
-  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.date">fhir:StructureMap.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2022-11-30T15:45:43+00:00&quot;^^xsd:dateTime];
-  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.publisher">fhir:StructureMap.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;WHO&quot;];
+  ]; # 
+  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.url">fhir:StructureMap.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://worldhealthorganization.github.io/ddcc/StructureMap/QRespToCoreDataSet&quot;]; # 
+  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.version">fhir:StructureMap.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;1.0.0&quot;]; # 
+  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.name">fhir:StructureMap.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;QRespToCoreDataSet&quot;]; # 
+  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.status">fhir:StructureMap.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;draft&quot;]; # 
+  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.date">fhir:StructureMap.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2023-01-08T23:46:44+00:00&quot;^^xsd:dateTime]; # 
+  <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.publisher">fhir:StructureMap.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;WHO&quot;]; # 
   <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.contact">fhir:StructureMap.contact</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;WHO&quot; ];
@@ -256,14 +274,14 @@
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
        <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;url&quot; ];
        <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;http://who.int&quot; ]     ]
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.jurisdiction">fhir:StructureMap.jurisdiction</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://unstats.un.org/unsd/methods/m49/m49.htm&quot; ];
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;001&quot; ]     ]
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure">fhir:StructureMap.structure</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.url">fhir:StructureMap.structure.url</a> [
@@ -278,7 +296,7 @@
        <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSetPoV&gt;     ];
      <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.mode">fhir:StructureMap.structure.mode</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;target&quot; ];
      <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.alias">fhir:StructureMap.structure.alias</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;DDCCPoV&quot; ]
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group">fhir:StructureMap.group</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.name">fhir:StructureMap.group.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;QRespToCoreDataSet&quot; ];
@@ -1105,7 +1123,7 @@
              <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">fhir:StructureMap.group.rule.target.parameter</a> [
                <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
                <a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">fhir:StructureMap.group.rule.target.parameter.valueString</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;RC2&quot; ]             ]           ]         ]       ]     ]
-  ].
+  ]. # 
 
 # - ontology header ------------------------------------------------------------
 
@@ -1143,9 +1161,9 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 30, 2022 15:45+0000">2022-11-30</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jan 8, 2023 23:46+0000">2023-01-08</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"></span>
+          <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                   | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/worldhealthorganization/ddcc/projects/1">Issues</a>
@@ -1170,6 +1188,8 @@
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   

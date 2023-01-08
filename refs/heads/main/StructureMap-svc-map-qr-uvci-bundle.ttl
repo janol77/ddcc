@@ -7,17 +7,17 @@
 
 <http://worldhealthorganization.github.io/ddcc/StructureMap/svc-map-qr-uvci-bundle> a fhir:StructureMap;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "svc-map-qr-uvci-bundle"];
+  fhir:Resource.id [ fhir:value "svc-map-qr-uvci-bundle"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n         <pre>map &quot;http://who-int.github.io/svc/StructureMap/svc-map-qr-uvci-bundle&quot; = &quot;svc-map-qr-uvci-bundle&quot;\n\nuses &quot;http://who-int.github.io/svc/refs/heads/qr-encoding/StructureDefinition/svc-qr-uvci&quot; alias QR as source\nuses &quot;http://who-int.github.io/svc/StructureDefinition/svc-bundle&quot; alias SVC_Bundle as target\nuses &quot;http://who-int.github.io/svc/StructureDefinition/svc-composition&quot; alias SVC_Composition as produced\nuses &quot;http://who-int.github.io/svc/StructureDefinition/svc-patient&quot; alias SVC_Patient as produced\nuses &quot;http://who-int.github.io/svc/StructureDefinition/svc-organization&quot; alias SVC_Organization as produced\nuses &quot;http://who-int.github.io/svc/StructureDefinition/svc-provenance&quot; alias SVC_Provenance as produced\n\ngroup Decode_QR(source qr : QR, target bundle) {\n  qr -&gt;  create('SVC_Patient') as patient,  create('SVC_Organization') as organization then Decode_QR_Patient(qr, patient), Decode_QR_Organization(qr, organization), Decode_QR_Bundle(qr, patient, organzation, bundle) &quot;Create resources and process bundle&quot;;\n}\n\ngroup Decode_QR_Patient(source qr : QR, target patient : SVC_Patient) {\n  qr.name as qrname, patient.name as pname -&gt;  pname.text = qrname,  pname.use = 'official' &quot;Load Name&quot;;\n  qr.pid as pid -&gt; patient.identifier = id('XXXXXurn:uetf:rfc:3986', pid) &quot;Load Patient Identifer&quot;;\n  qr.birthDate as birthDate -&gt; patient.birthDate = birthDate &quot;Load Birth Date&quot;;\n}\n\ngroup Decode_QR_Organization(source qr : QR, target organization : SVC_Organization) {\n  qr.phaid as phaid -&gt; organization.identifier = id('XXXXXurn:ietf:rfc:3986', phaid) &quot;Load PHA ID&quot;;\n}\n\ngroup Decode_QR_Bundle(source qr : QR, target patient : SVC_Patient, target bundle : SVC_Bundle) {\n  qr -&gt;  bundle.status = 'final',  bundle.type = 'document' &quot;Set Bundle Metadata&quot;;\n  qr.paperid as paperid -&gt; bundle.identifier = id('XXXXXurn:ietf:rfc:3986', paperid) &quot;Load Paper SVC ID&quot;;\n  qr.signature as qrsig, bundle.signature as bsig -&gt;  bsig.data = qrsig,  bsig.type = '1.2.840.10065.1.12.1.14',  bsig.format = 'XXXXXXX TBD',  bsig.who = reference(organization) &quot;Load Signature&quot;;\n  qr -&gt;  bundle.entry as e,  e.resource = create('SVC_Composition') as compostion then Decode_QR_Composition(qr, bundle, composition) &quot;Process Composition Entry&quot;;\n}\n\ngroup Decode_QR_Composition(source qr : QR, source ,, target bundle : SVC_Bundle, target patient : SVC_Patient, target organization : SVC_Organization, target composition : SVC_Composition) {\n  qr -&gt;  composition.subject = reference(patient),  composition.author = reference(organization) &quot;Set Composition Meta&quot;;\n  qr.digitalid as digitalid -&gt; composition.identifier = id('XXXXXurn:ietf:rfc:3986', digitalid) &quot;Load Digital SVC ID&quot;;\n}\n\ngroup Decode_QR_Provenance(source qr : QR, target bundle : SVC_Bundle, target patient : SVC_Patient, target organization : SVC_Organization, target paper : SVC_Composition, target digital : SVC_Composition, target provenance : SVC_Provenance) {\n  qr, provenance.entity as e_digital, provenance.agent as agent, provenance.signature as psig -&gt;  provenance.reason = 'PUBHLTH',  provenance.policy = 'XXXXXXX urn:example:who:smart:vaccine-certificate:RC1',  provenance.target = reference(bundle),  e_digital.role = 'source',  e_digital.what = reference(composition),  e_digital.agent = reference(organization),  e_paper.role = 'source',  e_paper.what = reference(bundle),  e_paper.agent = reference(organization),  psig.format = 'XXXXX TBD',  psig.who = reference(organization),  psg.type = '1.2.840.10065.1.12.1.14',  psig.data = signature then {\n    agent.who as who -&gt;  who.reference = reference(organization),  who.onBehalfOf = reference(patient) as &quot;Set who&quot;;\n  } &quot;Set provenance&quot;;\n}\n\n</pre>\n      </div>"
-  ];
-  fhir:StructureMap.url [ fhir:value "http://who-int.github.io/svc/StructureMap/svc-map-qr-uvci-bundle"];
-  fhir:StructureMap.version [ fhir:value "1.0.0"];
-  fhir:StructureMap.name [ fhir:value "svc-map-qr-uvci-bundle"];
-  fhir:StructureMap.status [ fhir:value "draft"];
-  fhir:StructureMap.date [ fhir:value "2022-03-23T21:03:35+00:00"^^xsd:dateTime];
-  fhir:StructureMap.publisher [ fhir:value "WHO"];
+  ]; # 
+  fhir:StructureMap.url [ fhir:value "http://who-int.github.io/svc/StructureMap/svc-map-qr-uvci-bundle"]; # 
+  fhir:StructureMap.version [ fhir:value "1.0.0"]; # 
+  fhir:StructureMap.name [ fhir:value "svc-map-qr-uvci-bundle"]; # 
+  fhir:StructureMap.status [ fhir:value "draft"]; # 
+  fhir:StructureMap.date [ fhir:value "2023-01-08T23:46:44+00:00"^^xsd:dateTime]; # 
+  fhir:StructureMap.publisher [ fhir:value "WHO"]; # 
   fhir:StructureMap.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "WHO" ];
@@ -26,7 +26,7 @@
        fhir:ContactPoint.system [ fhir:value "url" ];
        fhir:ContactPoint.value [ fhir:value "http://who.int" ]
      ]
-  ];
+  ]; # 
   fhir:StructureMap.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -34,7 +34,7 @@
        fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
        fhir:Coding.code [ fhir:value "001" ]
      ]
-  ];
+  ]; # 
   fhir:StructureMap.structure [
      fhir:index 0;
      fhir:StructureMap.structure.url [
@@ -83,7 +83,7 @@
      ];
      fhir:StructureMap.structure.mode [ fhir:value "produced" ];
      fhir:StructureMap.structure.alias [ fhir:value "SVC_Provenance" ]
-  ];
+  ]; # 
   fhir:StructureMap.group [
      fhir:index 0;
      fhir:StructureMap.group.name [ fhir:value "Decode_QR" ];
@@ -129,36 +129,76 @@
          fhir:StructureMap.group.rule.dependent.name [ fhir:value "Decode_QR_Patient" ];
          fhir:StructureMap.group.rule.dependent.variable [
            fhir:value "qr";
-           fhir:index 0
+           fhir:index 0;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/original-item-type" ];
+             fhir:Extension.valueUrl [ fhir:value "id" ]
+           ]
          ], [
            fhir:value "patient";
-           fhir:index 1
+           fhir:index 1;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/original-item-type" ];
+             fhir:Extension.valueUrl [ fhir:value "id" ]
+           ]
          ]
        ], [
          fhir:index 1;
          fhir:StructureMap.group.rule.dependent.name [ fhir:value "Decode_QR_Organization" ];
          fhir:StructureMap.group.rule.dependent.variable [
            fhir:value "qr";
-           fhir:index 0
+           fhir:index 0;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/original-item-type" ];
+             fhir:Extension.valueUrl [ fhir:value "id" ]
+           ]
          ], [
            fhir:value "organization";
-           fhir:index 1
+           fhir:index 1;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/original-item-type" ];
+             fhir:Extension.valueUrl [ fhir:value "id" ]
+           ]
          ]
        ], [
          fhir:index 2;
          fhir:StructureMap.group.rule.dependent.name [ fhir:value "Decode_QR_Bundle" ];
          fhir:StructureMap.group.rule.dependent.variable [
            fhir:value "qr";
-           fhir:index 0
+           fhir:index 0;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/original-item-type" ];
+             fhir:Extension.valueUrl [ fhir:value "id" ]
+           ]
          ], [
            fhir:value "patient";
-           fhir:index 1
+           fhir:index 1;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/original-item-type" ];
+             fhir:Extension.valueUrl [ fhir:value "id" ]
+           ]
          ], [
            fhir:value "organzation";
-           fhir:index 2
+           fhir:index 2;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/original-item-type" ];
+             fhir:Extension.valueUrl [ fhir:value "id" ]
+           ]
          ], [
            fhir:value "bundle";
-           fhir:index 3
+           fhir:index 3;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/original-item-type" ];
+             fhir:Extension.valueUrl [ fhir:value "id" ]
+           ]
          ]
        ]
      ]
@@ -451,13 +491,28 @@
          fhir:StructureMap.group.rule.dependent.name [ fhir:value "Decode_QR_Composition" ];
          fhir:StructureMap.group.rule.dependent.variable [
            fhir:value "qr";
-           fhir:index 0
+           fhir:index 0;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/original-item-type" ];
+             fhir:Extension.valueUrl [ fhir:value "id" ]
+           ]
          ], [
            fhir:value "bundle";
-           fhir:index 1
+           fhir:index 1;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/original-item-type" ];
+             fhir:Extension.valueUrl [ fhir:value "id" ]
+           ]
          ], [
            fhir:value "composition";
-           fhir:index 2
+           fhir:index 2;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/original-item-type" ];
+             fhir:Extension.valueUrl [ fhir:value "id" ]
+           ]
          ]
        ]
      ]
@@ -773,7 +828,7 @@
          ]
        ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 
