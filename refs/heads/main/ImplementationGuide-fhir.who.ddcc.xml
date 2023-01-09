@@ -41,17 +41,17 @@
   <dependsOn id="hl7_fhir_uv_ips">
     <uri value="http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips"/>
     <packageId value="hl7.fhir.uv.ips"/>
-    <version value="current"/>
+    <version value="1.1.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_uv_ipa">
     <uri value="http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa"/>
     <packageId value="hl7.fhir.uv.ipa"/>
-    <version value="current"/>
+    <version value="0.1.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_uv_sdc">
     <uri value="http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc"/>
     <packageId value="hl7.fhir.uv.sdc"/>
-    <version value="current"/>
+    <version value="3.0.0"/>
   </dependsOn>
   <dependsOn id="ihe_mhd_fhir">
     <uri value="http://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.mhd.fhir"/>
