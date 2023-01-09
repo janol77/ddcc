@@ -65,7 +65,7 @@
        fhir:link <http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips>
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.ips" ];
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "current" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.1.0" ]
   ], [
      fhir:index 2;
      fhir:Element.id [ fhir:value "hl7_fhir_uv_ipa" ];
@@ -74,7 +74,7 @@
        fhir:link <http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa>
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.ipa" ];
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "current" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "0.1.0" ]
   ], [
      fhir:index 3;
      fhir:Element.id [ fhir:value "hl7_fhir_uv_sdc" ];
@@ -83,7 +83,7 @@
        fhir:link <http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc>
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.sdc" ];
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "current" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "3.0.0" ]
   ], [
      fhir:index 4;
      fhir:Element.id [ fhir:value "ihe_mhd_fhir" ];

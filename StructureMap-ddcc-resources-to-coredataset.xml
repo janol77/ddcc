@@ -39,7 +39,7 @@ group NameToText(source src : HumanName, target tgt) {
   <version value="1.0.0"/>
   <name value="ResourcesToCoreDataSet"/>
   <status value="draft"/>
-  <date value="2023-01-08T23:46:44+00:00"/>
+  <date value="2023-01-09T00:16:31+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>

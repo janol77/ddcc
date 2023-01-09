@@ -43,19 +43,19 @@
     "id" : "hl7_fhir_uv_ips",
     "uri" : "http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips",
     "packageId" : "hl7.fhir.uv.ips",
-    "version" : "current"
+    "version" : "1.1.0"
   },
   {
     "id" : "hl7_fhir_uv_ipa",
     "uri" : "http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa",
     "packageId" : "hl7.fhir.uv.ipa",
-    "version" : "current"
+    "version" : "0.1.0"
   },
   {
     "id" : "hl7_fhir_uv_sdc",
     "uri" : "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc",
     "packageId" : "hl7.fhir.uv.sdc",
-    "version" : "current"
+    "version" : "3.0.0"
   },
   {
     "id" : "ihe_mhd_fhir",
