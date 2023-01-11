@@ -86,13 +86,13 @@
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "3.0.0" ]
   ], [
      fhir:index 4;
-     fhir:Element.id [ fhir:value "ihe_mhd_fhir" ];
+     fhir:Element.id [ fhir:value "iheitimhd" ];
      fhir:ImplementationGuide.dependsOn.uri [
-       fhir:value "http://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.mhd.fhir";
-       fhir:link <http://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.mhd.fhir>
+       fhir:value "https://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.iti.mhd";
+       fhir:link <https://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.iti.mhd>
      ];
-     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "ihe.mhd.fhir" ];
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "4.0.2" ]
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "ihe.iti.mhd" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "4.2.0" ]
   ]; # 
   fhir:ImplementationGuide.definition [
      fhir:Element.extension [

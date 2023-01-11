@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="ad86901f-d62f-4dae-8108-a708bfc640b0"/>
+  <id value="66981e33-f6ac-4654-a4ac-54285937be59"/>
   <meta>
-    <lastUpdated value="2023-01-09T00:16:31.890+00:00"/>
+    <lastUpdated value="2023-01-11T14:19:24.455+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -351,8 +351,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:048a8fef-4773-46a4-9a8d-af338f23618d"/>
-          <timestamp value="2023-01-09T00:17:35+00:00"/>
+          <identifier value="urn:uuid:ba32c692-d109-4537-b792-34f468087773"/>
+          <timestamp value="2023-01-11T14:20:41+00:00"/>
           <total value="37"/>
           <parameter>
             <name value="excludeNested"/>
@@ -599,7 +599,7 @@
         <name value="WHO_DDCC_Test_Result_COVID_19"/>
         <title value="WHO Test Result (COVID-19)"/>
         <status value="draft"/>
-        <date value="2023-01-09T00:16:31+00:00"/>
+        <date value="2023-01-11T14:19:24+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -616,8 +616,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:77654f66-bc79-4f92-af42-4e7e60308c76"/>
-          <timestamp value="2023-01-09T00:17:43+00:00"/>
+          <identifier value="urn:uuid:f9c0ee78-7b90-4ad8-925a-d3040fef13d6"/>
+          <timestamp value="2023-01-11T14:20:46+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -721,7 +721,7 @@
         <name value="DDCC_QR_Type_ValueSet"/>
         <title value="DDCC QR Type Codes"/>
         <status value="active"/>
-        <date value="2023-01-09T00:16:31+00:00"/>
+        <date value="2023-01-11T14:19:24+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -738,8 +738,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9d168c3d-7e53-4c09-88a8-0f36d2b954ec"/>
-          <timestamp value="2023-01-09T00:17:50+00:00"/>
+          <identifier value="urn:uuid:a8856501-2339-4437-a72f-c0cf8c227178"/>
+          <timestamp value="2023-01-11T14:20:51+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -919,7 +919,7 @@
         <name value="DIVOC_ValueSet"/>
         <title value="COVID-19 Vaccine Codes for DIVOC"/>
         <status value="draft"/>
-        <date value="2023-01-09T00:16:31+00:00"/>
+        <date value="2023-01-11T14:19:24+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -936,8 +936,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7262e0b6-7eb2-481a-809e-71ae0320c927"/>
-          <timestamp value="2023-01-09T00:17:50+00:00"/>
+          <identifier value="urn:uuid:1fdc2c2f-4628-4990-9684-620aee3826a8"/>
+          <timestamp value="2023-01-11T14:20:51+00:00"/>
           <total value="13"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1072,7 +1072,7 @@
         <name value="DDCC_QR_Format_ValueSet"/>
         <title value="DDCC QR Format Codes"/>
         <status value="active"/>
-        <date value="2023-01-09T00:16:31+00:00"/>
+        <date value="2023-01-11T14:19:24+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -1089,8 +1089,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7b9e329b-625a-4fab-aa21-c38a68652e84"/>
-          <timestamp value="2023-01-09T00:17:52+00:00"/>
+          <identifier value="urn:uuid:77b8fe48-a359-4d14-b629-a395bdab5280"/>
+          <timestamp value="2023-01-11T14:20:52+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1167,7 +1167,7 @@
         <name value="DDCC_Device_Property_ValueSet"/>
         <title value="DDCC Device Property Codes"/>
         <status value="active"/>
-        <date value="2023-01-09T00:16:31+00:00"/>
+        <date value="2023-01-11T14:19:24+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -1184,8 +1184,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:882c98e1-295f-45d7-a80f-d0c6b77a41f8"/>
-          <timestamp value="2023-01-09T00:17:56+00:00"/>
+          <identifier value="urn:uuid:14964ae6-dbd5-4dd7-87cf-c0ebc12cd4a0"/>
+          <timestamp value="2023-01-11T14:20:54+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1249,7 +1249,7 @@
         <name value="WHO_DDCC_Disease_Targeted_COVID_19"/>
         <title value="WHO Disease or Agent Targeted (COVID-19)"/>
         <status value="draft"/>
-        <date value="2023-01-09T00:16:31+00:00"/>
+        <date value="2023-01-11T14:19:24+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -1266,8 +1266,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8676bc6b-a514-42f7-81c1-151670e5fcad"/>
-          <timestamp value="2023-01-09T00:17:56+00:00"/>
+          <identifier value="urn:uuid:4d58349e-54b2-4cca-abf9-273f62f60631"/>
+          <timestamp value="2023-01-11T14:20:54+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1326,7 +1326,7 @@
         <name value="DDCC_Folder_DesignationType_ValueSet"/>
         <title value="DDCC DesignationTypes for Folder"/>
         <status value="active"/>
-        <date value="2023-01-09T00:16:31+00:00"/>
+        <date value="2023-01-11T14:19:24+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -1343,8 +1343,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:cab7382e-1f73-469a-9429-943411588f4a"/>
-          <timestamp value="2023-01-09T00:18:37+00:00"/>
+          <identifier value="urn:uuid:da5a2b57-a0d7-4f92-b985-b0f8c057897e"/>
+          <timestamp value="2023-01-11T14:21:19+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1411,7 +1411,7 @@
         <name value="DDCC_Composition_Category_ValueSet"/>
         <title value="DDCC Composition Category Codes"/>
         <status value="active"/>
-        <date value="2023-01-09T00:16:31+00:00"/>
+        <date value="2023-01-11T14:19:24+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -1428,8 +1428,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4a779cee-8a30-40c8-a535-d647001c3c8e"/>
-          <timestamp value="2023-01-09T00:18:50+00:00"/>
+          <identifier value="urn:uuid:457dd0e2-fbc4-47e4-9281-2fcfb5bdcbea"/>
+          <timestamp value="2023-01-11T14:21:23+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1645,7 +1645,7 @@
         <name value="WHO_DDCC_Brands_COVID_19"/>
         <title value="WHO DDCC Brand List (COVID-19)"/>
         <status value="draft"/>
-        <date value="2023-01-09T00:16:31+00:00"/>
+        <date value="2023-01-11T14:19:24+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -1662,8 +1662,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a063017e-f135-4296-836e-868aab1f78b7"/>
-          <timestamp value="2023-01-09T00:19:17+00:00"/>
+          <identifier value="urn:uuid:90050e40-bf19-4b05-82a1-b9a912f7c488"/>
+          <timestamp value="2023-01-11T14:21:38+00:00"/>
           <total value="20"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2585,7 +2585,7 @@
         <name value="ICAOV1_ValueSet"/>
         <title value="DDCC Codes for ICAO Vaccines"/>
         <status value="draft"/>
-        <date value="2023-01-09T00:16:31+00:00"/>
+        <date value="2023-01-11T14:19:24+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -2602,8 +2602,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1c60aed8-1386-498c-acf7-2c22e90f073d"/>
-          <timestamp value="2023-01-09T00:19:20+00:00"/>
+          <identifier value="urn:uuid:7e4f3fcd-48ea-475f-928b-b6d8f8f9a8ce"/>
+          <timestamp value="2023-01-11T14:21:39+00:00"/>
           <total value="97"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3246,7 +3246,7 @@
         <name value="WHO_DDCC_Agent_Targeted_COVID_19"/>
         <title value="WHO Agent Targeted (COVID-19)"/>
         <status value="draft"/>
-        <date value="2023-01-09T00:16:31+00:00"/>
+        <date value="2023-01-11T14:19:24+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -3263,8 +3263,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ae33e296-91e7-4c2a-8047-346623ad7fcd"/>
-          <timestamp value="2023-01-09T00:19:20+00:00"/>
+          <identifier value="urn:uuid:d567178c-c667-449f-b1aa-a8baf2ebc2a8"/>
+          <timestamp value="2023-01-11T14:21:39+00:00"/>
           <total value="14"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3644,7 +3644,7 @@
         <name value="WHO_DDCC_Allowed_Vaccines_COVID_19"/>
         <title value="WHO DDCC Allowed Vaccine List (COVID-19)"/>
         <status value="draft"/>
-        <date value="2023-01-09T00:16:31+00:00"/>
+        <date value="2023-01-11T14:19:24+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -3661,8 +3661,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:098af2fb-a896-4a92-9560-4000b88030da"/>
-          <timestamp value="2023-01-09T00:19:54+00:00"/>
+          <identifier value="urn:uuid:fd07ace3-8c31-489d-9466-b580ea521e88"/>
+          <timestamp value="2023-01-11T14:21:51+00:00"/>
           <total value="32"/>
           <parameter>
             <name value="excludeNested"/>
@@ -4132,7 +4132,7 @@
         <name value="WHO_DDCC_Vaccines_COVID_19"/>
         <title value="WHO Vaccine List (COVID-19)"/>
         <status value="draft"/>
-        <date value="2023-01-09T00:16:31+00:00"/>
+        <date value="2023-01-11T14:19:24+00:00"/>
         <publisher value="WHO"/>
         <contact>
           <name value="WHO"/>
@@ -4149,8 +4149,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2adb94a9-11ab-4bfb-9c1e-b11d5a0acec8"/>
-          <timestamp value="2023-01-09T00:19:54+00:00"/>
+          <identifier value="urn:uuid:cfcdf5c8-deb4-4e96-9eba-6971a751b436"/>
+          <timestamp value="2023-01-11T14:21:51+00:00"/>
           <total value="31"/>
           <parameter>
             <name value="excludeNested"/>

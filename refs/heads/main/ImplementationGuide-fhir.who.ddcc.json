@@ -58,10 +58,10 @@
     "version" : "3.0.0"
   },
   {
-    "id" : "ihe_mhd_fhir",
-    "uri" : "http://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.mhd.fhir",
-    "packageId" : "ihe.mhd.fhir",
-    "version" : "4.0.2"
+    "id" : "iheitimhd",
+    "uri" : "https://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.iti.mhd",
+    "packageId" : "ihe.iti.mhd",
+    "version" : "4.2.0"
   }],
   "definition" : {
     "extension" : [{

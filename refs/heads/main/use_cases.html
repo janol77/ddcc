@@ -184,53 +184,53 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   
   <div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Continuity of Care</a></li><li><a href="#2">Proof of Vaccination</a></li><li><a href="#3">Proof Scenarios of the DDCC:TR</a></li></ul></div>
 
-  <ns0:p xmlns:ns0="http://www.w3.org/1999/xhtml" style="background-color: #ffefef; border:1px solid maroon; padding: 5px;max-width: 790px;">
-    For the latest published guidance, refer to the <ns1:a xmlns:ns1="http://www.w3.org/1999/xhtml" href="https://www.who.int/publications/i/item/WHO-2019-nCoV-Digital_certificates-vaccination-2021.1">Digital Documentation of COVID-19 Certificates (DDCC): Vaccination Status (DDCC:VS) </ns1:a> and the <ns2:a xmlns:ns2="http://www.w3.org/1999/xhtml" href="https://www.who.int/publications/i/item/WHO-2019-nCoV-Digital_certificates_diagnostic_test_results-2022.1">Digital Documentation of COVID-19 Certificates (DDCC): Test Result (DDCC:TR)</ns2:a> Technical Specifications and Implementation Guidance.
-  </ns0:p>
+  <p style="background-color: #ffefef; border:1px solid maroon; padding: 5px;max-width: 790px;">
+    For the latest published guidance, refer to the <a href="https://www.who.int/publications/i/item/WHO-2019-nCoV-Digital_certificates-vaccination-2021.1">Digital Documentation of COVID-19 Certificates (DDCC): Vaccination Status (DDCC:VS) </a> and the <a href="https://www.who.int/publications/i/item/WHO-2019-nCoV-Digital_certificates_diagnostic_test_results-2022.1">Digital Documentation of COVID-19 Certificates (DDCC): Test Result (DDCC:TR)</a> Technical Specifications and Implementation Guidance.
+  </p>
   
-  <ns3:p xmlns:ns3="http://www.w3.org/1999/xhtml">The scope of this implementation guide covers two scenarios of use for the DDCC:VS and two for the DDCC:TR. For the scenarios, it will be up to Member States to define the purposes for which the scenario is applied and adapted to their own contexts and levels of digital maturity, in compliance with their legal and policy frameworks.</ns3:p>
-  <ns4:p xmlns:ns4="http://www.w3.org/1999/xhtml"><ns5:b xmlns:ns5="http://www.w3.org/1999/xhtml">For the DDCC:VS:</ns5:b></ns4:p>
-  <ns6:ol xmlns:ns6="http://www.w3.org/1999/xhtml">
-    <ns7:li xmlns:ns7="http://www.w3.org/1999/xhtml"><ns8:b xmlns:ns8="http://www.w3.org/1999/xhtml">Continuity of Care:</ns8:b> Vaccination records are an important part of an individual’s medical records, starting at birth. The Continuity of Care scenario describes the primary purpose of a vaccination certificate. The vaccination record shows individuals and caregivers which vaccinations an individual has received, as part of that individual’s medical history; it therefore supports informed decision-making on any future health service provision.</ns7:li>
-    <ns9:li xmlns:ns9="http://www.w3.org/1999/xhtml"><ns10:b xmlns:ns10="http://www.w3.org/1999/xhtml">Proof of Vaccination:</ns10:b> Vaccination records can also provide proof of vaccination status for purposes not related to health care.</ns9:li> 
-  </ns6:ol>
+  <p>The scope of this implementation guide covers two scenarios of use for the DDCC:VS and two for the DDCC:TR. For the scenarios, it will be up to Member States to define the purposes for which the scenario is applied and adapted to their own contexts and levels of digital maturity, in compliance with their legal and policy frameworks.</p>
+  <p><b>For the DDCC:VS:</b></p>
+  <ol>
+    <li><b>Continuity of Care:</b> Vaccination records are an important part of an individual’s medical records, starting at birth. The Continuity of Care scenario describes the primary purpose of a vaccination certificate. The vaccination record shows individuals and caregivers which vaccinations an individual has received, as part of that individual’s medical history; it therefore supports informed decision-making on any future health service provision.</li>
+    <li><b>Proof of Vaccination:</b> Vaccination records can also provide proof of vaccination status for purposes not related to health care.</li> 
+  </ol>
   
-  <ns11:p xmlns:ns11="http://www.w3.org/1999/xhtml"><ns12:b xmlns:ns12="http://www.w3.org/1999/xhtml">For the DDCC:TR:</ns12:b></ns11:p>
+  <p><b>For the DDCC:TR:</b></p>
 
-  <ns13:ol xmlns:ns13="http://www.w3.org/1999/xhtml">
-    <ns14:li xmlns:ns14="http://www.w3.org/1999/xhtml"><ns15:b xmlns:ns15="http://www.w3.org/1999/xhtml">Proof of Negative SARS-CoV-2 Test Result:</ns15:b> Test result certificates can be used as documented evidence of a negative test result when SARS-CoV-2 is not detected by a SARS-CoV-2 diagnostic test for viral detection (e.g. a nucleic acid amplification test (NAAT) or an antigen detection rapid diagnostic test (Ag-RDT)).</ns14:li>
-    <ns16:li xmlns:ns16="http://www.w3.org/1999/xhtml"><ns17:b xmlns:ns17="http://www.w3.org/1999/xhtml">Proof of Previous SARS-CoV-2 Infection:</ns17:b> Test result certificates can also be used as documented evidence of a previous SARS-CoV-2 infection with a positive result from a SARS-Cov-2 diagnostic test for viral detection (e.g. NAAT or Ag-RDT).<ns18:br xmlns:ns18="http://www.w3.org/1999/xhtml"/>
+  <ol>
+    <li><b>Proof of Negative SARS-CoV-2 Test Result:</b> Test result certificates can be used as documented evidence of a negative test result when SARS-CoV-2 is not detected by a SARS-CoV-2 diagnostic test for viral detection (e.g. a nucleic acid amplification test (NAAT) or an antigen detection rapid diagnostic test (Ag-RDT)).</li>
+    <li><b>Proof of Previous SARS-CoV-2 Infection:</b> Test result certificates can also be used as documented evidence of a previous SARS-CoV-2 infection with a positive result from a SARS-Cov-2 diagnostic test for viral detection (e.g. NAAT or Ag-RDT).<br/>
       Note: This proof does not provide information on infectiousness, transmission risk; or recovery from SARS-CoV-2 infection.
-        </ns16:li>
+        </li>
     
-  </ns13:ol>
+  </ol>
   
-  <a name="1"/><ns19:h3 xmlns:ns19="http://www.w3.org/1999/xhtml" id="use-case-care">Continuity of Care</ns19:h3> <a name="use-case-care">  </a>
-      <ns20:table xmlns:ns20="http://www.w3.org/1999/xhtml" class="list">
-      <ns21:tr xmlns:ns21="http://www.w3.org/1999/xhtml"><ns22:th xmlns:ns22="http://www.w3.org/1999/xhtml" width="100">Use case ID</ns22:th><ns23:th xmlns:ns23="http://www.w3.org/1999/xhtml" width="120">Use case name</ns23:th><ns24:th xmlns:ns24="http://www.w3.org/1999/xhtml">Use case description</ns24:th></ns21:tr>
-      <ns25:tr xmlns:ns25="http://www.w3.org/1999/xhtml"><ns26:td xmlns:ns26="http://www.w3.org/1999/xhtml">UC001</ns26:td><ns27:td xmlns:ns27="http://www.w3.org/1999/xhtml">Paper first</ns27:td><ns28:td xmlns:ns28="http://www.w3.org/1999/xhtml">A guideline-based vaccine administration is recorded on paper. After the vaccination event, data about it can be entered into a Digital Health Solution.</ns28:td></ns25:tr>
-      <ns29:tr xmlns:ns29="http://www.w3.org/1999/xhtml"><ns30:td xmlns:ns30="http://www.w3.org/1999/xhtml">UC002</ns30:td><ns31:td xmlns:ns31="http://www.w3.org/1999/xhtml">Offline digital</ns31:td><ns32:td xmlns:ns32="http://www.w3.org/1999/xhtml">A guideline-based vaccine administration is recorded using an offline secure Digital Health Solution, with the content uploaded, subsequently, to an online Digital Health Solution.</ns32:td></ns29:tr>
-      <ns33:tr xmlns:ns33="http://www.w3.org/1999/xhtml"><ns34:td xmlns:ns34="http://www.w3.org/1999/xhtml">UC003</ns34:td><ns35:td xmlns:ns35="http://www.w3.org/1999/xhtml">Online digital</ns35:td><ns36:td xmlns:ns36="http://www.w3.org/1999/xhtml">A guideline-based vaccine administration is recorded using an online secure Digital Health Solution which updates the content in real time.</ns36:td></ns33:tr>
-    </ns20:table>
+  <a name="1"/><h3 id="use-case-care">Continuity of Care</h3> <a name="use-case-care">  </a>
+      <table class="list">
+      <tr><th width="100">Use case ID</th><th width="120">Use case name</th><th>Use case description</th></tr>
+      <tr><td>UC001</td><td>Paper first</td><td>A guideline-based vaccine administration is recorded on paper. After the vaccination event, data about it can be entered into a Digital Health Solution.</td></tr>
+      <tr><td>UC002</td><td>Offline digital</td><td>A guideline-based vaccine administration is recorded using an offline secure Digital Health Solution, with the content uploaded, subsequently, to an online Digital Health Solution.</td></tr>
+      <tr><td>UC003</td><td>Online digital</td><td>A guideline-based vaccine administration is recorded using an online secure Digital Health Solution which updates the content in real time.</td></tr>
+    </table>
 
-  <a name="2"/><ns37:h3 xmlns:ns37="http://www.w3.org/1999/xhtml" id="use-case-proof-vs">Proof of Vaccination</ns37:h3> <a name="use-case-proof-vs">  </a>  
-     <ns38:table xmlns:ns38="http://www.w3.org/1999/xhtml" class="list">
-      <ns39:tr xmlns:ns39="http://www.w3.org/1999/xhtml"><ns40:th xmlns:ns40="http://www.w3.org/1999/xhtml" width="100">Use case ID</ns40:th><ns41:th xmlns:ns41="http://www.w3.org/1999/xhtml" width="120">Use case name</ns41:th><ns42:th xmlns:ns42="http://www.w3.org/1999/xhtml">Use case description</ns42:th></ns39:tr>
-      <ns43:tr xmlns:ns43="http://www.w3.org/1999/xhtml"><ns44:td xmlns:ns44="http://www.w3.org/1999/xhtml">VS006</ns44:td><ns45:td xmlns:ns45="http://www.w3.org/1999/xhtml">Manual verification</ns45:td><ns46:td xmlns:ns46="http://www.w3.org/1999/xhtml">A Verifier verifies a DDCC:VS using purely visual means, based on his or her subjective judgement, as is currently done with International Certificate of Vaccination or Prophylaxis. This type of check is currently well accepted, is quick and easy to do, and requires no digital technology.</ns46:td></ns43:tr>
-      <ns47:tr xmlns:ns47="http://www.w3.org/1999/xhtml"><ns48:td xmlns:ns48="http://www.w3.org/1999/xhtml">VS007</ns48:td><ns49:td xmlns:ns49="http://www.w3.org/1999/xhtml">Offline cryptographic verification</ns49:td><ns50:td xmlns:ns50="http://www.w3.org/1999/xhtml">A Verifier verifies a DDCC:VS using digital cryptographic processes in an offline mode.</ns50:td></ns47:tr>
-      <ns51:tr xmlns:ns51="http://www.w3.org/1999/xhtml"><ns52:td xmlns:ns52="http://www.w3.org/1999/xhtml">VS008</ns52:td><ns53:td xmlns:ns53="http://www.w3.org/1999/xhtml">Online status check (national DDCC:VS)</ns53:td><ns54:td xmlns:ns54="http://www.w3.org/1999/xhtml">This pathway is used when the DDCC:VS is being verified in the same jurisdiction as it was issued. A Verifier verifies a DDCC:VS using digital cryptographic processes in an online mode that includes a status check against the PHA’s DDCC:VS Registry Service and optionally the DDCC:VS Repository.</ns54:td></ns51:tr>
-      <ns55:tr xmlns:ns55="http://www.w3.org/1999/xhtml"><ns56:td xmlns:ns56="http://www.w3.org/1999/xhtml">VS009</ns56:td><ns57:td xmlns:ns57="http://www.w3.org/1999/xhtml">Online status check (international DDCC:VS)</ns57:td><ns58:td xmlns:ns58="http://www.w3.org/1999/xhtml">This pathway is used when the DDCC:VS is being verified in a foreign jurisdiction to where it was issued. A Verifier verifies an internationally issued DDCC:VS using digital cryptographic processes in an online mode that includes a status check against the National PHA’s DDCC:VS Registry Service, which in turn accesses an International PHA’s DDCC:VS Registry and DDCC:VS Repository, if such services exist and such access is authorized by the issuing PHA. It is assumed in this workflow that a Verifier does not directly access an International PHA’s DDCC:VS Registry or Repository Service.</ns58:td></ns55:tr>
-    </ns38:table>
+  <a name="2"/><h3 id="use-case-proof-vs">Proof of Vaccination</h3> <a name="use-case-proof-vs">  </a>  
+     <table class="list">
+      <tr><th width="100">Use case ID</th><th width="120">Use case name</th><th>Use case description</th></tr>
+      <tr><td>VS006</td><td>Manual verification</td><td>A Verifier verifies a DDCC:VS using purely visual means, based on his or her subjective judgement, as is currently done with International Certificate of Vaccination or Prophylaxis. This type of check is currently well accepted, is quick and easy to do, and requires no digital technology.</td></tr>
+      <tr><td>VS007</td><td>Offline cryptographic verification</td><td>A Verifier verifies a DDCC:VS using digital cryptographic processes in an offline mode.</td></tr>
+      <tr><td>VS008</td><td>Online status check (national DDCC:VS)</td><td>This pathway is used when the DDCC:VS is being verified in the same jurisdiction as it was issued. A Verifier verifies a DDCC:VS using digital cryptographic processes in an online mode that includes a status check against the PHA’s DDCC:VS Registry Service and optionally the DDCC:VS Repository.</td></tr>
+      <tr><td>VS009</td><td>Online status check (international DDCC:VS)</td><td>This pathway is used when the DDCC:VS is being verified in a foreign jurisdiction to where it was issued. A Verifier verifies an internationally issued DDCC:VS using digital cryptographic processes in an online mode that includes a status check against the National PHA’s DDCC:VS Registry Service, which in turn accesses an International PHA’s DDCC:VS Registry and DDCC:VS Repository, if such services exist and such access is authorized by the issuing PHA. It is assumed in this workflow that a Verifier does not directly access an International PHA’s DDCC:VS Registry or Repository Service.</td></tr>
+    </table>
   
-  <a name="3"/><ns59:h3 xmlns:ns59="http://www.w3.org/1999/xhtml" id="use-case-proof-tr">Proof Scenarios of the DDCC:TR</ns59:h3> <a name="use-case-proof-tr">  </a>  
-  <ns60:p xmlns:ns60="http://www.w3.org/1999/xhtml">It will be up to the Member State to determine the business rules for acceptance of a test result certificate and the validity period for each proof scenario for domestic and/or international use cases. Validity period is determined by the policies of the country that the certificate is going to be used in.</ns60:p>
-    <ns61:table xmlns:ns61="http://www.w3.org/1999/xhtml" class="list">
-      <ns62:tr xmlns:ns62="http://www.w3.org/1999/xhtml"><ns63:th xmlns:ns63="http://www.w3.org/1999/xhtml" width="100">Use case ID</ns63:th><ns64:th xmlns:ns64="http://www.w3.org/1999/xhtml" width="120">Use case name</ns64:th><ns65:th xmlns:ns65="http://www.w3.org/1999/xhtml">Use case description</ns65:th></ns62:tr>
-      <ns66:tr xmlns:ns66="http://www.w3.org/1999/xhtml"><ns67:td xmlns:ns67="http://www.w3.org/1999/xhtml">TR001</ns67:td><ns68:td xmlns:ns68="http://www.w3.org/1999/xhtml">Manual verification</ns68:td><ns69:td xmlns:ns69="http://www.w3.org/1999/xhtml">A Verifier verifies and validates a DDCC:TR based on its human-readable content using purely visual means, based on their subjective judgement. This type of check is common, currently well accepted, is quick and easy to do, and requires no digital technology.</ns69:td></ns66:tr>
-      <ns70:tr xmlns:ns70="http://www.w3.org/1999/xhtml"><ns71:td xmlns:ns71="http://www.w3.org/1999/xhtml">TR002</ns71:td><ns72:td xmlns:ns72="http://www.w3.org/1999/xhtml">Offline cryptographic verification</ns72:td><ns73:td xmlns:ns73="http://www.w3.org/1999/xhtml">A Verifier verifies and validates a DDCC:TR using digital cryptographic processes in an offline mode.</ns73:td></ns70:tr>
-      <ns74:tr xmlns:ns74="http://www.w3.org/1999/xhtml"><ns75:td xmlns:ns75="http://www.w3.org/1999/xhtml">TR003</ns75:td><ns76:td xmlns:ns76="http://www.w3.org/1999/xhtml">Online status check (national DDCC:TR)</ns76:td><ns77:td xmlns:ns77="http://www.w3.org/1999/xhtml">This pathway is used when the DDCC:TR is being verified and validated in the same jurisdiction as it was issued. A Verifier verifies and validates a DDCC:TR using digital cryptographic processes in an online mode that includes a status check against the PHA’s DDCC Registry Service and optionally the DDCC:TR Repository.</ns77:td></ns74:tr>
-      <ns78:tr xmlns:ns78="http://www.w3.org/1999/xhtml"><ns79:td xmlns:ns79="http://www.w3.org/1999/xhtml">TR004</ns79:td><ns80:td xmlns:ns80="http://www.w3.org/1999/xhtml">Online status check (international DDCC:TR)</ns80:td><ns81:td xmlns:ns81="http://www.w3.org/1999/xhtml">This pathway is used when the DDCC:TR is being verified in a foreign jurisdiction to where it was issued. A Verifier verifies and validates an internationally issued DDCC:TR using digital cryptographic processes in an online mode that includes a status check against the National PHA’s DDCC Registry Service, which in turn accesses an International PHA’s DDCC:TR Registry and DDCC:TR Repository, if such services exist and such access is authorized by the issuing PHA. It is assumed in this workflow that a Verifier does not directly access an International PHA’s DDCC:TR Registry or Repository Service.</ns81:td></ns78:tr>
-    </ns61:table>
+  <a name="3"/><h3 id="use-case-proof-tr">Proof Scenarios of the DDCC:TR</h3> <a name="use-case-proof-tr">  </a>  
+  <p>It will be up to the Member State to determine the business rules for acceptance of a test result certificate and the validity period for each proof scenario for domestic and/or international use cases. Validity period is determined by the policies of the country that the certificate is going to be used in.</p>
+    <table class="list">
+      <tr><th width="100">Use case ID</th><th width="120">Use case name</th><th>Use case description</th></tr>
+      <tr><td>TR001</td><td>Manual verification</td><td>A Verifier verifies and validates a DDCC:TR based on its human-readable content using purely visual means, based on their subjective judgement. This type of check is common, currently well accepted, is quick and easy to do, and requires no digital technology.</td></tr>
+      <tr><td>TR002</td><td>Offline cryptographic verification</td><td>A Verifier verifies and validates a DDCC:TR using digital cryptographic processes in an offline mode.</td></tr>
+      <tr><td>TR003</td><td>Online status check (national DDCC:TR)</td><td>This pathway is used when the DDCC:TR is being verified and validated in the same jurisdiction as it was issued. A Verifier verifies and validates a DDCC:TR using digital cryptographic processes in an online mode that includes a status check against the PHA’s DDCC Registry Service and optionally the DDCC:TR Repository.</td></tr>
+      <tr><td>TR004</td><td>Online status check (international DDCC:TR)</td><td>This pathway is used when the DDCC:TR is being verified in a foreign jurisdiction to where it was issued. A Verifier verifies and validates an internationally issued DDCC:TR using digital cryptographic processes in an online mode that includes a status check against the National PHA’s DDCC Registry Service, which in turn accesses an International PHA’s DDCC:TR Registry and DDCC:TR Repository, if such services exist and such access is authorized by the issuing PHA. It is assumed in this workflow that a Verifier does not directly access an International PHA’s DDCC:TR Registry or Repository Service.</td></tr>
+    </table>
   
 </div>
 </div>
@@ -255,7 +255,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 9, 2023 00:16+0000">2023-01-09</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package fhir.who.ddcc#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jan 11, 2023 14:19+0000">2023-01-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
