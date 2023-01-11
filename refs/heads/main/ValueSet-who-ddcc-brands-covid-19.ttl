@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "WHO_DDCC_Brands_COVID_19"]; # 
   fhir:ValueSet.title [ fhir:value "WHO DDCC Brand List (COVID-19)"]; # 
   fhir:ValueSet.status [ fhir:value "draft"]; # 
-  fhir:ValueSet.date [ fhir:value "2023-01-11T14:19:24+00:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.date [ fhir:value "2023-01-11T17:29:28+00:00"^^xsd:dateTime]; # 
   fhir:ValueSet.publisher [ fhir:value "WHO"]; # 
   fhir:ValueSet.contact [
      fhir:index 0;

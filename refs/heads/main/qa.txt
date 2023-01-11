@@ -3,7 +3,7 @@
 
 err = 696, warn = 106, info = 27
 IG Publisher Version: 1.2.22 Out of date - current version is 1.2.26
-Generated Wed Jan 11 14:24:04 UTC 2023. FHIR version 4.0.1 for fhir.who.ddcc#1.0.0 (canonical = http://worldhealthorganization.github.io/ddcc)
+Generated Wed Jan 11 17:33:31 UTC 2023. FHIR version 4.0.1 for fhir.who.ddcc#1.0.0 (canonical = http://worldhealthorganization.github.io/ddcc)
  Build Errors : 76 / 72 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 0 / 0 / 10
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Arabic : 0 / 0 / 10
@@ -253,8 +253,8 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/svc-map-qr-uvci-bundle.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/svc-map-qr-uvci-bundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/Questionnaire-DDCCHCIDRegistrationQuestionnaire-form.html: unexpected non-end of element null::div  at line 243 column 259
-ERROR: /github/workspace/output/Questionnaire-DDCCTRCoreDataSetQuestionnaire-form.html: unexpected non-end of element null::div  at line 243 column 253
 ERROR: /github/workspace/output/Questionnaire-DDCCVSCoreDataSetQuestionnaire-form.html: unexpected non-end of element null::div  at line 243 column 253
+ERROR: /github/workspace/output/Questionnaire-DDCCTRCoreDataSetQuestionnaire-form.html: unexpected non-end of element null::div  at line 243 column 253
 ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 563, column 115: The link 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 756, column 115: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCImmunization-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 816, column 115: The link 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips' for "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips" cannot be resolved
@@ -950,7 +950,7 @@ ERROR: StructureMap/ResourcesToCoreDataSet: StructureMap.group[5].rule[0].rule[0
 ERROR: StructureMap/ResourcesToCoreDataSet: StructureMap.group[5].rule[0].rule[0].source[0].variable: id value 'due_date' is not valid
 ERROR: StructureMap/ResourcesToCoreDataSet: StructureMap.group[5].rule[0].rule[0].rule[0].name: id value 'set due date' is not valid
 ERROR: StructureMap/ResourcesToCoreDataSet: StructureMap.group[5].rule[0].rule[0].rule[0].source[0].context: id value 'due_date' is not valid
-ERROR: Resource: The URL 'http://worldhealthorganization.github.io/ddcc/StructureMap/ResourcesToCoreDataSet' is also used by ddcc-resources-to-coredataset in /github/workspace/input/resources/StructureMap-ddcc-resources-to-coredataset
+ERROR: Resource: The URL 'http://worldhealthorganization.github.io/ddcc/StructureMap/ResourcesToCoreDataSet' has already been used by ddcc-resources-to-coredataset in /github/workspace/input/resources/StructureMap-ddcc-resources-to-coredataset
 == input/resources/StructureMap-ResourcesToVSCoreDataSet.json ==
 ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[0].rule[0].name: id value 'setup ddcc' is not valid
 ERROR: StructureMap/ResourcesToVSCoreDataSet: StructureMap.group[0].rule[0].rule[0].name: id value 'set hcid' is not valid
@@ -1174,7 +1174,7 @@ ERROR: StructureMap/ddcc-resources-to-coredataset: StructureMap.group[0].rule[0]
 ERROR: StructureMap/ddcc-resources-to-coredataset: StructureMap.group[1].rule[0].name: id value 'set name' is not valid
 ERROR: StructureMap/ddcc-resources-to-coredataset: StructureMap.group[1].rule[0].rule[0].name: id value 'setting name' is not valid
 ERROR: StructureMap/ddcc-resources-to-coredataset: StructureMap.group[2].rule[0].name: id value 'set here' is not valid
-ERROR: Resource: The URL 'http://worldhealthorganization.github.io/ddcc/StructureMap/ResourcesToCoreDataSet' has already been used by ResourcesToCoreDataSet in /github/workspace/input/resources/StructureMap-ResourcesToCoreDataSet
+ERROR: Resource: The URL 'http://worldhealthorganization.github.io/ddcc/StructureMap/ResourcesToCoreDataSet' is also used by ResourcesToCoreDataSet in /github/workspace/input/resources/StructureMap-ResourcesToCoreDataSet
 ERROR: /github/workspace/input/resources/StructureMap-ddcc-resources-to-coredataset: URL Mismatch http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-resources-to-coredataset vs http://worldhealthorganization.github.io/ddcc/StructureMap/ResourcesToCoreDataSet
 == input/resources/StructureMap-ddcc-to-shc.json ==
 ERROR: StructureMap.where(url = 'http://worldhealthorganization.github.io/ddcc/StructureMap/DDCCtoSHC'): Conformance resource /github/workspace/input/resources/StructureMap-ddcc-to-shc.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-shc) does not match the URL (http://worldhealthorganization.github.io/ddcc/StructureMap/DDCCtoSHC)
