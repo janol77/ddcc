@@ -728,14 +728,14 @@
     "name" : "QRespToVSCoreDataSet"
   },
   {
-    "id" : "ResourcesToCoreDataSet",
+    "id" : "ddcc-resources-to-coredataset",
     "type" : "StructureMap",
     "url" : "http://worldhealthorganization.github.io/ddcc/StructureMap/ResourcesToCoreDataSet",
     "version" : "1.0.0",
     "name" : "ResourcesToCoreDataSet"
   },
   {
-    "id" : "ddcc-resources-to-coredataset",
+    "id" : "ResourcesToCoreDataSet",
     "type" : "StructureMap",
     "url" : "http://worldhealthorganization.github.io/ddcc/StructureMap/ResourcesToCoreDataSet",
     "version" : "1.0.0",

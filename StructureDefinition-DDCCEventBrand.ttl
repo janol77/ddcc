@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "DDCCEventBrand"]; # 
   fhir:StructureDefinition.title [ fhir:value "DDCC Event Brand for Immunization"]; # 
   fhir:StructureDefinition.status [ fhir:value "active"]; # 
-  fhir:StructureDefinition.date [ fhir:value "2023-01-11T14:19:24+00:00"^^xsd:dateTime]; # 
+  fhir:StructureDefinition.date [ fhir:value "2023-01-11T17:29:28+00:00"^^xsd:dateTime]; # 
   fhir:StructureDefinition.publisher [ fhir:value "WHO"]; # 
   fhir:StructureDefinition.contact [
      fhir:index 0;
