@@ -313,18 +313,6 @@
     "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap": [
       "Questionnaire"
     ],
-    "http://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-authorOrg": [
-      "List.source"
-    ],
-    "http://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-designationType": [
-      "List"
-    ],
-    "http://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-intendedRecipient": [
-      "List"
-    ],
-    "http://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-sourceId": [
-      "List"
-    ],
     "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfEvent": [
       "Bundle.entry.resource",
       "Immunization",
@@ -341,6 +329,18 @@
     "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineValidFrom": [
       "Bundle.entry.resource",
       "Immunization"
+    ],
+    "https://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-authorOrg": [
+      "List.source"
+    ],
+    "https://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-designationType": [
+      "List"
+    ],
+    "https://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-intendedRecipient": [
+      "List"
+    ],
+    "https://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-sourceId": [
+      "List"
     ]
   }
 }
